@@ -1,0 +1,52 @@
+<relatorio dados="nota_complementar">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo1				tam=113   alinha=centro
+4  titulo2				tam=113   alinha=centro
+5  cab_venda			tam=13	alinha=direita
+6  cab_ecf				tam=13	alinha=direita
+7  cab_nf				tam=13	alinha=direita
+9  grupo_nome			tam=40
+10 produto_codigo		tam=6
+11 produto_nome			tam=30
+12 valor_venda			tam=13   fmt=%.02f
+13 valor_ecf			tam=13   fmt=%.02f
+14 valor_nf				tam=13   fmt=%.02f
+15 diferenca			tam=13   fmt=%.02f
+</apelidos>
+
+<cab_pagina>
+#1                                                                                               #2
+-----------------------------------------------------------------------------------------------------------------
+     
+                                           RELATORIO NOTA COMPLEMENTAR
+#3
+#4
+
++--------+--------------------------------------+---------------+---------------+---------------+---------------+
+| Código | Produto                              | #5            | #6            | #7            |     Diferenca |
++--------+--------------------------------------+---------------+---------------+---------------+---------------+
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="grupo">
+| GRUPO: #9                                                                                                     |
+</cab_grupo>
+
+<detalhe>
+| #10    | #11                                  | #12           | #13           | #14           | #15           |
+</detalhe>
+
+<rod_grupo nome="1">
+|                                                                                                               |
+</rod_grupo>
+
+<rod_pagina>
++--------+--------------------------------------+---------------+---------------+---------------+---------------+
+</rod_pagina>
+<rod_relat>
++--------+--------------------------------------+---------------+---------------+---------------+---------------+
+</rod_relat>
+
+<hash>f67affba6b0c7eb0632a78a71f467b1b</hash>
+</relatorio>

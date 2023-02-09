@@ -1,0 +1,49 @@
+<relatorio dados="evolucao_venda_periodo" font_size="small">
+<apelidos>
+1  rel_posto_nome	         tam=40
+2  rel_data_hora	         tam=18
+3  titulo			         tam=99999
+4  linha	                 tam=99999
+8  cab_rel                   tam=99999
+9  cab_rel_linha			 tam=99999
+10 cab_pag_linha_sup		 tam=99999
+11 cab_pag_detalhe			 tam=99999
+12 rel_detalhe				 tam=99999
+13 cab_pag_linha_sep		 tem=99999
+14 cab_pag_info				 tam=99999
+16 rod_rel_detalhe_total	 tam=99999
+17 rod_rel_detalhe_media	 tam=99999
+20 cab_pag_linha_inf		 tam=99999
+</apelidos>
+
+<cab_pagina>
+#8
+#9
+
+#3
+
+
+#10
+#11
+#13
+#14
+#20
+</cab_pagina>
+
+<detalhe>
+#12
+</detalhe>
+
+<rod_pagina>
+#20
+</rod_pagina>
+
+<rod_relat>
+#20
+#16
+#17
+#10
+</rod_relat>
+
+<hash>90d8ed23282901fffb52b69eea761126</hash>
+</relatorio>

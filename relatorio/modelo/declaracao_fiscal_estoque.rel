@@ -1,0 +1,136 @@
+<relatorio dados="declaracao_fiscal_estoque_main">
+<apelidos>
+1  rel_posto_nome     				tam=60
+2  rel_data_hora					tam=18
+3  movto_usuario_nome				tam=146	alinha=centro
+4  movto_usuario_funcionario_nome	tam=146	alinha=centro
+30 empresa_nome						tam=40	alinha=centro
+31 data_extensa						tam=40	alinha=centro
+</apelidos>
+<cab_pagina>
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+<subrelat dados="declaracao_fiscal_estoque" docname="Declaração Fiscal de Estoque">
+
+<apelidos>
+1  nome					tam=60	
+2  inscr_est			tam=20
+3  cpf					tam=20
+4  folha				tam=5	alinha=esquerda
+5  data					tam=10 	fmt=data
+6  prd_grupo			tam=45
+7  prd_clas_fiscal		tam=10	alinha=centro
+8  prd_nome				tam=45
+9  prd_unid_med			tam=5	alinha=centro
+10 prd_quantidade     	tam=12	fmt=float3	
+11 preco_custo			tam=10	fmt=float3
+12 prd_preco_parcial	tam=11 	fmt=float2
+13 prd_total_2			tam=15	func=soma campo=prd_preco_parcial	fmt=float2
+14 total				tam=15	fmt=float2
+15 prd_codigo			tam=10  alinha=centro
+16 subtotal_qtd         tam=12  fmt=float3		func=soma  	campo=prd_quantidade		grupo=1
+17 subtotal_parcial		tam=11	fmt=float2		func=soma	campo=prd_preco_parcial		grupo=1
+18 total_qtdade         tam=12  fmt=float3		func=soma  	campo=prd_quantidade
+19 grupo_cod_nome       tam=45
+21 total_parcial        tam=11  fmt=float2      func=soma   campo=prd_preco_parcial
+22 tipo_preco_custo_nome	tam=57
+</apelidos>
+
+<cab_pagina>
++--------------------------------------------------------------------------------------------------------------------------------+
+|LIVRO REGISTRO DE INVENTÁRIO - MODELO 7                                                                                         |
+|TIPO DE CUSTO     : #22                                                                                                         |
+|CONTRIBUINTE      : #1                                                                                                          | 
+|Inscrição estadual: #2                                       C.N.P.J.              : #3                                         |
+|Folha             : #4                                       Estoques existentes em: #5                                         |
++--------------------------------------------------------------------------------------------------------------------------------+
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="nome">
+</cab_grupo>
+
+<cab_grupo nome="1" quebra="nome,prd_grupo,grupo_grid">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Grupo produto: #19                                                                                                             |
++------------+-----------------------------------------------+-------+--------------+--------------------------------------------+
+| Classific. |              Discriminação                    | Unid. |  Quantidade  |                  Valores                   |
+|   Fiscal   |                                               |       |              +------------+-------------+-----------------+
+|            |                                               |       |              |  Unitário  |   Parcial   |      Total      |
++------------+-----------------------------------------------+-------+--------------+------------+-------------+-----------------+
+</cab_grupo>
+<detalhe fix_height="48">
+| #7         | #8                                            | #9    | #10          | #11        | #12         | #13             |
+</detalhe>
+<rod_grupo nome="1">
++------------+-----------------------------------------------+-------+--------------+------------+-------------+-----------------+
+| Subtotal                                                           | #16          |            | #17         |                 |
++--------------------------------------------------------------------+--------------+------------+-------------+-----------------+
+
+</rod_grupo>
+
+<rod_grupo nome="2">
++--------------------------------------------------------------------+--------------+------------+-------------+-----------------+
+| Total geral                                                        | #18          |            | #21         |                 |
++--------------------------------------------------------------------+--------------+------------+-------------+-----------------+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++--------------------------------------------------------------------+--------------+--------------------------+-----------------+
+</rod_pagina>
+</subrelat>
+
+
+<subrelat dados="declaracao_fiscal_estoque_resumo" nome="grupo_resumo" subordem="nome">
+<apelidos>
+1  nome					tam=60	
+2  inscr_est			tam=30
+3  cpf					tam=60
+4  folha				tam=60
+5  data					tam=40
+6  sub_titulo			tam=40
+7  linha				tam=146
+8 grupo_nome  			tam=30
+9 qtde 		        	tam=16  fmt=float3
+11 total_qtde			tam=16	fmt=float3	func=soma	campo=qtde
+10 total_custo			tam=15	fmt=float2
+12 total_custo_geral	tam=15	fmt=float2	func=soma	campo=total_custo	
+13 pipe					tam=3
+</apelidos>
+
+<cab_pagina>
+
++--------------------------------+------------------+-----------------+
+|         Grupo produto          |    Quantidade    |      Valor      |
++--------------------------------+------------------+-----------------+
+</cab_pagina>
+<detalhe>
+| #8                             | #9               | #10             |
+</detalhe>
+<rod_pagina>
++--------------------------------+------------------+-----------------+
+</rod_pagina>
+<rod_relat>
++--------------------------------+------------------+-----------------+
+| Total                          | #11              | #12             |                      
++--------------------------------+------------------+-----------------+
+</rod_relat>
+</subrelat>
+<rod_relat>
+
+
+
+                                              ________________________________________
+                                                            RESPONSÁVEL                   
+
+
+                                              #31
+             
+</rod_relat>
+
+<hash>e407ff7eee43a7d519a769a132857f9a</hash>
+</relatorio>

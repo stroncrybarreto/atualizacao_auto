@@ -1,0 +1,49 @@
+<relatorio dados="balancete">
+<apelidos>
+1  rel_posto_nome   tam=58
+2  rel_data_hora    tam=18
+3  titulo	    tam=105  alinha=centro
+4  cnpj		    tam=105  alinha=centro
+5  periodo	    tam=105  alinha=centro
+6  main_codigo      tam=13
+7  main_nome        tam=30
+8  main_saldo_ant   tam=10   fmt=%.02f
+9  main_deb   	    tam=9    fmt=%.02f
+10 main_cre	    tam=9    fmt=%.02f
+11 main_saldo_atu   tam=10   fmt=%.02f
+12 conta_codigo     tam=13
+13 conta_nome       tam=30
+14 conta_saldo_ant  tam=10   fmt=%.02f
+15 conta_deb	    tam=9    fmt=%.02f
+16 conta_cre	    tam=9    fmt=%.02f
+17 conta_saldo_atu  tam=10   fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                                                     #2              
+---------------------------------------------------------------------------------------------------------
+
+#3
+#4
+#5
+
++---------------+---------------------------------+-------------+------------+------------+-------------+
+| CONTA         | NOME DA CONTA                   | SALDO ANT   | DEBITOS    | CREDITOS   | SALDO ATUAL |
+</cab_pagina>
+<cab_grupo nome="1" quebra="main_codigo">
++---------------+---------------------------------+-------------+------------+------------+-------------+
+| #6            | #7                              | #8          | #9         | #10        | #11         |
+</cab_grupo>
+<detalhe>
+| #12           | #13                             | #14         | #15        | #16        | #17         |
+</detalhe>
+<rod_grupo nome="1">
+</rod_grupo>
+<rod_relat>
++---------------+---------------------------------+-------------+------------+------------+-------------+
+</rod_relat>
+<rod_pagina>
++---------------+---------------------------------+-------------+------------+------------+-------------+
+</rod_pagina>
+
+<hash>ad90c55c9ecde14adba43cbfc6d7eea0</hash>
+</relatorio>

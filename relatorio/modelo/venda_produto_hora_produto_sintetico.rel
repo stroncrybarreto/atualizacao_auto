@@ -1,0 +1,96 @@
+<relatorio dados="venda_produto_hora" ordem="empresa_codigo,empresa_grid,produto_codigo,hora">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo			tam=116	alinha=centro
+6  empresa_cod_nome tam=60	expr=str(empresa_codigo)+' - '+empresa_nome
+
+9  hora				tam=5  	alinha=centro
+10 quantidade 		tam=12 	fmt=float2
+11 pcnt_qtde		tam=7 	fmt=float2
+12 valor			tam=12 	fmt=float2
+13 pcnt_valor		tam=7 	fmt=float2
+22 dia_semana_nome	tam=60 	
+
+14 tot_qtde_emp   	tam=12 	fmt=float2
+15 pcnt_qtde_emp  	tam=6 	fmt=float2
+16 tot_valor_emp  	tam=12 	fmt=float2
+17 pcnt_valor_emp 	tam=6 	fmt=float2
+18 tot_qtde_geral   tam=12 	fmt=float2
+19 pcnt_qtde_geral  tam=6 	fmt=float2
+20 tot_valor_geral  tam=12 	fmt=float2
+21 pcnt_valor_geral tam=6 	fmt=float2
+23 tot_qtde_dia   	tam=12 	fmt=float2
+24 pcnt_qtde_dia  	tam=6 	fmt=float2
+25 tot_valor_dia  	tam=12 	fmt=float2
+26 pcnt_valor_dia 	tam=6 	fmt=float2
+
+27 total_vendas		tam=8 	fmt=float0 alinha=centro
+28 produto_codigo	tam=5
+29 produto_nome		tam=20
+30 produto_cod_nome	tam=50	expr=str(produto_codigo)+' - '+str(produto_nome)
+
+31 sub_vendas		tam=11	func=soma	campo=total_vendas	grupo=1	alinha=direita
+32 ger_vendas		tam=11	func=soma	campo=total_vendas	alinha=direita
+33 emp_vendas		tam=11	func=soma	campo=total_vendas	grupo=2	alinha=direita
+
+34 perc_qtd_geral		tam=7	fmt=float2
+35 perc_tot_qtd_geral	tam=7	fmt=float2
+
+36 perc_vl_geral		tam=7	fmt=float2
+37 perc_tot_vl_geral	tam=7	fmt=float2
+
+38 perc_emp_qtd_geral	tam=7	fmt=float2
+39 perc_emp_vl_geral	tam=7	fmt=float2
+
+51 tm_qtd			    tam=8	expr=quantidade/total_vendas	fmt=float2
+52 tm_vl			    tam=8	expr=valor/total_vendas			fmt=float2
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                   #2
+--------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo,empresa_grid">
++------------------------------------------------------------------------------------------------------------------+
+| Empresa: #6                                                                                                      |
++------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,empresa_grid,produto_codigo">
+| Produto: #30                                                                                                     |
++-------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Hora  |  Vendas  |  Quantidade  | % Grupo  | % Total  |    Valor     | % Grupo  | % Total  | TM Qtde. | TM Valor |
++-------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</cab_grupo>
+<detalhe>
+| #9    | #27      | #10          | #11    % | #34    % | #12          | #13    % | #36    % | #51      | #52      |
+</detalhe>
+<rod_grupo nome="2">
++-------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Total            | #23          |  100,00% | #35    % | #25          |  100,00% | #37    % |          |          |
++------------------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total empresa    | #14          |          | #38    % | #16          |          | #39    % |          |          |
++------------------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+
+</rod_grupo>
+
+<rod_relat>
+
++------------------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Total geral      | #18          |          |  100,00% | #20          |          |  100,00% |          |          |
++------------------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</rod_relat>
+
+<rod_pagina>
++------------------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</rod_pagina>
+
+<hash>b9a4a5d634860b10a06c51d0d4c7a89f</hash>
+</relatorio>

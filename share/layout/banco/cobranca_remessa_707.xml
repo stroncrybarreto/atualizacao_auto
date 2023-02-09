@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>cnab - Banco DAYCOVAL - Remessa</nome>
+
+  <sessao>
+    <nome>header</nome>	
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Identificacao do Registro Header</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+      <descricao>Código da Remessa</descricao>
+    </registro>
+    <registro>
+      <inicio>3</inicio>
+      <fim>9</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>REMESSA</padrao>
+	  <descricao>Literal de Remessa</descricao>
+    </registro>
+    <registro>
+      <inicio>10</inicio>
+      <fim>11</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>01</padrao>
+	  <descricao>Codigo do Serviço</descricao>
+    </registro>
+    <registro>
+      <inicio>12</inicio>
+      <fim>26</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>COBRANCA</padrao>
+	  <descricao>Literal de Serviço</descricao>
+    </registro>
+    <registro>
+      <inicio>27</inicio>
+      <fim>38</fim>
+	  <chave>contrato</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+	  <descricao>Identificação da Empresa no Banco</descricao>
+    </registro>  
+	<registro>
+      <inicio>47</inicio>
+      <fim>76</fim>
+      <chave>empresa_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+	  <descricao>Nome por extenso da Empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>77</inicio>
+      <fim>79</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>707</padrao>
+	  <descricao>Código do Banco</descricao>
+    </registro>
+    <registro>
+      <inicio>80</inicio>
+      <fim>94</fim>
+      <chave>banco_nome</chave>
+      <tipo>string</tipo>
+      <padrao>BANCO DAYCOVAL</padrao>
+	  <descricao>Nome do Banco</descricao>
+    </registro>
+    <registro>
+      <inicio>95</inicio>
+      <fim>100</fim>
+      <chave>data_geracao</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+	  <descricao>Data gravacao do arquivo</descricao>
+    </registro>
+	<registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>000001</padrao>
+	  <descricao>Numero sequencial do registro</descricao>
+    </registro>
+  </sessao>
+
+  <sessao>
+    <nome>transacao_tipo_1</nome>
+	<registro>
+		<inicio>1</inicio>
+		<fim>1</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>1</padrao>
+		<descricao>Identificação do registro de transação</descricao>
+	</registro>
+	<registro>
+		<inicio>2</inicio>
+		<fim>3</fim>
+		<chave>empresa_tipo_inscr</chave>
+		<tipo>integer</tipo>
+		<padrao>01</padrao>
+		<descricao>Identificação do tipo de inscrição da empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>4</inicio>
+		<fim>17</fim>
+		<chave>empresa_inscricao</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número de Inscrição</descricao>
+	</registro>
+	<registro>
+		<inicio>18</inicio>
+		<fim>37</fim>
+		<chave>contrato</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Código da Empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>38</inicio>
+		<fim>62</fim>
+		<chave>boleto_info_documento</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Identificação do título na Empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>63</inicio>
+		<fim>70</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Nosso Número</descricao>
+	</registro>
+	<registro>
+		<inicio>71</inicio>
+		<fim>82</fim>
+		<chave>boleto_nosso_numero</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Nosso Número Corr</descricao>
+	</registro>
+	<registro>
+      <inicio>83</inicio>
+      <fim>83</fim>
+      <chave>x_dv_nosso_numero</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+	  <descricao>Digito de verificacao do Nosso numero</descricao>
+    </registro>
+	<registro>
+		<inicio>84</inicio>
+		<fim>107</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Identificação da operação no banco</descricao>
+	</registro>
+	<registro>
+		<inicio>108</inicio>
+		<fim>108</fim>
+		<chave>carteira</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Código de remessa</descricao>
+	</registro>
+	<registro>
+		<inicio>109</inicio>
+		<fim>110</fim>
+		<chave>x_instrucao_banco</chave>
+		<tipo>integer</tipo>
+		<padrao></padrao>
+		<descricao>Identificacao da Ocorrencia</descricao>
+	</registro>
+	<registro>
+		<inicio>111</inicio>
+		<fim>120</fim>
+		<chave>boleto_info_documento</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Numero documento</descricao>
+	</registro>
+	<registro>
+		<inicio>121</inicio>
+		<fim>126</fim>
+		<chave>boleto_info_vencto</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>Data de vencimento do título</descricao>
+	</registro>
+	<registro>
+		<inicio>127</inicio>
+		<fim>139</fim>
+		<chave>boleto_info_valor</chave>
+		<tipo>float</tipo>
+		<padrao></padrao>
+		<descricao>valor do titulo</descricao>
+	</registro>
+	<registro>
+		<inicio>140</inicio>
+		<fim>142</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>707</padrao>
+		<descricao>Código do Banco</descricao>
+	</registro>
+	<registro>
+		<inicio>143</inicio>
+		<fim>146</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Agência encarregada da cobrança</descricao>
+	</registro>
+	<registro>
+		<inicio>147</inicio>
+		<fim>147</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Dígito de auto-conferência da ag. cobradora</descricao>
+	</registro>
+	<registro>
+		<inicio>148</inicio>
+		<fim>149</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>1</padrao>
+		<descricao>Especie de titulo</descricao>
+	</registro>
+	<registro>
+		<inicio>150</inicio>
+		<fim>150</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao>N</padrao>
+		<descricao>Identificacao</descricao>
+	</registro>
+	<registro>
+		<inicio>151</inicio>
+		<fim>156</fim>
+		<chave>boleto_info_data_emissao</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>data de emissão do titulo</descricao>
+	</registro>
+	<registro>
+		<inicio>157</inicio>
+		<fim>158</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>ZEROS</descricao>
+	</registro>
+	<registro>
+		<inicio>159</inicio>
+		<fim>160</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>ZEROS</descricao>
+	</registro>
+	<registro>
+		<inicio>161</inicio>
+		<fim>173</fim>
+		<chave>boleto_info_juros_valor_dia</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor de mora por dia de atraso</descricao>
+	</registro>
+	<registro>
+		<inicio>174</inicio>
+		<fim>179</fim>
+		<chave>boleto_info_desconto_data</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>Data limite para concessão de desconto</descricao>
+	</registro>
+	<registro>
+		<inicio>180</inicio>
+		<fim>192</fim>
+		<chave>x_valor_desconto</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor do desconto</descricao>
+	</registro>
+	<registro>
+		<inicio>193</inicio>
+		<fim>218</fim>
+		<chave></chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor do IOF</descricao>
+	</registro>	
+	<registro>
+		<inicio>219</inicio>
+		<fim>220</fim>
+		<chave>boleto_info_sacado_tipo_inscr</chave>
+		<tipo>integer</tipo>
+		<padrao>01</padrao>
+		<descricao>Identificação do tipo de inscrição do sacado</descricao>
+	</registro>	
+	<registro>
+		<inicio>221</inicio>
+		<fim>234</fim>
+		<chave>x_sacado_inscricao</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número de inscrição do sacado</descricao>
+	</registro>
+	<registro>
+		<inicio>235</inicio>
+		<fim>264</fim>
+		<chave>boleto_info_sacado_nome</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Nome do sacado</descricao>
+	</registro>
+	<registro>
+		<inicio>275</inicio>
+		<fim>314</fim>
+		<chave>endereco</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Logradouro</descricao>
+	</registro>
+	<registro>
+		<inicio>315</inicio>
+		<fim>326</fim>
+		<chave>boleto_info_sacado_bairro</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Bairro do sacado</descricao>
+	</registro>
+	<registro>
+		<inicio>327</inicio>
+		<fim>334</fim>
+		<chave>boleto_info_sacado_cep</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>CEP</descricao>
+	</registro>
+	<registro>
+		<inicio>335</inicio>
+		<fim>349</fim>
+		<chave>boleto_info_sacado_cidade</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Cidade do sacado</descricao>
+	</registro>
+	<registro>
+		<inicio>350</inicio>
+		<fim>351</fim>
+		<chave>boleto_info_sacado_estado</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Estado do sacado</descricao>
+	</registro>
+	<registro>
+		<inicio>352</inicio>
+		<fim>381</fim>
+		<chave>empresa_nome</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Nome do sacador ou avalista</descricao>
+	</registro>
+	<registro>
+		<inicio>392</inicio>
+		<fim>393</fim>
+		<chave>protesto_prazo</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Prazo, qtde dias início ação de protesto</descricao>
+	</registro>
+	<registro>
+		<inicio>394</inicio>
+		<fim>394</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Moeda</descricao>
+	</registro>
+	<registro>
+		<inicio>395</inicio>
+		<fim>400</fim>
+		<chave>x_numero_registro</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Numero sequencial do registro</descricao>
+	</registro>
+  </sessao>
+
+  <sessao>
+    <nome>trailler</nome>	
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>9</padrao>
+	  <descricao>Identificação do registro trailler</descricao>
+	</registro>
+	<registro>
+      <inicio>2</inicio>
+      <fim>394</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+	  <descricao>Brancos, Complementação do registro</descricao>
+	</registro>  	
+	<registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>x_numero_registro</chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+	  <descricao>Numero sequencial do registro</descricao>
+    </registro>
+  </sessao>
+</layout>

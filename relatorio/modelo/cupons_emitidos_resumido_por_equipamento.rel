@@ -1,0 +1,79 @@
+<relatorio dados="cupons_emitidos" ordem="empresa_nome">
+<apelidos>
+1 rel_posto_nome	tam=50
+2 rel_data_hora		tam=18
+3 titulo_p		    tam=81 expr="CUPONS FISCAIS EMITIDOS" alinha=centro
+4 titulo			tam=81 alinha=centro
+
+5 empresa_nome 		      tam=66
+6 data			          tam=12 fmt=data alinha=centro
+7 nr_ecf			      tam=3  alinha=centro
+8 valor_cupom		      tam=13 fmt=float2
+9 valor_desconto	      tam=10 fmt=float2
+10 valor_acrescimo        tam=11 fmt=float2
+11 liquido			      tam=13 fmt=float2 expr=(valor_cupom-valor_desconto+valor_acrescimo)
+12 total_emp_cupom        tam=13 fmt=float2 func=soma campo=valor_cupom     grupo=1
+13 total_emp_desconto     tam=10 fmt=float2 func=soma campo=valor_desconto  grupo=1
+14 total_emp_acrescimo    tam=11 fmt=float2 func=soma campo=valor_acrescimo grupo=1
+15 emp_total_valor        tam=13 fmt=float2 func=soma campo=liquido         grupo=1
+16 total_geral_cupom      tam=13 fmt=float2 func=soma campo=valor_cupom
+17 total_geral_desconto   tam=10 fmt=float2 func=soma campo=valor_desconto
+18 total_geral_acrescimo  tam=11 fmt=float2 func=soma campo=valor_acrescimo
+19 total_geral		      tam=13 fmt=float2	func=soma campo=liquido
+20 total_ecf_cupom        tam=13 fmt=float2 func=soma campo=valor_cupom     grupo=2
+21 total_ecf_desconto     tam=10 fmt=float2 func=soma campo=valor_desconto  grupo=2
+22 total_ecf_acrescimo    tam=11 fmt=float2 func=soma campo=valor_acrescimo grupo=2
+23 total_ecf              tam=13 fmt=float2 func=soma campo=liquido     	grupo=2
+24 nr_serie               tam=20
+30 titulo_data            tam=12  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                               #2
+---------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="1" quebra="empresa_nome">
+
++-------------------------------------------------------------------------------+
+| Empresa: #5                                                                   |
++-------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="nr_serie">
+| Equipamento: #24                                                              |
++--------------+-----+---------------+------------+-------------+---------------+
+| #30          | ECF |  Valor cupom  |  Desconto  |  Acréscimo  | Valor líquido | 
++--------------+-----+---------------+------------+-------------+---------------+
+</cab_grupo>
+<detalhe>
+| #6           | #7  | #8            | #9         | #10         | #11           |   
+</detalhe>
+
+<rod_grupo nome="2">
++--------------+-----+---------------+------------+-------------+---------------+
+| Total Equip.       | #20           | #21        | #22         | #23           |
++--------------------+---------------+------------+-------------+---------------+
+</rod_grupo>
+
+
+<rod_grupo nome="1">
+| Total empresa      | #12           | #13        | #14         | #15           |
++--------------------+---------------+------------+-------------+---------------+
+</rod_grupo>
+<rod_relat>
+  
++--------------------+---------------+------------+-------------+---------------+
+| Total geral        | #16           | #17        | #18         | #19           |
++--------------------+---------------+------------+-------------+---------------+
+</rod_relat>
+<rod_pagina>
+---------------------------------------------------------------------------------
+</rod_pagina>
+
+<hash>7d2dde9f03ccc99d6ea13febb83c2fae</hash>
+</relatorio>

@@ -1,0 +1,85 @@
+<relatorio dados="movto_conta_analitico" tamfonte="8" ordem="pessoa_nome,conta_nome,movto_data,movto_turno,movto_seq,movto_grid">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=16 alinha=direita
+3  data_ini             tam=10 fmt=data
+4  data_fim             tam=10 fmt=data
+5  conta_nome           tam=50
+6  conta_saldo          tam=15 fmt=float2
+7  movto_data           tam=10 fmt=data		alinha=centro
+8  movto_turno          tam=2  fmt=%02d		alinha=centro
+9  movto_seq            tam=4  fmt=%03d		alinha=centro
+10 motivo_nome          tam=22
+11 movto_entrada        tam=11 fmt=float2
+12 movto_saida          tam=11 fmt=float2
+13 xmovto_saldo         tam=15 fmt=float2	expr=conta_saldo+movto_total_entrada-movto_total_saida
+14 pessoa_nome          tam=18
+15 movto_total_entrada  tam=11 fmt=float2	func=soma   campo=movto_entrada		grupo=2
+16 movto_total_saida    tam=11 fmt=float2	func=soma   campo=movto_saida		grupo=2
+17 movto_saldo_ini      tam=15 fmt=float2
+18 movto_documento      tam=9  alinha=centro
+19 total_entrada		tam=11 fmt=float2	func=soma   campo=movto_entrada
+20 total_saida          tam=11 fmt=float2	func=soma   campo=movto_saida
+21 movto_obs			tam=18
+22 empresa_nome			tam=60
+25 saldo_emp_ant		tam=12 fmt=float2
+26 pessoa_codigo		tam=8
+27 pessoa_cod_nome		tam=100
+28 saldo_ant			tam=15
+29 contra_partida       tam=15
+30 total_pessoa_entrada tam=11 fmt=float2	func=soma   campo=movto_entrada		grupo=1
+31 total_pessoa_saida   tam=11 fmt=float2	func=soma   campo=movto_saida		grupo=1
+
+32 usuario
+33 funcionario_nome
+34 cargo_nome
+
+98 titulo				tam=128 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                              #2
+--------------------------------------------------------------------------------------------------------------------------------
+
+#98
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="pessoa_nome">
+
++------------------------------------------------------------------------------------------------------------------------------+
+| Pessoa: #27                                                                                                                  |
++------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="pessoa_nome,conta_nome">
+| Conta: #5                                                                                   | Saldo inicial: #6              |
++------------+----+-----------+------------------------------+-----------------+--------------+--------------+-----------------+
+|    Data    | T. | Documento |            Motivo            |  Conta partida  |   Entrada    |    Saída     |      Saldo      |
++------------+----+-----------+------------------------------+-----------------+--------------+--------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #7         | #8 | #18       | #10                          | #29             | #11          | #12          | #13             |
+</detalhe>
+<rod_grupo nome="2">
++------------+----+-----------+------------------------------+-----------------+--------------+--------------+-----------------+
+| Total conta                                                                  | #15          | #16          | #13             |
++------------------------------------------------------------------------------+--------------+--------------+-----------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total pessoa                                                                 | #30          | #31          |                 |
++------------------------------------------------------------------------------+--------------+--------------+-----------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++------------------------------------------------------------------------------+--------------+--------------+-----------------+
+| Total geral                                                                  | #19          | #20          |                 |
++------------------------------------------------------------------------------+--------------+--------------+-----------------+
+</rod_relat>
+
+<rod_pagina>
++------------+----+-----------+------------------------------+-----------------+--------------+--------------+-----------------+
+</rod_pagina>
+
+<hash>3c8302a1bbf917fda32045125b6a16e2</hash>
+</relatorio>

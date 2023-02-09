@@ -1,0 +1,82 @@
+<relatorio dados="ticket_medio" docname="Relatório de Ticket Médio" ordem="ordem">
+<apelidos>
+1  rel_posto_nome	           tam=60
+2  rel_data_hora	           tam=16
+3  titulo			           tam=134	alinha=centro
+4  titulo_dinamico             tam=100	
+5  data				           tam=10	alinha=centro	fmt=data
+6  num_vendas		           tam=13	alinha=direita  fmt=float0
+7  total_venda		           tam=15	alinha=direita	fmt=float2
+8  ticket_medio		           tam=15	alinha=direita	fmt=float2
+
+9  total_num_vendas            tam=13	alinha=direita 	fmt=float0  func=soma	campo=num_vendas	grupo=1
+10 total_total_venda           tam=15	alinha=direita 	fmt=float2	func=soma	campo=total_venda	grupo=1
+11 total_ticke		           tam=15	alinha=direita	fmt=float2  expr=total_total_venda/total_num_vendas	grupo=1
+
+12  total_num_geral_vendas     tam=13	alinha=direita 	fmt=float0  func=soma	campo=num_vendas
+13 	total_total_geral_venda    tam=15	alinha=direita 	fmt=float2	func=soma	campo=total_venda
+14 	total_geral_ticke		   tam=15	alinha=direita	fmt=float2  expr=total_total_geral_venda/total_num_geral_vendas	
+
+15 total_mercadoria	           tam=12	alinha=direita  fmt=float0  
+16 total_combustivel           tam=16	alinha=direita  fmt=float3  
+17 queb_mercadoreia	           tam=12	alinha=direita  fmt=float0  func=soma	campo=total_mercadoria	grupo=1
+18 queb_combustivel	           tam=16	alinha=direita  fmt=float3	func=soma	campo=total_combustivel	grupo=1
+
+19 ger_mercadoreia	           tam=12	alinha=direita  fmt=float0	func=soma	campo=total_mercadoria
+20 ger_combustivel	           tam=16	alinha=direita  fmt=float3	func=soma	campo=total_combustivel
+
+21 qtd_med_merc		           tam=12	alinha=direita  fmt=float2
+22 qtd_med_comb		           tam=16	alinha=direita  fmt=float2
+
+23 qtd_med_merc_que	           tam=12	alinha=direita  fmt=float2  expr=queb_mercadoreia/total_num_vendas	grupo=1	
+24 qtd_med_comb_que	           tam=16	alinha=direita  fmt=float2  expr=queb_combustivel/total_num_vendas	grupo=1	
+
+25 qtd_med_merc_ger	           tam=12	alinha=direita  fmt=float2  expr=ger_mercadoreia/total_num_geral_vendas	
+26 qtd_med_comb_ger	           tam=16	alinha=direita  fmt=float2  expr=ger_combustivel/total_num_geral_vendas		
+
+27 nr_pessoas	           	   tam=12	alinha=direita  fmt=float0	
+28 total_nr_pessoas	       	   tam=12	alinha=direita  fmt=float0
+29 total_geral_nr_pessoas  	   tam=12	alinha=direita  fmt=float0	func=soma  campo=total_nr_pessoas
+
+30 media_nr_pessoas	           	   tam=12	alinha=direita  fmt=float2  expr=total_venda/nr_pessoas	
+31 media_total_nr_pessoas	       tam=12	alinha=direita  fmt=float2  expr=total_total_venda/total_nr_pessoas
+32 media_total_geral_nr_pessoas    tam=12	alinha=direita  fmt=float2  expr=total_total_geral_venda/total_geral_nr_pessoas
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                        #2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra_2">
+| #4                                                                                                                                                                       |
++------------+----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+|            |                                      Total                                       |                                   Média                                  |
+|    Data    +---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+|            | Número vendas | Num. Pessoas | Quant. merc. |   Quant. comb.   |   Valor vendas  | Quant. merc. |    Quant. comb.  |  Ticket médio   |  Ticket por pessoa   |
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+</cab_grupo>
+<detalhe>
+| #5         | #6            | #27          | #15          | #16              | #7              | #21          | #22              | #8              | #30                  |
+</detalhe>
+<rod_grupo nome="1">
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+| Total      | #9            | #28          | #17          | #18              | #10             | #23          | #24              | #11             | #31                  |
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+</rod_grupo>
+
+<rod_relat>
+
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+| Geral      | #12           | #29          | #19          | #20              | #13             | #25          | #26              | #14             | #32                  |
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+</rod_relat>
+<rod_pagina>
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+----------------------+
+</rod_pagina>
+
+<hash>28e382e87be5782c925e7d12b38cf477</hash>
+</relatorio>

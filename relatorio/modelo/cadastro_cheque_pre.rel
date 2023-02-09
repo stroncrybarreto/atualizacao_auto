@@ -1,0 +1,147 @@
+<relatorio dados="cadastro_cheque_pre">
+<apelidos>
+1  codigo			tam=15	alinha=esquerda
+2  nome				tam=63
+3  cpf				tam=15
+4  rg				tam=12
+5  rg_orgao_exp		tam=19
+6  rg_data_exp		tam=10
+7  data_nasc		tam=15
+8  sexo				tam=19
+9  endereco			tam=36
+10 cep				tam=10
+11 cidade			tam=36
+12 estado			tam=19
+13 fone				tam=36
+14 celular			tam=19
+15 rel_posto_nome	tam=60
+16 rel_data_hora	tam=18
+17 nome				tam=46	alinha=centro
+18 rel_posto_fone	tam=16	alinha=direita
+</apelidos>
+<cab_pagina>
+
+#15                                                                                #16
+
+                                      Fone: #18
+                                      CADASTRO DE CHEQUE PRÉ                                     
+
+---------------------------------------------------------------------------------------------------
+
+                                          Dados Pessoais
+									  
+CÓDIGO...: #1                Nome: #2
+
+CPF......: #3                RG..: #4           Org. Exp.: #5                  Dt. Exp.: #6
+Dt. Nasc.: #7                                   Sexo.....: #8
+Endereço.: #9                                                                  CEP.....: #10
+Cidade...: #11                                  UF.......: #12
+Fone.....: #13                                  Cel......: #14
+
+---------------------------------------------------------------------------------------------------
+
+</cab_pagina>
+<detalhe>
+</detalhe>
+
+<subrelat dados="cadastro_cheque_pre_prof">
+<apelidos>
+1  empresa	tam=30
+2  fone		tam=15
+3  endereco	tam=30
+4  cep		tam=15
+5  cidade	tam=30
+6  estado	tam=15
+7  cargo	tam=15
+</apelidos>
+<cab_relat>
+                                        Dados Profissionais
+
+</cab_relat>
+<detalhe>
+Empresa.: #1                                                               Fone.: #2
+Endereço: #3                                                               CEP..: #4
+Cidade..: #5                                    UF: #6                     Cargo: #7
+
+</detalhe>
+<rod_relat>
+---------------------------------------------------------------------------------------------------
+</rod_relat>
+</subrelat>
+
+<subrelat dados="cadastro_cheque_pre_ref_pessoal">
+<apelidos>
+1  nome	tam=60
+2  fone	tam=15
+</apelidos>
+<cab_relat>
+
+                                        Referências Pessoais
+									   
+</cab_relat>
+<detalhe>
+Nome: #1                                                                   Fone: #2
+</detalhe>
+<rod_relat>
+---------------------------------------------------------------------------------------------------
+</rod_relat>
+</subrelat>
+
+<subrelat dados="cadastro_cheque_pre_ref_comercial">
+<apelidos>
+1  nome	tam=60
+2  fone	tam=15
+</apelidos>
+<cab_relat>
+
+                                        Referências Comerciais
+
+</cab_relat>
+<detalhe>
+Nome: #1                                                                   Fone: #2
+</detalhe>
+<rod_relat>
+---------------------------------------------------------------------------------------------------
+</rod_relat>
+</subrelat>
+
+<subrelat dados="cadastro_cheque_pre_cartoes">
+<apelidos>
+1  cartao	tam=60
+</apelidos>
+<cab_relat>
+
+                                               Cartões
+
+</cab_relat>
+<detalhe>
+#1
+</detalhe>
+<rod_relat>
+---------------------------------------------------------------------------------------------------
+</rod_relat>
+</subrelat>
+
+<subrelat dados="cadastro_cheque_pre_frota">
+<apelidos>
+1  placa		tam=10
+2  descricao	tam=30
+</apelidos>
+<cab_relat>
+
+                                                Frota
+
+</cab_relat>
+<detalhe>
+Placa: #1                                      Marca / Modelo: #2
+</detalhe>
+<rod_relat>
+---------------------------------------------------------------------------------------------------
+</rod_relat>
+</subrelat>
+
+<rod_relat>
+</rod_relat>
+
+<hash>f1bfcb587c4d3752b44ddbc1d241a38a</hash>
+</relatorio>

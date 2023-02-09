@@ -1,0 +1,38 @@
+<relatorio dados="reajuste_regra_preco">
+<apelidos>
+1  rel_posto_nome			tam=50
+2  rel_data_hora			tam=18
+3  tabela_codigo			tam=07				alinha=direita
+4  tabela_nome				tam=35
+5  produto_codigo			tam=07				alinha=direita
+6  produto_nome				tam=40
+7  preco_atual				tam=10	fmt=float2	alinha=direita
+8  preco_novo				tam=10	fmt=float2	alinha=direita
+10 total					tam=10	func=contar	campo=produto
+99 titulo                   tam=120 alinha=centro expr="TABELAS DE PREÇO REAJUSTADAS"	
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                     #2
+-----------------------------------------------------------------------------------------------------------------------
+
+#99
+
++-----------------------------------------+-------------------------------------------------+------------+------------+
+|              Tabela Preço               |                     Produto                     | Pr. Antigo |  Pr. Novo  |
++-----------------------------------------+-------------------------------------------------+------------+------------+
+</cab_pagina>
+
+<detalhe>
+| #4                                      | #6                                              | #7         | #8         |
+</detalhe>
+
+<rod_relat>
++-----------------------------------------+-------------------------------------------------+------------+------------+
+| Total de tabelas alteradas                                                                               #10        |
++---------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+
+
+<hash>6f3e846e271433676cde4e7513d5e146</hash>
+</relatorio>

@@ -1,0 +1,57 @@
+<relatorio dados="integracao_humanus_rh">
+<apelidos>
+1  rel_posto_nome	      tam=60
+2  rel_data_hora	      tam=18
+3  data_ini             tam=10 fmt=data
+4  data_fim             tam=10 fmt=data
+5  humanus_remessa      tam=20
+6  data_importacao		tam=10	fmt=data 	alinha=centro
+7  qtde_registro_total  tam=10  fmt=float   
+8  qtde_registro_selecionado    tam=10    fmt=float   
+9  status               tam=15
+10 conta_creditar       tam=15 alinha=centro
+11 conta_debitar        tam=15 alinha=centro
+12 documento            tam=10
+13 nome                 tam=20
+14 vencto               tam=10   fmt=data 	alinha=centro
+15 titulo				tam=130  alinha=centro
+16 valor                tam=10   fmt=float2	alinha=direita
+17 obs                  tam=54
+18 critica              tam=50
+19 valor_total          tam=15  fmt=float   alinha=direita
+20 valor_importado      tam=15  fmt=float   alinha=direita
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#15   
+
+</cab_pagina>
+
+
+<cab_grupo nome="1" quebra="humanus_remessa">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Data importação: #6              Registros Importaos: #8              Total Registros: #7                                      |
++----------------+------------------+-----------------+-------------+----------------------------------+------------+------------+
+| Importado      | Conta Creditar   | Conta Debitar   | Documento   | Motivo                           | Vencimento |      Valor |
++----------------+------------------+-----------------+-------------+----------------------------------+------------+------------+
+</cab_grupo>
+<detalhe>
+| #9             | #10              | #11             | #12         | #13                              | #14        | #16        |
+|      Obs.: #17                                                    | Crítica: #18                                               |
++----------------+------------------+-----------------+-------------+----------------------------------+------------+------------+
+</detalhe>
+<rod_grupo nome="1">
++---------------------------------------------------------------------------------------------+----------------------------------+
+|                                                              TOTAL ARQUIVO: #19             | TOTAL IMPORTADO: #20             |
++---------------------------------------------------------------------------------------------+----------------------------------+
+
+</rod_grupo>
+<rod_pagina>
++------------------------------------------------------------------------------------------------------+-------------------------+
+</rod_pagina>
+
+<hash>a13cfe33d13cbbae0b06636f8d095924</hash>
+</relatorio>

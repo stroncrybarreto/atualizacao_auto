@@ -1,0 +1,58 @@
+<relatorio dados="comparativo_pontuacao_por_forma_pgto" ordem="empresa, empresa_nome, data">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18  
+3  empresa_nome			tam=50
+4  data					tam=50	fmt=data
+5  motivo_nome			tam=33
+6  ponto_cupom			tam=23
+7  ponto_sugerido		tam=35
+8  total_ponto_cupom	tam=23	func=soma	campo=ponto_cupom		grupo=1
+9  total_ponto_sugerido	tam=35	func=soma	campo=ponto_sugerido	grupo=1
+10 diferenca_total		tam=11	expr=total_ponto_sugerido-total_ponto_cupom
+11 titulo				tam=115	alinha=centro
+12 diferenca			tam=11	expr=ponto_sugerido-ponto_cupom
+</apelidos>
+<cab_pagina>
+#1                                                                                                 #2
+-------------------------------------------------------------------------------------------------------------------
+   
+           C O M P A R A T I V O   D E   P O N T U A Ç Ã O   P O R   F O R M A   D E   P A G A M E N T O           
+#11
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa,empresa_nome">
+
++-----------------------------------------------------------------------------------------------------------------+
+| EMPRESA: #3                                                                                                     |
++-----------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa,empresa_nome,data">
+| DATA: #4                                                                                                        |
++-----------------------------------+-------------------------+-------------------------------------+-------------+
+| Forma Pagamento                   | Pontos Gerados (Cupons) | Pontos a serem gerados (Estimativa) | Diferença   |
++-----------------------------------+-------------------------+-------------------------------------+-------------+
+</cab_grupo>
+<detalhe>
+| #5                                | #6                      | #7                                  | #12         |
+</detalhe> 
+<rod_grupo nome="2">
++-----------------------------------+-------------------------+-------------------------------------+-------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| TOTAIS                            | #8                      | #9                                  | #10         |
++-----------------------------------+-------------------------+-------------------------------------+-------------+
+</rod_grupo>
+
+<rod_relat>
+
+</rod_relat>
+
+<rod_pagina>
++-----------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>e27ae1d44d11c405a5ef4d64a6b9e979</hash>
+</relatorio>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>Aprovação de Compra</title>
+		<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+	</head>
+
+	<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="font-family: Verdana;">
+		<div style="margin-left: 10px;">
+			<span style="font-size: 12px;">
+				<br>
+				Prezado(a) <a tal:content="nome"></a>,
+				<br>
+				<br>
+				Segue abaixo informações sobre a solicitação de compra.
+				<br>
+				<br>
+			</span>
+		</div>
+		<table border="0" cellpadding="3" cellspacing="2" bgcolor="#999999" style="margin-left: 10px;">
+			<tr style="text-align: center; color: #FFFFFF; font-size: 12px;">
+				<td style="width: 100px;"><strong>Solicitação codigo</strong></td>
+				<td style="width: 300px;"><strong>Produto nome</strong></td>
+				<td style="width: 100px;"><strong>Quantidade</strong></td>
+				<td style="width: 100px;"><strong>Unid. Med.</strong></td>
+				<td style="width: 130px;"><strong>Valor total</strong></td>
+			</tr>
+			<tr bgcolor="#FFFFFF" style="font-size: 12px;">
+				<td style="text-align: center;"><a tal:content="solicitacao_codigo"></a></td>
+				<td style="text-align: center;"><a tal:content="produto_nome"></a></td>
+				<td style="text-align: center;"><a tal:content="quantidade"></a></td>
+				<td style="text-align: center;"<a tal:content="unid_med"></a></td>
+				<td style="text-align: center;"><a tal:content="valor_referencia"></a></td>
+			</tr>
+		</table>
+		<div style="margin-left: 10px;">
+			<span style="font-size: 12px;">
+				<br>
+				<div>
+					Documento emitido por Linx - <strong tal:content="sistema_versao"></strong> - <a target="_blank" href="https://www.linx.com.br/autosystem/">www.linx.com.br/autosystem</a>
+					&nbsp;
+					<a href="https://www.linx.com.br/autosystem/" target="_blank">
+						<img src="data:image/png;base64,/9j/4AAQSkZJRgABAAEAYABgAAD//gAfTEVBRCBUZWNobm9sb2dpZXMgSW5jLiBWMS4wMQD/2wCEAAUFBQgFCAwHBwwMCQkJDA0MDAwMDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0BBQgICgcKDAcHDA0MCgwNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDf/EAaIAAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKCwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foRAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/AABEIACYALAMBEQACEQEDEQH/2gAMAwEAAhEDEQA/APsugAoAKACgDlPE2t/YoxZ2jA310wjhUHlSern0CiuCvXUV7Kk06stEl0v1Z7+XYP20niMQrYaknOo3s0vsrzbOkto3hiRJGLuqgMx6k45NdsU0km7u254tSUZTlKEVGLbaS6LoieqMgoAKACgDyXTbqxm8TylTkQqURjyPMJ+bH8ge3SvjsP8AV8HjZxUn+8k+Vt6KT3S8ux+gYiliKeU07q3PLmklo+RbX/No9ar7E/PzEtfEFte6Yms24kktpIhMgVCZGQ9MJ1z7UAatvOLmNZVDKHUMAw2sM9iD0PqKAJqAMXxBNcw2Mn2FC9ww2oB2Lcbj7Cues5KD9kry2Xz6npYGFKeIh9ako0k+aV+qWtvVnBaH8OnsV86eb9+/zHA4BPbPc+9fLVcmlXXNKryz3Vlsz6zG59Gu/Z0af7qOiu916dPQ9NskliiCTkM68bh3A6E+9fR4WNaFJQxTTqR05l9pLZ+r6nxFZwlNypK0Xrbs+q9Dy/Qbuaw8A29xbMY5YtORkYdVOODXcYGdLo8nj2/FlqNxMlrY2VtLshdozJcXCsfNdlIJ8vblV6HPIoArLPqVvov2/wA95rnw1ezRyEtj7XbQY3rJ23shGD/s+9AHX/D+efXY5vEs7sI9UKtawk5WK1QfuuBwJGJYue/FAHotABQB81xa7NobXvw7mAlW0sJZrW5HBFuu3ZHKD1cZOSvFAHpHg5Cmq3J/6cdPH5JJQByDRSakz6AG2Q6lrN41ywyC1vFsLwjHQyZAz2FAHa+DLZtAv77w/GQbO2MdxajnMUc+R5HP8KFMr9TQB6NQAUAf/9k="
+							alt="Linx" width="32px" height="32px"/>
+					</a>
+				</div>
+			</span>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>ite_102</nome>
+
+  <sessao>
+    <nome>geral</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Constante</descricao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>9</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>mvtobene</padrao>
+      <descricao>Constante</descricao>
+    </registro>
+
+    <registro>
+      <inicio>10</inicio>
+      <fim>14</fim>
+      <chave>seq</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Número do Registro</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>17</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+      <descricao>Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>18</inicio>
+      <fim>20</fim>
+      <chave>estabelecimento</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Estabelecimento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>21</inicio>
+      <fim>28</fim>
+      <chave>matricula</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Matrícula</descricao>
+    </registro>
+
+    <registro>
+      <inicio>29</inicio>
+      <fim>29</fim>
+      <chave>branco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Deixar em branco ou informar dígito correto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>30</inicio>
+      <fim>32</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Dependente</descricao>
+    </registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>35</fim>
+      <chave>beneficio</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Benefício</descricao>
+    </registro>
+
+    <registro>
+      <inicio>36</inicio>
+      <fim>37</fim>
+      <chave>mes</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Mês Referência</descricao>
+    </registro>
+
+    <registro>
+      <inicio>38</inicio>
+      <fim>41</fim>
+      <chave>ano</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Ano Referência</descricao>
+    </registro>
+
+    <registro>
+      <inicio>42</inicio>
+      <fim>52</fim>
+      <chave>total</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>Valor</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>58</fim>
+      <chave></chave>
+      <tipo>float_3_casas</tipo>
+      <padrao>1</padrao>
+      <descricao>Quantidade</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>60</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+      <descricao>Parcelas</descricao>
+    </registro>
+
+    <registro>
+      <inicio>61</inicio>
+      <fim>64</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Fórmula</descricao>
+    </registro>
+
+    <registro>
+      <inicio>65</inicio>
+      <fim>70</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Prestador Serviço</descricao>
+    </registro>
+
+    <registro>
+      <inicio>71</inicio>
+      <fim>72</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Dia Ocorrência</descricao>
+    </registro>
+
+    <registro>
+      <inicio>73</inicio>
+      <fim>74</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Mês Ocorrência</descricao>
+    </registro>
+
+    <registro>
+      <inicio>75</inicio>
+      <fim>78</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Ano Ocorrência</descricao>
+    </registro>
+
+    <registro>
+      <inicio>79</inicio>
+      <fim>93</fim>
+      <chave>documento</chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>94</inicio>
+      <fim>95</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Dia Pagamento Efetivo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>96</inicio>
+      <fim>97</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Mês Pagamento Efetivo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>98</inicio>
+      <fim>101</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+      <descricao>Ano Pagamento Efetivo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>102</inicio>
+      <fim>102</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Constante</descricao>
+    </registro>
+
+  </sessao>
+
+</layout>

@@ -1,0 +1,36 @@
+<relatorio dados="nota_fiscal_duplicada">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  empresa			tam=41
+4  numero_nota		tam=8
+5  data				tam=8
+6  cfop				tam=5
+7  serie			tam=5
+8  total			tam=10	alinha=esquerda
+</apelidos>
+<cab_pagina>
+#1                                                                 #2                
+-----------------------------------------------------------------------------------
+ 
+              R E L A T O R I O   D E   N O T A S   F I S C A I S
+                 C O M   N U M E R A C A O   D U P L I C A D A
+
+
++-------------------------------------------+----------+----------+-------+-------+
+| Empresa                                   | Nr. Nota | Data     | CFOP  | Serie |
++-------------------------------------------+----------+----------+-------+-------+
+</cab_pagina>
+<detalhe>
+| #3                                        | #4       | #5       | #6    | #7    |
+</detalhe>
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
++-------------------------------------------+----------+----------+-------+-------+
+| TOTAL DE NOTAS COM NUMERACAO DUPLICADA: #8                                      |
++---------------------------------------------------------------------------------+
+</rod_relat>
+
+<hash>8e81faed726eab548a9dfa15caa97d43</hash>
+</relatorio>

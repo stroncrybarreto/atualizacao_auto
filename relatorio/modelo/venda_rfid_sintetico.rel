@@ -1,0 +1,42 @@
+<relatorio dados="venda_rfid" ordem="funcionario_nome,funcionario_codigo,cartao">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo    		tam=103	alinha=centro
+
+5  funcionario_nome       tam=37
+6  funcionario_codigo     tam=37
+7  funcionario_cod_nome   tam=37
+8 cartao                  tam=15
+
+13 abastec_quantidade     tam=12  fmt=float3
+14 abastec_valor          tam=12  fmt=float2
+15 qtde_abastec           tam=11  alinha=centro
+
+16 subtotal_litros	      tam=12  fmt=float3	func=soma	campo=abastec_quantidade
+17 subtotal_valor	      tam=12  fmt=float2	func=soma	campo=abastec_valor	    
+18 subtotal_abastec	      tam=11  alinha=centro func=soma	campo=qtde_abastec	    
+
+</apelidos>
+<cab_pagina>
+#1                                                                                     #2
+-------------------------------------------------------------------------------------------------------
+
+#3
+
++---------------------------------------+-----------------+--------------+--------------+-------------+
+|              Funcionário              |   Cartão RFID   |  Quantidade  |    Valor     | Núm. abast. |
++---------------------------------------+-----------------+--------------+--------------+-------------+
+</cab_pagina>
+<detalhe>
+| #5                                    | #8              | #13          | #14          | #15         |
+</detalhe>
+<rod_relat>
++---------------------------------------+-----------------+--------------+--------------+-------------+
+| Total geral                                             | #16          | #17          | #18         |
++---------------------------------------------------------+--------------+--------------+-------------+
+</rod_relat>
+
+
+<hash>e34d0394cb1035afb51ffd5b02fec4e1</hash>
+</relatorio>

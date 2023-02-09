@@ -1,0 +1,72 @@
+<relatorio dados="lucro_produto" tamfonte="8" ordem="ordem,data">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  data_ini		        tam=10  fmt=data
+4  data_fim		        tam=10  fmt=data
+5  subtitulo		    tam=136 alinha=centro
+6  grupo_nome		    tam=40
+7  produto_nome		    tam=30
+8  venda			    tam=11  fmt=float2
+9  custo			    tam=13  fmt=float4
+10 lucro			    tam=11  fmt=float2
+11 subtotal_venda_	    tam=11  fmt=float2  func=soma campo=venda grupo=1
+12 subtotal_custo_	    tam=13  fmt=float4  func=soma campo=custo grupo=1
+13 subtotal_lucro_	    tam=11  fmt=float2  func=soma campo=lucro grupo=1
+14 total_venda_		    tam=11  fmt=float2  func=soma campo=venda
+15 total_custo_		    tam=13  fmt=float4  func=soma campo=custo
+16 total_lucro_		    tam=11  fmt=float2  func=soma campo=lucro
+17 qtde				    tam=11  fmt=float2
+18 preco_unit		    tam=7   fmt=float3
+19 subtotal_qtde_	    tam=11  fmt=float2  func=soma campo=qtde grupo=1
+20 data				    tam=10  fmt=data
+21 produto_codigo       tam=13   alinha=centro
+22 tributacao		    tam=9	fmt=float2	alinha=direita
+23 descricao_grupo	    tam=103
+24 valor_desconto	    tam=10	fmt=float2
+25 lucro_liq            tam=12	fmt=float2
+26 subtotal_lucro_liq_  tam=12  fmt=float2 func=soma campo=lucro_liq grupo=1
+27 total_lucro_liq_     tam=12  fmt=float2 func=soma campo=lucro_liq
+39 total_geral_quantidade		tam=11	fmt=float2	func=soma	campo=qtde
+99 titulo           tam=136  expr="VENDAS E LUCRO COM PRODUTOS"  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                      #2              
+----------------------------------------------------------------------------------------------------------------------------------------
+   
+#99
+#5
+
++---------------------------------------------------------------------------------------------------------+----------------------------+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="quebra,data">
+| #23                                                                                                     | Data: #20                  |
++---------------+--------------------------------+------------+-------------+---------------+-------------+-------------+--------------+
+|    Código     |            Produto             | Tributação |  Quantidade |  Valor custo  | Valor venda |    Lucro    |  Lucro líq.  |
++---------------+--------------------------------+------------+-------------+---------------+-------------+-------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #21           | #7              	              | #22      % | #17         | #9            | #8          | #10         | #25          |
+</detalhe>
+
+<rod_grupo nome="1">
++---------------+--------------------------------+------------+-------------+---------------+-------------+-------------+--------------+
+| Subtotal                                                    | #19         | #12           | #11         | #13         | #26          |
++-------------------------------------------------------------+-------------+---------------+-------------+-------------+--------------+
+</rod_grupo>
+
+<rod_relat>
+
++-------------------------------------------------------------+-------------+---------------+-------------+-------------+--------------+
+| Total geral                                                 | #39         | #15           | #14         | #16         | #27          |
++-------------------------------------------------------------+-------------+---------------+-------------+-------------+--------------+
+</rod_relat>
+
+<rod_pagina>
++-------------------------------------------------------------+-------------+---------------+-------------+-------------+--------------+
+</rod_pagina>
+
+<hash>e22e4d189f041942de43cc8517a24db9</hash>
+</relatorio>

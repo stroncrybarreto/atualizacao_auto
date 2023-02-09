@@ -1,0 +1,214 @@
+<relatorio dados="mapa_resumo_ecf3" paper_orientation="landscape" font_height="compact">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  numero_mapa          tam=6    alinha=esquerda
+4  data_ini             tam=10   fmt=data
+5  data_fim				tam=10   fmt=data
+6  titulo				tam=167	 alinha=centro
+</apelidos>
+
+<detalhe quebra_pagina="1">
+</detalhe>
+
+<subrelat dados="mapa_resumo_ecf3_tot">
+<apelidos>
+2  empresa_nome         tam=45
+3  inscr_est            tam=15
+4  cpf                  tam=18
+5  data                 tam=10 fmt=data
+6  endereco             tam=40
+7  cidade               tam=35
+8  estado               tam=8
+9  row                  tam=163
+10 row_total            tam=76
+11 data_movto			tam=10 fmt=data
+
+20 nr_ecf				tam=3
+21 cont_reinicio		tam=3
+22 cont_reducao			tam=6
+23 cupom_ini			tam=6
+24 cupom_fim			tam=6
+25 grande_total			tam=15	fmt=float2
+26 grande_total_i		tam=15	fmt=float2
+27 movimento_dia		tam=10	fmt=float2
+28 cancelamento			tam=10	fmt=float2
+29 desconto				tam=10	fmt=float2
+30 valor_contabil		tam=10	fmt=float2
+31 isencao				tam=10	fmt=float2
+32 nao_incide			tam=10	fmt=float2
+33 substituicao			tam=10	fmt=float2
+34 total_cancelado		tam=10	fmt=float2
+35 total_desconto		tam=10	fmt=float2
+36 total_contabil		tam=10	fmt=float2
+37 total_isento			tam=10	fmt=float2
+38 total_nao_incide		tam=10	fmt=float2
+39 total_substituicao	tam=10	fmt=float2
+40 titulo				tam=167 alinha=centro 
+41 rel_posto_nome       tam=60
+42 rel_data_hora        tam=18
+43 total_periodo_cancelado		tam=12	fmt=float2
+44 total_periodo_desconto		tam=12	fmt=float2
+45 total_periodo_contabil		tam=12	fmt=float2
+46 total_periodo_isento			tam=12	fmt=float2
+47 total_periodo_nao_incide		tam=12	fmt=float2
+48 total_periodo_substituicao	tam=12	fmt=float2
+
+</apelidos>
+
+<cab_relat>
+#41                                                                                                                                                    #42              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#40	
+</cab_relat>
+
+<cab_grupo nome="1" quebra="data_movto">
++--------------------------------------------------------------------------+--------------------------------------+--------------------------------+------------------+
+| Nome: #2                                                                 | Inscr. Estadual: #3                  | CNPJ: #4                       | Data: #11        |
++--------------------------------------------------------------------------+--------------------------------------+--------------------------------+------------------+
+| Endereço: #6                                                             | Município: #7                                                         | Estado: #8       |
++-----+--------------------------------+-----------------------------------+------------+------------+------------+------------+------------+------+-----+------------+    
+| ECF |      CONTADOR ORD. OPER.       |      TOTALIZADOR GERAL (GT)       |  Movimento |   Total    |   Total    |    Valor   | Não Tribut.|     Não    |   Subst.   |
+| Nr. | CRO |  RedZ  | Início |  Final |      Final      |     Início      |     Dia    | Cancelados | Descontos  |  Contábil  |  / Isenta  |  Incidente | Tributária |
++-----+-----+--------+--------+--------+-----------------+-----------------+------------+------------+------------+------------+------------+------------+------------+
+</cab_grupo>
+
+<detalhe>
+| #9                                                                                                                                                                  |
++-----+-----+--------+--------+--------+-----------------+-----------------+------------+------------+------------+------------+------------+------------+------------+
+</detalhe>
+
+<rod_grupo nome="1">
+| TOTAIS  DO  DIA                                                                       | #10                                                                         |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+------------+
+| TOTAIS DO PERÍODO (acumulado)                                                         |#43         |#44         |#45         |#46         |#47         |#48         |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+------------+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="mapa_resumo_ecf3_trib">
+<apelidos>
+1  cab_trib1            tam=163
+2  cab_trib2			tam=163
+3  row_trib             tam=163
+4  tot_imposto          tam=25		fmt=float2
+5  nome_resp            tam=40
+6  funcao_resp          tam=40
+7  ecf1					tam=38
+8  ecf2					tam=38
+9  ecf3					tam=38
+10 ecf4					tam=38
+11 ecf5					tam=38
+12 row_total            tam=141
+13 ecf6					tam=38
+14 ecf7					tam=38
+15 ecf8					tam=38
+16 ecf9					tam=38
+17 ecf10				tam=38
+18 ecf11				tam=38
+19 ecf12				tam=38
+20 ecf13				tam=38
+21 ecf14				tam=38
+22 ecf15				tam=38
+23 ecf16				tam=38
+24 ecf17				tam=38
+25 titulo_base			tam=167  expr="BASE  DE  CÁLCULO  DE  IMPOSTOS" alinha=centro
+
+28 titulo_linha_cab1	tam=3
+29 titulo_linha_cab2    tam=3
+30 primeira_linha_cab1	tam=8	alinha=centro
+31 primeira_linha_cab2	tam=8	alinha=centro
+32 primeira_linha_cab3	tam=8	alinha=centro
+33 primeira_linha_cab4	tam=8	alinha=centro
+34 primeira_linha_cab5	tam=8	alinha=centro
+35 primeira_linha_cab6	tam=8	alinha=centro
+36 primeira_linha_cab7	tam=8	alinha=centro
+37 primeira_linha_cab8	tam=8	alinha=centro
+38 primeira_linha_cab9	tam=8	alinha=centro
+39 primeira_linha_cab10	tam=8	alinha=centro
+40 primeira_linha_cab11	tam=8	alinha=centro
+41 primeira_linha_cab12	tam=8	alinha=centro
+42 segunda_linha_cab1	tam=8	alinha=centro
+43 segunda_linha_cab2	tam=8	alinha=centro
+44 segunda_linha_cab3	tam=8	alinha=centro
+45 segunda_linha_cab4	tam=8	alinha=centro
+46 segunda_linha_cab5	tam=8	alinha=centro
+47 segunda_linha_cab6	tam=8	alinha=centro
+48 segunda_linha_cab7	tam=8	alinha=centro
+49 segunda_linha_cab8	tam=8	alinha=centro
+50 segunda_linha_cab9	tam=8	alinha=centro
+51 segunda_linha_cab10	tam=8	alinha=centro
+52 segunda_linha_cab11	tam=8	alinha=centro	
+53 segunda_linha_cab12	tam=8	alinha=centro
+54 segunda_linha_cab13	tam=25	alinha=centro	
+55 linha_nr_ecf			tam=3
+56 coluna1				tam=8	fmt=float2
+57 coluna2				tam=8	fmt=float2
+58 coluna3				tam=8	fmt=float2
+59 coluna4				tam=8	fmt=float2
+60 coluna5				tam=8	fmt=float2
+61 coluna6				tam=8	fmt=float2
+62 coluna7				tam=8	fmt=float2
+63 coluna8				tam=8	fmt=float2
+64 coluna9				tam=8	fmt=float2
+65 coluna10				tam=8	fmt=float2
+66 coluna11				tam=8	fmt=float2
+67 coluna12				tam=8	fmt=float2
+68 coluna13				tam=8	fmt=float2
+69 total_coluna1		tam=8	fmt=float2
+70 total_coluna2		tam=8	fmt=float2
+71 total_coluna3		tam=8	fmt=float2
+72 total_coluna4		tam=8	fmt=float2
+73 total_coluna5		tam=8	fmt=float2
+74 total_coluna6		tam=8	fmt=float2
+75 total_coluna7		tam=8	fmt=float2
+76 total_coluna8		tam=8	fmt=float2
+77 total_coluna9		tam=8	fmt=float2
+78 total_coluna10		tam=8	fmt=float2
+79 total_coluna11		tam=8	fmt=float2
+80 total_coluna12		tam=8	fmt=float2
+81 total_coluna13		tam=8	fmt=float2
+87 row_total_periodo            tam=141
+88 total_imposto_periodo          tam=25		fmt=float2
+</apelidos>
+
+<cab_relat>
+
+#25
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+| #1                                                                                                                                                                  |
+| #2                                                                                                                                                                  |
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+</cab_relat>
+
+<detalhe>
+| #3                                                                                                                                                                  |
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+</detalhe>
+
+<rod_relat>
+| TOTAL  DO  DIA                                                                                                                                                      |
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+| #12                                                                                                                                     | #4                        |
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+| TOTAL DO PERÍODO (acumulado)                                                                                                                                        |
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+| #87                                                                                                                                     | #88                       |
++-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------------------+
+Observações                                                                                
++---------------------------------------------------------------------------------+                                  RESPONSÁVEL PELO ESTABELECIMENTO                 
+| #7                                       #17                                    |                 +-----------------------------------------------------------------+
+| #8                                       #18                                    |                 | Nome: #5                                                        |
+| #9                                       #19                                    |                 +-----------------------------------------------------------------+
+| #10                                      #20                                    |                 | Função: #6                                                      |
+| #11                                      #21                                    |                 +-----------------------------------------------------------------+
+| #13                                      #22                                    |                 | Assinatura:                                                     |
+| #14                                      #23                                    |                 +-----------------------------------------------------------------+
+| #15                                      #24                                    |
+| #16                                                                             |
++---------------------------------------------------------------------------------+ 
+</rod_relat>
+</subrelat>
+
+<hash>c13636a90b21aed3145db0161f087ffb</hash>
+</relatorio>

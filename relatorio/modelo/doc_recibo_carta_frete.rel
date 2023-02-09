@@ -1,0 +1,136 @@
+<relatorio dados="doc_recibo_carta_frete" docname="Modelo de recibo carta frete" mode="raw">
+<apelidos>
+1  empresa_codigo        tam=6
+2  empresa_nome			 tam=130  alinha=centro
+3  empresa_nome_reduzido tam=20
+4  empresa_cpf           tam=20
+5  empresa_inscr_est     tam=20
+6  empresa_endereco      tam=20
+7  empresa_bairro        tam=20
+8  empresa_cidade        tam=20
+9  empresa_estado        tam=20
+10 empresa_cep           tam=20
+11 empresa_fone          tam=10
+12 empresa_fax           tam=10
+13 empresa_email         tam=30
+14 empresa_cidade_estado tam=40  expr=empresa_cidade + " - " + empresa_estado
+15 endereco_completo     tam=130 alinha=centro  expr=empresa_endereco + " - " + empresa_cep + " - " + empresa_cidade + " - " + empresa_estado
+16 empresa_linha3        tam=130 alinha=centro  expr="Fone: " + empresa_fone + " - Fax: " + empresa_fax + " - CNPJ/CPF: " + empresa_cpf + " - I.E.: " + empresa_inscr_est
+17 empresa_linha4        tam=130 alinha=centro  expr="E-mail: " + empresa_email
+18 cliente_pessoa_id     tam=10
+19 cliente_nome          tam=40
+20 peso_saida            tam=20  fmt=float2   alinha=direita
+21 peso_chegada          tam=20  fmt=float2   alinha=direita
+22 perc_tolerancia       tam=20  fmt=float2   alinha=direita
+23 kg_tolerancia         tam=20  fmt=float2   alinha=direita
+24 preco_tonelada        tam=20  fmt=float2   alinha=direita
+25 valor_total_nf        tam=20  fmt=float2   alinha=direita
+26 valor_frete_bruto     tam=20  fmt=float2   alinha=direita
+27 quebra_kg             tam=20  fmt=float2   alinha=direita
+
+29 valor_adiantamento    tam=20  fmt=float2   alinha=direita
+30 valor_pedagio         tam=20  fmt=float2   alinha=direita
+31 valor_outras_despesas tam=20  fmt=float2   alinha=direita
+32 valor_estadia         tam=20  fmt=float2   alinha=direita
+33 valor_inss            tam=20  fmt=float2   alinha=direita
+34 valor_seguro          tam=20  fmt=float2   alinha=direita
+35 total_receitas        tam=20  fmt=float2   alinha=direita
+36 total_despesas        tam=20  fmt=float2   alinha=direita
+37 valor_liquido         tam=20  fmt=float2   alinha=direita
+38 nr_documento          tam=15
+39 cliente_placa         tam=15
+40 cliente_cod_nome      tam=60  alinha=esquerda  expr=str(cliente_pessoa_id) + "  " + cliente_nome
+41 operador_pessoa_nome  tam=30
+42 valor_estadia_ext1    tam=100
+43 valor_estadia_ext2    tam=100  
+44 valor_estadia_format  tam=130 alinha=centro expr='R$' + str(valor_estadia)
+45 valor_estadia_esq     tam=20  fmt=float2 alinha=esquerda expr=valor_estadia
+
+50 data_formatada        tam=40
+51 cidade_data_formatada tam=40  alinha=direita expr=empresa_cidade + ", " + data_formatada + "."
+52 valor_ext1            tam=60
+53 valor_ext_total       tam=60  alinha=strip  expr="(" + valor_ext1 + ")"
+
+95 titulo3               tam=130  alinha=centro  expr="REFERENTE"
+96 titulo2               tam=130  alinha=centro  expr="CÁLCULO DE ESTADIA"
+97 titulo                tam=130  alinha=centro  expr="CÁLCULO DO SALDO DE FRETE"
+98 rel_posto_nome		 tam=60
+99 rel_data_hora		 tam=129  alinha=direita
+</apelidos>
+
+<cab_pagina></cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa">
+
+
+#2
+#15
+#16
+#17
+
+---------------------------------------------------------------------------------------------------------------------------------
+#99
+
+#97
+
+Controle/Operador: #41
+          Empresa: #40
+      Ordem-Placa: #38                 #39
+----------------------------------------------------------------------------------------------------------------------------------	  
+Peso Saída.......: #20                                                 Peso Chegada...:  #21
+Perc. Tolerância.: #22                                                 Peso Tolerância:  #23
+Preço p/ Tonelada: #24                                                 Valor N. Fiscal:  #25
+==================================================================================================================================
+  RECEITAS                                                             DESPESAS
+==================================================================================================================================
+Frete Bruto......: #26                                                 Quebra..........: #27
+Pedágio..........: #30                                                 Adiantamento....: #29
+Valor Estadia....: #32                                                 Outras despesas.: #31
+                                                                       Valor INSS......: #33
+                                                                       Valor Seguro....: #34
+Total Receitas...: #35                                                 Total Despesas..: #36
+==================================================================================================================================
+TOTAL A RECEBER....#37
+==================================================================================================================================
+Cálculo para simples conferência.
+
+
+
+#2
+#15
+#16
+#17
+
+---------------------------------------------------------------------------------------------------------------------------------
+#99
+
+#96
+
+                                                             R$ #45
+
+Recebemos de #19
+a quantia #42                                                                                                                     
+Responsável pelo Cálculo: #41
+
+#95
+
+
+
+Obs.______________________________________________________________________________________________________________________________
+
+
+
+Cálculo para simples conferência.
+
+
+</cab_grupo>
+
+<detalhe></detalhe>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina></rod_pagina>
+
+<hash>ba3f541ef7cebc68e4b07e103dc2b677</hash>
+</relatorio>

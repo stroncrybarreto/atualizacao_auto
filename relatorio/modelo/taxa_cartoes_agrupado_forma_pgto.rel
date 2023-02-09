@@ -1,0 +1,54 @@
+<relatorio dados="taxa_cartoes">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  operacao_nome			tam=80 	alinha=centro
+4  periodo					tam=80	alinha=centro
+5  criterio					tam=80
+6  data_venda				tam=10
+7  data_baixa				tam=10
+8  agrupador				tam=80	alinha=centro
+9  valor_venda				tam=12	fmt=float2 alinha=direita
+10 valor_taxa				tam=11	fmt=float2 alinha=direita
+11 perc_taxa				tam=5	alinha=centro
+12 sub_total_venda			tam=13  fmt=float2 alinha=direita
+13 sub_total_taxa			tam=12	fmt=float2 alinha=direita
+16 total_venda				tam=13  fmt=float2 alinha=direita
+17 total_taxa				tam=12	fmt=float2 alinha=direita
+18 oper_nome				tam=10	alinha=centro
+19 oper_nome				tam=20
+99 titulo_principal			tam=80	expr='RELATÓRIO DE TAXAS DE CARTÕES'	alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                               #2
+---------------------------------------------------------------------------------
+
+#99
+#4
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome, agrupador">
+#8
+
+
+#5
++-------------------------------------------------------------------------------+
+| DATA VENDA | DATA BAIXA | OPERAÇÃO  | VALOR VENDA | VALOR TAXA |  PERCENTUAL  |
++-------------------------------------------------------------------------------+
+</cab_grupo>
+<detalhe>
+| #6         | #7         | #18       |#9           |#10         |     #11      |
+</detalhe>
+<rod_grupo nome="1">
++-------------------------------------------------------------------------------+
+| SUBTOTAL #19                        |#12          |#13         |              |
++-------------------------------------------------------------------------------+
+</rod_grupo>
+<rod_relat>
+
++-------------------------------------------------------------------------------+
+| TOTAL GERAL                         |#16          |#17         |              |
++-------------------------------------------------------------------------------+
+</rod_relat>
+</relatorio>

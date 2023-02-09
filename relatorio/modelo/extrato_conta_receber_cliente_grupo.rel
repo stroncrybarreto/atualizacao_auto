@@ -1,0 +1,65 @@
+<relatorio dados="extrato_conta_receber_cliente" ordem="pessoa_nome">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+5  titulo2					tam=146 alinha=centro
+6  titulo					tam=146 alinha=centro
+7  pessoa_nome				tam=100	alinha=esquerda
+8  conta_codigo				tam=10	alinha=esquerda
+9  documento				tam=6
+10 motivo_nome				tam=23
+11 data_emissao				tam=10	fmt=data
+12 data_vencto				tam=10	fmt=data
+13 data_pgto				tam=10  fmt=data
+14 valor					tam=11	fmt=float2
+15 valor_desconto			tam=10	fmt=float2
+16 valor_mora               tam=6	fmt=float2
+17 valor_pago				tam=11	fmt=float2
+18 total_valor_grupo        tam=11	fmt=float2	func=soma	campo=valor					grupo=1
+19 total_desc_grupo			tam=10	fmt=float2	func=soma	campo=valor_desconto		grupo=1
+20 total_mora_grupo			tam=6	fmt=float2	func=soma	campo=valor_mora			grupo=1
+21 total_pago_grupo			tam=11	fmt=float2	func=soma	campo=valor_pago			grupo=1
+80 total_valor				tam=11  fmt=float2  func=soma	campo=valor
+81 total_desc				tam=10  fmt=float2  func=soma	campo=valor_desconto 
+82 total_mora				tam=6	fmt=float2  func=soma   campo=valor_mora
+83 total_pago				tam=11	fmt=float2  func=soma	campo=valor_pago
+</apelidos>
+<cab_pagina>
+#1                                                                                                                               #2              
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+</cab_pagina>
+<cab_relat>
+                                                       EXTRATO DE CONTAS A RECEBER POR CLIENTE
+
+#5
+#6
+
+</cab_relat>
+<cab_grupo nome="1" quebra="pessoa_nome">
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+| Cliente: #7                                                                                                                                   |
++------------+-----------+-------------------------+--------------+--------------+------------+-------------+------------+--------+-------------+
+|   Conta    | Documento |       Histórico         | Data Emissão |  Vencimento  | Pagamento  |    Valor    |  Desconto  |  Mora  | Valor Pago  |
++------------+-----------+-------------------------+--------------+--------------+------------+-------------+------------+--------+-------------+
+</cab_grupo>
+<detalhe>
+| #8         | #9        | #10                     |  #11         |  #12         | #13        | #14         | #15        | #16    | #17         |
+</detalhe>
+<rod_grupo nome="1">
++------------+-----------+-------------------------+--------------+--------------+------------+-------------+------------+--------+-------------+
+| Total Cliente                                                                               | #18         | #19        | #20    | #21         |
++---------------------------------------------------------------------------------------------+-------------+------------+--------+-------------+
+
+</rod_grupo>
+<rod_pagina>
++------------------------------------------------------------------------------------------------------------------------------------------------
+</rod_pagina>
+<rod_relat>
++---------------------------------------------------------------------------------------------+-------------+------------+--------+-------------+
+| Total Geral                                                                                 | #80         | #81        | #82    | #83         |
++---------------------------------------------------------------------------------------------+-------------+------------+--------+-------------+
+</rod_relat>
+
+<hash>4a53396a02f078882754934c89f11e30</hash>
+</relatorio>

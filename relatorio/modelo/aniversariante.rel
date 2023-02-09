@@ -1,0 +1,42 @@
+<relatorio dados="aniversariante" ordem="pessoa_nome">
+
+<apelidos>
+1 rel_posto_nome  tam=110   alinha=esquerda
+2 rel_data_hora   tam=18	alinha=centro
+3 pessoa_codigo   tam=06    alinha=esquerda
+4 pessoa_nome     tam=30    alinha=esquerda
+5 data_nasc       tam=10    alinha=centro    fmt=data
+6 total           tam=10    alinha=direita   fmt=%d    func=contar
+7 empresa         tam=100   alinha=esquerda expr=empresa 
+8 email			  tam=30	alinha=esquerda
+9 fone			  tam=13	alinha=esquerda
+10 celular		  tam=13	alinha=esquerdai
+11 subtitulo	  tam=130	alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                              #2                
+---------------------------------------------------------------------------------------------------------------------------------
+
+                                                   RELATÓRIO DE ANIVERSARIANTES                                                   
+#11
+												   
+</cab_pagina>
+<cab_relat>
++--------+--------------------------------+---------------------------------------+---------------+---------------+-------------+
+| Código |              Nome              |              Email                    |  Celular      |   Telefone    | Nascimento  |
++--------+--------------------------------+---------------------------------------+---------------+---------------+-------------+
+</cab_relat>
+<detalhe>
+| #3     | #4                             | #8                                    | #10           | #9            | #5          |
+</detalhe>
+<rod_relat>
++--------+--------------------------------------------------------------------------------------------------------+-------------+
+| Total  |                                                                                                        | #6          |
++--------+--------------------------------------------------------------------------------------------------------+-------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+
+<hash>65a63ceeb5e4bd4fc945660800a75529</hash>
+</relatorio>

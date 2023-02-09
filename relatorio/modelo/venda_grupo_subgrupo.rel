@@ -1,0 +1,77 @@
+<relatorio dados="venda_grupo" ordem="pessoa_nome,grupo_nome,sub_grupo_nome">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18  
+3  titulo                tam=102  alinha=centro
+4  data_fim              tam=10  fmt=data
+5  pessoa_nome           tam=40
+6  grupo_nome            tam=35
+7  codigo                tam=6   alinha=centro 
+8  descricao             tam=40
+9  unid_med              tam=7   alinha=centro
+10 quantidade            tam=12  fmt=float3
+11 valor                 tam=15  fmt=float2
+12 total_qtde_grupo      tam=12  fmt=float3		func=soma	campo=quantidade	grupo=2
+13 total_valor_grupo     tam=15  fmt=float2		func=soma	campo=valor			grupo=2
+14 total_qtde_pessoa     tam=12  fmt=float3		func=soma	campo=quantidade	grupo=1
+15 total_valor_pessoa    tam=15  fmt=float2		func=soma	campo=valor			grupo=1
+16 total_qtde_sub_grupo  tam=12  fmt=float3		func=soma	campo=quantidade	grupo=3
+17 total_valor_sub_grupo tam=15  fmt=float2		func=soma	campo=valor			grupo=3
+18 sub_grupo_nome	     tam=35
+19 subtitulo             tam=102  alinha=centro
+20 total_qtde_geral     tam=12  fmt=float3		func=soma	campo=quantidade	grupo=4		
+21 total_valor_geral    tam=15  fmt=float2		func=soma	campo=valor			grupo=4
+99 titulo_principal         tam=103  expr="RELATÓRIO DE VENDAS POR GRUPO DE PRODUTOS"  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                   #2
+-----------------------------------------------------------------------------------------------------
+
+#99
+#3
+{VAZIA}#19
+</cab_pagina>
+<cab_grupo nome="4" quebra="titulo">
+</cab_grupo>
+<cab_grupo nome="1" quebra="pessoa_nome">
++---------------------------------------------------------------------------------------------------+
+|  EMPRESA: #5                                                                                      |
++---------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="pessoa_nome,grupo_nome">
+</cab_grupo>
+<cab_grupo nome="3" quebra="pessoa_nome,grupo_nome,sub_grupo_nome">
+|  GRUPO: #6                                   #18                                                  |
++--------+-----------------------------------------------+---------+--------------+-----------------+
+| Código |                   Descrição                   | Unidade |  Quantidade  |      Valor      |
++--------+-----------------------------------------------+---------+--------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #7     | #8                                            | #9      | #10          | #11             |
+</detalhe>
+<rod_grupo nome="2">
+|  Total grupo                                                     | #12          | #13             |
++------------------------------------------------------------------+--------------+-----------------+
+</rod_grupo>
+<rod_grupo nome="3">
++--------+-----------------------------------------------+---------+--------------+-----------------+
+|  Subtotal subgrupo                                               | #16          | #17             |
++------------------------------------------------------------------+--------------+-----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+|  Total empresa                                                   | #14          | #15             |
++------------------------------------------------------------------+--------------+-----------------+
+</rod_grupo>
+<rod_grupo nome="4">
+
+
++------------------------------------------------------------------+--------------+-----------------+
+|  Total geral                                                     | #20          | #21             |
++------------------------------------------------------------------+--------------+-----------------+
+</rod_grupo>
+<rod_pagina>
++---------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>f6518ee58204aa2346d19ea438dbd3b0</hash>
+</relatorio>

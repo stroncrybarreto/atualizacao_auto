@@ -1,0 +1,128 @@
+<relatorio dados="nota_fiscal_new" docname="Nota Fiscal Venda Buffon" mode="raw1">
+<apelidos>
+1   nota_numero_nota					tam=6	fmt=%06d
+2   nota_destinatario_nome				tam=45
+3   nota_destinatario_cpf				tam=20
+4   nota_destinatario_endereco			tam=35
+5   nota_destinatario_bairr				tam=15
+6   nota_destinatario_cep				tam=11
+7   nota_destinatario_municipio_nome	tam=27
+8   nota_destinatario_fone				tam=9
+9   nota_destinatario_uf				tam=3
+10  nota_destinatario_inscr_est			tam=20
+11  nota_data_emissao					tam=10	fmt=data
+12  nota_hora_saida						tam=5	fmt=hora
+13  produto_codigo						tam=6
+14  produto_descricao					tam=30
+15  produto_cst							tam=3
+16  produto_quantidade					tam=10	fmt=%.02f
+17  produto_preco_unit					tam=6	fmt=%.03f
+18  produto_valor						tam=9	fmt=%.02f
+19  produto_aliquota_icms				tam=5	fmt=%.02f
+20  nota_base_icmsi						tam=10	fmt=%.02f
+21  nota_valor_icms						tam=10	fmt=%.02f
+22  nota_base_subst						tam=12	fmt=%.02f
+23  nota_valor_subst					tam=12	fmt=%.02f
+24  nota_valor_nota						tam=10	fmt=%.02f
+25  nota_destinatario_placa				tam=8
+26  nota_destinatario_km				tam=6
+27  nota_cfop							tam=5
+28  nota_natureza_op_nome				tam=25
+29  produto_unid_med					tam=3
+30  nota_valor_desconto					tam=6	fmt=%.02f
+31  nota_obs_2							tam=20
+33  nota_obs_1							tam=66
+37  nota_valor_iss						tam=8 	fmt=%.02f
+38  nota_total_servico					tam=8 	fmt=%.02f
+41  nota_cupom_numero					tam=8
+43  nota_cupom_linha_1					tam=135
+44  nota_cupom_linha_2					tam=135
+101 serv1_codigo						tam=6
+102	serv1_descricao						tam=30
+103	serv1_quantidade					tam=11	fmt=%.01f
+103	serv1_valor							tam=11	fmt=%.02f
+111	serv2_codigo						tam=6
+112	serv2_descricao						tam=30
+113	serv2_valor							tam=11	fmt=%.02f
+121	serv3_codigo						tam=6
+122	serv3_descricao						tam=30
+123	serv3_valor							tam=11	fmt=%.02f
+124 nota_emitente_nome_reduzido			tam=17
+125	nota_emitente_municipio_nome		tam=20
+126	nota_emitente_endereco				tam=25
+127	nota_emitente_cep					tam=9
+128	nota_emitente_fone					tam=15
+129	nota_valor_ipi						tam=10	fmt=%.02f
+130	nota_total_produto					tam=10	fmt=%.02f
+131	nota_transportador_nome				tam=45
+132	nota_transportador_placa			tam=9
+133	nota_transportador_cnpj				tam=20
+134	nota_transportador_endereco			tam=35
+135	nota_transportador_municipio_nome	tam=27
+136	nota_transportador_uf				tam=3
+137	nota_transportador_inscr_est		tam=20
+138	nota_emitente_cpf					tam=20
+139	nota_emitente_inscr_est				tam=20
+140 nota_emitente_uf					tam=4	alinha=centro
+</apelidos>
+
+<cab_relat>
+{INI}{RST}{LPI08}{CPI17}{PGLEN}{68}                                                                                                #1      
+
+               #124              CIDADE: #125                      #140 XX
+               END.: #126                                                  
+               CEP.: #127        FONE: #128
+                                                                #138
+
+#28                           #27                               #139
+
+          
+#2                                                              #3                         #11
+
+#4                                                 #5                    #6                #11
+
+#7                                       #8               #9    #10                        #12
+
+
+
+</cab_relat>
+<detalhe fix_height="17">
+  #13    #14                                  #15  #29   #16           #17           #18         #19
+</detalhe>
+
+<rod_relat>
+    
+    ICMS SUBSTITUICAO CONFORME LIVRO 1. ART 27. PARAG 5                BASE SUB    R$ #22  
+    ICMS DEFERIDO - ART. 2  DO  LIV. III DO  RICMS/RS                    VL SUB.   R$ #23
+    APROVADO PELO DECRETO 37699/97                                       DESCONTO  R$ #30
+                                                                        
+
+       #20                 #21               0.00                    0.00                #130
+
+             0.00                0.00                0.00          #129                  #24
+ 
+
+
+
+
+
+
+
+
+CF: #41
+Placa: #25                                                                         
+KM: #26    
+
+
+
+
+
+
+         
+
+#11                                                                                   #1      
+{FF}
+</rod_relat>
+
+<hash>0c9382bb57bf6b100c41cafc66514908</hash>
+</relatorio>

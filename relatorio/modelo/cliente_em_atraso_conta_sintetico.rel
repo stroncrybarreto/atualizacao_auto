@@ -1,0 +1,56 @@
+<relatorio dados="cliente_em_atraso" ordem="pessoa_nome,conta_nome,min_vencto">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  titulo1          tam=110    alinha=centro
+4  titulo2          tam=110    alinha=centro
+5  pessoa_codigo    tam=8      alinha=esquerda
+6  pessoa_nome      tam=25
+7  min_vencto		    tam=10	  fmt=data     
+9  conta_nome		tam=20
+10 valor            tam=14     fmt=%.02f
+11 dias_atraso      tam=4 	    fmt=%d
+12 saldo		    tam=14 	fmt=%.02f func=soma campo=valor grupo=1
+13 pessoa_fone		tam=20     alinha=esquerda
+15 pessoa_celular   tam=15
+16 pessoa_contato	tam=12
+21 total_geral	    tam=14     fmt=float2    alinha=direita    func=soma campo=valor 
+23 empresa_nome	    tam=50    alinha=esquerda
+24 total_conta    tam=14 	fmt=%.02f    alinha=direita    func=soma    campo=valor    grupo=1
+25 pessoa_cod_nome  tam=50    expr=str(pessoa_codigo)+' - '+pessoa_nome alinha=esquerda
+26 conta_cod_nome  tam=50 expr=str(conta_codigo)+' - '+conta_nome alinha=esquerda
+27 pdd_faixa		tam=3	  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                            #2
+--------------------------------------------------------------------------------------------------------------
+   
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="conta_nome, conta_codigo">
++------------------------------------------------------------------------------------------------------------+
+| Conta: #26                                                                                                 |
++------------------------------------------------------+------------+----------------+------+----------------+
+|                       Cliente                        | Vencimento |      Valor     | Dias |     Saldo      |
++------------------------------------------------------+------------+----------------+------+----------------+
+</cab_grupo>
+<detalhe>
+| #25                                                  | #7         | #10            | #11  | #12            |
+</detalhe>
+<rod_grupo nome="1">
++------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+<rod_relat>
++------------------------------------------------------------------------------------------------------------+
+| Total geral                                                         #21                                    |
++------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+<rod_pagina>
+
++------------------------------------------------------+------------+----------------+------+----------------+
+</rod_pagina>
+<hash>fe730217f7b7564c73e6fe267565d9ef</hash>
+</relatorio>

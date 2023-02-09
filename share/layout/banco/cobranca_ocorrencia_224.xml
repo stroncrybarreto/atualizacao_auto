@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>cnab</nome>
+  
+  <ocorrencias>
+	<ocorrencia>
+		<id>1</id>
+		<codigo>02</codigo>
+		<nome>Entrada confirmada</nome>
+	</ocorrencia>
+	
+	<ocorrencia>
+		<id>2</id>
+		<codigo>03</codigo>
+		<nome>Entrada rejeitada</nome>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>CEP inválido - Não temos cobrador - Cobrador não localizado</nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Sigla do Estado inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Data de vencimento inválida ou fora do prazo mínimo</nome>
+		</motivo>
+		<motivo>
+			<codigo>06</codigo>
+			<nome>Código do banco inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Nome do sacado não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>10</codigo>
+			<nome>Logradouro não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>14</codigo>
+			<nome>Registro em duplicidade</nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Data de desconto inválida ou maior que a data de vencimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>20</codigo>
+			<nome>Valor de IOF não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>21</codigo>
+			<nome>Movimento para título não cadastrado no sistema</nome>
+		</motivo>
+		<motivo>
+			<codigo>22</codigo>
+			<nome>Valor de desconto + abatimento maior que o valor do título</nome>
+		</motivo>
+		<motivo>
+			<codigo>25</codigo>
+			<nome>CNPJ ou CPF do sacado inválido (aceito com restrições)</nome>
+		</motivo>
+		<motivo>
+			<codigo>26</codigo>
+			<nome>Espécie de documento inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>27</codigo>
+			<nome>Data de emissão do título inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>28</codigo>
+			<nome>Seu número não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>29</codigo>
+			<nome>CEP é igual a espaço ou zeros; ou não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>30</codigo>
+			<nome>Valor do título não numérico ou inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>36</codigo>
+			<nome>Valor de permanência (mora) não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>37</codigo>
+			<nome>Valor de permanência inconsistente, pois, dentro de um mês, será maior que o valor do título</nome>
+		</motivo>
+		<motivo>
+			<codigo>38</codigo>
+			<nome>Valor de desconto/abatimento não numérico ou inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>39</codigo>
+			<nome>Valor de abatimento não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>42</codigo>
+			<nome>Título já existente em nossos registros. Nosso número não aceito</nome>
+		</motivo>
+		<motivo>
+			<codigo>43</codigo>
+			<nome>Título enviado em duplicidade nesse movimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>44</codigo>
+			<nome>Título zerado ou em branco; ou não numérico na remessa</nome>
+		</motivo>
+		<motivo>
+			<codigo>46</codigo>
+			<nome>Título enviado fora da faixa de Nosso Número, estipulada para o cliente</nome>
+		</motivo>
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Tipo/Número de inscrição sacador/avalista inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>52</codigo>
+			<nome>Sacador/avalista não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>53</codigo>
+			<nome>Prazo de vencimento do título excede ao da contratação</nome>
+		</motivo>
+		<motivo>
+			<codigo>54</codigo>
+			<nome>Banco informado não é nosso correspondente 140-142</nome>
+		</motivo>
+		<motivo>
+			<codigo>55</codigo>
+			<nome>Banco correspondente informado não cobra este CEP ou não possui faixas de CEP</nome>
+		</motivo>
+		<motivo>
+			<codigo>56</codigo>
+			<nome>Nosso número no correspondente não foi informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>57</codigo>
+			<nome>Remessa contendo duas instruções incompatíveis - não protestar e dias de protesto ou prazo para protesto inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>58</codigo>
+			<nome>Entradas rejeitadas - reprovado no represamento para análise</nome>
+		</motivo>
+		<motivo>
+			<codigo>60</codigo>
+			<nome>CNPJ/CPF do sacado inválido - título recusado</nome>
+		</motivo>
+		<motivo>
+			<codigo>87</codigo>
+			<nome>Excede prazo máximo entre emissão e vencimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>AA</codigo>
+			<nome>Serviço de cobrança inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>AB</codigo>
+			<nome>Serviço de "0" ou "5" e banco cobrador diferente zeros</nome>
+		</motivo>
+		<motivo>
+			<codigo>AE</codigo>
+			<nome>Títulos não possui abatimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>AI</codigo>
+			<nome>Nossa carteira inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>AJ</codigo>
+			<nome>Modalidade com bancos correspondentes inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>AL</codigo>
+			<nome>Sacado impedido de entrar nesta cobrança</nome>
+		</motivo>
+		<motivo>
+			<codigo>AU</codigo>
+			<nome>Data da ocorrência inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>AV</codigo>
+			<nome>Valor da tarifa de cobrança inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>AX</codigo>
+			<nome>Título em pagamento parcial</nome>
+		</motivo>
+		<motivo>
+			<codigo>BC</codigo>
+			<nome>Análise gerencial-sacado inválido p/operação crédito</nome>
+		</motivo>
+		<motivo>
+			<codigo>BD</codigo>
+			<nome>Análise gerencial-sacado inadimplente</nome>
+		</motivo>
+		<motivo>
+			<codigo>BE</codigo>
+			<nome>Análise gerencial-sacado difere do exigido</nome>
+		</motivo>
+		<motivo>
+			<codigo>BF</codigo>
+			<nome>Análise gerencial-vencto excede vencto da operação de crédito</nome>
+		</motivo>
+		<motivo>
+			<codigo>BG</codigo>
+			<nome>Análise gerencial-sacado com baixa liquidez</nome>
+		</motivo>
+		<motivo>
+			<codigo>BH</codigo>
+			<nome>Análise gerencial-sacado excede concentração</nome>
+		</motivo>
+		<motivo>
+			<codigo>CC</codigo>
+			<nome>Valor de iof incompatível com a espécie documento</nome>
+		</motivo>
+		<motivo>
+			<codigo>CD</codigo>
+			<nome>Efetivação de protesto sem agenda válida</nome>
+		</motivo>
+		<motivo>
+			<codigo>CE</codigo>
+			<nome>Título não aceito - pessoa física</nome>
+		</motivo>
+		<motivo>
+			<codigo>CF</codigo>
+			<nome>Excede prazo máximo da entrada ao vencimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>CG</codigo>
+			<nome>Título não aceito - por análise pelo banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>CH</codigo>
+			<nome>Título em espera - em análise pelo banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>CJ</codigo>
+			<nome>Análise gerencial-vencto do título abaixo przcurto</nome>
+		</motivo>
+		<motivo>
+			<codigo>CK</codigo>
+			<nome>Análise gerencial-vencto do título abaixo przlongo</nome>
+		</motivo>
+		<motivo>
+			<codigo>CS</codigo>
+			<nome>Título rejeitado pela checagem de duplicatas</nome>
+		</motivo>
+		<motivo>
+			<codigo>DA</codigo>
+			<nome>Análise gerencial - Entrada de título descontado com limite cancelado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DB</codigo>
+			<nome>Análise gerencial - Entrada de Título Descontado com limite vencido</nome>
+		</motivo>
+		<motivo>
+			<codigo>DC</codigo>
+			<nome>Análise gerencial - cedente com limite cancelado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DD</codigo>
+			<nome>Análise gerencial - cedente é sacado e teve seu limite cancelado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DE</codigo>
+			<nome>Análise gerencial - apontamento no Serasa</nome>
+		</motivo>
+		<motivo>
+			<codigo>DG</codigo>
+			<nome>Endereço sacador/avalista não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DH</codigo>
+			<nome>Cep do sacador/avalista não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DI</codigo>
+			<nome>Cidade do sacador/avalista não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DJ</codigo>
+			<nome>Estado do sacador/avalista inválido ou n informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DM</codigo>
+			<nome>Cliente sem Código de Flash cadastrado no cobrador</nome>
+		</motivo>
+		<motivo>
+			<codigo>DN</codigo>
+			<nome>Título Descontado com Prazo ZERO - Recusado</nome>
+		</motivo>
+		<motivo>
+			<codigo>DP</codigo>
+			<nome>Data de Referência menor que a Data de Emissão do Título</nome>
+		</motivo>
+		<motivo>
+			<codigo>DT</codigo>
+			<nome>Nosso Número do Correspondente não deve ser informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>EB</codigo>
+			<nome>HSBC não aceita endereço de sacado com mais de 38 caracteres</nome>
+		</motivo>
+		<motivo>
+			<codigo>G1</codigo>
+			<nome>Endereço do sacador incompleto ( lei 12.039)</nome>
+		</motivo>
+		<motivo>
+			<codigo>G2</codigo>
+			<nome>Sacador impedido de movimentar</nome>
+		</motivo>
+		<motivo>
+			<codigo>G3</codigo>
+			<nome>Concentração de cep não permitida</nome>
+		</motivo>
+		<motivo>
+			<codigo>G4</codigo>
+			<nome>Valor do título não permitido</nome>
+		</motivo>
+	</ocorrencia>
+								
+	<ocorrencia>
+		<id>3</id>
+		<codigo>05</codigo>
+		<nome>Campo livre alterado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>4</id>
+		<codigo>06</codigo>
+		<nome>Liquidação normal</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>5</id>
+		<codigo>08</codigo>
+		<nome>Liquidação em cartório</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>6</id>
+		<codigo>09</codigo>
+		<nome>Baixado automaticamente</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>7</id>
+		<codigo>10</codigo>
+		<nome>Baixado por ter sido liquidado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>8</id>
+		<codigo>12</codigo>
+		<nome>Abatimento concedido</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>9</id>
+		<codigo>13</codigo>
+		<nome>Abatimento cancelado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>10</id>
+		<codigo>14</codigo>
+		<nome>Vencimento alterado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>11</id>
+		<codigo>15</codigo>
+		<nome>Baixa rejeitada</nome>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Solicitação de baixa para título já baixado ou liquidado</nome>
+		</motivo>
+		<motivo>
+			<codigo>06</codigo>
+			<nome>Solicitação de baixa para título não registrado no sistema</nome>
+		</motivo>
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Solicitação de baixa para título em float</nome>
+		</motivo>
+
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>12</id>
+		<codigo>16</codigo>
+		<nome>Instrução rejeitada</nome>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Data de vencimento não numérica ou inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Data de vencimento inválida ou fora do prazo mínimo</nome>
+		</motivo>
+		<motivo>
+			<codigo>14</codigo>
+			<nome>Registro em duplicidade</nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Data de desconto inválida ou maior que a data de vencimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>20</codigo>
+			<nome>Campo livre não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>21</codigo>
+			<nome>Título não registrado no sistema</nome>
+		</motivo>
+		<motivo>
+			<codigo>22</codigo>
+			<nome>Título baixado ou liquidado</nome>
+		</motivo>
+		<motivo>
+			<codigo>26</codigo>
+			<nome>Espécie de documento inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>27</codigo>
+			<nome>Instrução não aceita, por não ter sido emitida ordem de protesto ao cartório</nome>
+		</motivo>
+		<motivo>
+			<codigo>28</codigo>
+			<nome>Título tem instrução de cartório ativa</nome>
+		</motivo>
+		<motivo>
+			<codigo>29</codigo>
+			<nome>Título não tem instrução de carteira ativa</nome>
+		</motivo>
+		<motivo>
+			<codigo>30</codigo>
+			<nome>Existe instrução de não protestar, ativa para o título</nome>
+		</motivo>
+		<motivo>
+			<codigo>36</codigo>
+			<nome>Valor de permanência(mora) não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>37</codigo>
+			<nome>Título descontado - Instrução não permitida para a carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>38</codigo>
+			<nome>Valor do abatimento não numérico ou maior que a soma do valor do título + permanência + multa</nome>
+		</motivo>
+		<motivo>
+			<codigo>39</codigo>
+			<nome>Título em cartório</nome>
+		</motivo>
+		<motivo>
+			<codigo>40</codigo>
+			<nome>Instrução recusada - Reprovado no represamento para análise</nome>
+		</motivo>
+		<motivo>
+			<codigo>44</codigo>
+			<nome>Título zerado ou em branco; ou não numérico na remessa</nome>
+		</motivo>
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Tipo/Número de inscrição sacador/avalista inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>53</codigo>
+			<nome>Prazo de vencimento do título excede ao da contratação</nome>
+		</motivo>
+		<motivo>
+			<codigo>57</codigo>
+			<nome>Remessa contendo duas instruções incompatíveis - não protestar e dias de protesto ou prazo para protesto inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>AA</codigo>
+			<nome>Serviço de cobrança inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>AE</codigo>
+			<nome>Título não possui abatimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>AG</codigo>
+			<nome>Movimento não permitido - Título à vista ou contra apresentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>AH</codigo>
+			<nome>Cancelamento de valores inválidos</nome>
+		</motivo>
+		<motivo>
+			<codigo>AI</codigo>
+			<nome>Nossa carteira inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>AK</codigo>
+			<nome>Título pertence a outro cliente</nome>
+		</motivo>
+		<motivo>
+			<codigo>AU</codigo>
+			<nome>Data da ocorrência inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>AY</codigo>
+			<nome>Título deve estar em aberto e vencido para acatar protesto</nome>
+		</motivo>
+		<motivo>
+			<codigo>CB</codigo>
+			<nome>Título possui protesto efetivado/a efetivar hoje</nome>
+		</motivo>
+		<motivo>
+			<codigo>CT</codigo>
+			<nome>Título já baixado</nome>
+		</motivo>
+		<motivo>
+			<codigo>CW</codigo>
+			<nome>Título já transferido</nome>
+		</motivo>
+		<motivo>
+			<codigo>DO</codigo>
+			<nome>Título em Prejuízo</nome>
+		</motivo>
+		<motivo>
+			<codigo>99</codigo>
+			<nome>Ocorrência desconhecida na remessa</nome>
+		</motivo>
+
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>13</id>
+		<codigo>19</codigo>
+		<nome>Confirmação de instrução de protesto</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>14</id>
+		<codigo>20</codigo>
+		<nome>Confirmação de sustar protesto</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>15</id>
+		<codigo>22</codigo>
+		<nome>Seu número alterado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>16</id>
+		<codigo>23</codigo>
+		<nome>Tútulo enviado a cartório</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>17</id>
+		<codigo>24</codigo>
+		<nome>Confirma recebimento de ordem de não protestar</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>18</id>
+		<codigo>28</codigo>
+		<nome>Débito de tarifas/custas - correspondentes</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>19</id>
+		<codigo>40</codigo>
+		<nome>Tarifa de entrada (debitada na liquidação)</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>20</id>
+		<codigo>43</codigo>
+		<nome>Baixado por ter sido protestado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>21</id>
+		<codigo>96</codigo>
+		<nome>Tarifa sobre instuções - mês anterior</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>22</id>
+		<codigo>97</codigo>
+		<nome>Tarifa sobre baixas - mês anterior</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>23</id>
+		<codigo>98</codigo>
+		<nome>Tarifa sobre entradas - mês anterior</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>24</id>
+		<codigo>99</codigo>
+		<nome>Tarifa sobre instruções de protesto/sustação - mês anterior</nome>
+	</ocorrencia>
+ </ocorrencias>
+</layout>

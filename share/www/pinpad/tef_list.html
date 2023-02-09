@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>AUTOSYSTEM</title>
+	</head>
+	<body>
+		<form action="/done/" method="POST">
+			<input type="hidden" tal:repeat="tef tef_list" tal:attributes="name tef/name; value tef/value">
+			<p>Selecione a forma de pagamento
+			<select name="tef_motivo">
+				<option tal:repeat="motivo motivo_list" tal:attributes="value motivo/grid" tal:content="motivo/nome"></option>
+			</select>
+			<p><input type="submit" name="bt_confirmar" value="Confirmar">
+		</form>
+	</body>
+</html>

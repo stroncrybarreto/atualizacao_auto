@@ -1,0 +1,86 @@
+<relatorio dados="relacao_cheque" ordem="empresa_codigo,quebra" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora        tam=16
+3  titulo1 		        tam=150	alinha=centro
+4  titulo2 		        tam=150 alinha=centro
+5  empresa_codigo	    tam=2
+6  empresa_nome 	    tam=60
+7  data                 tam=10 	fmt=data  alinha=centro
+8  turno            	tam=5 	fmt=%d  alinha=centro
+9  banco		        tam=5   alinha=centro
+10 documento		    tam=10  alinha=centro
+11 vencto		        tam=10 	fmt=data  alinha=centro
+12 titular		        tam=25
+13 valor                tam=10 	fmt=float2 alinha=direita
+14 data_baixa		    tam=10
+15 subtotal		        tam=10 	fmt=float2 alinha=direita
+16 total		        tam=10 	fmt=float2 alinha=direita
+17 count_empresa	    tam=98
+18 count_total		    tam=98
+19 agencia				tam=7   alinha=centro
+20 conta_corrente		tam=14  alinha=centro
+21 placa                tam=8   alinha=centro
+22 cpf					tam=18
+23 dias_atraso          tam=4
+24 cheque_alinea		tam=6   alinha=centro  
+25 alinea_nome			tam=60
+26 media_atraso         tam=6   fmt=float2
+27 total_media_atraso   tam=6   fmt=float2
+28 situacao             tam=30
+29 conta_baixa          tam=9   alinha=centro
+30 portador_cheque      tam=10  alinha=centro
+31 funcionario_cod_nome tam=11
+32 valor_limite         tam=10  fmt=float2
+98 empresa_cod_nome     tam=120 expr=str(empresa_codigo) + ' - ' + empresa_nome
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                    #2                
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#3
+#4
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo">
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #98                                                                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,quebra">
+| Situação: #28                                                                                                                                      |
++------------+-------+------------+-------+---------+----------------+------------+------------+---------------------------+------------+------------+
+|   Emissão  | Turno | Vencimento | Banco | Agência | Conta corrente | Nr. cheque |  Con. par. |     Titular do cheque     |   Valor    | Data baixa |
++------------+-------+------------+-------+---------+----------------+------------+------------+---------------------------+------------+------------+
+</cab_grupo>
+
+<detalhe>
+| #7         | #8    | #11        | #9    | #19     | #20            | #10        | #29        | #12                       | #13        | #14        |
+</detalhe>
+
+<rod_pagina>
++------------+-------+------------+-------+---------+----------------+------------+------------+---------------------------+------------+------------+
+</rod_pagina>
+
+<rod_grupo nome="1">
+
+
+</rod_grupo>
+
+<rod_grupo nome="2">
++------------+-------+------------+-------+---------+----------------+------------+------------+---------------------------+------------+------------+
+| #17                                                                                                                      | #15        |            |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+
+</rod_grupo>
+
+<rod_relat>
+
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+
+| #18                                                                                                                      | #16        |            |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+
+</rod_relat>
+
+<hash>8c212efa5c5ed9332d1afeaafd26af75</hash>
+</relatorio>

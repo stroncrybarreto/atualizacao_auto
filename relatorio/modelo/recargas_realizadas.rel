@@ -1,0 +1,38 @@
+<relatorio dados="recargas_realizadas">
+<apelidos>
+1  rel_posto_nome      	tam=60
+2  rel_data_hora       	tam=18  
+3  titulo              	tam=9999
+4  titulo2             	tam=9999 expr="RELATÓRIO DE RECARGAS REALIZADAS" alinha=centro
+5  traco               	tam=9999
+6  linha_cab	       	tam=9999
+7  dado		       		tam=9999
+8  total				tam=9999
+9  linha_sub_data		tam=9999
+10 nome_data			tam=9999
+</apelidos>
+<cab_pagina>
+#10
+#9
+   
+#3
+
+
+#5
+#6
+#5
+</cab_pagina>
+
+<detalhe>
+#7
+</detalhe>
+
+<rod_relat>
+#5
+#8
+#5
+</rod_relat>
+
+
+<hash>37ea5df9a38f710c334e430754bd77dd</hash>
+</relatorio>

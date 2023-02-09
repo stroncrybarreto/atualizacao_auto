@@ -1,0 +1,38 @@
+<relatorio dados="cliente_conceito">
+<apelidos>
+1  rel_posto_nome		tam=40
+2  rel_data_hora		tam=18
+3  codigo				tam=7		alinha=esquerda
+4  nome					tam=26		alinha=esquerda
+5  conceito		 		tam=4		alinha=esquerda
+6  limite_credito		tam=11		alinha=esquerda fmt=%.02f
+7  regra_nome			tam=25		alinha=esquerda
+</apelidos>
+
+<cab_pagina>
+#1                                                            #2                Sintetico
+------------------------------------------------------------------------------------------
+
+
+    			C L I E N T E  P O R  C O N C E I T O 
+
+----------+----------------------------+----------+------------+-------------------------+
+|Codigo   |  Nome                      | Conceito | Limite     | Regra de preco          |
+----------+----------------------------+----------+------------+-------------------------+
+</cab_pagina>
+
+<detalhe>
+| #3      | #4                         | #5       | #6         |#7                       |
+</detalhe>
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_relat>
+----------+----------------------------+----------+------------+-------------------------+
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>f9a3c93da555d7aaa5d4c8c459b33301</hash>
+</relatorio>

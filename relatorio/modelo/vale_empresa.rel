@@ -1,0 +1,54 @@
+<relatorio dados="vale" ordem="hora,numero_vale,nr_cupom">
+<apelidos>
+1  rel_posto_nome		tam=100
+2  rel_data_hora		tam=18
+3  data_emissao			tam=14
+4  numero_vale			tam=12	alinha=centro
+5  valor				tam=12  fmt=float2
+6  tipo_nome			tam=32
+7  status				tam=23
+8  nr_cupom				tam=10 alinha=centro
+9  subtitulos			tam=123 alinha=centro
+10 tot_valor_emp		tam=12  fmt=float2   func=soma   campo=valor  grupo=1
+11 tot_valor			tam=12  fmt=float2   func=soma   campo=valor
+12 empresa				tam=10
+13 empresa_nome			tam=113
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                        #2
+--------------------------------------------------------------------------------------------------------------------------
+ 
+                                                           VALES
+{VAZIA}#9
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome,empresa">
+
+Empresa: #13
++----------------+--------------+------------+----------------------------------+-------------------------+--------------+
+|  Data Emissão  |   Nr. Vale   | Nr. Cupom  |               Tipo               |          Status         |     Valor    |
++----------------+--------------+------------+----------------------------------+-------------------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #3             | #4           | #8         | #6                               | #7                      | #5           |
+</detalhe>
+
+<rod_grupo nome="1">
++----------------+--------------+------------+----------------------------------+-------------------------+--------------+
+| SUBTOTAL                                                                                                | #10          |
++---------------------------------------------------------------------------------------------------------+--------------+
+</rod_grupo>
+
+<rod_relat>
+
++---------------------------------------------------------------------------------------------------------+--------------+
+| TOTAL                                                                                                   | #11          |
++---------------------------------------------------------------------------------------------------------+--------------+
+</rod_relat>
+
+
+<hash>c4ac9b7a88bb23c5e23d7cffcbd6eac0</hash>
+</relatorio>

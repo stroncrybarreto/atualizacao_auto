@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>topazio</nome>
+  
+  <instrucao>
+    <id>1</id>
+	<codigo>1</codigo>
+	<nome>Entrada de Títulos</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>2</id>
+	<codigo>2</codigo>
+	<nome>Pedido de Baixa</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>3</id>
+	<codigo>4</codigo>
+	<nome>Concessão de Abatimento</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>4</id>
+	<codigo>5</codigo>
+	<nome>Cancelamento do Abatimento</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>6</id>
+	<codigo>6</codigo>
+	<nome>Alteração de Vencimento</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>7</id>
+	<codigo>9</codigo>
+	<nome>Pedido de Protesto</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>8</id>
+	<codigo>18</codigo>
+	<nome>Sustar Protesto e Baixar Título</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>9</id>
+	<codigo>19</codigo>
+	<nome>Sustar Protesto e Manter em Carteira</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>10</id>
+	<codigo>31</codigo>
+	<nome>Alteração de Outros Dados</nome>
+  </instrucao>	
+
+  <instrucao>
+    <id>11</id>
+	<codigo>40</codigo>
+	<nome>Cancelamento do Título</nome>
+  </instrucao>	 
+
+  <instrucao>
+    <id>12</id>
+	<codigo>41</codigo>
+	<nome>Liquidação Total via caixa em cheque a compensar</nome>
+  </instrucao>	
+
+  <instrucao>
+    <id>13</id>
+	<codigo>42</codigo>
+	<nome>Liquidação Total via caixa em dinheiro</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>14</id>
+	<codigo>43</codigo>
+	<nome>Liquidação parcial via caixa em cheque a compensar</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>15</id>
+	<codigo>44</codigo>
+	<nome>Liquidação parcial via caixa em dinheiro</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>16</id>
+	<codigo>45</codigo>
+	<nome>Liquidação Total via caixa em cheque Compensado</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>17</id>
+	<codigo>46</codigo>
+	<nome>Liquidação parcial via caixa em cheque Compensado</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>18</id>
+	<codigo>47</codigo>
+	<nome>Estorno total do cheque a compensar por devolução</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>19</id>
+	<codigo>48</codigo>
+	<nome>Estorno parcial do cheque a compensar por devolução</nome>
+  </instrucao>
+
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layout>
+    <nome>Sicoob</nome>
+
+    <sessao>
+        <nome>critica</nome>
+
+        <registro>
+            <id>1</id>
+            <codigo>00</codigo>
+            <tipo>liquidar</tipo>
+            <descricao>Crédito ou Débito Efetuado</descricao>
+        </registro>
+        <registro>
+            <id>2</id>
+            <codigo>AJ</codigo>
+            <tipo>rejeitar</tipo>
+            <descricao>Tipo de Movimento Inválido</descricao>
+        </registro>
+        <registro>
+            <id>3</id>
+            <codigo>BD</codigo>
+            <tipo>agendar</tipo>
+            <descricao>Inclusão Efetuada Com Sucesso</descricao>
+        </registro>
+        <registro>
+            <id>4</id>
+            <codigo>PD</codigo>
+            <tipo>agendar</tipo>
+            <descricao>Transação Pendente de Assinatura</descricao>
+        </registro>
+        <registro>
+            <id>5</id>
+            <codigo>BF</codigo>
+            <tipo>rejeitar</tipo>
+            <descricao>Transação Rejeitada</descricao>
+        </registro>
+    </sessao>
+</layout>

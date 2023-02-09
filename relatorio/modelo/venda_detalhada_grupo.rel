@@ -1,0 +1,59 @@
+<relatorio dados="venda_detalhada" tamfonte="8" ordem="grupo_nome,data,hora,nr_cupom,produto_nome,pessoa_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  subtitulo		tam=152	                     alinha=centro
+4  data			    tam=10	 fmt=data
+5  hora			    tam=5
+6  bico			    tam=4	                     alinha=centro
+7  produto_nome		tam=26
+8  quantidade		tam=14	 fmt=float3
+9  preco_unit		tam=11	 fmt=float3
+10 valor		    tam=14	 fmt=float2
+11 forma_pgto		tam=18
+12 grupo    		tam=100
+13 quant_total		tam=14   fmt=float3          func=soma         campo=quantidade  grupo=1
+14 valor_total		tam=14   fmt=float2          func=soma         campo=valor       grupo=1
+15 titulo           tam=152	                     alinha=centro
+16 total_quantidade	tam=14   fmt=float3          func=soma         campo=quantidade
+17 total_valor		tam=14   fmt=float2          func=soma         campo=valor
+18 nr_cupom			tam=9                        alinha=centro
+19 hora_abastec     tam=9                        alinha=centro
+31 grupo_cod_nome	tam=110  	expr=str(grupo_codigo)+" - "+str(grupo_nome)
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                      #2
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#15
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo">
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Grupo produto: #31                                                                                                                                   |
++------------+-------+------------+------+----------------------------+-----------+----------------+-------------+----------------+--------------------+
+|    Data    | Hora  | Hora abst. | Bico |          Produto           | Documento |   Quantidade   | Preço unit. |     Valor      | Forma de pagamento |
++------------+-------+------------+------+----------------------------+-----------+----------------+-------------+----------------+--------------------+
+</cab_grupo>
+<detalhe>
+| #4         | #5    | #19        | #6   | #7                         | #18       | #8             | #9          | #10            | #11                |
+</detalhe>
+<rod_grupo nome="1">
++------------+-------+------------+------+----------------------------+-----------+----------------+-------------+----------------+--------------------+
+| Subtotal                                                                        | #13            |             | #14            |                    |
++---------------------------------------------------------------------------------+----------------+-------------+----------------+--------------------+
+</rod_grupo>
+<rod_relat>
+
++---------------------------------------------------------------------------------+----------------+-------------+----------------+--------------------+
+| Total                                                                           | #16            |             | #17            |                    |
++---------------------------------------------------------------------------------+----------------+-------------+----------------+--------------------+
+</rod_relat>
+<rod_pagina>
++------------+-------+------------+------+----------------------------+-----------+----------------+-------------+----------------+--------------------+
+</rod_pagina>
+
+<hash>3f89325dcfbeddaff2d2296eaa25fa28</hash>
+</relatorio>

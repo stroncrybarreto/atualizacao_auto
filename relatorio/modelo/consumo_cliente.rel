@@ -1,0 +1,115 @@
+<relatorio dados="consumo_cliente_main" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome     	tam=60
+2  rel_data_hora      	tam=18              
+3  subtitulo          	tam=171   	alinha=centro
+888	page_num			tam=3		alinha=esquerda
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                           #2               - Pág.: #888
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="consumo_cliente" ordem="quebra,cpf,hora">
+<apelidos>
+6  pessoa_nome		   	tam=54
+7  data                	tam=8
+8  hora                	tam=16 
+9  placa               	tam=7
+10 km                  	tam=7   alinha=centro
+11 documento           	tam=8   alinha=centro
+12 produto_nome        	tam=29
+13 quantidade          	tam=12  fmt=float3
+14 unid_med            	tam=3
+15 preco_unit          	tam=10  fmt=float3
+16 valor               	tam=14  fmt=float2
+17 total_litros        	tam=12  fmt=float3   func=soma   campo=quantidade   grupo=2
+18 total               	tam=14  fmt=float2   func=soma   campo=valor        grupo=2
+19 doc_pgto            	tam=8   alinha=centro
+20 hora_abastec_hm     	tam=5
+21 desconto            	tam=6  fmt=float2
+22 total_desconto      	tam=6  fmt=float2    func=soma   campo=desconto     grupo=2
+23 valor_final         	tam=14 fmt=float2    expr=valor+desconto
+24 total_valor_final   	tam=14 fmt=float2    func=soma   campo=valor_final  grupo=2
+25 cpf                 	tam=18
+26 municipio           	tam=40
+27 uf                  	tam=3
+28 pessoa_codigo	   	tam=5	alinha=esquerda
+29 pessoa_cod_nome	   	tam=50
+30 nota_fiscal		    tam=12
+</apelidos>
+<cab_grupo nome="2" quebra="quebra,cpf">
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cliente: #29                                                 CPF/CNPJ: #25                    UF: #27- Município: #26                                                  |
++------------------+---------+--------+----------+----------+-------------------------------+--------------+-----+------------+----------------+--------+----------------+
+|    Data/Hora     |  Placa  |   KM   | CP / NF  | Doc pgto |           Descrição           |  Quantidade  | Un. | Preço unit.|      Valor     |  Desc. |  Valor final   |
++------------------+---------+--------+----------+----------+-------------------------------+--------------+-----+------------+----------------+--------+----------------+
+</cab_grupo>
+<detalhe>
+| #8               | #9      | #10    | #11      | #19      | #12                           | #13          | #14 | #15        | #23            | #21    | #16            |
+</detalhe>
+<rod_grupo nome="2">
++------------------+---------+--------+----------+----------+-------------------------------+--------------+-----+------------+----------------+--------+----------------+
+| Total do cliente                                                                          | #17          |     |            | #24            | #22    | #18            |
++-------------------------------------------------------------------------------------------+--------------+-----+------------+----------------+--------+----------------+
+
+</rod_grupo>
+<rod_pagina>
++------------------+---------+--------+----------+----------+-------------------------------+--------------+-----+------------+----------------+--------+----------------+
+</rod_pagina>
+</subrelat>
+
+<subrelat dados="consumo_cliente_resumo" tamfonte="8" ordem="produto_tipo_nome, preco_unit">
+<apelidos>
+1  produto_tipo_nome	tam=30
+2  quantidade			tam=12   fmt=float3
+3  valor				tam=15   fmt=float2
+4  cliente_nome			tam=65
+5  preco_unit		 	tam=15   fmt=float3
+6  total_quantidade	 	tam=12   fmt=float3  func=soma campo=quantidade
+7  total_valor		 	tam=15   fmt=float2  func=soma campo=valor
+9  tot_g_qtd			tam=12   fmt=float3  func=soma campo=quantidade grupo=1
+10 tot_g_preco			tam=15   fmt=float3  func=media  campo=preco_unit grupo=1
+11 tot_g_valor			tam=15   fmt=float2  func=soma campo=valor grupo=1
+12 sem					tam=10   expr="1"
+13 produto_nome         tam=20
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="2" quebra="sem">
++-----------------------------------------------------------------------------------+  
+| Resumo                                                                            |
++--------------------------------+--------------+-----------------+-----------------+  
+|            Descrição           |  Quantidade  | Preço unitário  |      Valor      |
++--------------------------------+--------------+-----------------+-----------------+
+</cab_grupo>
+<cab_grupo nome="1" quebra="produto_tipo_nome,preco_unit">
+</cab_grupo>
+<detalhe>
+{VAZIA}
+</detalhe>
+<rod_grupo nome="1">
+| #1                             | #9           | #10             | #11             |
+</rod_grupo>
+<rod_grupo nome="2">
++--------------------------------+--------------+-----------------+-----------------+
+| Total                          | #6           |                 | #7              |
++--------------------------------+--------------+-----------------+-----------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+<rod_pagina>
++--------------------------------+--------------+-----------------+-----------------+
+</rod_pagina>
+</subrelat>
+
+<hash>9a439cdd3e504b9014be9dee075c87c1</hash>
+</relatorio>

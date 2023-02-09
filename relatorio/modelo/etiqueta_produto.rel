@@ -1,0 +1,26 @@
+<relatorio dados="etiqueta_produto" font_size="xx-small" mode="raw">
+<apelidos>
+1  produto_nome			tam=40	alinha=centro	
+2  produto_preco_unit	tam=40	alinha=centro	fmt=%.02f
+3  produto_nome1		tam=40	alinha=centro	
+4  produto_preco_unit1	tam=40	alinha=centro	fmt=%.02f
+5  linha_concatena      tam=40	alinha=centro
+6  linha_concatena1     tam=40	alinha=centro
+7  produto_aplicacao	tam=50	alinha=centro
+8  produto_aplicacao1	tam=50	alinha=centro
+
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+
+<detalhe>
+
+{CPI12}{NEGR}#5                                      #6
+{DNEG}#2                                       #4
+
+</detalhe>
+<rod_relat>
+</rod_relat>
+<hash>b298699912bfa736f484657bc4c32a7c</hash>
+</relatorio>

@@ -1,0 +1,87 @@
+<relatorio dados="venda_bico_main">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+4  titulo_secundario     tam=130	alinha=centro
+5  page_num              tam=3      alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                  #2
+----------------------------------------------------
+
+</cab_pagina>
+<detalhe>
+</detalhe>
+
+<subrelat dados="venda_bico" ordem="ordem" nome="sessao_01" tipo="detalhe">
+<apelidos>
+1  rel_posto_nome					tam=60
+2  rel_data_hora					tam=18
+3  titulo							tam=52  alinha=centro
+4  bico								tam=40
+5  data								tam=12
+6  bico_valor						tam=15	fmt=float2
+7  bico_litro						tam=15	fmt=float3
+8  total_bico_valor					tam=15	fmt=float2
+9  total_bico_quantidade			tam=15	fmt=float3
+10 quebra_nome						tam=40
+11 agrupamento_detalhe				tam=12	alinha=centro
+</apelidos>
+<cab_pagina>
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="bico_nome">
++--------------------------------------------------+
+| Bico: #10                                        |
++--------------+-----------------+-----------------+
+|     Data     |     Litros      |      Valor      |
++--------------+-----------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #11          | #7              | #6              |
+</detalhe>
+<rod_grupo nome="1">
++--------------+-----------------+-----------------+
+| Total        | #9              | #8              |
++--------------+-----------------+-----------------+
+</rod_grupo>
+
+</subrelat>
+
+<subrelat dados="venda_bico" ordem="data,turno"  nome="sessao_02" tipo="resumo">
+<apelidos>
+1  rel_posto_nome					tam=60
+2  rel_data_hora					tam=18
+3  data								tam=12
+4  quantidade						tam=15	fmt=float3
+7  total_quantidade					tam=15	campo=quantidade	func=soma	fmt=float3
+5  valor							tam=15	fmt=float2
+6  total_valor						tam=15	campo=valor	func=soma	fmt=float2
+8  agrupamento_detalhe				tam=12	alinha=centro
+</apelidos>
+<cab_pagina>
+
++--------------------------------------------------+
+| Resumo dos bicos                                 |
++--------------+-----------------+-----------------+
+|     Data     |     Litros      |      Valor      |
++--------------+-----------------+-----------------+
+</cab_pagina>
+
+<detalhe>
+| #8           | #4              | #5              |
+</detalhe>
+
+<rod_relat>
++--------------+-----------------+-----------------+
+| Total        | #7              | #6              |
++--------------+-----------------+-----------------+
+</rod_relat>
+
+
+</subrelat>
+
+<hash>e6b9bba515d32d12699ebad46392bd87</hash>
+</relatorio>

@@ -1,0 +1,155 @@
+<relatorio dados="cheque_troco_posicao_geral">
+<apelidos>
+1  rel_posto_nome				tam=60
+2  rel_data_hora				tam=18
+3  emitido_valor				tam=17	alinha=direita
+4  emitido_qtde					tam=10	alinha=direita
+5  impresso_valor				tam=17	alinha=direita
+6  impresso_qtde				tam=10	alinha=direita
+7  financeiro_valor				tam=17	alinha=direita
+8  financeiro_qtde				tam=10	alinha=direita
+9  financeiro_devolvido_valor	tam=17	alinha=direita
+10 financeiro_devolvido_qtde	tam=10	alinha=direita
+11 gerente_valor				tam=17	alinha=direita
+12 gerente_qtde					tam=10	alinha=direita
+13 gerente_enviado_valor		tam=17	alinha=direita
+14 gerente_enviado_qtde			tam=10	alinha=direita
+15 caixa_valor					tam=17	alinha=direita
+16 caixa_qtde					tam=10	alinha=direita
+17 caixa_agendado_valor			tam=17	alinha=direita
+18 caixa_agendado_qtde			tam=10	alinha=direita
+19 caixa_proximo_turno_valor	tam=17	alinha=direita
+20 caixa_proximo_turno_qtde		tam=10	alinha=direita
+21 aguardando_compensacao_valor	tam=17	alinha=direita
+22 aguardando_compensacao_qtde	tam=10	alinha=direita
+23 compensacao_valor			tam=17	alinha=direita
+24 compensacao_qtde				tam=10	alinha=direita
+25 compensado_valor				tam=17	alinha=direita
+26 compensado_qtde				tam=10	alinha=direita
+27 devolvido_valor				tam=17	alinha=direita
+28 devolvido_qtde				tam=10	alinha=direita
+29 resgatado_valor				tam=17	alinha=direita
+30 resgatado_qtde				tam=10	alinha=direita
+31 negociado_trocado_valor		tam=17	alinha=direita
+32 negociado_trocado_qtde		tam=10	alinha=direita
+33 sustado_valor				tam=17	alinha=direita
+34 sustado_qtde					tam=10	alinha=direita
+35 cancelado_valor				tam=17	alinha=direita
+36 cancelado_qtde				tam=10	alinha=direita
+37 extraviado_valor				tam=17	alinha=direita
+38 extraviado_qtde				tam=10	alinha=direita
+39 resumo_total					tam=17	alinha=direita
+40 resumo_total_qtde			tam=10	alinha=direita
+41 gerente_total				tam=17	alinha=direita
+42 gerente_total_qtde			tam=10	alinha=direita
+43 caixa_total					tam=17	alinha=direita
+44 caixa_total_qtde				tam=10	alinha=direita
+45 posto_total					tam=17	alinha=direita
+46 posto_total_qtde				tam=10	alinha=direita
+47 cliente_total				tam=17	alinha=direita
+48 cliente_total_qtde			tam=10	alinha=direita
+49 outros_total					tam=17	alinha=direita
+50 outros_total_qtde			tam=10	alinha=direita
+51 geral_total					tam=17	alinha=direita
+52 geral_total_qtde				tam=10	alinha=direita
+53 periodo						tam=23	
+54 qtde							tam=20	alinha=esquerda
+55 valor						tam=20	alinha=esquerda
+56 emitido_perc					tam=7	alinha=direita
+57 impresso_perc				tam=7	alinha=direita
+58 financeiro_perc				tam=7	alinha=direita
+59 financeiro_devolvido_perc	tam=7	alinha=direita
+60 resumo_total_perc			tam=7	alinha=direita
+61 gerente_perc					tam=7	alinha=direita
+62 gerente_enviado_perc			tam=7	alinha=direita
+63 gerente_total_perc			tam=7	alinha=direita
+64 caixa_perc					tam=7	alinha=direita
+65 caixa_agendado_perc			tam=7	alinha=direita
+66 caixa_proximo_turno_perc		tam=7	alinha=direita
+67 caixa_total_perc				tam=7	alinha=direita
+68 posto_total_perc				tam=7	alinha=direita
+69 aguardando_compensacao_perc	tam=7	alinha=direita
+70 compensacao_perc				tam=7	alinha=direita
+71 compensado_perc				tam=7	alinha=direita
+72 cliente_total_perc			tam=7	alinha=direita
+73 devolvido_perc				tam=7	alinha=direita
+74 resgatado_perc				tam=7	alinha=direita
+75 negociado_trocado_perc		tam=7	alinha=direita
+76 sustado_perc					tam=7	alinha=direita
+77 cancelado_perc				tam=7	alinha=direita
+78 extraviado_perc				tam=7	alinha=direita
+79 outros_total_perc			tam=7	alinha=direita
+80 geral_total_perc				tam=7	alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                            #2                
+--------------------------------------------------------------------------------------------------------------
+
+                         P O S I C A O   G E R A L   D E   C H E Q U E S   T R O C O                               
+
+</cab_pagina>
+<detalhe>
+Resumo Geral:
+-------------
+
+    Periodo de emissão........................: #53
+    Número de cheques emitidos................: #54
+    Valor dos cheques emitidos................: R$ #55
+	
+Resumo por Localização:
+-----------------------
+
+    Em posse do Depto. Financeiro
+
+        Emitido................................ #4          R$ #3                 #56
+        Impresso............................... #6          R$ #5                 #57
+        Com o Financeiro....................... #8          R$ #7                 #58
+        Devolvido para o Financeiro............ #10         R$ #9                 #59
+                                                ----------     -----------------
+    Total...................................... #40         R$ #39                #60
+
+    Nos Postos
+
+        Com o Gerente
+            Com o gerente...................... #12         R$ #11                #61
+            Enviado para o gerente............. #14         R$ #13                #62
+                                                ----------     -----------------
+        SubTotal............................... #42         R$ #41                #63
+
+        Com o Caixa
+            No caixa........................... #16         R$ #15                #64
+            Agendado para o caixa.............. #18         R$ #17                #65
+            Enviado p/ próximo turno........... #20         R$ #19                #66
+                                                ----------     -----------------
+        SubTotal............................... #44         R$ #43                #67
+
+                                                ----------     -----------------
+    Total...................................... #46         R$ #45                #68
+
+    Entregue para Clientes
+
+        Aguardando compensação................. #22         R$ #21                #69
+        Em compensação......................... #24         R$ #23                #70
+        Compensado............................. #26         R$ #25                #71
+                                                ----------     -----------------
+    Total...................................... #48         R$ #47                #72
+
+    Outros
+
+        Devolvido.............................. #28         R$ #27                #73
+        Resgatado.............................. #30         R$ #29                #74
+        Negociado / Trocado.................... #32         R$ #31                #75
+        Sustado................................ #34         R$ #33                #76
+        Cancelado.............................. #36         R$ #35                #77
+        Extraviado............................. #38         R$ #37                #78
+                                                ----------     -----------------
+    Total...................................... #50         R$ #49                #79
+
+                                                ----------     -----------------
+Total Geral.................................... #52         R$ #51                #80
+</detalhe>
+<rod_pagina>
+</rod_pagina>
+
+<hash>189ffc580a824b4b338d48a6af8b199d</hash>
+</relatorio>

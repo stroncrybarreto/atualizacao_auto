@@ -1,0 +1,71 @@
+<relatorio dados="rel_nota_trr" ordem='emitente,data_emissao,numero'>
+
+<apelidos>
+1  rel_posto_nome	tam=50
+2  rel_data_hora	tam=20
+
+3  numero			tam=10	alinha=direita
+5  data_emissao		tam=10	fmt=data
+6  emitente			tam=40
+7  codprod			tam=7
+8  produto			tam=30
+9  quantidade		tam=12	fmt=float3
+10 valor			tam=12	fmt=float2
+11 preco_unit		tam=10	fmt=float3
+12 codpessoa		tam=7	alinha=esquerda
+
+13 sqtde			tam=12	fmt=float3	func=soma	campo=quantidade	grupo=1
+14 svalor			tam=12	fmt=float2	func=soma	campo=valor			grupo=1
+
+15 tqtde			tam=12	fmt=float2	func=soma	campo=quantidade
+16 tvalor			tam=12	fmt=float2	func=soma	campo=valor
+
+17 subtitulo		tam=150	alinha=centro
+
+19 spreco_unit		tam=10  fmt=float3	func=media campo=preco_unit 	grupo=1
+20 tpreco_unit		tam=10  fmt=float3	func=media campo=preco_unit
+
+98 data_ini			tam=10	fmt=data
+99 data_fim			tam=10	fmt=data
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                   #2
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                         RELATÓRIO DE NOTAS FISCAIS DE SAÍDA                                                         
+                                                          Período #98         a  #99
+#17
+
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="emitente">
+CLIENTE: #6
++------------+------------+---------------------------------------------+--------------------------------+--------------+------------+--------------+
+| Emissão    |  Num Nota  |                  Cliente                    |             Produto            |  Quantidade  | Preço Unit |     Valor    |
++------------+------------+---------------------------------------------+--------------------------------+--------------+------------+--------------+
+</cab_grupo>
+
+
+<detalhe>
+| #5         | #3         | #6                                          | #8                             | #9           | #11        | #10          |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+------------+---------------------------------------------+--------------------------------+--------------+------------+--------------+
+| TOTAL                                                                                                  | #13          | #19        | #14          |
++--------------------------------------------------------------------------------------------------------+--------------+------------+--------------+
+
+</rod_grupo>
+
+<rod_relat>
++--------------------------------------------------------------------------------------------------------+--------------+------------+--------------+
+| TOTAL                                                                                                  | #15          | #20        | #16          |
++--------------------------------------------------------------------------------------------------------+--------------+------------+--------------+
+
+</rod_relat>
+
+
+<hash>0dc5f11a055e181b76a962ae3138de6b</hash>
+</relatorio>

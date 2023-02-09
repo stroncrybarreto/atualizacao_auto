@@ -1,0 +1,48 @@
+body {
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+td, th {
+	font-size: 10px;
+}
+
+.module {
+	margin-top: 10px;
+	padding: 0;
+	border: 1px solid #CCC;
+	display: block;
+}
+.module legend {
+	font-weight: bold;
+}
+
+.module label {
+	display: inline-block;
+	float: left;
+	padding: 5px 1em 3px 0;
+	width: 20px;
+}
+.module input {
+	margin-left: 50px;
+}
+.module .form-row {
+	clear: both;
+	border-bottom: 1px solid #EEE;
+	padding: 5px 10px;
+	min-height: 20px;
+}
+
+.record {
+	display: none;
+}
+
+#content {
+	width: 200px;
+}
+#nome {
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 5px;
+	font-weight: bold;
+}

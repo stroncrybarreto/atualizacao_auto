@@ -1,0 +1,54 @@
+<relatorio dados="consulta_produto" tamfonte="8">
+<apelidos>
+1  rel_posto_nome       tam=112
+2  rel_data_hora        tam=18 
+3  grupo_produto_nome   tam=118										
+4  produto_nome         tam=30
+5  produto_unid_med     tam=4
+6  produto_codigo	    tam=10	alinha=centro 
+7  produto_tributacao   tam=5	alinha=centro
+8  t_tributacao         tam=4  fmt=%.01f
+9  produto_preco_custo  tam=12  fmt=%.02f
+10 produto_preco_unit   tam=12  fmt=%.02f
+11 estoque      		tam=14  alinha=direita
+12 lucro        		tam=8  fmt=%.02f
+13 empresa_nome			tam=116	alinha=esquerda
+14 subtitulo			tam=130 alinha=centro
+15 rel_titulo			tam=130 alinha=centro expr='CONSULTA DE PRODUTOS'
+16 empresa_cod_nome     tam=116
+17 grupo_produto_cod_nome tam=108
+</apelidos>
+<cab_pagina>
+#1                                                                                                               #2              
+---------------------------------------------------------------------------------------------------------------------------------
+
+#14                                                                                                                              
+
+</cab_pagina>
+
+<cab_grupo nome="2" quebra="empresa_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #16                                                                                                                  |
+</cab_grupo>
+<cab_grupo nome="1" quebra="empresa_nome,grupo_produto_codigo">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Grupo produto: #17                                                                                                            |
++------------+-------------------------------+------+-------+--------+----------------+-----------+--------------+--------------+
+|   Código   |            Produto            |  Un. | S.Tb  |  ICMS  |    Estoque     |   Lucro   | Preço custo  | Preço venda  |
++------------+-------------------------------+------+-------+--------+----------------+-----------+--------------+--------------+
+</cab_grupo>
+<detalhe>
+| #6         | #4                            | #5   | #7    | #8   % | #11            | #12      %| #9           | #10          |
+</detalhe>
+<rod_grupo nome="1" quebra="empresa_nome">
+</rod_grupo>
+<rod_grupo nome="2">
++------------+-------------------------------+------+-------+--------+----------------+-----------+--------------+--------------+
+
+</rod_grupo>
+<rod_pagina>
++------------+-------------------------------+------+-------+--------+----------------+-----------+--------------+--------------+
+</rod_pagina>
+
+<hash>d9a46542842f884d73322b24bd4ee6b5</hash>
+</relatorio>

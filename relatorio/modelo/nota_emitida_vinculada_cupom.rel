@@ -1,0 +1,85 @@
+<relatorio dados="nota_emitida" tamfonte="8" ordem="empresa_codigo, numero_nota, nota_cupom">
+<apelidos>
+1  rel_posto_nome		tam=50
+2  rel_data_hora		tam=18
+3  rel_titulo			tam=99 		alinha=centro
+4  rel_titulo2			tam=99 		alinha=centro
+6  empresa_nome			tam=40
+7  numero_nota			tam=10 		alinha=esquerda
+8  data_emissao			tam=10		fmt=data
+9  cliente_nome			tam=55
+10 valor_nota			tam=10 		fmt=float2		alinha=esquerda
+11 situacao				tam=25		alinha=esquerda
+13 modelo_doc			tam=3		alinha=esquerda
+23 serie				tam=10		alinha=esquerda
+24 nota_cupom			tam=9 		alinha=centro
+25 data_cupom       	tam=10		alinha=centro	fmt=data
+26 situacao_cupom   	tam=3		alinha=centro
+27 valor_cupom      	tam=13		fmt=float2
+28 valor_desconto   	tam=12		fmt=float2
+31 emitente_nome		tam=55		alinha=esquerda
+32 destinatario_nome	tam=40		alinha=esquerda
+35 valor_bruto			tam=13		fmt=float2
+36 acrescimo_cupom		tam=11		fmt=float2
+
+37 valor_liquido		tam=13		fmt=float2
+29 total_liquido		tam=13 		fmt=float2		func=soma 	campo=valor_liquido		grupo=1
+30 total_desconto		tam=12		fmt=float2  	func=soma 	campo=valor_desconto	grupo=1
+38 total_acrescimo		tam=11		fmt=float2		func=soma	campo=acrescimo_cupom	grupo=1
+41 total_bruto			tam=13		fmt=float2		func=soma	campo=valor_bruto		grupo=1		
+
+
+33 total_geral_bruto	tam=13		fmt=float2		func=soma	campo=valor_bruto
+34 total_geral_desconto	tam=12		fmt=float2		func=soma	campo=valor_desconto
+39 total_geral_liquido	tam=13		fmt=float2		func=soma	campo=valor_liquido
+40 total_geral_acresc	tam=11		fmt=float2 		func=soma	campo=acrescimo_cupom	
+
+98 situacao_nome		tam=9		expr=situacao_cupom == 'E' and 'EMITIDO' or 'CANCELADO'
+99 empresa_cod_nome		tam=60		expr=str(empresa_codigo)+' - '+empresa_nome
+
+</apelidos>
+<cab_pagina>
+#1                                                                                 #2
+---------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,numero_nota">
++-------------------------------------------------------------------------------------------------+
+| Empresa: #99                                                                                    |
++-------------------------------------------------------------------------------------------------+
+| Emitente......: #31                                                       Série....: #23        |
+| Destinatário..: #9                                                        Número...: #7         |
+|                                                                           Emissão..: #8         |
+|                                                                           Valor....: #10        |
+| Situação......: #11                                                       Modelo...: #13        |
++-------------------------------------------------------------------------------------------------+
+| Relação de cupons vinculados a nota                                                             |
++-----------+------------+---------------+--------------+-------------+---------------+-----------+
+|   Cupom   |   Emissão  |  Valor bruto  |   Desconto   |  Acréscimo  | Valor líquido | Situação  |
++-----------+------------+---------------+--------------+-------------+---------------+-----------+
+</cab_grupo>
+<detalhe>
+| #24       | #25        | #35           | #28          | #36         | #37           | #98       |
+</detalhe>
+<rod_grupo nome="1">
++-----------+------------+---------------+--------------+-------------+---------------+-----------+
+| Subtotal:              | #41           | #30          | #38         | #29           |           |
++------------------------+---------------+--------------+-------------+---------------+-----------+
+
+</rod_grupo>
+<rod_relat>
+
+
++------------------------+---------------+--------------+-------------+---------------+-----------+
+| Total geral:           | #33           | #34          | #40         | #39           |           |
++------------------------+---------------+--------------+-------------+---------------+-----------+
+</rod_relat>
+<rod_pagina>
++------------------------+---------------+--------------+-------------+---------------+-----------+
+</rod_pagina>
+
+<hash>302377dd0b2620b5ecea75e7d3675157</hash>
+</relatorio>

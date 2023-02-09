@@ -1,0 +1,73 @@
+<relatorio dados="validade_produto" ordem="quebra1,quebra2,quebra3">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  titulo			tam=130				alinha=centro
+4  titulo2			tam=130				alinha=centro
+5  quebra1			tam=125				alinha=esquerda
+6  quebra2			tam=125				alinha=esquerda
+7  quebra3			tam=125				alinha=esquerda
+8  nome				tam=37
+9  lote         		tam=24   			alinha=esquerda
+10 validade			tam=10	fmt=data		alinha=centro
+11 entrada			tam=10	fmt=data		alinha=centro
+12 quantidade			tam=11				alinha=direita
+13 total_quantidade		tam=11 		   		alinha=direita func=soma campo=quantidade grupo=1
+14 total_grupo			tam=11 		   		alinha=direita func=soma campo=quantidade grupo=2
+15 total_subgrupo		tam=11 		   		alinha=direita func=soma campo=quantidade grupo=3
+17 fabricacao			tam=10	fmt=data		alinha=centro
+18 temperatura			tam=6				alinha=direita
+
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2               
+----------------------------------------------------------------------------------------------------------------------------------
+   
+#3                                                                                                                               
+#4                                                                                                                               
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra1">
++--------------------------------------------------------------------------------------------------------------------------------+
+| #5                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="quebra1,quebra2">
+| #6                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="3" quebra="quebra1,quebra2,quebra3">
+| #7                                                                                                                             |
++---------------------------------------+--------------------------+--------+------------+------------+------------+-------------+
+|                Produto                |           Lote           | T.(°C) |  Fabric.   |  Entrada   |  Validade  |   Estoque   |
++---------------------------------------+--------------------------+--------+------------+------------+------------+-------------+
+</cab_grupo>
+
+<detalhe>
+| #8                                    | #9                       | #18    | #17        | #11        | #10        | #12         |
+</detalhe>
+
+<rod_grupo nome="3">
++---------------------------------------+--------------------------+--------+------------+------------+------------+-------------+
+| Total subgrupo                                                                                                   | #15         |
++------------------------------------------------------------------------------------------------------------------+-------------+
+</rod_grupo>
+
+<rod_grupo nome="2">
+| Total grupo                                                                                                      | #14         |
++------------------------------------------------------------------------------------------------------------------+-------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total empresa                                                                                                    | #13         |
++------------------------------------------------------------------------------------------------------------------+-------------+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>852ae808c833fc9f4401d02fc4d55df3</hash>
+</relatorio>

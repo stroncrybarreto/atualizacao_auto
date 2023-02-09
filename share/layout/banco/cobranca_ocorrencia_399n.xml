@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>hsbc</nome>
+  
+  <ocorrencias>
+	<ocorrencia>
+		<id>1</id>
+		<codigo>07</codigo>
+		<nome>Entrada Confirmada</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>2</id>
+		<codigo>08</codigo>
+		<nome>Parcela rejeitada</nome>
+		<motivo>
+			<codigo>001</codigo>
+			<nome>Registro fora da sequência</nome>
+		</motivo>
+		<motivo>
+			<codigo>002</codigo>
+			<nome>Registro duplicado</nome>
+		</motivo>
+		<motivo>
+			<codigo>003</codigo>
+			<nome>Tipo de registro inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>004</codigo>
+			<nome>Registro não pertence a esta planilha</nome>
+		</motivo>
+		<motivo>
+			<codigo>005</codigo>
+			<nome>BDU do beneficiário não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>006</codigo>
+			<nome>BDU do beneficiário não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>007</codigo>
+			<nome>BDU do beneficiário inexistente</nome>
+		</motivo>
+		<motivo>
+			<codigo>008</codigo>
+			<nome>Código beneficiário não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>009</codigo>
+			<nome>Código beneficiário não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>010</codigo>
+			<nome>Código beneficiário zerado</nome>
+		</motivo>
+		<motivo>
+			<codigo>011</codigo>
+			<nome>Código beneficiário inexistente</nome>
+		</motivo>
+		<motivo>
+			<codigo>012</codigo>
+			<nome>Código formulário não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>013</codigo>
+			<nome>Código formulário inexistente</nome>
+		</motivo>
+		<motivo>
+			<codigo>015</codigo>
+			<nome>Form. Laser c/ cód. Barras - Informar cód. Beneficiário</nome>
+		</motivo>
+		<motivo>
+			<codigo>016</codigo>
+			<nome>Informar a data de vencimento da parcela única e/ou data do primeiro vencimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>017</codigo>
+			<nome>Informar o valor da parcela única e/ou valor das parcelas</nome>
+		</motivo>
+		<motivo>
+			<codigo>018</codigo>
+			<nome>Form. Laser com cód. Barras - Informar tipo da moeda</nome>
+		</motivo>
+		<motivo>
+			<codigo>019</codigo>
+			<nome>Form. Laser com cód. Barras - Informar cód. Documento</nome>
+		</motivo>
+		<motivo>
+			<codigo>022</codigo>
+			<nome>Periodicidade de vencimento inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>023</codigo>
+			<nome>Tipo de montagem inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>024</codigo>
+			<nome>Tipo de montagem não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>025</codigo>
+			<nome>Quantidade de carnês inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>026</codigo>
+			<nome>Quantidade de carnês não informada</nome>
+		</motivo>
+		<motivo>
+			<codigo>027</codigo>
+			<nome>Número parcela "De" inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>028</codigo>
+			<nome>Número parcela "De" não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>029</codigo>
+			<nome>Número parcela "Até" 	inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>030</codigo>
+			<nome>Número de parcela "Até" não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>031</codigo>
+			<nome>Quantidade parcelas inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>032</codigo>
+			<nome>Quantidade parcelas não informada</nome>
+		</motivo>
+		<motivo>
+			<codigo>033</codigo>
+			<nome>Parcela "De" maior que parcela "Até"</nome>
+		</motivo>
+		<motivo>
+			<codigo>034</codigo>
+			<nome>Data primeiro vencimento inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>035</codigo>
+			<nome>Data primeiro vencimento anterior a data de hoje</nome>
+		</motivo>
+		<motivo>
+			<codigo>036</codigo>
+			<nome>Data primeiro vencimento já informada no Capa</nome>
+		</motivo>
+		<motivo>
+			<codigo>037</codigo>
+			<nome>Data vencimento parcela única inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>038</codigo>
+			<nome>Data vencimento parcela única anterior a data de hoje</nome>
+		</motivo>
+		<motivo>
+			<codigo>039</codigo>
+			<nome>Data vencimento parcela única já informado no Capa</nome>
+		</motivo>
+		<motivo>
+			<codigo>040</codigo>
+			<nome>Tipo de moeda inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>042</codigo>
+			<nome>Valor da parcela inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>043</codigo>
+			<nome>Valor da parcela não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>044</codigo>
+			<nome>Valor da parcela já informado no Capa</nome>
+		</motivo>
+		<motivo>
+			<codigo>045</codigo>
+			<nome>Valor total das parcelas inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>046</codigo>
+			<nome>Valor total das parcelas não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>047</codigo>
+			<nome>Valor da parcela única inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>048</codigo>
+			<nome>Valor da parcela única não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>049</codigo>
+			<nome>Valor da parcela única já informado no Capa</nome>
+		</motivo>
+		<motivo>
+			<codigo>050</codigo>
+			<nome>Valor total da parcela única inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>051</codigo>
+			<nome>Valor total da parcela única não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>058</codigo>
+			<nome>Código do documento inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>059</codigo>
+			<nome>Código do documento não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>060</codigo>
+			<nome>Código do documento não informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>070</codigo>
+			<nome>BDU do cedente zerado</nome>
+		</motivo>
+		<motivo>
+			<codigo>073</codigo>
+			<nome>BDU do cedente já está encerrado</nome>
+		</motivo>
+		<motivo>
+			<codigo>075</codigo>
+			<nome>Cedente está cancelado</nome>
+		</motivo>
+		<motivo>
+			<codigo>076</codigo>
+			<nome>Código do formulário cancelado ou zerado</nome>
+		</motivo>
+		<motivo>
+			<codigo>080</codigo>
+			<nome>Tipo de moeda deve ser igual em todos os detalhes do lote</nome>
+		</motivo>
+		<motivo>
+			<codigo>081</codigo>
+			<nome>Se o tipo de moeda foi informado, é obrigatório informar o "Valor	Parc" e o "Total Valor da Parc."
+			Código da multa inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>082</codigo>
+			<nome>Se um dos valores foi informado, é obrigatório informar o tipo de moeda.</nome>
+		</motivo>
+		<motivo>
+			<codigo>083</codigo>
+			<nome>O campo "Qt. Parc." Não pode ser superior ao resultado do cálculo (Parc. Até - Parc. De) + 1.</nome>
+		</motivo>
+		<motivo>
+			<codigo>084</codigo>
+			<nome>A quantidade de parcelas não pode ser superior a 60</nome>
+		</motivo>
+		<motivo>
+			<codigo>085</codigo>
+			<nome>O preenchimento da "Qt Parc" é obrigatório e tem que ser maior que zero.</nome>
+		</motivo>
+		<motivo>
+			<codigo>087</codigo>
+			<nome>A quantidade total de parcelas a emitir (Qt. Parc. X Qt. Carnês) ultrapassou 60.000.</nome>
+		</motivo>
+		<motivo>
+			<codigo>089</codigo>
+			<nome>Código material disponível somente para emissão empresa</nome>
+		</motivo>
+		<motivo>
+			<codigo>090</codigo>
+			<nome>Tipo de moeda inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>091</codigo>
+			<nome>Uso de parcela única indevido para quantidade parcela 1</nome>
+		</motivo>
+		<motivo>
+			<codigo>096</codigo>
+			<nome>Para bloqueto auto-envelopado, obrigatório informar o nome do sacado</nome>
+		</motivo>
+		<motivo>
+			<codigo>097</codigo>
+			<nome>Para bloqueto auto-envelopado, obrigatório informar a rua do sacado</nome>
+		</motivo>
+		<motivo>
+			<codigo>098</codigo>
+			<nome>Para bloqueto auto-envelopado, obrigatório informar o número da residência do sacado.</nome>
+		</motivo>
+		<motivo>
+			<codigo>099</codigo>
+			<nome>Para bloqueto auto envelopado obrigatório informar a cidade do sacado.</nome>
+		</motivo>
+		<motivo>
+			<codigo>100</codigo>
+			<nome>Para bloqueto auto-envelopado obrigatório informar o Estado do sacado</nome>
+		</motivo>
+		<motivo>
+			<codigo>112</codigo>
+			<nome>CEP do sacado inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>114</codigo>
+			<nome>Arquivo duplicado</nome>
+		</motivo>
+		<motivo>
+			<codigo>115</codigo>
+			<nome>Arquivo vazio</nome>
+		</motivo>
+		<motivo>
+			<codigo>116</codigo>
+			<nome>Arquivo sem registros anexos</nome>
+		</motivo>
+		<motivo>
+			<codigo>117</codigo>
+			<nome>Seqüência de registros inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>118</codigo>
+			<nome>Código de registro diferente de Zero</nome>
+		</motivo>
+		<motivo>
+			<codigo>119</codigo>
+			<nome>Código de remessa diferente de um (1)</nome>
+		</motivo>
+		<motivo>
+			<codigo>120</codigo>
+			<nome>Literal remessa diferente de (Remessa)</nome>
+		</motivo>
+		<motivo>
+			<codigo>121</codigo>
+			<nome>Código de serviço diferente de um (1)</nome>
+		</motivo>
+		<motivo>
+			<codigo>122</codigo>
+			<nome>Literal Cobrança diferente de (Cobrança)</nome>
+		</motivo>
+		<motivo>
+			<codigo>123</codigo>
+			<nome>Data de gravação não numérica</nome>
+		</motivo>
+		<motivo>
+			<codigo>124</codigo>
+			<nome>Densidade de gravação diferente de 1600 e 6250</nome>
+		</motivo>
+		<motivo>
+			<codigo>125</codigo>
+			<nome>Literal densidade diferente de (BPI)</nome>
+		</motivo>
+		<motivo>
+			<codigo>126</codigo>
+			<nome>Hora de gravação não numérica</nome>
+		</motivo>
+		<motivo>
+			<codigo>127</codigo>
+			<nome>Número seqüencial não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>128</codigo>
+			<nome>Número seqüência fora de seqüência</nome>
+		</motivo>
+		<motivo>
+			<codigo>129</codigo>
+			<nome>Código do banco diferente de "399"</nome>
+		</motivo>
+		<motivo>
+			<codigo>130</codigo>
+			<nome>Lote de serviços diferente de zeros</nome>
+		</motivo>
+		<motivo>
+			<codigo>131</codigo>
+			<nome>Lote de serviço Header fora da seqüência</nome>
+		</motivo>
+		<motivo>
+			<codigo>132</codigo>
+			<nome>Código Layout diferente de 020</nome>
+		</motivo>
+		<motivo>
+			<codigo>133</codigo>
+			<nome>Tipo de registro Header inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>134</codigo>
+			<nome>Tipo de operação diferente de R</nome>
+		</motivo>
+		<motivo>
+			<codigo>135</codigo>
+			<nome>Tipo de serviço diferente de 02</nome>
+		</motivo>
+		<motivo>
+			<codigo>136</codigo>
+			<nome>Forma de lançamento diferente de 00 (zeros)</nome>
+		</motivo>
+		<motivo>
+			<codigo>137</codigo>
+			<nome>Versão de lote diferente de 010 (dez)</nome>
+		</motivo>
+		<motivo>
+			<codigo>138</codigo>
+			<nome>Número de remessa não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>139</codigo>
+			<nome>Tipo de montagem só pode ser 0 (zero) ou 1 (um)</nome>
+		</motivo>
+		<motivo>
+			<codigo>140</codigo>
+			<nome>Quantidade Lotes diferente do informado no arquivo</nome>
+		</motivo>
+		<motivo>
+			<codigo>141</codigo>
+			<nome>Quantidade de registro trailer Arq. Diferente do informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>142</codigo>
+			<nome>Arquivo sem o registro Header</nome>
+		</motivo>
+		<motivo>
+			<codigo>143</codigo>
+			<nome>Arquivo sem o registro Trailer</nome>
+		</motivo>
+		<motivo>
+			<codigo>144</codigo>
+			<nome>Arquivo sem o registro Header e Trailer</nome>
+		</motivo>
+		<motivo>
+			<codigo>145</codigo>
+			<nome>Formulário incompatível com código de postagem</nome>
+		</motivo>
+		<motivo>
+			<codigo>151</codigo>
+			<nome>Cedente sem cadastro de postagem no HSBC</nome>
+		</motivo>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>3</id>
+		<codigo>06</codigo>
+		<nome>Liquidação</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Liquidação normal</nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>No próprio banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Compensação eletrônica</nome>
+		</motivo>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>-1</id>
+		<codigo>-1</codigo>
+		<nome>Outras Ocorrências não localizadas</nome>
+	</ocorrencia>
+ </ocorrencias>
+ 
+</layout>

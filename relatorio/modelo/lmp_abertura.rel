@@ -1,0 +1,84 @@
+<relatorio dados="lmp_mapa" paper_size="A4" font_height="compact">
+<apelidos>
+3  empresa	tam=50
+4  endereco	tam=50
+5  cidade	tam=30
+6  estado	tam=30
+7  cpf		tam=20
+8  inscr_est	tam=20
+9  inscr_mun	tam=20
+10 capacidade	tam=15 	alinha=esquerda	fmt=%.02f
+11 produto	tam=30
+12 livro	tam=10	alinha=esquerda
+13 num_folha	tam=3
+14 folha_ini	tam=3
+15 folha_fim	tam=3
+16 data_extenso	tam=100
+17 folhas_ext	tam=100
+</apelidos>
+
+<cab_pagina>
+
+
+
+
+          L I V R O  D E  M O V I M E N T A C A O  D E  P R O D U T O S  -  L M P           
+                        Portaria N° 5, de 21 de Fevereiro de 1996
+                        
+         
+                   
+                            T E R M O  D E  A B E R T U R A
+
+
+	#17
+	SERVIRA PARA
+	
+	      L I V R O  D E  M O V I M E N T A C A O  D E  P R O D U T O S                            
+	      
+                            
+                            NUMERO : #12                            
+                            
+                            PRODUTO: #11
+
+
+
+
+          RAZAO SOCIAL: #3
+           
+          ENDERECO: #4
+          
+          NA CIDADE DE #5                               ESTADO DE #6
+          
+          INSCRICAO NO CADASTRO GERAL DE CONTRIBUINTE (M.F.): #7
+          
+          INSCRICAO ESTADUAL : #8
+          
+          INSCRICAO MUNICIPAL: #9
+          
+          CAPACIDADE NOMINAL DE ARMAZENAMENTO...M³: #10
+          
+          
+          
+
+
+                                  #16
+          
+          
+          
+                                  ______________________________________________________________
+                                      CARIMBO E ASSINATURA DO REPRESENTANTE LEGAL DA EMPRESA
+
+
+
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<rod_relat>
+</rod_relat>
+
+
+<hash>024edf0ecf4b4c82e3cdf9031e43a509</hash>
+</relatorio>

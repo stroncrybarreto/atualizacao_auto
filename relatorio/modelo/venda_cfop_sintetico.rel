@@ -1,0 +1,36 @@
+<relatorio dados="venda_cfop_sintetico">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  subtitulo              tam=89  alinha=centro
+7  cfop_cod_nome       tam=54
+8  valor               tam=12  fmt=float2
+9  total               tam=12  fmt=float2
+10 valor_desc          tam=12  fmt=float2
+11 total_desc          tam=12  fmt=float2
+99 titulo            tam=89  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                      #2                 
+----------------------------------------------------------------------------------------
+   
+#99
+
++--------------------------------------------------------+--------------+--------------+
+|                         CFOP                           |   Desconto   |     Valor    |
++--------------------------------------------------------+--------------+--------------+
+</cab_pagina>
+<detalhe>
+| #7                                                     | #10          | #8           |
+</detalhe>
+<rod_relat>
++--------------------------------------------------------+--------------+--------------+
+| Total geral                                            | #11          | #9           |
++--------------------------------------------------------+--------------+--------------+
+</rod_relat>
+<rod_pagina>
++--------------------------------------------------------+--------------+--------------+
+</rod_pagina>
+
+<hash>f58f0717311247b802d61e6c7558329b</hash>
+</relatorio>

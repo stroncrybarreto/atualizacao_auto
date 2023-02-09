@@ -1,0 +1,101 @@
+<layout>
+  <nome>reducaoz</nome>
+  <sessao>
+    <nome>totalizador</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave>id</chave><tipo></tipo><padrao>1</padrao><descricao>Campo fixo valor 1, totalizacao</descricao></registro>
+    <registro><inicio>2</inicio><fim>5</fim><chave>empresa</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>9</fim><chave>filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>10</inicio><fim>29</fim><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>30</inicio><fim>39</fim><chave>data_movto</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>40</inicio><fim>45</fim><chave>num_mapa_resumo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>46</inicio><fim>51</fim><chave>nr_cupom</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>52</inicio><fim>66</fim><chave>grande_total</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>67</inicio><fim>81</fim><chave>venda_bruta</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>82</inicio><fim>96</fim><chave>desconto</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>97</inicio><fim>111</fim><chave>cancelamento</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>112</inicio><fim>126</fim><chave>val_serv</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>127</inicio><fim>141</fim><chave>grande_total_ini</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>142</inicio><fim>156</fim><chave>acrescimo</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>157</inicio><fim>159</fim><chave>cont_reinicio</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>movimentos</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave>id</chave><tipo></tipo><padrao>2</padrao><descricao>Campo fixo, valor 2</descricao></registro>
+    <registro><inicio>2</inicio><fim>5</fim><chave>empresa</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>9</fim><chave>filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>10</inicio><fim>29</fim><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>30</inicio><fim>39</fim><chave>data_movto</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>40</inicio><fim>41</fim><chave>estado</chave><tipo>text</tipo><padrao></padrao><descricao>sigla estado do movimento da reducao z</descricao></registro>
+    <registro><inicio>42</inicio><fim>47</fim><chave>forma_pgto</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>48</inicio><fim>53</fim><chave>cupom_ini</chave><tipo>integer</tipo><padrao></padrao><descricao>numero do primeiro cupom fiscal de ref a reducao</descricao></registro>
+    <registro><inicio>54</inicio><fim>59</fim><chave>cupom_fim</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>60</inicio><fim>62</fim><chave>cod_reducaoz</chave><tipo>text</tipo><padrao></padrao><descricao>codigo da serie do mov da reducao</descricao></registro>
+    <registro><inicio>63</inicio><fim>77</fim><chave>venda_bruta</chave><tipo>float_2</tipo><padrao></padrao><descricao>valor mov reducaoz</descricao></registro>
+    <registro><inicio>78</inicio><fim>78</fim><chave>situacao_reducaoz</chave><tipo>text</tipo><padrao>N</padrao><descricao>N - Normal | C - Cancelado</descricao></registro>
+    <registro><inicio>79</inicio><fim>79</fim><chave>c_contribuinte</chave><tipo>text</tipo><padrao>S</padrao><descricao>Cliente Contribuinte: S - sim | N - nao</descricao></registro>
+    <registro><inicio>80</inicio><fim>82</fim><chave>especie_doc_reducaoz</chave><tipo>text</tipo><padrao>2D</padrao><descricao>especie  doc red para fins fiscais</descricao></registro>
+    <registro><inicio>83</inicio><fim>87</fim><chave>percent_icms</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>88</inicio><fim>102</fim><chave>val_base_icms</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>103</inicio><fim>117</fim><chave>val_icms</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>118</inicio><fim>132</fim><chave>isencao</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>133</inicio><fim>147</fim><chave>nao_incide</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>148</inicio><fim>152</fim><chave>percen_ipi_redz</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>153</inicio><fim>167</fim><chave>val_base_ipi_redz</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>168</inicio><fim>182</fim><chave>val_ipi_redz</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>183</inicio><fim>197</fim><chave>val_isento_ipi_redz</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>198</inicio><fim>212</fim><chave>val_outros_ipi_redz</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>213</inicio><fim>217</fim><chave>percent_iss</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>218</inicio><fim>232</fim><chave>val_base_iss</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>233</inicio><fim>247</fim><chave>val_iss</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>248</inicio><fim>262</fim><chave>desconto</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>263</inicio><fim>277</fim><chave>acrescimo</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>278</inicio><fim>397</fim><chave>obs_mov_redz</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>398</inicio><fim>398</fim><chave>mov_subst_trib</chave><tipo>text</tipo><padrao>S</padrao><descricao>Mov e substituicao Tributaria? S - sim | N - nao</descricao></registro>
+    <registro><inicio>399</inicio><fim>403</fim><chave>percnt_pis_ret</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>404</inicio><fim>418</fim><chave>base_calc_pis_retido</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>419</inicio><fim>433</fim><chave>val_pis_retido</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>434</inicio><fim>438</fim><chave>percent_cofins_ret</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>439</inicio><fim>453</fim><chave>base_calc_cofins_ret</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>454</inicio><fim>468</fim><chave>val_cofins_ret</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>469</inicio><fim>472</fim><chave>nr_cupom_red</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>473</inicio><fim>482</fim><chave>cliente</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>483</inicio><fim>492</fim><chave>nr_cupom</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>itens</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave>id</chave><tipo></tipo><padrao>3</padrao><descricao></descricao></registro>
+    <registro><inicio>2</inicio><fim>5</fim><chave>empresa</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>9</fim><chave>filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>10</inicio><fim>29</fim><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>30</inicio><fim>39</fim><chave>data_movto</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>40</inicio><fim>43</fim><chave>seq_lanc_mov</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>44</inicio><fim>49</fim><chave>nr_cupom</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>50</inicio><fim>64</fim><chave>valor</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>65</inicio><fim>69</fim><chave>pr_icms_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>70</inicio><fim>84</fim><chave>v_base_icms_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>85</inicio><fim>99</fim><chave>v_icms_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>100</inicio><fim>114</fim><chave>v_isent_icms_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>115</inicio><fim>129</fim><chave>v_outros_icms_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao>ignora</descricao></registro>
+    <registro><inicio>130</inicio><fim>134</fim><chave>pr_ipi_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>135</inicio><fim>149</fim><chave>v_base_ipi_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>150</inicio><fim>164</fim><chave>v_ipi_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>165</inicio><fim>179</fim><chave>v_isento_ipi_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>180</inicio><fim>194</fim><chave>v_ipi_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>195</inicio><fim>199</fim><chave>pr_iss_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>200</inicio><fim>214</fim><chave>v_base_iss</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>215</inicio><fim>229</fim><chave>v_iss_cupom</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>230</inicio><fim>244</fim><chave>valor_desconto</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>245</inicio><fim>259</fim><chave>valor_acrescimo</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>260</inicio><fim>379</fim><chave>obs_item_cupom</chave><tipo>text</tipo><padrao></padrao><descricao>ignora</descricao></registro>
+    <registro><inicio>380</inicio><fim>393</fim><chave>cod_prod</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>394</inicio><fim>400</fim><chave>cod_deriv</chave><tipo>text</tipo><padrao></padrao><descricao>ignora</descricao></registro>
+    <registro><inicio>401</inicio><fim>414</fim><chave>quantidade</chave><tipo>float_5</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>415</inicio><fim>419</fim><chave>pr_pis</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>420</inicio><fim>434</fim><chave>base_calc_pis</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>435</inicio><fim>449</fim><chave>v_pis</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>450</inicio><fim>454</fim><chave>pr_cofins</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>455</inicio><fim>469</fim><chave>base_calc_cofins</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>470</inicio><fim>484</fim><chave>v_cofins</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>485</inicio><fim>488</fim><chave>nr_item</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

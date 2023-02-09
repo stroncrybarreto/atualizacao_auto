@@ -1,0 +1,66 @@
+<relatorio dados="posicao_estoque_geral">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  data				    tam=10   fmt=data
+4  subtitulo            tam=3000
+5  empresa_cod_nome		tam=60
+7  codigo			    tam=13	alinha=centro
+8  nome				    tam=45
+9  valor_venda			tam=12   fmt=%.02f
+10 valor_custo			tam=12   fmt=%.02f
+11 estoque			    tam=12   fmt=%.1f
+12 total_venda			tam=12   fmt=%.02f
+13 total_custo			tam=12   fmt=%.02f
+14 total_estoq			tam=12   fmt=%.1f
+15 linha_formato		tam=58
+16 linha_titulo			tam=58
+17 linha_valor			tam=58
+18 linha_total			tam=58
+19 fornecedor_titulo	tam=60
+20 fornecedor_nome    	tam=60
+21 linha_empresa		tam=100
+22 linha_empresa_aux	tam=100
+100 tiulo				tam=111	alinha=centro	expr='POSIÇÃO DE ESTOQUE'
+</apelidos>
+
+<cab_pagina>
+#1                                                                                            #2
+--------------------------------------------------------------------------------------------------------------
+
+#100
+#4
+
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1" repeticao="1">
++-----------------------------------------------------#21
+| Empresa: #5                                         #22
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_cod_nome">
++---------------+-------------------------------------#15
+|    Código     | Produto                             #16
++---------------+-------------------------------------#15
+</cab_grupo>
+
+<detalhe>
+| #7            | #8                                  #17
+</detalhe>
+
+<rod_grupo nome="2">
++---------------+-------------------------------------#15
+| Total                                               #18
++-----------------------------------------------------#15
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
++---------------+--------------------------------------#15
+</rod_pagina>
+
+<hash>f9132e76c2247a7cb386c36ef81a448d</hash>
+</relatorio>

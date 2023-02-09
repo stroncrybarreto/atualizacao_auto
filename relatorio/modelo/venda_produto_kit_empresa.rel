@@ -1,0 +1,79 @@
+<relatorio dados="venda_produto_kit" ordem="empresa_nome,empresa_codigo,empresa_cod_nome,ordem,lancto_data,lancto_turno">
+<apelidos>
+1  rel_posto_nome           tam=60
+2  rel_data_hora            tam=18
+3  titulo                   tam=130   alinha=centro
+
+4  tit_agrupar_valor        tam=108
+5  lancto_data              tam=10   fmt=data  alinha=centro
+6  lancto_turno             tam=5    alinha=centro
+7  lancto_documento         tam=9    alinha=centro
+8  kit_nome                 tam=31
+9  kit_cod_nome             tam=47
+10 kit_codigo               tam=8
+11 qtdade_kit               tam=10   fmt=float2
+12 preco_unit_kit           tam=14   fmt=float2
+13 valor_venda              tam=13   fmt=float2
+
+14 subtotal_qtdade_kit      tam=10   fmt=float2  func=soma campo=qtdade_kit   grupo=2
+15 subtotal_valor_venda     tam=13   fmt=float2  func=soma campo=valor_venda  grupo=2
+
+16 total_emp_qtdade_kit     tam=10   fmt=float2  func=soma campo=qtdade_kit   grupo=1
+17 total_emp_valor_venda    tam=13   fmt=float2  func=soma campo=valor_venda  grupo=1
+
+18 empresa_cod_nome         tam=65
+
+19 total_qtdade_kit         tam=10   fmt=float2  func=soma campo=qtdade_kit
+20 total_valor_venda        tam=13   fmt=float2  func=soma campo=valor_venda
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa_codigo,empresa_cod_nome">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #18                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_nome,empresa_codigo,empresa_cod_nome,quebra">
+| #4                                                                                                                             |
++------------+-------+-----------+-------------------------------------------------+------------+----------------+---------------+
+|    Data    | Turno | Documento |                       Kit                       | Quantidade | Preço unitário |     Valor     |
++------------+-------+-----------+-------------------------------------------------+------------+----------------+---------------+
+</cab_grupo>
+
+<detalhe>
+| #5         | #6    | #7        | #9                                              | #11        | #12            | #13           |
+</detalhe>
+
+<rod_grupo nome="2">
++------------+-------+-----------+-------------------------------------------------+------------+----------------+---------------+
+| Subtotal                                                                         | #14        |                | #15           |
++----------------------------------------------------------------------------------+------------+----------------+---------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total empresa                                                                    | #16        |                | #17           |
++----------------------------------------------------------------------------------+------------+----------------+---------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++----------------------------------------------------------------------------------+------------+----------------+---------------+
+| Total geral                                                                      | #19        |                | #20           |
++----------------------------------------------------------------------------------+------------+----------------+---------------+
+</rod_relat>
+
+<rod_pagina>
++------------+-------+-----------+-------------------------------------------------+------------+----------------+---------------+
+</rod_pagina>
+
+<hash>0218dcf019ef108de64764c227e83c94</hash>
+</relatorio>

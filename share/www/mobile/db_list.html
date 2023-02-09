@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>ASMobile</title>
+	</head>
+	<body style="width: 310px;">
+		<img src="/images/topo_2.jpg" width="310" height="71" alt="">
+		<form method="POST" action="/select_db/">
+			<span style="color:#302663;">Selecione o banco de dados:</span>
+			<br>
+			<select style="width: 310px;" name="db_select">
+				<option tal:repeat="db db_list" tal:attributes="value db/id" tal:content="db/nome"></option>
+			</select>
+			<p>
+			<div style="text-align:center;">
+				<input type="submit" name="bt_confirmar" value="Confirmar">
+			</div>
+		</form>
+		<p>
+		<img src="/images/base_2.jpg" width="310" height="24" alt="">
+			</body>
+</html>

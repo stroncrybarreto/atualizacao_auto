@@ -1,0 +1,84 @@
+<relatorio dados="venda_produto_caixa">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1		    tam=91  alinha=centro
+4  titulo2		    tam=91  alinha=centro
+
+5  caixa		    tam=30
+6  data         	tam=10  fmt=data
+7  turno            tam=3   alinha=esquerda
+8  grupo_nome		tam=34
+9  produto_nome		tam=41  
+10 unid_med		    tam=4   alinha=centro
+11 quantidade   	tam=10   fmt=float3 alinha=direita
+
+12 preco_unit		tam=7   fmt=float3
+13 valor		    tam=13	fmt=float2
+
+14 total_qtd_grupo	tam=10   fmt=float3 alinha=direita 
+15 total_valor_grupo    tam=13  fmt=float2
+16 total_valor_caixa	tam=13  fmt=float2
+17 total_valor_geral    tam=13  fmt=float2
+18 pessoa_nome          tam=30
+19 pessoa_codigo		tam=8
+19 titulo3		        tam=91  alinha=centro
+20 titulo4		        tam=91	alinha=centro
+21 pessoa_cod_nome	tam=60 expr=str(pessoa_codigo)+' - '+pessoa_nome
+22 grupo_codigo		tam=6
+23 grupo_cod_nome	tam=36 expr=str(grupo_codigo)+' - '+grupo_nome
+</apelidos>
+
+<cab_pagina>
+#1                                                                           #2              
+---------------------------------------------------------------------------------------------
+
+#3                            
+#4                    
+#19
+#20
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="data,turno,caixa">
++-------------------------------------------------------------------------------------------+
+| Caixa......: #5                                              Data: #6          Turno: #7  |
+| Responsável: #21                                                                          |
++---------------------------------------------+------+------------+---------+---------------+
+|                   Produto                   | Uni. | Quantidade |  Preço  |     Total     |
++---------------------------------------------+------+------------+---------+---------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="grupo,data,turno,caixa">
+| Grupo: #23                                  |      |            |         |               |
+</cab_grupo>
+
+<detalhe>
+|   #9                                        | #10  | #11        | #12     | #13           |
+</detalhe>
+
+<rod_grupo nome="2">
+| Subtotal                                    |      | #14        |         | #15           |
+|                                             |      |            |         |               | 
+</rod_grupo>
+
+<rod_grupo nome='1'>
++---------------------------------------------+------+------------+---------+---------------+
+| Total                                       |      |            |         | #16           |
++---------------------------------------------+------+------------+---------+---------------+
+
+</rod_grupo>
+
+<rod_pagina>
++---------------------------------------------+------+------------+---------+---------------+
+</rod_pagina>
+
+<rod_relat>
++---------------------------------------------+------+------------+---------+---------------+
+| Total geral                                 |      |            |         | #17           |
++---------------------------------------------+------+------------+---------+---------------+
+</rod_relat>
+
+
+<hash>cdbf83584ffadb8dd0c8cd5a0d1d05a3</hash>
+</relatorio>

@@ -1,0 +1,72 @@
+<relatorio dados="cliente_em_atraso" ordem="pessoa_nome,conta_nome,vencto">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  titulo1          tam=135    alinha=centro
+4  titulo2          tam=135    alinha=centro
+5  pessoa_codigo    tam=8      alinha=esquerda
+6  pessoa_nome      tam=25     
+7  vencto           tam=10     fmt=data
+8  documento		tam=9     alinha=centro
+9  conta_nome		tam=20
+10 valor            tam=14     fmt=%.02f
+11 dias_atraso      tam=4 	    fmt=%d
+12 saldo		    tam=14 	fmt=%.02f func=soma campo=valor grupo=1
+13 pessoa_fone		tam=20     alinha=esquerda
+14 data_emissao     tam=10  fmt=data
+15 pessoa_celular   tam=15
+16 pessoa_contato	tam=12
+17 tabela_preco		tam=20
+18 tipo_vencto		tam=14
+19 periodo_ini		tam=10	    fmt=data
+20 periodo_fim		tam=10	    fmt=data
+21 total_geral	    tam=14     fmt=float2    alinha=direita    func=soma campo=valor 
+23 empresa_nome	    tam=50    alinha=esquerda
+24 total_conta      tam=14 	fmt=%.02f    alinha=direita    func=soma    campo=valor    grupo=1
+25 pessoa_cod_nome  tam=70    expr=str(pessoa_codigo)+' - '+pessoa_nome alinha=esquerda
+26 conta_cod_nome  tam=70 expr=str(conta_codigo)+' - '+conta_nome alinha=esquerda
+27 valor_juros      tam=9     fmt=float2    alinha=direita
+28 pdd_faixa		tam=3	  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                     #2
+---------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="conta_nome, conta_codigo">
++-------------------------------------------------------------------------------------------------------------------------------------+
+| Conta: #26                                                                                                                          |
+</cab_grupo>
+<cab_grupo nome="1" quebra="conta_nome, conta_codigo, pessoa_nome, pessoa_codigo">
++-------------------------------------------------------------------------------------------------------------------------------------+
+| Cliente: #25                                                                                              Fone #13                  |
++-----------+----------------+------------+------------+------------+------------+------+-----------+----------------+----------------+
+| Documento | Tp. vencimento |  Emissão   |   Início   |    Fim     | Vencimento | Dias |   Juros   |     Valor      |     Saldo      |
++-----------+----------------+------------+------------+------------+------------+------+-----------+----------------+----------------+
+</cab_grupo>
+<detalhe>
+| #8        | #18            | #14        | #19        | #20        | #7         | #11  | #27       | #10            | #12            |
+</detalhe>
+<rod_grupo nome="1">
+</rod_grupo>
+<rod_grupo nome="2">
++-------------------------------------------------------------------------------------------------------------------------------------+
+| Total conta                                                                                         #24                             |
++-------------------------------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+| Total geral                                                                                         #21                             |
++-------------------------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+<rod_pagina>
+
++-----------+----------------+------------+------------+------------+------------+------+-----------+----------------+----------------+
+</rod_pagina>
+<hash>7b9dd1d4b2a96eed4f303bd519ebb7db</hash>
+</relatorio>

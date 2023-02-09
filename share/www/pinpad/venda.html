@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>AUTOSYSTEM</title>
+	</head>
+	<body>
+		<form action="/abastecimento/" method="POST">
+			Informe o Bico:
+			<input type="text" name="bico" value=""><p>
+			Forma de pagamento:
+			<select name="forma_pgto">
+				<option tal:repeat="pgto pgto_list" tal:attributes="value pgto/codigo" tal:content="pgto/nome"></option>
+			</select><p>
+			<input type="submit" value="Confirmar">
+		</form>
+	</body>
+</html>

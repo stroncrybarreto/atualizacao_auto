@@ -1,0 +1,54 @@
+<relatorio dados="medicao_tanque_empresa">
+<apelidos>
+1 rel_posto_nome tam=50
+2 rel_data_hora tam=18
+3 titulo1 tam=97 alinha=centro
+4 titulo2 tam=97 alinha=centro
+5 produto_nome tam=30
+6 empresa_nome tam=25
+7 estoque tam=15 fmt=float3
+8 medicao tam=15 fmt=float3
+9 diferenca tam=15 fmt=float3
+10 total_estoque tam=15 fmt=float3
+11 total_medicao tam=15 fmt=float3
+12 total_diferenca tam=15 fmt=float3
+13 empresa_codigo tam=10
+</apelidos>
+<cab_pagina>
+
+#1                                                                              #2
+------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="produto">
++----------------------------------------------------------------------------------------------+
+| Combustível: #5                                                                              |
++------------+---------------------------+-----------------+-----------------+-----------------+
+|   Código   |         Empresa           |      Estoque    |     Medição     |    Diferença    |
++------------+---------------------------+-----------------+-----------------+-----------------+
+</cab_grupo>
+
+<detalhe>
+| #13        | #6                        | #7              | #8              | #9              |              
+</detalhe>
+
+<rod_grupo nome="1">
++------------+---------------------------+-----------------+-----------------+-----------------+
+| TOTAL                                  | #10             | #11             | #12             |
++------------+---------------------------+-----------------+-----------------+-----------------+
+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++------------+---------------------------+-----------------+-----------------+-----------------+
+</rod_pagina>
+
+<hash>3c6c0653d7d2d45804fce39bf4d9f6dd</hash>
+</relatorio>

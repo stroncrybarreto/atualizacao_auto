@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>Daycoval</nome>
+
+	<instrucao>
+		<id>1</id>
+		<codigo>1</codigo>
+		<nome>Entrada de Títulos</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>2</id>
+		<codigo>2</codigo>
+		<nome>Pedido de Baixa</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>3</id>
+		<codigo>4</codigo>
+		<nome>Concessão de Abatimento</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>4</id>
+		<codigo>5</codigo>
+		<nome>Cancelamento do Abatimento concedido</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>6</id>
+		<codigo>6</codigo>
+		<nome>Alteração de Vencimento</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>7</id>
+		<codigo>9</codigo>
+		<nome>Pedido de Protesto</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>8</id>
+		<codigo>18</codigo>
+		<nome>Sustar Protesto e Baixar Título</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>9</id>
+		<codigo>19</codigo>
+		<nome>Sustar Protesto e Manter em Carteira</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>10</id>
+		<codigo>31</codigo>
+		<nome>Alteração de Outros Dados</nome>
+	</instrucao>
+</layout>

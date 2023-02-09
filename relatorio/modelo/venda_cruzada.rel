@@ -1,0 +1,74 @@
+<relatorio dados="venda_cruzada_main" font_size="xx-small">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+3  titulo_principal      tam=130  alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2             
+----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<detalhe>
+</detalhe>
+
+<subrelat dados="venda_cruzada" nome="sessao_01" tipo="rel_principal" ordem="">
+<apelidos>
+5  row_header              tam=999999
+6  row_header_det          tam=999999
+7  produto_principal_nome  tam=40
+8  row_detalhe             tam=999999
+
+</apelidos>
+<cab_relat>
+
++------------------------------------------#5
+|                  Produto                 #6
++------------------------------------------#5
+</cab_relat>
+
+<detalhe>
+| #7                                       #8
+</detalhe>
+
+<rod_relat>
++------------------------------------------#5
+</rod_relat>
+
+</subrelat>
+
+<subrelat dados="venda_cruzada" nome="sessao_02" tipo="rel_resumo" ordem="">
+<apelidos>
+5  produto_nome            tam=84  expr=produto_principal_nome+ '  X  ' + produto_cruzado_nome
+6  numero_cruzamento       tam=12  fmt=float
+7  soma_cruzamento         tam=12  fmt=float  func=soma  campo=numero_cruzamento
+8  total_cruzamento        tam=8   fmt=float
+9  perc_cruzamento         tam=9   fmt=float2  expr=((numero_cruzamento/total_cruzamento) * 100)
+10 total_perc              tam=9   fmt=float2  func=soma  campo=perc_cruzamento
+11 ranking                 tam=8   func=contar
+12 ranking_det             tam=11  expr=str(ranking)+'°'  alinha=direita
+</apelidos>
+<cab_relat>
+
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+|                                        Produto                                       |  Quantidade  | Percentual |   Posição   |
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+</cab_relat>
+
+<detalhe>
+| #5                                                                                   | #6           | #9       % | #12         |
+</detalhe>
+
+<rod_relat>
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+| Total                                                                                | #7           | #10      % |             |
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+</rod_relat>
+
+</subrelat>
+
+<hash>35f59cf1dbe7a73cdf6960cec38b0360</hash>
+</relatorio>

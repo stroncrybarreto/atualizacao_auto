@@ -1,0 +1,66 @@
+<relatorio dados="cliente_sem_movto">
+<apelidos>
+1  rel_posto_nome   	tam=60
+2  rel_data_hora    	tam=16
+3  titulo1		        tam=190	  	alinha=centro
+4  quebra_titulo        tam=80 		alinha=equerda
+5  pessoa_codigo        tam=8 		alinha=centro
+6  pessoa_nome			tam=21 		alinha=esquerda
+7  data					tam=10 		fmt=data alinha=centro 
+8  dias                 tam=4 
+9  telefone 			tam=20 		alinha=esquerda
+10 celular				tam=13 		alinha=centro
+11 email				tam=34 		alinha=esquerda
+12 forma_pagamento		tam=17
+13 valor_venda			tam=11
+14 media_meses			tam=12		fmt=%.02f
+15 total_meses			tam=19		fmt=float2
+16 media_quant_ano		tam=12		fmt=%.02f
+17 total_ano			tam=14		fmt=%.02f
+18 data_cad				tam=10		fmt=data
+19 empresa_nome			tam=58
+20 situacao				tam=15
+21 pessoa_cod_nome		tam=26		alinha=esquerda
+22 situacao_tit			tam=27
+23 cupom				tam=9		alinha=centro
+24 quantidade_mes		tam=14		fmt=%.02f
+25 quantidade_ano		tam=14		fmt=%.02f
+26 media_tot_ano		tam=12		fmt=%.02f
+27 bv					tam=3		alinha=centro
+28 periodo_mes			tam=29		alinha=centro
+29 periodo_ano			tam=61		alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                            #2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra">
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| #4                                                                                                                                                                                         |
++-----------------------------------------------+--------------------------------------------+-------------------------------+---------------------------------------------------------------+
+|                                               |                                            | #28                           | #29                                                           |
+|            Informações do cadastro            |                Última Venda                |        Últimos 6 meses        |                    Período do ano anterior                    |
++----------------------------+------------+-----+------------+-----------+-------------------+--------------+----------------+----------------+--------------+----------------+--------------+
+|          Cliente           |  Cadastro  | B.V.|    Data    |   Cupom   |  Forma pagamento  | Med. litros  |  Total litros  |  Total litros  | Med. litros  |  Total vendido | Med. vendida |
++----------------------------+------------+-----+------------+-----------+-------------------+--------------+----------------+----------------+--------------+----------------+--------------+
+</cab_grupo>
+<detalhe>
+| #21                        | #18        | #27 | #7         | #23       | #12               | #14          | #24            | #25            | #16          | #17            | #26          |
+</detalhe>
+<rod_grupo nome="1">
++----------------------------+------------+-----+------------+-----------+-------------------+--------------+----------------+----------------+--------------+----------------+--------------+
+</rod_grupo>
+
+<rod_relat>
+
+</rod_relat>
+<rod_pagina>
+
+</rod_pagina>
+
+<hash>e77d90e7abbbd3bb0bf87f3e7d6014c9</hash>
+</relatorio>

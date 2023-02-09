@@ -1,0 +1,118 @@
+<relatorio dados="diario_cliente_txt" ordem="pessoa_codigo,data">
+<apelidos>
+1 rel_posto_nome   tam=80
+2 rel_data_hora    tam=16
+3 titulo           tam=135 expr='DIÁRIO DO CLIENTE' alinha=centro
+4 subtitulos       tam=135 alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                    #2
+--------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="diario_cliente_txt_main" ordem="pessoa_codigo, data">
+<apelidos>
+1 documento                 tam=9   alinha=centro
+2 motivo_movto_codigo_nome  tam=30
+3 empresa_cod_nome          tam=25  expr=str(empresa_codigo) + ' - ' + empresa_nome
+4 data                      tam=10  fmt=data
+5 vencto                    tam=10  fmt=data
+6 valor_debito				tam=14	fmt=float2
+7 valor_credito             tam=14	fmt=float2
+8 pessoa_cod_nome           tam=60  expr=str(pessoa_codigo) + ' - ' + pessoa_nome
+9 total_debito_dia	        tam=14	fmt=float2 func=soma campo=valor_debito grupo=2
+10 total_credito_dia		tam=14	fmt=float2 func=soma campo=valor_credito grupo=2
+11 total_cliente_debito	    tam=14	fmt=float2 func=soma campo=valor_debito grupo=1
+12 total_cliente_credito	tam=14	fmt=float2 func=soma campo=valor_credito grupo=1
+13 saldo_inicial            tam=14	fmt=float2
+14 saldo_final              tam=14	fmt=float2 expr=((saldo_inicial + total_cliente_debito) - total_cliente_credito)
+15 saldo_anterior           tam=14	fmt=float2
+16 total_periodo_debito     tam=14	fmt=float2 func=soma campo=valor_debito
+17 total_periodo_credito    tam=14	fmt=float2 func=soma campo=valor_credito
+18 saldo_atual              tam=14	fmt=float2 expr=((saldo_anterior + total_periodo_debito) - total_periodo_credito)
+
+19 corrige_totalizador      tam=10
+</apelidos>
+
+<cab_relat>
++-----------+--------------------------------+---------------------------+------------+------------+----------------+----------------+
+| Documento |     Motivo de movimentação     |          Empresa          |  Emissão   | Vencimento |     Débito     |     Crédito    |
++-----------+--------------------------------+---------------------------+------------+------------+----------------+----------------+
+</cab_relat>
+
+<cab_grupo nome="3" quebra="corrige_totalizador">
+</cab_grupo>
+
+<cab_grupo nome="1" quebra="pessoa_codigo">
+| Cliente: #8                                                                       Saldo inicial: | #13                             |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="data">
++--------------------------------------------------------------------------------------------------+----------------+----------------+
+|    Data: #4                                                                                                                        |
++-----------+--------------------------------+---------------------------+------------+------------+----------------+----------------+
+</cab_grupo>
+
+<detalhe>
+| #1        | #2                             | #3                        | #4         | #5         | #6             | #7             |
+</detalhe>
+
+<rod_grupo nome="2">
++-----------+--------------------------------+---------------------------+------------+------------+----------------+----------------+
+|                                                                                    Total do dia: | #9             | #10            |
+</rod_grupo>
+
+<rod_grupo nome="1">
+|                                                                                Total do cliente: | #11            | #12            |
+|                                                                                     Saldo final: | #14            |                |
++--------------------------------------------------------------------------------------------------+----------------+----------------+
+</rod_grupo>
+
+<rod_grupo nome="3">
+|                                                                                  Saldo anterior: | #15            |                |
+|                                                                                Total do período: | #16            | #17            |
+|                                                                                     Saldo atual: | #18            |                |
++--------------------------------------------------------------------------------------------------+----------------+----------------+
+</rod_grupo>
+
+</subrelat>
+
+<subrelat dados="diario_cliente_txt_resumo" ordem="nome">
+<apelidos>
+1 resumo_total         tam=135 expr='RESUMO POR MOTIVOS DE MOVIMENTAÇÕES' alinha=centro
+2 nome                 tam=40
+3 total_debito         tam=20  fmt=float2
+4 total_credito        tam=20  fmt=float2
+5 total_debito_resumo  tam=20  fmt=float2 func=soma campo=total_debito
+6 total_credito_resumo tam=20  fmt=float2 func=soma campo=total_credito
+</apelidos>
+
+<cab_relat>
+
+
+#1
+                      +------------------------------------------+----------------------+----------------------+
+                      |                   Nome                   |        Débito        |       Crédito        |
+                      +------------------------------------------+----------------------+----------------------+
+</cab_relat>
+
+<detalhe>
+                      | #2                                       | #3                   | #4                   |
+</detalhe>
+
+<rod_relat>
+                      +------------------------------------------+----------------------+----------------------+
+                      | Valor total:                             | #5                   | #6                   |
+                      +------------------------------------------+----------------------+----------------------+
+</rod_relat>
+</subrelat>
+
+<hash>bd81257db61a72d7e205c3e0dd5ef1ec</hash>
+</relatorio>

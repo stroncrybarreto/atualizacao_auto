@@ -1,0 +1,45 @@
+<relatorio dados="transferencia_grupo_produto" tamfonte="8">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora        tam=18
+3  titulo1		tam=141 alinha=centro
+4  titulo2		tam=141 alinha=centro
+5  empresa_nome		tam=50
+6  grupo_nome		tam=40
+7  data			tam=10	fmt=data
+8  turno		tam=2	alinha=esquerda 	
+9  produto_codigo	tam=13
+10 produto_nome		tam=25
+11 deposito_origem	tam=30
+12 deposito_destino	tam=30
+13 quantidade		tam=10	fmt=%.01f	alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                                         #2        
+---------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa,grupo">
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                | Grupo de Produtos: #6                                                        |
++----------------+---------------+---------------------------+--------------------------------+--------------------------------+------------+
+|  Data / Turno  | Codigo / Bico | Nome Produto              | Origem                         | Destino                        | Quantidade |
++----------------+---------------+---------------------------+--------------------------------+--------------------------------+------------+
+</cab_grupo>
+<detalhe>
+| #7         - #8| #9            | #10                       | #11                            | #12                            | #13        |
+</detalhe>
+<rod_grupo nome="1">
++----------------+---------------+---------------------------+--------------------------------+--------------------------------+------------+
+
+</rod_grupo>
+<rod_pagina>
++----------------+---------------+---------------------------+--------------------------------+--------------------------------+------------+
+</rod_pagina>
+
+<hash>8271eea96519ac9ce4bc74d9d9353e2b</hash>
+</relatorio>
+

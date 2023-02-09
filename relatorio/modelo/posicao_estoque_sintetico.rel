@@ -1,0 +1,82 @@
+<relatorio dados="posicao_estoque" ordem="empresa_cod_nome,deposito_codigo">
+<apelidos>
+1  rel_posto_nome         	tam=60
+2  rel_data_hora            tam=18
+3  data				        tam=10   fmt=data
+4  subtitulo            	tam=129  alinha=centro
+5  empresa_cod_nome		    tam=60
+6  deposito_cod_nome		tam=40
+7  codigo			        tam=7    alinha=centro
+8  nome				        tam=30
+9  preco_unit			    tam=15   fmt=float3
+10 preco_custo			    tam=15   fmt=float3
+11 estoque			        tam=11   fmt=float2
+12 deposito_total_venda		tam=10   fmt=%.02f
+13 deposito_total_custo		tam=10   fmt=%.02f
+14 deposito_total_estoque	tam=10   fmt=%.1f
+15 empresa_total_venda		tam=10   fmt=%.02f
+16 empresa_total_custo		tam=10   fmt=%.02f
+17 margem_lucro 		    tam=9    fmt=%.02f
+18 fornecedor_nome    		tam=60
+19 fornecedor_titulo 		tam=60
+
+21 total_custo_grupo		tam=15	 func=soma	campo=total_custo_hidden	fmt=float4	grupo=2
+22 total_venda_grupo		tam=15	 func=soma	campo=total_venda_hidden	fmt=float3	grupo=2
+23 total_estoque_grupo		tam=11	 func=soma	campo=estoque		fmt=float2	grupo=2
+24 total_margem_grupo		tam=9	 fmt=%.02f	expr=(total_venda_grupo-total_custo_grupo)/(total_custo_grupo or 1)*100	grupo=2
+
+26 total_empresa_custo		tam=15   func=soma	campo=total_custo_hidden	fmt=float4	grupo=1
+27 total_empresa_venda		tam=15   func=soma	campo=total_venda_hidden	fmt=float3	grupo=1
+31 total_geral_estoque		tam=11	 func=soma	campo=estoque		fmt=float2	grupo=1
+32 total_geral_margem		tam=9	 fmt=%.02f	expr=(total_empresa_venda-total_empresa_custo)/(total_empresa_custo or 1)*100	grupo=1
+
+33 linha_formato			tam=86
+34 linha_titulo				tam=86
+35 linha_total_deposito		tam=86
+36 linha_total_empresa		tam=86
+37 linha_formato2			tam=86
+
+28 empresa_nome				tam=50
+50 deposito_codigo			tam=10
+100 titulo					tam=129	alinha=centro	expr='POSIÇÃO DE ESTOQUE'
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                               #2               
+---------------------------------------------------------------------------------------------------------------------------------
+
+#100                                          
+#4
+
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1" repeticao="1">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                                   |
++------------------------------------------#33
+|                 Depósito                 #34
++------------------------------------------#33
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="deposito_codigo">
+</cab_grupo>
+
+<detalhe>
+</detalhe>
+
+<rod_grupo nome="2">
+| #6                                       #35
+</rod_grupo>
+
+<rod_grupo nome="1">
++------------------------------------------#33
+| Total empresa                            #36
++------------------------------------------#37
+</rod_grupo>
+
+<rod_pagina>
++------------------------------------------+-----------------+-----------------+------------------------------------------------+
+</rod_pagina>
+
+<hash>97dfa1cb9cae2a8c2b15d683c7ab3843</hash>
+</relatorio>

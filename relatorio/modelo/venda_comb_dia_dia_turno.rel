@@ -1,0 +1,97 @@
+<relatorio dados="venda_comb_dia_dia">
+<apelidos>
+1  nome_posto			tam=999
+2  ponto_titulo			tam=999
+3  titulo1			    tam=999
+90 subtitulo 			tam=850
+8  data					tam=10	fmt=data
+23 dia_semana			tam=10
+
+14 linha_moldura		    tam=999
+7  linha_cabecalho		    tam=999
+9  linha_detalhe		    tam=999
+10 linha_total			    tam=999
+11 linha_media			    tam=999
+12 linha_moldura_topo		tam=999
+13 linha_moldura_sub_titulo	tam=999
+28 linha_middle				tam=999
+
+15 linha_previsao   		tam=999
+16 turno_filtro			    tam=15
+17 grupo_total			    tam=999
+20 linha_estat			    tam=999
+21 total_mes_ant		    tam=999
+22 total_ano_ant		    tam=999
+24 total_per_ant            tam=999
+25 linha_subtotal			tam=999
+26 ponto_turno				tam=999
+27 espaco_turno				tam=999
+
+30 tit_empresa              tam=999
+31 ponto_empresa            tam=999
+32 row_geral_column          tam=95
+33 row_geral                 tam=999
+34 row_geral_middle          tam=999
+35 row_geral_sub             tam=999
+36 detalhe_total_geral_row   tam=999
+37 detalhe_media_geral_row   tam=999
+38 detalhe_previsao          tam=999
+39 row_rod_relat             tam=999
+40 row_rod_relat2            tam=999
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+{TIT}#3
+#90
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
+#31
+#30
+#26
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,turno_filtro">
+#16        #27
++------------+------------+#12
+|            |            |#7
+|            |   Dia da   |#28
+|    Data    |   semana   |#13
++------------+------------+#14
+</cab_grupo>
+
+<detalhe>
+| #8         | #23        |#9
+</detalhe>
+
+<rod_grupo nome="2">
++------------+------------+#14
+#17
+#25
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total      |            |#10
+| Média      |            |#11
+| Previsão   |            |#15
++------------+------------+#14
+
+</rod_grupo>
+
+<rod_relat>
+#40
+#32                        #33
+#32                        #34
+#32                        #35
+#39
+#36
+#37
+#38
+#39
+</rod_relat>
+<rod_pagina>
++------------+------------+#14
+</rod_pagina>
+
+<hash>10b0915cf74ffe3fa88ff5cf67c61ba5</hash>
+</relatorio>

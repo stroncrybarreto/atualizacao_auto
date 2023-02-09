@@ -1,0 +1,68 @@
+<relatorio dados="caixa_sangria_suprimento" font_size="small" ordem="empresa,quebra">
+<apelidos>
+1  info				tam=5000
+2  linha			tam=5000
+3  subtitulo		tam=5000
+4  empresa_cod_nome	tam=5000
+5  data				tam=10
+6  linha_cima_1		tam=5000
+7  linha_cima_2		tam=5000
+8  linha_quebra_2	tam=5000
+9  linha_pont		tam=5000
+10 linha_tit_conta	tam=5000
+11 detalhe			tam=5000
+12 total_conta		tam=5000
+13 linha_turno		tam=5000
+14 total_empresa	tam=5000
+15 total_geral		tam=5000
+</apelidos>
+
+<cab_pagina>
+#1
+---------------#2
+
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
++-------------#6
+| Empresa: #4
++-------------#6
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa,quebra">
+| Conta: #10
++------------+#7
+|            |#13
++------------+#9
+|    Data    |#8
++------------+#9
+</cab_grupo>
+
+<detalhe>
+| #5         |#11
+</detalhe>
+
+<rod_grupo nome="2">
++------------+#9
+| Conta      |#12
++------------+#9
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Empresa    |#14
++------------+#9
+
+</rod_grupo>
+
+<rod_relat>
++------------+#9
+| Geral      |#15
++------------+#9
+</rod_relat>
+
+<rod_pagina>
++------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+</rod_pagina>
+
+<hash>12c51513030623649c490c5455e5e957</hash>
+</relatorio>

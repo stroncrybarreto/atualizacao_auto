@@ -1,0 +1,46 @@
+<relatorio dados="cobranca_remessa" docname="Relatório de Produtos" font_size="x-small">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  banco			tam=7
+4  agencia			tam=5
+5  conta_corrente	tam=8
+6  arquivo			tam=10
+7  numero_remessa	tam=6
+8  nosso_numero		tam=11	alinha=direita
+9  documento		tam=10	alinha=direita
+10 vencto			tam=10	alinha=direita
+11 cliente			tam=40	alinha=esquerda
+12 valor			tam=13	alinha=direita	fmt=%.02f
+13 total			tam=5
+14 total_valor		tam=13	fmt=%.02f
+15 operacao			tam=80
+</apelidos>
+<cab_pagina>
+#1                                                                             #2                
+-----------------------------------------------------------------------------------------------
+ 
+              R E M E S S A   D E   I N F O R M A C O E S   D E   C O B R A N C A
+                               Banco #3      - AG #4    - C/C #5
+                                 Arquivo #6       - Remessa #7
+
+-----------------------------------------------------------------------------------------------
+     Nosso Nr.   Documento    Vencto    Cliente                                           Valor
+-----------------------------------------------------------------------------------------------
+</cab_pagina>
+<cab_grupo nome="1" quebra="operacao">
+OPERAÇÃO: #15
+
+</cab_grupo>
+<detalhe>
+   #8           #9          #10         #11                                       #12
+</detalhe>
+<rod_grupo nome="1">
+   TOTAL: #13   registros                                                  TOTAL: #14
+
+</rod_grupo>
+<rod_pagina>
+</rod_pagina>
+
+<hash>a42beee21147e118d007aee9d958131a</hash>
+</relatorio>

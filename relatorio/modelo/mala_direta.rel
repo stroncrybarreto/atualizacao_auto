@@ -1,0 +1,28 @@
+<relatorio dados="mala_direta" mode="raw">
+<apelidos>
+1  nome				tam=20
+2  endereco			tam=20 
+3  bairro			tam=20
+4  cidade			tam=20
+5  cep				tam=10
+6  estado			tam=2
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+
+<detalhe>
+{CPI12}{NEGR}#1                            
+{DNEG}#2                                  
+#3                                       
+#4                                 #5   
+#6                                     
+
+</detalhe>
+
+<rod_relat>
+</rod_relat>
+
+
+<hash>bbfcb451bc1fc96efbdb4443eb715ea0</hash>
+</relatorio>

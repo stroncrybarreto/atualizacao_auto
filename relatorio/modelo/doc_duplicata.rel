@@ -1,0 +1,69 @@
+<relatorio dados="doc_duplicata" docname="Modelo de Duplicata" ordem="documento">
+<apelidos>
+1 dia			tam=2
+2 mes_extenso		tam=10
+3 ano			tam=5
+4 valor			tam=12	alinha=esquerda
+5 valor_extenso1	tam=67
+6 valor_extenso2	tam=70
+7 cidade_estado		tam=28
+8 nome			tam=40
+9 cpf			tam=18
+10 valor_extenso3 	tam=70
+11 valor_extenso4 	tam=80
+12 data 		tam=10
+13 documento 		tam=8
+14 cpf_cliente		tam=18
+15 nome_cliente		tam=40
+16 endereco_cliente	tam=75
+17 empresa_endereco	tam=20
+18 empresa_bairro	tam=15
+19 empresa_cep		tam=10
+20 empresa_razao_social	tam=14
+</apelidos>
+<cab_pagina>
+
+</cab_pagina>
+<detalhe>
++----------------------------------------------------------------------------------------------------+
+| Duplicata                                                                                          |
+|                                                                                                    |
+| Nº #13                                            Vencimento: #1  de  #2        de #3              |
+|                                                                                                    |
+| R$ #4          #5                                                                                  |
+|    #6                                                                                              |
+|                                                                                                    |
+| No dia #1 de #2        de  #3     (data do vencimento por extenso)                                 |
+| pagar por esta única via de nota promissória na praça                                              |
+| de #7                                                                                              |                                                
+| (Cidade / Est)                                                                                     | 
+| a #8                                                                                               |
+| (nome da pessoa a quem deve ser paga), inscrito no CPF ou CNPJ                                     |
+| nº #9              ou à sua ordem a quantia de                                                     | 
+| #10                                                                                                |
+| #11                                                                                                |
+|                                                                                                    |
+|                                                                                                    |
+|                                                                                                    |
+|                                                                                                    |
+| #12        #7                                                                                      |
+| (Data e local da emissão da nota promissória)                                                      |
+|                                                                                                    |
+| _______________________________             ___________________________                            |
+|              Nome                                    Assinatura                                    |
+|                                                                                                    |
+|                                                                                                    |
+| CPF ou CNPJ ......: #14                                                                            |
+| Nome .............: #15                                                                            |
+| Endereço completo : #16                                                                            |
++----------------------------------------------------------------------------------------------------+ 
+
+
+</detalhe>
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
+</rod_relat>
+
+<hash>9e142c942d37addf2ef3b2cac47c2f01</hash>
+</relatorio>

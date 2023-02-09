@@ -1,0 +1,2187 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>DMC</nome>
+  
+  <sessao>
+	<nome>tipo_0</nome>
+	<desc>Declaração</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+	  <tipo>integer</tipo>
+	  <padrao>00</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 00</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto revendedor.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>15</fim>
+      <chave>tipo_arquivo</chave>
+      <tipo>string</tipo>
+	  <padrao>N</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>N - Arquivo Novo / R - Arquivo Retificador</descricao>
+	</registro>
+
+    <registro>
+      <inicio>16</inicio>
+      <fim>23</fim>
+      <chave>data_ini</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data Inicial do período.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>31</fim>
+      <chave>data_fim</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data Final do período.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>32</inicio>
+      <fim>101</fim>
+      <chave>responsavel</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Nome do responsável pelo envio do arquivo.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>102</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_10</nome>
+	<desc>Posto Revendedor</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>10</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 10</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>15</inicio>
+      <fim>28</fim>
+      <chave>cnpj</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CNPJ do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>29</inicio>
+      <fim>38</fim>
+      <chave>anp</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Registro do posto revendedor na ANP.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>39</inicio>
+      <fim>108</fim>
+      <chave>razao_social</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Razão social do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>109</inicio>
+      <fim>178</fim>
+      <chave>contato</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Nome do responsável para contato do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>179</inicio>
+      <fim>192</fim>
+      <chave>cnpj_contador</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CNPJ(empresa de contabilidade) ou CPF(contador) do responsável contábil do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>193</inicio>
+      <fim>297</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Logradouro do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>298</inicio>
+      <fim>362</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Complemento de endereço do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>363</inicio>
+      <fim>434</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Bairro do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>435</inicio>
+      <fim>506</fim>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Cidade do posto revendedor.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>507</inicio>
+      <fim>508</fim>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Estado do posto (UF).</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>509</inicio>
+      <fim>516</fim>
+      <chave>cep</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CEP do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>517</inicio>
+      <fim>519</fim>
+      <chave>ddd_fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do telefone do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>520</inicio>
+      <fim>527</fim>
+      <chave>fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Telefone do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>528</inicio>
+      <fim>530</fim>
+      <chave>ddd_fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do FAX do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>531</inicio>
+      <fim>538</fim>
+      <chave>fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>FAX do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>539</inicio>
+      <fim>618</fim>
+      <chave>email</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>E-mail para contato do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>619</inicio>
+      <fim>698</fim>
+      <chave>www</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Pagina WEB do posto.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>699</inicio>
+      <fim>750</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+	
+  </sessao>
+
+  <sessao>
+	<nome>tipo_11</nome>
+	<desc>Contador</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>11</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 20</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+    </registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>20</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CNPJ da empresa de contabilidade ou CPF do contador do posto.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>21</inicio>
+      <fim>90</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Razão Social no caso da empresa de contabilidade ou nome do contador.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>91</inicio>
+      <fim>101</fim>
+      <chave>crc</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CRC do contador ou do responsável.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>102</inicio>
+      <fim>171</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Nome do contador ou responsável.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>172</inicio>
+      <fim>276</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Logradouro do contador.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>277</inicio>
+      <fim>341</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Complemento do endereco.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>342</inicio>
+      <fim>413</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Bairro do contador/empresa de contabilidade.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>414</inicio>
+      <fim>485</fim>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Cidade contador/empresa.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>486</inicio>
+      <fim>487</fim>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Estado do contador/empresa (UF).</descricao>
+    </registro>
+
+    <registro>
+      <inicio>488</inicio>
+      <fim>495</fim>
+      <chave>cep</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CEP contador/empresa.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>496</inicio>
+      <fim>498</fim>
+      <chave>ddd_fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do telefone do contador/empresa.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>499</inicio>
+      <fim>506</fim>
+      <chave>fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Telefone do contador/empresa.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>507</inicio>
+      <fim>509</fim>
+      <chave>ddd_fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do FAX do contador/empresa.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>510</inicio>
+      <fim>517</fim>
+      <chave>fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>FAX do contador/empresa.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>518</inicio>
+      <fim>700</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_20</nome>
+	<desc>Tanque</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>20</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 20</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+    </registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição Estadual do posto revendedor.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>numero</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Código do tanque</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>37</fim>
+      <chave>capacidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Capacidade de armazenagem do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>38</inicio>
+      <fim>87</fim>
+      <chave>produto_nome</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Nome fantasia do combustível no posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>88</inicio>
+      <fim>92</fim>
+      <chave>tipo_dmc</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id do combustivel: 00001 (Alcool Aditivado) - 00002 (Alcool Etilico Hidratado) - 00003 (Gas Natural Veicular) - 00004 (Gasolina Aditivada) - 00005 (Gasolina C) - 00006 (Gasolina C Premium) - 00007 (Oleo Comb) - 00008 (Oleo Diesel) - 00009 (Oleo Diesel Aditivado) - 000010 (Oleo Diesel Maritimo) - 000011 (Querosene de aviacao) - 000012 (Querosene Iluminate) - 000013 (Gasolina Premium)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>93</inicio>
+      <fim>100</fim>
+      <chave>data_ativacao</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data de ativação do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>101</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_21</nome>
+	<desc>Estoque Diário</desc>
+		  
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>21</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 21</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+    </registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>tanque</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>32</fim>
+      <chave>data_inventario</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data da verificação do estoque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>45</fim>
+      <chave>qtd_inicial</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Quantidade inicial de combustível no tanque na data de verificação do estoque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>46</inicio>
+      <fim>58</fim>
+      <chave>qtd_final</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Quantidade final de combustível no tanque na data de verificação do estoque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>62</fim>
+      <chave>id_unidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id da unidade de medida do volume de combustivel em estoque: 0001 - Litros / 0002 - m3 (Obs.: Para GAS Natural é obrigatorio m3(</descricao>
+    </registro>
+
+    <registro>
+      <inicio>63</inicio>
+      <fim>77</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao>Ativo</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Situação do tanque na data de verificacao: Ativo - Interditado - Desativado - Em obras.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>78</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_22</nome>
+	<desc>Transferência entre Tanques</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>22</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 22</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>tanque_origem</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque de origem da transferência.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>34</fim>
+      <chave>tanque_destino</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque de destino da transferência.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>42</fim>
+      <chave>data_transferencia</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data da transferência do combustível.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>55</fim>
+      <chave>quantidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Quantidade de combustível transferida do tanque de origem para o tanque de destino.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>56</inicio>
+      <fim>59</fim>
+      <chave>id_unidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id da unidade de medida do volume de combustivel transferido: 0001 - Litros / 0002 - m3 (Obs.: Para GAS Natural é obrigatorio m3(</descricao>
+    </registro>
+
+    <registro>
+      <inicio>60</inicio>
+      <fim>69</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Número do bico onde se realizou a transferência.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>70</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_30</nome>
+	<desc>Bico</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>30</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 30</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>tanque</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque em que o bico está ligado.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>34</fim>
+      <chave>bico</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de identificação do bico.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>42</fim>
+      <chave>data_ativacao</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data de ativação do bico.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_31</nome>
+	<desc>Movimentação Diária</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>31</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 31</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>tanque</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>34</fim>
+      <chave>bico</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do bico.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>42</fim>
+      <chave>data_movto</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data de movimentação do bico.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>55</fim>
+      <chave>enc_ini</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Encerrante Inicial.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>56</inicio>
+      <fim>68</fim>
+      <chave>enc_fim</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Encerrante Final.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>69</inicio>
+      <fim>81</fim>
+      <chave>preco_unit</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Preço do combustível na bomba na data de movimentação.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>82</inicio>
+      <fim>96</fim>
+      <chave>situacao</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Situação do bico na data de movimentação: Ativo - Interditado - Desativado - Manutencao</descricao>
+    </registro>
+
+    <registro>
+      <inicio>97</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_32</nome>
+	<desc>Intervenção Técnica</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>32</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 32</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>tanque</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>34</fim>
+      <chave>bico</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do bico em que ocorreu a intervenção técnica.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>42</fim>
+      <chave>data</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data da intervenção.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>55</fim>
+      <chave>enc_ini</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do encerrante antes da intervenção.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>56</inicio>
+      <fim>68</fim>
+      <chave>enc_fim</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do encerrante depois da intervenção.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>69</inicio>
+      <fim>82</fim>
+      <chave>cnpj</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do CNPJ da firma credenciada, responsável pela intervenção técnica.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>83</inicio>
+      <fim>152</fim>
+      <chave>tecnico</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Nome do técnico que realizou a intervenção técnica.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>153</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_33</nome>
+	<desc>Aferição</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>33</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 33</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>tanque</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>34</fim>
+      <chave>bico</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de identificação do bico em que ocorreu a aferição.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>42</fim>
+      <chave>data_afericao</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data da aferição.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>55</fim>
+      <chave>enc_ini</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número encerrante antes da aferição.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>56</inicio>
+      <fim>68</fim>
+      <chave>enc_fim</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número encerrante após aferição.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>69</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_40</nome>
+	<desc>Nota Fiscal de Compra</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>40</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 40</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>28</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número CNPJ do distribuidor de combustível.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>29</inicio>
+      <fim>30</fim>
+      <chave>modelo</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Modelo da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>31</inicio>
+      <fim>32</fim>
+      <chave>serie</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de série da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>38</fim>
+      <chave>numero_nota</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número da nota fiscal.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>39</inicio>
+      <fim>46</fim>
+      <chave>data_emissao</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data de emissão.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>54</fim>
+      <chave>data_saida</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data de entrada da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>55</inicio>
+      <fim>67</fim>
+      <chave>valor_nota</chave>
+      <tipo>float</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor total da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>68</inicio>
+      <fim>80</fim>
+      <chave>valor_icms</chave>
+      <tipo>float</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Valor do ICMS destacado.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>81</inicio>
+      <fim>93</fim>
+      <chave>valor_subst</chave>
+      <tipo>float</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Valor do ICMS de substituição tributária.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>94</inicio>
+      <fim>104</fim>
+      <chave>selo_fiscal_nr</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Número do selo fiscal. Preenchido no caso de distribuidor do estado do RJ.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>105</inicio>
+      <fim>121</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Número do passe fiscal. Preenchido no caso de distribuidor de outra UF.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>122</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo></tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_41</nome>
+	<desc>Ítens da Nota Fiscal de Compra</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>41</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 41</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>28</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número CNPJ do distribuidor de combustível.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>29</inicio>
+      <fim>30</fim>
+      <chave>modelo</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Modelo da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>31</inicio>
+      <fim>32</fim>
+      <chave>serie</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de série da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>38</fim>
+      <chave>numero_nota</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>39</inicio>
+      <fim>42</fim>
+      <chave>tipo_dmc</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id do combustível: 00001 (Alcool Aditivado) - 00002 (Alcool Etilico Hidratado) - 00003 (Gas Natural Veicular) - 00004 (Gasolina Aditivada) - 00005 (Gasolina C) - 00006 (Gasolina C Premium) - 00007 (Oleo Comb) - 00008 (Oleo Diesel) - 00009 (Oleo Diesel Aditivado) - 000010 (Oleo Diesel Maritimo) - 000011 (Querosene de aviacao) - 000012 (Querosene Iluminate) - 000013 (Gasolina Premium)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>55</fim>
+      <chave>quantidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Quantidade de combustível na compra.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>56</inicio>
+      <fim>59</fim>
+      <chave>id_unidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id da unidade de medida do volume de combustivel: 0001 - Litros / 0002 - m3 (Obs.: Para GAS Natural é obrigatorio m3(</descricao>
+    </registro>
+
+    <registro>
+      <inicio>60</inicio>
+      <fim>72</fim>
+      <chave>preco_unit</chave>
+      <tipo>float</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Preco unitário do combustível.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>73</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo></tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_42</nome>
+	<desc>Distribuição da Compra pelos Tanques</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>42</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 41</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>28</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número CNPJ do distribuidor de combustível.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>29</inicio>
+      <fim>30</fim>
+      <chave>modelo</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Modelo da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>31</inicio>
+      <fim>32</fim>
+      <chave>serie</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de série da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>38</fim>
+      <chave>numero_nota</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>39</inicio>
+      <fim>48</fim>
+      <chave>tanque</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número do tanque.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>49</inicio>
+      <fim>61</fim>
+      <chave>quantidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Quantidade de combustível na compra.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>62</inicio>
+      <fim>65</fim>
+      <chave>id_unidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id da unidade de medida do volume de combustivel: 0001 - Litros / 0002 - m3 (Obs.: Para GAS Natural é obrigatorio m3(</descricao>
+    </registro>
+
+    <registro>
+      <inicio>66</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_45</nome>
+	<desc>Nota Fiscal de Venda</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>45</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 45</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>16</fim>
+      <chave>modelo</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Modelo da nota. Os modelos aceitos sao 1 e 1A</descricao>
+	</registro>
+
+    <registro>
+      <inicio>17</inicio>
+      <fim>18</fim>
+      <chave>serie</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de série da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>19</inicio>
+      <fim>24</fim>
+      <chave>numero_nota</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>32</fim>
+      <chave>data_emissao</chave>
+      <tipo>date4y</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Data de emissão da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>45</fim>
+      <chave>valor_nota</chave>
+      <tipo>float</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor total da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>46</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_46</nome>
+	<desc>Ítens da Nota Fiscal de Venda</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>46</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 46</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+	</registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>14</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Inscrição estadual do posto.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>15</inicio>
+      <fim>16</fim>
+      <chave>modelo</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Modelo da nota. Os modelos aceitos sao 1 e 1A</descricao>
+	</registro>
+
+    <registro>
+      <inicio>17</inicio>
+      <fim>18</fim>
+      <chave>serie</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número de série da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>19</inicio>
+      <fim>24</fim>
+      <chave>numero_nota</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Número da nota.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>28</fim>
+      <chave>tipo_dmc</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id do combustivel: 00001 (Alcool Aditivado) - 00002 (Alcool Etilico Hidratado) - 00003 (Gas Natural Veicular) - 00004 (Gasolina Aditivada) - 00005 (Gasolina C) - 00006 (Gasolina C Premium) - 00007 (Oleo Comb) - 00008 (Oleo Diesel) - 00009 (Oleo Diesel Aditivado) - 000010 (Oleo Diesel Maritimo) - 000011 (Querosene de aviacao) - 000012 (Querosene Iluminate) - 000013 (Gasolina Premium)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>29</inicio>
+      <fim>41</fim>
+      <chave>quantidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Quantidade de combustível na venda.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>42</inicio>
+      <fim>45</fim>
+      <chave>id_unidade</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Id da unidade de medida do volume de combustivel: 0001 - Litros / 0002 - m3 (Obs.: Para GAS Natural é obrigatorio m3(</descricao>
+    </registro>
+
+    <registro>
+      <inicio>46</inicio>
+      <fim>58</fim>
+      <chave>preco_unit</chave>
+      <tipo>float</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Preço unitário do combustível.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>200</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_50</nome>
+	<desc>Distribuidor</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>50</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 50</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+    </registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>20</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Inscrição estadual.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>21</inicio>
+      <fim>34</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CNPJ.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>104</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Razão Social / Nome</descricao>
+    </registro>
+
+    <registro>
+      <inicio>105</inicio>
+      <fim>209</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Logradouro</descricao>
+    </registro>
+
+    <registro>
+      <inicio>210</inicio>
+      <fim>274</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Complemento do logradouro</descricao>
+    </registro>
+
+    <registro>
+      <inicio>275</inicio>
+      <fim>346</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Bairro.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>347</inicio>
+      <fim>418</fim>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Cidade.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>419</inicio>
+      <fim>420</fim>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Estado (UF).</descricao>
+    </registro>
+
+    <registro>
+      <inicio>421</inicio>
+      <fim>428</fim>
+      <chave>cep</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CEP.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>429</inicio>
+      <fim>431</fim>
+      <chave>ddd_fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do telefone.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>432</inicio>
+      <fim>439</fim>
+      <chave>fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Telefone.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>440</inicio>
+      <fim>442</fim>
+      <chave>ddd_fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do FAX.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>443</inicio>
+      <fim>450</fim>
+      <chave>fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Número do FAX.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>451</inicio>
+      <fim>530</fim>
+      <chave>email</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>E-mail para contato.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>531</inicio>
+      <fim>610</fim>
+      <chave>www</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Página WEB.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>611</inicio>
+      <fim>700</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+  <sessao>
+	<nome>tipo_60</nome>
+	<desc>Firma Credenciada</desc>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>60</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 60</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>3</inicio>
+      <fim>6</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+	  <padrao>0101</padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Valor Constante 0101</descricao>
+    </registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>20</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CNPJ.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>21</inicio>
+      <fim>34</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Inscrição estadual.</descricao>
+	</registro>
+
+    <registro>
+      <inicio>35</inicio>
+      <fim>104</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Razão social.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>105</inicio>
+      <fim>174</fim>
+      <chave>contato</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Nome do Contato.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>175</inicio>
+      <fim>279</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Logradouro.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>280</inicio>
+      <fim>344</fim>
+	  <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Complemento.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>345</inicio>
+      <fim>416</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Bairro.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>417</inicio>
+      <fim>488</fim>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Cidade.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>489</inicio>
+      <fim>490</fim>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Estado (UF).</descricao>
+    </registro>
+
+    <registro>
+      <inicio>491</inicio>
+      <fim>498</fim>
+      <chave>cep</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>CEP.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>499</inicio>
+      <fim>501</fim>
+      <chave>ddd_fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do telefone.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>502</inicio>
+      <fim>509</fim>
+      <chave>fone</chave>
+      <tipo>integer</tipo>
+	  <padrao></padrao>
+	  <obrigatorio>True</obrigatorio>
+	  <descricao>Telefone.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>510</inicio>
+      <fim>512</fim>
+      <chave>ddd_fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>DDD do FAX.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>513</inicio>
+      <fim>520</fim>
+      <chave>fax</chave>
+      <tipo>integer</tipo>
+	  <padrao>0</padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Número do FAX.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>521</inicio>
+      <fim>600</fim>
+      <chave>email</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>E-mail.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>601</inicio>
+      <fim>680</fim>
+      <chave>www</chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Página WEB.</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>681</inicio>
+      <fim>700</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+	  <obrigatorio>False</obrigatorio>
+	  <descricao>Brancos</descricao>
+	</registro>
+
+  </sessao>
+
+</layout>

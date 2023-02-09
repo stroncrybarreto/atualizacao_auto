@@ -1,0 +1,69 @@
+<relatorio dados="contas_pagar_pagas" tamfonte="8" paper_orientation="landscape" ordem="ordem">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=16
+3  data_vencimento		tam=10  fmt=data
+4  data_pagamento		tam=10  fmt=data
+5  fornecedor_nome		tam=29
+6  documento			tam=9   alinha=centro
+7  obs					tam=28
+8  valor				tam=13  fmt=float2
+9  vl_total				tam=13  fmt=float2  func=soma	campo=vl_pago
+10 nr_total 			tam=10
+11 titulo		    	tam=146 alinha=centro
+13 contra_partida		tam=8
+14 multa				tam=8	fmt=float2
+15 juros				tam=8	fmt=float2
+16 total_multa			tam=8	fmt=float2	func=soma	campo=multa
+17 total_juros			tam=8	fmt=float2	func=soma	campo=juros
+18 vl_pago				tam=13	fmt=float2
+19 vl_titulo       		tam=13	fmt=float2
+20 desconto     		tam=10	fmt=float2
+21 total_titulo			tam=13	fmt=float2	func=soma	campo=vl_titulo
+22 total_desconto		tam=10	fmt=float2	func=soma	campo=desconto
+23 total_multa_grupo	tam=8	fmt=float2	func=soma	campo=multa 	grupo=1
+24 total_juros_grupo	tam=8	fmt=float2	func=soma	campo=juros		grupo=1
+25 vl_total_grupo		tam=13  fmt=float2  func=soma	campo=vl_pago	grupo=1
+26 total_titulo_grupo	tam=13	fmt=float2	func=soma	campo=vl_titulo	grupo=1
+27 total_desconto_grupo	tam=10	fmt=float2	func=soma	campo=desconto	grupo=1
+28 fornecedor_cod_nome  tam=110 expr=str(fornecedor_codigo)+" - "+fornecedor_nome
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                  #2
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+#11
+				
+</cab_pagina>
+<cab_grupo nome="1" quebra="fornecedor_nome">
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fornecedor: #28                                                                                                                                  |
++------------+-----------+------------+----------+------------------------------+---------------+------------+----------+----------+---------------+
+| Pagamento  | Documento | Vencimento | C. part. |          Observação          | Valor título  |  Desconto  |  Multa   |  Juros   |   Valor pago  |
++------------+-----------+------------+----------+------------------------------+---------------+------------+----------+----------+---------------+
+</cab_grupo>                  
+
+<detalhe>
+| #4         | #6        | #3         | #13      | #7                           | #19           | #20        | #14      | #15      | #18           |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+-----------+------------+----------+------------------------------+---------------+------------+----------+----------+---------------+
+| Subtotal                                                                      | #26           | #27        | #23      | #24      | #25           |
++-------------------------------------------------------------------------------+---------------+------------+----------+----------+---------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-------------------------------------------------------------------------------+---------------+------------+----------+----------+---------------+
+| Total                                                                         | #21           | #22        | #16      | #17      | #9            |
++-------------------------------------------------------------------------------+---------------+------------+----------+----------+---------------+
+</rod_relat>
+
+<rod_pagina>
++------------+-----------+------------+----------+------------------------------+---------------+------------+----------+----------+---------------+
+</rod_pagina>
+
+<hash>71692392b973e110836ef714a8c03ec4</hash>
+</relatorio>

@@ -1,0 +1,33 @@
+<relatorio dados="doc_movto" docname="Modelo de vale para funcionario" mode="raw">
+<apelidos>
+1  empresa_nome			tam=35	alinha=centro
+2  movto_documento		tam=10
+3  pessoa_nome			tam=40
+4  movto_valor			tam=8   fmt=%.02f
+5  movto_valor_ext1		tam=40	alinha=strip
+6  movto_data			tam=10	fmt=data
+</apelidos>
+<cab_pagina>
+</cab_pagina>
+
+<detalhe>
+{CPI05}{NEGR}
+#1
+{CPI10}{DNEG}              DINHEIRO RETIRADO DO CAIXA PELO FUNCIONARIO
+			
+
+NUM. VALE: #2
+FUNCIONARIO: #3
+VALOR R$: #4         #5
+
+
+BRASILIA:  #6                 _____________________________________
+                              #3
+_____________________________________________________________________________
+</detalhe>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>6ed852e4b6b04621a0f57d332a70b3db</hash>
+</relatorio>

@@ -1,0 +1,58 @@
+<relatorio dados="curva_abc_venda">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  titulo1             tam=98  alinha=centro
+4  titulo_classe       tam=40
+5  produto_codigo      tam=6   alinha=centro
+6  produto_nome        tam=35
+7  quantidade          tam=10  fmt=%.01f
+8  valor               tam=12  fmt=%.02f
+9  perc_classe         tam=6   fmt=%.02f
+10 perc_quantidade_total tam=7   fmt=%.02f
+11 tot_valor_classe    tam=12  fmt=%.02f
+12 tot_perc_classe     tam=6   fmt=%.02f
+13 tot_perc_quantidade tam=7   fmt=%.02f
+14 tot_valor           tam=12  fmt=%.02f
+15 rodape_classe       tam=40
+16 titulo2             tam=98  alinha=centro
+17 rodape_total        tam=40
+18 tot_quantidade_classe tam=10 fmt=%.01f
+19 tot_quantidade      tam=10   fmt=%.01f
+</apelidos>
+<cab_pagina>
+#1                                                                                  #2
+----------------------------------------------------------------------------------------------------
+
+#3
+#16
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="classe">
++--------------------------------------------------------------------------------------------------+
+| #4                                                                                               |
++--------+--------------------------------------+------------+--------------+----------+-----------+
+| Código |         Descrição do produto         | Quantidade |     Valor    | % Classe |  % Total  |
++--------+--------------------------------------+------------+--------------+----------+-----------+
+</cab_grupo>
+<detalhe>
+| #5     | #6                                   | #7         | #8           | #9     % | #10     % |
+</detalhe>
+<rod_grupo nome="1">
++--------+--------------------------------------+------------+--------------+----------+-----------+
+| #15                                           | #18        | #11          | #12    % | #13     % |
++-----------------------------------------------+------------+--------------+----------+-----------+
+
+</rod_grupo>
+<rod_relat>
++-----------------------------------------------+------------+--------------+----------+-----------+
+| #17                                           | #19        | #14          | 100.00 % |  100.00 % |
++-----------------------------------------------+------------+--------------+----------+-----------+
+</rod_relat>
+<rod_pagina>
++--------+--------------------------------------+------------+--------------+----------+-----------+
+
+</rod_pagina>
+
+<hash>3957e082c4d375c5380aed7602bfb80e</hash>
+</relatorio>

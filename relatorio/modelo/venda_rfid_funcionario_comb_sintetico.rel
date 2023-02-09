@@ -1,0 +1,64 @@
+<relatorio dados="venda_rfid" ordem="funcionario_nome,funcionario_codigo,cartao,data_lancto,produto_nome,produto_codigo">
+<apelidos>
+1  rel_posto_nome	tam=56
+2  rel_data_hora	tam=18
+3  titulo    		tam=73	alinha=centro
+
+4  produto_nome           tam=21
+5  produto_codigo         tam=21
+6  produto_cod_nome       tam=21
+
+7  funcionario_nome       tam=72
+8  funcionario_codigo     tam=72
+9  funcionario_cod_nome   tam=54
+10 cartao                 tam=45
+11 data_lancto            tam=10  fmt=data
+12 bico_nome              tam=4   alinha=centro
+13 abastec_quantidade     tam=14  fmt=float3
+14 abastec_valor          tam=14  fmt=float2
+15 qtde_abastec           tam=11  alinha=centro
+
+16 subtotal_litros	      tam=14  fmt=float3	func=soma	campo=abastec_quantidade   grupo=1
+17 subtotal_valor	      tam=14  fmt=float2	func=soma	campo=abastec_valor	       grupo=1
+18 subtotal_abastec	      tam=11  alinha=centro func=soma	campo=qtde_abastec	       grupo=1
+
+19 total_litros		      tam=14  fmt=float3	func=soma	campo=abastec_quantidade		
+20 total_valor		      tam=14  fmt=float2	func=soma	campo=abastec_valor	
+21 total_abastec	      tam=11  alinha=centro func=soma	campo=qtde_abastec
+
+</apelidos>
+<cab_pagina>
+#1                                                       #2              
+-------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="funcionario_nome,funcionario_codigo,cartao">
++-----------------------------------------------------------------------+
+| Funcionário: #9                                                       |
+| Cartão RFID: #10                                                      | 
++-----------------------+----------------+----------------+-------------+
+|      Combustível      |   Quantidade   |     Valor      | Núm. abast. |
++-----------------------+----------------+----------------+-------------+
+</cab_grupo>
+<detalhe>
+| #4                    | #13            | #14            | #15         |
+</detalhe>
+<rod_grupo nome="1">
++-----------------------+----------------+----------------+-------------+
+| Subtotal              | #16            | #17            | #18         |
++-----------------------+----------------+----------------+-------------+
+
+</rod_grupo>
+
+<rod_relat>
++-----------------------+----------------+----------------+-------------+
+| Total                 | #19            | #20            | #21         |
++-----------------------+----------------+----------------+-------------+
+</rod_relat>
+
+
+<hash>d9733946a002a765b5301edab1582d84</hash>
+</relatorio>

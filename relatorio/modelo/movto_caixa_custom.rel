@@ -1,0 +1,337 @@
+<relatorio dados="movto_caixa">
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18
+</apelidos>
+<cab_pagina>
+#1                                                                                            #2
+--------------------------------------------------------------------------------------------------------------
+
+                                             {TIT}MOVIMENTAÇÃO DO CAIXA 
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="movto_caixa_info" nome="info">
+<apelidos>
+1  conta_nome		tam=48
+2  empresa_nome		tam=37
+3  pessoa_nome		tam=40
+4  usuario			tam=7 
+5  data				tam=10  fmt=data
+6  dia_semana		tam=3
+7  turno			tam=2
+8  abertura			tam=15
+9  fechamento		tam=15
+10 conferencia		tam=15
+</apelidos>
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="1" quebra="conta">
++---------------------------------------------------------+--------------------------------------------------+
+| Conta: #1                                               | Empresa: #2                                      |
+</cab_grupo>
+<detalhe>
++---------------------------------------------------------+------------------+-------------------------------+
+| Responsável: #3                                         | Usuario: #4      | Conferido.: #10               |
++-----------------------------+-------------+-------------+------------------+-------------------------------+
+| Data.: #5         #6        | Turno: #7   | Abertura: #8                   | Fechamento: #9                |
+</detalhe>
+<rod_grupo nome="1">
++-----------------------------+-------------+-------------+------------------+-------------------------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_movto" nome="movto">
+<apelidos>
+1  entrada_nome  	 tam=33
+2  entrada_count  	 tam=4   fmt=%d    nulo
+3  entrada_valor	 tam=10  fmt=float2 nulo
+4  saida_nome  		 tam=33
+5  saida_count  	 tam=4   fmt=%d    nulo
+6  saida_valor		 tam=10  fmt=float2 nulo
+7  entrada_total 	 tam=10  fmt=float2
+8  saida_total	 	 tam=10  fmt=float2
+9  sobra_falta	   	 tam=10  fmt=float2
+10 diferenca 	     tam=10  fmt=float2
+11 acumulado         tam=10  fmt=float2
+</apelidos>
+<cab_relat>
++----------------------------------+------+-----------++----------------------------------+------+-----------+
+| ENTRADAS                         | Cont |     Valor || SAIDAS                           | Cont |     Valor |
++----------------------------------+------+-----------++----------------------------------+------+-----------+
+</cab_relat>
+<detalhe>
+| #1                               | #2   |#3         || #4                               | #5   |#6         |
+</detalhe>
+<rod_relat>
++----------------------------------+------+-----------++----------------------------------+------+-----------+
+| Sub-Total                               |#7         || Sub-Total                               |#8         |
++-----------------------------------------+-----------++-----------------------------------------+-----------+
+                                                       | Sobra (+) / Falta (-)                   |#9         |
+                                                       | Diferença                               |#10        |
+                                                       | Acumulado mensal                        |#11        |
+                                                       +-----------------------------------------+-----------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_cheque_troco" nome="cheque_troco">
+<apelidos>
+1  abertura_qtde	tam=7
+2  abertura_valor	tam=14  fmt=float2
+3  entrada_qtde		tam=7
+4  entrada_valor	tam=14  fmt=float2
+5  saida_qtde		tam=7
+6  saida_valor		tam=14  fmt=float2
+7  fechamento_qtde	tam=7
+8  fechamento_valor	tam=15  fmt=float2
+</apelidos>
+<cab_relat>
+
+                           M O V I M E N T A C A O   D E   C H E Q U E   T R O C O 
+
+</cab_relat>
+<cab_pagina>
++--------------------------+--------------------------+--------------------------+---------------------------+
+|         Abertura         |         Entrada          |          Saída           |        Fechamento         |
++---------+----------------+---------+----------------+---------+----------------+---------+-----------------+
+</cab_pagina>
+<detalhe>
+| #1      | #2             | #3      | #4             | #5      | #6             | #7      | #8              | 
+</detalhe>
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
++---------+----------------+---------+----------------+---------+----------------+---------+-----------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_cupom_cancelado" nome="cupom_cancelado">
+<apelidos>
+1  data_hora			tam=14
+2  nr_cupom				tam=6
+3  motivo_cancela		tam=20
+4  motivo_cancela_obs	tam=57
+</apelidos>
+<cab_relat>
+
+                                     C U P O N S   C A N C E L A D O S
+
++----------------+--------+----------------------+-----------------------------------------------------------+
+|   Data/Hora    |  Cupom | Motivo               | Obs                                                       |
++----------------+--------+----------------------+-----------------------------------------------------------+
+</cab_relat>
+<detalhe>
+| #1             | #2     | #3                   | #4                                                        |
+</detalhe>
+<rod_relat>
++----------------+--------+----------------------+-----------------------------------------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_cupom_desconto" nome="cupom_desconto">
+<apelidos>
+1  nr_cupom			tam=6
+2  nr_ecf			tam=3	alinha=centro
+3  hora_emissao		tam=5	fmt=hora
+4  situacao			tam=2
+5  pessoa_nome		tam=15
+6  produto_nome		tam=18
+7  pgto_nome		tam=18
+8  valor_cupom		tam=11	fmt=float2
+9  valor_desconto	tam=7	fmt=float2
+10 total_cupom		tam=11	fmt=float2
+11 total_desconto	tam=7	fmt=float2
+</apelidos>
+<cab_relat>
+
+                         C U P O N S   E M I T I D O S   C O M   D E S C O N T O
+
++--------+-----+-------+----+-----------------+--------------------+-------------------+------------+--------+
+|  Cupom | ECF | Hora  | St | Cliente         | Produto            | Forma Pgto        |      Valor |  Desc. |
++--------+-----+-------+----+-----------------+--------------------+-------------------+------------+--------+
+</cab_relat>
+<detalhe>
+| #1     | #2  | #3    | #4 | #5              | #6                 | #7                |#8          |#9      |
+</detalhe>
+<rod_relat>
++--------+-----+-------+----+-----------------+--------------------+-------------------+------------+--------+
+| TOTAL                                                                                |#10         |#11     |
++--------------------------------------------------------------------------------------+------------+--------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_bico" nome="bico">
+<apelidos>
+1  nome         	  tam=2
+2  comb_nome       	  tam=2
+3  inicial	          tam=12  fmt=float2
+4  final	          tam=12  fmt=float2
+5  litros			  tam=10  fmt=float2
+6  afericao 		  tam=8   fmt=float2
+7  aviso		      tam=2
+8  venda 		      tam=8   fmt=float2
+9  preco_unit 		  tam=6   fmt=%.03f
+10 desconto		      tam=8	  fmt=float2
+11 valor 		      tam=12  fmt=float2
+</apelidos>
+<cab_relat>
++--------+-------------+-------------+------------+----------+------------+--------+----------+--------------+
+|  Bico  |     Inicial |       Final |     Litros | Aferição |      Venda |  Preco | Desconto |        Valor |
++--------+-------------+-------------+------------+----------+------------+--------+----------+--------------+
+</cab_relat>
+<detalhe>
+| #1  #2 |#3           |#4           | #5         | #6       | #7#8       | #9     | #10      | #11          |
+</detalhe>
+<rod_relat>
++--------+-------------+-------------+------------+----------+------------+--------+----------+--------------+
+</rod_relat>
+</subrelat>
+
+<subrelat nome="cab_combustivel" visivel="false">
+<detalhe>
++-------------------------------------------------+----------+------------+--------+----------+--------------+
+| Combustivel                                     | Aferição |      Venda |  Preco | Desconto |        Valor |
++-------------------------------------------------+----------+------------+--------+----------+--------------+
+</detalhe>
+</subrelat>
+
+<subrelat dados="movto_caixa_combustivel" nome="combustivel">
+<apelidos>
+1  produto_nome    	  tam=30  
+2  afericao 		  tam=8   fmt=float2
+3  venda	 		  tam=10  fmt=float2
+4  preco_unit		  tam=6   fmt=%.03f
+5  desconto 		  tam=8   fmt=float2
+6  valor 		      tam=12  fmt=float2
+</apelidos>
+<cab_relat>
+</cab_relat>
+<detalhe>
+| #1                                              | #2       | #3         | #4     | #5       | #6           |
+</detalhe>
+<rod_relat>
++-------------------------------------------------+----------+------------+--------+----------+--------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_total_comb" nome="total_comb">
+<apelidos>
+1  afericao 		  tam=8   fmt=float2
+2  venda		 	  tam=10  fmt=float2
+3  desconto		 	  tam=8   fmt=float2
+4  valor 		      tam=12  fmt=float2
+</apelidos>
+<detalhe>
+| Total                                           | #1       | #2         |        | #3       | #4           |
++-------------------------------------------------+----------+------------+--------+----------+--------------+
+
+</detalhe>
+</subrelat>
+
+<subrelat dados="movto_caixa_comb_preco" nome="comb_preco">
+<apelidos>
+1  nome_1			tam=20
+2  venda_1			tam=8 	fmt=float2
+3  preco_1			tam=6	fmt=%.03f
+4  valor_1			tam=8 	fmt=float2
+5  nome_2			tam=20
+6  venda_2			tam=8 	fmt=float2
+7  preco_2			tam=6	fmt=%.03f
+8  valor_2			tam=8 	fmt=float2
+</apelidos>
+<cab_relat>
+                         V E N D A   D E   C O M B U S T I V E L   P O R   P R E C O
++----------------------+----------+--------+----------++----------------------+----------+--------+----------+
+| Combustivel          |   Litros |  Preco |    Valor || Combustivel          |   Litros |  Preco |    Valor |
++----------------------+----------+--------+----------++----------------------+----------+--------+----------+
+</cab_relat>
+<detalhe>
+| #1                   | #2       | #3     | #4       || #5                   | #6       | #7     | #8       |
+</detalhe>
+<rod_relat>
++----------------------+----------+--------+----------++----------------------+----------+--------+----------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_venda" nome="venda">
+<apelidos>
+1  nome_1			tam=30
+2  venda_1			tam=6  fmt=float
+3  valor_1			tam=7  fmt=float2
+4  nome_2			tam=30
+5  venda_2			tam=6  fmt=float
+6  valor_2			tam=7  fmt=float2
+7  total_venda		tam=8  fmt=float2
+</apelidos>
+<cab_relat>
+
+                            V E N D A   D E   P R O D U T O S   P O R   G R U P O                          
++----------------------------------+--------+---------++----------------------------------+--------+---------+
+| Grupo                            |   Qtde |   Valor || Grupo                            |   Qtde |   Valor |
++----------------------------------+--------+---------++----------------------------------+--------+---------+
+</cab_relat>
+<detalhe>
+| #1                               | #2     | #3      || #4                               | #5     | #6      |
+</detalhe>
+<rod_relat>
++----------------------------------+--------+---------++----------------------------------+--------+---------+
+| Total de venda de produtos                                                                       |#7       |
++--------------------------------------------------------------------------------------------------+---------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_lancto" nome="lancto">
+<apelidos>
+1  nome				tam=39
+2  estoque_ini		tam=7  fmt=float
+3  entrada			tam=5  fmt=float	nulo
+4  transfer			tam=5  fmt=float	nulo
+5  outros			tam=5  fmt=float	nulo
+6  estoque_fim		tam=7  fmt=float
+7  venda			tam=6  fmt=float	nulo
+8  preco_unit		tam=5  fmt=float2	nulo
+9  valor			tam=8  fmt=float2	nulo
+10 total			tam=8  fmt=float2
+</apelidos>
+<cab_relat>
+
+                              M O V I M E N T A C A O   D E   E S T O Q U E                                 
+</cab_relat>
+<cab_pagina>
++-----------------------------------------+--------+------+-------+-------+--------+-------+-------+---------+
+| Produto                                 | Inicio | Entr | Trans | Outro |  Final | Venda | Preco |   Valor |
++-----------------------------------------+--------+------+-------+-------+--------+-------+-------+---------+
+</cab_pagina>
+<detalhe>
+| #1                                      |#2      |#3    | #4    | #5    |#6      |#7     | #8    |#9       |
+</detalhe>
+<rod_pagina>
++-----------------------------------------+--------+------+-------+-------+--------+-------+-------+---------+
+</rod_pagina>
+<rod_relat>
++--------------------------------------------------------------------------------------------------+---------+
+| Total                                                                                            |#10      |
++--------------------------------------------------------------------------------------------------+---------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="branco">
+<apelidos>
+</apelidos>
+<detalhe></detalhe>
+</subrelat>
+
+<hash>19fa383561df4a45cd41e301040a4a15</hash>
+</relatorio>

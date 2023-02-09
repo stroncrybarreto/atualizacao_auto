@@ -1,0 +1,63 @@
+<relatorio dados="venda_gestor_conta" ordem="">
+<apelidos>
+1	rel_posto_nome		tam=130
+2	rel_data_hora		tam=16
+3	titulo				tam=147	alinha=centro
+
+4	gestor_codigo		tam=09
+5	gestor_nome			tam=60
+6	cliente_codigo		tam=09	alinha=centro
+7	cliente_nome		tam=30
+8	comb_litros			tam=14	fmt=float2
+9	comb_valor			tam=18	fmt=float2
+10	conv_valor			tam=18	fmt=float2
+11	pista_valor			tam=18	fmt=float2
+12	valor				tam=18	fmt=float2
+13	gestor_comb_litros	tam=14	fmt=float2	func=soma	campo=comb_litros	grupo=1
+14	gestor_comb_valor	tam=18	fmt=float2	func=soma	campo=comb_valor	grupo=1
+15	gestor_conv_valor	tam=18	fmt=float2	func=soma	campo=conv_valor	grupo=1
+16	gestor_pista_valor	tam=18	fmt=float2	func=soma	campo=pista_valor	grupo=1
+17	gestor_valor		tam=18	fmt=float2	func=soma	campo=valor			grupo=1
+18	total_comb_litros	tam=14	fmt=float2	func=soma	campo=comb_litros
+19	total_comb_valor	tam=18	fmt=float2	func=soma	campo=comb_valor
+20	total_conv_valor	tam=18	fmt=float2	func=soma	campo=conv_valor
+21	total_pista_valor	tam=18	fmt=float2	func=soma	campo=pista_valor
+22	total_valor			tam=18	fmt=float2	func=soma	campo=valor
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                #2              
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="gestor_codigo">
++------------------------------------------------------------------------------------------------------------------------------------------------+
+| #4        - #5                                                                                                                                 |
++----------+--------------------------------+-------------------------------------+--------------------+--------------------+--------------------+
+|          |                                |            Combustíveis             |    Conveniência    |        Pista       |        Total       |
+|  Código  |            Nome                |-------------------------------------+--------------------+--------------------+--------------------|
+|          |                                |     Litros     |         Valor      |        Valor       |        Valor       |        Valor       |
++----------+--------------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+</cab_grupo>
+<detalhe>
+| #6       | #7                             | #8             | #9                 | #10                | #11                | #12                |
+</detalhe>
+<rod_grupo nome="1">
++-------------------------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+| Total por gestor                          | #13            | #14                | #15                | #16                | #17                |
++-------------------------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<rod_relat>
+
++-------------------------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+| Total                                     | #18            | #19                | #20                | #21                | #22                |
++-------------------------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+</rod_relat>
+<hash>01a6ac9e532e4f6958d220339b0d5e32</hash>
+</relatorio>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>resumo_caixa</nome>
+  <sessao>
+    <nome>resumo_caixa</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave></chave><tipo>string</tipo><padrao>"M"</padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>5</fim><chave></chave><tipo>string</tipo><padrao>,"</padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>20</fim><chave>gt_fim</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>GT fim dia</descricao></registro>
+    <registro><inicio>21</inicio><fim>23</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>24</inicio><fim>38</fim><chave>gt_inicio</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>GT inicio dia</descricao></registro>
+    <registro><inicio>39</inicio><fim>41</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>42</inicio><fim>51</fim><chave>desconto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Descontos</descricao></registro>
+    <registro><inicio>52</inicio><fim>54</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>55</inicio><fim>64</fim><chave>cancelamento</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Cancelamento</descricao></registro>
+    <registro><inicio>65</inicio><fim>67</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>68</inicio><fim>77</fim><chave>servico</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Serviços</descricao></registro>
+    <registro><inicio>78</inicio><fim>80</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>81</inicio><fim>86</fim><chave>nr_mapa</chave><tipo>integer</tipo><padrao></padrao><descricao>Nr.mapa</descricao></registro>
+    <registro><inicio>87</inicio><fim>89</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>90</inicio><fim>95</fim><chave>cont_reducao</chave><tipo>integer</tipo><padrao></padrao><descricao>Nr.reducao</descricao></registro>
+    <registro><inicio>96</inicio><fim>98</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>99</inicio><fim>104</fim><chave>cont_reinicio</chave><tipo>integer</tipo><padrao></padrao><descricao>Contador Reinício</descricao></registro>
+    <registro><inicio>105</inicio><fim>107</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>108</inicio><fim>117</fim><chave>substituicao</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>118</inicio><fim>118</fim><chave></chave><tipo>string</tipo><padrao>"</padrao><descricao></descricao></registro>
+  </sessao>
+  
+  <sessao>
+    <nome>aliquota</nome>
+    <registro><inicio>1</inicio><fim>5</fim><chave></chave><tipo></tipo><padrao>"P"</padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>400</fim><chave>tipo_p</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>  
+  <sessao>
+    <nome>imp_indireto</nome>
+    <registro><inicio>1</inicio><fim>5</fim><chave></chave><tipo></tipo><padrao>"W","</padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>15</fim><chave>tipo_operacao</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>16</inicio><fim>18</fim><chave></chave><tipo></tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>19</inicio><fim>28</fim><chave>base_calculo</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>29</inicio><fim>31</fim><chave></chave><tipo></tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>32</inicio><fim>36</fim><chave>aliquota</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>37</inicio><fim>39</fim><chave></chave><tipo></tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>40</inicio><fim>49</fim><chave>imposto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>50</inicio><fim>64</fim><chave></chave><tipo></tipo><padrao>","0.00","0.00"</padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

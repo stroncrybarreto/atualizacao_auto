@@ -1,0 +1,51 @@
+<relatorio dados="previsao_venda" tamfonte="8">
+<apelidos>
+1  rel_posto_nome	    tam=60
+2  rel_data_hora        tam=18
+3  item_nome          	tam=40
+4  soma_anterior        tam=12 fmt=%.02f alinha=direita
+5  soma_dia             tam=12 fmt=%.02f alinha=direita
+6  acumulado			tam=12 fmt=%.02f alinha=direita
+7  media                tam=12 fmt=%.02f alinha=direita
+8  tipo					tam=40
+9  total_anterior       tam=12 fmt=%.02f alinha=direita
+10 total_dia            tam=12 fmt=%.02f alinha=direita
+11 total_acumulado      tam=12 fmt=%.02f alinha=direita
+12 total_media          tam=12 fmt=%.02f alinha=direita
+13 previsao				tam=12 fmt=%.02f alinha=direita
+14 dias					tam=3
+15 data					tam=10 fmt=data
+</apelidos>
+<cab_pagina>
+#1                                                                                   #2
+-------------------------------------------------------------------------------------------------------
+
+                                    RELATÓRIO DE PROJEÇÂO DE VENDAS
+                                         Data base: #15      
+
+</cab_pagina>
+
+
+<cab_grupo nome="1" quebra="tipo">
++-----------------------------------------+--------------+--------------+--------------+--------------+
+| #8                                      |   Anterior   |     Hoje     |  Acumulado   |     Média    |
++-----------------------------------------+--------------+--------------+--------------+--------------+
+</cab_grupo>
+<detalhe>
+| #3                                      | #4           | #5           | #6           | #7           |
+</detalhe>
+
+<rod_grupo nome="1">
++-----------------------------------------+--------------+--------------+--------------+--------------+
+| Total                                   | #9           | #10          | #11          | #12          |
+| Projeção para #14 dias                  |              |              | #13          |              |
++-----------------------------------------+--------------+--------------+--------------+--------------+
+
+</rod_grupo>
+
+<rod_pagina>
++-----------------------------------------+--------------+--------------+--------------+---------------+
+</rod_pagina>
+
+<hash>434e4953c0bbcb210ad52c9690e3b41e</hash>
+</relatorio>

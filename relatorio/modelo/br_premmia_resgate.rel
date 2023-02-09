@@ -1,0 +1,54 @@
+<relatorio dados="brpremmia_resgate" ordem="produto_codigo, produto_nome, codigo_ftc, data">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  titulo				tam=70	alinha=centro
+4  data_movto			tam=20	alinha=centro
+5  quantidade			tam=13	alinha=direita
+6  ponto				tam=14	alinha=direita
+7  valor_venda			tam=20	fmt=float2
+8  total_quantidade		tam=13	alinha=direita
+9  total_ponto			tam=14	alinha=direita
+10 total_valor_venda	tam=20	fmt=float2
+11 quantidade_total		tam=13	alinha=direita
+12 ponto_total			tam=14	alinha=direita
+13 valor_total			tam=20
+14 periodo				tam=35
+99 titulo_principal		tam=80	expr='RELATÓRIO DE RESGATE DE PONTOS BRPREMMIA'	alinha=centro
+</apelidos>
+<cab_pagina>
+#99
+
+#1                                                              #2
+#14
+--------------------------------------------------------------------------------
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="produto_codigo, produto_nome, codigo_ftc">
+#3
++------------------------------------------------------------------------------+
+|         Data        |      Qtde      |     Pontos     |        Valor         |
++---------------------+----------------+----------------+----------------------+
+</cab_grupo>
+<detalhe>
+| #4                  | #5             | #6             | #7                   |
+</detalhe>
+<rod_grupo nome="1">
++---------------------+----------------+----------------+----------------------+
+| Subtotal            | #8             | #9             | #10                  |
++---------------------+----------------+----------------+----------------------+
+
+</rod_grupo>
+<rod_relat>
+
++---------------------+----------------+----------------+----------------------+
+| Total               | #11            | #12            | #13                  |
++---------------------+----------------+----------------+----------------------+
+</rod_relat>
+
+<rod_pagina>
++------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>828e8b74e9a574d070ae69a10e4d8522</hash>
+</relatorio>

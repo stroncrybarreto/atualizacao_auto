@@ -1,0 +1,73 @@
+<relatorio dados="sobra_falta_caixa_novo" ordem="empresa_codigo,empresa,conta_codigo">
+<apelidos>
+1   rel_posto_nome		tam=60
+2   rel_data_hora		tam=18
+3   empresa_nome		tam=25
+4   titulo1				tam=92		alinha=centro
+5   titulo2				tam=80		alinha=centro
+6   titulo3				tam=80		alinha=centro
+7   conta_nome			tam=43
+8   data				tam=10		fmt=data
+9   nome				tam=29
+10  turno 				tam=3
+11  sobra				tam=12		fmt=float2
+12  falta				tam=12		fmt=float2
+13  saldo_final			tam=12		fmt=float2
+14  saldo				tam=12		fmt=float2
+
+17  titulo				tam=92		alinha=centro
+
+18  geral				tam=13		fmt=float2
+
+23  total_sobras		tam=12		fmt=float2  func=soma   campo=sobra  grupo=1
+27  total_faltas		tam=12		fmt=float2  func=soma   campo=falta  grupo=1
+63  total_geral_empresa	tam=13		fmt=float2  func=soma   campo=geral  grupo=1
+
+62  sub_total_geral		tam=13		fmt=float2  func=soma   campo=geral  grupo=2
+15  total_sobra_func	tam=12		fmt=float2  func=soma   campo=sobra  grupo=2
+16  total_falta_func	tam=12		fmt=float2  func=soma   campo=falta  grupo=2
+64  total_geral			tam=13		fmt=float2  func=soma   campo=geral
+66  empresa_cod_nome	tam=60
+90 empresa_cod_nome     tam=70
+91 conta_cod_nome       tam=22
+</apelidos>
+
+<cab_pagina>
+#1                                                                          #2
+--------------------------------------------------------------------------------------------
+
+#17
+{VAZIA}#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo,empresa">
++------------------------------------------------------------------------------------------+
+| Empresa: #90                                                                             |
++---------------------------------------------+--------------+--------------+--------------+
+|                    Conta                    |    Sobra     |    Falta     |   Acumulado  |
++---------------------------------------------+--------------+--------------+--------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,empresa,conta_codigo">
+</cab_grupo>
+<detalhe>
+</detalhe>
+<rod_grupo nome="2">
+| #7                                          | #15          | #16          | #14          |
+</rod_grupo>
+<rod_grupo nome="1">
++---------------------------------------------+--------------+--------------+--------------+
+| Total empresa                               | #23          | #27          | #14          |
++---------------------------------------------+--------------+--------------+--------------+
+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>8317178d2682ca3f8a6ab946c5c3a1fc</hash>
+</relatorio>

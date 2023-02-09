@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>ASMobile</title>
+	</head>
+	<body style="width: 310px;">
+		<img src="/images/topo_2.jpg" width="310" height="71" alt="">
+		<h3 style="color:#302663" tal:content="titulo"></h3>
+		<div tal:repeat="titulo_1 info_list">
+			<b style="color:#302663" tal:content="titulo_1/key"></b>
+			<div tal:repeat="titulo_2 titulo_1/value">
+				<b style="color:#302663" tal:content="titulo_2/key"></b>
+				<div tal:repeat="v titulo_2/value">
+					<i style="color:#302663" tal:content="v/value"></i>
+					<p tal:condition="v/jump"></p>
+				</div>
+			</div>
+		</div>
+		<p>
+		<div style="text-align:center;">
+			<a href="/consulta_main/">Menu</a>
+			<span>-</span>
+			<a tal:attributes="href proximo">Próximo</a>
+		</div>
+		<img src="/images/base_2.jpg" width="310" height="24" alt="">
+	</body>
+</html>

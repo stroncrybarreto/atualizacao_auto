@@ -1,0 +1,118 @@
+<relatorio dados="venda_grupo" ordem="ordem">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulos 				tam=123 alinha=centro
+5  produto_nome			tam=35
+6  unidade_medida		tam=2
+7  quantidade			tam=15  fmt=float3
+8  pcn_quantidade		tam=6   fmt=float2
+9  valor				tam=15  fmt=float2
+10 pcnt_valor			tam=6   fmt=float2
+
+15 total_quantidade		tam=15  fmt=float3
+16 tot_pcnt_quantidade  tam=6   fmt=float2
+17 total_valor			tam=15  fmt=float2
+18 tot_pcnt_valor		tam=6   fmt=float2
+
+4  linha_cab_1			tam=85
+11 quantidade_g1		tam=15  fmt=float3
+12 pcnt_quant_g1	    tam=6   fmt=float2 expr=(quantidade_g1/total_quantidade)*100
+13 valor_g1				tam=15  fmt=float2
+14 pcnt_valor_g1		tam=6   fmt=float2 expr=(valor_g1/total_valor)*100
+37 rodape_1				tam=40
+
+19 linha_cab_2			tam=85
+20 quantidade_g2		tam=15  fmt=float3
+21 pcnt_quant_g2    	tam=6   fmt=float2 expr=(quantidade_g2/quantidade_g1)*100
+22 valor_g2				tam=15  fmt=float2
+23 pcnt_valor_g2		tam=6   fmt=float2 expr=(valor_g2/valor_g1)*100
+36 rodape_2				tam=40 
+
+24 linha_cab_3			tam=85
+25 quantidade_g3		tam=15  fmt=float3
+26 pcnt_quant_g3    	tam=6   fmt=float2 expr=(quantidade_g3/quantidade_g2)*100
+27 valor_g3				tam=15  fmt=float2
+28 pcnt_valor_g3		tam=6   fmt=float2 expr=(valor_g3/valor_g2)*100
+35 rodape_3				tam=40
+
+29 linha_cab_4			tam=85
+30 quantidade_g4		tam=15  fmt=float3
+31 pcnt_quant_g4    	tam=6   fmt=float2 expr=(quantidade_g4/quantidade_g3)*100
+32 valor_g4				tam=15  fmt=float2
+33 pcnt_valor_g4		tam=6   fmt=float2 expr=(valor_g4/valor_g3)*100
+34 rodape_4				tam=40
+38 produto_codigo		tam=8
+39 produto_codigo_barra tam=13
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                           #2
+-----------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupa_1">
++---------------------------------------------------------------------------------------------------------------------------+
+| #4                                                                                                                        |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="agrupa_1,agrupa_2">
++---------------------------------------------------------------------------------------------------------------------------+
+| #19                                                                                                                       |
+</cab_grupo>
+
+<cab_grupo nome="3" quebra="agrupa_1,agrupa_2,agrupa_3">
++---------------------------------------------------------------------------------------------------------------------------+
+| #24                                                                                                                       |
+</cab_grupo>
+
+<cab_grupo nome="4" quebra="agrupa_1,agrupa_2,agrupa_3,agrupa_4">
++---------------------------------------------------------------------------------------------------------------------------+
+| #29                                                                                                                       |
++----------+---------------+-------------------------------------+----+-----------------+--------+-----------------+--------+
+|  Código  | Código Barra  |              Produto                | UN |    Quantidade   | % Qnt. |      Valor      | % Vlr. |
++----------+---------------+-------------------------------------+----+-----------------+--------+-----------------+--------+
+</cab_grupo>
+
+<detalhe>
+| #38      | #39           | #5                                  | #6 | #7              | #8     | #9              | #10    |
+</detalhe>
+
+<rod_grupo nome="4">
++----------+-----------------------------------------------------+----+-----------------+--------+-----------------+--------+
+| #34                                                                 | #30             | #31    | #32             | #33    |
++---------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+</rod_grupo>
+
+<rod_grupo nome="3">
+| #35                                                                 | #25             | #26    | #27             | #28    |
++---------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+</rod_grupo>
+
+<rod_grupo nome="2">
+| #36                                                                 | #20             | #21    | #22             | #23    |
++---------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| #37                                                                 | #11             | #12    | #13             | #14    |
++---------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+
+</rod_grupo>
+
+<rod_relat>
+
++---------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+| Total geral                                                         | #15             | #16    | #17             | #18    |
++---------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+</rod_relat>
+
+<rod_pagina>
++----------+---------------+-------------------------------------+----+-----------------+--------+-----------------+--------+
+</rod_pagina>
+
+
+<hash>42ea5ccb941428488a097ee5f97b25ee</hash>
+</relatorio>

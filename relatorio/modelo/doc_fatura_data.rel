@@ -1,0 +1,91 @@
+<relatorio dados="doc_fatura_data" docname="Modelo de fatura por data" mode="raw">
+<apelidos>
+1  empresa_nome			tam=50
+2  empresa_endereco		tam=40
+3  empresa_estado		tam=2
+4  empresa_bairro		tam=15
+5  empresa_cidade		tam=15
+6  empresa_cep			tam=9
+7  empresa_fone			tam=10
+8  empresa_fax			tam=10
+9  empresa_cpf			tam=15
+10 empresa_inscr_est		tam=15
+11 fatura_data			tam=10  fmt=data
+12 fatura_documento		tam=10
+13 fatura_vencto		tam=10	fmt=data
+14 cliente_codigo		tam=6   fmt=%06d
+15 cliente_nome			tam=40
+16 cliente_endereco		tam=30
+17 cliente_cep			tam=10
+18 cliente_cpf			tam=20
+19 cliente_fone			tam=15
+20 cliente_bairro		tam=20
+21 cliente_fax			tam=15
+22 cliente_cidade		tam=15
+23 cliente_estado		tam=2
+24 nota_data_doc		tam=10  fmt=data
+25 nota_documento		tam=10
+26 nota_motivo_nome		tam=17
+27 nota_obs			tam=15
+28 nota_valor			tam=8   fmt=%.02f
+29 nota_placa			tam=7
+30 fatura_valor			tam=13  fmt=%.02f alinha=esquerda
+31 fatura_valor_ext1		tam=40	alinha=strip
+32 fatura_valor_ext2		tam=40	alinha=strip
+33 fatura_valor_ext3		tam=40	alinha=strip
+34 empresa_nome			tam=40	alinha=centro
+35 fatura_valor_sem_desconto  	tam=13 fmt=%.02f alinha=esquerda
+36 nota_frota			tam=10
+37 nr_cupom			tam=10
+72 nota_fiscal_numero		tam=10	alinha=esquerda
+76 cliente_numero			tam=6
+
+</apelidos>
+<cab_pagina>
+{CPI17}     {CPI06}{NEGR}#1
+{DNEG}{CPI17}     Endereço: #2                                       // UF: #3           // Bairro: #4
+     Cidade: #5                                         // CEP: #6          // Telefone: #7          // Fax: #8 
+     CNPJ..: #9                                         // INSCR.EST.: #10
+{CPI10}
+   Data: {CPI08}#11       {CPI10}  Fatura nr.: {CPI08}#12       {CPI10}   Vencimento: {CPI08}#13
+{CPI10}
+   Cliente.: #14    - {CPI08}#15                                     {CPI10} 
+   Endereço: #16                             Cep......: #17
+   CGC/CPF.: #18                             Telefone.: #19
+   Bairro..: #20                             Fax......: #21
+   Cidade..: #22                             Estado...: #23
+
+   Anexo, estamos passando a responsabilidade a V. Sas. diversos documentos,
+   conforme relação abaixo:
+{CPI12}
+   +------------+------------+------------+-------------------+-----------------+----------+---------+------------+
+   |   Data     | Documento  |  Nr Cupom  | Descricao         | Observacao      |    Valor | Placa   | Frota      |
+   +------------+------------+------------+-------------------+-----------------+----------+---------+------------+
+</cab_pagina>
+
+<detalhe>
+   | #24        | #25        | #37        | #26               | #27             | #28      | #29     | #36        |
+</detalhe>
+
+<rod_relat>
+   +------------+------------+------------+-------------------+-----------------+----------+---------+------------+
+
+   {CPI05}{NEGR}VALOR DA FATURA: R$ #30
+{CPI10}{DNEG}   
+   #31*******************************************************************
+   #32*******************************************************************
+   #33*******************************************************************
+
+                         #22                           , #11
+
+
+                         ________________________________________
+                         #34
+{FF}
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>464f7625a012d1e44dc5bb875ea9a532</hash>
+</relatorio>

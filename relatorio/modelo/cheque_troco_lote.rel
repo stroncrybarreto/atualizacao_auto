@@ -1,0 +1,63 @@
+<relatorio dados="cheque_troco_lote" font_size="x-small">
+<apelidos>
+1  rel_posto_nome   tam=30
+2  rel_data_hora    tam=33
+3  conta_corrente_c	tam=3	alinha=centro
+4  banco			tam=5	alinha=direita
+5  nr_ini			tam=12
+6  nr_fim			tam=12
+7  valor			tam=16	fmt=%.02f
+8  total			tam=16	fmt=%.02f
+9  total_total		tam=16	fmt=%.02f
+10 conta			tam=32
+11 turno			tam=1
+12 pessoa_origem	tam=42
+13 hora_envio		tam=14
+14 conta_corrente_n	tam=39
+15 empresa			tam=30
+16 hora_recebimento	tam=14
+17 pessoa_destino	tam=42
+18 lote				tam=42	alinha=esquerda
+19 titulo1			tam=59	alinha=centro
+20 titulo2			tam=59	alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                         #2
+-----------------------------------------------------------
+
+#19
+#20
+
+
+Lote..........: #18
+Data envio....: #13            - Data Receb: #16
+Pessoa Origem.: #12
+Pessoa Desinto: #17
+
+      Nr ini       Nr fim        Valor Ch.            Total
+	 
+-----------------------------------------------------------
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="conta_corrente_c">
+#14                                                     
+</cab_grupo>
+<detalhe>
+#5           #6           #7               #8
+</detalhe>
+<rod_grupo nome="1">
+	
+</rod_grupo>
+
+<rod_relat>
+-----------------------------------------------------------
+
+                                    TOTAL  #9         
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+
+<hash>cef7bc620849987740ca35142cda2828</hash>
+</relatorio>

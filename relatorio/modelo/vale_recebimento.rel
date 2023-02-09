@@ -1,0 +1,64 @@
+<relatorio dados="vale" ordem="hora_emissao,numero_vale,nr_cupom">
+<apelidos>
+1  rel_posto_nome		tam=100
+2  rel_data_hora		tam=18
+3  data_emi				tam=14 expr=hora_emissao and (hora_emissao.strftime('%d/%m/%y') + " " + hora_emissao.strftime("%H:%M")) or " "
+4  numero_vale			tam=12 alinha=centro
+5  valor_vale			tam=12 fmt=float2
+6  tipo_nome			tam=25
+7  situacao				tam=20
+8  nr_cupom				tam=10 alinha=centro
+9  data_receb		    tam=14 expr=hora_recebimento and (hora_recebimento.strftime('%d/%m/%y') + " " + hora_recebimento.strftime("%H:%M")) or " "
+10 recebimento_emp		tam=70 expr= recebe_nome and str(recebe_codigo)+' - '+recebe_nome or " "
+11 emissao_emp			tam=70 expr=str(empresa_codigo)+' - '+empresa_nome
+12 subtotal				tam=12 func=soma campo=valor_vale grupo=1
+13 total                tam=12 func=soma campo=valor_vale
+14 titulo				tam=130 alinha=centro
+15 grid_emissao			tam=16
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+ 
+#14
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="recebe_nome,recebe_empresa">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa recebimento: #10                                                                                                       |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="recebe_nome,recebe_empresa,empresa_nome,emite_empresa">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa emissão: #11                                                                                                           |
++----------------+----------------+--------------+-------------+---------------------------+----------------------+--------------+
+|     Emissão    |   Recebimento  |   Nr. Vale   |  Nr. Cupom  |           Tipo            |       Situação       |     Valor    |
++----------------+----------------+--------------+-------------+---------------------------+----------------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #3             | #9             | #4           | #8          | #6                        | #7                   | #5           |
+</detalhe>
+
+<rod_grupo nome="2">
+</rod_grupo>
+
+<rod_grupo nome="1">
++----------------+----------------+--------------+-------------+---------------------------+----------------------+--------------+
+| Subtotal                                                                                                        | #12          |
++-----------------------------------------------------------------------------------------------------------------+--------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------------------------------------------------------------+--------------+
+| Total                                                                                                           | #13          |
++-----------------------------------------------------------------------------------------------------------------+--------------+
+</rod_relat>
+
+
+<hash>d2c76b1b6fb074684352c248c540651e</hash>
+</relatorio>

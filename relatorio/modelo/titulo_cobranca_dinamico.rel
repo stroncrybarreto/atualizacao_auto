@@ -1,0 +1,33 @@
+<relatorio dados="titulo_cobranca_dinamico">
+<apelidos>
+1 nome_data		tam=9999
+2 linha_posto	tam=9999
+3 titulo		tam=9999
+4 colunas_linha	tam=9999
+5 colunas_list	tam=9999
+6 valor_linha	tam=9999
+7 totalizador	tam=9999
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+#3
+
+#4
+#5
+#4
+</cab_pagina>
+
+<detalhe>
+#6
+</detalhe>
+
+<rod_relat>
+#4
+#7
+#4
+</rod_relat>
+
+<hash>5e6eaffeb41941e1a5221852b1aa9827</hash>
+</relatorio>

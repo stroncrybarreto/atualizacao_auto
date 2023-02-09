@@ -1,0 +1,81 @@
+<relatorio dados="venda_periodo" ordem="quebra_empresa,quebra">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  subtitulo           tam=121   alinha=centro
+4  quebra_titulo       tam=104
+5  titulo3             tam=106   alinha=centro
+6  data                tam=10    fmt=data
+7  turno				tam=3
+8  documento           tam=6	alinha=centro
+9  numero_nota         tam=6
+10 pessoa_nome         tam=20
+11 forma_pgto          tam=17    
+12 vencto              tam=10    fmt=data
+13 valor_pgto          tam=15    fmt=%.02f
+14 valor_venda         tam=11    fmt=%.02f
+15 cont_venda          tam=6     alinha=direita
+16 total_venda         tam=11    fmt=%.02f	func=soma	campo=valor_venda	grupo=1
+17 doc_pgto            tam=6     alinha=centro
+18 xtotal_pgto         tam=15    fmt=%.02f     func=soma       campo=valor_pgto       grupo=1        
+19 xtotal_cont_venda   tam=6     func=contar   campo=cont_venda       grupo=1
+20 xtotal_pgto_geral   tam=15    fmt=%.02f     func=soma       campo=valor_pgto        
+21 xtotal_venda_geral  tam=11    fmt=%.02f     func=soma       campo=valor_venda    
+22 info_pagto			tam=3	 alinha=direita 
+23 quebra_titulo_empresa	tam=115
+24 total_pgto_empresa  tam=15    fmt=%.02f     func=soma       campo=valor_pgto       grupo=2
+25 total_venda_empresa tam=11    fmt=%.02f	func=soma	campo=valor_venda	grupo=2
+26 total_cont_venda_em tam=6     func=contar   campo=cont_venda       grupo=2
+27 titulo_colula		tam=20	alinha=centro
+28 valor_colula			tam=20
+29 geral_cont_venda     tam=6     func=contar   campo=cont_venda
+30 nr_cupom            tam=6     alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                      #2                 
+------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="quebra_empresa">
++----------------------------------------------------------------------------------------------------------------------+
+| #23                                                                                                                  |
++----------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="1" quebra="quebra_empresa,quebra">
+| #4                                                                                                                   |
++--------+--------+----------------------+-----------------------+--------+------------+-----------------+-------------+
+| Nr.CF  | Nr.NF  | #27                  |    Forma pagamento    | Nr.doc.| Vencimento |   Valor pago    | Valor venda |
++--------+--------+----------------------+-----------------------+--------+------------+-----------------+-------------+
+</cab_grupo>
+<detalhe>
+| #30    | #9     | #28                  | #11               #22 | #17    | #12        | #13             | #14         |
+</detalhe>
+<rod_grupo nome="1">
++--------+--------+----------------------+-----------------------+--------+------------+-----------------+-------------+
+| Subtotal                                                              Vendas: #19    | #18             | #16         |
++--------------------------------------------------------------------------------------+-----------------+-------------+
+</rod_grupo>
+<rod_grupo nome="2">
+| Total empresa                                                         Vendas: #26    | #24             | #25         |
++--------------------------------------------------------------------------------------+-----------------+-------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++--------------------------------------------------------------------------------------+-----------------+-------------+
+| Total geral                                                           Vendas: #29    | #20             | #21         |
++--------------------------------------------------------------------------------------+-----------------+-------------+
+</rod_relat>
+
+<rod_pagina>
++--------------------------------------------------------------------------------------+-----------------+-------------+
+</rod_pagina>
+
+<hash>8eebbcff82429b6fb0222787bff9b63a</hash>
+</relatorio>
+
+

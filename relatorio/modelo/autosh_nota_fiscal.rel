@@ -1,0 +1,86 @@
+<relatorio dados="movto" font_size="small" margin_left="0.0">
+<apelidos>
+1	data_doc			tam=10	fmt=data
+2	documento			tam=6
+3	pessoa_nome			tam=40
+4	pessoa_cpf			tam=18
+5	pessoa_endereco		tam=40
+6	pessoa_cidade		tam=20
+7	pessoa_estado		tam=2
+8	produto_codigo		tam=13
+9	produto_nome		tam=30
+11	produto_quantidade	tam=10
+12	produto_preco_unit	tam=8	fmt=%.03f
+13	produto_valor		tam=10	fmt=%.02f
+14	valor				tam=10	fmt=%.02f
+15	pessoa_inscr_est	tam=15
+16	pessoa_fone			tam=10
+</apelidos>
+
+<detalhe>
+
+
+
+                                                                  X             
+                                                                                    #2
+                                                                                  
+
+
+
+VENDA DE PRODUTOS            54.05
+
+
+#3                                                        #4                    #1
+
+#5                                                                              #1
+
+#6                                 #16                #7    #15
+
+
+
+
+
+         VENDA DE COMBUSTIVEL                                        #14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ICMS SOBRE COMBUSTIVEIS RETIDO NA FONTE NOS TERMOS DA PORTARIA 317/97
+
+
+
+
+           0.00               0.00             0.00               0.00          #14
+
+                                                                                #14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                    #2
+</detalhe>
+
+<hash>6359635626c5ab6ca00bab8d9b899430</hash>
+</relatorio>

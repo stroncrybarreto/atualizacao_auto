@@ -1,0 +1,60 @@
+<relatorio dados="consulta_produto_composto" tamfonte="8">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18
+3  produto             tam=60  expr=codigo_produto+ " - " + produto
+4  materia_prima       tam=50
+5  codigo_materia      tam=9
+6  grupo_produto       tam=50
+7  materia_preco_custo tam=11  fmt=float3 
+8  produto_preco_custo tam=11  fmt=float3
+9  preco_unit          tam=10  fmt=float2 
+10 qtd_estoque         tam=12  fmt=float2 
+11 deposito            tam=35
+12 empresa_nome        tam=50
+13 data_ref            tam=18  fmt=data
+14 quantidade_materia  tam=11  fmt=float2 
+15 subtitulo           tam=147 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                #2
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                           CONSULTA DE PRODUTOS COMPOSTOS                                                                                                                                                                               
+#15                                                         
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
+
+EMPRESA: #12
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,grupo_produto">
++------------------------------------------------------------------------------------------------------------------------------------------------+
+| GRUPO: #6                                                                                                                                      |
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_nome,grupo_produto,produto">
++------------------------------------------------------------------------------------------------------------------------------------------------+
+| PRODUTO: #3                                                                                    Preço Custo:#8           Preço Venda:#9         |
++-----------+---------------------------------------------------+-------------------------------------+--------------+-------------+-------------+
+| Código    | Composição                                        | Depósito                            | Qtd. Estoque | Qtd. Compra | Preço Custo |
++-----------+---------------------------------------------------+-------------------------------------+--------------+-------------+-------------+
+</cab_grupo>
+<detalhe>
+| #5        | #4                                                | #11                                 | #10          | #14         | #7          |
+</detalhe>
+
+<rod_grupo nome="1">
+</rod_grupo>
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="3">
++-----------+---------------------------------------------------+-------------------------------------+--------------+-------------+-------------+
+</rod_grupo>
+
+<rod_pagina>
++-----------+---------------------------------------------------+-------------------------------------+--------------+-------------+-------------+
+</rod_pagina>
+<rod_relat>
+</rod_relat>
+
+<hash>5421bdc8feba9392e98390eab5426e86</hash>
+</relatorio>

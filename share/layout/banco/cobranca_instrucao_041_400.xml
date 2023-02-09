@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>banrisul</nome>
+
+	<instrucao>
+		<id>1</id>
+		<codigo>01</codigo>
+		<nome>Remessa</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>2</id>
+		<codigo>02</codigo>
+		<nome>Pedido de baixa</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>3</id>
+		<codigo>04</codigo>
+		<nome>Concessão de Abatimento</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>4</id>
+		<codigo>05</codigo>
+		<nome>Cancelamento de Abatimento</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>6</id>
+		<codigo>06</codigo>
+		<nome>Alteração de Vencimento</nome>
+	</instrucao>
+	
+	<instrucao>
+		<id>10</id>
+		<codigo>10</codigo>
+		<nome>Alteração de Uso da Empresa</nome>
+	</instrucao>
+	
+	<instrucao>
+		<id>11</id>
+		<codigo>08</codigo>
+		<nome>Alteração do Seu Número</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>7</id>
+		<codigo>09</codigo>
+		<nome>Pedido de Protesto</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>8</id>
+		<codigo>10</codigo>
+		<nome>Sustação de Protesto</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>12</id>
+		<codigo>11</codigo>
+		<nome>Não Cobrar Juros de Mora</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>13</id>
+		<codigo>12</codigo>
+		<nome>Reembolso e Transfência Desconto e Vendor</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>14</id>
+		<codigo>13</codigo>
+		<nome>Reembolso e Devolução Desconto e Vendor</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>15</id>
+		<codigo>16</codigo>
+		<nome>Alteração do número de dias para prostesto</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>16</id>
+		<codigo>17</codigo>
+		<nome>Protestar Imediatamente para Fins de Falência</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>17</id>
+		<codigo>18</codigo>
+		<nome>Alteração de nome do Sacado</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>18</id>
+		<codigo>19</codigo>
+		<nome>Alteração de endereço do Sacado</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>19</id>
+		<codigo>20</codigo>
+		<nome>Alteração da cidade do Sacado</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>20</id>
+		<codigo>21</codigo>
+		<nome>Alteração do CEP do Sacado (Mudança de Portadora)</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>21</id>
+		<codigo>68</codigo>
+		<nome>Acerto dos dados do rateio do crédito</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>22</id>
+		<codigo>69</codigo>
+		<nome>Cancelamento dos dados do rateio</nome>
+	</instrucao>
+</layout>

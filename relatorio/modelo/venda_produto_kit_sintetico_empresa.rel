@@ -1,0 +1,71 @@
+<relatorio dados="venda_produto_kit" ordem ="empresa_nome,empresa_codigo,agrupar_nome,agrupar_codigo">
+<apelidos>
+1  rel_posto_nome           tam=60
+2  rel_data_hora            tam=18
+3  titulo                   tam=95  alinha=centro
+
+4  tit_agrupar              tam=45  alinha=centro
+5  agrupar_codigo           tam=45
+6  agrupar_nome             tam=45
+7  agrupar_cod_nome         tam=45
+8  preco_unit_kit           tam=13  fmt=float2
+9  total_quantidade_kit     tam=10  fmt=float2
+10 total_valor_venda        tam=13  fmt=float2
+
+11 total_emp_qtdade		    tam=10	fmt=float2	func=soma	campo=total_quantidade_kit grupo=1
+12 total_emp_valor_venda	tam=13	fmt=float2  func=soma	campo=total_valor_venda    grupo=1
+
+13 total_geral_qtdade		tam=10	fmt=float2	func=soma	campo=total_quantidade_kit
+14 total_geral_valor_venda	tam=13	fmt=float2  func=soma	campo=total_valor_venda
+
+15 empresa_cod_nome         tam=65
+
+16 row_header               tam=999
+17 row_detail_header        tam=999
+18 row_detail               tam=999
+19 row_total                tam=999
+20 row_total_empresa        tam=999
+21 row_header_emp           tam=999
+22 row_space_emp            tam=999
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                             #2
+-----------------------------------------------------------------------------------------------
+ 
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa_codigo">
++-----------------------------------------------#21
+| Empresa: #15                                  #22
++-----------------------------------------------#16
+| #17
++-----------------------------------------------#16
+</cab_grupo>
+
+<detalhe>
+| #7                                            #18
+</detalhe>
+
+<rod_grupo nome="1">
++-----------------------------------------------#16
+| Total empresa                                 #20
++-----------------------------------------------#16
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------#16
+| Total geral                                   #19
++-----------------------------------------------#16
+</rod_relat>
+
+<rod_pagina>
++-----------------------------------------------#16
+</rod_pagina>
+
+<hash>f5e39531b1e69869f25e3c9e28e5c40c</hash>
+</relatorio>

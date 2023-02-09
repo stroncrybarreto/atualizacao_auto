@@ -1,0 +1,81 @@
+<relatorio dados="cupons_emitidos" ordem="empresa_nome,data_movto,nr_ecf,nr_cupom,nr_itens">
+<apelidos>
+1   rel_posto_nome    tam=60           
+2   rel_data_hora     tam=18           
+3   nr_itens          tam=3   fmt=%d   
+4   produto           tam=27           
+5   quantidade        tam=10  fmt=%.03f
+6   preco_unit        tam=8   fmt=%.03f
+7   nr_cupom          tam=6   fmt=%d   alinha=esquerda
+8   valor             tam=12   fmt=%.02f
+9   valor_liquido     tam=12   fmt=%.02f
+10  situacao          tam=3            
+11  produto_situacao  tam=3   alinha=centro
+12  cst               tam=7   alinha=centro		            
+13  data_emissao      tam=10  fmt=data 
+14  hora_emissao      tam=19           
+15  nr_serie          tam=20           
+16  desconto          tam=8   fmt=%.02f
+17  acrescimo         tam=9   fmt=%.02f
+18  pagto_1           tam=30           
+19  pagto_2           tam=30           
+20  pagto_3           tam=30           
+21  nr_itens          tam=3
+22  nr_ecf            tam=3
+23  data_movto        tam=10  fmt=data
+24  total_desc_acr    tam=12  fmt=%.02f  expr=(desconto+acrescimo)
+25  valor_produto     tam=11  fmt=%.02f  
+26  pagto_4           tam=30      
+27  total_itens       tam=3   func=contar  campo=nr_itens    grupo=2 
+28  produto_desconto  tam=8   fmt=%.02f
+29  produto_acrescimo tam=8   fmt=%.02f
+30  produto_liquido   tam=11  fmt=%.02f 
+98 titulo 			  tam=129 alinha=centro
+99 titulo_p 		  tam=129 expr="CUPONS FISCAIS EMITIDOS" alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                 #2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+#99
+#98
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="nr_ecf">
+
+  ECF: #15                       / Número ECF: #22            / Data movimentação: #23
+
+</cab_grupo>
+<cab_grupo nome="2" quebra="nr_ecf,nr_cupom">
++---------------------------------------------------------------------------------------------------------------------------------+
+| Cupom: #7                                    Data/Hora emissão: #14                                          Situação: #10      |
++------+-----------------------------+-----------+------------+----------+-------------+----------+----------+-------------+------+
+| Item |           Produto           | CST/CSOSN | Quantidade | Preço un.|    Valor    | Desconto | Acrésc.  | Valor líq.  | Sit. |
++------+-----------------------------+-----------+------------+----------+-------------+----------+----------+-------------+------+
+</cab_grupo>
+<detalhe>
+| #3   | #4                          | #12       | #5         | #6       | #25         | #28      | #29      | #30         | #11  |
+</detalhe>
+<rod_grupo nome="2">
++------+-----------------------------+-----------+------------+----------+-------------+----------+----------+-------------+------+
+| Número de itens.: #27                                                                | Subtotal..........: | #8                 |
+| Formas pagamento: #18                                   #19                          | Desconto/Acréscimo: | #24                |
+|                   #20                                   #26                          | Total.............: | #9                 |
++--------------------------------------------------------------------------------------+---------------------+--------------------+
+
+</rod_grupo>
++---------------------------------------------------------------------------------------------------------------------------------+
+<rod_grupo nome="1">
+</rod_grupo>
+<rod_relat>
+
++---------------------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+<rod_pagina>
++---------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>67668661fdaf049885cbf43ae8b0d482</hash>
+</relatorio>

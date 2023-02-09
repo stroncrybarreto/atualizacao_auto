@@ -1,0 +1,63 @@
+<relatorio dados="ranking_venda" ordem="ordem_1,agrupamento_1,ordem desc">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18
+3  titulo              tam=130  alinha=centro
+4  titulo_agrupar      tam=35   alinha=centro
+5  base_codigo         tam=10  alinha=centro
+6  base_nome           tam=35
+7  total_vendas        tam=10  fmt=float0
+8  quantidade          tam=12  fmt=float2
+9  preco_medio         tam=11  fmt=float3
+10 valor               tam=13  fmt=float2
+11 perc_ranking        tam=8   fmt=float2
+12 count_nome          tam=4   fmt=float0   func=contar campo=base_nome   grupo=1
+13 titulo_total        tam=27
+14 sub_total_vendas    tam=10  fmt=float0   func=soma campo=total_vendas   grupo=1
+15 sub_quantidade      tam=12  fmt=float2  func=soma campo=quantidade    grupo=1
+16 sub_valor           tam=13  fmt=float2  func=soma campo=valor         grupo=1
+17 sub_perc_ranking    tam=8   fmt=float2
+18 count_nome_tot      tam=4   fmt=float0   func=contar campo=base_nome
+19 tot_total_vendas    tam=10  fmt=float0   func=soma campo=total_vendas 
+20 tot_quantidade      tam=12  fmt=float2  func=soma campo=quantidade  
+21 tot_valor           tam=13  fmt=float2  func=soma campo=valor       
+
+30 row_detalhe_agrupamento  tam=131
+31 row_agrupamento          tam=131
+
+40 ranking_agrupamento      tam=6  fmt=float0   func=contar campo=base_nome  grupo=1
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                 #2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="ordem_1">
+#31
+#30
++------------+-------------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+|   Código   | #4                                  |   Vendas   |  Quantidade  | Preço médio |     Valor     |  % Total  |  R.A.  |
++------------+-------------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+</cab_grupo>
+<detalhe>
+| #5         | #6                                  | #7         | #8           | #9          | #10           | #11     % | #40   º|
+</detalhe>
+<rod_grupo nome="1">
++------------+-------------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+| Subtotal      #12   #13                          | #14        | #15          |             | #16           | #17     % |        |
++--------------------------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+
+</rod_grupo>
+<rod_relat>
++--------------------------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+| Total geral   #18   #13                          | #19        | #20          |             | #21           |           |        |
++--------------------------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+</rod_relat>
+<rod_pagina>
++--------------+-----------------------------------+------------+--------------+-------------+---------------+-----------+--------+
+</rod_pagina>
+<hash>37cecfe0d593ad3ffe0fca4af0aaf7e9</hash>
+</relatorio>

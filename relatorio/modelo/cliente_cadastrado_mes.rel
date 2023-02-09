@@ -1,0 +1,43 @@
+<relatorio dados="cliente_cadastrado_mes">
+<apelidos>
+1  rel_posto_nome         	tam=60
+2  rel_data_hora            	tam=18
+4  grupo			tam=25
+5  data				tam=100  fmt=data
+6  qtda				tam=100
+7  linha			tam=100
+8  data				tam=100
+9  qtde				tam=100
+10 periodo          tam=119 alinha=centro
+11 total            tam=100
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                     #2                
+-----------------------------------------------------------------------------------------------------------------------
+
+                                             {TIT}CLIENTES CADASTRADOS POR MÊS
+{SUBTIT}#10
+
++--------------------------+#7
+|           GRUPO          |#8
++--------------------------+#7
+</cab_pagina>
+  
+<detalhe>
+| #4                       |#9
+</detalhe>
+
+<rod_relat>
++--------------------------+#7
+| TOTAL                    |#11
++--------------------------+#7
+</rod_relat>
+
+<rod_pagina>
++--------------------------+#7
+</rod_pagina>
+
+
+<hash>b62d51ee903c7520f0e24eec57c9ce75</hash>
+</relatorio>

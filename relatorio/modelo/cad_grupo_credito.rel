@@ -1,0 +1,45 @@
+<relatorio dados="cad_grupo_credito">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  g_nome				tam=60	alinha=esquerda
+4  g_codigo				tam=60	alinha=esquerda
+5  credito_padrao		tam=60	fmt=%.02f	alinha=esquerda
+6  credito_max			tam=60	fmt=%.02f	alinha=esquerda
+7  codigo				tam=6
+8  nome					tam=51
+9  limite_credito		tam=14	fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                               #2                
+---------------------------------------------------------------------------------
+ 
+                 RELATORIO DE CLIENTES POR GRUPOS DE CRÉDITO
+
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="g_codigo">
+Nome..........: #3                                                               
+Código........: #4
+Crédito Padrão: #5
+Crédito Máximo: #6
+
++--------+------------------------------------+----------------+----------------+
+| Código | Cliente                                             | Limite crédito |
++--------+-----------------------------------------------------+----------------+
+</cab_grupo>
+<detalhe>
+| #7     | #8                                                  | #9             |
+</detalhe>
+<rod_grupo nome="1">
++--------+-----------------------------------------------------+----------------+
+
+</rod_grupo>
+<rod_pagina>
++--------+-----------------------------------------------------+----------------+
+</rod_pagina>
+<rod_relat>
+</rod_relat>
+
+<hash>7ade1816a08537fe0be3edd8b8919cdf</hash>
+</relatorio>

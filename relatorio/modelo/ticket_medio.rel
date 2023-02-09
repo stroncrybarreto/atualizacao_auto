@@ -1,0 +1,59 @@
+<relatorio dados="ticket_medio" docname="Relatório de Ticket Médio" ordem="ordem">
+<apelidos>
+1  rel_posto_nome	    tam=60
+2  rel_data_hora	    tam=16
+3  titulo			    tam=134	alinha=centro
+4  quebra			    tam=40	
+5  data				    tam=10	alinha=centro	fmt=data
+6  num_vendas		    tam=13	alinha=direita  fmt=float0  
+7  total_venda		    tam=15	alinha=direita	fmt=float2
+8  ticket_medio		    tam=15	alinha=direita	fmt=float2
+9  total_num_vendas     tam=13	alinha=direita  fmt=float0  func=soma	campo=num_vendas
+10 total_total_venda    tam=15	alinha=direita 	fmt=float2	func=soma	campo=total_venda
+11 total_ticke		    tam=15	alinha=direita	fmt=float2  expr=total_total_venda/total_num_vendas	
+12 total_mercadoria	    tam=12	alinha=direita  fmt=float0  
+13 total_combustivel    tam=16	alinha=direita  fmt=float3
+14 ger_mercadoreia	    tam=12	alinha=direita  fmt=float0	func=soma	campo=total_mercadoria
+15 ger_combustivel	    tam=16	alinha=direita  fmt=float3	func=soma	campo=total_combustivel
+16 qtd_med_merc		    tam=12	alinha=direita  fmt=float2
+17 qtd_med_comb		    tam=16	alinha=direita  fmt=float2
+
+18 qtd_merc_que		    tam=12	alinha=direita	fmt=float2  expr=ger_mercadoreia/total_num_vendas	
+19 qtd_comb_que		    tam=16	alinha=direita	fmt=float2  expr=ger_combustivel/total_num_vendas	
+
+20 nr_pessoas	        tam=12  alinha=direita  fmt=float0	
+21 total_nr_pessoas	    tam=12  alinha=direita  fmt=float0
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                  #2              
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra_2">
++------------+----------------------------------------------------------------------------------+---------------------------------------------------+
+|            |                                      Total                                       |                        Média                      |
+|    Data    +---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+
+|            | Número vendas | Num. Pessoas | Quant. merc. |   Quant. comb.   |   Valor vendas  | Quant. merc. |   Quant. comb.   |   Ticket médio  |
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #5         | #6            | #20          | #12          | #13              | #7              | #16          | #17              | #8              |
+</detalhe>
+<rod_grupo nome="1">
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+
+| Total      | #9            | #21          | #14          | #15              | #10             | #18          | #19              | #11             |
++------------+---------------+--------------+--------------+------------------+-----------------+--------------+------------------+-----------------+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+<rod_pagina>
++------------+---------------+--------------+--------------+------------------+----------------+--------------+-------------------+-----------------+
+</rod_pagina>
+
+<hash>75236bcd62fcd9e6da53ca39aa68789b</hash>
+</relatorio>

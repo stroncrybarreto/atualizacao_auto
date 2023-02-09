@@ -1,0 +1,83 @@
+<relatorio dados="consumo_cliente_main" ordem="" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18
+3  subtitulo          tam=165   alinha=centro
+8	page_num          tam=2     alinha=esquerda
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                        #2               - Pág.: #8
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="consumo_cliente_contas_receber" ordem="quebra,cpf,hora">
+<apelidos>
+6  pessoa_nome         tam=48
+7  data                tam=8
+8  hora                tam=16 
+9  placa               tam=7
+10 km                  tam=8   alinha=centro	fmt=%.01f
+11 documento           tam=8   alinha=centro
+12 produto_nome        tam=29
+13 quantidade          tam=11  fmt=float3
+14 unid_med            tam=3
+15 preco_unit          tam=9   fmt=float3
+16 valor               tam=12  fmt=float2
+17 total_qtde          tam=11  fmt=float3   
+18 total_valor         tam=12  fmt=float2   func=soma   campo=valor         grupo=2
+19 doc_pgto            tam=8   alinha=centro
+20 hora_abastec_hm     tam=5
+21 desconto            tam=6   fmt=float2
+22 total_desconto      tam=6   fmt=float2    func=soma   campo=desconto     grupo=2
+23 valor_final         tam=12  fmt=float2    expr=valor+desconto
+24 total_valor_final   tam=12  fmt=float2    func=soma   campo=valor_final  grupo=2
+
+27 valor_pago	       tam=33  fmt=float2
+28 total_aberto		   tam=33  fmt=float2
+31 pessoa_nome	       tam=34
+35 total_valor         tam=33  fmt=float2    func=soma   campo=valor         grupo=2
+
+32 uf                  tam=3
+33 municipio           tam=44
+34 cpf                 tam=18
+36 pessoa_codigo	   tam=5   alinha=esquerda
+37 pessoa_cod_nome	   tam=50
+38 nota_fiscal		   tam=12
+</apelidos>
+<cab_grupo nome="2" quebra="quebra,cpf">
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cliente: #37                                                      CPF/CNPJ: #34                 UF: #32 - Município: #33                                          |
++------------------+---------+----------+----------+----------+-------------------------------+-------------+----+-----------+--------------+--------+--------------+
+|    Data/Hora     |  Placa  |    KM    | CP / NF  | Doc pgto |           Descrição           |  Quantidade | Un.| Pr. unit. |    Valor     |  Desc. |  Valor final |
++------------------+---------+----------+----------+----------+-------------------------------+-------------+----+-----------+--------------+--------+--------------+
+</cab_grupo>
+<detalhe>
+| #8               | #9      | #10      | #11      | #19      | #12                           | #13         | #14| #15       | #23          | #21    | #16          |
+</detalhe>
+<rod_grupo nome="2">
++------------------+---------+----------+----------+----------+-------------------------------+-------------+----+-----------+--------------+--------+--------------+
+| Total do cliente                                                                            | #17         |                | #24          | #22    | #18          |
++---------------------------------------------------------------------------------------------+-------------+----------------+--------------+--------+--------------+
+
++----------------------------------------------------+  
+| Resumo cliente: #31                                |
++----------------------------------------------------+  
+| Total a pagar:   #35                               |
+| Valor pago:      #27                               |
+| Total em aberto: #28                               |
++----------------------------------------------------+
+
+</rod_grupo>
+<rod_pagina>
++------------------+---------+--------+----------+----------+-------------------------------+--------------+-----+------------+----------------+--------+----------------+
+</rod_pagina>
+</subrelat>
+
+<hash>7c553734c6bfde383a33745b795995f3</hash>
+</relatorio>

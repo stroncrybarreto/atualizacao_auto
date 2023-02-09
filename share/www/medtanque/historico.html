@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>AutoSystem - Medidor de Tanque</title>
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <script language="JavaScript" type="text/javascript" src="../validator.js"></script>
+  <script language="JavaScript">
+
+	  function ValidaForm(){
+
+		if (!ValidaInteiro('historico_show_limit', 'Medicoes por tanque'))
+			return false;
+
+		if (!Verifica_Data('data_ini', 0))
+			return false;
+
+		if (!Verifica_Data('data_fim', 0))
+			return false;
+
+		return true;
+
+  	  }
+  
+  </script>
+</head>
+
+<body>
+
+<div id="header">
+<div id="logo"><img src="../autosystem.gif" width="90"></div>
+
+<div id="branding">
+<h1>Hist&oacute;rico das &Uacute;ltimas Medi&ccedil;&otilde;es</h1>
+
+<h2 tal:content="empresa_nome">Nome do Posto</h2>
+
+</div>
+
+</div>
+
+<div class="breadcrumbs"><a href="/">In&iacute;cio</a> | <a href="/do_medicao/">Nova medi&ccedil;&atilde;o</a> | <a href="/get_historico/">Hist&oacute;rico de Medi&ccedil;&otilde;es</a></div>
+
+<div id="content" class="colM">
+<div id="content-main">
+
+<div class="module">
+<h2>Par&acirc;metros</h2>
+
+<form method="post" action="/get_historico/" onSubmit="return ValidaForm();">
+  <table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td style="text-align: left; vertical-align: middle; white-space: nowrap;" width=25%><span style="font-weight: bold;">Medi&ccedil;&otilde;es por Tanque:</span></td>
+	  <td><input style="width: 60px; height: 20px; text-align: center;" tal:attributes="value historico_show_limit" name="historico_show_limit">
+		  <i>&nbsp;&nbsp;Número máximo de exibições por tanque</i>
+	  </td>
+    </tr>
+    <tr>
+	  <td style="text-align: left; vertical-align: middle; white-space: nowrap;" width=25%><span style="font-weight: bold;">Per&iacute;odo:</span></td>
+	  <td><input id='data_ini' maxlength="10" style="width: 80px; height: 20px; text-align: center;" tal:attributes="value data_ini" name="data_ini" onKeyPress="return Ajusta_Data(this, event)"> <b>at&eacute;</b> <input id='data_fim' maxlength="10" style="width: 80px; height: 20px; text-align: center;" tal:attributes="value data_fim" name="data_fim" onKeyPress="return Ajusta_Data(this, event)">
+		  <i>&nbsp;&nbsp;Data inicial e final das medições</i>
+	 </td>
+    </tr>
+    <tr>
+		<td colspan="2" rowspan="1">
+			<center>
+			<input style="text-align: center; font-size: 12px;" name="bt_buscar" value="Buscar" type="submit"> &nbsp;
+			<input style="text-align: center; font-size: 12px;" name="bt_limpar" value="Limpar" type="button" onclick="resetForm()">
+			</center>
+		</td>
+    </tr>
+    </tbody>
+  </table>
+</form>
+	
+</div>
+
+<br>
+
+<div class="module">
+<h2>&Uacute;ltimas medi&ccedil;&otilde;es</h2>
+
+<table border="1" width="100%">
+	<thead>
+		<th>Data / Hora</th>
+		<th>Tanque</th>
+		<th>Combustivel</th>
+		<th>Quantidade</th>
+		<th width="150">Completar</th>
+	</thead>
+	<tbody>
+		<tr tal:repeat="historico rs_historico">
+			<td tal:content="historico/ts" align="center"></td>
+			<td tal:content="historico/tanque" align="center"></td>
+			<td tal:content="historico/produto_nome"></td>
+			<td tal:content="historico/volume" align="center"></td>
+			<td align="left" tal:content="structure historico/img"></td>
+		</tr>
+  </tbody>
+</table>
+
+</div>
+
+<div class="tiny">Informacoes obtidas em <b tal:content="ts"></b>.</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

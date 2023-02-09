@@ -1,0 +1,79 @@
+<relatorio dados="nota_emitida" ordem="empresa_codigo">
+<apelidos>
+1  rel_posto_nome	tam=50
+2  rel_data_hora	tam=18
+3  rel_titulo		tam=128 alinha=centro
+4  rel_titulo2		tam=128 alinha=centro
+6  empresa_nome		tam=40
+7  numero_nota		tam=6   alinha=centro
+8  data_emissao		tam=10 	fmt=data
+9  cliente_nome		tam=40
+10 valor_nota		tam=13 	fmt=float2
+11 situacao			tam=9
+12 motivo_nome		tam=20
+13 modelo_doc		tam=6	alinha=centro
+14 emp_nr_notas		tam=5	func=contar	grupo=1
+15 emp_emitidas		tam=5	func=soma	campo=emitida	grupo=1
+16 emp_canceladas	tam=5
+17 emp_total_valor	tam=13 	fmt=float2	func=soma	campo=valor_nota	grupo=1
+19 tot_nr_notas		tam=5	func=contar	
+20 tot_emitidas		tam=5	func=soma	campo=emitida
+21 tot_canceladas	tam=5
+22 tot_total_valor	tam=13 	fmt=float2	func=soma	campo=valor_nota
+23 serie			tam=5 	alinha=centro
+24 nota_cfop		tam=10
+25 nota_cfop_nome	tam=105
+26 total_cfop		tam=13	fmt=float2	func=soma	campo=valor_nota	grupo=2
+27 qtde_cfop		tam=10	alinha=esquerda	func=contar	campo=numero		grupo=2
+28 emitida			tam=3
+98 forma_cod_nome   tam=80 expr=motivo_codigo and (str(motivo_codigo)+' - '+motivo_nome) or motivo_nome
+99 empresa_cod_nome	tam=80	expr=str(empresa_codigo)+' - '+empresa_nome
+</apelidos>
+<cab_pagina>
+#1                                                                                                              #2
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #99                                                                                                                          |
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,motivo_nome">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| Forma pagamento: #98                                                                                                                  |
++--------+-------+--------+------------+-------------------------------------------+------------------------+---------------+-----------+
+| Número | Série | Modelo |   Emissão  |               Destinatário                |   Forma de pagamento   |  Valor nota   | Situação  |
++--------+-------+--------+------------+-------------------------------------------+------------------------+---------------+-----------+
+</cab_grupo>
+
+<detalhe>
+| #7     | #23   | #13    | #8         | #9                                        | #12                    | #10           | #11       |
+</detalhe>
+
+<rod_grupo nome="2">
++--------+------+---------+------------+-------------------------------------------+------------------------+---------------+-----------+
+| Total de notas por forma de pagamento: #27                                                                | #26           |           |
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total empresa           #14   Notas: #15   Emitidas/Aprovadas, #16   Canceladas/Rejeitadas                | #17           |           |
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+| Total geral             #19   Notas: #20   Emitidas/Aprovadas, #21   Canceladas/Rejeitadas                | #22           |           |
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+</rod_relat>
+<rod_pagina>
++--------+------+---------+------------+-------------------------------------------+------------------------+---------------+-----------+
+</rod_pagina>
+
+<hash>1f62190297eb77cc598fdb9af1b848ed</hash>
+</relatorio>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>Unicred</nome>
+	
+	<sessao>
+		<nome>critica</nome>
+		
+		<registro>
+			<id>1</id>
+			<codigo>00</codigo>
+			<tipo>liquidar</tipo>
+			<descricao>CREDITO OU DEBITO EFETIVADO</descricao>
+		</registro>
+		<registro>
+			<id>2</id>
+			<codigo>01</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>INSUFICIENCIA DE FUNDOS DEBITO NAO EFETUADO</descricao>
+		</registro>
+		<registro>
+			<id>3</id>
+			<codigo>AH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>N SEQUENCIAL DO REGISTRO NO LOTE INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>4</id>
+			<codigo>AI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE SEGMENTO DE DETALHE INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>5</id>
+			<codigo>AJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TIPO DE MOVIMENTO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>6</id>
+			<codigo>AP</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA LANCAMENTO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>7</id>
+			<codigo>AQ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TIPO QUANTIDADE DA MOEDA INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>8</id>
+			<codigo>AR</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO LANCAMENTO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>9</id>
+			<codigo>BD</codigo>
+			<tipo>agendar</tipo>
+			<descricao>INCLUSAO EFETUADA COM SUCESSO</descricao>
+		</registro>
+		<registro>
+			<id>10</id>
+			<codigo>BF</codigo>
+			<tipo>criticar</tipo>
+			<descricao>EXCLUSAO EFETUADAO COM SUCESSO</descricao>
+		</registro>
+		<registro>
+			<id>11</id>
+			<codigo>CA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE BARRAS CODIGO DO BANCO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>12</id>
+			<codigo>CB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE BARRAS CODIGO DA MOEDA INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>13</id>
+			<codigo>CC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE BARRAS DIGITO VERIFICADOR GERAL INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>14</id>
+			<codigo>CD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE BARRAS VALOR DO TITULO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>15</id>
+			<codigo>CE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE BARRAS CAMPO LIVRE INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>16</id>
+			<codigo>CF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO DOCUMENTO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>17</id>
+			<codigo>CG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO ABATIMENTO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>18</id>
+			<codigo>CH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO DESCONTO INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>19</id>
+			<codigo>CI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DE MORA INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>20</id>
+			<codigo>CJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA MULTA INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>21</id>
+			<codigo>HI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>ARQUIVO NAO ACEITO</descricao>
+		</registro>
+		<registro>
+			<id>22</id>
+			<codigo>HK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO REMESSA RETORNO INVALIDO</descricao>
+		</registro>		
+		<registro>
+			<id>23</id>
+			<codigo>OG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>BANCO NAO ENCONTRADO</descricao>
+		</registro>
+		<registro>
+			<id>24</id>
+			<codigo>YD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CODIGO DE OCORRENCIA INVALIDO</descricao>
+		</registro>
+	</sessao>
+</layout>

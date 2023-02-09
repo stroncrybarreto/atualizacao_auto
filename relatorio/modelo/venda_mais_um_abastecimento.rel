@@ -1,0 +1,62 @@
+<relatorio dados="venda_mais_um_abastecimento" ordem="empresa_nome,data,tuno">
+<apelidos>
+1  rel_posto_nome    	tam=60
+2  rel_data_hora     	tam=16
+3  subtitulo			tam=130	alinha=centro
+4  titulo				tam=130	alinha=centro
+5  empresa_cod_nome    	tam=110
+6  conta_nome        	tam=38
+7  data              	tam=10	fmt=data
+8  turno				tam=2
+9  valor				tam=9	fmt=float2	alinha=direita
+10 documento			tam=8	
+11 hora					tam=5	
+12 produto_lista		tam=22
+13 forma_pgto			tam=22
+14 valor_pgto			tam=10	fmt=float2
+16 valor_pgto_total  	tam=10	fmt=float2 func=soma campo=valor_pgto grupo=1
+17 usuario   			tam=15
+18 valor_pgto_geral  	tam=10	fmt=float2 func=soma campo=valor_pgto
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2        
+----------------------------------------------------------------------------------------------------------------------------------
+
+#4
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                                    |
++------------+----+-------+---------+-----------+------------------------+------------------------+------------+-----------------+
+|    Data    | T. | Hr CP |  Cupom  |   Valor   |     Abastecimentos     |    Forma pagamento     | Valor pgto |     Usuário     |
++------------+----+-------+---------+-----------+------------------------+------------------------+------------+-----------------+
+</cab_grupo>
+
+<detalhe>
+| #7         | #8 | #11   | #10     | #9        | #12                    | #13                    | #14        | #17             |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+----+-------+---------+-----------+------------------------+------------------------+------------+-----------------+
+| Total empresa                                                                                   | #16        |                 |
++-------------------------------------------------------------------------------------------------+------------+-----------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------+------------+-----------------+
+| Total geral                                                                                     | #18        |                 |
++-------------------------------------------------------------------------------------------------+------------+-----------------+
+</rod_relat>
+
+<rod_pagina>
++------------+----+-------+---------+-----------+------------------------+------------------------+------------+-----------------+
+</rod_pagina>
+
+<hash>dcd3b4e2ff46b0d9b8eacb22a821e391</hash>
+</relatorio>

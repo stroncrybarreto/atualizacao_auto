@@ -1,0 +1,740 @@
+#LayerVenda #venda_prod_descricao, 
+#LayerVenda #venda_prod_preco_unit, 
+#LayerVenda #venda_prod_qtde, 
+#LayerVenda #venda_prod_subtotal, 
+#LayerVenda #venda_qtde_itens, 
+#LayerVenda #venda_desconto, 
+#LayerVenda #venda_total 
+{
+	box-shadow: inset 0px 0px 0px 1px #C4C7CE;
+	background: #FFF;
+	border-radius: 4px;
+}
+
+
+/* #LayerVenda > #sc_produtos_vendidos */
+/* #LayerVenda > #sc_produtos_vendidos > #tv_produtos_vendidos */
+/* #LayerVenda GtkTreeview */
+/* #LayerVenda GtkScrolledWindow
+{
+	border-radius: 4px;
+	border-width: 1px;
+	border-color: #C4C7CE;
+}  */
+
+.pendencia_detalhe {
+	border-radius: 2px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+
+#LayerVenda GtkScrolledWindow
+{
+	border: none;
+}
+
+#LayerVenda GtkLabel:not(:focus) {
+	color: rgb(46,52,54)
+}
+
+#LayerVenda GtkScrolledWindow GtkButton GtkBox GtkAlignment GtkLabel:not(:focus)
+{
+	color:rgb(141, 144, 145);
+}
+
+/* #LayerVenda GtkScrolledWindow > *, */
+#LayerVenda GtkScrolledWindow GtkTreeView {
+	border-radius: 4px;
+}
+
+
+#LayerVenda GtkScrolledWindow GtkTreeView .button{
+	border-radius: 0px;
+}
+
+#LayerMapaBico .button {
+	padding: 0px;
+}
+
+#themebackground {
+	background-color: #FFF;
+	background-image: url("assets/img/entry-background.png");
+	background-position: top;
+	background-size: 100% 100%;
+} 
+
+
+.BicoNumero {
+	color: #000;
+	font-size: 16px;
+	padding: 0px 0px 0px 3px;
+	font-family: helvetica;
+}
+
+.BicoCombustivel{
+	color: #000;
+	padding: 0px 3px 0px 0px;
+	font-size: 10px;
+	font-family: arial bold;
+}
+
+
+.BicoQuantidade,
+.BicoValorTotal{
+	color: #000;
+	font-family: helvetica;
+	font-size: 8px;
+}
+
+#LayerMapaBico .button {
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	text-shadow: none;
+}
+
+#LayerMapaBico .button:hover{
+	opacity: 0.9;
+}
+
+#LayerMapaBico .button:active{
+	opacity: 1;
+}
+
+#LayerMapaBico .button:active > GtkVBox {
+	box-shadow: inset 0px 0px 2px 0px #0000004d;
+}
+
+#LayerMapaBico .button > GtkVBox,
+#LayerMapaBico .venda_bico_erro {
+	border-radius: 4px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#LayerMapaBico .venda_bico_erro > GtkVBox,
+#LayerMapaBico .venda_bico_erro {
+	background-color: #E9A72A;
+	background-image: linear-gradient(to bottom, #EEBB5A, #E9A72A);
+	border-color: #E9A72A;
+}
+
+#LayerMapaBico .sem_engine_empty > GtkVBox,
+#LayerMapaBico .sem_engine_empty {
+	background-color: #C2C2C2;
+	background-image: linear-gradient(to bottom, #C2C2C2, #999999);
+	border-color: #999999;
+}
+
+#LayerMapaBico .venda_bico_em_aberto > GtkVBox,
+#LayerMapaBico .venda_bico_em_aberto {
+	background-color: #B22222;
+	background-image: linear-gradient(to bottom, #B22222, #8b0000);
+	border-color: #8b0000;
+}
+
+#LayerMapaBico .venda_bico_bloqueado > GtkVBox,
+#LayerMapaBico .venda_bico_bloqueado {
+	background-color: #4476EF;
+	background-image: linear-gradient(to bottom, #618CF1, #4476EF);
+	border-color: #4577EF;
+}
+
+
+#LayerMapaBico .venda_bico_pendente > GtkVBox,
+#LayerMapaBico .venda_bico_pendente {
+	background-color: #66A159;
+	background-image: linear-gradient(to bottom, #77BB69, #66A159);
+	border-color: #1AA72C;
+}
+
+#LayerMapaBico .venda_bico_ligado > GtkVBox,
+#LayerMapaBico .venda_bico_ligado {
+	background-color: #DF3B3C;
+	background-image: linear-gradient(to bottom, #E35353, #DF3B3C);
+	border-color: #DF3B3C;
+}
+
+#LayerMapaBico .venda_bico_bloqueado_paf_daf > GtkVBox,
+#LayerMapaBico .venda_bico_bloqueado_paf_daf {
+	background-color: #A244EF;
+	background-image: linear-gradient(to bottom, #A244EF, #A244EF);
+	border-color: #A244EF;
+}
+
+#LayerMapaBico #testeelton > GtkVBox {
+	padding: 4px;
+	background-color: red;
+}
+
+/***************************************
+ * Planos de fundo do Módulo Gerencial *
+ **************************************/
+
+#GerencialFundoNovo {
+	background-image: url('../../../images/config.png');
+	background-size: 100% 100%;
+}
+
+#GerencialStatusBar {
+	background-color: #E7E8EB;
+}
+
+/**********************************************
+ * Planos de fundo do Módulo Terminal comanda *
+ **********************************************/
+#TerminalComandaFundoNovoImg {
+	background-image: url("../../../images/terminal_comanda/fundo.png");
+	background-size: 100% 100%;
+}
+#TerminalComandaFundoNovo {
+	background-color: #FFFFCC;
+}
+/***********************************
+ * Planos de fundo do Módulo Caixa *
+ **********************************/
+#CaixaFundoNovo {
+	background-image: url("../../../images/caixa/fundo_novo.png");
+	background-size: 100% 100%;
+}
+#CaixaAutoShopping {
+	background-image: url("../../../images/fundo_autosh.png");
+}
+#FundoCaixa {
+	background-image: url("../../../images/fundo_caixa.png");
+	background-size: 100% 100%;
+}
+#CaixaASRestauranteIPP {
+	background-image: url("../../../images/caixa/fundoAutomacaoIPP_rest.png");
+	background-size: 100% 100%;
+}
+#CaixaAutomacaoIPP {
+	background-image: url("../../../images/caixa/fundoAutomacaoIPP.png");
+	background-size: 100% 100%;
+}
+
+/********************************************
+ * Notebooks and tabs *
+ ********************************************/
+
+/* Container interno do TAB */
+.notebook {
+	-GtkNotebook-initial-gap: 0;
+	-GtkNotebook-arrow-spacing: 5;
+	-GtkNotebook-tab-curvature: 0;
+	-GtkNotebook-tab-overlap: 1;
+	-GtkNotebook-has-tab-gap: false;
+	-GtkWidget-focus-padding: 0;
+	-GtkWidget-focus-line-width: 0;
+}
+
+/* Header do Tab */
+.notebook.header {
+	border-width: 1px;
+	background-color: #D8DADE;
+	box-shadow: none;
+}
+
+/* Contanier do content interno do TAB */
+.notebook.frame {
+	border-width: 1px;
+	border-top: none;
+}
+
+/* Bordas do Header do Tab */
+.notebook.header.frame.top,
+.notebook.header.frame.top:backdrop {
+	border-top: 1px solid #A1A1A1;
+	border-left: 1px solid #A1A1A1;
+	border-right: 1px solid #A1A1A1;
+}
+
+.notebook.header.frame.bottom,
+.notebook.header.frame.bottom:backdrop {
+	border-bottom: 1px solid #A1A1A1;
+	border-left: 1px solid #A1A1A1;
+	border-right: 1px solid #A1A1A1;
+}
+
+.notebook.header.frame.left,
+.notebook.header.frame.left:backdrop {
+	border-top: 1px #A1A1A1;
+	border-bottom: 1px #A1A1A1;
+	border-left: 1px #A1A1A1;
+}
+
+.notebook.header.frame.right,
+.notebook.header.frame.right:backdrop {
+	border-top: 1px solid #A1A1A1;
+	border-bottom: 1px solid #A1A1A1;
+	border-right: 1px solid #A1A1A1;
+}
+
+/* Tab Header Button Default */
+.notebook tab {
+	border-style: none;
+	background-color: transparent;
+	background-image: none;
+	background: transparent;
+}
+
+/* Tab Header Label Button Default */
+.notebook tab GtkLabel,
+.notebook .prelight-page,
+.notebook .prelight-page GtkLabel,
+.notebook .active-page,
+.notebook .active-page GtkLabel {
+	transition: all 200ms ease-in;
+	color: #838892;
+}
+
+.notebook tab:hover,
+.notebook tab.top:hover {}
+
+/* Tab Header Button Active */
+.notebook tab:active,
+.notebook tab.top:active {
+	background: #FFF;
+	border-top: solid 3px #603C79;
+	border-right: solid 1px #A1A1A1;
+	border-left: solid 1px #A1A1A1;
+}
+
+/* Tab Header Label Button Active */
+.notebook .active-page,
+.notebook tab .active-page GtkLabel {
+	color: #000;
+}
+
+
+/********************************************
+ * Buttons hover *
+ ********************************************/
+ .button:hover{
+	-gtk-icon-source: none;
+	background-image: none;
+	background-color: #e5f1fb;
+	border-color: #77b7e9;
+}
+
+/********************************************
+ * GtkCheckButton with indicator disabled *
+ ********************************************/
+#vencto_semanal_0:checked,
+#vencto_semanal_1:checked,
+#vencto_semanal_2:checked,
+#vencto_semanal_3:checked,
+#vencto_semanal_4:checked,
+#vencto_semanal_5:checked,
+#vencto_semanal_6:checked,
+#vencto_semanal_fatura_0:checked,
+#vencto_semanal_fatura_1:checked,
+#vencto_semanal_fatura_2:checked,
+#vencto_semanal_fatura_3:checked,
+#vencto_semanal_fatura_4:checked,
+#vencto_semanal_fatura_5:checked,
+#vencto_semanal_fatura_6:checked,
+#semana_1:checked,
+#semana_2:checked,
+#semana_3:checked,
+#semana_4:checked,
+#semana_8:checked,
+#semana_16:checked,
+#semana_32:checked,
+#semana_64:checked
+{
+	-gtk-icon-source: none;
+	background-image: none;
+	background-color: rgb(230, 230, 230);
+	font-weight: bolder;
+}
+
+
+/********************************************
+ * Frame Box View *
+ ********************************************/
+
+.frame {
+	border-color: #A1A1A1;
+	border-width: 1px;
+}
+
+.frame>GtkLabel {
+	color: #603C79;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+/********************************************
+ * Checkbox e Radiobox *
+ ********************************************/
+/* Check Default */
+.check {
+	-gtk-icon-source: url("assets/img/checkbox-default.png");
+}
+
+/* Check Checked */
+.check:checked {
+	-gtk-icon-source: url("assets/img/checkbox-checked.png");
+}
+
+/* Check Disabled */
+.check:insensitive {
+	-gtk-icon-source: url("assets/img/checkbox-disabled.png");
+}
+
+/* Check Checked Disabled */
+.check:checked:insensitive {
+	-gtk-icon-source: url("assets/img/checkbox-dechekd-disabled.png");
+}
+
+/* Check inconsistent */
+.check:inconsistent {
+	-gtk-icon-source: url("assets/img/checkbox-inconsistent.png.png");
+}
+
+/* Check inconsistent Disabled*/
+.check:inconsistent:insensitive {
+	-gtk-icon-source: url("assets/img/checkbox-inconsistent-disabled.png");
+}
+
+/* Radio Default */
+.radio {
+	-gtk-icon-source: url("assets/img/radiobox-default.png");
+}
+
+/* Radio Checked */
+.radio:checked {
+	-gtk-icon-source: url("assets/img/radiobox-checked.png");
+}
+
+/* Radio Disabled */
+.radio:insensitive {
+	-gtk-icon-source: url("assets/img/radiobox-disabled.png");
+}
+
+/* Radio Checked Disabled */
+.radio:checked:insensitive {
+	-gtk-icon-source: url("assets/img/radiobox-checked-disabled.png");
+}
+
+.bt-save {
+	-gtk-icon-source: url("assets/img/save.png");
+}
+
+/********************************************
+ * Inputs - Entrys *
+ ********************************************/
+
+/* Entry Default */
+.entry {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C4C7CE;
+	border-radius: 4px;
+	background-color: #FFF;
+	background-image: url("assets/img/entry-background.png");
+	background-position: top;
+	background-size: 100% 100%;
+	color: #000;
+	padding: 4px;
+}
+
+/* Entry Focus e Active */
+.entry:active,
+.entry:focus {
+	box-shadow: inset 0px 0px 0px 2px rgba(135, 57, 183, 0.3);
+	background: #FFF;
+	border-color: #603C79;
+}
+
+/* Entry Disabled Default */
+.entry:insensitive {
+	background: #F2F3F4;
+	border-color: #C4C7CE;
+	color: #93989F;
+}
+
+/* Entry Text Cursor Selected */
+.entry:selected,
+.entry:selected:focus {
+	background: #603C79;
+	color: #FFF;
+}
+
+/********************************************
+ * Spinbutton - Botão add remover *
+ ********************************************/
+/* Spin Button Default */
+.spinbutton .button {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+/* Spin Last Child Button Default */
+.spinbutton .button:last-child {
+	border-radius: 0 3px 3px 0;
+}
+
+
+/********************************************
+ * Inputs - Combobox *
+ ********************************************/
+
+/* Combobox Entry */
+GtkComboBox .entry {
+	padding: 4px;
+}
+
+/* Combobox Button */
+GtkComboBox .button {
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #C4C7CE;
+	background-color: #FFF;
+	background-image: url("assets/img/butto-background.png");
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/* Combobox Button Disabled*/
+GtkComboBox.combobox-entry .button:insensitive {
+	background: #F2F3F4;
+}
+
+/* Combobox - List 
+GtkComboBox .menu {
+	background: #FFF;
+}
+*/
+
+/* Combobox - List Item 
+GtkComboBox .menu .menuitem {
+	background: #FFF;
+}
+*/
+
+/* Combobox - List Item Effect */
+GtkComboBox .menu .menuitem:hover,
+GtkComboBox .menu .menuitem:active {
+	background: #603C79;
+	color: #FFF;
+}
+
+
+/********************************************
+ * Button *
+ ********************************************/
+
+.button {
+	border-style: solid;
+	border-color: #C4C7CE;
+	background-image: url("assets/img/butto-background.png");
+	background-position: top;
+	background-size: 100% 100%;
+	padding: 4px;
+}
+
+/********************************************
+ * Menu Superior *
+ ********************************************/
+
+/* Menu Header */
+.menubar {
+	background: #E7E8EB;
+}
+
+/* Menu Header Item */
+.menubar>.menuitem {}
+
+/* Menu Header item hover*/
+.menubar .menuitem:hover {
+	background: #603C79;
+	color: #FFF;
+}
+
+/* Menu Header item hover border*/
+.menubar>.menuitem:hover {
+	box-shadow: inset 0px -2px 0px 0px #FFA711;
+} 
+
+/********************************************
+ * Text View *
+ ********************************************/
+
+GtkHBox > GtkScrolledWindow,
+GtkVBox > GtkScrolledWindow {
+	border-radius: 4px;
+}
+
+GtkTextView {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C4C7CE;
+	border-radius: 4px;
+	background-color: #FFF;
+	background-position: top;
+	background-size: 100% 100%;
+	color: #000;
+	padding: 4px;
+}
+
+/* Text View Select */
+GtkTextView:selected {
+	background: #603C79;
+	color: #FFF;
+}
+
+/* Text View Disabled */
+GtkTextView:insensitive {
+	color: #9B9FA6;
+}
+
+/********************************************
+ * TreeView - Table *
+ ********************************************/
+GtkTreeView .button {
+	background: #FFF;
+	border-color: #EDEDED;
+	border-radius: 0;
+}
+
+/* TreeView Select */
+GtkTreeView.view:selected {
+	background: #603C79;
+	color: #FFF;
+}
+
+GtkTreeView .entry {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/********************************************
+ * GtkToolbar - Header *
+ ********************************************/
+/* Window/Toolbar Background */
+GtkWindow {
+	background: #E7E8EB;
+}
+
+GtkToolbar {
+	background: #E7E8EB;
+	border-bottom: solid 1px #D0D1D4;
+}
+
+/* Toolbar Header Button */
+GtkToolbar .button {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Toolbar Header Button */
+GtkToolbar .button:hover {
+	background: #D8DADE;
+}
+
+
+/********************************************
+ * Tooltip - Pophover *
+ ********************************************/
+/* Tooltip Default */
+.tooltip {
+	background: rgba(96, 60, 121, 1);
+	border-radius: 0px;
+	box-shadow: none;
+	border: none;
+}
+
+/* Tooltip Default Dependences */
+.tooltip * {
+	background: transparent;
+}
+
+
+/********************************************
+ * ProgressBar - Pophover *
+ ********************************************/
+/* ProgressBar Container */
+GtkProgressBar {
+	background: #D2D2D2;
+}
+
+/* ProgressBar Bar */
+.progressbar {
+	background: #724284;
+	border: solid 1px #000;
+	border-radius: 4px;
+}
+
+/********************************************
+ * GtkModelButton *
+ ********************************************/
+/* GtkModelButton Default Itens */
+GtkModelButton.button:focus,
+GtkModelButton.button:active:focus,
+GtkModelButton.button:checked:focus,
+GtkModelButton.button:active,
+GtkModelButton.button:checked,
+GtkModelButton.button:insensitive:insensitive,
+GtkModelButton.button:active:insensitive,
+GtkModelButton.button:checked:insensitive,
+GtkModelButton.button {
+background-color: transparent;
+background-image: none;
+border-color: transparent;
+border-image: none;
+border-style: none;
+box-shadow: none;
+}
+
+/* GtkModelButton Default Itens */
+GtkModelButton.button:backdrop,
+GtkModelButton.button:hover:backdrop,
+GtkModelButton.button:insensitive:backdrop,
+GtkModelButton.button:active:insensitive:backdrop,
+GtkModelButton.button:active:backdrop,
+GtkModelButton.button:active:hover:backdrop,
+GtkModelButton.button:active:selected:backdrop,
+GtkModelButton.button:checked:insensitive:backdrop,
+GtkModelButton.button:checked:backdrop,
+GtkModelButton.button:checked:hover:backdrop,
+GtkModelButton.button:checked:selected:backdrop {
+text-shadow: none;
+background-color: transparent;
+background-image: none;
+border-color: transparent;
+border-image: none;
+border-style: none;
+box-shadow: none;
+}
+
+/* GtkModelButton Default Itens Hover */
+GtkModelButton.button:active:hover,
+GtkModelButton.button:checked:hover,
+GtkModelButton.button:hover,
+GtkModelButton.button:selected {
+background-image: none;
+background-color: #603C79;
+color: #FFF;
+text-shadow: none;
+border-width: 0;
+border-color: transparent;
+border-radius: 2px;
+}
+
+GtkViewport {
+	background-color: #e7e8eb;
+
+}
+
+GtkViewport#vp_mensagem {
+	background-color: #FFF;	
+}

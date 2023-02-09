@@ -1,0 +1,46 @@
+<relatorio dados="melhores_clientes" ordem="">
+<apelidos>
+1  rel_posto_nome                 tam=60
+2  rel_data_hora                  tam=16
+4  subtitulo                      tam=130  alinha=centro
+5  pessoa_nome                    tam=45
+6  quantidade                     tam=13   fmt=float3
+7  valor_combustivel              tam=13   fmt=float2
+8  valor_produto                  tam=16   fmt=float2
+9  valor_cliente                  tam=14   fmt=float2
+10 total_geral_quantidade         tam=13   fmt=float3  func=soma campo=quantidade
+11 total_geral_valor_combustivel  tam=13   fmt=float2  func=soma campo=valor_combustivel
+12 total_geral_valor_produto      tam=16   fmt=float2  func=soma campo=valor_produto
+13 total_geral_valor              tam=14   fmt=float2  func=soma campo=valor_cliente
+14 pessoa_codigo				  tam=6	   alinha=centro
+</apelidos>
+
+<cab_pagina ordem='pessoa_codigo'>
+#1                                                                                                               #2             
+---------------------------------------------------------------------------------------------------------------------------------
+
+#4
+
++--------+--------------------------------------------------+-------------------------------+------------------+----------------+
+| Código |                     Cliente                      |          Combustíveis         |     Produtos     |      Total     |
+|        |                                                  |      Litros   |   Valor       |      Valor       |                |
++--------+--------------------------------------------------+---------------+---------------+------------------+----------------+
+</cab_pagina>
+
+<detalhe>
+| #14    | #5                                               | #6            | #7            | #8               | #9             |
+</detalhe>
+
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
++--------+--------------------------------------------------+---------------+---------------+------------------+----------------+
+
++-----------------------------------------------------------+---------------+---------------+------------------+----------------+
+| Total                                                     | #10           | #11           | #12              | #13            |
++-----------------------------------------------------------+---------------+---------------+------------------+----------------+
+</rod_relat>
+
+
+<hash>71fa41adcad3e41805dda62410af40e7</hash>
+</relatorio>

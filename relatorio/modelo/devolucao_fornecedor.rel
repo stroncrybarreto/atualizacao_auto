@@ -1,0 +1,61 @@
+<relatorio dados="devolucao_fornecedor" ordem="fornecedor">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1			tam=127 expr="DEVOLUÇÃO A FORNECEDOR" alinha=centro
+4  titulo2			tam=127	alinha=centro
+5  data				tam=10 	fmt=data
+6  turno			tam=2
+7  fornecedor		tam=50
+8  produto_nome		tam=30
+9  deposito_codigo	tam=8
+11 unid_med			tam=4	alinha=centro
+12 preco_unit		tam=10	fmt=float2
+13 lancto_valor		tam=12	fmt=float2
+10 quantidade		tam=11	fmt=float2
+25 teste			tam=11	fmt=float2	func=soma	campo=quantidade	grupo=1
+17 total_qtde		tam=11   fmt=float2
+15 tot_lancto_valor	tam=12  fmt=float2	func=soma	campo=lancto_valor	grupo=1
+16 obs				tam=80	
+18 total_valor		tam=12  fmt=float2
+19 deposito_nome    tam=29 
+</apelidos>
+<cab_pagina>
+#1                                                                                                            #2        
+-------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="fornecedor">
++------------------------------------------+----------------------------------------------------------------------------------+
+| Data: #5                     Turno: #6     Fornecedor: #7                                                                   |
++------------------------------------------+-------------------------------+-------------+-------+-------------+--------------+
+|                  Produto                 |           Depósito            | Quantidade  | Unid. | Preço unit. |  Valor total |
++------------------------------------------+-------------------------------+-------------+-------+-------------+--------------+
+</cab_grupo>
+<detalhe>
+| #8                                       | #19                           | #10         | #11   | #12         | #13          |
+</detalhe>
+<rod_grupo nome="1">
++------------------------------------------+-------------------------------+-------------+-------+-------------+--------------+
+| Total da devolução                                                         #25                                 #15          |
++-----------------------------------------------------------------------------------------------------------------------------+
+| Obs: #16                                                                                                                    |
++-----------------------------------------------------------------------------------------------------------------------------+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------------------------------------------------------------------------+
+| Total geral                                                                #17                                 #18          |
++-----------------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+
+<rod_pagina>
++------------------------------------------+-------------------------------+-------------+-------+-------------+--------------+
+</rod_pagina>
+<hash>aea85830b57c3ca5ef56c0768e7b7ba2</hash>
+</relatorio>

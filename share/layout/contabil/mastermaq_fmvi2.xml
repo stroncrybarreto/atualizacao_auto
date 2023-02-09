@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>mastermaq_fmvim</nome>
+
+  <sessao>
+    <nome>detail</nome>
+    
+	<registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Lançamento entrada/saída</descricao>
+    </registro>
+
+	<registro>
+      <inicio>2</inicio>
+      <fim>9</fim>
+      <chave>identificador</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Identificador interno de lançamento</descricao>
+    </registro>
+
+	<registro>
+      <inicio>10</inicio>
+      <fim>10</fim>
+      <chave>tipo_imposto</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Tipo de imposto</descricao>
+    </registro>
+
+	<registro>
+      <inicio>11</inicio>
+      <fim>23</fim>
+      <chave>base_calculo</chave>
+      <tipo>float</tipo>
+      <padrao>0</padrao>
+      <descricao>Base de cálculo com valor de operação</descricao>
+    </registro>
+
+	<registro>
+      <inicio>24</inicio>
+      <fim>28</fim>
+      <chave>aliquota</chave>
+      <tipo>float</tipo>
+      <padrao>0</padrao>
+      <descricao>Alíquota de tributação</descricao>
+    </registro>
+
+	<registro>
+      <inicio>29</inicio>
+      <fim>33</fim>
+      <chave></chave>
+      <tipo>float</tipo>
+      <padrao>0</padrao>
+      <descricao>Alíquota interna</descricao>
+    </registro>
+
+	<registro>
+      <inicio>34</inicio>
+      <fim>46</fim>
+      <chave>imposto</chave>
+      <tipo>float</tipo>
+      <padrao>0</padrao>
+      <descricao>Valor do imposto da operação</descricao>
+    </registro>
+
+	<registro>
+      <inicio>47</inicio>
+      <fim>51</fim>
+      <chave>cfop</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Código fiscal</descricao>
+    </registro>
+
+	<registro>
+      <inicio>52</inicio>
+      <fim>52</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Sub-código fiscal</descricao>
+    </registro>
+
+	<registro>
+      <inicio>53</inicio>
+      <fim>53</fim>
+      <chave>codigo_tributacao</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Código tributário</descricao>
+    </registro>
+
+	<registro>
+      <inicio>54</inicio>
+      <fim>80</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Observações da nota fiscal</descricao>
+    </registro>
+
+	<registro>
+      <inicio>81</inicio>
+      <fim>82</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Auxiliar do código tributário</descricao>
+    </registro>
+
+	<registro>
+      <inicio>83</inicio>
+      <fim>84</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Complemento do código fiscal</descricao>
+    </registro>
+	
+  </sessao>
+
+</layout>

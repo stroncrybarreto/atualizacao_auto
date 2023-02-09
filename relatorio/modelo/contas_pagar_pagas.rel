@@ -1,0 +1,52 @@
+<relatorio dados="contas_pagar_pagas"  paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=16
+3  data_vencimento		tam=10  fmt=data
+4  data_pagamento		tam=10  fmt=data
+5  fornecedor_nome		tam=18
+6  documento			tam=9   alinha=centro
+7  obs					tam=18
+8  valor				tam=13  fmt=float2
+9  vl_total				tam=13  fmt=float2  func=soma	campo=vl_pago
+10 nr_total 			tam=10
+11 titulo		    	tam=157 alinha=centro
+13 contra_partida       tam=8
+14 multa				tam=8	fmt=float2
+15 juros				tam=8	fmt=float2
+16 total_multa			tam=8	fmt=float2	func=soma	campo=multa
+17 total_juros			tam=8	fmt=float2	func=soma	campo=juros
+18 vl_pago				tam=13	fmt=float2
+19 vl_titulo       		tam=13	fmt=float2
+20 desconto     		tam=10	fmt=float2
+21 total_titulo			tam=13	fmt=float2	func=soma	campo=vl_titulo
+22 total_desconto		tam=10	fmt=float2	func=soma	campo=desconto
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                             #2
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#11                                                                                                                  
+
+
++------------+-----------+------------+--------------------+----------+--------------------+---------------+------------+----------+----------+---------------+
+| Pagamento  | Documento | Vencimento |     Fornecedor     | C. part. |     Observação     | Valor título  |  Desconto  |  Multa   |  Juros   |   Valor pago  |
++------------+-----------+------------+--------------------+----------+--------------------+---------------+------------+----------+----------+---------------+
+</cab_pagina>
+
+<detalhe>
+| #4         | #6        | #3         | #5                 | #13      | #7                 | #19           | #20        | #14      | #15      | #18           |
+</detalhe>
+
+<rod_relat>
++------------+-----------+------------+--------------------+----------+--------------------+---------------+------------+----------+----------+---------------+
+| Total                                                                                    | #21           | #22        | #16      | #17      | #9            |
++------------------------------------------------------------------------------------------+---------------+------------+----------+----------+---------------+
+</rod_relat>
+
+<rod_pagina>
++------------+-----------+------------+--------------------+----------+--------------------+---------------+------------+----------+----------+---------------+
+</rod_pagina>
+
+<hash>0e10c73d5612a8bb672f6bc99392ce8e</hash>
+</relatorio>

@@ -1,0 +1,51 @@
+<relatorio dados="medida_tanque_tanque" docname="Relatório de Medida dos Tanques">
+
+<apelidos>
+1  rel_posto_nome	tam=2000
+2  rel_data_hora	tam=20
+3  linha_continua	tam=2000
+4  titulo		tam=120		alinha=centro
+5  subtitulo		tam=120		alinha=centro
+6  linha		tam=2000
+7  data			tam=10		fmt=data
+8  coluna		tam=2000
+9  empresa		tam=35
+10 detalhe		tam=2000
+11 total		tam=2000
+12 subtitulo1		tam=120		alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                    #2
+-----------------------------------------------------------------------------------------------------------------------
+ 
+{TIT}#4
+{SUBTIT}#5
+{SUBTIT}#12
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa" quebra_pagina="1">
+
+EMPRESA: #9
++------------+#6
+|    DATA    |#8
++------------+#6
+</cab_grupo>
+
+<detalhe>
+| #7         |#10
+</detalhe>
+
+<rod_grupo nome="1">
++------------+#6
+
+</rod_grupo>
+
+<rod_pagina>
++------------+#6
+</rod_pagina>
+
+
+<hash>2d283d0e13df2573f7238f5127ea16aa</hash>
+</relatorio>

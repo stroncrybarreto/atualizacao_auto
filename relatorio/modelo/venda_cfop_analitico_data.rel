@@ -1,0 +1,75 @@
+<relatorio dados="venda_cfop_analitico" ordem="data,cfop_cod_nome,produto_nome">
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18  
+3  subtitulo             tam=113 alinha=centro
+4  data               tam=60  fmt=data
+5  cfop_cod_nome      tam=60
+7  produto_codigo     tam=6   alinha=centro
+8  produto_nome       tam=40
+9  unid_med           tam=4
+10 quantidade         tam=11  fmt=float2
+11 valor              tam=12  fmt=float2
+12 sub_cfop_qtde_     tam=11  fmt=float3 func=soma campo=quantidade grupo=2
+13 sub_cfop_valor_    tam=13  fmt=float2 func=soma campo=valor grupo=2
+14 sub_data_qtde_     tam=11  fmt=float3 func=soma campo=quantidade grupo=1
+15 sub_data_valor_    tam=13  fmt=float2 func=soma campo=valor grupo=1
+16 total_qtde_        tam=11  fmt=float3 func=soma campo=quantidade
+17 total_valor_       tam=13  fmt=float2 func=soma campo=valor
+18 valor_desc         tam=11   fmt=float2
+19 sub_cfop_desc_     tam=11   fmt=float2 func=soma campo=valor_desc grupo=2
+20 sub_data_desc_     tam=11   fmt=float2 func=soma campo=valor_desc grupo=1
+21 total_desc_        tam=11   fmt=float2 func=soma campo=valor_desc
+
+22 quantidade_p       tam=11  fmt=float3 func=soma campo=quantidade grupo=3
+23 valor_p            tam=13  fmt=float2 func=soma campo=valor grupo=3
+24 valor_desc_p       tam=11   fmt=float2 func=soma campo=valor_desc grupo=3
+99 titulo            tam=112  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                              #2                 
+----------------------------------------------------------------------------------------------------------------
+   
+#99
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="data">
++--------------------------------------------------------------------------------------------------------------+
+| Data: #4                                                                                                     |
+</cab_grupo>
+<cab_grupo nome="2" quebra="data,cfop_cod_nome">
++--------------------------------------------------------------------------------------------------------------+
+| CFOP: #5                                                                                                     |
++--------+-----------------------------------------------+---------+-------------+-------------+---------------+
+| Código |                   Descrição                   | Unidade |  Quantidade |   Desconto  |     Valor     |
++--------+-----------------------------------------------+---------+-------------+-------------+---------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="data,cfop_cod_nome,produto_nome">
+</cab_grupo>
+<detalhe>
+</detalhe>
+<rod_grupo nome="3">
+| #7     | #8                                            | #9      | #22         | #24         | #23           |
+</rod_grupo>
+<rod_grupo nome="2">
++--------+-----------------------------------------------+---------+-------------+-------------+---------------+
+| Subtotal                                                         | #12         | #19         | #13           |
++------------------------------------------------------------------+-------------+-------------+---------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total                                                            | #14         | #20         | #15           |
++------------------------------------------------------------------+-------------+-------------+---------------+
+</rod_grupo>
+<rod_relat>
+
++------------------------------------------------------------------+-------------+-------------+---------------+
+| Total geral                                                      | #16         | #21         | #17           |
++------------------------------------------------------------------+-------------+-------------+---------------+
+</rod_relat>
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>67ea12f1c9620f6be3acd230e6b74417</hash>
+</relatorio>

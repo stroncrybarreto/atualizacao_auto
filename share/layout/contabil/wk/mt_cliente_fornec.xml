@@ -1,0 +1,39 @@
+<layout>
+  <nome>mt_fiscal</nome>
+  <sessao>
+    <nome>cliente_fornec</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave></chave><tipo></tipo><padrao>"</padrao><descricao></descricao></registro>
+    <registro><inicio>2</inicio><fim>11</fim><chave>codigo_fornec</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>14</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>15</inicio><fim>64</fim><chave>nome_fantasia</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>65</inicio><fim>67</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>68</inicio><fim>117</fim><chave>razao_social</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>118</inicio><fim>120</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>121</inicio><fim>121</fim><chave>tipo_empresa</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>122</inicio><fim>124</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>125</inicio><fim>149</fim><chave>cnpj_cpf</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>150</inicio><fim>152</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>153</inicio><fim>202</fim><chave>contato</chave><tipo></tipo><padrao></padrao><descricao>pessoa de contato</descricao></registro>
+    <registro><inicio>203</inicio><fim>205</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>206</inicio><fim>255</fim><chave>email</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>256</inicio><fim>270</fim><chave></chave><tipo></tipo><padrao>";"";"";"";"";"</padrao><descricao></descricao></registro>
+    <registro><inicio>271</inicio><fim>320</fim><chave>endereco</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>321</inicio><fim>326</fim><chave></chave><tipo></tipo><padrao>";"";"</padrao><descricao></descricao></registro>
+    <registro><inicio>327</inicio><fim>376</fim><chave>bairro</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>377</inicio><fim>382</fim><chave></chave><tipo></tipo><padrao>";"";"</padrao><descricao></descricao></registro>
+    <registro><inicio>383</inicio><fim>384</fim><chave>estado</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>385</inicio><fim>390</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>391</inicio><fim>410</fim><chave>municipio</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>411</inicio><fim>413</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>413</inicio><fim>422</fim><chave>cep</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>431</inicio><fim>436</fim><chave></chave><tipo></tipo><padrao>";"";"</padrao><descricao></descricao></registro>
+    <registro><inicio>437</inicio><fim>451</fim><chave>fone</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>452</inicio><fim>460</fim><chave></chave><tipo></tipo><padrao>";"";"";"</padrao><descricao></descricao></registro>
+    <registro><inicio>461</inicio><fim>510</fim><chave>www</chave><tipo></tipo><padrao></padrao><descricao>home page</descricao></registro>
+    <registro><inicio>511</inicio><fim>519</fim><chave></chave><tipo></tipo><padrao>";"";"";"</padrao><descricao></descricao></registro>
+    <registro><inicio>520</inicio><fim>539</fim><chave>inscr_est</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>540</inicio><fim>542</fim><chave></chave><tipo></tipo><padrao>";"</padrao><descricao></descricao></registro>
+    <registro><inicio>543</inicio><fim>562</fim><chave>inscr_municipal</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>563</inicio><fim>570</fim><chave></chave><tipo></tipo><padrao>";"S";""</padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

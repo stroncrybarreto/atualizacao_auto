@@ -1,0 +1,58 @@
+<relatorio dados="comanda_regra_impressao" ordem="">
+
+<apelidos>
+1  rel_posto_nome	       tam=60
+2  rel_data_hora	       tam=18
+3  empresa_nome 	       tam=56
+4  lote_nome		       tam=43
+5  impressora_nome         tam=56
+6  terminal_nome           tam=43
+7  grupo_nome              tam=56
+8  subgrupo_nome           tam=56
+9  produto_nome            tam=56
+10 data_emissao			   tam=10
+11 total				   tam=4 func=contar alinha=esquerda
+12 bico_nome       tam=56    
+13 bomba_nome      tam=56  
+</apelidos>
+
+<cab_pagina>
+#1                                                              #2
+--------------------------------------------------------------------------------
+
+                         RELATÓRIO DE REGRAS DE IMPRESSÃO                       
+                           Data de emissão: #10                                 
+</cab_pagina>
+
+<detalhe>
++------------------------------------------------------------------------------+
+| Empresa.........: #3                                                         |
+| Lote............: #4                                                         |
+| Impressora......: #5                                                         |
+| Terminal........: #6                                                         |
+| Grupo produto...: #7                                                         |
+| Subgrupo produto: #8                                                         |
+| Produto.........: #9                                                         |
+| Bico............: #12                                                        |
+| Bomba...........: #13                                                        |
++------------------------------------------------------------------------------+
+</detalhe>
+
+<rod_grupo nome="1">
++------------------------------------------------------------------------------+
+
+</rod_grupo>
+
+<rod_relat>
++------------------------------------------------------------------------------+
+| Quantidade de regras impressas: #11                                          |
++------------------------------------------------------------------------------+
+</rod_relat>
+
+<rod_pagina>
++------------------------------------------------------------------------------+
+</rod_pagina>
+
+
+<hash>1a0c4128631be1ccc3bda2d6fd7dbbd4</hash>
+</relatorio>

@@ -1,0 +1,76 @@
+<relatorio dados="medicao_tanques_mes" ordem="empresa,tanque,rel_data_metragem" saida="pdf" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome       tam=50
+2  rel_data_hora        tam=18
+3  empresa_nome         tam=50 expr=str(rel_empresa_codigo)+" - "+rel_empresa
+4  rel_data_operacao    tam=18
+5  rel_tanque	        tam=40	alinha=esquerda
+6  rel_combustivel      tam=40
+7  rel_data_metragem    tam=10  fmt=data
+8  rel_medicao_ant      tam=3
+9  rel_litragem_ant     tam=13 	fmt=float3
+10 rel_entrada          tam=13	fmt=float3
+11 rel_estoque          tam=13	fmt=float3
+12 rel_medicao_atual    tam=3
+13 rel_litragem_atual   tam=13  fmt=float3
+14 rel_saida            tam=13  fmt=float3
+15 rel_bombas           tam=13  fmt=float3
+16 rel_diferenca        tam=13  fmt=float3
+17 rel_acumulado        tam=13  fmt=float3
+18 tot_ite_saida        tam=13  fmt=float3 func=soma campo=rel_saida grupo=2
+19 tot_ite_bomba        tam=13  fmt=float3 func=soma campo=rel_bombas grupo=2
+20 tot_ite_difer        tam=13  fmt=float3 func=soma campo=rel_diferenca grupo=2
+21 tot_ite_acum         tam=13  fmt=float3 func=soma campo=rel_diferenca grupo=2
+22 tot_ger_saida        tam=13  fmt=float3 func=soma campo=rel_saida
+23 tot_ger_bomba        tam=13  fmt=float3 func=soma campo=rel_bombas
+24 tot_ger_difer        tam=13  fmt=float3 func=soma campo=rel_diferenca
+25 tot_ger_acum         tam=13  fmt=float3 func=soma campo=rel_diferenca
+30 titulo               tam=155 alinha=centro
+
+36 rel_hora_med_ant		tam=18   fmt=data_hora
+37 rel_hora_med_atual	tam=18   fmt=data_hora
+</apelidos>
+<cab_pagina>
+{INV}#1                                                                                                                                        #2
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+{INV}
+                                                             {TIT}MEDIÇÃO DE TANQUE POR PERÍODO
+{SUBTIT}#30
+
+{INV}
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| {CENTRO}{NEGR/}Empresa: #3                                                                                                                                            |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa,tanque">
++------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| Tanque: #5                                                       | Combustível: #6                                                                     |
++------------+---------------------+---------------+---------------+---------------------+---------------+---------------+---------------+---------------+
+|            |       Inicial       |               |               |        Final        |     Saída     |     Saída     |               |               |
+|    Data    | Med.|    Litragem   |    Entrada    |    Estoque    | Med.|    Litragem   |     Bombas    |     Tanque    |   Diferença   |   Acumulado   |
++------------+-----+---------------+---------------+---------------+-----+---------------+---------------+---------------+---------------+---------------+
+</cab_grupo>
+<detalhe>
+| #7         | #8  | #9            | #10           | #11           | #12 | #13           | #15           | #14           | #16           | #17           |
+</detalhe>
+<rod_grupo nome="2">
++------------+-----+---------------+---------------+---------------+-----+---------------+---------------+---------------+---------------+---------------+
+| Total tanque                                                                           | #19           | #18           | #20           | #21           |
++----------------------------------------------------------------------------------------+---------------+---------------+---------------+---------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
+
++----------------------------------------------------------------------------------------+---------------+---------------+---------------+---------------+
+| Total geral da empresa                                                                 | #23           | #22           | #24           | #25           |
++----------------------------------------------------------------------------------------+---------------+---------------+---------------+---------------+
+</rod_grupo>
+
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>b89c7fc022906e8b8e9553703d06462d</hash>
+</relatorio>

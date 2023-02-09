@@ -1,0 +1,50 @@
+<layout>
+  <nome>reducao</nome>
+  <sessao>
+    <nome>header</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_header</chave><tipo>text</tipo><padrao>H</padrao><descricao>fixo H</descricao></registro>
+    <registro><inicio>2</inicio><fim>10</fim><chave>numero_pdv</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>10</inicio><fim>50</fim><chave>posto</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>50</inicio><fim>58</fim><chave>data_movto</chave><tipo>text</tipo><padrao /><descricao /></registro>
+  </sessao><sessao>
+    <nome>reg1</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_reg</chave><tipo>text</tipo><padrao>1</padrao><descricao>Valor fixo 1</descricao></registro>
+    <registro><inicio>2</inicio><fim>10</fim><chave>data_emissao</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>10</inicio><fim>18</fim><chave>num_componente</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>18</inicio><fim>38</fim><chave>num_serie</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>38</inicio><fim>41</fim><chave>num_ecf</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>41</inicio><fim>48</fim><chave>num_primeiro_doc_fiscal</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>48</inicio><fim>55</fim><chave>num_ultimo_doc_fiscal</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>55</inicio><fim>61</fim><chave>num_contador_red_z</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>61</inicio><fim>67</fim><chave>num_intervencao_tec</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>67</inicio><fim>83</fim><chave>valor_venda_bruta</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>83</inicio><fim>99</fim><chave>valor_cancelamento</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>99</inicio><fim>115</fim><chave>valor_desconto</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>115</inicio><fim>131</fim><chave>valor_grande_total_inicial</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>131</inicio><fim>147</fim><chave>valor_grande_total_final</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>147</inicio><fim>163</fim><chave>valor_substituicao</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>163</inicio><fim>179</fim><chave>valor_isento</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>179</inicio><fim>195</fim><chave>valor_nao_incidente</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>195</inicio><fim>211</fim><chave>iss</chave><tipo>float</tipo><padrao /><descricao /></registro>
+    <registro><inicio>211</inicio><fim>217</fim><chave>hora_emissao</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>217</inicio><fim>221</fim><chave>modelo_ecf</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>221</inicio><fim>229</fim><chave>data_movto</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+  </sessao>
+  <sessao>
+    <nome>reg2</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_reg</chave><tipo>text</tipo><padrao>2</padrao><descricao>Valor fixo 2</descricao></registro>
+    <registro><inicio>2</inicio><fim>22</fim><chave>num_serie</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>23</inicio><fim>26</fim><chave>aliquota</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>27</inicio><fim>36</fim><chave>base</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>37</inicio><fim>46</fim><chave>valor</chave><tipo>float_2</tipo><padrao /><descricao>(base * aliquota) / 100</descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>reg3</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_reg</chave><tipo>text</tipo><padrao>3</padrao><descricao>Valor fixo 3</descricao></registro>
+    <registro><inicio>2</inicio><fim>22</fim><chave>num_serie</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>22</inicio><fim>27</fim><chave>codigo_grupo</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>27</inicio><fim>31</fim><chave>aliquota</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>31</inicio><fim>41</fim><chave>valor_acumulado</chave><tipo>float_2</tipo><padrao /><descricao>sum(pdv_vendas.valor_total)</descricao></registro>
+    <registro><inicio>41</inicio><fim>51</fim><chave>valor_imposto</chave><tipo>float_2</tipo><padrao /><descricao>(sum(pdv_vendas.valor_total) * aliquota) / 100 </descricao></registro>
+  </sessao>
+</layout>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>ASMobile</title>
+	</head>
+	<body style="width: 310px" width="310">
+		<input type="hidden" name="login" tal:attributes="value login">
+		<img src="/images/topo_2.jpg" width="310" height="71" alt="">
+		<br>
+		<h3 style="color:#302663;">Menu principal</h3>
+		<img src="/images/marcador.gif" width="12" height="10" alt="">
+		<a href="/automacao_main/" >Automação</a>
+		<br>
+		<img src="/images/marcador.gif" width="12" height="10" alt="">
+		<a href="/consulta_main/" >Consultas</a>
+		<br>
+		<img src="/images/marcador.gif" width="12" height="10" alt="">
+		<a href="/estoque_main/" >Estoque</a>
+		<br>
+		<img tal:condition="show_db_list" src="/images/marcador.gif" width="12" height="10" alt="">
+		<a tal:condition="show_db_list" href="/db_list/">Bancos de dados</a>
+		<p>
+		<div style="text-align:right;">
+		<small><i style="color:#302663;" tal:content="login"></i></small>
+		<small><i style="colot:#302663;">-</i></small>
+		<small><i><a href="/logout/" >Logout</a></i></small>
+		</div>
+		<img src="/images/base_2.jpg" width="310" height="24" alt="">
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<relatorio dados="comandas" ordem="comanda">
+<apelidos>
+1  	rel_posto_nome   tam=60
+2  	rel_data_hora    tam=18
+3  	titulo			tam=83  alinha=centro
+4	comanda			tam=40				
+5	terminal		tam=8
+6	ts_abertura		tam=16	fmt=data_hora
+7	fechamento		tam=16	fmt=data_hora
+8	situacao		tam=8
+9	valor			tam=10	fmt=%.02f	alinha=direita
+10	mescla			tam=6
+11	subtotal		tam=10	func=soma	campo=valor	grupo=1	fmt=%.02f	alinha=direita
+12	total			tam=10	func=soma	campo=valor	fmt=%.02f	alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                 #2              
+-----------------------------------------------------------------------------------
+
+#3                 
+
+<cab_grupo nome="1" quebra="comanda">
++---------------------------------------------------------------------------------+
+| Comanda: #4                                                                     |
++----------+------------------+------------------+----------+------------+--------+
+| Terminal |     Abertura     |    Fechamento    | Situação |   Valor    | Mescla |
++----------+------------------+------------------+----------+------------+--------+
+</cab_grupo>
+</cab_pagina>
+<detalhe>
+| #5       | #6               | #7               | #8       | #9         | #10    |
+</detalhe>
+<rod_grupo nome="1">
++----------+------------------+------------------+----------+------------+--------+
+| Subtotal                                                  | #11        |        |
++-----------------------------------------------------------+------------+--------+
+</rod_grupo>
+<rod_relat>
++-----------------------------------------------------------+------------+--------+
+| Valor total                                               | #12        |        |
++-----------------------------------------------------------+------------+--------+
+</rod_relat>
+<rod_pagina>
++----------+------------------+------------------+----------+------------+--------+
+</rod_pagina>
+
+<hash>ad3a7b06a0014297113419dab77eec36</hash>
+</relatorio>

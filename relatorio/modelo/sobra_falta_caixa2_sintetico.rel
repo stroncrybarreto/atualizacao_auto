@@ -1,0 +1,68 @@
+<relatorio dados="sobra_falta_caixa2">
+<apelidos>
+1  nome_posto			tam=300
+2  ponto_titulo			tam=300
+3  subtitulo 			tam=850
+
+4  empresa_nome			 tam=23
+5  conta			     tam=49
+6  data					 tam=10	fmt=data
+
+7  linha_empresa         tam=9999
+8  linha_conta           tam=9999
+9  linha_coluna          tam=9999
+10 linha_detalhe         tam=9999
+11 total_linha_coluna    tam=9999
+12 total_linha_cabecalho tam=9999
+13 linha_subtotal        tam=9999
+14 linha_total_empresa   tam=9999   grupo=2
+15 linha_total_geral     tam=9999
+16 linha_rodape_geral    tam=9999
+
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+#3
+</cab_pagina>
+
+<cab_grupo nome="2" quebra="empresa_nome" repeticao="0">
+#12
+#7
+#12
+</cab_grupo>
+<cab_grupo nome="1" quebra="empresa_nome,conta">
+#8
+#11
+#9
+#11
+</cab_grupo>
+<detalhe>
+#10
+#11
+</detalhe>
+<rod_grupo nome="1">
+|  Subtotal  #13
+#11          
+</rod_grupo>
+<rod_grupo nome="2">
+|  Total     #14      
+#11
+
+</rod_grupo>
+<rod_relat>
+
+
+#16  
+#15
+#16  
+</rod_relat>
+
+<rod_pagina>
+
+#11  
+</rod_pagina>
+
+<hash>897dbb8371c3b3ab2be398c2bc742380</hash>
+</relatorio>

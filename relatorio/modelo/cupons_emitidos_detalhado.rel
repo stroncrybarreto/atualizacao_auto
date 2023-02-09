@@ -1,0 +1,81 @@
+<relatorio dados="cupons_emitidos" ordem="empresa_nome">
+<apelidos>
+1 rel_posto_nome 	tam=50
+2 rel_data_hora 	tam=18
+3 titulo_p 		    tam=130 expr="CUPONS FISCAIS EMITIDOS" alinha=centro
+4 titulo 			tam=130 alinha=centro
+
+5 situacao 		    tam=2 alinha=esquerda
+6 tipo_data 		tam=12 fmt=data alinha=centro
+7 nr_ecf 			tam=3 alinha=centro
+8 nr_cupom 			tam=7 alinha=centro
+9 pessoa_nome		tam=15 alinha=esquerda
+10 motivo_nome 		tam=20 alinha=esquerda
+11 valor_cupom 		tam=13 fmt=float2 alinha=direita
+12 valor_desconto 	tam=10  fmt=float2 alinha=direita
+13 valor_acrescimo 	tam=9 fmt=float2 alinha=direita
+14 liquido 			tam=13 fmt=float2 expr=(valor_cupom-valor_desconto+valor_acrescimo) alinha=direita
+15 empresa_nome 	tam=116
+16 emissor			tam=15 alinha=centro
+
+17 emp_total_valor	tam=13 fmt=float2 func=soma campo=valor_cupom    grupo=1
+18 sum_desconto 	tam=10 fmt=float2 func=soma campo=valor_desconto grupo=1
+19 sum_acrescimo 	tam=9 fmt=float2 func=soma campo=valor_acrescimo grupo=1
+20 sum_liquido 		tam=13 fmt=float2 func=soma campo=liquido	grupo=1
+
+22 tot_total_valor 	tam=13 fmt=float2 func=soma campo=valor_cupom
+23 total_desconto	tam=10 fmt=float2 func=soma campo=valor_desconto
+24 total_acrescimo	tam=9 fmt=float2 func=soma campo=valor_acrescimo
+25 total_liquido 	tam=13 fmt=float2 func=soma campo=liquido
+26 codigo_cancela   tam=6
+27 motivo_cancela   tam=20
+28 motivo_cancela_obs  tam=10
+29 usuario_cancela  tam=10
+30 titulo_data       tam=12  alinha=centro
+
+31 emp_qtde_emitido	tam=4 fmt=int func=soma campo=emitido 	grupo=1 alinha=direita
+32 emp_qtde_cancel	tam=4 fmt=int func=soma campo=cancelado 	grupo=1 alinha=direita
+33 emp_qtde_cupom	tam=4 fmt=int func=soma campo=cupom		grupo=1 alinha=direita
+
+34 tot_qtde_emitido	tam=4 fmt=int func=soma campo=emitido	alinha=direita
+35 tot_qtde_cancel	tam=4 fmt=int func=soma campo=cancelado	alinha=direita
+36 tot_qtde_cupom	tam=4 fmt=int func=soma campo=cupom		alinha=direita
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                         #2                   
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #15                                                                                                                                   |
++--------------+-----------------+---------+-----------------+----------------------+---------------+------------+-----------+---------------+---+
+| #30          |     Emissor     |  Cupom  |     Cliente     |  Forma de pagamento  |  Valor cupom  |  Desconto  | Acréscimo | Valor líquido | S |
++--------------+-----------------+---------+-----------------+----------------------+---------------+------------+-----------+---------------+---+
+</cab_grupo>
+<detalhe>
+| #6           | #16             | #8      | #9              | #10                  | #11           | #12        | #13       | #14           | #5|	
+</detalhe>
+<rod_grupo nome="1">
++--------------+-----------------+---------+-----------------+----------------------+---------------+------------+-----------+---------------+---+
+| Total empresa       #33               cupons (#31   emitidos e #32   cancelados)  | #17           | #18        | #19       | #20           |   |
++-----------------------------------------------------------------------------------+---------------+------------+-----------+---------------+---+
+</rod_grupo>
+<rod_relat>
+
+
++-----------------------------------------------------------------------------------+---------------+------------+-----------+---------------+---+
+| Total geral         #36               cupons (#34   emitidos e #35   cancelados)  | #22           | #23        | #24       | #25           |   |
++-----------------------------------------------------------------------------------+---------------+------------+-----------+---------------+---+
+S - (Situação)  E - (Emitida)  C - (Cancelado)
+</rod_relat>
+<rod_pagina>
+--------------------------------------------------------------------------------------------------------------------------------------------------
+</rod_pagina>
+
+<hash>8bdb5dbc63684fb9b77492d680bf8d1b</hash>
+</relatorio>

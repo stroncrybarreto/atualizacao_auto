@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>240</nome>
+ 
+	<critica>
+		<id>1</id>
+		<codigo>00</codigo>
+		<nome>CREDITO OU DEBITO EFETIVADO </nome>
+	</critica>
+	<critica>
+		<id>2</id>
+		<codigo>01</codigo>
+		<nome>INSUFICIENCIA DE FUNDOS  DEBITO NAO EFETUADO</nome>
+	</critica>
+	<critica>
+		<id>3</id>
+		<codigo>02</codigo>
+		<nome>CREDITO OU DEBITO CANCELADO PELO PAGADOR CREDOR</nome>
+	</critica>
+	<critica>
+		<id>4</id>
+		<codigo>03</codigo>
+		<nome>DEBITO AUTORIZADO PELA AGENCIA  EFETUADO</nome>
+	</critica>
+	<critica>
+		<id>5</id>
+		<codigo>AA</codigo>
+		<nome>CONTROLE INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>6</id>
+		<codigo>AB</codigo>
+		<nome>TIPO DE OPERACAO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>7</id>
+		<codigo>AC</codigo>
+		<nome>TIPO DE SERVICO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>8</id>
+		<codigo>AD</codigo>
+		<nome>FORMA DE LANCAMENTO INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>9</id>
+		<codigo>AE</codigo>
+		<nome>TIPO NUMERO DE INSCRICAO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>10</id>
+		<codigo>AF</codigo>
+		<nome>CODIGO DE CONVENIO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>11</id>
+		<codigo>AG</codigo>
+		<nome>AGENCIA CONTA CORRENTE DV INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>12</id>
+		<codigo>AH</codigo>
+		<nome>N SEQUENCIAL DO REGISTRO NO LOTE INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>13</id>
+		<codigo>AI</codigo>
+		<nome>CODIGO DE SEGMENTO DE DETALHE INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>14</id>
+		<codigo>AJ</codigo>
+		<nome>TIPO DE MOVIMENTO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>15</id>
+		<codigo>AK</codigo>
+		<nome>CODIGO DA CAMARA DE COMPENSACAO DO BANCO FAVORECIDO DEPOSITARIO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>16</id>
+		<codigo>AL</codigo>
+		<nome>CODIGO DO BANCO FAVORECIDO, INSTITUICAO DE PAGAMENTO OU DEPOSITARIO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>17</id>
+		<codigo>AM</codigo>
+		<nome>AGENCIA MANTENEDORA DA CONTA CORRENTE DO FAVORECIDO INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>18</id>
+		<codigo>AN</codigo>
+		<nome>CONTA CORRENTE DV CONTA DE PAGAMENTO DO FAVORECIDO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>19</id>
+		<codigo>AO</codigo>
+		<nome>NOME DO FAVORECIDO NAO INFORMADO</nome>
+	</critica>
+	<critica>
+		<id>20</id>
+		<codigo>AP</codigo>
+		<nome>DATA LANCAMENTO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>21</id>
+		<codigo>AQ</codigo>
+		<nome>TIPO QUANTIDADE DA MOEDA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>22</id>
+		<codigo>AR</codigo>
+		<nome>VALOR DO LANCAMENTO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>23</id>
+		<codigo>AS</codigo>
+		<nome>AVISO AO FAVORECIDO  IDENTIFICACAO INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>24</id>
+		<codigo>AT</codigo>
+		<nome>TIPO NUMERO DE INSCRICAO DO FAVORECIDO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>25</id>
+		<codigo>AU</codigo>
+		<nome>LOGRADOURO DO FAVORECIDO NAO INFORMADO</nome>
+	</critica>
+	<critica>
+		<id>26</id>
+		<codigo>AV</codigo>
+		<nome>N DO LOCAL DO FAVORECIDO NAO INFORMADO</nome>
+	</critica>
+	<critica>
+		<id>27</id>
+		<codigo>AW</codigo>
+		<nome>CIDADE DO FAVORECIDO NAO INFORMADA</nome>
+	</critica>
+	<critica>
+		<id>28</id>
+		<codigo>AX</codigo>
+		<nome>CEP COMPLEMENTO DO FAVORECIDO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>29</id>
+		<codigo>AY</codigo>
+		<nome>SIGLA DO ESTADO DO FAVORECIDO INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>30</id>
+		<codigo>AZ</codigo>
+		<nome>CODIGO NOME DO BANCO DEPOSITARIO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>31</id>
+		<codigo>BA</codigo>
+		<nome>CODIGO NOME DA AGENCIA DEPOSITARIA NAO INFORMADO</nome>
+	</critica>
+	<critica>
+		<id>32</id>
+		<codigo>BB</codigo>
+		<nome>SEU NUMERO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>33</id>
+		<codigo>BC</codigo>
+		<nome>NOSSO NUMERO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>34</id>
+		<codigo>BD</codigo>
+		<nome>INCLUSAO EFETUADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>35</id>
+		<codigo>BE</codigo>
+		<nome>ALTERACAO EFETUADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>36</id>
+		<codigo>BF</codigo>
+		<nome>EXCLUSAO EFETUADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>37</id>
+		<codigo>BG</codigo>
+		<nome>AGENCIA CONTA IMPEDIDA LEGALMENTE</nome>
+	</critica>
+	<critica>
+		<id>38</id>
+		<codigo>BH</codigo>
+		<nome>EMPRESA NAO PAGOU SALARIO</nome>
+	</critica>
+	<critica>
+		<id>39</id>
+		<codigo>BI</codigo>
+		<nome>FALECIMENTO DO MUTUARIO</nome>
+	</critica>
+	<critica>
+		<id>40</id>
+		<codigo>BJ</codigo>
+		<nome>EMPRESA NAO ENVIOU REMESSA DO MUTUARIO</nome>
+	</critica>
+	<critica>
+		<id>41</id>
+		<codigo>BK</codigo>
+		<nome>EMPRESA NAO ENVIOU REMESSA NO VENCIMENTO</nome>
+	</critica>
+	<critica>
+		<id>42</id>
+		<codigo>BL</codigo>
+		<nome>VALOR DA PARCELA INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>43</id>
+		<codigo>BM</codigo>
+		<nome>IDENTIFICACAO DO CONTRATO INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>44</id>
+		<codigo>BN</codigo>
+		<nome>OPERACAO DE CONSIGNACAO INCLUIDA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>45</id>
+		<codigo>BO</codigo>
+		<nome>OPERACAO DE CONSIGNACAO ALTERADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>46</id>
+		<codigo>BP</codigo>
+		<nome>OPERACAO DE CONSIGNACAO EXCLUIDA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>47</id>
+		<codigo>BQ</codigo>
+		<nome>OPERACAO DE CONSIGNACAO LIQUIDADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>48</id>
+		<codigo>BR</codigo>
+		<nome>REATIVACAO EFETUADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>49</id>
+		<codigo>BS</codigo>
+		<nome>SUSPENSAO EFETUADA COM SUCESSO</nome>
+	</critica>
+	<critica>
+		<id>50</id>
+		<codigo>CA</codigo>
+		<nome>CODIGO DE BARRAS  CODIGO DO BANCO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>51</id>
+		<codigo>CB</codigo>
+		<nome>CODIGO DE BARRAS  CODIGO DA MOEDA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>52</id>
+		<codigo>CC</codigo>
+		<nome>CODIGO DE BARRAS  DIGITO VERIFICADOR GERAL INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>53</id>
+		<codigo>CD</codigo>
+		<nome>CODIGO DE BARRAS  VALOR DO TITULO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>54</id>
+		<codigo>CE</codigo>
+		<nome>CODIGO DE BARRAS  CAMPO LIVRE INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>55</id>
+		<codigo>CF</codigo>
+		<nome>VALOR DO DOCUMENTO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>56</id>
+		<codigo>CG</codigo>
+		<nome>VALOR DO ABATIMENTO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>57</id>
+		<codigo>CH</codigo>
+		<nome>VALOR DO DESCONTO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>58</id>
+		<codigo>CI</codigo>
+		<nome>VALOR DE MORA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>59</id>
+		<codigo>CJ</codigo>
+		<nome>VALOR DA MULTA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>60</id>
+		<codigo>CK</codigo>
+		<nome>VALOR DO IR INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>61</id>
+		<codigo>CL</codigo>
+		<nome>VALOR DO ISS INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>62</id>
+		<codigo>CM</codigo>
+		<nome>VALOR DO IOF INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>63</id>
+		<codigo>CN</codigo>
+		<nome>VALOR DE OUTRAS DEDUCOES INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>64</id>
+		<codigo>CO</codigo>
+		<nome>VALOR DE OUTROS ACRESCIMOS INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>65</id>
+		<codigo>CP</codigo>
+		<nome>VALOR DO INSS INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>66</id>
+		<codigo>HA</codigo>
+		<nome>LOTE NAO ACEITO</nome>
+	</critica>
+	<critica>
+		<id>67</id>
+		<codigo>HB</codigo>
+		<nome>INSCRICAO DA EMPRESA INVALIDA PARA O CONTRATO</nome>
+	</critica>
+	<critica>
+		<id>68</id>
+		<codigo>HC</codigo>
+		<nome>CONVENIO COM A EMPRESA INEXISTENTE INVALIDO PARA O CONTRATO</nome>
+	</critica>
+	<critica>
+		<id>69</id>
+		<codigo>HD</codigo>
+		<nome>AGENCIA CONTA CORRENTE DA EMPRESA INEXISTENTE INVALIDO PARA O CONTRATO</nome>
+	</critica>
+	<critica>
+		<id>70</id>
+		<codigo>HE</codigo>
+		<nome>TIPO DE SERVICO INVALIDO PARA O CONTRATO</nome>
+	</critica>
+	<critica>
+		<id>71</id>
+		<codigo>HF</codigo>
+		<nome>CONTA CORRENTE DA EMPRESA COM SALDO INSUFICIENTE</nome>
+	</critica>
+	<critica>
+		<id>72</id>
+		<codigo>HG</codigo>
+		<nome>LOTE DE SERVICO FORA DE SEQUENCIA</nome>
+	</critica>
+	<critica>
+		<id>73</id>
+		<codigo>HH</codigo>
+		<nome>LOTE DE SERVICO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>74</id>
+		<codigo>HI</codigo>
+		<nome>ARQUIVO NAO ACEITO</nome>
+	</critica>
+	<critica>
+		<id>75</id>
+		<codigo>HJ</codigo>
+		<nome>TIPO DE REGISTRO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>76</id>
+		<codigo>HK</codigo>
+		<nome>CODIGO REMESSA   RETORNO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>77</id>
+		<codigo>HL</codigo>
+		<nome>VERSAO DE LAYOUT INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>78</id>
+		<codigo>HM</codigo>
+		<nome>MUTUARIO NAO IDENTIFICADO</nome>
+	</critica>
+	<critica>
+		<id>79</id>
+		<codigo>HN</codigo>
+		<nome>TIPO DO BENEFICIO NAO PERMITE EMPRESTIMO</nome>
+	</critica>
+	<critica>
+		<id>80</id>
+		<codigo>HO</codigo>
+		<nome>BENEFICIO CESSADO SUSPENSO</nome>
+	</critica>
+	<critica>
+		<id>81</id>
+		<codigo>HP</codigo>
+		<nome>BENEFICIO POSSUI REPRESENTANTE LEGAL</nome>
+	</critica>
+	<critica>
+		<id>82</id>
+		<codigo>HQ</codigo>
+		<nome>BENEFICIO E DO TIPO PA PENSAO ALIMENTICIA</nome>
+	</critica>
+	<critica>
+		<id>83</id>
+		<codigo>HR</codigo>
+		<nome>QUANTIDADE DE CONTRATOS PERMITIDA EXCEDIDA</nome>
+	</critica>
+	<critica>
+		<id>84</id>
+		<codigo>HS</codigo>
+		<nome>BENEFICIO NAO PERTENCE AO BANCO INFORMADO</nome>
+	</critica>
+	<critica>
+		<id>85</id>
+		<codigo>HT</codigo>
+		<nome>INICIO DO DESCONTO INFORMADO JA ULTRAPASSADO</nome>
+	</critica>
+	<critica>
+		<id>86</id>
+		<codigo>HU</codigo>
+		<nome>NUMERO DA PARCELA INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>87</id>
+		<codigo>HV</codigo>
+		<nome>QUANTIDADE DE PARCELA INVALIDA</nome>
+	</critica>
+	<critica>
+		<id>88</id>
+		<codigo>HW</codigo>
+		<nome>MARGEM CONSIGNAVEL EXCEDIDA PARA O MUTUARIO DENTRO DO PRAZO DO CONTRATO</nome>
+	</critica>
+	<critica>
+		<id>89</id>
+		<codigo>HX</codigo>
+		<nome>EMPRESTIMO JA CADASTRADO</nome>
+	</critica>
+	<critica>
+		<id>90</id>
+		<codigo>HY</codigo>
+		<nome>EMPRESTIMO INEXISTENTE</nome>
+	</critica>
+	<critica>
+		<id>91</id>
+		<codigo>HZ</codigo>
+		<nome>EMPRESTIMO JA ENCERRADO</nome>
+	</critica>
+	<critica>
+		<id>92</id>
+		<codigo>H1</codigo>
+		<nome>ARQUIVO SEM TRAILER</nome>
+	</critica>
+	<critica>
+		<id>93</id>
+		<codigo>H2</codigo>
+		<nome>MUTUARIO SEM CREDITO NA COMPETENCIA</nome>
+	</critica>
+	<critica>
+		<id>94</id>
+		<codigo>H3</codigo>
+		<nome>NAO DESCONTADO - OUTROS MOTIVOS</nome>
+	</critica>
+	<critica>
+		<id>95</id>
+		<codigo>H4</codigo>
+		<nome>RETORNO DE CREDITO NAO PAGO</nome>
+	</critica>
+	<critica>
+		<id>96</id>
+		<codigo>H5</codigo>
+		<nome>CANCELAMENTO DE EMPRESTIMO RETROATIVO</nome>
+	</critica>
+	<critica>
+		<id>97</id>
+		<codigo>H6</codigo>
+		<nome>OUTROS MOTIVOS DE GLOSA</nome>
+	</critica>
+	<critica>
+		<id>98</id>
+		<codigo>H7</codigo>
+		<nome>MARGEM CONSIGNAVEL EXCEDIDA PARA O MUTUARIO ACIMA DO PRAZO DO CONTRATO</nome>
+	</critica>
+	<critica>
+		<id>99</id>
+		<codigo>H8</codigo>
+		<nome>MUTUARIO DESLIGADO DO EMPREGADOR</nome>
+	</critica>
+	<critica>
+		<id>100</id>
+		<codigo>H9</codigo>
+		<nome>MUTUARIO AFASTADO POR LICENCA</nome>
+	</critica>
+	<critica>
+		<id>101</id>
+		<codigo>IA</codigo>
+		<nome>PRIMEIRO NOME DO MUTUARIO DIFERENTE DO PRIMEIRO NOME DO MOVIMENTO DO CENSO OU DIFERENTE DA BASE DE TITULAR DO BENEFICIO</nome>
+	</critica>
+	<critica>
+		<id>102</id>
+		<codigo>IB</codigo>
+		<nome>BENEFICIO SUSPENSO CESSADO PELA APS OU SISOBI</nome>
+	</critica>
+	<critica>
+		<id>103</id>
+		<codigo>IC</codigo>
+		<nome>BENEFICIO SUSPENSO POR DEPENDENCIA DE CALCULO</nome>
+	</critica>
+	<critica>
+		<id>104</id>
+		<codigo>ID</codigo>
+		<nome>BENEFICIO SUSPENSO CESSADO PELA INSPETORIA AUDITORIA</nome>
+	</critica>
+	<critica>
+		<id>105</id>
+		<codigo>IE</codigo>
+		<nome>BENEFICIO BLOQUEADO PARA EMPRESTIMO PELO BENEFICIARIO</nome>
+	</critica>
+	<critica>
+		<id>106</id>
+		<codigo>IF</codigo>
+		<nome>BENEFICIO BLOQUEADO PARA EMPRESTIMO POR TBM</nome>
+	</critica>
+	<critica>
+		<id>107</id>
+		<codigo>IG</codigo>
+		<nome>BENEFICIO ESTA EM FASE DE CONCESSAO DE PA OU DESDOBRAMENTO</nome>
+	</critica>
+	<critica>
+		<id>108</id>
+		<codigo>IH</codigo>
+		<nome>BENEFICIO CESSADO POR OBITO</nome>
+	</critica>
+	<critica>
+		<id>109</id>
+		<codigo>II</codigo>
+		<nome>BENEFICIO CESSADO POR FRAUDE</nome>
+	</critica>
+	<critica>
+		<id>110</id>
+		<codigo>IJ</codigo>
+		<nome>BENEFICIO CESSADO POR CONCESSAO DE OUTRO BENEFICIO</nome>
+	</critica>
+	<critica>
+		<id>111</id>
+		<codigo>IK</codigo>
+		<nome>BENEFICIO CESSADO: ESTATUTARIO TRANSFERIDO PARA ORGAO DE ORIGEM</nome>
+	</critica>
+	<critica>
+		<id>112</id>
+		<codigo>IL</codigo>
+		<nome>EMPRESTIMO SUSPENSO PELA APS</nome>
+	</critica>
+	<critica>
+		<id>113</id>
+		<codigo>IM</codigo>
+		<nome>EMPRESTIMO CANCELADO PELO BANCO</nome>
+	</critica>
+	<critica>
+		<id>114</id>
+		<codigo>IN</codigo>
+		<nome>CREDITO TRANSFORMADO EM PAB</nome>
+	</critica>
+	<critica>
+		<id>115</id>
+		<codigo>IO</codigo>
+		<nome>TERMINO DA CONSIGNACAO FOI ALTERADO</nome>
+	</critica>
+	<critica>
+		<id>116</id>
+		<codigo>IP</codigo>
+		<nome>FIM DO EMPRESTIMO OCORREU DURANTE PERIODO DE SUSPENSAO OU CONCESSAO</nome>
+	</critica>
+	<critica>
+		<id>117</id>
+		<codigo>IQ</codigo>
+		<nome>EMPRESTIMO SUSPENSO PELO BANCO</nome>
+	</critica>
+	<critica>
+		<id>118</id>
+		<codigo>IR</codigo>
+		<nome>NAO AVERBACAO DE CONTRATO - QUANTIDADE DE PARCELAS COMPETENCIAS INFORMADAS ULTRAPASSOU A DATA LIMITE DA EXTINCAO DE COTA DO DEPENDENTE TITULAR DE BENEFICIOS</nome>
+	</critica>
+	<critica>
+		<id>119</id>
+		<codigo>TA</codigo>
+		<nome>LOTE NAO ACEITO  TOTAIS DO LOTE COM DIFERENCA</nome>
+	</critica>
+	<critica>
+		<id>120</id>
+		<codigo>YA</codigo>
+		<nome>TITULO NAO ENCONTRADO</nome>
+	</critica>
+	<critica>
+		<id>121</id>
+		<codigo>YB</codigo>
+		<nome>IDENTIFICADOR REGISTRO OPCIONAL INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>122</id>
+		<codigo>YC</codigo>
+		<nome>CODIGO PADRAO INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>123</id>
+		<codigo>YD</codigo>
+		<nome>CODIGO DE OCORRENCIA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>124</id>
+		<codigo>YE</codigo>
+		<nome>COMPLEMENTO DE OCORRENCIA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>125</id>
+		<codigo>YF</codigo>
+		<nome>ALEGACAO JA INFORMADA</nome>
+	</critica>
+	<critica>
+		<id>126</id>
+		<codigo>ZA</codigo>
+		<nome>AGENCIA   CONTA DO FAVORECIDO SUBSTITUIDA</nome>
+	</critica>
+	<critica>
+		<id>127</id>
+		<codigo>ZB</codigo>
+		<nome>DIVERGENCIA ENTRE O PRIMEIRO E ULTIMO NOME DO BENEFICIARIO VERSUS PRIMEIRO E ULTIMO NOME NA RECEITA FEDERAL</nome>
+	</critica>
+	<critica>
+		<id>128</id>
+		<codigo>ZC</codigo>
+		<nome>CONFIRMACAO DE ANTECIPACAO DE VALOR</nome>
+	</critica>
+	<critica>
+		<id>129</id>
+		<codigo>ZD</codigo>
+		<nome>ANTECIPACAO PARCIAL DE VALOR</nome>
+	</critica>
+	<critica>
+		<id>130</id>
+		<codigo>ZE</codigo>
+		<nome>TITULO BLOQUEADO NA BASE</nome>
+	</critica>
+	<critica>
+		<id>131</id>
+		<codigo>ZF</codigo>
+		<nome>SISTEMA EM CONTINGENCIA - TITULO VALOR MAIOR QUE REFERENCIA</nome>
+	</critica>
+	<critica>
+		<id>132</id>
+		<codigo>ZG</codigo>
+		<nome>SISTEMA EM CONTINGENCIA - TITULO VENCIDO</nome>
+	</critica>
+	<critica>
+		<id>133</id>
+		<codigo>ZH</codigo>
+		<nome>SISTEMA EM CONTINGENCIA - TITULO INDEXADO</nome>
+	</critica>
+	<critica>
+		<id>134</id>
+		<codigo>ZI</codigo>
+		<nome>BENEFICIARIO DIVERGENTE</nome>
+	</critica>
+	<critica>
+		<id>135</id>
+		<codigo>ZJ</codigo>
+		<nome>LIMITE DE PAGAMENTOS PARCIAIS EXCEDIDO</nome>
+	</critica>
+	<critica>
+		<id>136</id>
+		<codigo>ZK</codigo>
+		<nome>BOLETO JA LIQUIDADO</nome>
+	</critica>
+
+</layout>

@@ -1,0 +1,123 @@
+<relatorio dados="detalhamento_fatura_agrupa_empresa" ordem="ordem">
+<apelidos>
+1  rel_posto_nome    			tam=60
+2  rel_data_hora     			tam=16
+70  titulo1           			tam=133 alinha=centro
+3  cliente_codigo				tam=8	alinha=esquerda
+4  cliente_nome					tam=40	alinha=esquerda
+5  cliente_cpf					tam=18
+6  fatura_documento				tam=8	alinha=esquerda
+7  fatura_data					tam=10	fmt=data	alinha=esquerda
+8  fatura_vencto				tam=10	fmt=data	alinha=esquerda
+9  nota_documento				tam=6   alinha=direita
+10 nota_data					tam=10	fmt=data
+11 nota_placa					tam=8
+12 produto_quantidade			tam=7	fmt=float2
+13 nota_km_ini					tam=9	fmt=%.01f
+14 nota_km_fim					tam=9	fmt=%.01f
+15 nota_km_litro				tam=5	fmt=%.01f
+16 produto_nome					tam=20
+17 produto_valor				tam=10	fmt=float2
+18 placa_litros					tam=13	fmt=float2
+19 placa_km_litro				tam=5	fmt=float1
+20 placa_valor					tam=11	fmt=float2
+22 total_valor					tam=15	fmt=float2	alinha=esquerda
+21 fatura_litros				tam=12	fmt=float2	alinha=esquerda
+23 produto_preco_unit			tam=8	fmt=float3
+24 valor_tabela					tam=9	fmt=float2
+25 preco_tabela					tam=8	fmt=float3
+26 subtotal_tabela				tam=11	fmt=float2
+28 cliente_obs					tam=29	alinha=esquerda
+30 qtd_fatura					tam=10	alinha=esquerda
+31 empresa_nome					tam=40
+32 total_documento				tam=10	func=contar	campo=nota_documento	alinha=esquerda	grupo=1
+60 produto_preco_unit_venda		tam=8	fmt=float3
+61 produto_valor_venda			tam=9	fmt=float2
+62 subtotal_venda				tam=11	fmt=float2	func=soma	campo=produto_valor_venda	grupo=2
+63 total_venda					tam=11	fmt=float2	func=soma	campo=produto_valor_venda	grupo=1
+64 desconto_total				tam=10	fmt=float2	expr=fatura_desconto+venda_desconto
+65 empresa_nome_venda			tam=40
+66 tot_qtd						tam=9	fmt=float2
+67 tot_item						tam=10	fmt=float2	func=soma		campo=produto_valor	grupo=2
+68 tot_tab						tam=9	fmt=float2	func=soma		campo=valor_tabela	grupo=2
+72 nota_fiscal_numero			tam=10	alinha=esquerda
+73 cliente_endereco				tam=30
+74 cliente_bairro				tam=30
+75 cliente_cidade				tam=30
+76 cliente_numero				tam=6
+80 total_combustivel			tam=13	fmt=float2	func=soma	campo=placa_litros			grupo=1
+82 quantidade_geral				tam=13	fmt=float2	func=soma	campo=produto_quantidade	grupo=1	alinha=esquerda
+83 fatura_valor					tam=14	fmt=%.02f	alinha=esquerda
+86 desconto_faturamento			tam=14	fmt=%.02f	alinha=esquerda
+87 total_notas					tam=12	fmt=%.02f	alinha=esquerda
+91 nota_fiscal_cupom			tam=10
+92 nota_fiscal_fatura			tam=10
+93 total_litros					tam=10	alinha=esquerda	fmt=%.02f	func=soma	campo=litros	grupo=1
+94 subtotal_litros				tam=16	alinha=esquerda	fmt=%.02f	func=soma	campo=litros	grupo=2	
+
+95 fatura_observacao			tam=30
+96 max_subtotal 				tam=18  func=max campo=tot_item grupo=2 fmt=%.02f
+97 alerta_diff					tam=123 expr=(round(max_subtotal,2)!=round(total_valor,2)) and msg_dif or " "
+
+88 geral_notas					tam=14	fmt=%.02f	alinha=esquerda
+89 geral_fatura					tam=14	fmt=%.02f	alinha=esquerda
+90 geral_desconto				tam=12	fmt=%.02f	alinha=esquerda
+
+91 cliente_cod_nome				tam=59
+98 nota_nota_fiscal             tam=6
+99 titulo_p          tam=133    expr='DETALHAMENTO DE FATURAS'  alinha=centro
+100 empresa_venda_cod_nome      tam=120
+</apelidos>
+<cab_pagina>
+
+</cab_pagina>
+<cab_relat>
+#1                                                                                                                   #2
+-------------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#70
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Número de faturas: #30                                                                                                            |
++-----------------------------------------------------------------------------------------------------------------------------------+
+
+</cab_relat>
+<cab_grupo nome="1" quebra="empresa_nome_venda">
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #100                                                                                                                     |
++-----------------------------------------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome_venda,quebra_1,fatura_documento,fatura_grid">
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Cliente...: #91                                                                        CPF/CNPJ: #5                               |
+| Fatura nr.: #6          Emissão: #7            Vencimento: #8                          Obs.....: #28                              |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Cupom  N.nota Dt emissão Placa       Qtde   Km inic. Km final Km/Lt  Produto             Pr. unit.   Vl. item  Pr. tab.  Vl. tab. |
++-----------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<detalhe>
+|#9      #98    #10        #11      #12     #13       #14       #15    #16                 #23       #17         #25      #24       |
+</detalhe>
+<rod_grupo nome="2">
+| #97                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Total litros combustível: #94              Faturado: #22                  Desconto: #86              Valor fatura: #83            |
++-----------------------------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Quantidade total: #82                Total faturado: #88            Total desconto: #90              Total fatura: #89            |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Total de documentos: #32                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+
+<hash>8e4047cd947da983cb228a27675e0670</hash>
+</relatorio>

@@ -1,0 +1,53 @@
+<relatorio dados="venda_grupo_produto_dia">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1		    tam=104	alinha=centro
+4  titulo2		    tam=104	alinha=centro
+5  empresa_cod_nome	tam=60
+6  linha_moldura	tam=104
+7  linha_cabecalho	tam=104
+8  linha_detalhe	tam=104
+9  linha_total1		tam=104
+10 linha_total2		tam=104
+</apelidos>
+
+<cab_pagina>
+#1                                                                                   #2        
+--------------------------------------------------------------------------------------------------------
+ 
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa" repeticao="0">
+EMPRESA: #5
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa">
+#6
+#7
+#6
+</cab_grupo>
+
+<detalhe>
+#8
+</detalhe>
+
+<rod_grupo nome="2">
+#6
+#9
+#6
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
+#6
+</rod_pagina>
+
+<hash>24a028f7b31b814f8fda6c0419ee15a2</hash>
+</relatorio>

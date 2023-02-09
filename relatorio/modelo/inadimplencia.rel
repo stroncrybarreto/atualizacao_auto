@@ -1,0 +1,44 @@
+<relatorio dados="inadimplencia" paper_orientation='landscape' font_size='medium'>
+<apelidos>
+1  nome_posto    		tam=99999
+2  first_row			tam=99999
+3  titulo			    tam=99999
+
+4  row_dotted_empresa   tam=99999
+5  row_empresa          tam=99999
+6  row_dotted_header    tam=99999
+7  row_header           tam=99999
+8  row_header_2         tam=99999
+9  row_dotted_header_2  tam=99999
+10 row_detalhe          tam=99999
+
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
+#4
+#5
+#6
+#7
+#8
+#9
+</cab_grupo>
+<detalhe>
+#10
+</detalhe>
+<rod_grupo nome="1">
+#9
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+<rod_pagina>
+#8
+</rod_pagina>
+
+<hash>ad4d551128fe1034e50698ac7c1ad60c</hash>
+</relatorio>

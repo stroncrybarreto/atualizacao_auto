@@ -1,0 +1,63 @@
+<relatorio dados="abast_maior_tempo" ordem="empresa_codigo,data,conta,turno">
+<apelidos>
+98 rel_posto_nome			tam=60
+99 rel_data_hora			tam=18
+1  produto_nome				tam=17
+2  est_inicial				tam=11	fmt=%.02f
+3  hora_abastec				tam=11
+4  hora						tam=11
+5  cupom					tam=7	alinha=centro
+6  bico						tam=2
+7  nome_produto_reduzido	tam=2
+8  litros					tam=8	alinha=direita	fmt=float2
+9  qtde						tam=2	fmt=%02d
+10 valor					tam=9	alinha=direita fmt=float2
+11 motivo_nome				tam=23
+12 valor_pgto				tam=11	alinha=direita fmt=float2
+13 empresa_nome				tam=100
+14 titulo					tam=121	alinha=centro
+15 tempo					tam=9
+16 conta					tam=11
+17 turno					tam=10	alinha=esquerda
+18 data						tam=10	fmt=data
+19 total_litros				tam=8	alinha=direita	fmt=float2
+20 total_valor				tam=9	alinha=direita	fmt=float2
+21 total_valor_pgto			tam=11	alinha=direita	fmt=float2
+22 conta_cod_nome			tam=41
+</apelidos>
+
+<cab_pagina>
+#98                                                                                                           #99              
+--------------------------------------------------------------------------------------------------------------------------------
+
+#14
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="data">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Data: #18                                                                                                                     |
++-------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="data,conta,turno">
+| Caixa: #22                                        Turno: #17                                                                  |
++-------------+--------------+-----------+---------+--------+----------+-----------+------------------------------+-------------+
+| Hora abast. |  Hora cupom  |   Tempo   |  Cupom  |  Bico  |  Litros  |   Valor   |  Quantidade/Forma pagamento  | Valor pgto. |
++-------------+--------------+-----------+---------+--------+----------+-----------+------------------------------+-------------+
+</cab_grupo>
+<detalhe>
+| #3          | #4           | #15       | #5      | #6 #7  | #8       | #10       | #9 / #11                     | #12         |
+</detalhe>
+<rod_grupo nome="2">
++-------------+--------------+-----------+---------+--------+----------+-----------+------------------------------+-------------+
+| Total                                                     | #19      | #20       |                              | #21         |
++-----------------------------------------------------------+----------+-----------+------------------------------+-------------+
+</rod_grupo>
+<rod_grupo nome="1">
+
+</rod_grupo>
+
+
+<hash>6d5ec0aca446a09ae59a9e49d30a2981</hash>
+</relatorio>

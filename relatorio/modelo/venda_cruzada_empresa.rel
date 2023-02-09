@@ -1,0 +1,82 @@
+<relatorio dados="venda_cruzada_main" font_size="xx-small">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+3  titulo_principal      tam=130  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2             
+----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<detalhe>
+</detalhe>
+
+<subrelat dados="venda_cruzada" nome="sessao_01" tipo="rel_principal" ordem="">
+<apelidos>
+4  empresa_cod_nome        tam=52
+5  row_header              tam=999999
+6  row_header_det          tam=999999
+7  produto_principal_nome  tam=40
+8  row_detalhe             tam=999999
+9  row_empresa             tam=999999
+10  row_detail_empresa     tam=999999
+</apelidos>
+
+<cab_grupo nome="1" quebra="empresa_nome">
+
++-------------------------------------------#9
+| Empresa: #10
++-------------------------------------------#5
+|                  Produto                  #6
++-------------------------------------------#5
+</cab_grupo>
+
+<detalhe>
+| #7                                        #8
+</detalhe>
+
+<rod_grupo nome="1">
++-------------------------------------------#5
+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="venda_cruzada" nome="sessao_02" tipo="rel_resumo" ordem="empresa_nome">
+<apelidos>
+4  empresa_cod_nome        tam=100
+5  produto_nome            tam=84  expr=produto_principal_nome+ '  X  ' + produto_cruzado_nome
+6  numero_cruzamento       tam=12  fmt=float
+7  soma_cruzamento         tam=12  fmt=float  func=soma  campo=numero_cruzamento grupo=1
+8  total_cruzamento        tam=8   fmt=float
+9  perc_cruzamento         tam=9   fmt=float2  expr=((numero_cruzamento/total_cruzamento) * 100)
+10 total_perc              tam=9   fmt=float2  func=soma  campo=perc_cruzamento grupo=1
+11 ranking                 tam=8   func=contar grupo=1
+12 ranking_det             tam=11  expr=str(ranking)+'°'  alinha=direita grupo=1
+</apelidos>
+
+<cab_grupo nome="1" quebra="empresa_nome">
+
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #4                                                                                                                    |
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+|                                        Produto                                       |  Quantidade  | Percentual |   Posição   |
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+</cab_grupo>
+
+<detalhe>
+| #5                                                                                   | #6           | #9       % | #12         |
+</detalhe>
+
+<rod_grupo nome="1">
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+| Total                                                                                | #7           | #10      % |             |
++--------------------------------------------------------------------------------------+--------------+------------+-------------+
+
+</rod_grupo>
+</subrelat>
+
+<hash>732735854fb223c594760510154a1b34</hash>
+</relatorio>

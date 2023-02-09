@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>intermedium</nome>
+  
+  <ocorrencias>
+	<ocorrencia>
+		<id>1</id>
+		<codigo>02</codigo>
+		<nome>Confirmação de Entrada de Titulo</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Por meio magnético </nome>
+		</motivo>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>liquidação normal </nome>
+		</motivo>
+		<motivo>
+			<codigo>11</codigo>
+			<nome>Por via convencional </nome>
+		</motivo>
+		<motivo>
+			<codigo>16</codigo>
+			<nome>Por alteração do código do cedente </nome>
+		</motivo>
+		<motivo>
+			<codigo>17</codigo>
+			<nome>Por alteração da variação</nome>
+		</motivo>
+		<motivo>
+			<codigo>18</codigo>
+			<nome>por alteração da carteira</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>2</id>
+		<codigo>03</codigo>
+		<nome>Comando recusado</nome>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>Identificação invalida</nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>Variação da carteira invalida</nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>Valor dos juros por um dia invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Valor do desconto invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Espécie de titulo invalida </nome>
+		</motivo>
+		<motivo>
+			<codigo>06</codigo>
+			<nome>Espécie de valor variável invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>Prefixo da agencia invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Valor do titulo invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>Data de vencimento invalida</nome>
+		</motivo>
+		<motivo>
+			<codigo>10</codigo>
+			<nome>Fora do prazo </nome>
+		</motivo>
+		<motivo>
+			<codigo>11</codigo>
+			<nome>Inexistência de margem para desconto</nome>
+		</motivo>
+		<motivo>
+			<codigo>12</codigo>
+			<nome>O Banco não tem agencia na praça do sacado</nome>
+		</motivo>
+		<motivo>
+			<codigo>13</codigo>
+			<nome>Razoes cadastrais</nome>
+		</motivo>
+		<motivo>
+			<codigo>14</codigo>
+			<nome>Sacado interligado com o sacador </nome>
+		</motivo>
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Titulo sacado contra órgão do Poder Público </nome>
+		</motivo>
+		<motivo>
+			<codigo>16</codigo>
+			<nome>Titulo preenchido de forma irregular</nome>
+		</motivo>
+		<motivo>
+			<codigo>17</codigo>
+			<nome>Titulo rasurado</nome>
+		</motivo>
+		<motivo>
+			<codigo>18</codigo>
+			<nome>Endereço do sacado não localizado ou incompleto</nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Código do cedente invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>20</codigo>
+			<nome>Nome/endereço do cliente não informado /ECT/</nome>
+		</motivo>
+		<motivo>
+			<codigo>21</codigo>
+			<nome>Carteira invalida</nome>
+		</motivo>
+		<motivo>
+			<codigo>22</codigo>
+			<nome>Quantidade de valor variável invalida</nome>
+		</motivo>
+		<motivo>
+			<codigo>23</codigo>
+			<nome>Faixa nosso número excedida</nome>
+		</motivo>
+		<motivo>
+			<codigo>24</codigo>
+			<nome>Valor do abatimento inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>25</codigo>
+			<nome>Novo numero do titulo dado pelo cedente invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>26</codigo>
+			<nome>Valor do IOF de seguro invalido </nome>
+		</motivo>
+		<motivo>
+			<codigo>27</codigo>
+			<nome>Nome do sacado/cedente invalido ou não informado </nome>
+		</motivo>
+		<motivo>
+			<codigo>28</codigo>
+			<nome>Data do novo vencimento invalida </nome>
+		</motivo>
+		<motivo>
+			<codigo>29</codigo>
+			<nome>Endereço não informado </nome>
+		</motivo>
+		<motivo>
+			<codigo>30</codigo>
+			<nome>Registro de titulo já liquidado </nome>
+		</motivo>
+		<motivo>
+			<codigo>31</codigo>
+			<nome>Numero do borderô invalido </nome>
+		</motivo>
+		<motivo>
+			<codigo>32</codigo>
+			<nome>Nome da pessoa autorizada invalido </nome>
+		</motivo>
+		<motivo>
+			<codigo>33</codigo>
+			<nome>Nosso numero já existente </nome>
+		</motivo>
+		<motivo>
+			<codigo>34</codigo>
+			<nome>Numero da prestação do contrato invalido </nome>
+		</motivo>
+		<motivo>
+			<codigo>35</codigo>
+			<nome>percentual de desconto invalido </nome>
+		</motivo>
+		<motivo>
+			<codigo>36</codigo>
+			<nome>Dias para protesto invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>37</codigo>
+			<nome>Data de emissão do titulo invalida </nome>
+		</motivo>
+		<motivo>
+			<codigo>38</codigo>
+			<nome>Data do vencimento anterior á data da emissão do titulo </nome>
+		</motivo>
+		<motivo>
+			<codigo>39</codigo>
+			<nome>Comando de alteração indevido para a carteira </nome>
+		</motivo>
+		<motivo>
+			<codigo>40</codigo>
+			<nome>Tipo de moeda invalido </nome>
+		</motivo>
+		<motivo>
+			<codigo>41</codigo>
+			<nome>Abatimento não permitido </nome>
+		</motivo>
+		<motivo>
+			<codigo>42</codigo>
+			<nome>CEP/UF invalido/não compatíveis com a ECT </nome>
+		</motivo>
+		<motivo>
+			<codigo>43</codigo>
+			<nome>Código de unidade variável incompatível com a data de emissão do titulo </nome>
+		</motivo>
+		<motivo>
+			<codigo>44</codigo>
+			<nome>Dados para debito ao sacado inválidos</nome>
+		</motivo>
+		<motivo>
+			<codigo>45</codigo>
+			<nome>Carteira/variação encerrada</nome>
+		</motivo>
+		<motivo>
+			<codigo>46</codigo>
+			<nome>Convenio encerrado</nome>
+		</motivo>
+		<motivo>
+			<codigo>47</codigo>
+			<nome>Titulo tem valor diverso do informado</nome>
+		</motivo>
+		<motivo>
+			<codigo>48</codigo>
+			<nome>Motivo de baixa invalido para à carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>49</codigo>
+			<nome>Abatimento a cancelar não consta do titulo</nome>
+		</motivo>
+		<motivo>
+			<codigo>50</codigo>
+			<nome>Comando incompatível com a carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Código do convenio invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>52</codigo>
+			<nome>Abatimento igual ou maior que o valor do titulo</nome>
+		</motivo>
+		<motivo>
+			<codigo>53</codigo>
+			<nome>Titulo já se encontra na situação pretendida</nome>
+		</motivo>
+		<motivo>
+			<codigo>54</codigo>
+			<nome>Titulo fora do prazo admitido para a conta</nome>
+		</motivo>
+		<motivo>
+			<codigo>55</codigo>
+			<nome>Novo vencimento fora dos limites da carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>56</codigo>
+			<nome>Titulo não pertence ao convenio</nome>
+		</motivo>
+		<motivo>
+			<codigo>57</codigo>
+			<nome>Variação incompatível com a carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>58</codigo>
+			<nome>Impossível a transferência para a carteira indicada</nome>
+		</motivo>
+		<motivo>
+			<codigo>59</codigo>
+			<nome>Titulo vencido em transferência para a carteira indicada</nome>
+		</motivo>
+		<motivo>
+			<codigo>60</codigo>
+			<nome>Titulo com prazo estourado para transferência de carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>61</codigo>
+			<nome>Titulo já foi enviado para protesto</nome>
+		</motivo>
+		<motivo>
+			<codigo>62</codigo>
+			<nome>Alteração da situação de débito invalida </nome>
+		</motivo>
+		<motivo>
+			<codigo>63</codigo>
+			<nome>DV do nosso numero invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>64</codigo>
+			<nome>Titulo não passível de debito/baixa (situação anormal)</nome>
+		</motivo>
+		<motivo>
+			<codigo>65</codigo>
+			<nome>Titulo com ordem de não protestar não pode ser encaminhado a Cartório.</nome>
+		</motivo>
+		<motivo>
+			<codigo>67</codigo>
+			<nome>Titulo/carne rejeitado</nome>
+		</motivo>
+		<motivo>
+			<codigo>80</codigo>
+			<nome>Nosso numero invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>81</codigo>
+			<nome>Data para concessão do desconto invalida. Gerada nos seguintes casos..a) erro na data do desconto., b) data do desconto anterior à data de emissão.</nome>
+		</motivo>
+		<motivo>
+			<codigo>82</codigo>
+			<nome>CEP do sacado invalido</nome>
+		</motivo>
+		<motivo>
+			<codigo>83</codigo>
+			<nome>Carteira/variação não localizada no cedente</nome>
+		</motivo>
+		<motivo>
+			<codigo>84</codigo>
+			<nome>Titulo não localizado na existência</nome>
+		</motivo>
+		<motivo>
+			<codigo>99</codigo>
+			<nome>Outros motivos</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>3</id>
+		<codigo>05</codigo>
+		<nome>Liquidado sem registro</nome>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>liquidação normal </nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>por conta </nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>liquidação por saldo </nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>liquidação com cheque a compensar </nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>liquidação de titulo sem registro</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>liquidação na apresentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>liquidação em cartório</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>4</id>
+		<codigo>06</codigo>
+		<nome>Liquidação Normal</nome>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>liquidação normal </nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>por conta </nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>liquidação por saldo </nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>liquidação com cheque a compensar </nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>liquidação de titulo sem registro</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>liquidação na apresentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>liquidação em cartório</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>5</id>
+		<codigo>07</codigo>
+		<nome>Liquidação por Conta</nome>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>liquidação normal </nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>por conta </nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>liquidação por saldo </nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>liquidação com cheque a compensar </nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>liquidação de titulo sem registro</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>liquidação na apresentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>liquidação em cartório</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>6</id>
+		<codigo>08</codigo>
+		<nome>Liquidação por Saldo</nome>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>liquidação normal </nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>por conta </nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>liquidação por saldo </nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>liquidação com cheque a compensar </nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>liquidação de titulo sem registro</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>liquidação na apresentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>liquidação em cartório</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>7</id>
+		<codigo>09</codigo>
+		<nome>Baixa de Titulo</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Solicitada pelo cliente </nome>
+		</motivo>
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Protestado </nome>
+		</motivo>
+		<motivo>
+			<codigo>18</codigo>
+			<nome>Por alteração da carteira </nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Debito automático </nome>
+		</motivo>
+		<motivo>
+			<codigo>31</codigo>
+			<nome>Liquidado anteriormente </nome>
+		</motivo>
+		<motivo>
+			<codigo>32</codigo>
+			<nome>Habilitado em processo </nome>
+		</motivo>
+		<motivo>
+			<codigo>33</codigo>
+			<nome>Incobrável por nosso intermédio </nome>
+		</motivo>
+		<motivo>
+			<codigo>34</codigo>
+			<nome>Transferido para créditos em liquidação </nome>
+		</motivo>
+		<motivo>
+			<codigo>46</codigo>
+			<nome>Por alteração do código do cedente </nome>
+		</motivo>
+		<motivo>
+			<codigo>47</codigo>
+			<nome>Por alteração da variação   </nome>
+		</motivo>
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Acerto </nome>
+		</motivo>
+		<motivo>
+			<codigo>90</codigo>
+			<nome>Baixa automática</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>8</id>
+		<codigo>10</codigo>
+		<nome>Baixa Solicitada</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Solicitada pelo cliente </nome>
+		</motivo>
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Protestado </nome>
+		</motivo>
+		<motivo>
+			<codigo>18</codigo>
+			<nome>Por alteração da carteira </nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Debito automático </nome>
+		</motivo>
+		<motivo>
+			<codigo>31</codigo>
+			<nome>Liquidado anteriormente </nome>
+		</motivo>
+		<motivo>
+			<codigo>32</codigo>
+			<nome>Habilitado em processo </nome>
+		</motivo>
+		<motivo>
+			<codigo>33</codigo>
+			<nome>Incobrável por nosso intermédio </nome>
+		</motivo>
+		<motivo>
+			<codigo>34</codigo>
+			<nome>Transferido para créditos em liquidação </nome>
+		</motivo>
+		<motivo>
+			<codigo>46</codigo>
+			<nome>Por alteração do código do cedente </nome>
+		</motivo>
+		<motivo>
+			<codigo>47</codigo>
+			<nome>Por alteração da variação   </nome>
+		</motivo>
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Acerto </nome>
+		</motivo>
+		<motivo>
+			<codigo>90</codigo>
+			<nome>Baixa automática</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>9</id>
+		<codigo>12</codigo>
+		<nome>Abatimento Concedido</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>10</id>
+		<codigo>13</codigo>
+		<nome>Abatimento Cancelado</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>11</id>
+		<codigo>14</codigo>
+		<nome>Alteração de Vencimento do Título</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>12</id>
+		<codigo>15</codigo>
+		<nome>Liquidação em Cartório</nome>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>liquidação normal </nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>por conta </nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>liquidação por saldo </nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>liquidação com cheque a compensar </nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>liquidação de titulo sem registro</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>liquidação na apresentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>liquidação em cartório</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>13</id>
+		<codigo>19</codigo>
+		<nome>Confirmação de recebimento de instruções para protesto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>14</id>
+		<codigo>20</codigo>
+		<nome>Debito em Conta</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Solicitada pelo cliente </nome>
+		</motivo>
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Protestado </nome>
+		</motivo>
+		<motivo>
+			<codigo>18</codigo>
+			<nome>Por alteração da carteira </nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Debito automático </nome>
+		</motivo>
+		<motivo>
+			<codigo>31</codigo>
+			<nome>Liquidado anteriormente </nome>
+		</motivo>
+		<motivo>
+			<codigo>32</codigo>
+			<nome>Habilitado em processo </nome>
+		</motivo>
+		<motivo>
+			<codigo>33</codigo>
+			<nome>Incobrável por nosso intermédio </nome>
+		</motivo>
+		<motivo>
+			<codigo>34</codigo>
+			<nome>Transferido para créditos em liquidação </nome>
+		</motivo>
+		<motivo>
+			<codigo>46</codigo>
+			<nome>Por alteração do código do cedente </nome>
+		</motivo>
+		<motivo>
+			<codigo>47</codigo>
+			<nome>Por alteração da variação   </nome>
+		</motivo>
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Acerto </nome>
+		</motivo>
+		<motivo>
+			<codigo>90</codigo>
+			<nome>Baixa automática</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>15</id>
+		<codigo>21</codigo>
+		<nome>Alteração do Nome do Sacado</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>16</id>
+		<codigo>22</codigo>
+		<nome>Alteração do Endereço do Sacado</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>17</id>
+		<codigo>23</codigo>
+		<nome>Indicação de encaminhamento a cartório</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>18</id>
+		<codigo>24</codigo>
+		<nome>Sustar Protesto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>19</id>
+		<codigo>25</codigo>
+		<nome>Dispensar Juros</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>20</id>
+		<codigo>28</codigo>
+		<nome>Manutenção de titulo vencido</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>21</id>
+		<codigo>31</codigo>
+		<nome>Conceder desconto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>22</id>
+		<codigo>32</codigo>
+		<nome>Não conceder desconto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>23</id>
+		<codigo>33</codigo>
+		<nome>Retificar desconto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>24</id>
+		<codigo>34</codigo>
+		<nome>Alterar data para desconto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>25</id>
+		<codigo>35</codigo>
+		<nome>Cobrança de Multa</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>26</id>
+		<codigo>36</codigo>
+		<nome>Dispensa de Multa</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>27</id>
+		<codigo>37</codigo>
+		<nome>Dispensa de Indexador</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>28</id>
+		<codigo>38</codigo>
+		<nome>Dispensa do prazo limite para recebimento do título.</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>29</id>
+		<codigo>39</codigo>
+		<nome>Alteração de prazo limite para Recebimento do título.</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>30</id>
+		<codigo>72</codigo>
+		<nome>Alteração de tipo de cobrança </nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Transferência de titulo de Cobrança Simples para Descontada</nome>
+		</motivo>
+		<motivo>
+			<codigo>52</codigo>
+			<nome>Reembolso de titulo Descontado</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>31</id>
+		<codigo>96</codigo>
+		<nome>Despesas de Protesto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>32</id>
+		<codigo>97</codigo>
+		<nome>Despesas de Sustação de Protesto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>33</id>
+		<codigo>98</codigo>
+		<nome>Debito de Custas Antecipadas</nome>
+	</ocorrencia>
+	</ocorrencias>
+</layout>

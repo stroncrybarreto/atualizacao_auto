@@ -1,0 +1,58 @@
+<relatorio dados="produto_nao_movimenta_deposito" ordem="ordem">
+<apelidos>
+1   rel_posto_nome  tam=60           
+2   rel_data_hora   tam=18           
+3   produto_codigo  tam=10
+4   produto_nome    tam=40
+5   produto_grid    tam=16
+6   deposito_codigo tam=10
+7   deposito_nome   tam=40
+8   deposito_grid   tam=16
+9   empresa         tam=16
+10  emp_cod_nome    tam=33 expr=str(empresa_codigo) + " - " + empresa_nome
+11  titulo_quebra   tam=80
+12  detalhe_quebra  tam=46
+13  estoque         tam=14   fmt=float2
+14  data            tam=10	fmt=data
+15  total_prod      tam=14  fmt=float2  func=soma campo=estoque  grupo=1
+16  total_geral     tam=14  fmt=float2  func=soma campo=estoque
+17  coluna_quebra   tam=46  alinha=centro
+18  titulo			tam=116  alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                  #2
+--------------------------------------------------------------------------------------------------------------------
+
+#18    
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="quebra">
++------------------------------------------------------------------------------------------------------------------+
+| #11                                                                                                              |
++-----------------------------------+------------------------------------------------+----------------+------------+
+|            Empresa                | #17                                            |    Estoque     |    Data    |
++-----------------------------------+------------------------------------------------+----------------+------------+
+</cab_grupo>
+<detalhe>
+| #10                               | #12                                            | #13            | #14        |
+</detalhe>
+<rod_grupo nome="1">
++-----------------------------------+------------------------------------------------+----------------+------------+
+| Total do grupo                                                                     | #15            |            |
++------------------------------------------------------------------------------------+----------------+------------+
+</rod_grupo>
+
+<rod_relat>
++------------------------------------------------------------------------------------+----------------+------------+
+| Total geral                                                                        | #16            |            |
++------------------------------------------------------------------------------------+----------------+------------+
+</rod_relat>
+
+<rod_pagina>
++-----------------------------------+------------------------------------------------+----------------+------------+
+</rod_pagina>
+
+<hash>3bc93745b927576ff5104c584f09596a</hash>
+</relatorio>

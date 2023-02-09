@@ -1,0 +1,171 @@
+<relatorio dados="comparativo_fisico_contabil" ordem="quebra">
+<apelidos>
+1  rel_posto_nome	tam=46
+2  rel_data_hora	tam=18
+3  titulo			tam=113 alinha=centro
+4  periodo			tam=113 alinha=centro
+5  titulo_empresa   tam=113 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                               #2              
+-----------------------------------------------------------------------------------------------------------------
+
+#3
+#5
+#4
+
+</cab_pagina>
+<detalhe>
+</detalhe>
+
+<subrelat dados="comparativo_fisico_contabil_conta" ordem="quebra, conta, tipo_conta">
+<apelidos>
+5  conta			tam=20
+6  nome				tam=35
+7  valor_atual		tam=14	fmt=%.02f
+8  valor_anterior	tam=14	fmt=%.02f
+9  valor_diferenca	tam=14	fmt=%.02f	
+10 total_atual		tam=14  fmt=%.02f	func=soma campo=valor_atual grupo=1
+11 total_anterior	tam=14  fmt=%.02f	func=soma campo=valor_anterior grupo=1
+12 total_diferenca	tam=14	fmt=%.02f	func=soma campo=valor_diferenca grupo=1
+13 quebra_nome		tam=30
+20 tipo_conta		tam=30
+34 fisico_contabil	tam=14	fmt=%.02f	alinha=direita
+35 lucro_prejuizo	tam=14	fmt=%.02f	alinha=direita
+36 valor_custo_venda tam=14	fmt=%.02f	alinha=direita
+37 saldo_fisico      tam=14	fmt=%.02f	alinha=direita
+38 saldo_contabil    tam=14	fmt=%.02f	alinha=direita
+39 valor_estoque_ini tam=14 fmt=%.02f	alinha=direita
+40 valor_estoque_fim tam=14 fmt=%.02f	alinha=direita
+</apelidos>
+<cab_relat>
++---------------------------------------------------------------------------------------------------------------+
+| CONTAS                                                                                                        |
++---------------------------------------------------------------------------------------------------------------+
+
+</cab_relat>
+
+<cab_grupo nome="2" quebra="quebra2">
+</cab_grupo>
+
+<cab_grupo nome="1" quebra="quebra">
++---------------------------------------------------------------------------------------------------------------+
+| #13                                                                                                           |
++----------------------+-------------------------------------+----------------+----------------+----------------+
+|         Conta        |                Nome                 | Saldo anterior |   Saldo atual  |   Saldo geral  |
++----------------------+-------------------------------------+----------------+----------------+----------------+
+</cab_grupo>
+<detalhe>
+| #5                   | #6                                  | #8             | #7             | #9             |
+</detalhe>
+
+<rod_grupo nome="1">
++----------------------+-------------------------------------+----------------+----------------+----------------+
+| Total                |                                     | #11            | #10            | #12            |
++----------------------+-------------------------------------+----------------+----------------+----------------+
+
+</rod_grupo>
+<rod_grupo nome="2">
++----------------------------------+----------------+
+| Valor estoque inicial            | #39            |
+| Valor estoque final              | #40            |
+| Saldo geral físico               | #37            |
+| Saldo geral contábil             | #38            |
++----------------------------------+----------------+
+
++----------------------------------+----------------+
+| Custo mercadoria vendida(CMV)    | #36            |
+| Diferença fisíco x Contábil      | #34            |
+| Lucro / Prejuízo                 | #35            |
++----------------------------------+----------------+
+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="comparativo_fisico_contabil_estoque_contabil" ordem="quebra">
+<apelidos>
+14 grupo_nome				tam=38
+15 valor_custo				tam=14	fmt=%.02f
+16 valor_venda				tam=14	fmt=%.02f
+17 valor_diferenca			tam=15	fmt=%.02f
+18 perc_custo				tam=12	fmt=%.03f
+19 quebra_nome				tam=50
+21 total_venda				tam=14	fmt=%.02f  func=soma campo=valor_venda      grupo=2
+22 total_custo				tam=14	fmt=%.02f  func=soma campo=valor_custo      grupo=2
+23 total_diferenca			tam=15	fmt=%.02f  func=soma campo=valor_diferenca  grupo=2
+24 total_perc				tam=12	fmt=%.03f
+</apelidos>
+
+<cab_relat>
++---------------------------------------------------------------------------------------------------------------+
+| ESTOQUE                                                                                                       |
++---------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------+
+| ESTOQUE CONTÁBIL                                                                                              |
++---------------------------------------------------------------------------------------------------------------+
+</cab_relat>
+
+<cab_grupo nome="2" quebra="quebra">
+| #19                                                                                                           |
++--------------------------------------------+----------------+----------------+-----------------+--------------+
+|               Grupo produto                | Preço de custo | Preço de venda |    Diferença    |    % Custo   |
++--------------------------------------------+----------------+----------------+-----------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #14                                        | #15            | #16            | #17             | #18          |
+</detalhe>
+
+<rod_grupo nome="2">
++--------------------------------------------+----------------+----------------+-----------------+--------------+
+| Total                                      | #22            | #21            | #23             | #24          |
++--------------------------------------------+----------------+----------------+-----------------+--------------+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="comparativo_fisico_contabil_estoque_fisico" ordem="grupo_nome">
+<apelidos>
+25 grupo_nome				tam=33
+26 valor_custo				tam=14	fmt=%.02f
+27 valor_venda				tam=14	fmt=%.02f
+28 valor_diferenca_custo	tam=18	fmt=%.02f
+29 valor_diferenca_venda	tam=18	fmt=%.03f
+30 total_custo				tam=14	fmt=%.02f	func=soma campo=valor_custo
+31 total_venda				tam=14	fmt=%.02f	func=soma campo=valor_venda
+32 total_diferenca_custo	tam=18	fmt=%.02f	func=soma campo=valor_diferenca_custo
+33 total_diferenca_venda	tam=18	fmt=%.02f	func=soma campo=valor_diferenca_venda
+
+</apelidos>
+
+<cab_relat>
+
+
++---------------------------------------------------------------------------------------------------------------+
+| ESTOQUE FÍSICO                                                                                                |
++-----------------------------------+----------------+----------------+--------------------+--------------------+
+|            Grupo produto          |   Preço custo  |   Preço venda  | Custo cont. X fís. | Venda cont. X fís. |
++-----------------------------------+----------------+----------------+--------------------+--------------------+
+</cab_relat>
+<detalhe>
+| #25                               | #26            | #27            | #28                | #29                |
+</detalhe>
+
+<rod_relat>
++-----------------------------------+----------------+----------------+--------------------+--------------------+
+| Total                             | #30            | #31            | #32                | #33                |
++-----------------------------------+----------------+----------------+--------------------+--------------------+
+
++-------------------------------------------+
+| DIFERENÇA ESTOQUE FÍSICO X CONTÁBIL       |
++----------------------+--------------------+
+|    Preço de custo    |   Preço de venda   |
++----------------------+--------------------+
+| #32                  | #33                |
++----------------------+--------------------+
+</rod_relat>
+</subrelat>
+
+
+<hash>4d184eca1eb2729ca001af7910e81110</hash>
+</relatorio>

@@ -1,0 +1,83 @@
+<relatorio dados="lucro_comb_preco_venda" ordem="empresa_nome,produto_nome,data_group">
+<apelidos>
+1  rel_posto_nome   			tam=60
+2  rel_data_hora    			tam=18
+3  produto_nome					tam=100
+4  empresa_nome					tam=100
+5  data							tam=8
+6  preco_venda					tam=11		fmt=float3
+7  quantidade					tam=12		fmt=float2
+8  valor_venda					tam=13		fmt=float2
+9  preco_custo					tam=11		fmt=float3
+10 lucro_unit					tam=11		fmt=float3
+11 valor_custo					tam=13		fmt=float3
+12 valor_lucro					tam=11		fmt=float3
+13 perc_lucro					tam=11		fmt=float3
+14 total_quantidade				tam=12		fmt=float2
+15 total_valor_venda			tam=13		fmt=float2
+16 total_valor_custo			tam=13		fmt=float3
+17 total_valor_lucro			tam=11		fmt=float3
+18 total_produto_quantidade     tam=12		fmt=float2   
+19 total_produto_valor_venda	tam=13		fmt=float2       
+20 total_produto_valor_custo	tam=13		fmt=float3   
+21 total_produto_valor_lucro	tam=11		fmt=float3   
+23 total_produto_quant  		tam=12		fmt=float2   func=soma  campo=quantidade  
+24 total_prod_val_venda	        tam=13		fmt=float2   func=soma  campo=valor_venda     
+25 total_prod_val_custo	        tam=13		fmt=float3   func=soma  campo=valor_custo 
+26 total_prod_val_lucro	        tam=11		fmt=float3   func=soma  campo=valor_lucro 
+27 total_perc_lucro             tam=11      fmt=float3 
+28 total_produto_perc_lucro     tam=11      fmt=float3
+29 empresa_cod_nome             tam=110     expr=str(empresa_codigo) + ' - ' + empresa_nome
+30 produto_cod_nome	            tam=105     expr=str(produto_codigo) + ' - ' + produto_nome
+22 titulo						tam=129		alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                               #2                
+---------------------------------------------------------------------------------------------------------------------------------
+ 
+#22
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #29                                                                                                                  |
++-------------------------------------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,produto_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Combustível: #30                                                                                                              |
++----------+-------------+--------------+---------------+-------------+-------------+---------------+-------------+-------------+
+|   Data   | Preço venda |  Quantidade  |  Valor venda  | Preço custo |  Lucro Un.  |  Valor custo  | Valor lucro |   % Lucro   |
++----------+-------------+--------------+---------------+-------------+-------------+---------------+-------------+-------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_nome,produto_nome,data_group">
+</cab_grupo>
+<detalhe>
+| #5       | #6          | #7           | #8            | #9          | #10         | #11           | #12         | #13         |
+</detalhe>
+<rod_grupo nome="3">
++----------+-------------+--------------+---------------+-------------+-------------+---------------+-------------+-------------+
+</rod_grupo>
+<rod_grupo nome="2">
+| Total                  | #14          | #15           |                           | #16           | #17         | #27         |
++------------------------+--------------+---------------+---------------------------+---------------+-------------+-------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
++------------------------+--------------+---------------+---------------------------+---------------+-------------+-------------+
+| Total empresa          | #18          | #19           |                           | #20           | #21         | #28         |
++------------------------+--------------+---------------+---------------------------+---------------+-------------+-------------+
+
+</rod_grupo>
+<rod_relat>
++------------------------+--------------+---------------+---------------------------+---------------+-------------+-------------+
+| Total geral            | #23          | #24           |                           | #25           | #26         |             |
++------------------------+--------------+---------------+---------------------------+---------------+-------------+-------------+
+</rod_relat>
+<rod_pagina>
++----------+-------------+--------------+---------------+-------------+-------------+---------------+-------------+-------------+
+</rod_pagina>
+
+<hash>3f8038649d16488578a4e91a197309f5</hash>
+</relatorio>

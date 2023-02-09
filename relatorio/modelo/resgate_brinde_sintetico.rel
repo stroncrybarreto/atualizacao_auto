@@ -1,0 +1,50 @@
+<relatorio dados="resgate_brinde_sintetico" docname="Relatório de Produtos" font_size="x-small">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  produto_nome			tam=30
+4  produto_codigo		tam=6
+5  unid					tam=4
+6  pontos_resgate		tam=8	fmt=%d
+7  ponto_pago			tam=8	fmt=%d
+8  pontos_total			tam=8	fmt=%d		alinha=direita
+9  valor_pago		    tam=10  fmt=float2	alinha=direita
+10 valor_total			tam=10  fmt=float2	alinha=direita
+11 agrupamento_nome		tam=60
+12 titulo1				tam=124				alinha=centro
+13 titulo2				tam=124				alinha=centro
+14 quantidade			tam=6	fmt=%d		alinha=direita
+15 custo_total			tam=11	fmt=float2
+16 custo_medio			tam=8	fmt=float2
+</apelidos>
+<cab_pagina>
+#1                                                                                                     #2             
+-----------------------------------------------------------------------------------------------------------------------
+ 
+                                             {TIT}RELATÓRIO DE BRINDES - SINTÉTICO
+{SUBTIT}#13
+{SUBTIT}#12
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra">
++---------------------------------------------------------------------------------------------------------------------+
+| #11                                                                                                                 |
++--------+--------------------------------+------+--------+----------+----------+------------+----------+-------------+
+| Código | Produto                        | Unid |   Qtde | Pto Resg |   Pontos |      Valor | Pr Custo | Custo Total |
++--------+--------------------------------+------+--------+----------+----------+------------+----------+-------------+
+</cab_grupo>
+<detalhe>
+| #4     | #3                             | #5   | #14    | #6       | #7       | #9         | #16      | #15         |
+</detalhe>
+<rod_grupo nome="1">
++--------+--------------------------------+------+--------+----------+----------+------------+----------+-------------+
+|                                                                    | #8       | #10        |                        |
++--------------------------------------------------------------------+----------+------------+------------------------+
+
+</rod_grupo>
+<rod_pagina>
++---------------+-------------------------+------+--------+----------+----------+------------+----------+-------------+
+</rod_pagina>
+
+<hash>fb879757dfccc9debcf030061db31b64</hash>
+</relatorio>

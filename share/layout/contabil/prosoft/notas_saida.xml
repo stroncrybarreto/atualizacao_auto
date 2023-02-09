@@ -1,0 +1,236 @@
+<layout>
+  <nome>nota_saida</nome>
+  <sessao>
+    <nome>nota_saida</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave>especie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>6</fim><chave>serie_subserie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>7</inicio><fim>12</fim><chave>cupom_ini</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>13</inicio><fim>18</fim><chave>cupom_fim</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>19</inicio><fim>19</fim><chave>item_desdobramento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>20</inicio><fim>25</fim><chave>data_saida</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>26</inicio><fim>30</fim><chave>cod_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>31</inicio><fim>33</fim><chave>cfop_antigo</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>34</inicio><fim>47</fim><chave>valor_nota</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>48</inicio><fim>61</fim><chave>total_produto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>62</inicio><fim>75</fim><chave>base_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>76</inicio><fim>89</fim><chave>icms_debitado</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>90</inicio><fim>103</fim><chave>icms_isento</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>104</inicio><fim>117</fim><chave>outras_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>118</inicio><fim>131</fim><chave>base_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>132</inicio><fim>145</fim><chave>ipi_debitado</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>146</inicio><fim>159</fim><chave>ipi_isento</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>160</inicio><fim>173</fim><chave>outras_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>174</inicio><fim>187</fim><chave>ipi_ncreditado</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>188</inicio><fim>192</fim><chave>aliquota_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>193</inicio><fim>194</fim><chave>classif_contab_integr</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>195</inicio><fim>197</fim><chave>sit_espec_cod</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>198</inicio><fim>211</fim><chave>sit_espec_val1</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>212</inicio><fim>225</fim><chave>sit_espec_val2</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>226</inicio><fim>239</fim><chave>sit_espec_val3</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>240</inicio><fim>253</fim><chave>sit_espec_val4</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>254</inicio><fim>267</fim><chave>cliente_cnpj</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>268</inicio><fim>272</fim><chave>cliente_cod_contab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>273</inicio><fim>274</fim><chave>cliente_uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>275</inicio><fim>284</fim><chave>cod_munic</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>285</inicio><fim>394</fim><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>395</inicio><fim>395</fim><chave>zera_acumulado</chave><tipo>text</tipo><padrao></padrao><descricao>Z ou em branco</descricao></registro>
+    <registro><inicio>396</inicio><fim>568</fim><chave></chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>569</inicio><fim>569</fim><chave>cond_venda</chave><tipo></tipo><padrao>0</padrao><descricao>0 a vista 1 a prazo</descricao></registro>
+    <registro><inicio>570</inicio><fim>583</fim><chave>total_servico</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>584</inicio><fim>703</fim><chave>vencto_desativado</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>704</inicio><fim>704</fim><chave>cod_ctb</chave><tipo>text</tipo><padrao></padrao><descricao>sit especial: +, - ou em branco</descricao></registro>
+    <registro><inicio>705</inicio><fim>710</fim><chave>aliquota_icms_espec</chave><tipo>text</tipo><padrao></padrao><descricao>verificar tabela, caso especifico</descricao></registro>
+    <registro><inicio>711</inicio><fim>721</fim><chave>descont_ecf_cf</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>722</inicio><fim>722</fim><chave>tipo_frete_espec</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>723</inicio><fim>725</fim><chave>digito_cfop</chave><tipo>text</tipo><padrao></padrao><descricao>cfop x99 verificar tabela</descricao></registro>
+    <registro><inicio>726</inicio><fim>727</fim><chave>desdobramento_inscr_est_uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>728</inicio><fim>733</fim><chave>data_documento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>734</inicio><fim>737</fim><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>738</inicio><fim>740</fim><chave>cod_saidas_isentas</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>741</inicio><fim>743</fim><chave>cod_outras_saidas</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>744</inicio><fim>757</fim><chave>cnpj_orig</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>758</inicio><fim>775</fim><chave>inscr_est_orig</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>776</inicio><fim>777</fim><chave>uf_orig</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>778</inicio><fim>791</fim><chave>cnpj_dest</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>792</inicio><fim>809</fim><chave>inscr_dest</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>810</inicio><fim>811</fim><chave>uf_dest</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>812</inicio><fim>825</fim><chave>trans_cnpj</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>826</inicio><fim>843</fim><chave>trans_inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>844</inicio><fim>845</fim><chave>trans_estado</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>846</inicio><fim>846</fim><chave>modal</chave><tipo></tipo><padrao>1</padrao><descricao>modalidade transporte</descricao></registro>
+    <registro><inicio>847</inicio><fim>853</fim><chave>placa1</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>854</inicio><fim>855</fim><chave>uf_placa1</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>856</inicio><fim>862</fim><chave>placa2</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>863</inicio><fim>864</fim><chave>uf_placa2</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>865</inicio><fim>871</fim><chave>placa3</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>872</inicio><fim>873</fim><chave>uf_placa3</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>874</inicio><fim>874</fim><chave>mov_fisica_comb</chave><tipo>text</tipo><padrao></padrao><descricao>s, n ou em branco se nao for comb</descricao></registro>
+    <registro><inicio>875</inicio><fim>875</fim><chave>tipo_receita_nf_com</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>876</inicio><fim>879</fim><chave>cmpl_nf_com</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>880</inicio><fim>883</fim><chave>classif_contab_intgr</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>884</inicio><fim>885</fim><chave>cod_dipam</chave><tipo>text</tipo><padrao></padrao><descricao>consultar tabela</descricao></registro>
+    <registro><inicio>886</inicio><fim>895</fim><chave>cod_munic_coleta</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>896</inicio><fim>909</fim><chave>base_subst</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>910</inicio><fim>923</fim><chave>imp_retido_subst</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>924</inicio><fim>929</fim><chave>cod_recolhimento_pis_cofins</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>930</inicio><fim>930</fim><chave>nota_cancelada</chave><tipo>text</tipo><padrao></padrao><descricao>0 - nao cancelada 1 - cancelada</descricao></registro>
+    <registro><inicio>931</inicio><fim>935</fim><chave>espaco_reservado</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>936</inicio><fim>949</fim><chave>valor_frete</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>950</inicio><fim>963</fim><chave>valor_seguro</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>964</inicio><fim>977</fim><chave>valor_outr_des</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>978</inicio><fim>982</fim><chave>especie_doc</chave><tipo>text</tipo><padrao></padrao><descricao>windows</descricao></registro>
+    <registro><inicio>983</inicio><fim>983</fim><chave>ipi_base_icms</chave><tipo>text</tipo><padrao></padrao><descricao>0 - nao 1 - sim</descricao></registro>
+    <registro><inicio>984</inicio><fim>986</fim><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>987</inicio><fim>988</fim><chave>subserie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>989</inicio><fim>998</fim><chave>cupom_ini</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>999</inicio><fim>1008</fim><chave>cupom_fim</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1009</inicio><fim>1018</fim><chave>nr_disp_ini</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1019</inicio><fim>1028</fim><chave>nr_disp_fim</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1029</inicio><fim>1033</fim><chave>cod_centro_custo</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1034</inicio><fim>1036</fim><chave>cod_simples</chave><tipo>integer</tipo><padrao></padrao><descricao>tabela nacional</descricao></registro>
+    <registro><inicio>1037</inicio><fim>1054</fim><chave>cliente_inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1055</inicio><fim>1062</fim><chave>hr_emissao_nf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1063</inicio><fim>1070</fim><chave>hora_saida</chave><tipo>hora</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1071</inicio><fim>1073</fim><chave>tipo_nota_associada</chave><tipo>text</tipo><padrao></padrao><descricao>verificar tabela</descricao></registro>
+    <registro><inicio>1074</inicio><fim>1075</fim><chave>uf_nota</chave><tipo>text</tipo><padrao></padrao><descricao>verificar tabela</descricao></registro>
+    <registro><inicio>1076</inicio><fim>1077</fim><chave>uf_coleta_orig</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1078</inicio><fim>1082</fim><chave>cod_ibge_coleta_orig</chave><tipo>text</tipo><padrao></padrao><descricao>verificar tabela</descricao></registro>
+    <registro><inicio>1083</inicio><fim>1084</fim><chave>uf_entrega_orig</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1085</inicio><fim>1089</fim><chave>cod_ibge_entrega_orig</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1090</inicio><fim>1100</fim><chave>sped_coleta_cpf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1101</inicio><fim>1111</fim><chave>sped_entrega_cpf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1112</inicio><fim>1131</fim><chave>sped_cod_autoriz_sefaz</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1132</inicio><fim>1151</fim><chave>sped_comb_nr_passe_fiscal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1152</inicio><fim>1156</fim><chave>sped_comb_temp</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1157</inicio><fim>1170</fim><chave>sped_comb_peso_bruto</chave><tipo>text</tipo><padrao></padrao><descricao>peso em kg</descricao></registro>
+    <registro><inicio>1171</inicio><fim>1184</fim><chave>sped_comb_peso_liq</chave><tipo>text</tipo><padrao></padrao><descricao>peso em kg</descricao></registro>
+    <registro><inicio>1185</inicio><fim>1224</fim><chave>sped_comb_nome_motorista</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1225</inicio><fim>1235</fim><chave>sped_comb_cpf_motorista</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1236</inicio><fim>1237</fim><chave>sped_eletr_cod_consumo</chave><tipo>text</tipo><padrao></padrao><descricao>tabela sped 4.4.5</descricao></registro>
+    <registro><inicio>1238</inicio><fim>1251</fim><chave>sped_eletr_consumo</chave><tipo>text</tipo><padrao></padrao><descricao>em KWh</descricao></registro>
+    <registro><inicio>1252</inicio><fim>1265</fim><chave>valor_cobrado_terceiros</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1266</inicio><fim>1267</fim><chave>sped_comunic_tp_servico</chave><tipo>text</tipo><padrao></padrao><descricao>verificar tabela</descricao></registro>
+    <registro><inicio>1268</inicio><fim>1275</fim><chave>sped_comunic_dtini_servico</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1276</inicio><fim>1283</fim><chave>sped_comunic_dtfim_servico</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1284</inicio><fim>1289</fim><chave>sped_comunic_periodo_serv</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1290</inicio><fim>1319</fim><chave>sped_comunic_cod_area</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1320</inicio><fim>1338</fim><chave>sped_comunic_ident_terminal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1339</inicio><fim>1340</fim><chave>sped_comunic_cod_consumo</chave><tipo>text</tipo><padrao></padrao><descricao>ver tabela sped 4.4.4</descricao></registro>
+    <registro><inicio>1341</inicio><fim>1354</fim><chave>mg_gam57_frete</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1355</inicio><fim>1362</fim><chave>mg_gam57_aliq_icms_frete</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1363</inicio><fim>1376</fim><chave>mg_gam57_icms_frete</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1377</inicio><fim>1420</fim><chave>sped_chave_nfe</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1421</inicio><fim>1422</fim><chave>uf_serv_eletrica</chave><tipo>text</tipo><padrao></padrao><descricao>sped</descricao></registro>
+    <registro><inicio>1423</inicio><fim>1427</fim><chave>ibge_serv_eletrica</chave><tipo>text</tipo><padrao></padrao><descricao>sped</descricao></registro>
+    <registro><inicio>1428</inicio><fim>1429</fim><chave>tipo_cobranca_serv_eletr</chave><tipo>text</tipo><padrao></padrao><descricao>sped</descricao></registro>
+    <registro><inicio>1430</inicio><fim>1469</fim><chave>descr_cobranca_serv_eletr</chave><tipo>text</tipo><padrao></padrao><descricao>sped</descricao></registro>
+    <registro><inicio>1470</inicio><fim>1499</fim><chave>nr_processo_serv_eletr</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>1500</inicio><fim>1500</fim><chave>ind_orig_proc</chave><tipo>text</tipo><padrao></padrao><descricao>sped</descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>itens_saida</nome>
+    <registro><inicio>1</inicio><fim>14</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>15</inicio><fim>22</fim><chave>data_saida</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>23</inicio><fim>28</fim><chave>numero_nota</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>29</inicio><fim>31</fim><chave>serie_subserie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>32</inicio><fim>32</fim><chave>item_desdobr_nota</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>33</inicio><fim>34</fim><chave>numero_item</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>35</inicio><fim>54</fim><chave>cod_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>55</inicio><fim>57</fim><chave>natureza</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>58</inicio><fim>58</fim><chave>item_desdobr_nat_op</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>59</inicio><fim>61</fim><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>62</inicio><fim>64</fim><chave>situacao_trib</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>65</inicio><fim>78</fim><chave>quantidade</chave><tipo>float_point_3</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>79</inicio><fim>92</fim><chave>preco_unit</chave><tipo>float_point_6</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>93</inicio><fim>106</fim><chave>descontos</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>107</inicio><fim>120</fim><chave>valor_item</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>121</inicio><fim>125</fim><chave>aliquota_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>126</inicio><fim>139</fim><chave>valor_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>140</inicio><fim>153</fim><chave>base_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>154</inicio><fim>167</fim><chave>base_subst</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>168</inicio><fim>247</fim><chave>descricao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>248</inicio><fim>249</fim><chave>grupo_produto</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>250</inicio><fim>259</fim><chave>classificacao_fiscal</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>260</inicio><fim>261</fim><chave>item_desdobr_ccf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>262</inicio><fim>266</fim><chave>aliquota_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>267</inicio><fim>271</fim><chave>perc_red_base_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>272</inicio><fim>285</fim><chave>base_subst</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>286</inicio><fim>290</fim><chave>aliquota_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>291</inicio><fim>292</fim><chave>especie_prod</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>293</inicio><fim>295</fim><chave>situacao_trib</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>296</inicio><fim>325</fim><chave>nome_fantasia</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>326</inicio><fim>328</fim><chave>numero_item</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>329</inicio><fim>329</fim><chave>mov_mercadoria</chave><tipo></tipo><padrao>S</padrao><descricao>S ou N</descricao></registro>
+    <registro><inicio>330</inicio><fim>343</fim><chave>base_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>344</inicio><fim>344</fim><chave>indicador_trib_ipi</chave><tipo>text</tipo><padrao></padrao><descricao>T - tributado I - isento O - outro</descricao></registro>
+    <registro><inicio>345</inicio><fim>349</fim><chave>aliquota_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>350</inicio><fim>363</fim><chave>valor_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>364</inicio><fim>364</fim><chave>indicador_trib_icms</chave><tipo>text</tipo><padrao></padrao><descricao>T - tributado I - isento O - outro</descricao></registro>
+    <registro><inicio>365</inicio><fim>378</fim><chave>valor_subst</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>379</inicio><fim>392</fim><chave>base_calc_st</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>393</inicio><fim>406</fim><chave>icms_st</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>407</inicio><fim>420</fim><chave>icms_st_completar</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>421</inicio><fim>434</fim><chave>base_calc_retencao</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>435</inicio><fim>448</fim><chave>parcela_imp_retido</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>449</inicio><fim>451</fim><chave>grupo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>452</inicio><fim>453</fim><chave>prodepe_cod_apuracao</chave><tipo>text</tipo><padrao></padrao><descricao>especifico PE</descricao></registro>
+    <registro><inicio>454</inicio><fim>455</fim><chave>prodepe_indic_incent_entr</chave><tipo>text</tipo><padrao></padrao><descricao>especifico PE</descricao></registro>
+    <registro><inicio>456</inicio><fim>511</fim><chave>reserva_dados_prod</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>512</inicio><fim>525</fim><chave>cnpj_op_destino</chave><tipo>text</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>526</inicio><fim>535</fim><chave>cod_nr_terminal</chave><tipo>text</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>536</inicio><fim>537</fim><chave>prodepe_cod_apuracao</chave><tipo>text</tipo><padrao></padrao><descricao>99 - especifico PE</descricao></registro>
+    <registro><inicio>538</inicio><fim>538</fim><chave>gera_registro_88</chave><tipo>text</tipo><padrao></padrao><descricao>0 - nao 1 - sim</descricao></registro>
+    <registro><inicio>539</inicio><fim>552</fim><chave>isento_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>553</inicio><fim>566</fim><chave>outras_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>567</inicio><fim>580</fim><chave>isentas_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>581</inicio><fim>594</fim><chave>outras_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>595</inicio><fim>598</fim><chave>grupo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>599</inicio><fim>601</fim><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>602</inicio><fim>603</fim><chave>subserie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>604</inicio><fim>613</fim><chave>numero_doc</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>614</inicio><fim>627</fim><chave>despesas_acessorias</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>628</inicio><fim>629</fim><chave>cod_situacao_trib_ipi</chave><tipo>text</tipo><padrao></padrao><descricao>tabela sped 4.3.2</descricao></registro>
+    <registro><inicio>630</inicio><fim>631</fim><chave>cod_situacao_trib_pis</chave><tipo>text</tipo><padrao></padrao><descricao>tabela sped 4.3.3</descricao></registro>
+    <registro><inicio>632</inicio><fim>633</fim><chave>cod_situacao_trib_cofins</chave><tipo>text</tipo><padrao></padrao><descricao>tabela sped 4.3.4</descricao></registro>
+    <registro><inicio>634</inicio><fim>654</fim><chave>med_nr_lote_fabr</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>655</inicio><fim>670</fim><chave>med_qtd_item_lote</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>671</inicio><fim>678</fim><chave>med_data_fabr</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>679</inicio><fim>686</fim><chave>med_data_validade</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>687</inicio><fim>700</fim><chave>med_preco_tabelado</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>701</inicio><fim>701</fim><chave>veic_indicador_operacao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>702</inicio><fim>713</fim><chave>ipi_qtd_selo_controle_aplicada</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>714</inicio><fim>727</fim><chave>ipi_valor_un_padrao_trib</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>728</inicio><fim>742</fim><chave>ipi_qtd_un_padrao_trib</chave><tipo>float_point_3</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>743</inicio><fim>750</fim><chave>data_escrituracao_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>751</inicio><fim>760</fim><chave>numero_nota_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>761</inicio><fim>766</fim><chave>serie_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>767</inicio><fim>772</fim><chave>subserie_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>773</inicio><fim>775</fim><chave>nr_item_desdobramento_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>776</inicio><fim>789</fim><chave>cnpj_fornec_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>790</inicio><fim>807</fim><chave>inscr_est_ricms</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>808</inicio><fim>811</fim><chave>ressarc_subst_trb_ano_nf_ult_entrada</chave><tipo>text</tipo><padrao></padrao><descricao>AAAA</descricao></registro>
+    <registro><inicio>812</inicio><fim>826</fim><chave>ressarc_subst_trib_qtd_item_ult_entr</chave><tipo>float_point_3</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>827</inicio><fim>840</fim><chave>ressarc_subst_trb_valor_unit_nf_ult_entr</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>841</inicio><fim>854</fim><chave>ressarc_subst_trib_val_unit_base_calc</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>855</inicio><fim>868</fim><chave>valor_reducao_base_calc</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>869</inicio><fim>870</fim><chave>sped_tipo_prod</chave><tipo>text</tipo><padrao></padrao><descricao>conferir tabela</descricao></registro>
+    <registro><inicio>871</inicio><fim>876</fim><chave>cod_selo_controle_ipi</chave><tipo>text</tipo><padrao></padrao><descricao>tab sped 4.5.2</descricao></registro>
+    <registro><inicio>877</inicio><fim>881</fim><chave>classe_enquadr_ipi</chave><tipo>text</tipo><padrao></padrao><descricao>tab sped 4.5.1</descricao></registro>
+    <registro><inicio>882</inicio><fim>882</fim><chave>med_ref_base_calc</chave><tipo>text</tipo><padrao></padrao><descricao>conferir tabela</descricao></registro>
+    <registro><inicio>883</inicio><fim>883</fim><chave>med_tip_prod</chave><tipo>text</tipo><padrao></padrao><descricao>conferir tabela</descricao></registro>
+    <registro><inicio>884</inicio><fim>897</fim><chave>med_preco_tabelado</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>898</inicio><fim>901</fim><chave>comunic_cod_classif_item</chave><tipo>text</tipo><padrao></padrao><descricao>tab sped 4.4.1</descricao></registro>
+    <registro><inicio>902</inicio><fim>902</fim><chave>comunic_tipo_receita</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>903</inicio><fim>906</fim><chave>energ_eletr_cod_classif_item</chave><tipo>text</tipo><padrao></padrao><descricao>tab sped 4.4.1</descricao></registro>
+    <registro><inicio>907</inicio><fim>907</fim><chave>energ_eletr_tipo_receita</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>908</inicio><fim>924</fim><chave>veic_numero_chassi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>925</inicio><fim>938</fim><chave>ipi_val_un_padrao_trib</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>939</inicio><fim>941</fim><chave>cod_enquadr_legal_ipi</chave><tipo>text</tipo><padrao></padrao><descricao>tab 4.5.3</descricao></registro>
+    <registro><inicio>942</inicio><fim>942</fim><chave>cod_movimento</chave><tipo>integer</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>943</inicio><fim>943</fim><chave>tipo_produto</chave><tipo>text</tipo><padrao></padrao><descricao>verficiar tabela</descricao></registro>
+    <registro><inicio>944</inicio><fim>950</fim><chave>cod_prod_relevantes</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>951</inicio><fim>954</fim><chave>cod_sefaz_reg_88_sp</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>955</inicio><fim>970</fim><chave>preco_unit_6</chave><tipo>float_point_6</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>971</inicio><fim>971</fim><chave>tipo_prod_ce</chave><tipo>text</tipo><padrao></padrao><descricao>especif. ceara, verif tabela</descricao></registro>
+  </sessao>
+</layout>

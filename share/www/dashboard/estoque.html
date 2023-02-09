@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="no-js" style="display: none" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=11; IE=9; IE=8; IE=7; IE=EDGE" />
+		<title>Dashboard - AutoSystem</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="icon.png">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<link id="arquivoCSS" rel="stylesheet" href="css/linx.css">
+		<link rel="stylesheet" href="css/fontes/fontes.css">
+		<script type="text/javascript">
+			window.onload = function () {
+			  data = new Date();
+			  dia = data.getDate().toString();
+			  mes = (data.getMonth()+1).toString();
+			  ano = data.getFullYear();
+			  while (dia.length < 2) {
+			    dia = "0" + dia;
+			  }
+			  while (mes.length < 2) {
+			    mes = "0" + mes;
+			  }
+			  document.getElementById("datePicker").value = dia+'/'+mes+'/'+ano;
+			  setActiveStyleSheet();
+			  updateSelect();
+			};
+
+			function fecharPagina() {
+				$.getJSON("http://127.0.0.1:8000/Logout?", {}, function(data, status) {
+					alert("success");
+				})
+				.done(function() { alert('Não foi possível encerrar o serviço Dashboard!');
+				})
+				.fail(function() { alert('Serviço Dashboard finalizado! '); 
+				})
+				.always(function() {
+					window.close();
+				});
+			};
+			window.onunload = function (){
+				var isChrome = navigator.userAgent.indexOf("Chrome") != -1;
+				if(isChrome == true){
+        			//fecharPagina();
+     			}
+			};
+
+			function updateSelect() {
+				$.getJSON("http://127.0.0.1:8000/Produtos?", {}, function (data, status) {
+					if (status != 'success') {
+						alert("Erro ao buscar dados de produtos.")
+					} else {
+						// Apaga as informações anteriores do select
+						var element = document.getElementById('selProduto');
+						while (element.firstChild) {
+							element.removeChild(element.firstChild);
+						}
+						// Preenche options do select
+						var master = $('#selProduto');
+						for (var x in data.dados.produtos_list) {
+							master.append('<option value="" id='+data.dados.produtos_list[x].produto+'>'+data.dados.produtos_list[x].produto_nome+'</option>');
+						};
+						master.selectedIndex = 0;
+						var opcaoSelecionada = $('#selProduto option:selected')[0];
+						getProjecaoEstoque();
+					};
+				});
+			};
+
+			function setActiveStyleSheet() {
+				$(".menu img").each( function(i) {
+					$(this).attr('src', $(this).attr('src').replace("img/", "img/linx/"));
+				});
+				$.getJSON("http://127.0.0.1:8000/ValidaIntegracao?", {}, function (data, status) {
+					if (status != 'success') {
+						alert("Erro ao buscar dados de dados da integração.")
+						$("html").css("display", "block");
+					} else {
+						var isIntegracaoIPP = data.dados.is_integracao_ipp;
+
+						if (isIntegracaoIPP) {
+							document.getElementById("arquivoCSS").href = "css/main.css";
+
+							$(".menu img").each( function(i) {
+								$(this).attr('src', $(this).attr('src').replace("img/linx/", "img/"));
+							});
+						}
+
+						$("html").css("display", "block");			
+					};
+				});
+			};
+		</script>
+	</head>
+	<body>
+		<nav class="menu">
+			<img src="img/logomarca.png" class="logo" alt="">
+			<img src="img/logomarca-samll.png" class="logo-small" alt="">
+			<ul class="list">
+				<li class="item active">
+					<a href="dashboard.html" onclick="updatePageNext()">
+					<img src="img/menu-ic-dashboard.png" class="ic" alt="">
+					<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="faturamento.html" onclick="updatePageNext()">
+					<img src="img/menu-ic-faturamentos.png" class="ic" alt="">
+					<span>Faturamento</span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="estoque.html" onclick="updatePageNext()">
+					<img src="img/menu-ic-estoque.png" class="ic" alt="">
+					<span>Estoque</span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="ticketmedio.html" onclick="updatePageNext()">
+					<img src="img/menu-ic-ticket.png" class="ic" alt="">
+					<span>Ticket Médio</span> 
+					</a>
+				</li>
+				<li class="item">
+					<a href="ranking.html" onclick="updatePageNext()">
+					<img src="img/menu-ic-ranking.png" class="ic" alt="">
+					<span>Ranking</span>
+					</a>
+				</li>
+			</ul>
+			<div style="display: none" class="bt" onclick="logout()">Logout</div>
+		</nav>
+		<header class="header">
+			<h1 id="empresa" class="heading">Nome do Posto</h1>
+			<div id="dataHora" class="box">Data</div>
+			<div id="usuario" class="box"><img src="img/header-user.png" class="ic" alt="">Nome do Usuário</div>
+		</header>
+		<div class="main">
+			<section class="main-container">
+				<header class="main-header">
+					<h1 class="heading">Estoque</h1>
+					<div class="input" id="inputDate" style="display: none">
+						<p>Data base: <input id="datePicker" value="" type="text" width="176" readonly></p>
+					</div>
+					<a class="bt" onclick="updatePage()">Atualizar <img src="img/bt-ic-reload.png" class="ic" alt=""></a>
+				</header>
+				<!-- Row -->
+				<div class="row">
+					<div class="col col1">
+						<div class="col-content">
+							<div class="head">
+								<span class="label">ESTOQUE</span>
+								<h2 class="heading">Nível dos Tanques</h2>
+							</div>
+							<div id="chartEstoqueContent" class="body">
+								<canvas id="chartEstoque"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+				<!-- Row -->
+				<div class="row">
+					<div class="col col1">
+						<div class="col-content">
+							<div class="head">
+								<span class="label">ESTOQUE</span>
+								<h2 class="heading">Projeção de estoque</h2>
+
+								<p class="label">Selecione um combustível:
+									<select id="selProduto" class="input" name="select" onchange="getProjecaoEstoque()">
+										<option value=""> </option>
+									</select>
+								</p>
+
+							</div>
+		
+							<div id="chartProjecaoContent" class="body" style="display: flex">
+								<canvas id="chartProjecao"></canvas>
+							</div>
+							<div id="msgProjecao" class="heading-msg" style="display: none">
+								<span class="heading-msg"> Não há dados para gerar este indicador</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+				<!-- Row -->
+				<div class="row">
+					<div class="col col1">
+						<div class="col-content">
+							<div class="head">
+								<span class="label">ESTOQUE</span>
+								<h2 class="heading">Perdas/Sobras de Combustíveis</h2>
+							</div>
+							<div id="chartPerdasSobrasContent" class="body" style="display: flex">
+								<canvas id="chartPerdasSobras"></canvas>
+							</div>
+							<div id="msgPerdasSobras" class="heading-msg" style="display: none">
+								<span class="heading-msg"> Não há dados para gerar este indicador</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</section>
+		</div>
+		<div id="divLoader" class="loader">
+			<div class="loading"></div>
+		</div>
+		<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/Chart.bundle.js"></script>
+		<script src="js/estoque.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script>
+			data = new Date();
+			dia = data.getDate().toString();
+			mes = (data.getMonth()+1).toString();
+			ano = data.getFullYear();
+			while (dia.length < 2) {
+				dia = "0" + dia;
+			}
+			while (mes.length < 2) {
+				mes = "0" + mes;
+			}
+			$('#datePicker').datepicker({
+				dateFormat: "dd/mm/yy",
+				locale: 'pt-br',
+				dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+				dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+				dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+				monthNames: [  'Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+    			monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+    			nextText: 'Próximo',
+    			prevText: 'Anterior',
+				defaultViewDate: { year: ano, month: mes, day: dia },
+				currentText: "Today",
+			});
+			$(".datePicker[value='']").datepicker("setDate", new Date());
+		</script>
+	</body>
+</html>

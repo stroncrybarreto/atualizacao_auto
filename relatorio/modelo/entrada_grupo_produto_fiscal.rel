@@ -1,0 +1,87 @@
+<relatorio dados="entrada_grupo_produto" tamfonte="8" ordem="empresa_cod_nome,grupo_cod_nome" paper_orientation="landscape">
+<apelidos>
+24 titulo_relat		 tam=202  alinha=centro	expr='ENTRADAS POR GRUPO DE PRODUTO'
+1  rel_posto_nome	 tam=180
+2  rel_data_hora	 tam=18
+4  titulo2		     tam=202  alinha=centro
+5  empresa_cod_nome	 tam=188
+6  grupo_cod_nome	 tam=40
+7  produto_nome		 tam=29
+8  data			     tam=10  fmt=data
+9  fornecedor		 tam=19
+10 documento		 tam=10	 alinha=direita
+11 quantidade		 tam=15  alinha=direita	fmt=float3
+12 preco_unit   	 tam=12  fmt=float3
+13 valor		     tam=18  fmt=float3
+14 grupo_total_qtde	 tam=14  alinha=direita	fmt=float2		func=soma		campo=quantidade	grupo=2
+15 grupo_total_valor tam=18  alinha=direita	fmt=float2		func=soma		campo=valor			grupo=2
+16 empresa_total	 tam=18  fmt=float3		func=soma		campo=valor		grupo=1
+17 geral_total		 tam=18	 fmt=float3		func=soma		campo=valor
+19 geral_quantidade	 tam=15  alinha=direita	fmt=float3		func=soma		campo=quantidade
+20 total_quantidade	 tam=15  alinha=direita	fmt=float3		func=soma		campo=quantidade	grupo=1	
+18 deposito_codigo   tam=8	 alinha=direita
+21 media			 tam=11	 fmt=float2	alinha=direita	expr=grupo_total_valor/grupo_total_qtde
+22 media_total		 tam=12	 fmt=float3	alinha=direita	expr=empresa_total/total_quantidade
+23 media_geral		 tam=12	 fmt=float3	alinha=direita	expr=geral_total/geral_quantidade
+
+25 cst				 tam=3	alinha=direita
+26 cst_pis			 tam=3	alinha=direita
+27 cst_cofins		 tam=6	alinha=direita
+28 csosn			 tam=5	alinha=direita
+29 cfop				 tam=6	alinha=direita
+30 base_icms		 tam=9	alinha=direita	fmt=float2
+31 aliquota_icms	 tam=6	alinha=direita
+
+32	total_base_icms	 tam=9	alinha=direita	fmt=float2		func=soma		campo=base_icms	grupo=1
+33	grupo_base_icms	 tam=9	alinha=direita	fmt=float2		func=soma		campo=base_icms	grupo=2
+34	geral_base_icms	 tam=9	alinha=direita	fmt=float2		func=soma		campo=base_icms
+
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                                        #2        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#24   
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                                                                                                             |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_cod_nome,grupo_cod_nome">
+| Grupo: #6                                                                                                                                                                                               |
++------------+------------------------------+---------------------+----------+-----+-----+--------+-------+--------+--------+-----------+-----------+-----------------+--------------+--------------------+
+|    Data    |           Produto            |      Fornecedor     | Depósito | CST | PIS | COFINS | CSOSN |  CFOP  |  ICSM  | Base ICMS | Documento |    Quantidade   |  Preço custo |    Custo total     |
++------------+------------------------------+---------------------+----------+-----+-----+--------+-------+--------+--------+-----------+-----------+-----------------+--------------+--------------------+
+</cab_grupo>
+<detalhe>
+| #8         | #7                           | #9                  | #18      | #25 | #26 | #27    | #28   | #29    | #31    | #30       | #10       | #11             | #12          | #13                |
+</detalhe>
+<rod_grupo nome="2">
++------------+------------------------------+---------------------+----------+-----+-----+--------+-------+--------+--------+-----------+-----------+-----------------+--------------+--------------------+
+| Total do grupo                                                                                                            | #33       |           | #14             | #21          | #15                |
++---------------------------------------------------------------------------------------------------------------------------+-----------+-----------+-----------------+--------------+--------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+
++---------------------------------------------------------------------------------------------------------------------------+-----------+-----------+-----------------+--------------+--------------------+
+| Total da empresa                                                                                                          | #32       |           | #20             | #22          | #16                |
++---------------------------------------------------------------------------------------------------------------------------+-----------+-----------+-----------------+--------------+--------------------+
+ 
+</rod_grupo>
+<rod_relat>
+
++---------------------------------------------------------------------------------------------------------------------------+-----------+-----------+-----------------+--------------+--------------------+
+| Total geral                                                                                                               | #34       |           | #19             | #23          | #17                |
++---------------------------------------------------------------------------------------------------------------------------+-----------+-----------+-----------------+--------------+--------------------+
+</rod_relat>
+
+<rod_pagina>
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>34ca4a67640f424b46d23378bce8aea8</hash>
+</relatorio>

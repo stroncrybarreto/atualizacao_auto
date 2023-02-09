@@ -1,0 +1,75 @@
+<relatorio dados="vencto_cartao_empresa" ordem="ordem">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+3 conta_debitar				tam=20
+4  empresa_cod_nome				tam=60
+5  data						tam=10	fmt=data
+6  turno					tam=3 	alinha=centro
+7  conta					tam=68  alinha=esquerda
+8  vencto					tam=10	fmt=data
+9  valor					tam=14  fmt=%.02f	alinha=direita
+10 tarifa		       		tam=10	fmt=%.02f 	alinha=direita 
+11 valor_liquido 			tam=15  fmt=%.02f	alinha=direita
+12 valor_subtotal			tam=14  fmt=%.02f	func=soma	campo=valor	grupo=2	alinha=direita
+13 tarifa_subtotal			tam=10  fmt=%.02f	func=soma	campo=tarifa	grupo=2	alinha=direita 
+14 valor_liquido_subtotal	tam=15  fmt=%.02f	func=soma	campo=valor_liquido	grupo=2	alinha=direita
+15 valor_total				tam=14  fmt=%.02f	func=soma	campo=valor	alinha=direita
+16 tarifa_total				tam=10  fmt=%.02f	func=soma	campo=tarifa	alinha=direita 
+17 valor_liquido_total		tam=14  fmt=%.02f	func=soma	campo=valor_liquido	alinha=direita
+18 taxa_adm					tam=8	fmt=%.02f
+19 taxa_adm_subtotal		tam=8	fmt=%.02f	expr=tarifa_subtotal/valor_subtotal*100.0
+20 taxa_adm_total			tam=8	fmt=%.02f	expr=tarifa_total/valor_total*100.0
+21 taxa_adm_subtotal2		tam=8	fmt=%.02f	expr=tarifa_subtotal2/valor_subtotal2*100.0
+22 titulo					tam=79	alinha=centro
+23 valor_subtotal2			tam=14  fmt=%.02f	func=soma	campo=valor	grupo=1	alinha=direita
+24 tarifa_subtotal2			tam=10  fmt=%.02f	func=soma	campo=tarifa	grupo=1	alinha=direita 
+25 valor_liquido_subtotal2	tam=15  fmt=%.02f	func=soma	campo=valor_liquido	grupo=1	alinha=direita
+26 observacao				tam=108
+</apelidos>
+<cab_pagina>
+#1                                                             #2
+-------------------------------------------------------------------------------
+  
+#22
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa">
++-----------------------------------------------------------------------------+
+| Empresa: #4                                                                 |
++-----------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,empresa,cod_num,conta">
+| Conta: #7                                                                   |
++----------------+-----------------+-----------+------------+-----------------+
+|   Vencimento   |      Valor      | Taxa adm. |   Tarifa   |  Valor líquido  |
++----------------+-----------------+-----------+------------+-----------------+
+</cab_grupo>
+<detalhe>
+|   #8           | #9              | #18      %| #10        | #11             |
+</detalhe>
+<rod_grupo nome="2">
++----------------+-----------------+-----------+------------+-----------------+
+| Total conta    | #12             | #19      %| #13        | #14             |
++----------------+-----------------+-----------+------------+-----------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
++----------------+-----------------+-----------+------------+-----------------+
+| Total empresa  | #23             | #21      %| #24        | #25             |
++----------------+-----------------+-----------+------------+-----------------+
+
+</rod_grupo>
+<rod_relat>
+
++----------------+-----------------+-----------+------------+-----------------+
+| Total geral    | #15             | #20      %| #16        | #17             |
++----------------+-----------------+-----------+------------+-----------------+
+
+#26
+</rod_relat>
+<rod_pagina>
++-----------------------------------------------------------------------------+
+</rod_pagina>
+<hash>297ccdf53eef4060a64a773f62d7dbd1</hash>
+</relatorio>

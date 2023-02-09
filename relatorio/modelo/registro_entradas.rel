@@ -1,0 +1,93 @@
+<relatorio dados="registro_entradas_saidas_main" docname="Registro de Entradas">
+<apelidos>
+</apelidos>
+<detalhe>
+</detalhe>
+<subrelat dados="registro_entradas">
+<apelidos>
+1  rel_posto_nome	   tam=60
+2  rel_data_hora	   tam=18
+3  dt_entrada_ini      tam=10                    fmt=data
+4  dt_entrada_fim      tam=10                    fmt=data
+5  empresa_nome	       tam=235    alinha=centro
+6  cpf                 tam=235    alinha=centro
+7  inscr_est           tam=235    alinha=centro
+8  data_entrada        tam=10                    fmt=data
+9  especie             tam=7
+10  serie              tam=9
+11  numero_nota        tam=8      alinha=direita
+12  data_emissao       tam=10                    fmt=data
+13  cod_participante   tam=17
+14  uf                 tam=5      alinha=centro
+15  valor_nota         tam=13     alinha=direita fmt=float2
+16  cfop               tam=6      alinha=direita
+17  ipi                tam=12     alinha=direita fmt=float2
+18  bicms              tam=12     alinha=direita fmt=float2
+19  vicms              tam=12     alinha=direita fmt=float2
+20  aicms              tam=5      alinha=centro  fmt=float2
+21  bsubst             tam=12     alinha=direita fmt=float2
+22  vsubst             tam=12     alinha=direita fmt=float2
+23  visento            tam=12     alinha=direita fmt=float2
+24  voutras            tam=12     alinha=direita fmt=float2
+25  obs                tam=38
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                                                                                                      #2        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                                   R E G I S T R O   D E   E N T R A D A S 
+
+ #5                                                                                                                                                                                                                                             
+ #6                                                                                                                                                                                                                                             
+ #7                                                                                                                                                                                                                                             
+                                                                                                       Período: #3         a #4
+
++------------+--------------------------------------------------------------------------+---------------+--------+--------------+-------------------------------------+-----------------------------+--------------+--------------+----------------------------------------+
+|            |                           Documentos Fiscais                             |               |        |     IPI      |                    ICMS             |        Substituição         |              |              |                                        |
+|            +---------+-----------+----------+------------+-------------------+--------+               |        +--------------+--------------+--------------+-------+--------------+--------------+              |              |                                        |
+|  Data de   |         |           |          |            |                   |        |     Valor     |  CFOP  |              |              |              |       |              |              |   Isentos    |    Outros    |                                        |
+|  Entrada   | Espécie |   Série   |  Número  |  Data do   |      Código       |   UF   |    Contábil   |        |    Valor     |     Base     |     Valor    | Aliq. |     Base     |     Valor    |              |              |                Observações             |
+|            |         | Sub-série |          | Documento  |     Emitente      | Origem |               |        |              |              |              |       |              |              |              |              |                                        |
++------------+---------+-----------+----------+------------+-------------------+--------+---------------+--------+--------------+--------------+--------------+-------+--------------+--------------+--------------+--------------+----------------------------------------+
+</cab_pagina>
+<detalhe>
+| #8         | #9      | #10       | #11      | #12        | #13               | #14    | #15           | #16    | #17          | #18          | #19          | #20   | #21          | #22          | #23          | #24          | #25                                    |
+</detalhe>
+<rod_relat>
++------------+---------+-----------+----------+------------+-------------------+--------+---------------+--------+--------------+--------------+--------------+-------+--------------+--------------+--------------+--------------+----------------------------------------+
+</rod_relat>
+</subrelat>
+<subrelat dados="registro_entradas_saidas_totalizador">
+<apelidos>
+1  legenda             tam=75     alinha=direita
+2  uf                  tam=5      alinha=centro
+3  subtotal_valor_nota tam=13     alinha=direita fmt=float2 
+4  subtotal_ipi        tam=12     alinha=direita fmt=float2
+5  subtotal_bicms      tam=12     alinha=direita fmr=float2
+6  subtotal_vicms      tam=12     alinha=direita fmt=float2
+7  subtotal_bsubst     tam=12     alinha=direita fmt=float2
+8  subtotal_vsubst     tam=12     alinha=direita fmt=float2
+9  subtotal_visento    tam=12     alinha=direita fmt=float2
+10  subtotal_voutras   tam=12     alinha=direita fmt=float2
+11  total_valor_nota   tam=13     alinha=direita fmt=float2 func=soma	campo=subtotal_valor_nota
+12  total_ipi          tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_ipi
+13  total_bicms        tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_bicms
+14  total_icms         tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_vicms
+15  total_bsubst       tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_bsubst
+16  total_subst        tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_vsubst
+17  total_visento      tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_visento
+18  total_voutras      tam=12     alinha=direita fmt=float2 func=soma	campo=subtotal_voutras
+</apelidos>
+<detalhe>
+| #1                                                                           | #2     | #3            |        | #4           | #5           | #6           |       | #7           | #8           | #9           | #10          |                                        |
++------------------------------------------------------------------------------+--------+---------------+--------+--------------+--------------+--------------+-------+--------------+--------------+--------------+--------------+----------------------------------------+
+</detalhe>
+<rod_relat>
+|                                                                  Total geral |   -    | #11           |        | #12          | #13          | #14          |       | #15          | #16          | #17          | #18          |                                        |
++------------------------------------------------------------------------------+--------+---------------+--------+--------------+--------------+--------------+-------+--------------+--------------+--------------+--------------+----------------------------------------+
+</rod_relat>
+</subrelat>
+
+<hash>41210da6cecc7756818c6e5c8089f681</hash>
+</relatorio>
+

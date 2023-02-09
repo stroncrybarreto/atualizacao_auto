@@ -1,0 +1,84 @@
+<relatorio dados="lmc_termo">
+<apelidos>
+1  nr_folhas			tam=3		fmt=%03d
+2  folhas_extenso		tam=40
+3  folha_ini			tam=4		fmt=%03d
+4  folha_fim			tam=4		fmt=%03d
+5  razao_social			tam=40
+6  endereco		    	tam=40
+7  cidade		    	tam=23
+8  estado		    	tam=2
+9  cpf			    	tam=20
+10 inscr_est			tam=20
+11 capacidade			tam=10  fmt=%d	alinha=esquerda
+12 cidade_data			tam=78	alinha=centro
+13 titulo		    	tam=78	alinha=centro
+14 nr_livro	 	    	tam=3		fmt=%03d
+15 distribuidora		tam=40
+16 inscr_municipal		tam=40
+17 produto_nome			tam=500
+18 nr_folha         		tam=4  	alinha=esquerda
+19 tanque_list      		tam=500
+20 cep            		tam=10
+21 bairro         		tam=20
+22 representante_cpf 		tam=14
+23 representante_nome 		tam=40
+24 junta_comercial_data 	tam=10 	fmt=data
+25 junta_comercial_registro 	tam=20
+26 data_ini			tam=10	fmt=data
+27 data_fim			tam=10	fmt=data
+28 desc_ultimo_lancamento tam=100
+</apelidos>
+
+<cab_pagina>
+</cab_pagina>
+
+<detalhe>
+
+                                        Folha Número #18
+														
+
+
+
+                 LIVRO DE MOVIMENTAÇÃO DE COMBUSTÍVEIS (LMC) - NR. #14
+
+   	     (Portaria Nº 26 de 13.11.92 do Departamento Nacional de Combustíveis) 
+
+
+
+        #13
+
+
+            Contém este livro: #1   #2
+        numeradas tipograficamente de nr. #3   ao nr. #4   e servirá
+        para o lançamento das operações no período de #26        a #27
+        próprias do estabelecimento do contribuinte abaixo identificado:
+#28
+        Nome do estabelecimento: #5
+        Endereço do Estabelecimento: #6
+        Município: #7                      Estado: #8
+        C.G.C.M.F. Número: #9
+        Inscrição Estadual Número: #10
+        Inscrição Municipal (ISS) Número: #16
+        Combustível: #17
+        Distribuidora com a qual opera: #15
+        Capacidade nominal de armazenamento: #11
+
+        Capacidade de armazenamento por tanque:
+        #19
+
+
+        #12
+
+
+
+                  ______________________________________________________
+                       ASSINATURA DO REPRESENTANTE LEGAL DA EMPRESA
+
+
+</detalhe>
+<rod_pagina>
+</rod_pagina>
+
+<hash>0af59c72173b048f10a536d3188b454c</hash>
+</relatorio>

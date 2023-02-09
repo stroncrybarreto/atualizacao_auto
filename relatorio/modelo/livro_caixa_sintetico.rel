@@ -1,0 +1,59 @@
+<relatorio dados="livro_caixa_sintetico">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo				tam=116	alinha=centro
+4  data_fim             tam=10 fmt=data
+5  conta_nome           tam=40
+6  conta_saldo          tam=16 fmt=%.02f
+7  movto_data           tam=10 fmt=data
+8  motivo_nome          tam=30
+9  movto_entrada        tam=12 fmt=%.02f
+10 movto_saida          tam=12 fmt=%.02f
+11 movto_saldo          tam=16 fmt=%.02f
+12 movto_contra_partida tam=20
+13 movto_total_entrada  tam=12 fmt=%.02f
+14 movto_total_saida    tam=12 fmt=%.02f
+15 total_entrada		tam=12 fmt=%.02f
+16 total_saida			tam=12 fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                                                                  #2        
+--------------------------------------------------------------------------------------------------------------------
+   
+LIVRO CAIXA
+#3
+   
+</cab_pagina>
+<cab_grupo nome="1" quebra="conta_codigo">
++------------------------------------------------------------------------------------------------------------------+
+| Conta: #5                                                                                              Sintético |
++------------+--------------------------------+-------------+-------------+-----------------+----------------------+
+| Data       | Historico                      | Entrada     | Saida       | Saldo           | Contra Partida       |
++------------+--------------------------------+-------------+-------------+-----------------+----------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="conta_codigo" repeticao="0">
+| Saldo inicial                                                            #6               |                      |
+</cab_grupo>
+<detalhe>
+| #7         | #8                             |#9           |#10          |#11              | #12                  |
+</detalhe>
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
++------------+--------------------------------+-------------+-------------+-----------------+----------------------+
+| TOTAL                                       |#13          |#14          |#11              |                      |
++---------------------------------------------+-------------+-------------+-----------------+----------------------+
+
+</rod_grupo>
+<rod_pagina>
++------------+--------------------------------+-------------+-------------+-----------------+----------------------+
+</rod_pagina>
+<rod_relat>
++---------------------------------------------+-------------+-------------+-----------------+----------------------+
+| TOTAL GERAL                                 |#15          |#16          |                                        |
++---------------------------------------------+-------------+-------------+----------------------------------------+
+</rod_relat>
+
+<hash>80ca9555ab354dd91ff26a8462509239</hash>
+</relatorio>

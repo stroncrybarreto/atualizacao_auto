@@ -1,0 +1,51 @@
+<relatorio dados="medicao_tanques">
+<apelidos>
+1  rel_posto_nome	tam=50
+2  rel_data_hora	tam=18
+3  rel_empresa          tam=25
+4  rel_data_operacao    tam=18
+5  rel_tanque	        tam=3
+6  rel_combustivel      tam=19
+7  rel_medicao_ant      tam=3  fmt=%.0f
+8  rel_litragem_ant     tam=8  fmt=float1
+9  rel_entrada          tam=8  fmt=float1
+10 rel_estoque          tam=8  fmt=float1
+11 rel_medicao_atual    tam=3  fmt=%.0f
+12 rel_litragem_atual   tam=8  fmt=float1
+13 rel_saida            tam=8  fmt=float1
+14 rel_bombas           tam=8  fmt=float1
+15 rel_diferenca        tam=10  fmt=float1
+16 rel_tot_saida        tam=8  fmt=float1
+17 rel_tot_bombas       tam=8  fmt=float1
+18 rel_tot_diferenca    tam=10  fmt=float1
+19 rel_cont_empresa     tam=5  fmt=%.0f
+</apelidos>
+<cab_pagina>
+#1                                                                                             #2
+----------------------------------------------------------------------------------------------------------------
+
+                                      {TIT}MEDIÇÕES DE TANQUE - Data: #4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
++--------------------------------------------------------------------------------------------------------------+
+| Empresa: #3                                                                                                  |
++--------------------------+---------------+---------+---------+---------------+---------+---------+-----------+
+|                          |    Inicial    |         |         |     Final     |   Saida |   Saida |           |
+| TQ | Combustivel         | Med |  Litros | Entrada | Estoque | Med |  Litros |  Tanque |  Bombas | Diferença |
++----+---------------------+-----+---------+---------+---------+-----+---------+---------+---------+-----------+
+</cab_grupo>
+<detalhe>
+|#5  | #6                  | #7  |#8       |#9       |#10      | #11 |#12      |#13      |#14      |#15        |
+</detalhe>
+<rod_grupo nome="1">
++----+---------------------+-----+---------+---------+---------+-----+---------+---------+---------+-----------+
+|                                                                Totais ->     |#16      |#17      |#18        |
++------------------------------------------------------------------------------+---------+---------+-----------+
+</rod_grupo>
+<rod_pagina>
++----+---------------------+-----+---------+---------+---------+-----+---------+---------+---------+-----------+
+</rod_pagina>
+
+<hash>1d478a9721774e6f176417152b24e845</hash>
+</relatorio>

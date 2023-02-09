@@ -1,0 +1,58 @@
+<relatorio dados="pagamento_remessa_consulta" docname="Relatório de Remessa de Pagamento a Fornecedores" font_size="x-small" ordem="empresa">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+4  banco_descricao		tam=40  alinha=esquerda
+5  agencia				tam=5	alinha=esquerda
+6  conta_corrente		tam=12	alinha=esquerda
+7  arquivo				tam=30  alinha=esquerda
+9  empresa_codigo   	tam=7	alinha=centro
+10 documento			tam=7	alinha=centro
+11 vencto	 			tam=10	alinha=centro   fmt=data
+12 fornecedor_nome		tam=36	alinha=esquerda
+13 valor_pagamento		tam=14	alinha=direita	fmt=float2
+14 total_registros		tam=14  alinha=direita  fmt=float0
+15 total_pagamentos 	tam=14	alinha=direita	fmt=float2
+16 portador_descricao	tam=40	alinha=esquerda
+18 motivo_erro_1		tam=48  alinha=esquerda
+19 motivo_erro_2		tam=48  alinha=esquerda
+98 titulo_p             tam=141 alinha=centro  expr='REMESSA DE PAGAMENTO'
+99 titulo               tam=141 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                    Data: #2                
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+#98
+#99
+
+Portador.: #16
+Banco....: #4
+Agência..: #5
+C/C......: #6
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| Arquivo: #7                                                                                                                               |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa">
++---------+---------+------------|--------------------------------------+----------------+--------------------------------------------------+
+| Empresa | Nr. Doc | Vencimento |              Fornecedor              |   Valor        |                       Motivo                     |
++---------+---------+------------|--------------------------------------+----------------|--------------------------------------------------+
+</cab_grupo>
+<detalhe>
+| #9      | #10     | #11        | #12                                  | #13            | #18                                              |
+|         |         |            |                                      |                | #19                                              |
+</detalhe>
+
+<rod_grupo nome="1">
++---------+---------+------------+--------------------------------------+----------------+--------------------------------------------------+
+| Total geral                                                           | #15            |                                                  |
++-----------------------------------------------------------------------+----------------+--------------------------------------------------+
+</rod_grupo>
+
+
+<hash>db7e14ca7e6344d612d8f1cf79799c64</hash>
+</relatorio>

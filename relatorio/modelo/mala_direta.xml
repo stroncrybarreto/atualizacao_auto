@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='iso8859-1'?>
+<relatorio ts="2009-10-20 17:25:27" versao_xml="0.1"><tela titulo="">
+  <quadro titulo="Parâmetros">
+    
+</quadro>
+</tela><ajuda /><layout columns="1" dados="" id="f75a0edace0edfbaa00984ef83e9a4be" ordem="" paper_orientation="1" 
+titulo="mala_direta-PIMACO-SL61081"><etiqueta nome="mala_direta-PIMACO-SL61081"><impressao>I</impressao><modelo>0</modelo>
+<papel>2</papel><tamanho_papel>21.6;27.9</tamanho_papel><margem_papel>1.30;0.35</margem_papel><orientacao>R</orientacao>
+<borda>0</borda><tamanho_etiqueta>10.16;2.54</tamanho_etiqueta><margem_etiqueta>0.7;0.3</margem_etiqueta>
+<espaco_etiqueta>0.5;0.0</espaco_etiqueta><numero_etiqueta>2;10</numero_etiqueta>
+<layout fonte_nome="Courier" fonte_tamanho="8.0"><campo chave="nome" />
+<campo chave="endereco" />
+<campo chave="bairro" />
+<campo chave="cidade" largura="4" quebra="nao" />
+<campo chave="cep" inicio="5" quebra="nao" />
+<campo chave="estado" inicio="8" /></layout></etiqueta></layout></relatorio>

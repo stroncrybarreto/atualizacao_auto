@@ -1,0 +1,108 @@
+<relatorio dados="registro_prestacao_servico_main" docname="Livro Registro de Prestação de Serviços">
+<apelidos>
+</apelidos>
+<detalhe>
+</detalhe>
+<subrelat dados="registro_prestacao_servico" ordem="grid_empresa">
+<apelidos>
+1  rel_posto_nome	  tam=60
+2  rel_data_hora	  tam=18
+3  data_ini           tam=10                    fmt=data
+4  data_fim           tam=10                    fmt=data
+5  data_emissao       tam=10                    fmt=data
+6  especie            tam=7
+7  serie              tam=9
+8  numero             tam=8      alinha=direita
+9  servico            tam=10     alinha=direita fmt=float2
+10 deducoes           tam=8      alinha=direita fmt=float2
+11 base_calc          tam=13     alinha=direita fmt=float2
+12 aliquota           tam=5      alinha=direita fmt=float2
+13 iss                tam=12     alinha=direita fmt=float2
+14 obs                tam=28
+15 valor_pis          tam=8      alinha=direita fmt=float2
+16 valor_cofins       tam=8      alinha=direita fmt=float2
+17 valor_irrf         tam=7      alinha=direita fmt=float2
+18 valor_csll         tam=7      alinha=direita fmt=float2
+19 empre_cod_nome	  tam=66	 expr=str(codigo_empresa) + " - " + nome_empresa
+20 total_servico_empresa        tam=10     alinha=direita fmt=float2 func=soma campo=servico grupo=1
+21 total_deducoes_empresa       tam=8      alinha=direita fmt=float2 func=soma campo=deducoes grupo=1
+22 total_base_calc_empresa      tam=13     alinha=direita fmt=float2 func=soma campo=base_calc grupo=1
+23 total_iss_empresa		    tam=12     alinha=direita fmt=float2 func=soma campo=iss grupo=1
+24 total_valor_pis_empresa      tam=8      alinha=direita fmt=float2 func=soma campo=valor_pis grupo=1
+25 total_valor_cofins_empresa   tam=8      alinha=direita fmt=float2 func=soma campo=valor_cofins grupo=1
+26 total_valor_irrf_empresa     tam=7      alinha=direita fmt=float2 func=soma campo=valor_irrf grupo=1
+27 total_valor_csll_empresa     tam=7      alinha=direita fmt=float2 func=soma campo=valor_csll grupo=1
+28 nome_empresa         tam=35
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                               #2
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                          LIVRO DE REGISTRO DE PRESTAÇÃO DE SERVIÇOS
+
+                                                                               Período: #3         a #4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grid_empresa">
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #19                                                                                                                                                                                  |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|              Documentos Fiscais             |                                                                    Valor                                                                        |
++------------+---------+-----------+----------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+|            |         |           |          |            |          |               |       |              |          |          |         |         |               Observações              |
+|    Data    | Espécie |   Série   |  Número  |  Serviços  | Deduções |    Base de    | Alíq. |      ISS     |  Valor   |  Valor   |  Valor  |  Valor  |                                        |
+|            |         |           |          |            |          |    Cálculo    |       |              |   PIS    |  Cofins  |  IRRF   |  CSLL   |                                        |
++------------+---------+-----------+----------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+</cab_grupo>
+<detalhe>
+| #5         | #6      | #7        | #8       | #9         | #10      | #11           | #12   | #13          | #15      | #16      | #17     | #18     | #14                                    |
+</detalhe>
+<rod_grupo nome="1">
++------------+---------+-----------+----------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+| Total empresa                               | #20        | #21      | #22           |   -   | #23          | #24      | #25      | #26     | #27     |                                        |
++---------------------------------------------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+</rod_grupo>
+<rod_relat>
+
+</rod_relat>
+
+</subrelat>
+<subrelat dados="registro_prestacao_servico_totalizador">
+<apelidos>
+1  legenda                   tam=43
+2  subtotal_servico          tam=10     alinha=direita fmt=float2
+3  subtotal_deducoes         tam=8      alinha=direita fmt=float2
+4  subtotal_base_calc        tam=13     alinha=direita fmt=float2
+5  aliquota                  tam=5      alinha=direita fmt=float2
+6  subtotal_iss		         tam=12     alinha=direita fmt=float2
+11 subtotal_valor_pis        tam=8      alinha=direita fmt=float2
+12 subtotal_valor_cofins     tam=8      alinha=direita fmt=float2
+13 subtotal_valor_irrf       tam=7      alinha=direita fmt=float2
+14 subtotal_valor_csll       tam=7      alinha=direita fmt=float2
+
+7  total_servico             tam=10     alinha=direita fmt=float2 func=soma campo=subtotal_servico
+8  total_deducoes            tam=8      alinha=direita fmt=float2 func=soma campo=subtotal_deducoes
+9  total_base_calc           tam=13      alinha=direita fmt=float2 func=soma campo=subtotal_base_calc
+10 total_iss  		         tam=12     alinha=direita fmt=float2 func=soma campo=subtotal_iss
+15 total_valor_pis           tam=8      alinha=direita fmt=float2 func=soma campo=subtotal_valor_pis
+16 total_valor_cofins        tam=8      alinha=direita fmt=float2 func=soma campo=subtotal_valor_cofins
+17 total_valor_irrf          tam=7      alinha=direita fmt=float2 func=soma campo=subtotal_valor_irrf
+18 total_valor_csll          tam=7      alinha=direita fmt=float2 func=soma campo=subtotal_valor_csll
+</apelidos>
+<detalhe>
++---------------------------------------------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+| #1                                          | #2         | #3       | #4            | #5    | #6           | #11      | #12      | #13     | #14     |                                        |
+</detalhe>
+<rod_relat>
++---------------------------------------------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+| Total geral                                 | #7         | #8       | #9            |   -   | #10          | #15      | #16      | #17     | #18     |                                        |
++---------------------------------------------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+</rod_relat>
+</subrelat>
+
+<rod_pagina>
++---------------------------------------------+------------+----------+---------------+-------+--------------+----------+----------+---------+---------+----------------------------------------+
+</rod_pagina>
+
+<hash>ad34d36140349d6bae1f1df9fa142ba9</hash>
+</relatorio>

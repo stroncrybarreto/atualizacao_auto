@@ -1,0 +1,83 @@
+<relatorio dados="conta_receber_atraso" ordem="ordem">
+<apelidos>
+1  rel_posto_nome	    tam=60
+2  rel_data_hora	    tam=18
+3  titulo1		        tam=94  alinha=centro
+4  titulo2		        tam=94  alinha=centro
+5  pessoa_cod_nome	    tam=80  alinha=esquerda expr=str(pessoa_codigo)+ " - "+pessoa_nome + " - Telefone: "+pessoa_fone
+6  pessoa_nome		    tam=30
+7  vencto		        tam=10  fmt=data
+8  documento		    tam=11  alinha=centro
+9  motivo_nome_abrv	    tam=6
+10 valor		        tam=15  fmt=float2
+11 dias_atraso		    tam=4   alinha=centro
+12 saldo_agregado	    tam=15 	fmt=float2	func=soma  campo=valor  grupo=1
+13 pessoa_fone		    tam=15
+14 total		        tam=15  fmt=float2  func=soma campo=valor 
+15 emissao		        tam=10  fmt=data    
+16 pessoa_celular	    tam=15
+17 pessoa_contato	    tam=12
+18 tabela_preco		    tam=20
+19 grupo_nome		    tam=30
+20 valor_real		    tam=8	fmt=float2
+21 motivo_nome		    tam=20
+22 tabela_preco_tipo	tam=15
+23 grupo_codigo		    tam=8               alinha=esquerda
+24 agregado_nome	    tam=67
+
+25 subtotal_valor_1     tam=15 fmt=float2 func=soma campo=valor grupo=2
+26 subtotal_saldo       tam=15 fmt=float2 
+27 total_saldo          tam=15 fmt=float2 func=soma campo=saldo 
+28 subtotal_valor       tam=15 fmt=float2 func=soma campo=valor grupo=1
+38 limite_credito		tam=11 fmt=float2 alinha=esquerda
+39 lim_credito_conta	tam=11	fmt=float2 repetir=0
+40 nosso_numero			tam=10
+41 portador_codigo		tam=6
+42 portador_nome		tam=12
+43 pessoa_codigo		tam=5
+</apelidos>
+<cab_pagina>
+#1                                                                           #2        
+---------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupamento_1">
++-------------------------------------------------------------------------------------------+
+| Cliente: #5                                                                               |
+| Limite de crédito: #38                                                                    |
++-------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="agrupamento_1,agrupamento_2,agrupamento_3">
+| Motorista/Conveniado: #24                                                                 |
++------------+------------+-------------+--------+-----------------+------+-----------------+
+|  Emissão   | Vencimento |  Documento  | Motivo |      Valor      | Dias |      Saldo      |
++------------+------------+-------------+--------+-----------------+------+-----------------+
+</cab_grupo>
+<detalhe>
+| #15        | #7         | #8          | #9     | #10             | #11  | #12             |
+</detalhe>
+<rod_grupo nome="2">
++------------+------------+-------------+--------+-----------------+------+-----------------+
+| Subtotal                                       | #25             |      |                 |
++------------------------------------------------+-----------------+------+-----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total cliente                                  | #28             |      |                 |
++------------------------------------------------+-----------------+------+-----------------+
+
+</rod_grupo>
+<rod_relat>
+
++------------------------------------------------+-----------------+------+-----------------+
+| Total geral                                    | #14             |      |                 |
++------------------------------------------------+-----------------+------+-----------------+
+</rod_relat>
+<rod_pagina>
++------------+------------+-------------+--------+-----------------+------+-----------------+
+</rod_pagina>
+
+<hash>4d650b6cc46d5f702073aecf43cde388</hash>
+</relatorio>

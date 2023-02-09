@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>AutoSystem</title>
+	</head>
+	<body>
+		<form action="/finaliza_sitef/" method="SITEF">
+			<input type="hidden" tal:attributes="value valor/codigo">
+			<input type="hidden" tal:content="valor/descricao">
+			<input type="submit" name="bt_confirmar" value="Confirmar">
+			<input type="hidden" name="TIPO_TRN" value="1">
+			<input type="hidden" name="IMPRIMIRCOMP" value="1">
+			<input type="hidden" name="VALOR" tal:attributes="value valor/valor">
+			<input type="hidden" name="SAC_01" tal:attributes="value valor/codigo">
+		</form>
+		<form method="POST" action="/cancelar/">
+			<input type="hidden" name="CODIGO" tal:attributes="value valor/codigo">
+			<input type="SUBMIT" value="Cancelar">
+		</form>
+		<form method="POST" action="/voltar/">
+			<input type="hidden" name="CODIGO" tal:attributes="value valor/codigo">
+			<input type="SUBMIT" value="Voltar">
+		</form>
+	</body>
+</html>

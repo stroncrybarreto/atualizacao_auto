@@ -1,0 +1,109 @@
+<relatorio dados="produtividade_analitico" ordem="empresa_codigo,empresa_nome,empresa,data,pessoa_nome,pessoa_codigo,pessoa,ordem">
+<apelidos>
+1  rel_posto_nome	         tam=60
+2  rel_data_hora	         tam=18
+3  titulo		             tam=173             alinha=centro
+4  pessoa_nome_cod			 tam=80
+5  produto_codigo	         tam=13  alinha=centro
+6  produto_nome		         tam=45
+7  quantidade		         tam=12	 fmt=float3
+8  produto_unid		         tam=7	 alinha=centro
+9  valor		             tam=14	 fmt=float3	 alinha=direita
+10 participacao              tam=10  fmt=float3
+11 tot_valor    	         tam=14	 fmt=float3	 func=soma campo=valor alinha=direita  grupo=2
+12 part_valor   	         tam=10  fmt=float3
+13 tot_vendedor		         tam=14	 fmt=float3	 alinha=direita  grupo=1
+14 part_vendedor	         tam=10  fmt=float3  grupo=1
+15 tot_sem_vendedor	         tam=14	 fmt=float3	 alinha=direita  grupo=1
+16 part_sem_vnd    	         tam=10  fmt=float3	 alinha=direita  grupo=1
+17 tot_empresa               tam=14  fmt=float3  grupo=1
+18 part_empresa    	         tam=10  fmt=float3	 alinha=direita  grupo=1
+19 geral_vendedor	     	 tam=14	 fmt=float3  alinha=direita
+20 geral_sem_vnd             tam=14	 fmt=float3  alinha=direita
+21 geral_valor				 tam=14	 fmt=float3  
+22 data                      tam=60  fmt=data
+23 empresa_nome              tam=40
+24 tot_quant				 tam=12	 fmt=float3  func=soma campo=quantidade grupo=2
+25 tot_vnd_quant			 tam=12	 fmt=float3  grupo=1
+26 tot_sem_vnd_quant		 tam=12	 fmt=float3  grupo=1
+27 tot_empresa_quant    	 tam=12  fmt=float3  grupo=1
+28 geral_vnd_quant			 tam=12	 fmt=float3	alinha=direita
+29 geral_sem_vnd_quant		 tam=12	 fmt=float3	alinha=direita
+30 geral_quant				 tam=12	 fmt=float3	alinha=direita
+31 nome_relatorio  			 tam=173 expr='PRODUTIVIDADE POR FUNCIONÁRIOS' alinha=centro
+32 ordem					 tam=30	alinha=esquerda	
+33 part_func                 tam=10  fmt=float3   func=soma campo=participacao  grupo=2
+34 cont_item_comb			tam=4
+35 media_prod				tam=7  fmt=float2 expr=float(quantidade)/float((cont_item_merc+cont_item_comb) or 1)
+36 ranking					tam=8  func=contar grupo=2
+37 ranking_det				tam=10 expr=str(ranking)+'°' grupo=2
+38 qt_vendas				tam=10 alinha=direita
+39 cont_item_merc			tam=4
+40 empresa_cod_nome         tam=40
+
+42 produto_peso             tam=12  fmt=float3
+43 tot_ven_prod_peso        tam=12  fmt=float3  func=soma  campo=produto_peso  grupo=2
+44 tot_data_prod_peso       tam=12  fmt=float3  func=soma  campo=produto_peso  grupo=3
+45 tot_emp_prod_peso        tam=12  fmt=float3  func=soma  campo=produto_peso  grupo=1
+46 tot_geral_prod_peso      tam=12  fmt=float3  func=soma  campo=produto_peso
+
+98 tit_agrupar           tam=60
+99 tit_geral_agrupar     tam=20
+
+100 fornecedor_nome		tam=44
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                      #2              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#31
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,empresa_nome,empresa">
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #40                                                                                                                                                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_codigo,empresa_nome,empresa,data">
+| Data: #22                                                                                                                                                            |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,empresa_nome,empresa,data,pessoa_nome,pessoa_codigo,pessoa">
+| #4                                                                                                                                                Vendas: #38        |
++---------------+-----------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+|    Código     |                      Produto                  |                  Fornecedor                   |  Quantidade  | Unidade |     Valor      |  % Part.   |
++---------------+-----------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+</cab_grupo>
+<detalhe>
+| #5            | #6                                            | #100                                          | #7           | #8      | #9             | #10        |
+</detalhe>
+<rod_grupo nome="2">
++---------------+-----------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+| #98                                                           |                                               | #24          |         | #11            | #33        |
++---------------------------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total de vendas com identificação #99                         |                                               | #25          |         | #13            | #14        |
+| Total de vendas sem identificação #99                         |                                               | #26          |         | #15            | #16        |
+| Total de vendas da empresa                                    |                                               | #27          |         | #17            | #18        |
++---------------------------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+
+
+</rod_grupo>
+<rod_grupo nome="3">
+
+</rod_grupo>
+<rod_relat>
+
+
++---------------------------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+| Total geral de vendas com identificação do vendedor           |                                               | #28          |         | #19            |            |
+| Total geral de vendas sem identificação do vendedor           |                                               | #29          |         | #20            |            |
+| Total geral de vendas no período                              |                                               | #30          |         | #21            |            |
++---------------------------------------------------------------+-----------------------------------------------+--------------+---------+----------------+------------+
+</rod_relat>
+
+<hash>7124a567e011911ab3fe52d6973f6025</hash>
+</relatorio>

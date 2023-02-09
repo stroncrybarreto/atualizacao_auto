@@ -1,0 +1,52 @@
+<relatorio dados="venda_por_tributacao_ecf" tamfonte="8">
+<apelidos>
+1 rel_posto_nome 				tam=60
+2 rel_data_hora 				tam=18
+3 titulo1 						tam=145 	alinha=centro
+4 titulo2 						tam=145 	alinha=centro
+5 empresa_nome 					tam=60
+6 linha_cabecalho 				tam=99999
+7 dia 							tam=2 		fmt=%02d
+8 cupom_ini 					tam=6 		fmt=%06d		alinha=direita
+9 cupom_fim 					tam=6 		fmt=%06d		alinha=esquerda
+10 linha_detalhe 				tam=99999
+11 linha_total 					tam=99999
+12 linha_total_geral			tam=99999
+13 nr_ecf 						tam=3 		fmt=%03d 		alinha=direita
+14 linha_cabecalho_pontos 		tam=99999
+15 linha_venda 					tam=99999
+</apelidos>
+<cab_pagina>
+#1                                                                                                                               #2                
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa" repeticao="0">
+Empresa: #5
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa">
++-----+-----+-----------------+#14 
+| Dia | Nr. |   Relação de    | #15                                                                                        
+|     | ECF | Cupons Fiscais  | #6                                                                                                              
++-----+-----+-----------------+#14
+</cab_grupo>
+<detalhe>
+| #7  | #13 | #8     a #9     | #10                                                                                                             
+</detalhe>
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
++-----+-----+-----------------+#14
+| Total por tributação        | #11                                                                                                             
++-----------------------------+#14
+| Total Geral                 | #12                                                                                                             
++-----------------------------+#14
+</rod_grupo>
+<rod_pagina>
++-----+-----+-----------------+#14
+</rod_pagina>
+
+<hash>69ac03ab7454bf70777478264fa8ec71</hash>
+</relatorio>

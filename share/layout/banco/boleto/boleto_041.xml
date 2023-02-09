@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layout>
+	<nome>Santander</nome>
+
+    <sessao>
+        <nome>arquivo</nome>
+
+        <registro>
+            <tipo>string</tipo>
+            <chave>local_pagamento_a</chave>
+            <padrao>PAGUE PREFERENCIALMENTE NA REDE INTEGRADA BANRISUL</padrao>
+			<descricao>Local de Pagamento 1</descricao>
+        </registro>
+		<registro>
+            <tipo>string</tipo>
+            <chave>instrucoes</chave>
+            <padrao>(Informações de responsabilidade do beneficiário)</padrao>
+			<descricao>Instruções de pagamento padrão</descricao>
+        </registro>
+		<registro>
+            <tipo>string</tipo>
+            <chave>telefone_1</chave>
+            <padrao>SAC BANRISUL: 0800-646-1515</padrao>
+			<descricao>Número de telefone 1</descricao>
+        </registro>
+		<registro>
+            <tipo>string</tipo>
+            <chave>telefone_2</chave>
+            <padrao>OUVIDORIA BANRISUL: 0800-644-2200</padrao>
+			<descricao>Número de telefone 2</descricao>
+        </registro>
+    </sessao>
+</layout>

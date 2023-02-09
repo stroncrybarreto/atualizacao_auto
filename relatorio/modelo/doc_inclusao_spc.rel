@@ -1,0 +1,81 @@
+<relatorio dados="doc_spc" docname="Modelo de inclusão SPC" mode="raw">
+<apelidos>
+
+1  pessoa_nome                  tam=95
+2  pessoa_codigo                tam=6
+3  data_nascimento              tam=19  alinha=esquerda fmt=data
+4  pessoa_cpf                   tam=73  alinha=esquerda
+5  pessoa_rg                    tam=27  alinha=esquerda
+6  estado                       tam=4   alinha=esquerda
+7  sexo                         tam=8   alinha=esquerda
+8  natural_municipio_codigo     tam=6
+9  natural_municipio_nome       tam=72  alinha=esquerda
+10 pessoa_endereco              tam=74  alinha=esquerda
+11 bairro                       tam=28  alinha=esquerda
+12 cep                          tam=10  alinha=esquerda
+13 cidade                       tam=21  alinha=esquerda
+14 estado                       tam=3   alinha=esquerda
+15 nome_pai                     tam=84  alinha=esquerda
+16 nome_mae                     tam=84  alinha=esquerda
+17 fatura_documento				tam=32  alinha=esquerda
+18 fatura_data					tam=13	fmt=data
+19 fatura_vencto				tam=13	fmt=data
+20 fatura_valor                 tam=25  fmt=float2
+21 data_comunicacao             tam=10  fmt=data
+22 empresa_nome                 tam=33
+23 titulo                       tam=100 alinha=centro expr='INCLUSÃO'
+24 rg_orgao_exp                 tam=8   alinha=esquerda
+25 rg_data_exp                  tam=16  alinha=esquerda  fmt=data
+</apelidos>
+
+<cab_pagina></cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa_nome">
+
+
+
+#23
+
++--------------------------------------------------------------------------------------------------+
+|  NOME: #1                                                                                        |
++--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+| DATA NASC.           |                                    CPF                                    |
++----------------------+---------------------------------------------------------------------------+
+|  #3                  | #4                                                                        |
++----------------------+---------------------------------------------------------------------------+
++----------------------+---------------------------------------------------------------------------+
+| R.G.                        | ORGÃO EXP. |       EST. CIVIL        |     DATA EXP.    |   SEXO   |
++-----------------------------+------------+-------------------------+------------------+----------+
+| #5                          | #24        |                         | #25              | #7       |
++-----------------------------+------------+-------------------------+------------------+----------+
+  Naturalidade: {SUBL}#9                                                                       {DSUBL}
+  Residência: {SUBL}#10                                                                        {DSUBL}
+  Bairro: {SUBL}#11                  {DSUBL} CEP: {SUBL}#12        {DSUBL} Município: {SUBL}#13                   {DSUBL} Est.: {SUBL}#14 {DSUBL}   
+  Cônjuge:{SUBL}
+  Nome do Pai: {SUBL}#15                                                                       {DSUBL}
+  Nome da mãe: {SUBL}#16                                                                       {DSUBL}
+  Avalista: {SUBL}                                              {DSUBL} Data Nasc.:{SUBL}      {DSUBL}
++--------------------------------------------------------------------------------------------------+
+| Data Comunicação | Data da Venda |        Valor da dívida    |      Nome da loja (Usuário)       |
++------------------+---------------+---------------------------+-----------------------------------+
+| #21              | #18           | #20                       | #22                               |
++------------------+---------------+---------------------------+-----------------------------------+
+
++--------------------------------------------------------------------------------------------------+
+| Código Associado | Data do Venc. |      Tipo/Negativação     |    Número do Contrato/Cheque      |
++------------------+---------------+---------------------------+-----------------------------------+
+|                  | #19           |                           |  #17                              |
++------------------+---------------+---------------------------+-----------------------------------+
+
+</cab_grupo>
+
+<detalhe></detalhe>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina></rod_pagina>
+
+<hash>337f8bb594dab711fa7f11d5e62bbe11</hash>
+</relatorio>

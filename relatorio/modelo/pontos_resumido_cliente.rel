@@ -1,0 +1,46 @@
+<relatorio dados="pontos_resumido_cliente" tamfonte="8" ordem="empresa,documento,hora" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo		    tam=120	alinha=centro
+4  codigo		    tam=8	fmt=%d
+5  nome			    tam=52
+6  valor_venda		tam=15	fmt=%.02f
+7  ponto_gerado		tam=12	fmt=%.02f
+8  ponto_resgatado	tam=12	fmt=%.02f
+9  total_valor		tam=15	fmt=%.02f	func=soma	campo=valor_venda
+10 total_gerado		tam=12	fmt=%.02f	func=soma	campo=ponto_gerado
+11 total_resgatado	tam=12	fmt=%.02f	func=soma	campo=ponto_resgatado
+12 numero_gerados   tam=5  alinha=centro
+13 numero_resgate   tam=5  alinha=centro
+14 subtitulo        tam=120	alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                      #2
+-----------------------------------------------------------------------------------------------------------------------+
+
+                                            R E L A T O R I O   D E   P O N T O S
+                                           G E R A D O S   E   R E S G A T A D O S
+                                                   P O R   C L I E N T E
+#3
+#14
+
+
++----------+---------------------------------------------+-----------------+--------------+------+--------------+------+
+| Código   | Nome                                        |   Vl. Venda     |  Pts Gerados | Qtde |  Pts Resgate | Qtde |
++----------+---------------------------------------------+-----------------+--------------+------+--------------+------+
+</cab_pagina>
+<detalhe>
+| #4       | #5                                          | #6              | #7           | #12  | #8           |#13   |
+</detalhe>
+<rod_relat>
++----------+---------------------------------------------+-----------------+--------------+------+--------------+------+
+|                                                 TOTAIS | #9              | #10          |      | #11          |      |
++--------------------------------------------------------+-----------------+--------------+------+--------------+------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+
+<hash>ad751b27f348c9b2f64a02cfa4f0ab95</hash>
+</relatorio>

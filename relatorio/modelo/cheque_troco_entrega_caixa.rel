@@ -1,0 +1,65 @@
+<relatorio dados="cheque_troco_entrega_caixa" font_size="x-small">
+<apelidos>
+1  rel_posto_nome   tam=30
+2  rel_data_hora    tam=33
+3  conta_corrente_c	tam=3	alinha=centro
+4  banco			tam=5	alinha=direita
+5  nr_ini			tam=12	alinha=direita
+6  nr_fim			tam=12	alinha=direita
+7  valor			tam=16	alinha=direita	fmt=%.02f
+8  total			tam=16	alinha=direita	fmt=%.02f
+9  total_total		tam=16	alinha=direita	fmt=%.02f
+10 conta			tam=32
+11 turno			tam=1
+12 gerente_nome		tam=26
+13 data				tam=33
+14 conta_corrente_n	tam=39
+15 empresa			tam=30
+16 gerente_nome		tam=28	alinha=centro
+17 responsavel		tam=28	alinha=centro
+18 responsavel		tam=28
+</apelidos>
+<cab_pagina>
+#1                                         #2
+-----------------------------------------------------------
+ 
+          COMPROVANTE DE ENTREGA DE CHEQUE TROCO             
+                 PARA OPERADOR DE CAIXA
+
+
+Empresa...: #15                           
+Gerente...: #12
+Conta.....: #10
+Data......: #13								Turno: #11
+Operador..: #18
+
+      Nr ini       Nr fim        Valor Ch.            Total
+-----------------------------------------------------------
+</cab_pagina>
+<cab_grupo nome="1" quebra="conta_corrente_c">
+#14                                                     
+</cab_grupo>
+<detalhe>
+#5           #6           #7               #8         
+</detalhe>
+<rod_grupo nome="1">
+	
+</rod_grupo>
+
+<rod_relat>
+-----------------------------------------------------------
+                                     TOTAL #9         
+
+
+
+____________________________   ____________________________
+#16                            #17
+          GERENTE                      RESP. CAIXA
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+
+<hash>1f43e454a8e46ea54733d38f20df4c8f</hash>
+</relatorio>

@@ -1,0 +1,79 @@
+<relatorio dados="vencto_cartao_empresa" ordem="ordem" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+4  empresa_cod_nome				tam=60
+5  data						tam=10	fmt=data
+6  turno					tam=3 	alinha=centro
+7  conta					tam=80  alinha=esquerda
+8  vencto                   tam=10  fmt=data
+9  valor					tam=14  fmt=float2	alinha=direita
+10 tarifa		       		tam=10	fmt=float2 	alinha=direita
+11 valor_liquido 			tam=14  fmt=float2	alinha=direita
+12 valor_subtotal			tam=14  fmt=float2	func=soma	campo=valor		grupo=1	alinha=direita
+13 tarifa_subtotal			tam=10  fmt=float2	func=soma	campo=tarifa	grupo=1	alinha=direita
+14 valor_liquido_subtotal	tam=14  fmt=float2	func=soma	campo=valor_liquido	grupo=1	alinha=direita
+15 valor_total				tam=14  fmt=float2	func=soma	campo=valor	alinha=direita
+16 tarifa_total				tam=10  fmt=float2	func=soma	campo=tarifa	alinha=direita 
+17 valor_liquido_total		tam=14  fmt=float2	func=soma	campo=valor_liquido	alinha=direita
+18 data_baixa               tam=10  fmt=data
+21 titulo_agrupamento		tam=94	alinha=centro
+22 titulo_ordenacao			tam=94	alinha=centro
+23 valor_subtotal_conta		tam=14  fmt=float2	func=soma	campo=valor		grupo=2	alinha=direita
+24 tarifa_subtotal_conta	tam=10  fmt=float2	func=soma	campo=tarifa	grupo=2	alinha=direita
+25 valor_liquido_subtotal_c	tam=14  fmt=float2	func=soma	campo=valor_liquido	grupo=2	alinha=direita
+26 titulo					tam=142	alinha=centro
+29 documento				tam=10	alinha=centro
+30 obs                      tam=30  alinha=esquerda
+
+31 count_transacao          tam=8   fmt=float0  alinha=direita  func=contar  campo=grid  grupo=2
+32 count_transacao_emp      tam=8   fmt=float0  alinha=direita  func=contar  campo=grid  grupo=1
+33 count_transacao_geral    tam=8   fmt=float0  alinha=direita  func=contar  campo=grid
+34 observacao				tam=108
+</apelidos>
+<cab_pagina>
+#1                                                                                                                           #2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+#26
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa">
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #4                                                                                                                               |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,empresa,conta">
+| Conta: #7                                                                                                                                 |
++------------+-------+-----------+-------------------------------+------------+------------+-----------------+------------+-----------------+
+|  Emissão   | Turno | Documento |           Observação          | Vencimento | Pagamento  |      Valor      |   Tarifa   |  Valor líquido  |
++------------+-------+-----------+-------------------------------+------------+------------+-----------------+------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #5         |  #6   | #29       |#30                            | #8         | #18        | #9              | #10        |  #11            |
+</detalhe>
+<rod_grupo nome="2" quebra="data">
++------------+-------+-----------+-------------------------------+------------+------------+-----------------+------------+-----------------+
+| Subtotal           | #31       lançamentos                                               | #23             | #24        |  #25            |
++--------------------+---------------------------------------------------------------------+-----------------+------------+-----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+
++--------------------+---------------------------------------------------------------------+-----------------+------------+-----------------+
+| Total empresa      | #32       lançamentos                                               | #12             | #13        |  #14            |
++--------------------+---------------------------------------------------------------------+-----------------+------------+-----------------+
+</rod_grupo>
+<rod_relat>
+
+
++--------------------+--------------------------------------------------------------------+-----------------+------------+------------------+
+| Total geral        | #33       lançamentos                                              | #15             | #16        |  #17             |
++--------------------+--------------------------------------------------------------------+-----------------+------------+------------------+
+
+#34
+</rod_relat>
+<rod_pagina>
++------------+-------+-----------+-------------------------------+------------+------------+-----------------+------------+-----------------+
+</rod_pagina>
+<hash>790793545961480bdfd40a2597b66c51</hash>
+</relatorio>

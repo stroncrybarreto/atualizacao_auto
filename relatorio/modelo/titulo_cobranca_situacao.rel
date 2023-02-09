@@ -1,0 +1,67 @@
+<relatorio dados="titulo_cobranca">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  nosso_numero			tam=10
+4  data_emissao			tam=10  fmt=data
+5  data_vencto			tam=10  fmt=data
+6  situacao_nome		tam=12
+7  cliente				tam=34
+8  valor				tam=14	fmt=%.02f alinha=direita
+9  valor_total			tam=14  fmt=%.02f alinha=direita
+10 qtde_total			tam=10  alinha=esquerda
+11 portador_codigo		tam=3   alinha=esquerda 
+12 portador_nome		tam=40  alinha=esquerda
+13 sub_total			tam=14  fmt=%.02f alinha=direita
+14 qtde_registro		tam=10  alinha=esquerda
+15 titulo_periodo		tam=30  alinha=esquerda
+16 situacao_nome		tam=20  alinha=esquerda
+17 valor_total_situacao	tam=14	fmt=%.02f alinha=direita
+18 qtde_total_situacao	tam=14	alinha=esquerda
+19 subtitulo				tam=108	alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                          #2                
+------------------------------------------------------------------------------------------------------------
+
+#19
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="portador_codigo">
++----------------------------------------------------------------------------------------------------------+
+| Portador: #11 - #12                                                                                      |
++----------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="situacao">
+| Situação: #16                                                                                            |
++-----------+------------+------------+--------------+------------------------------------+----------------+
+| Nosso nr. |  Emissão   | Vencimento |   Situação   |               Cliente              |     Valor      |
++-----------+------------+------------+--------------+------------------------------------+----------------+
+</cab_grupo>
+
+<detalhe>
+| #3        | #4         | #5         | #6           | #7                                 | #8             |
+</detalhe>
+
+<rod_grupo nome="2">
++-----------+-------+----+------------+--------------+------------------------------------+----------------+
+| Subtotal situação | Registros: #18                                                      | #17            |
++-------------------+---------------------------------------------------------------------+----------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Subtotal portador | Registros: #14                                                      | #13            |
++-------------------+---------------------------------------------------------------------+----------------+
+
+</rod_grupo>
+<rod_relat>
+
++-------------------+---------------------------------------------------------------------+----------------+
+| Total             | Registros: #10                                                      | #9             |
++-------------------+---------------------------------------------------------------------+----------------+
+</rod_relat>
+
+<hash>02f09cbed7ac81b26124307bc4458380</hash>
+</relatorio>

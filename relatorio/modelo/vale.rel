@@ -1,0 +1,40 @@
+<relatorio dados="vale" ordem="hora_emissao,numero_vale,nr_cupom">
+<apelidos>
+1  rel_posto_nome		tam=100
+2  rel_data_hora		tam=18
+3  data_emi				tam=14 expr=hora_emissao and (hora_emissao.strftime('%d/%m/%y') + " " + hora_emissao.strftime("%H:%M")) or " "
+4  numero_vale			tam=12 alinha=centro
+5  valor_vale			tam=12 fmt=float2
+6  tipo_nome			tam=25
+7  situacao				tam=20
+8  nr_cupom				tam=10 alinha=centro
+9  data_receb		    tam=14 expr=hora_recebimento and (hora_recebimento.strftime('%d/%m/%y') + " " + hora_recebimento.strftime("%H:%M")) or " "
+13 total                tam=12 fmt=float2 func=soma campo=valor_vale
+14 titulo				tam=130 alinha=centro
+15 grid_emissao			tam=16
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#14 
+
++----------------+----------------+--------------+-------------+---------------------------+----------------------+--------------+
+|     Emissão    |   Recebimento  |   Nr. Vale   |  Nr. Cupom  |           Tipo            |       Situação       |     Valor    |
++----------------+----------------+--------------+-------------+---------------------------+----------------------+--------------+
+</cab_pagina>
+
+<detalhe>
+| #3             | #9             | #4           | #8          | #6                        | #7                   | #5           |
+</detalhe>
+
+<rod_relat>
++----------------+----------------+--------------+-------------+---------------------------+----------------------+--------------+
+| Total                                                                                                           | #13          |
++-----------------------------------------------------------------------------------------------------------------+--------------+
+</rod_relat>
+
+
+<hash>b56bcb4347f272525a2727aa90e11eb8</hash>
+</relatorio>

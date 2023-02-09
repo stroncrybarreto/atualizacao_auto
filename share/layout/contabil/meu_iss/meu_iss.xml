@@ -1,0 +1,25 @@
+<layout>
+  <nome>meu_iss</nome>
+  <sessao>
+    <nome>iss_lancto</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave>id_registro</chave><tipo>text</tipo><padrao>d</padrao><descricao /></registro>
+    <registro><inicio>2</inicio><fim>15</fim><chave>cnpj</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>16</inicio><fim>17</fim><chave>mes</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>18</inicio><fim>21</fim><chave>ano</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>22</inicio><fim>23</fim><chave>dia</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>24</inicio><fim>43</fim><chave>numero_nota</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>44</inicio><fim>56</fim><chave>valor_nota</chave><tipo>float_point_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>57</inicio><fim>57</fim><chave>tipo_lancto</chave><tipo>text</tipo><padrao>N</padrao><descricao /></registro>
+    <registro><inicio>58</inicio><fim>67</fim><chave>cod_atividade</chave><tipo>integer</tipo><padrao></padrao><descricao /></registro>
+    <registro><inicio>68</inicio><fim>82</fim><chave>cnae</chave><tipo>text</tipo><padrao></padrao><descricao /></registro>
+    <registro><inicio>83</inicio><fim>96</fim><chave>doc_envolvido</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>97</inicio><fim>97</fim><chave>isencao</chave><tipo>text</tipo><padrao>N</padrao><descricao /></registro>
+  </sessao>
+  <sessao>
+    <nome>iss_finaliza</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave>id_registro</chave><tipo>text</tipo><padrao>f</padrao><descricao /></registro>
+    <registro><inicio>2</inicio><fim>43</fim><chave></chave><tipo>text</tipo><padrao /><descricao>brancos</descricao></registro>
+    <registro><inicio>44</inicio><fim>56</fim><chave>valor_total</chave><tipo>float_point_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>57</inicio><fim>94</fim><chave></chave><tipo>text</tipo><padrao /><descricao>brancos</descricao></registro>
+  </sessao>
+</layout>

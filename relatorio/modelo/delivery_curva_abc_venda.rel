@@ -1,0 +1,66 @@
+<relatorio dados="delivery_curva_abc_venda" ordem="ordem desc">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  titulo              tam=117  alinha=centro
+4  titulo_classe       tam=40
+6  nome		   	       tam=35
+7  quantidade_pedido   tam=12  fmt=float
+8  nr_itens            tam=11  fmt=float
+9  quantidade_produto  tam=12  fmt=float
+10 valor_pedido        tam=11  fmt=float2
+11 perc_classe         tam=6   fmt=float2
+12 perc_valor_total    tam=7   fmt=float2
+13 rodape_classe       tam=40
+14 contar_classe       tam=4   fmt=float  func=contar campo=nome grupo=1
+15 titulo_quebra       tam=15
+16 tot_qtd_pedido      tam=12  fmt=float  func=soma campo=quantidade_pedido grupo=1
+17 tot_nr_itens        tam=11  fmt=float  func=soma campo=nr_itens grupo=1
+18 tot_qtdade          tam=12  fmt=float  func=soma campo=quantidade_produto grupo=1
+19 tot_valor_pedido    tam=11  fmt=float2  func=soma campo=valor_pedido grupo=1
+20 tot_perc_classe     tam=6   fmt=float2
+21 tot_perc_total      tam=7   fmt=float2
+22 rodape_total        tam=40
+23 contar_geral        tam=4   fmt=float  func=contar campo=nome
+24 tot2_qtd_pedido     tam=12  fmt=float  func=soma campo=quantidade_pedido
+25 tot2_nr_itens       tam=11  fmt=float  func=soma campo=nr_itens
+26 tot2_qtdade         tam=12  fmt=float  func=soma campo=quantidade_produto
+27 tot2_valor_pedido   tam=11  fmt=float2  func=soma campo=valor_pedido
+28 titulo_agrupar      tam=45  alinha=centro 
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                   #2
+---------------------------------------------------------------------------------------------------------------------
+
+#3
+
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="classe">
++------------------------------------------------------------------------------------------------------------------+
+| #4                                                                                                               |
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+| #28                                           |    Pedido    |  Quantidade  |    Valor    | % Classe |  % Total  |
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+</cab_grupo>
+<detalhe>
+| #6                                            | #7           | #9           | #10         | #11    % | #12     % |
+</detalhe>
+<rod_grupo nome="1">
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+| #13                    - #14  #15             | #16          | #18          | #19         | #20    % | #21     % |
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+
+</rod_grupo>
+<rod_relat>
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+| #22                    - #23  #15             | #24          | #26          | #27         | 100.00 % |  100.00 % |
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+</rod_relat>
+<rod_pagina>
++-----------------------------------------------+--------------+--------------+-------------+----------+-----------+
+</rod_pagina>
+
+<hash>673dc8664cb0f6b3d3da366d5db7ff17</hash>
+</relatorio>

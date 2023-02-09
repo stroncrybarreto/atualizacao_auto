@@ -1,0 +1,50 @@
+<relatorio dados="conta_recebida" ordem="empresa_codigo,empresa_nome,pessoa_nome,movto_data_pgto,movto_data,movto_turno,movto_documento">
+<apelidos>
+1  rel_posto_nome	tam=40
+2  rel_data_hora	tam=18
+3  titulo			tam=88	alinha=centro
+4  pessoa_nome		tam=40
+5  movto_valor		tam=12	fmt=float2
+6  total_empresa	tam=12	fmt=float2	func=soma	campo=movto_valor	grupo=1
+13 empresa_nome		tam=60
+14 total_geral		tam=12	fmt=float2	func=soma	campo=movto_valor
+15 empresa_cod_nome       tam=60  expr=str(empresa_codigo) + ' - ' + empresa_nome
+99 titulo_p			tam=88 expr='CONTAS RECEBIDAS'  alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                      #2
+----------------------------------------------------------------------------------------
+
+#99
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,empresa_nome">
++--------------------------------------------------------------------------------------+
+| Empresa: #15                                                                         |
++---------------------------------------------------------------------+----------------+
+|                               Pessoa                                |      Valor     |
++---------------------------------------------------------------------+----------------+
+</cab_grupo>
+<detalhe>
+| #4                                                                  |   #5           |
+</detalhe>
+<rod_grupo nome="1">
++---------------------------------------------------------------------+----------------+
+| Total empresa                                                       |   #6           |
++---------------------------------------------------------------------+----------------+
+</rod_grupo>
+<rod_relat>
+
+
++---------------------------------------------------------------------+----------------+
+| Total geral                                                         |   #14          |
++---------------------------------------------------------------------+----------------+
+</rod_relat>
+<rod_pagina>
+----------------------------------------------------------------------------------------
+</rod_pagina>
+
+<hash>4f2b61406277464e2a905532c7f812a9</hash>
+</relatorio>

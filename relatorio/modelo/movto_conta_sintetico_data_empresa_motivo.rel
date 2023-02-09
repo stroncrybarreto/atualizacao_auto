@@ -1,0 +1,104 @@
+<relatorio dados="movto_conta_sintetico_data" ordem="movto_data,movto_turno,movto_hora">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=16
+3  data_ini             tam=10 fmt=data
+4  data_fim             tam=10 fmt=data
+5  conta_nome           tam=40
+6  conta_saldo          tam=14 fmt=%.02f
+7  movto_data           tam=10 fmt=data
+8  motivo_nome          tam=30
+9  movto_entrada        tam=12 fmt=%.02f
+10 movto_saida          tam=12 fmt=%.02f
+11 xmovto_saldo          tam=14 fmt=%.02f		expr=movto_saldo_ini+movto_total_entrada-movto_total_saida
+12 movto_contra_partida tam=20
+13 movto_total_entrada  tam=12 fmt=%.02f		func=soma   campo=movto_entrada     grupo=3
+14 movto_total_saida    tam=12 fmt=%.02f		func=soma   campo=movto_saida       grupo=3
+15 total_entrada			tam=12 fmt=%.02f	func=soma   campo=movto_entrada
+16 total_saida				tam=12 fmt=%.02f	func=soma   campo=movto_saida
+17 mes_nome					tam=100
+18 empresa_nome				tam=60
+19 total_emp_entrada		tam=12 fmt=%.02f	func=soma   campo=movto_entrada     grupo=1
+20 total_emp_saida			tam=12 fmt=%.02f	func=soma   campo=movto_saida       grupo=1
+21 saldo_emp_ant			tam=14 fmt=%.02f
+22 conta_total_entrada		tam=12 fmt=%.02f	func=soma   campo=movto_entrada     grupo=2
+23 conta_total_saida	    tam=12 fmt=%.02f	func=soma   campo=movto_saida       grupo=2
+98 titulo					tam=114 alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                #2        
+------------------------------------------------------------------------------------------------------------------
+   
+                                             MOVIMENTAÇÃO DE CONTAS
+                                         Período #3         à #4
+#98
+                                                   Sintético
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa">
+
++----------------------------------------------------------------------------------------------------------------+
+| Empresa: #18                                                                                                   |
++----------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,conta_codigo">
+
++----------------------------------------------------------------------------------------------------------------+
+| Conta: #5                                                                                                      |
++----------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="5" quebra="empresa_nome,conta_codigo,motivo_nome">
+
++----------------------------------------------------------------------------------------------------------------+
+| Motivo de Movimentação: #8                                                                           Sintético |
++----------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_nome,conta_codigo,motivo_nome,movto_mes">
++----------------------------------------------------------------------------------------------------------------+
+| Mês: #17                                                                                                       |
++------------+--------------------------------+-------------+-------------+---------------+----------------------+
+| Data       | Histórico                      | Entrada     | Saída       | Saldo         | Contra Partida       |
++------------+--------------------------------+-------------+-------------+---------------+----------------------+
+</cab_grupo>
+<cab_grupo nome="4" quebra="empresa_nome,conta_codigo,motivo_nome,movto_mes" repeticao="0">
+| Saldo inicial                                                            #6             |                      |
+</cab_grupo>
+<detalhe>
+| #7         | #8                             |#9           |#10          |#11            | #12                  |
+</detalhe>
+<rod_grupo nome="4">
+</rod_grupo>
+<rod_grupo nome="5">
+</rod_grupo>
+<rod_grupo nome="3">
++------------+--------------------------------+-------------+-------------+---------------+----------------------+
+| SUBTOTAL                                    |#13          |#14          |#11            |                      |
++---------------------------------------------+-------------+-------------+---------------+----------------------+
+
+</rod_grupo>
+<rod_grupo nome="2">
+
++---------------------------------------------+-------------+-------------+---------------+----------------------+
+| TOTAL CONTA                                 |#22          |#23          |#11            |                      |
++---------------------------------------------+-------------+-------------+---------------+----------------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
++---------------------------------------------+-------------+-------------+---------------+----------------------+
+| TOTAL EMPRESA                               |#19          |#20          |#21            |                      |
++---------------------------------------------+-------------+-------------+---------------+----------------------+
+
++----------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+<rod_pagina>
++------------+--------------------------------+-------------+-------------+---------------+----------------------+
+</rod_pagina>
+<rod_relat>
++---------------------------------------------+-------------+-------------+--------------------------------------+
+| TOTAL GERAL                                 |#15          |#16          |                                      |
++---------------------------------------------+-------------+-------------+--------------------------------------+
+</rod_relat>
+
+<hash>e9f1f345b3344f28846bfdf553b7f1f7</hash>
+</relatorio>

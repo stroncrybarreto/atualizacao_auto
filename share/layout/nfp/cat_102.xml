@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>cat_102</nome>
+  <descricao>Registro eletrônico de Nota Fiscal, modelo 1 ou 1-A</descricao>
+  <tipo_layout>delimitado</tipo_layout>
+  <delimitador>|</delimitador>
+
+  <sessao>
+    <nome>10</nome>
+    <descricao>Identificação do Arquivo (Cabeçalho)</descricao>
+	
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>10</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>versao</chave>
+      <tipo>string</tipo>
+      <padrao>1,00</padrao>
+      <descricao>Versao do layout</descricao>
+      <tamanho>4</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cpf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ do emitente</descricao>
+      <tamanho>14</tamanho>
+      <requerido>sim</requerido>
+    </registro>
+
+    <registro>
+      <chave>data_ini</chave>
+      <tipo>date_br</tipo>
+      <padrao></padrao>
+      <descricao>Data de início do período transferido no arquivo</descricao>
+      <tamanho></tamanho>
+      <requerido>sim</requerido>
+    </registro>
+
+    <registro>
+      <chave>data_fim</chave>
+      <tipo>date_br</tipo>
+      <padrao></padrao>
+      <descricao>Data de fim do período transferido no arquivo</descricao>
+      <tamanho></tamanho>
+      <requerido>sim</requerido>
+    </registro>
+  </sessao> 
+
+  <sessao> 
+    <nome>20</nome>
+    <descricao>Dados de Identificação da Nota Fiscal</descricao>
+
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>20</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>func_reg</chave>
+      <tipo>string</tipo>
+      <padrao>I</padrao>
+      <descricao>Função do registro</descricao>
+      <tamanho>1</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cancelamento_just</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Justificativa do Cancelamento</descricao>
+      <tamanho>15-255</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>natureza_op</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Descrição da Natureza da Operação</descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>serie</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Série da Nota Fiscal</descricao>
+      <tamanho>1-3</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>numero_nota</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Número da Nota Fiscal</descricao>
+      <tamanho>9</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>data_emissao</chave>
+      <tipo>date_hora_br</tipo>
+      <padrao></padrao>
+      <descricao>Data de emissao da Nota Fiscal</descricao>
+      <tamanho></tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>hora_saida</chave>
+      <tipo>date_hora_br</tipo>
+      <padrao></padrao>
+      <descricao>Data de Saída ou da Entrada da Mercadoria / Produto / Serviço</descricao>
+      <tamanho></tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>tipo_nota</chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+      <descricao>Tipo da nota fiscal</descricao>
+      <tamanho>1</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cfop</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código Fiscal de Operações e Prestações</descricao>
+      <tamanho>4</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>inscr_est_subst</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>IE do Substituto Tributário na UF de destino</descricao>
+      <tamanho>14</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>inscr_mun</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Inscrição Municipal do Emitente</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cpf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ ou CPF do destinatário ou do remetente</descricao>
+      <tamanho>14</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Razão Social ou nome do destinatário ou do remetente</descricao>
+      <tamanho>1-60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>logradouro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Logradouro</descricao>
+      <tamanho>1-60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>numero</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Número</descricao>
+      <tamanho>1-60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>complemento</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Complemento</descricao>
+      <tamanho>1-60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Bairro</descricao>
+      <tamanho>1-60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome do municipio</descricao>
+      <tamanho>1-60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Sigla da uf</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cep</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Codigo do CEP</descricao>
+      <tamanho>8</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>pais</chave>
+      <tipo>string</tipo>
+      <padrao>BRASIL</padrao>
+      <descricao>Nome do pais</descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>fone</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Telefone</descricao>
+      <tamanho>8</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>inscr_est</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>IE do destinatário ou do remetente</descricao>
+      <tamanho>14</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+  </sessao> 
+
+  <sessao> 
+    <nome>30</nome>
+    <descricao>Mercad / Prod / Serv</descricao>
+
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>30</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>codigo</chave>
+      <tipo>string</tipo>
+      <padrao>60</padrao>
+      <descricao>Código do produto ou serviço</descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>produto_nome</chave>
+      <tipo>string</tipo>
+      <padrao>60</padrao>
+      <descricao>Descrição do produto ou serviço</descricao>
+      <tamanho>120</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>NCM</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Codigo NCM</descricao>
+      <tamanho>8</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>unid_med</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Unidade de medida comercial</descricao>
+      <tamanho>6</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>quantidade</chave>
+      <tipo>float_4</tipo>
+      <padrao></padrao>
+      <descricao>Quantidade comercial</descricao>
+      <tamanho>12</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>preco_unit</chave>
+      <tipo>float_4</tipo>
+      <padrao></padrao>
+      <descricao>Valor unitário comercial</descricao>
+      <tamanho>16</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total bruto</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>cst</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código da Situação Tributária</descricao>
+      <tamanho>3</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>aliquota_icms</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Alíquota do imposto ICMS</descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>aliquota_ipi</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Alíquota do IPI</descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_ipi</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do IPI</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+  </sessao> 
+
+  <sessao> 
+    <nome>40</nome>
+    <descricao>Valores Totais da NF</descricao>
+
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>40</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>base_icms</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Base de calculo do ICMS</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_icms</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total do ICMS</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>base_subst</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Base de Cálculo do ICMS ST</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_subst</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do ICMS ST</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>total_produto</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total dos produtos e servicos</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_frete</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total do frete</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_seguro</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total do seguro</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_desconto</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total do desconto</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_ipi</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total do IPI</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_outras</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Outras despesas acessorias</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_nota</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total da NF</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>vServ</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>aliquota_iss</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Aliquota do ISS</descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>valor_iss</chave>
+      <tipo>float_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do ISS</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+  </sessao> 
+
+  <sessao> 
+    <nome>50</nome>
+    <descricao>Informações do Transporte da NF</descricao>
+
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>50</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>modFrete</chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+      <descricao>Modalidade do frete</descricao>
+      <tamanho>1</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_cnpj</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ ou CPF</descricao>
+      <tamanho>14</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Razao social ou nome</descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_inscr_est</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Inscricao estadual</descricao>
+      <tamanho>14</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_endereco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Endereco completo</descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_cidade</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome do municipio</descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_estado</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Sigla UF</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_placa</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Placa do veiculo</descricao>
+      <tamanho>8</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>trans_estado</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Sigla da UF da placa</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>quantidade</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Quantidade de volumes transportados</descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>esp</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>marca</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>nVol</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>60</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>pesoL</chave>
+      <tipo>float_3</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>pesoB</chave>
+      <tipo>float_3</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>15</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+  </sessao> 
+
+  <sessao> 
+    <nome>60</nome>
+    <descricao>Informações Adicionais e de Cobrança</descricao>
+
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>60</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>fatura</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>256</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>infAdFisco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>256</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>infCpl</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>5000</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+  </sessao> 
+
+  <sessao> 
+    <nome>90</nome>
+    <descricao>Rodape</descricao>
+
+    <registro>
+      <chave>tipo_reg</chave>
+      <tipo>integer</tipo>
+      <padrao>90</padrao>
+      <descricao>Tipo de registro</descricao>
+      <tamanho>2</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>qtde_reg_20</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>qtde_reg_30</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>qtde_reg_40</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>qtde_reg_50</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+
+    <registro>
+      <chave>qtde_reg_60</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao></descricao>
+      <tamanho>5</tamanho>
+      <requerido>nao</requerido>
+    </registro>
+  </sessao> 
+</layout>

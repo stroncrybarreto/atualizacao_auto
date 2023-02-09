@@ -1,0 +1,65 @@
+<relatorio dados="venda_grupo_resumo" ordem="grupo_nome">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+3  subtitulo                tam=137 alinha=centro
+4  custo					tam=13	fmt=float2
+5  empresa_nome				tam=40
+7  grupo_codigo				tam=6   alinha=direita   
+8  grupo_nome				tam=29	alinha=esquerda
+9  quantidade_dia			tam=13  fmt=float3  expr=venda_quantidade/nr_dias
+10 valor_dia				tam=13  fmt=float2  expr=venda_valor/nr_dias
+11 venda_quantidade			tam=13  fmt=float3
+12 venda_valor		       	tam=12  fmt=float2
+13 lucro 					tam=12  fmt=float2 	expr=(venda_valor-custo_valor)/custo_valor*100.0
+14 custo_valor				tam=12  fmt=float2
+15 total_quantidade			tam=13	fmt=float3	func=soma	campo=venda_quantidade	grupo=1	
+16 total_valor				tam=13  fmt=float2	func=soma	campo=venda_valor		grupo=1
+17 total_custo				tam=13  fmt=float2	func=soma	campo=custo_valor		grupo=1
+18 total_lucro				tam=12  fmt=float2  expr=(total_valor-total_custo)/total_custo*100.0	grupo=1
+19 preco_medio		     	tam=13  fmt=float3	expr=venda_valor/venda_quantidade
+20 total_geral_quantidade	tam=13  fmt=float3	func=soma	campo=venda_quantidade
+21 total_geral_valor		tam=13  fmt=float2	func=soma	campo=venda_valor
+22 total_geral_custo		tam=13  fmt=float2	func=soma	campo=custo_valor
+23 total_geral_lucro		tam=12  fmt=float2  expr=(total_geral_valor-total_geral_custo)/total_geral_custo*100.0
+24  titulo_relat			tam=137	alinha=centro	expr='VENDAS POR GRUPO RESUMIDA'
+25 empresa_cod_nome			tam=100 expr=str(empresa_codigo) + ' - ' + empresa_nome
+</apelidos>
+<cab_pagina>
+#1                                                                                                                       #2                 
+-----------------------------------------------------------------------------------------------------------------------------------------
+   
+#24
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome, empresa_codigo">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #25                                                                                                                          |
++-----------------------------------------+-------------------------------+-------------------------------------------------------------+
+|             Grupo de produto            |         Média diária          |                      Acumulado no período                   |
++--------+--------------------------------+---------------+---------------+---------------+---------------+--------------+--------------+
+| Código |           Descrição            |   Quantidade  |     Valor     |  Preço médio  |   Quantidade  |     Valor    |   Lucro (%)* | 
++--------+--------------------------------+---------------+---------------+---------------+---------------+--------------+--------------+  
+</cab_grupo>
+<detalhe>
+| #7     | #8                             | #9            | #10           | #19           | #11           | #12          | #13          |                 
+</detalhe> 
+<rod_grupo nome="1">
++-----------------------------------------+---------------+---------------+---------------+---------------+--------------+--------------+
+| Total da empresa                                                                        | #15           |#16           | #18          |
++-----------------------------------------------------------------------------------------+---------------+--------------+--------------+
+
+</rod_grupo>
+<rod_relat>
+
++-----------------------------------------------------------------------------------------+---------------+--------------+--------------+
+| Total geral                                                                             | #20           |#21           | #23          |
++-----------------------------------------------------------------------------------------+---------------+--------------+--------------+
+</rod_relat>
+<rod_pagina>
++---------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>198d32ba5b1c18a23d1cf87f93f6f03b</hash>
+</relatorio>

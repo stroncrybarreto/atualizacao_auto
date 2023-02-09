@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>Santander</nome>
+	
+	<sessao>
+		<nome>critica</nome>
+		
+		<registro>
+			<id>1</id>
+			<codigo>00</codigo>
+			<tipo>liquidar</tipo>
+			<descricao>Crédito ou Débito Efetuado</descricao>
+		</registro>
+		<registro>
+			<id>2</id>
+			<codigo>01</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Insuficiência de Fundos - Débito Não Efetuado</descricao>
+		</registro>
+		<registro>
+			<id>3</id>
+			<codigo>02</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Crédito ou Débito Cancelado pelo Pagador/Credor</descricao>
+		</registro>
+		<registro>
+			<id>4</id>
+			<codigo>03</codigo>
+			<tipo>liquidar</tipo>
+			<descricao>Débito Autorizado pela Agência - Efetuado</descricao>
+		</registro>
+		<registro>
+			<id>5</id>
+			<codigo>AA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Controle Inválido</descricao>
+		</registro>
+		<registro>
+			<id>6</id>
+			<codigo>AB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo de Operação Inválido</descricao>
+		</registro>
+		<registro>
+			<id>7</id>
+			<codigo>AC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo de Serviço Inválido</descricao>
+		</registro>
+		<registro>
+			<id>8</id>
+			<codigo>AD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Forma de Lançamento Inválida</descricao>
+		</registro>
+		<registro>
+			<id>9</id>
+			<codigo>AE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo/Número de Inscrição Inválido</descricao>
+		</registro>
+		<registro>
+			<id>10</id>
+			<codigo>AF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de Convênio Inválido</descricao>
+		</registro>
+		<registro>
+			<id>11</id>
+			<codigo>AG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Agência/Conta Corrente/DV Inválido</descricao>
+		</registro>
+		<registro>
+			<id>12</id>
+			<codigo>AH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número Sequêncial do Registro no Lote Inválido</descricao>
+		</registro>
+		<registro>
+			<id>13</id>
+			<codigo>AI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de Segmento de Detalhe Inválido</descricao>
+		</registro>
+		<registro>
+			<id>14</id>
+			<codigo>AJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo de Movimento Inválido</descricao>
+		</registro>
+		<registro>
+			<id>15</id>
+			<codigo>AK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código da Câmara de Compensação do Banco do Favorecido/Depositário Inválido</descricao>
+		</registro>
+		<registro>
+			<id>16</id>
+			<codigo>AL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código do Banco do Favorecido ou Depositário Inválido</descricao>
+		</registro>
+		<registro>
+			<id>17</id>
+			<codigo>AM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Agência Mantenedora da Conta Corrente do Favorecido Inválida</descricao>
+		</registro>
+		<registro>
+			<id>18</id>
+			<codigo>AN</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta Corrente/DV do Favorecido Inválido</descricao>
+		</registro>
+		<registro>
+			<id>19</id>
+			<codigo>AO</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Nome do Favorecido Não Informado</descricao>
+		</registro>
+		<registro>
+			<id>20</id>
+			<codigo>AP</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Data Lançamento Inválida/Vencimento Inválido</descricao>
+		</registro>
+		<registro>
+			<id>21</id>
+			<codigo>AQ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo/Quantidade da Moeda Inválido</descricao>
+		</registro>
+		<registro>
+			<id>22</id>
+			<codigo>AR</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor do Lançamento Inválido</descricao>
+		</registro>
+		<registro>
+			<id>23</id>
+			<codigo>AS</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Aviso ao Favorecido - Identificação Inválida</descricao>
+		</registro>
+		<registro>
+			<id>24</id>
+			<codigo>AT</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo/Número de Inscrição do Favorecido/Contribuinte Inválido</descricao>
+		</registro>
+		<registro>
+			<id>25</id>
+			<codigo>AU</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Logradouro do Favorecido Não Informado</descricao>
+		</registro>
+		<registro>
+			<id>26</id>
+			<codigo>AV</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número do Local do Favorecido Não Informado</descricao>
+		</registro>
+		<registro>
+			<id>27</id>
+			<codigo>AW</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Cidade do Favorecido Não Informada</descricao>
+		</registro>
+		<registro>
+			<id>28</id>
+			<codigo>AX</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CEP/Complemento do Favorecido Inválido</descricao>
+		</registro>
+		<registro>
+			<id>29</id>
+			<codigo>AY</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Sigla do Estado do Favorecido Inválido</descricao>
+		</registro>
+		<registro>
+			<id>30</id>
+			<codigo>AZ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código/Nome do Banco Depositário Inválido</descricao>
+		</registro>
+		<registro>
+			<id>31</id>
+			<codigo>BA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código/Nome da Agência Depositário Não Informado</descricao>
+		</registro>
+		<registro>
+			<id>32</id>
+			<codigo>BB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número do Documento Inválido(Seu Número)</descricao>
+		</registro>
+		<registro>
+			<id>33</id>
+			<codigo>BC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Nosso Número Inválido</descricao>
+		</registro>
+		<registro>
+			<id>34</id>
+			<codigo>BD</codigo>
+			<tipo>criticar</tipo>
+			<descricao>Inclusão Efetuada Com Sucesso</descricao>
+		</registro>
+		<registro>
+			<id>35</id>
+			<codigo>BE</codigo>
+			<tipo>criticar</tipo>
+			<descricao>Alteração Efetuada Com Sucesso</descricao>
+		</registro>
+		<registro>
+			<id>36</id>
+			<codigo>BF</codigo>
+			<tipo>criticar</tipo>
+			<descricao>Exclusão Efetuada Com Sucesso</descricao>
+		</registro>
+		<registro>
+			<id>37</id>
+			<codigo>BG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Agência/Conta Impedida Legalmente</descricao>
+		</registro>
+		<registro>
+			<id>38</id>
+			<codigo>B1</codigo>
+			<tipo>agendar</tipo>
+			<descricao>Bloqueado Pendente de Autorização</descricao>
+		</registro>
+		<registro>
+			<id>39</id>
+			<codigo>B3</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Bloqueado Pelo Cliente</descricao>
+		</registro>
+		<registro>
+			<id>40</id>
+			<codigo>B4</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Bloqueado Pela Captura de Título da Cobrança</descricao>
+		</registro>
+		<registro>
+			<id>41</id>
+			<codigo>B8</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Bloqueado pela Validação de Tributos</descricao>
+		</registro>
+		<registro>
+			<id>42</id>
+			<codigo>CA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de barras - Código do Banco Inválido</descricao>
+		</registro>
+		<registro>
+			<id>43</id>
+			<codigo>CB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de barras - Código da Moeda Inválido</descricao>
+		</registro>
+		<registro>
+			<id>44</id>
+			<codigo>CC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de barras - Dígito Verificador Geral Inválido</descricao>
+		</registro>
+		<registro>
+			<id>45</id>
+			<codigo>CD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de barras - Valor do Título Inválido</descricao>
+		</registro>
+		<registro>
+			<id>46</id>
+			<codigo>CE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de barras - Campo Livre Inválido</descricao>
+		</registro>
+		<registro>
+			<id>47</id>
+			<codigo>CF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor do Documento/Principal/Menor que o ´Mínimo Inválido</descricao>
+		</registro>
+		<registro>
+			<id>48</id>
+			<codigo>CH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor do Desconto Inválido</descricao>
+		</registro>
+		<registro>
+			<id>49</id>
+			<codigo>CI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor de Mora Inválido</descricao>
+		</registro>
+		<registro>
+			<id>50</id>
+			<codigo>CJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor da Multa Inválido</descricao>
+		</registro>
+		<registro>
+			<id>51</id>
+			<codigo>CK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor do IR Inválido</descricao>
+		</registro>
+		<registro>
+			<id>52</id>
+			<codigo>CL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor do ISS Inválido</descricao>
+		</registro>
+		<registro>
+			<id>53</id>
+			<codigo>CM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor do IOF Inválido</descricao>
+		</registro>
+		<registro>
+			<id>54</id>
+			<codigo>CN</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor de Outras Deduções Inválido</descricao>
+		</registro>
+		<registro>
+			<id>55</id>
+			<codigo>CO</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor de Outros Acréscimos Inválido</descricao>
+		</registro>
+		<registro>
+			<id>56</id>
+			<codigo>HA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Lote Não Aceito</descricao>
+		</registro>
+		<registro>
+			<id>57</id>
+			<codigo>HB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Inscrição da Empresa Inválida Para o Contrato</descricao>
+		</registro>
+		<registro>
+			<id>58</id>
+			<codigo>HC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Convênio Com a Empresa Inexistente/Inválido Para o Contrato</descricao>
+		</registro>
+		<registro>
+			<id>59</id>
+			<codigo>HD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Agência/Conta Corrente da Empresa Inexistente/Inválida Para o Contrato</descricao>
+		</registro>
+		<registro>
+			<id>60</id>
+			<codigo>HE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo de Serviço Inválido Para o Contrato</descricao>
+		</registro>
+		<registro>
+			<id>61</id>
+			<codigo>HF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta Corrente da Empresa com Saldo Insuficiente</descricao>
+		</registro>
+		<registro>
+			<id>62</id>
+			<codigo>HG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Lote de Serviço Fora de Sequência</descricao>
+		</registro>
+		<registro>
+			<id>63</id>
+			<codigo>HH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Lote de Serviço Inválido</descricao>
+		</registro>
+		<registro>
+			<id>64</id>
+			<codigo>HI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Arquivo Não Aceito</descricao>
+		</registro>
+		<registro>
+			<id>75</id>
+			<codigo>HJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Tipo de Registro Inválido</descricao>
+		</registro>
+		<registro>
+			<id>76</id>
+			<codigo>HL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Versão de Layout Inválida</descricao>
+		</registro>
+		<registro>
+			<id>77</id>
+			<codigo>HU</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Hora de Envio Inválida</descricao>
+		</registro>
+		<registro>
+			<id>78</id>
+			<codigo>IJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Competência ou Período de Referência ou Número da Parcela Inválido</descricao>
+		</registro>
+		<registro>
+			<id>79</id>
+			<codigo>IM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Município Inválido</descricao>
+		</registro>
+		<registro>
+			<id>80</id>
+			<codigo>IN</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número Declaração Inválido</descricao>
+		</registro>
+		<registro>
+			<id>81</id>
+			<codigo>IO</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número Etiqueta Inválido</descricao>
+		</registro>
+		<registro>
+			<id>82</id>
+			<codigo>IP</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número Notificação Inválido</descricao>
+		</registro>
+		<registro>
+			<id>83</id>
+			<codigo>IQ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Inscrição Estadual Inválida</descricao>
+		</registro>
+		<registro>
+			<id>84</id>
+			<codigo>IR</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Dívida Ativa Inválida</descricao>
+		</registro>
+		<registro>
+			<id>85</id>
+			<codigo>IS</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor Honorários ou Outros Acréscimos Inválido</descricao>
+		</registro>
+		<registro>
+			<id>86</id>
+			<codigo>IT</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Período Apuração Inválido</descricao>
+		</registro>
+		<registro>
+			<id>87</id>
+			<codigo>IU</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor ou Percentual da Receita Inválido</descricao>
+		</registro>
+		<registro>
+			<id>88</id>
+			<codigo>IV</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Numero Referência Inválido</descricao>
+		</registro>
+		<registro>
+			<id>89</id>
+			<codigo>TA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Lote não Aceito - Totais do Lote com Diferença</descricao>
+		</registro>
+		<registro>
+			<id>90</id>
+			<codigo>XB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Número de Inscrição do Contribuinte Inválido</descricao>
+		</registro>
+		<registro>
+			<id>91</id>
+			<codigo>XC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código do Pagamento ou Competência ou Número de Inscrição Inválido</descricao>
+		</registro>
+		<registro>
+			<id>92</id>
+			<codigo>XF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código do Pagamento ou Competência Não Numérico ou Igual a Zeros</descricao>
+		</registro>
+		<registro>
+			<id>93</id>
+			<codigo>YA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Título Não Encontrado</descricao>
+		</registro>
+		<registro>
+			<id>94</id>
+			<codigo>YB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Identificação Registro Opcional Inválido</descricao>
+		</registro>
+		<registro>
+			<id>95</id>
+			<codigo>YC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código Padrão Inválido</descricao>
+		</registro>
+		<registro>
+			<id>96</id>
+			<codigo>YD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código de Ocorrência Inválido</descricao>
+		</registro>
+		<registro>
+			<id>97</id>
+			<codigo>YE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Complemento de Ocorrência Inválido</descricao>
+		</registro>
+		<registro>
+			<id>98</id>
+			<codigo>YF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Alegação Já Informada</descricao>
+		</registro>
+		<registro>
+			<id>99</id>
+			<codigo>ZA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Transferência Devolvida</descricao>
+		</registro>
+		<registro>
+			<id>100</id>
+			<codigo>ZB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Transferência Mesma Titularidade Não Permitida</descricao>
+		</registro>
+		<registro>
+			<id>101</id>
+			<codigo>ZC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código Pagamento Tributo Inválido</descricao>
+		</registro>
+		<registro>
+			<id>102</id>
+			<codigo>ZD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Competência Inválida</descricao>
+		</registro>
+		<registro>
+			<id>103</id>
+			<codigo>ZE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Valor Outras Entidades Inválido</descricao>
+		</registro>
+		<registro>
+			<id>104</id>
+			<codigo>ZF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Sistema Origem Inválido</descricao>
+		</registro>
+		<registro>
+			<id>105</id>
+			<codigo>ZG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Banco Destino Não Recebe DOC</descricao>
+		</registro>
+		<registro>
+			<id>106</id>
+			<codigo>ZH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Banco Destino Inoperante Para DOC</descricao>
+		</registro>
+		<registro>
+			<id>107</id>
+			<codigo>ZI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Código do Histórico de Crédito Inválido</descricao>
+		</registro>
+		<registro>
+			<id>108</id>
+			<codigo>ZK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Autorização Iniciada no Internet Banking</descricao>
+		</registro>
+		<registro>
+			<id>109</id>
+			<codigo>Z0</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta com Bloqueio</descricao>
+		</registro>      
+		<registro>
+			<id>110</id>
+			<codigo>Z1</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta Fechada. É Necessário Ativar a Conta</descricao>
+		</registro>
+		<registro>
+			<id>111</id>
+			<codigo>Z2</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta Com Movimento Controlado</descricao>
+		</registro>
+		<registro>
+			<id>112</id>
+			<codigo>Z3</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta Cancelada</descricao>
+		</registro>
+		<registro>
+			<id>113</id>
+			<codigo>Z4</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Registro Inconsistente (Título)</descricao>
+		</registro>
+		<registro>
+			<id>114</id>
+			<codigo>Z5</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Apresentação Indevida (Título)</descricao>
+		</registro>
+		<registro>
+			<id>115</id>
+			<codigo>Z6</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Dados do Destinatário Inválidos</descricao>
+		</registro>
+		<registro>
+			<id>116</id>
+			<codigo>Z7</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Agência ou Conta Destinatária do Crédito Inválida</descricao>
+		</registro>
+		<registro>
+			<id>117</id>
+			<codigo>Z8</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Divergência na Titularidade</descricao>
+		</registro>
+		<registro>
+			<id>118</id>
+			<codigo>Z9</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>Conta Destinatária do Crédito Encerrada</descricao>
+		</registro>
+		<registro>
+			<id>119</id>
+			<codigo>C1</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPROR - Devolvido por Outros Bancos</descricao>
+		</registro>
+		<registro>
+			<id>120</id>
+			<codigo>C2</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPROR - Recusado</descricao>
+		</registro>
+		<registro>
+			<id>121</id>
+			<codigo>C3</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPROR - Rejeitado por Sistema</descricao>
+		</registro>
+		<registro>
+			<id>122</id>
+			<codigo>C4</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPROR - Rejeitado por Horário</descricao>
+		</registro>
+		<registro>
+			<id>123</id>
+			<codigo>C5</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPROR - Aprovado</descricao>
+		</registro>
+		<registro>
+			<id>124</id>
+			<codigo>C6</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPROR - Compromisso Inválido</descricao>
+		</registro>
+	</sessao>
+</layout>

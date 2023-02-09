@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>lancamentos_produtos_icms</nome>
+
+  <sessao>
+	<nome>lancamentos_produtos_icms</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>"</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>tipo_operacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Tipo de operação (A,E,I)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>5</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>6</inicio>
+      <fim>6</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Tipo de movimento (Entrada / Saída)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>7</inicio>
+      <fim>9</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>10</inicio>
+      <fim>28</fim>
+      <chave>cpf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Fornecedor (C.G.C )</descricao>
+    </registro>
+
+    <registro>
+      <inicio>29</inicio>
+      <fim>31</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>32</inicio>
+      <fim>37</fim>
+      <chave>numero_nota</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Número do documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>38</inicio>
+      <fim>40</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>41</inicio>
+      <fim>43</fim>
+      <chave>serie</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Série do documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>44</inicio>
+      <fim>46</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>58</fim>
+      <chave>cfop</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código da natureza</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>61</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>62</inicio>
+      <fim>70</fim>
+      <chave>codigo_produto</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código reduzido do produto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>71</inicio>
+      <fim>73</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>74</inicio>
+      <fim>92</fim>
+      <chave>codigo_nbm</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código da NBM do produto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>93</inicio>
+      <fim>95</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>96</inicio>
+      <fim>109</fim>
+      <chave>quantidade</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Quantidade de produtos movimentada</descricao>
+    </registro>
+
+    <registro>
+      <inicio>110</inicio>
+      <fim>112</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>113</inicio>
+      <fim>126</fim>
+      <chave>valor_total</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor total</descricao>
+    </registro>
+
+    <registro>
+      <inicio>127</inicio>
+      <fim>129</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>130</inicio>
+      <fim>143</fim>
+      <chave>base_icms</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor da base de cálculo do ICMS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>144</inicio>
+      <fim>146</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>147</inicio>
+      <fim>152</fim>
+      <chave>aliquota_icms</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Alíquota do ICMS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>153</inicio>
+      <fim>155</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>156</inicio>
+      <fim>169</fim>
+      <chave>base_subst</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor da base de cálculo da Subst. trib</descricao>
+    </registro>
+
+    <registro>
+      <inicio>170</inicio>
+      <fim>172</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>173</inicio>
+      <fim>181</fim>
+      <chave>numero_ordem</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Número de ordem deste produto na NF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>182</inicio>
+      <fim>184</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>185</inicio>
+      <fim>198</fim>
+      <chave>valor_desconto</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do desconto concedido ao item</descricao>
+    </registro>
+
+    <registro>
+      <inicio>199</inicio>
+      <fim>201</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>202</inicio>
+      <fim>210</fim>
+      <chave>numero_formulario</chave>
+      <tipo>interger</tipo>
+      <padrao></padrao>
+      <descricao>Número do Formulário Continuo usado para emissão desta nota Fiscal (SISIF-CE)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>211</inicio>
+      <fim>213</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>214</inicio>
+      <fim>227</fim>
+      <chave>valor_icms</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do ICMS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>228</inicio>
+      <fim>230</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>231</inicio>
+      <fim>244</fim>
+      <chave>valor_ipi</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do IPI</descricao>
+    </registro>
+
+    <registro>
+      <inicio>245</inicio>
+      <fim>247</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>248</inicio>
+      <fim>261</fim>
+      <chave>valor_icms_st</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor do ICMS-ST</descricao>
+    </registro>
+
+    <registro>
+      <inicio>262</inicio>
+      <fim>264</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>265</inicio>
+      <fim>278</fim>
+      <chave>base_ipi</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Base de Calculo do IPI</descricao>
+    </registro>
+
+    <registro>
+      <inicio>279</inicio>
+      <fim>281</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>282</inicio>
+      <fim>295</fim>
+      <chave>perc_ipi</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Percentual do IPI</descricao>
+    </registro>
+
+    <registro>
+      <inicio>296</inicio>
+      <fim>298</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+	</registro>
+
+    <registro>
+      <inicio>299</inicio>
+      <fim>299</fim>
+      <chave>sit_tributaria</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Situação Tributária</descricao>
+    </registro>
+
+    <registro>
+      <inicio>300</inicio>
+      <fim>300</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>"</padrao>
+      <descricao></descricao>
+	</registro>
+
+  </sessao>
+
+</layout>

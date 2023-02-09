@@ -1,0 +1,40 @@
+<relatorio dados="estoque_comb_empresa">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1			tam=124	alinha=centro
+4  titulo2			tam=124	alinha=centro
+5  linha_moldura	tam=124
+6  linha_cabecalho	tam=124
+7  linha_detalhe	tam=124
+8  linha_total		tam=124
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                          #2        
+----------------------------------------------------------------------------------------------------------------------------
+ 
+#3
+#4
+
+#5
+#6
+#5
+</cab_pagina>
+
+<detalhe>
+#7
+</detalhe>
+
+<rod_relat>
+#5
+#8
+#5
+</rod_relat>
+
+<rod_pagina>
+#5
+</rod_pagina>
+
+<hash>a2565c969f98bec2ed03fce7679e2547</hash>
+</relatorio>

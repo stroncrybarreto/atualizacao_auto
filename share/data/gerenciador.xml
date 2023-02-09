@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='iso8859-1'?>
+<relatorio>
+<gerenciador>
+<sql>
+Achar vinculos de cupom com a nota fiscal, usando o grid da fatura
+--- Substituir os childs pelo grid da fatura :
+select nf.grid 
+  from nota_fiscal nf 
+  join nota_fiscal_produto nfp on (nfp.nota_fiscal = nf.grid) 
+  join nota_fiscal_cupom nfc on (nfc.nota_fiscal = nf.grid) 
+  join cupom_total ct on (ct.cupom = nfc.cupom)
+ where ct.mlid in (select ct.mlid 
+                     from cupom c 
+                     join cupom_total ct on (c.grid=ct.cupom) 
+                    where ct.mlid in (select mlid 
+                                        from movto 
+                                       where grid in (select parent
+                                                        from movto_map
+                                                       where child=12885391278)))
+   and nf.situacao = 'E' 
+   and nfp.tipo != 'S' 
+union 
+select nf.grid 
+  from nota_fiscal nf 
+  join nota_fiscal_produto nfp on (nfp.nota_fiscal = nf.grid) 
+ where nf.mlid in (select ct.mlid
+                     from cupom c 
+                     join cupom_total ct on (c.grid=ct.cupom) 
+                    where ct.mlid in (select mlid 
+                                        from movto 
+                                       where grid in (select parent 
+                                                        from movto_map 
+                                                        where child=12885391278)))
+   and nf.situacao='E' 
+   and nfp.tipo != 'S';
+   
+–--- Ver tamanho do banco de dados
+select pg_size_pretty(pg_database_size('autosystem'));
+
+–-- ver data de criação da base de dados
+SELECT (pg_stat_file('base/'||oid||'/PG_VERSION')).creation
+  FROM pg_database
+ WHERE datname = current_database();
+ 
+–-- ver informações da base
+select (pg_stat_file('.')).*;
+
+–-- Ver tamanho de indexs com mais de 1gb armazenados na base
+SELECT n.nspname AS esquema
+      , c.relname AS tabela
+      , pg_catalog.pg_get_userbyid(c.relowner) AS dono
+      , reltuples::integer AS registros
+      , pg_size_pretty(pg_relation_size(n.nspname ||'.'||'"'||c.relname||'"')) AS tamanho
+      , pg_size_pretty(pg_total_relation_size(n.nspname ||'.'||'"'||c.relname||'"')) AS tamanho_total
+  FROM pg_catalog.pg_class c
+  LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+      WHERE c.relkind = 'i'
+		--AND c.relname ilike 'movto_ch_dev%'
+		and pg_relation_size(n.nspname ||'.'||'"'||c.relname||'"') &gt;1000000000
+   ORDER BY pg_relation_size(n.nspname ||'.'||'"'||c.relname||'"') DESC;
+   
+–-- Ver tamanho da base de dados
+select pg_size_pretty(t.tamanho_sem_index::bigint) as tamanho_sem_index
+	  ,pg_size_pretty(t.tamanho_total::bigint) as tamanho_com_index
+	  ,pg_size_pretty((t.tamanho_total-t.tamanho_sem_index)::bigint) as diff_base
+  FROM (SELECT sum(pg_relation_size(esq_tab)) AS tamanho_sem_index
+              ,sum(pg_total_relation_size(esq_tab)) AS tamanho_total
+	      FROM (SELECT tablename AS tabela,
+				       schemaname AS esquema,
+				       schemaname||'.'||tablename AS esq_tab
+			      FROM pg_catalog.pg_tables
+			     WHERE schemaname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') ) AS x) t;
+
+–-- ver tamanho das tabelas
+SELECT esquema, tabela,
+       pg_size_pretty(pg_relation_size(esq_tab)) AS tamanho,
+       pg_size_pretty(pg_total_relation_size(esq_tab)) AS tamanho_total
+  FROM (SELECT tablename AS tabela,
+               schemaname AS esquema,
+               schemaname||'.'||tablename AS esq_tab
+          FROM pg_catalog.pg_tables
+         WHERE schemaname NOT
+            IN ('pg_catalog', 'information_schema', 'pg_toast') ) AS x
+ ORDER BY pg_total_relation_size(esq_tab) DESC;
+ 
+–-- Ver utilização de INDEX
+SELECT   x.esquema
+            , x.tabela
+            , x.dono
+            , x.comentario
+            , x.registros
+            , x.tamanho_sem_indices
+            , x.tamanho_com_indices
+            , x.total_de_leituras_sequencial
+            , x.total_de_leituras_indexada
+            , x.total_de_leituras
+            , x.total_de_inserts
+            , x.total_de_updates
+            , x.total_de_deletes
+       FROM (( SELECT
+            n.nspname AS esquema
+            , c.relname AS tabela
+            , pg_catalog.pg_get_userbyid(c.relowner) AS dono
+            , pg_catalog.obj_description(c.oid, 'pg_class') AS comentario           
+            , reltuples::integer AS registros
+            , pg_size_pretty(pg_relation_size(n.nspname ||'.'||'"'||c.relname||'"')) AS tamanho_sem_indices
+            , pg_size_pretty(pg_total_relation_size(n.nspname ||'.'||'"'||c.relname||'"')) AS tamanho_com_indices             
+       FROM pg_catalog.pg_class c
+  LEFT JOIN pg_catalog.pg_namespace n
+         ON n.oid = c.relnamespace
+      WHERE c.relkind = 'r'
+        AND n.nspname NOT IN (
+                               'pg_catalog',
+                               'information_schema',
+                               'pg_toast'                               
+                             )
+        AND n.nspname NOT ILIKE 'pg_temp_%'
+        AND n.nspname NOT ILIKE 'pg_ts_%'
+        AND c.relname NOT ILIKE 'pg_ts_%'
+   ORDER BY 1 ASC) vw_find
+             INNER JOIN
+                   (
+                     SELECT relname AS tabelax
+                          , SUM(seq_scan) AS total_de_leituras_sequencial
+                          , SUM(idx_scan) AS total_de_leituras_indexada
+                          , SUM(seq_scan+idx_scan) AS total_de_leituras
+                          , SUM(n_tup_ins) AS total_de_inserts
+                          , SUM(n_tup_upd) AS total_de_updates
+                          , SUM(n_tup_del) AS total_de_deletes
+                       FROM pg_stat_user_tables
+                   GROUP BY relname
+                   ) AS psut
+                ON psut.tabelax = vw_find.tabela
+            ) AS x;
+
+–-- ver se o registro foi gerado na matriz ou filial [!= filial] [= matriz]
+ select * from bomba where pgd_sid_f(grid)!=0; 
+
+–-- procurar por registro com espaço de ENTER em versões atuais do postgres
+select email, codigo, nome, grid from pessoa where email ilike E'%\n%'; 
+
+–-- procurar por registro com espaço de ENTER:
+ select * from movto where obs like '%\n%'; 
+
+–-- remover espaço de ENTER do banco:
+ select replace(obs,'\n',' ') from movto where grid=1899035; 
+
+–-- ou pode remover o ENTER assim:
+ select replace(obs,chr(10),' ') from movto where grid=1899035; 
+
+–-- Formação de number para formato de valor
+select sum(valor),to_char(sum(valor),'999G999G999D99'),operacao
+   from lancto where data='2012-04-30' and empresa= 21193 and produto=21002 group by operacao;
+
+–-- Comando para filtar registro nulo (tipo nvl do oracle):
+ select coalesce(max(codigo), 0) from orcamento_impressao_pendent;  
+
+–-- Somando registro e caso o retorno for nulo coloca ZERO (tipo nvl do oracle):
+ select round(coalesce(sum(ponto),0)::numeric,4) as saldo into r from ponto where cartao_fidelidade=$1;  
+
+–-- Verificação de tabelas:
+ select relname from pg_class where oid=xxxx;  
+
+–-- Somar registro por retorno de coluna:
+ select SUM((case when operacao='V' then 1 else 0 end)) from lancto where data='2011-12-06'; 
+
+–-- Deletar registros que não pertecem a alguma condição (not in):
+ delete from orcamento where grid not in (select orcamento from comanda_produto) and status='A';  
+
+–-- Contador do dia de semana
+select count(*),t.dow
+   from (select date_part('dow',('2014-08-01'::date + s.a)) as dow
+                               ,'2014-08-01'::date + s.a as dates 
+           from generate_series(0,('2014-08-31'::date-'2014-08-01'::date)) as s(a)) t group by t.dow order by t.dow;
+
+–-- Somar vendas em Dinheiro:
+ select sum(venda_pagamento_dinheiro_f(mlid)) as dinheiro 
+  from movto 
+ where empresa=1 
+   and conta_debitar='1.1.2.3' 
+   and data='2012-10-30'
+   and motivo=164;  
+
+–-- Ver comandos executados:
+ SELECT pg_stat_get_backend_pid(s.backendid) AS procpid,pg_stat_get_backend_activity(s.backendid) AS current_query
+   FROM (SELECT pg_stat_get_backend_idset() AS backendid) AS s;  
+
+–-- Ver tabelas:
+ select * from pg_tables; 
+
+–-- Ver tabelas que precisam de Vacuum
+ SELECT *
+       FROM pg_stat_all_tables
+      WHERE n_dead_tup &gt; 0
+   ORDER BY n_dead_tup DESC;
+
+–-- Ver data do último Vacuum
+SELECT schemaname AS esquema
+          , relname AS tabela
+          , pg_stat_get_last_vacuum_time(relid) AS ultimo_vacuum
+          , pg_stat_get_last_autovacuum_time(relid) AS ultimo_autovacuum
+       FROM pg_stat_all_tables;
+
+–-- Ver locks
+ select * from pg_lock_status(); 
+
+–-- Ver locks detalhado
+SELECT client_addr AS "estacao"
+       ,S.procpid as sessao
+	  ,relname AS "tabela"
+	  ,(CASE WHEN mode = 'AccessShareLock' THEN 'Acesso a tabela'
+             WHEN mode = 'ExclusiveLock' THEN 'Travamento da tabela'
+             WHEN mode = 'RowShareLock' THEN 'Acesso ao registro da tabela'
+             WHEN mode = 'RowExclusiveLock' THEN 'Travamento do registro da tabela'
+        END) AS "modo"
+	  ,substr(S.current_query,1,50) as SQL
+	  ,now()-S.query_start as tempo
+	  ,(case when S.waiting then 'esperando' else 'executando' end) as status
+	  ,D.datname AS "base de dados"
+  FROM pg_locks L
+  INNER JOIN pg_class C ON (C.oid = L.relation AND C.relkind = 'r')
+  INNER JOIN pg_database D ON (D.oid = L.database)
+  INNER JOIN pg_stat_activity S ON (S.procpid = L.pid)
+WHERE relname NOT LIKE 'pg_%'
+and mode like '%%ExclusiveLock'
+ORDER BY modo, client_addr, relname; 
+
+–-- Ver lock detalhado versão &gt;=9.2
+SELECT client_addr AS "estacao"
+       ,S.pid as sessao
+	  ,relname AS "tabela"
+	  ,(CASE WHEN mode = 'AccessShareLock' THEN 'Acesso a tabela'
+             WHEN mode = 'ExclusiveLock' THEN 'Travamento da tabela'
+             WHEN mode = 'RowShareLock' THEN 'Acesso ao registro da tabela'
+             WHEN mode = 'RowExclusiveLock' THEN 'Travamento do registro da tabela'
+        END) AS "modo"
+	  ,substr(S.query,1,50) as SQL
+	  ,now()-S.query_start as tempo
+	  ,(case when S.waiting then 'esperando' else 'executando' end) as status
+	  ,D.datname AS "base de dados"
+  FROM pg_locks L
+  INNER JOIN pg_class C ON (C.oid = L.relation AND C.relkind = 'r')
+  INNER JOIN pg_database D ON (D.oid = L.database)
+  INNER JOIN pg_stat_activity S ON (S.pid = L.pid)
+WHERE relname NOT LIKE 'pg_%'
+and mode like '%%ExclusiveLock'
+ORDER BY modo, client_addr, relname;
+
+–-- Ver configurações do banco
+select * from pg_settings;
+
+–-- Ver TimeZone do banco
+select * from pg_settings where name='TimeZone';
+
+–-- Ver processos banco:
+select * from pg_stat_activity;
+
+–-- Ver processos mais demorados do banco:
+ select procpid,substr(current_query,1,50),now()-query_start as tempo,(case when waiting then 'esperando' else 'executando' end) as status
+         from pg_stat_activity 
+        where current_query!='&lt;IDLE&gt;' and query_start &lt; now() - '15 seconds'::interval;  
+
+–-- Ver processos mais demorados do banco &gt; 9.4:
+  select state,pid,substr(query,1,50),now()-query_start as tempo,(case when waiting then 'esperando' else 'executando' end) as status
+         from pg_stat_activity 
+        where query!='&lt;IDLE&gt;' and query_start &lt; now() - '15 seconds'::interval
+		  and state not in ('idle','idle in transaction'); 
+
+–-- Verificar fonte de function (Somente usado nas versões atuais)
+SELECT pg_get_functiondef(oid) FROM pg_proc WHERE proname ilike 'conta_saldo_empresa';
+
+–-- Alterando o valor da seqüência:
+SELECT SETVAL('abastecimento_seq', 1);
+
+–-- Ver todas as sequences do banco:
+SELECT (relname) from pg_class where relkind='S';
+
+–-- Ver último valor da sequence:
+SELECT last_value FROM abastecimento_seq;
+
+–-- Ver parametros do banco:
+SELECT current_setting('default_with_oids');
+
+–-- Ver quantidade de registro na tabela pg_class:
+SELECT reltuples FROM pg_class WHERE relname='movto';
+
+–-- Ver versão de banco
+select version();
+
+–-- cancelar query &gt;= 8.0
+SELECT pg_cancel_backend(21471);
+
+–-- cancelar processo &gt;= 8.4
+SELECT pg_terminate_backend(21471);
+
+–-- Matar sessão ativa no banco
+select pg_cancel_backend(numero_pid);
+
+–-- Matar todas as sessões no banco
+ SELECT pg_cancel_backend(procpid) FROM pg_stat_activity WHERE procpid &lt;&gt; pg_backend_pid();
+ 
+–-- Matar todos os processos banco &gt;= 9.2
+SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE pid &lt;&gt; pg_backend_pid();
+
+–-- Ver tabelas que possuem uma coluna especifica
+SELECT pc.relname as tabela
+  FROM pg_class pc
+ INNER JOIN pg_attribute a ON (pc.oid = a.attrelid)
+ INNER JOIN pg_index i ON (pc.oid = i.indrelid)
+ WHERE a.attname='produto';
+ 
+–-- ver colunas de uma tabela
+SELECT a.attname as coluna 
+  FROM pg_class as pc
+  INNER JOIN pg_attribute a ON (pc.oid = a.attrelid)
+  where pc.relname= 'usuario_pid'
+    and attstattarget &lt; 0;
+
+–-- Ver tipo da coluna de uma tabela
+select c.relname
+      ,a.attname as "Column"
+      ,pg_catalog.format_type(a.atttypid, a.atttypmod) as "Datatype"
+  from pg_catalog.pg_attribute a 
+  inner join pg_stat_user_tables c on a.attrelid = c.relid
+  WHERE a.attnum &gt; 0 
+    AND NOT a.attisdropped
+order by c.relname, a.attname;
+
+–-- verificar as movtos que possuem mais de duas casas
+select valor,length(split_part(valor::text,'.',2)),split_part(valor::text,'.',2)  from movto where length(split_part(valor::text,'.',2))&gt;2;
+
+–-- Criar tabela de produtos que possuem o mesmo nome, e manter somente os de menor grid
+create table lista_produto as
+select y.grid as produto
+      ,x.grid as produto_old
+  from  (select p.* 
+           from produto p 
+		   join (select count(*), nome from produto group by 2 having count(*)&gt;1) x on (p.nome=x.nome)
+		  where p.flag='A') x
+  join (select min(p.grid) as grid
+              ,p.nome 
+		  from produto p 
+		  join (select count(*), nome from produto group by 2 having count(*)&gt;1) t on (t.nome=p.nome)
+		 where p.flag='A'
+		 group by 2)  y on (x.nome=y.nome and x.grid!=y.grid);
+
+–-- Como retirar acento de palavras salvas no banco
+SELECT TO_ASCII( 'À AÇÃO', 'LATIN1' );
+
+--– Exemplo pratico usando uma tabela do sistema para remover acentos
+SELECT TO_ASCII( nome, 'LATIN1' ) from extrato_concilia_categoria;
+
+–-- Buscar data no SQL Server
+select * from i_cupom where CONVERT(CHAR(10),dt_movimento,126) ='2015-02-18';
+
+---DDL - Linguagem de Definição de Dados
+–-- Criar banco de dados:
+createdb [nomde do banco]
+
+–-- Criar banco com Encoding (Codificação) ASCII
+createdb -E SQL_ASCII [nome do banco]
+
+–-- Criar banco com Enconding (cdificação) ASCII com template
+createdb -E SQL_ASCII -T template0 [nome do banco]
+
+–-- Criar banco com super usuário postgres:
+ createdb -O postgres [nome do banco]  
+ 
+–-- Excluir banco de dados:
+ dropdb [nome do banco]  
+ 
+–-- Setar usuário:
+ set PGUSER=postgres  
+ 
+–-- Setar senha:
+ set PGPASSWORD=postgres  
+ 
+–-- Setar endereço:
+ set PGHOST=hospedeiro1  
+
+–-- Setar banco de dados:
+ set PGDATABASE=[nome do banco]  
+
+–-- Criar dump base:
+ pg_dump [nome do banco] &gt;  [nome do arquivo].sql  
+
+–-- Criar dump com timestemp:
+ pg_dump autosystem &gt; backup_autosystem-%date:~0,2%-%date:~3,2%-%date:~6,10%.sql  
+
+–-- Carregar dump para outro banco:
+ pg_dump -i -h hospedeiro1 nome_do_banco_de_dados | psql -h hospedeiro2 nome_do_banco_de_dados  
+
+–-- Carregar dump:
+ psql -f [nome do arquivo] [nome do banco] [usuário]  
+
+–-- Reindex banco:
+ reindex database [nome do banco];  
+
+–-- Reindex tabela:
+ reindex table [nome tabela];  
+
+–-- Vacuum completo:
+ vacuum full analyse verbose;  
+
+–-- Vacuum de uma tabela:
+ vacuum full analyse [nome da tabela];  
+
+–-- Efeturar login no banco como DISTRO:
+ \c - distro  
+
+–-- Acessar base de dados :
+ psql -h hospedeiro [nome do banco de dados] [usuario do banco de dados] (Por padrão postgres)  
+</sql>
+</gerenciador>
+</relatorio>

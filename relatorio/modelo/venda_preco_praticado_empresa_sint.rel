@@ -1,0 +1,73 @@
+<relatorio dados="venda_preco_praticado" ordem="empresa_nome,empresa_cod_nome,empresa_grid,ordem,preco_unit">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo2				tam=101  alinha=centro
+4  empresa_cod_nome     tam=89
+5  agrupar_nome         tam=97
+6  coluna_nome          tam=37  alinha=centro
+7  detalhe_nome         tam=50
+
+9  preco_unit           tam=11   alinha=direita   fmt=float3
+10 quantidade           tam=12   alinha=direita   fmt=float2
+11 valor                tam=15   alinha=direita   fmt=float2
+
+12 subtotal_qtdade      tam=12   fmt=float2  func=soma  campo=quantidade  grupo=2
+13 subtotal_valor       tam=15   fmt=float2  func=soma  campo=valor       grupo=2
+
+14 tot_emp_qtdade       tam=12   fmt=float2  func=soma  campo=quantidade  grupo=1
+15 tot_emp_valor        tam=15   fmt=float2  func=soma  campo=valor       grupo=1
+
+16 tot_geral_qtdade     tam=12   fmt=float2  func=soma  campo=quantidade
+17 tot_geral_valor      tam=15   fmt=float2  func=soma  campo=valor
+</apelidos>
+
+<cab_pagina>
+#1                                                                                   #2
+-----------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa_cod_nome,empresa_grid">
++---------------------------------------------------------------------------------------------------+
+| Empresa: #4                                                                                       |
++---------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_nome,empresa_cod_nome,empresa_grid,quebra">
+| #5                                                                                                |
++----------------------------------------------------+-------------+--------------+-----------------+
+| #6                                                 | Preço unit. |  Quantidade  |      Valor      |
++----------------------------------------------------+-------------+--------------+-----------------+
+</cab_grupo>
+
+<detalhe>
+| #7                                                 | #9          | #10          | #11             |
+</detalhe>
+
+<rod_grupo nome="2">
++----------------------------------------------------+-------------+--------------+-----------------+
+| Subtotal                                                         | #12          | #13             |
++----------------------------------------------------+-------------+--------------+-----------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total empresa                                                    | #14          | #15             |
++------------------------------------------------------------------+--------------+-----------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++------------------------------------------------------------------+--------------+-----------------+
+| Total geral                                                      | #16          | #17             |
++------------------------------------------------------------------+--------------+-----------------+
+</rod_relat>
+
+<rod_pagina>
++------------------------------------------------------------------+--------------+-----------------+
+</rod_pagina>
+
+<hash>24c52befe58bd6fae86c12a0c3dfb77e</hash>
+</relatorio>

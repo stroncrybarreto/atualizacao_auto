@@ -1,0 +1,58 @@
+<relatorio dados="encerrante_bico" ordem="data,turno,bico_desc">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=16
+3  titulo1			tam=127	alinha=centro
+6  bico_desc		tam=4	alinha=centro
+7  data				tam=10	fmt=date
+8  turno			tam=5	alinha=esquerda
+9  enc_ini			tam=16	fmt=float2
+10 enc_fim			tam=16	fmt=float2
+11 litros			tam=13	fmt=float2
+12 afericao			tam=8	fmt=float2
+13 venda			tam=11	fmt=float2	
+14 preco			tam=7	fmt=float3
+15 valor			tam=13	fmt=float2
+
+17 total_litros		tam=13	fmt=float2	func=soma	campo=litros
+18 total_afericao	tam=8	fmt=float2	func=soma	campo=afericao
+19 total_venda		tam=11	fmt=float2	func=soma	campo=venda
+20 total_valor		tam=13	fmt=float2	func=soma	campo=valor
+24 total_devolucao	tam=11	fmt=float2	func=soma	campo=devolucao
+22 devolucao		tam=11	fmt=float2
+23 produto_nome		tam=20	alinha=esquerda
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                             #2              
+-------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="data,turno">
+
++-----------------------------------------------------------------------------------------------------------------------------+
+| Data: #7                   Turno: #8                                                                                        |
++------+------------------+------------------+---------------+----------+-------------+-------------+---------+---------------+
+| Bico |      Inicial     |       Final      |     Litros    | Aferição |  Devolução  |    Venda    |  Preço  |     Valor     |
++------+------------------+------------------+---------------+----------+-------------+-------------+---------+---------------+
+</cab_grupo>
+<detalhe>
+| #6   | #9               | #10              | #11           | #12      | #22         | #13         | #14     | #15           |
+</detalhe>
+<rod_grupo nome="1">
++------+------------------+------------------+---------------+----------+-------------+-------------+---------+---------------+
+</rod_grupo>
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
+
+
++--------------------------------------------+---------------+----------+-------------+-------------+---------+---------------+
+| Total                                      | #17           | #18      | #24         | #19         |         | #20           |
++--------------------------------------------+---------------+----------+-------------+-------------+---------+---------------+
+</rod_relat>
+
+<hash>f5d017c0c92f56022026c817bf368bbc</hash>
+</relatorio>

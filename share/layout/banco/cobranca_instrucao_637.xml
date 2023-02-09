@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>sofisa</nome>
+		<instrucao>
+			<id>1</id>
+			<codigo>01</codigo>
+			<nome>Remessa</nome>
+		</instrucao>
+						    
+		<instrucao>
+		    <id>2</id>
+			<codigo>02</codigo>
+			<nome>Pedido de baixa</nome>
+		</instrucao>
+
+		<instrucao>
+			<id>5</id>
+			<codigo>04</codigo>
+			<nome>Concessão de Abatimento</nome>
+		</instrucao>
+						    
+		<instrucao>
+		    <id>4</id>
+			<codigo>05</codigo>
+			<nome>Cancelamento de Abatimento</nome>
+		</instrucao>
+
+		<instrucao>
+			<id>6</id>
+			<codigo>06</codigo>
+			<nome>Alteração de Vencimento</nome>
+		</instrucao>
+	
+		<instrucao>
+			<id>9</id>
+			<codigo>09</codigo>
+			<nome>Protestar Imediatamente</nome>
+		</instrucao>
+						    
+		<instrucao>
+		    <id>10</id>
+			<codigo>10</codigo>
+			<nome>Sustação de Protesto</nome>
+		</instrucao>
+					    
+		<instrucao>
+		    <id>18</id>
+			<codigo>18</codigo>
+			<nome>Alteração de nome do Sacado</nome>
+		</instrucao>
+
+</layout>

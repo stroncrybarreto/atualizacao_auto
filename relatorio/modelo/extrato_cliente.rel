@@ -1,0 +1,70 @@
+<relatorio dados="extrato_cliente" ordem="pessoa_nome,pessoa_codigo">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  empresa_nome			tam=50  alinha=esquerda
+4  titulo2              tam=130 alinha=centro
+5  pessoa_nome			tam=50
+7  data					tam=10	fmt=data
+8  documento			tam=11  alinha=centro
+9  motivo_nome			tam=32  alinha=esquerda
+
+
+6  saldo_ant			tam=19	fmt=float2
+10 debito				tam=16	fmt=float2
+11 credito				tam=16	fmt=float2
+13 total_debito			tam=16	fmt=float2 func=soma campo=debito grupo=1
+14 total_credito		tam=16	fmt=float2 func=soma campo=credito grupo=1
+12 saldo				tam=16	fmt=float2 expr=saldo_ant+total_debito-total_credito
+16 total_debito_geral	tam=16	fmt=float2 func=soma campo=debito 
+17 total_credito_geral	tam=16	fmt=float2 func=soma campo=credito
+18 total_saldo_geral 		tam=16	fmt=float2 expr=total_inicial_geral+total_debito_geral-total_credito_geral
+
+19 empresa_codigo		tam=7   alinha=centro
+20 pessoa_codigo		tam=8 alinha=direita 
+21 pessoa_codigo_nome	tam=79 expr=str(pessoa_codigo)+' - '+pessoa_nome alinha=esquerda 
+22 pessoa_cidade		tam=18
+99 titulo_p				tam=130 expr='EXTRATO DE CLIENTES'  alinha=centro
+98 total_inicial_geral	tam=16
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2              
+----------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#4
+
+<cab_relat>
+</cab_relat>
+</cab_pagina>
+<cab_grupo nome="1" quebra="pessoa_nome,pessoa_codigo">
++------------------------------------------------------------------------------------------+-------------------------------------+
+| Cliente: #21                                                                             | Saldo anterior: #6                  |
++------------+-------------+----------------------------------+---------+------------------+------------------+------------------+
+|    Data    |  Documento  |    Descrição do lançamento       | Empresa |      Débito      |     Crédito      |      Saldo       |
++------------+-------------+----------------------------------+---------+------------------+------------------+------------------+
+</cab_grupo>
+
+<detalhe>
+| #7         | #8          | #9                               | #19     | #10              | #11              | #12              |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+-------------+----------------------------------+---------+------------------+------------------+------------------+
+| Total                                                                 | #13              | #14              | #12              |
++-----------------------------------------------------------------------+------------------+------------------+------------------+
+
+</rod_grupo>
+
+
+<rod_relat>
+
+
++-----------------------------------------------------------------------+------------------+------------------+------------------+
+| Total geral                                                           | #16              | #17              | #18              |
++-----------------------------------------------------------------------+------------------+------------------+------------------+
+</rod_relat>
+
+<hash>d610602725ca258a43a7002749643ad7</hash>
+</relatorio>

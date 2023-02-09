@@ -1,0 +1,42 @@
+<relatorio dados="saldo_devedor_cliente" ordem="pessoa_nome,valor_geral">
+<apelidos>
+1  rel_posto_nome                 tam=60
+2  rel_data_hora                  tam=16
+4  subtitulo                      tam=110   alinha=centro
+5  pessoa_nome                    tam=60
+6  valor_atrasado                 tam=12   fmt=float2
+7  valor_vencer                   tam=12   fmt=float2
+8  valor_geral                    tam=13   fmt=float2
+9  total_valor_atrasado           tam=12   fmt=float2  func=soma  campo=valor_atrasado
+10 total_valor_vencer             tam=12   fmt=float2  func=soma  campo=valor_vencer
+11 total_valor_geral              tam=13   fmt=float2  func=soma  campo=valor_geral
+</apelidos>
+
+<cab_pagina>
+#1                                                                                            #2             
+--------------------------------------------------------------------------------------------------------------
+
+#4
+
++--------------------------------------------------------------+--------------+--------------+---------------+
+|                           Cliente                            |   Atrasado   |   A vencer   |     Geral     |
++--------------------------------------------------------------+--------------+--------------+---------------+
+</cab_pagina>
+
+<detalhe>
+| #5                                                           | #6           | #7           | #8            |
+</detalhe>
+
+<rod_pagina>
++--------------------------------------------------------------+--------------+--------------+---------------+
+</rod_pagina>
+
+<rod_relat>
++--------------------------------------------------------------+--------------+--------------+---------------+
+| Total                                                        | #9           | #10          | #11           |
++--------------------------------------------------------------+--------------+--------------+---------------+
+</rod_relat>
+
+
+<hash>e78660756190c16a2ddc89cb0e5b8a15</hash>
+</relatorio>

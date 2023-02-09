@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>AutoSystem - Medidor de Tanque</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<META HTTP-EQUIV="Refresh" CONTENT="15; URL=/">
+</head>
+<body>
+
+<div id="header">
+<div id="logo"><img src="autosystem.gif" width=90></div>
+<div id="branding">
+<h1>Status do Medidor de Tanques</h1>
+<h2 tal:content="empresa_nome">Nome do Posto</h2>
+</div>
+</div>
+<div class="breadcrumbs"><a href="/">Início</a> | <a href="/do_medicao/">Nova medição</a> | <a href="/get_historico/">Histórico de Medições</a></div>
+
+<div id="content" class="colM">
+<div id="content-main">
+
+<div class="module">
+<h2>Posi&ccedil;&atilde;o por tanque</h2>
+<table border=1 width=100%>
+	<thead>
+		<th>Tanque</th>
+		<th>Combustivel</th>
+		<th>Volume</th>
+		<th>Completar</th>
+		<th>Data / Hora</th>
+		<th width="80">%</th>
+	</thead>
+	<tbody>
+		<tr tal:repeat="tanque rs_medicao">
+			<td align="center" tal:content="tanque/tanque">01</td>
+			<td tal:content="tanque/produto_nome">GASOLINA COMUM</td>
+			<td align="right" tal:content="tanque/volume">1.000</td>
+			<td align="right" tal:content="tanque/completar">13.000</td>
+			<td align="center" tal:content="tanque/ts">16/08/2007 13:00</td>
+			<td align="left" tal:content="structure tanque/img">?</td>
+		</tr>
+	</tbody>
+</table> 
+</div>
+
+<div class="module">
+<h2>Posi&ccedil;&atilde;o por combustivel</h2>
+<table width=100% border=1>
+	<thead>
+		<th>Combustivel</th>
+		<th>Volume</th>
+		<th>Completar</th>
+		<th>Capacidade</th>
+		<th width="80">%</th>
+	</thead>
+	<tbody>
+		<tr tal:repeat="produto rs_produto">
+			<td tal:content="produto/produto_nome">GASOLINA COMUM</td>
+			<td align="right" tal:content="produto/volume">1.000</td>
+			<td align="right" tal:content="produto/completar">13.000</td>
+			<td align="right" tal:content="produto/capacidade">12.000</td>
+			<td align="left" tal:content="structure produto/img">?</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="module">
+<h2>Ultimas descargas</h2>
+<table width=100% border=1>
+	<thead>
+		<th>Tanque</th>
+		<th>Combustivel</th>
+		<th>Data / Hora Inicio</th>
+		<th>Data / Hora Termino</th>
+		<th>Volume</th>
+	</thead>
+	<tbody>
+		<tr tal:repeat="descarga rs_descarga">
+			<td align="center" tal:content="descarga/tanque">01</td>
+			<td tal:content="descarga/produto_nome">GASOLINA COMUM</td>
+			<td align="center" tal:content="descarga/ts_ini"></td>
+			<td align="center" tal:content="descarga/ts_fim"></td>
+			<td align="right" tal:content="descarga/volume">13.000,00</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="tiny">Informacoes obtidas em <b tal:content="ts"></b>.</div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<relatorio dados="consumo_cliente_main" ordem="frota_nome,pessoa_nome,hora" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18
+3  subtitulo          tam=174   alinha=centro
+8	page_num          tam=2     alinha=esquerda
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                #2               - Pág.: #8
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="consumo_cliente_placa" ordem="quebra,cpf,frota_nome,hora">
+<apelidos>
+4  pessoa_nome                  tam=41
+5  placa                        tam=7
+6  veiculo                      tam=30
+7  data                         tam=8
+8  km                           tam=8   alinha=centro	fmt=%.01f
+9  documento                    tam=8   alinha=centro
+10 produto_nome                 tam=29
+11 quantidade                   tam=12  fmt=float3
+12 unid_med                     tam=3
+13 preco_unit                   tam=11  fmt=float3
+14 valor                        tam=14  fmt=float2
+19 total_cliente_km             tam=7   fmt=float2
+20 total_cliente_litros         tam=12  fmt=float3   func=soma   campo=quantidade   grupo=1
+21 total_cliente_km_litro       tam=6   fmt=float2
+22 total_cliente_valor          tam=14  fmt=float2   func=soma   campo=valor        grupo=1
+23 hora                         tam=16  fmt=data_hora
+24 titulo2                      tam=158 alinha=centro
+25 doc_pgto                     tam=8   alinha=centro
+27 frota_nome                   tam=19
+31 desconto                     tam=6   fmt=float2
+33 total_desconto_total         tam=6   fmt=float2   func=soma   campo=desconto     grupo=1
+34 valor_final                  tam=14  fmt=float2   expr=valor+desconto
+36 total_vlr_final_total        tam=14  fmt=float2   func=soma   campo=valor_final  grupo=1
+37 cpf                          tam=18
+38 uf                           tam=3
+39 municipio                    tam=26
+40 sem                          tam=1   expr='1'
+41 pessoa_codigo	   			tam=5	alinha=esquerda
+42 pessoa_cod_nome				tam=45
+43 nota_fiscal		  	 		tam=12
+</apelidos>
+<cab_pagina>
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra,cpf,frota_nome">
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Frota: #27                 | Cliente: #42                                               CPF/CNPJ: #37                      UF: #38  Município: #39                        |
++----------------------------+----------+----------+----------+-------------------------------+--------------+-----+-------------+----------------+--------+----------------+
+|  Placa  |    Data/Hora     |    Km    | CP / NF  | Doc pgto |          Descrição            |  Quantidade  | Un. | Preço unit. |     Valor      |  Desc. |  Valor final   |
++---------+------------------+----------+----------+----------+-------------------------------+--------------+-----+-------------+----------------+--------+----------------+
+</cab_grupo>
+<detalhe>
+| #5      | #23              | #8       | #9       | #25      | #10                           | #11          | #12 | #13         | #34            | #31    | #14            |
+</detalhe>
+<rod_grupo nome="1">
++----------------------------+----------+-----------------------------------------------------+--------------+-----+-------------+----------------+--------+----------------+
+| Total frota                                                                                 | #20          |                   | #36            | #33    | #22            |
++---------------------------------------------------------------------------------------------+--------------+-------------------+----------------+--------+----------------+
+</rod_grupo>
+<rod_pagina>
++---------+------------------+----------+----------+----------+-------------------------------+--------------+-----+-------------+----------------+--------+----------------+
+</rod_pagina>
+</subrelat>
+
+<subrelat dados="consumo_cliente_resumo" tamfonte="8" ordem="produto_tipo_nome">
+<apelidos>
+1  produto_tipo_nome	tam=30
+2  quantidade			tam=12   fmt=float3
+3  valor				tam=15   fmt=float2
+4  cliente_nome			tam=65
+5  preco_unit		 	tam=15   fmt=float3
+6  total_quantidade	 	tam=12   fmt=float3  func=soma campo=quantidade
+7  total_valor		 	tam=15   fmt=float2  func=soma campo=valor
+9  tot_g_qtd			tam=12   fmt=float3  func=soma campo=quantidade grupo=1
+10 tot_g_preco			tam=15   fmt=float3  func=media  campo=preco_unit grupo=1
+11 tot_g_valor			tam=15   fmt=float2  func=soma campo=valor grupo=1
+12 sem					tam=10   expr="1"
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="2" quebra="sem">
+
++-----------------------------------------------------------------------------------+  
+| Resumo                                                                            |
++--------------------------------+--------------+-----------------+-----------------+  
+|            Descrição           |  Quantidade  | Preço unitário  |      Valor      |
++--------------------------------+--------------+-----------------+-----------------+
+</cab_grupo>
+<cab_grupo nome="1" quebra="produto_tipo_nome,preco_unit">
+</cab_grupo>
+<detalhe>
+{VAZIA}
+</detalhe>
+<rod_grupo nome="1">
+| #1                             | #9           | #10             | #11             |
+</rod_grupo>
+<rod_grupo nome="2">
++--------------------------------+--------------+-----------------+-----------------+
+| Total                          | #6           |                 | #7              |
++--------------------------------+--------------+-----------------+-----------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+<rod_pagina>
++--------------------------------+--------------+-----------------+-----------------+
+</rod_pagina>
+</subrelat>
+
+
+<hash>97a7e5d73c37f9bf2e1d846300b50a2a</hash>
+</relatorio>

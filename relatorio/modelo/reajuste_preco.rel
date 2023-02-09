@@ -1,0 +1,50 @@
+<relatorio dados="reajuste_preco">
+<apelidos>
+1 posto_nome_data
+2 linha_posto_nome_data
+3 titulo1
+4 titulo2
+5 empresa_cod_nome
+6 linha_sup_grupo
+7 tit_coluna_sup
+8 linha_coluna
+9 tit_coluna_inf
+10 linha_detalhe
+</apelidos>
+
+<cab_pagina>
+#1
+#2
+
+#3
+#4
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome">
+
+Empresa: #5
+#6
+#7
+#8
+#9
+#8
+</cab_grupo>
+
+<detalhe>
+#10
+</detalhe>
+
+<rod_grupo nome="1">
+#8
+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
+#8
+</rod_pagina>
+
+<hash>aea3b9ce0eabc76df3cced98eefbf697</hash>
+</relatorio>

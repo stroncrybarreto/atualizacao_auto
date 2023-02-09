@@ -1,0 +1,114 @@
+<relatorio dados="posicao_estoque_main">
+<apelidos>
+1  rel_posto_nome     	tam=60
+2  rel_data_hora		tam=18
+3  movto_usuario_nome	tam=50	alinha=centro
+4  movto_usuario_funcionario_nome	tam=80	alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                      #2
+------------------------------------------------------------------------------------------------------------------------
+
+                                                  {TIT}MOVIMENTAÇÃO DO CAIXA
+                                {SUBTIT}#3
+                 {SUBTIT}#4
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="posicao_estoque_geral">
+<apelidos>
+1  rel_posto_nome		tam=35
+2  rel_data_hora		tam=18
+3  data				tam=10  fmt=data 
+4  subtitulo            	tam=116 alinha=centro
+5  empresa_cod_nome		tam=60
+6  grupo_nome			tam=40
+7  codigo			tam=13
+8  nome				tam=30
+9  unid_med			tam=3
+10 estoque			tam=10   fmt=float1
+11 preco_unit			tam=10   fmt=float3
+12 total_valor			tam=10	 fmt=float3	expr=estoque*preco_custo	grupo=2
+13 acumulado			tam=10	 fmt=float2	func=soma  campo=total_valor  	grupo=2
+14 deposito_total_estoque	tam=10   fmt=float2	func=soma  campo=estoque 	grupo=2
+15 deposito_total_venda		tam=10   fmt=float2	func=soma  campo=total_valor 	grupo=2
+18 classificacao_fiscal_codigo	tam=8	 alinha=centro
+19 classificacao_fiscal_nome	tam=25
+20 preco_custo			tam=10   fmt=float3
+21 empresa_inscr_est		tam=25
+22 empresa_cpf			tam=25
+</apelidos>
+
+<cab_pagina>
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1" repeticao="1">
++----------------------------------------------------------------------------------------------------------------------+
+|                                      R E G I S T R O   D E   I N V E N T Á R I O                                     |
+|                                                                                                                      |
+| FIRMA.................: #5                                                                                           |
+| INSC. ESTADUAL........: #21                                 CNPJ (MF): #22                                           |
+| ESTOQUES EXISTENTES EM: #3                                                                                           |
++----------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="grupo_nome">
++----------------------------------------------------------------------------------------------------------------------+
+| GRUPO: #6                                                                     |              VALORES                 |
++---------------+--------------------------------+----------+------+------------+------------+------------+------------+
+| Código        | Produto                        | C.Fiscal |  UN  | Quantidade | Unitário   | Tot. Custo | Acumulado  |
++---------------+--------------------------------+----------+------+------------+------------+------------+------------+
+</cab_grupo>
+
+<detalhe>
+| #7            | #8                             | #18      | #9   | #10        | #20        | #12        | #13        |
+</detalhe>
+<rod_grupo nome="2">
++---------------+--------------------------------+----------+------+------------+------------+------------+------------+
+
+</rod_grupo>
+
+
+<rod_grupo nome="1">
+
+</rod_grupo>
+</subrelat>
+
+<rod_pagina>
+
++------------------------------------------------------------------+-------------------------+-------------------------+
+</rod_pagina>
+<subrelat dados="posicao_estoque_grupo_resumo" nome="grupo_resumo" subordem="nome">
+<apelidos>
+1 grupo_nome  	  tam=20
+2 qtde           tam=15  fmt=float2
+3 total_qtde	tam=15	fmt=float2	func=soma	campo=qtde
+4 total_custo	tam=15	fmt=float2
+5 total_custo_geral	tam=15	fmt=float2	func=soma	campo=total_custo	
+</apelidos>
+<cab_relat>
+
++--------------------------------+-----------------+-----------------+
+| Grupo                          | Valor           | Custo           |
++--------------------------------+-----------------+-----------------+
+</cab_relat>
+<detalhe>
+| #1                             | #2              | #4              |
+</detalhe>
+<rod_relat>
++--------------------------------+-----------------+-----------------+
+| TOTAL                          | #3              | #5              |                      
++--------------------------------+-----------------+-----------------+
+</rod_relat>
+</subrelat>
+
+<rod_relat>
+
+</rod_relat>
+
+
+<hash>cf0e796b1822460c90a0682a32f8a6d5</hash>
+</relatorio>

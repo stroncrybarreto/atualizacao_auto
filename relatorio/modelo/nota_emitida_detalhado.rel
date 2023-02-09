@@ -1,0 +1,82 @@
+<relatorio dados="nota_emitida" ordem="empresa_codigo,numero_nota">
+<apelidos>
+1  rel_posto_nome		tam=50
+2  rel_data_hora		tam=18
+23  rel_titulo			tam=130 		alinha=centro
+4  rel_titulo2			tam=130 		alinha=centro
+5  empresa_nome			tam=40
+6  numero_nota			tam=10 		alinha=esquerda
+7  data_emissao			tam=10		fmt=data
+8 valor_nota			tam=10 		fmt=float2		alinha=esquerda
+9 serie					tam=10
+10 valor_desconto   	tam=12		fmt=float2
+11 emitente_nome		tam=57		alinha=esquerda
+12 cliente_nome			tam=53		alinha=esquerda
+13 valor_bruto			tam=11		fmt=float2
+14 acrescimo_cupom		tam=11		fmt=float2
+15 valor_liquido		tam=13		fmt=float2
+16 hora_ent_sai			tam=5		fmt=hora
+17 tipo_nome			tam=19		expr=tipo=='S' and 'SAÍDA' or 'ENTRADA'
+18 situacao				tam=9		
+19 data_ent_sai			tam=10		fmt=data
+
+20 produto_codigo		tam=6		alinha=centro
+21 produto_nome			tam=50
+22 produto_cst			tam=3
+3 produto_un			tam=2
+24 produto_quantidade	tam=10		fmt=float2
+25 produto_preco_unit  tam=8		fmt=float2
+26 produto_valor		tam=11		fmt=float2 
+27 produto_icms			tam=8		fmt=float2
+
+28 qtde_itens			tam=3		func=contar grupo=1
+29 soma_vl_prod			tam=13		fmt=float2 func=soma campo=produto_valor grupo=1
+30 valor_imposto		tam=17		fmt=float2 
+32 valor_nota			tam=12		fmt=float2
+33 cliente_cpf			tam=20
+34 emitente_cpf			tam=20
+36 forma_pgto			tam=34		expr=motivo_nome and motivo_nome + ' - ' + str(valor_pgto) or ' '
+38 forma_pgto_1			tam=29		expr=motivo_nome_1 and motivo_nome_1 + ' - ' + str(valor_pgto_1) or ' '
+40 forma_pgto_2			tam=29		expr=motivo_nome_2 and motivo_nome_2 + ' - ' + str(valor_pgto_2) or ' '
+42 forma_pgto_3			tam=29		expr=motivo_nome_3 and motivo_nome_3 + ' - ' + str(valor_pgto_3) or ' '
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#23
+#4
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="emitente_codigo">
+</cab_grupo>
+<rod_grupo nome="2">
+</rod_grupo>
+<cab_grupo nome="1" quebra="numero_nota">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Emitente: #11                                                        CPF/CNPJ: #34                   Data emissão: #7          |
+| Número: #6         Série: #9           Situação: #18                 Data saída/entrada: #19         Hora saída/entrada: #16   |
+| Destinatário: #12                                                    CPF/CNPJ: #33                   Tipo: #17                 |
++--------+-----------------------------------------------------------+-----+----+------------+----------+-------------+----------+
+| Código |                         Descrição                         | CST | UN | Quantidade | Pr. unit.| Valor total |   ICMS   |
++--------+-----------------------------------------------------------+-----+----+------------+----------+-------------+----------+
+</cab_grupo>
+<detalhe>
+| #20    | #21                                                       | #22 | #3 | #24        | #25      | #26         | #27      |
+</detalhe>
+<rod_grupo nome="1">
++--------+-----------------------------------------------------------+-----+----+------------+----------+-------------+----------+
+| Total de itens: #28                                                                        | Valor dos produtos: #29           |
+| Formas de pagamento: #36                                #38                                | Valor impostos: #30               |
+|                      #40                                #42                                | Valor total da nota: #32          |
++--------------------------------------------------------------------------------------------+-----------------------------------+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+<rod_pagina>
++--------+-----------------------------------------------------------+-----+----+------------+----------+-------------+----------+
+</rod_pagina>
+
+<hash>b1d053ba7c98d96c7e46161f2e43d4ca</hash>
+</relatorio>

@@ -1,0 +1,53 @@
+<relatorio dados="tef_transacao" docname="Relatório de Transações TEF" paper_orientation="landscape">
+
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  sub_titulo		tam=152	alinha=centro
+4  quebra			tam=152 alinha=esquerda
+5  data				tam=10	fmt=data
+6  data				tam=8	fmt=hora
+7  modulo			tam=10
+8  operadora		tam=9
+9  operacao			tam=8	alinha=centro
+10 transacao 		tam=23
+11 nsu				tam=16	alinha=centro
+12 status			tam=6	alinha=centro
+13 valor			tam=11	alinha=direita		fmt=float2
+14 total			tam=11	alinha=direita		fmt=float2
+15 motivo_movto     tam=22  alinha=esquerda
+16 nsu_host         tam=16  alinha=centro
+17 nsu_redcard      tam=16  alinha=centro expr=(operadora=='REDECARD' and nsu_host or nsu)
+18 nr_cupom			tam=20
+99 titulo_principal tam=152 alinha=centro expr="TRANSAÇÕES DE TEF"
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                      #2                
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="quebra">
+</cab_grupo>
+
+<detalhe>
+</detalhe>
+
+<rod_grupo nome="1">
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+| Total                                                                                                                                  | #14         |
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+
+</rod_grupo>
+
+<rod_pagina>
++---------------------+------------+-----------+----------+-------------------------+------------------------+------------------+--------+-------------+
+</rod_pagina>
+
+
+<hash>24d82f8ca6d8af471bd1aec712ff8d2c</hash>
+</relatorio>

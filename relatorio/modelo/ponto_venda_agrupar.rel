@@ -1,0 +1,60 @@
+<relatorio dados="ponto_venda" ordem="grupo_nome,produto_nome">
+<apelidos>
+1  rel_posto_nome         tam=60
+2  rel_data_hora        tam=18
+3  titulo2              tam=92  alinha=centro
+4  nome_turno           tam=5   alinha=esquerda
+5  grupo_nome           tam=40
+6  produto_nome         tam=40
+7  produto_unid_med     tam=7   alinha=centro
+8  quantidade           tam=10  fmt=float1
+9  preco_unit       	tam=8   fmt=float3
+10 valor                tam=13  fmt=float2
+11 total_qtde_grupo     tam=10  fmt=float1   func=soma campo=quantidade grupo=1
+12 total_valor_grupo    tam=13  fmt=float2   func=soma campo=valor  grupo=1
+13 total_qtde           tam=10  fmt=float1   func=soma campo=quantidade
+14 total_valor          tam=13  fmt=float2   func=soma campo=valor
+15 titulo		        tam=94	alinha=centro
+16 grupo_cod_nome       tam=40
+99 titulo_principal     tam=94  expr="VENDAS DE PRODUTOS POR PONTO DE VENDA"  alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                            #2
+----------------------------------------------------------------------------------------------
+ 
+#99
+#15
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo_nome">
++--------------------------------------------------------------------------------------------+
+| Grupo produto: #16                                                                         |
++-------------------------------------------+---------+------------+---------+---------------+
+|                  Produto                  | Unidade | Quantidade |  Preço  |     Total     |
++-------------------------------------------+---------+------------+---------+---------------+
+</cab_grupo>
+
+<detalhe>
+| #6                                        | #7      | #8         |#9       | #10           |
+</detalhe>
+
+<rod_grupo nome="1">
++-------------------------------------------+---------+------------+---------+---------------+
+| Subtotal                                            | #11        |         | #12           |
++-----------------------------------------------------+------------+---------+---------------+
+
+</rod_grupo>
+
+<rod_relat>
++-----------------------------------------------------+------------+---------+---------------+
+| Total                                               | #13        |         | #14           |
++-----------------------------------------------------+------------+---------+---------------+
+</rod_relat>
+
+<rod_pagina>
++-------------------------------------------+---------+------------+---------+---------------+
+</rod_pagina>
+
+<hash>d873f05fd8700c458f67ad6c429a2a63</hash>
+</relatorio>

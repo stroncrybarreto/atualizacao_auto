@@ -1,0 +1,32 @@
+<layout>
+  <nome>contabil</nome>
+  <sessao>
+    <nome>contabil</nome>
+    <registro><inicio>1</inicio><fim>8</fim><chave>data</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>9</inicio><fim>16</fim><chave>conta_debitar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>17</inicio><fim>24</fim><chave>conta_creditar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>25</inicio><fim>41</fim><chave>valor</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>42</inicio><fim>49</fim><chave>historico</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>50</inicio><fim>113</fim><chave>complemento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>114</inicio><fim>116</fim><chave>debito_estab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>117</inicio><fim>119</fim><chave>credito_estab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>120</inicio><fim>122</fim><chave>debito_cc</chave><tipo>integer</tipo><padrao></padrao><descricao>cc= centro de custo</descricao></registro>
+    <registro><inicio>123</inicio><fim>125</fim><chave>credito_cc</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>126</inicio><fim>133</fim><chave>contra_partida</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>134</inicio><fim>139</fim><chave>conj_lancto</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>140</inicio><fim>179</fim><chave>nome_conta_deb</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>180</inicio><fim>199</fim><chave>id_conta_deb</chave><tipo>text</tipo><padrao></padrao><descricao>identificador conta debito</descricao></registro>
+    <registro><inicio>200</inicio><fim>200</fim><chave>tp_conta_deb</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>201</inicio><fim>201</fim><chave>tp_id_conta_deb</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>202</inicio><fim>241</fim><chave>nome_conta_cred</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>242</inicio><fim>261</fim><chave>id_conta_cred</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>262</inicio><fim>262</fim><chave>tp_conta_cred</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>263</inicio><fim>263</fim><chave>tp_id_conta_cred</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>264</inicio><fim>303</fim><chave>nome_contra_part</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>304</inicio><fim>323</fim><chave>id_contra_part</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>324</inicio><fim>324</fim><chave>tp_contra_part</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>325</inicio><fim>325</fim><chave>tp_id_contra_part</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>326</inicio><fim>337</fim><chave>arquivamento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>338</inicio><fim>398</fim><chave>reservado</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

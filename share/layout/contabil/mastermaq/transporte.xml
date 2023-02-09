@@ -1,0 +1,446 @@
+<layout>
+  <nome>transporte</nome>
+  <sessao>
+    <nome>transporte</nome>
+    <registro>
+      <inicio>1</inicio>
+      <fim>9</fim>
+      <chave>indice</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>indice</descricao>
+    </registro>
+    <registro>
+      <inicio>10</inicio>
+      <fim>10</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>11</inicio>
+      <fim>22</fim>
+      <chave>numero_cupom</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do cupom fiscal</descricao>
+    </registro>
+    <registro>
+      <inicio>23</inicio>
+      <fim>23</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>24</inicio>
+      <fim>32</fim>
+      <chave>cd_veiculo</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>codigo do veiculo</descricao>
+    </registro>
+    <registro>
+      <inicio>33</inicio>
+      <fim>33</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>34</inicio>
+      <fim>38</fim>
+      <chave>tipo_registro</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>tipo de registro</descricao>
+    </registro>
+    <registro>
+      <inicio>39</inicio>
+      <fim>39</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>40</inicio>
+      <fim>44</fim>
+      <chave>nr_bomba</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>numero da bomba</descricao>
+    </registro>
+    <registro>
+      <inicio>45</inicio>
+      <fim>45</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>46</inicio>
+      <fim>50</fim>
+      <chave>rede</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>rede</descricao>
+    </registro>
+    <registro>
+      <inicio>51</inicio>
+      <fim>51</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>52</inicio>
+      <fim>56</fim>
+      <chave>cd_posto</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>posto</descricao>
+    </registro>
+    <registro>
+      <inicio>57</inicio>
+      <fim>57</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>58</inicio>
+      <fim>62</fim>
+      <chave>frota</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>frota</descricao>
+    </registro>
+    <registro>
+      <inicio>63</inicio>
+      <fim>63</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>64</inicio>
+      <fim>64</fim>
+      <chave>tipo_combustivel</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>tipo de combustivel</descricao>
+    </registro>
+    <registro>
+      <inicio>65</inicio>
+      <fim>65</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>66</inicio>
+      <fim>69</fim>
+      <chave>uve</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>uve</descricao>
+    </registro>
+    <registro>
+      <inicio>70</inicio>
+      <fim>70</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>71</inicio>
+      <fim>77</fim>
+      <chave>placa</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>placa do veiculo</descricao>
+    </registro>
+    <registro>
+      <inicio>78</inicio>
+      <fim>78</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>79</inicio>
+      <fim>98</fim>
+      <chave>motorista</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>cpf do motorista</descricao>
+    </registro>
+    <registro>
+      <inicio>99</inicio>
+      <fim>99</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>100</inicio>
+      <fim>106</fim>
+      <chave>kilometragem</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>kilometragem do abastecimento</descricao>
+    </registro>
+    <registro>
+      <inicio>101</inicio>
+      <fim>107</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>108</inicio>
+      <fim>117</fim>
+      <chave>qtd_litros</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>quantidade de litros abastecido</descricao>
+    </registro>
+    <registro>
+      <inicio>118</inicio>
+      <fim>118</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>119</inicio>
+      <fim>130</fim>
+      <chave>preco_unitario</chave>
+      <tipo>float_point_3</tipo>
+      <padrao></padrao>
+      <descricao>preco unitario</descricao>
+    </registro>
+    <registro>
+      <inicio>131</inicio>
+      <fim>131</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>132</inicio>
+      <fim>139</fim>
+      <chave>preco_unitario_cobrado</chave>
+      <tipo>float_point_3</tipo>
+      <padrao></padrao>
+      <descricao>preco unitario cobrado</descricao>
+    </registro>
+    <registro>
+      <inicio>140</inicio>
+      <fim>140</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>141</inicio>
+      <fim>154</fim>
+      <chave>vlt_cupom_fiscal</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>valor total do cupom fiscal</descricao>
+    </registro>
+    <registro>
+      <inicio>155</inicio>
+      <fim>155</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>156</inicio>
+      <fim>175</fim>
+      <chave>data_abastecimento</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>data de abastecimeto</descricao>
+    </registro>
+    <registro>
+      <inicio>176</inicio>
+      <fim>176</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>177</inicio>
+      <fim>186</fim>
+      <chave>data_debito</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>data debito</descricao>
+    </registro>
+    <registro>
+      <inicio>187</inicio>
+      <fim>187</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>188</inicio>
+      <fim>197</fim>
+      <chave>data_credito</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>data credito</descricao>
+    </registro>
+    <registro>
+      <inicio>198</inicio>
+      <fim>198</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>199</inicio>
+      <fim>213</fim>
+      <chave>nome_arquivo</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>nome do arquivo enviado</descricao>
+    </registro>
+    <registro>
+      <inicio>214</inicio>
+      <fim>214</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>215</inicio>
+      <fim>224</fim>
+      <chave>dist_perc</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>distribuicao perc</descricao>
+    </registro>
+    <registro>
+      <inicio>225</inicio>
+      <fim>225</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>226</inicio>
+      <fim>235</fim>
+      <chave>vlt_abastecimento</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>valor total do abastecimento</descricao>
+    </registro>
+    <registro>
+      <inicio>236</inicio>
+      <fim>236</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>237</inicio>
+      <fim>237</fim>
+      <chave>codigo</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>codigo</descricao>
+    </registro>
+    <registro>
+      <inicio>238</inicio>
+      <fim>238</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>239</inicio>
+      <fim>255</fim>
+      <chave>cd_abat_ant_veic</chave>
+      <tipo></tipo>
+      <padrao></padrao>
+      <descricao>codigo abastecimento anterior do veiculo</descricao>
+    </registro>
+    <registro>
+      <inicio>256</inicio>
+      <fim>256</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>257</inicio>
+      <fim>274</fim>
+      <chave>nome_fantasia</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>nome fantasia do fornecedor</descricao>
+    </registro>
+    <registro>
+      <inicio>275</inicio>
+      <fim>275</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>	</padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>276</inicio>
+      <fim>315</fim>
+      <chave>cidade_fornecedor</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>cidade do fornecedor</descricao>
+    </registro>
+    <registro>
+      <inicio>316</inicio>
+      <fim>316</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>  </padrao>
+      <descricao></descricao>
+    </registro>
+    <registro>
+      <inicio>317</inicio>
+      <fim>330</fim>
+      <chave>cnpj</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>cnpj do fornecedor</descricao>
+    </registro>
+  </sessao>
+</layout>

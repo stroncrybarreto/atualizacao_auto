@@ -1,0 +1,71 @@
+<relatorio dados="demo_resultado_main" title="Demonstrativo do Resultado">
+<apelidos>
+</apelidos>
+<cab_relat>
+</cab_relat>
+<detalhe>
+</detalhe>
+<rod_relat>
+</rod_relat>
+<subrelat dados="demo_resultado">
+<apelidos>
+1  nome_posto    tam=999 alinha=esquerda
+3  titulo1       tam=999 alinha=esquerda
+4  titulo2       tam=999 alinha=esquerda
+7  detalhe       tam=999
+9  periodo		 tam=999
+10 linha_lisa	 tam=999
+</apelidos>
+<cab_pagina>
+</cab_pagina>
+<detalhe>
+{VAZIA}
+</detalhe>
+<rod_relat>
+</rod_relat>
+</subrelat>
+<subrelat dados="demo_resultado_detalhe">
+<apelidos>
+1  detalhe 	 	 tam=999
+2  linha  	 	 tam=999 
+3  cabecalho     tam=999
+4  linha_lisa    tam=999
+5  nome_posto    tam=999 alinha=esquerda
+6  titulo1 		 tam=999
+7  periodo	 	 tam=999
+8  rel_posto_nome tam=999
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+
+<cab_pagina>
+#5
+#4
+
+#6
+
+Empresa: #8
+
+#7
+#2
+#3
+#2
+</cab_pagina>
+
+<detalhe>
+#1
+</detalhe>
+
+<rod_pagina>
+#2
+</rod_pagina>
+
+<rod_relat>
+#2
+</rod_relat>
+
+</subrelat>
+
+<hash>15b7fd3ff7893ca8ad1f51ac33307737</hash>
+</relatorio>

@@ -1,0 +1,85 @@
+<relatorio dados="recebimento" ordem="empresa_nome,motivo_codigo" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome		tam=40
+2  rel_data_hora		tam=18
+3  titulo				tam=142	alinha=centro
+4  movto_data			tam=10	fmt=data
+5  movto_turno			tam=3	alinha=centro
+6  movto_documento		tam=9	alinha=centro
+7  motivo_nome			tam=45
+8  movto_pessoa_obs		tam=35
+9  movto_valor			tam=10	fmt=float2
+10 cdeb_nome			tam=15
+11 total_pago			tam=10	fmt=float2
+12 motivo_codigo		tam=10	alinha=direita
+13 valor_desconto		tam=8	fmt=float2	
+14 valor_mora			tam=11	fmt=float2
+15 valor_titulo			tam=12	fmt=float2
+16 total_titulo			tam=12	fmt=float2	func=soma	campo=valor_titulo
+17 subtotal_desconto	tam=8	fmt=float2	func=soma	campo=valor_desconto	grupo=1
+18 subtotal_mora		tam=11	fmt=float2	func=soma	campo=valor_mora		grupo=1
+19 subtotal_titulo		tam=12	fmt=float2	func=soma	campo=valor_titulo		grupo=1
+20 subtotal_pago		tam=10	fmt=float2
+21 total_desconto		tam=8	fmt=float2	func=soma	campo=valor_desconto
+22 total_mora			tam=11	fmt=float2	func=soma	campo=valor_mora
+23 empresa_codigo		tam=8	alinha=centro
+25 empresa_nome			tam=40
+24 conta_codigo			tam=11
+31 valor_liquido		tam=12	fmt=float2	
+32 subtotal_liquido		tam=12	fmt=float2	func=soma	campo=valor_liquido		grupo=1
+33 total_liquido		tam=12	fmt=float2	func=soma	campo=valor_liquido
+34 empre_cod_nome		tam=66	expr=str(empresa_codigo)+" - "+empresa_nome
+36 valor_empresa		tam=12	fmt=float2	func=soma	campo=valor_titulo		grupo=2	
+37 desc_empresa			tam=8	fmt=float2	func=soma	campo=valor_desconto	grupo=2	
+38 acresc_empresa		tam=11	fmt=float2	func=soma	campo=valor_mora		grupo=2	
+39 pago_empresa			tam=12	fmt=float2	func=soma	campo=valor_liquido		grupo=2
+40 asterisco_pago		tam=3
+41 titulo_principal		tam=142	expr='RECEBIMENTOS'	alinha=centro
+42 motivo_movto			tam=75	expr=str(motivo_codigo)+" - "+motivo_nome
+43 pessoa_nome			tam=20
+44 pessoa_codigo		tam=5
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                            #2
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+#41
+#3
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="empresa_nome">
++--------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #34                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="1" quebra="empresa_nome,motivo_codigo">
+| Motivo de movimentação: #42                                                                                                                |
++------------+-----+-----------+----------------------------------------+-------------+--------------+----------+-------------+--------------+
+|   Emissão  |Turno| Documento |           Pessoa/Observação            |    Conta    |    Título    | Desconto |  Acréscimo  |  Valor pago  |
++------------+-----+-----------+----------------------------------------+-------------+--------------+----------+-------------+--------------+
+</cab_grupo>
+<detalhe>
+| #4         | #5  | #6        | #8                                     | #24         | #15          | #13      | #14         | #31          |#40
+</detalhe>
+<rod_grupo nome="1">
++------------+-----+-----------+----------------------------------------+-------------+--------------+----------+-------------+--------------+
+| Subtotal                                                                                           | #17      | #18         | #32          |
++----------------------------------------------------------------------------------------------------+----------+-------------+--------------+
+</rod_grupo>
+<rod_grupo nome="2">
+| Total empresa                                                                                      | #37      | #38         | #39          |
++----------------------------------------------------------------------------------------------------+----------+-------------+--------------+
+
+</rod_grupo>
+<rod_relat>
+
++----------------------------------------------------------------------------------------------------+----------+-------------+--------------+
+| Total geral                                                                                        | #21      | #22         | #33          |
++----------------------------------------------------------------------------------------------------+----------+-------------+--------------+
+</rod_relat>
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+<hash>d7b633459400678bdd869c536b08a9fb</hash>
+</relatorio>

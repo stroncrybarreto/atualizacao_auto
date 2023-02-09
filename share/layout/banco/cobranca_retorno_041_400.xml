@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>banrisul</nome>
+
+  <sessao>
+    <nome>arquivo_header</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>19</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>02RETORNO01COBRANCA</padrao>
+  	  <descricao></descricao>
+  </registro>
+  
+    <registro>
+      <inicio>20</inicio>
+      <fim>26</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+
+    <registro>
+	  <inicio>27</inicio>
+      <fim>39</fim>
+      <chave>agencia</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>CODIGO DO CEDENTE</descricao>
+    </registro>
+
+    <registro>
+      <inicio>40</inicio>
+      <fim>46</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>76</fim>
+	  <chave>empresa_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>NOME DA EMPRESA</descricao>
+    </registro>
+
+	<registro>
+      <inicio>77</inicio>
+      <fim>79</fim>
+	  <chave>banco</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>NUMERO DO BANCO - NAO CONSTA NO MANUAL</descricao>
+    </registro>
+
+    <registro>
+      <inicio>77</inicio>
+      <fim>87</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>041BANRISUL</padrao>
+  	  <descricao></descricao>
+    </registro>
+	
+    <registro>
+      <inicio>88</inicio>
+      <fim>94</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+	
+    <registro>
+	  <inicio>95</inicio>
+      <fim>100</fim>
+      <chave>x_arquivo_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+  	  <descricao>DATA DE GRAVACAO DO ARQUIVO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>101</inicio>
+      <fim>385</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>386</inicio>
+      <fim>394</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>NUMERO SEQUENCIAL DO ARQUIVO - NSA </descricao>
+    </registro>
+  
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>000001</padrao>
+  	  <descricao></descricao>
+    </registro>
+  </sessao>
+
+  <sessao>
+	<nome>registro_tipo_1</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>int</tipo>
+      <padrao>1</padrao>
+  	  <descricao>TIPO DE REGISTRO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>3</fim>
+      <chave>x_sacado_tipo_inscricao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>TIPO DE INSCRICAO</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>4</inicio>
+      <fim>17</fim>
+	  <chave>x_sacado_inscricao</chave>
+	  <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>NUMERO DE INSCRICAO</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>18</inicio>
+      <fim>30</fim>
+      <chave>agencia</chave>
+	  <tipo>integer</tipo>
+	  <padrao>agencia</padrao>
+  	  <descricao>CODIGO_CEDENTE</descricao>
+    </registro>
+	
+    <registro>
+	  <inicio>31</inicio>
+      <fim>36</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>ESPECIE DE COBRANCA</descricao>
+    </registro>
+
+    <registro>
+      <inicio>37</inicio>
+      <fim>37</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+  	  <descricao>BRANCO</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>38</inicio>
+      <fim>62</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>IDENTIFICACAO DO TITULO PARA O CEDENTE</descricao>
+    </registro>
+
+    <registro>
+      <inicio>63</inicio>
+      <fim>72</fim>
+      <chave>nosso_numero</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>IDENTIFICACAO DO TITULO PARA O BANCO</descricao>
+    </registro>
+    
+	<registro>
+      <inicio>73</inicio>
+      <fim>82</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>IDENTICACAO DO TITULO PARA O BANCO (TITULOS EM GARANTIA)</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>83</inicio>
+      <fim>104</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>NUMERO DO CONTRATO BLU</descricao>
+    </registro>
+
+    <registro>
+      <inicio>105</inicio>
+      <fim>107</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>108</inicio>
+      <fim>108</fim>
+      <chave>carteira</chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+  	  <descricao>TIPO DE CARTEIRA</descricao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+	  <fim>110</fim>
+      <chave>banco_ocorrencia</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+	  <descricao>CODIGO DE OCORRENCIA</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>111</inicio>
+      <fim>116</fim>
+      <chave>ocorrencia_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+  	  <descricao>DATA DA OCORRENCIA PARA O BANCO</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>117</inicio>
+      <fim>126</fim>
+      <chave>seu_numero</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>SEU NUMERO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>127</inicio>
+      <fim>146</fim>
+      <chave>nosso_numero</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>NOSSO NUMERO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>147</inicio>
+      <fim>152</fim>
+      <chave>vencto</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+  	  <descricao>DATA VENCIMENTO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>153</inicio>
+      <fim>165</fim>
+      <chave>valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+  	  <descricao>VALOR DO TITULO</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>166</inicio>
+      <fim>168</fim>
+      <chave>banco</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>CODIGO DO BANCO COBRADOR</descricao>
+    </registro>
+
+    <registro>
+      <inicio>169</inicio>
+      <fim>173</fim>
+      <chave>agencia</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>CODIGO DA AGENCIA COBRADORA</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>174</inicio>
+      <fim>175</fim>
+      <chave>especie_documento</chave>
+	  <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>TIPO DE DOCUMENTO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>176</inicio>
+      <fim>188</fim>
+      <chave>valor_outras_multa</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>OUTRAS DESPESAS</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>189</inicio>
+      <fim>201</fim>
+      <chave>valor_despesa_cobranca</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>TARIFA BANCARIA</descricao>
+    </registro>
+
+    <registro>
+      <inicio>202</inicio>
+      <fim>227</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+  	  <descricao>ZEROS</descricao>
+    </registro>
+  
+    <registro>
+      <inicio>228</inicio>
+      <fim>240</fim>
+      <chave>valor_abatimento</chave>
+      <tipo>float2</tipo>
+	  <padrao>0</padrao>
+  	  <descricao>VALOR DO ABATIMENTO OU DEFLACAO CONCEDIDOS</descricao>
+    </registro>
+ 
+    <registro>
+      <inicio>241</inicio>
+      <fim>253</fim>
+      <chave>valor_desconto</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>VALOR DOS DESCONTOS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>254</inicio>
+      <fim>266</fim>
+      <chave>valor_pago</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>VALOR PAGO</descricao>
+    </registro>
+ 
+    <registro>
+      <inicio>267</inicio>
+      <fim>279</fim>
+      <chave>valor_juros</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+  	  <descricao>VALOR DOS JUROS COBRADOS</descricao>
+    </registro>
+  
+	<registro>
+      <inicio>280</inicio>
+      <fim>292</fim>
+      <chave>valor_multa</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>VALOR OUTROS RECEBIMENTOS</descricao>
+    </registro>
+   
+	<registro>
+      <inicio>293</inicio>
+      <fim>295</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+ 
+	<registro>
+      <inicio>296</inicio>
+      <fim>301</fim>
+      <chave>credito_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+  	  <descricao>CREDITO DATA</descricao>
+    </registro>
+   
+	<registro>
+      <inicio>302</inicio>
+      <fim>342</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+
+	<registro>
+      <inicio>343</inicio>
+      <fim>343</fim>
+      <chave>forma_pgto</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>FORMA DE PAGAMENTO</descricao>
+    </registro>
+
+	<registro>
+      <inicio>344</inicio>
+      <fim>344</fim>
+      <chave>canal_pgto</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>CANAL DE PAGAMENTO</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>345</inicio>
+      <fim>382</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>383</inicio>
+      <fim>392</fim>
+      <chave>banco_motivo</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>MOTIVO DAS OCORRECIAS 03, 16, 18 (POSICOES 109-110)</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>393</inicio>
+      <fim>394</fim>
+	  <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_seq</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+  
+  </sessao>
+
+  <sessao>
+	
+	<nome>arquivo_trailler</nome>
+  
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>integer</tipo>
+      <padrao>9</padrao>
+    </registro>
+  
+    <registro>
+      <inicio>2</inicio>
+	  <fim>17</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+  	  <descricao>BRANCOS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>18</inicio>
+      <fim>25</fim>
+      <chave>total_titulos</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+  	  <descricao>TOTAL TITULOS EM CARTEIRA</descricao>
+    </registro>
+
+    <registro>
+      <inicio>26</inicio>
+      <fim>39</fim>
+      <chave>valor_total</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+  	  <descricao>VALOR EM CARTEIRA</descricao>
+    </registro>
+
+    <registro>
+      <inicio>40</inicio>
+      <fim>47</fim>
+	  <chave>arquivo_numero_sequencia</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  	  <descricao>NUMERO EM SEQUENCIA DO ARQUIVO</descricao>
+    </registro>
+
+    <registro>
+      <inicio>48</inicio>
+      <fim>48</fim>
+	  <chave></chave>
+      <tipo>string</tipo>
+	  <padrao> </padrao>
+  	  <descricao>BRANCO</descricao>
+    </registro>
+
+	<registro>
+      <inicio>49</inicio>
+      <fim>55</fim>
+      <chave>titulos_registrados</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+	  <descricao>TITULOS REGISTRADOS</descricao>
+    </registro>
+
+	<registro>
+      <inicio>56</inicio>
+      <fim>70</fim>
+      <chave>valor_total_registrado</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+	  <descricao>VALOR TOTAL REGISTRADO</descricao>
+    </registro>
+
+	<registro>
+      <inicio>71</inicio>
+      <fim>77</fim>
+      <chave>titulos_liquidados</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+	  <descricao>TITULOS LIQUIDADOS</descricao>
+    </registro>
+ 	
+	<registro>
+      <inicio>78</inicio>
+      <fim>92</fim>
+      <chave>total_liquidado</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+	  <descricao>VALOR LIQUIDADOS</descricao>
+    </registro>
+ 
+	<registro>
+      <inicio>93</inicio>
+      <fim>362</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+	  <descricao>BRANCOS</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>363</inicio>
+      <fim>379</fim>
+      <chave>total_rateio</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+	  <descricao>QUANTIDADE DE RATEIOS EFETUADOS</descricao>
+    </registro>
+
+	<registro>
+      <inicio>380</inicio>
+	  <fim>394</fim>
+      <chave>valor_rateio</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+	  <descricao>TOTAL DE RATEIOS EFETUADOS</descricao>
+    </registro>
+
+	<registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_sequencia</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+	  <descricao>NUMERO DE SEGUENCIA DO REGISTRO</descricao>
+    </registro>
+
+  </sessao>
+
+</layout>

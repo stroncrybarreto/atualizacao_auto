@@ -1,0 +1,77 @@
+<relatorio dados="extrato_nota_fatura" ordem="empresa,cliente_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+4  titulo2					tam=163	alinha=centro
+5  titulo3					tam=32  alinha=centro
+6  empresa_nome				tam=60
+
+10 cliente_nome				tam=30
+11 cliente_codigo			tam=6
+
+20 nota_emitida				tam=14	fmt=float2
+21 nota_recebida			tam=14	fmt=float2
+22 nota_pendente			tam=14	fmt=float2
+23 nota_faturada			tam=14	fmt=float2
+24 fatura_recebida			tam=14	fmt=float2	
+25 fatura_pendente			tam=14	fmt=float2
+26 subtotal_recebido		tam=14	fmt=float2
+27 subtotal_pendente		tam=14	fmt=float2
+
+70 subtotal_nota_emitida	tam=14	fmt=float2	func=soma	campo=nota_emitida				grupo=1
+71 subtotal_nota_recebida	tam=14	fmt=float2	func=soma	campo=nota_recebida				grupo=1
+72 subtotal_nota_pendente	tam=14	fmt=float2	func=soma	campo=nota_pendente				grupo=1
+73 subtotal_nota_faturada	tam=14	fmt=float2	func=soma	campo=nota_faturada				grupo=1
+74 subtotal_fatura_recebida	tam=14	fmt=float2	func=soma	campo=fatura_recebida			grupo=1
+75 subtotal_fatura_pendente	tam=14	fmt=float2	func=soma	campo=fatura_pendente			grupo=1
+76 subtotal_recebido_sub	tam=14	fmt=float2	func=soma	campo=subtotal_recebido			grupo=1
+77 subtotal_pendente_sub	tam=14	fmt=float2	func=soma	campo=subtotal_pendente			grupo=1
+
+80 total_nota_emitida		tam=14	fmt=float2	func=soma	campo=nota_emitida
+81 total_nota_recebida		tam=14	fmt=float2	func=soma	campo=nota_recebida
+82 total_nota_pendente		tam=14	fmt=float2	func=soma	campo=nota_pendente
+83 total_nota_faturada		tam=14	fmt=float2	func=soma	campo=nota_faturada
+84 total_fatura_recebida	tam=14	fmt=float2	func=soma	campo=fatura_recebida
+85 total_fatura_pendente	tam=14	fmt=float2	func=soma	campo=fatura_pendente
+86 total_recebido			tam=14	fmt=float2	func=soma	campo=subtotal_recebido
+87 total_pendente			tam=14	fmt=float2	func=soma	campo=subtotal_pendente
+99 titulo                   tam=162 alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                #2              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#99
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #6                                                                                                                                                    |
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                                |      Notas    |     Notas     |     Notas     |     Notas     |    Faturas    |    Faturas    |     Total     |     Total     |
+|            Cliente             |     emitidas  |   recebidas   |   pendentes   |   faturadas   |   recebidas   |   pendentes   |    recebido   |    pendente   |
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+</cab_grupo>
+<detalhe>
+| #10                            |#20            |#21            |#22            |#23            |#24            |#25            |#26            |#27            |
+</detalhe>
+<rod_grupo nome="1">
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+| Subtotal                       |#70            |#71            |#72            |#73            |#74            |#75            |#76            |#77            |
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+</rod_grupo>
+<rod_relat>
+
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+| Total                          |#80            |#81            |#82            |#83            |#84            |#85            |#86            |#87            |
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+</rod_relat>
+
+<rod_pagina>
++--------------------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+</rod_pagina>
+
+
+<hash>183a10ff1314e89d236fa2ab42d657a9</hash>
+</relatorio>

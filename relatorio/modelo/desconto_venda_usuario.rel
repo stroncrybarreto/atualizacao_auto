@@ -1,0 +1,49 @@
+<relatorio dados="desconto_venda" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+3  titulo                tam=146 alinha=centro
+
+4  data                  tam=10  fmt=data
+5  turno                 tam=3
+6  documento             tam=9   alinha=centro
+7  nome                  tam=25
+8  forma_pgto_nome       tam=15
+9  valor_liquido         tam=13  fmt=float2
+10 valor_desconto        tam=8   fmt=float2
+11 perc_desconto         tam=10  fmt=float2
+12 conta_venda           tam=10
+13 total_valor_liquido   tam=13  fmt=float2  func=soma  campo=valor_liquido
+14 total_valor_desconto  tam=8   fmt=float2  func=soma  campo=valor_desconto
+15 total_perc_desconto   tam=10  fmt=float2  func=media campo=perc_desconto 
+17 valor_bruto           tam=11	 fmt=float2
+18 total_valor_bruto	 tam=11	 fmt=float2	 func=soma	campo=valor_bruto
+19 valor_acrescimo       tam=9   fmt=float2
+20 total_valor_acrescimo tam=9   fmt=float2  func=soma  campo=valor_acrescimo
+21 tipo_desconto 		 tam=3
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                #2                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                               DESCONTOS EM VENDAS                                                                                                                                                                                                                                  
+#3                                                                                                         
+
++------------+-------+-----------+---------------------------+-----------------+-------------+----------+-----------+---------------+------------+
+|    Data    | Turno | Documento |         Cliente           | Forma pagamento | Valor bruto | Desconto | Acréscimo | Valor líquido | Percentual |
++------------+-------+-----------+---------------------------+-----------------+-------------+----------+-----------+---------------+------------+
+</cab_pagina>
+<detalhe>
+| #4         | #5    | #6        | #7                        | #8              | #17         | #10      | #19       | #9            | #11        | 
+</detalhe>
+<rod_relat>
++------------+-------+-----------+---------------------------+-----------------+-------------+----------+-----------+---------------+------------+
+| #12                                                                          | #18         | #14      | #20       | #13           | #15        |
++------------------------------------------------------------------------------+-------------+----------+-----------+---------------+------------+
+
+</rod_relat>
+<rod_pagina>
++------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+<hash>c304704fad614ce3a075703028de28d3</hash>
+</relatorio>

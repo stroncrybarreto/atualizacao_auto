@@ -1,0 +1,66 @@
+<relatorio dados="previsao_compra" tamfonte="8" ordem="fornecedor,empresa_cod_nome,grupo_cod_nome,produto_nome">
+<apelidos>
+1  nome_posto			tam=999
+2  ponto_titulo			tam=999
+3  subtitulo			tam=9999
+4  empresa_cod_nome		tam=80
+5  grupo_cod_nome		tam=50
+6  produto_codigo		tam=10  alinha=centro
+7  produto_nome			tam=30
+8  unid_med_entrada     tam=3   alinha=esquerda
+9  qtde_unid_entrada    tam=8   alinha=direita
+10 nome_coluna          tam=14  alinha=centro
+11 valor				tam=14  fmt=float2	
+12 estoque				tam=11 	expr=estoque and (round(estoque, tipo=='C' and 3 or 1)) or tipo =='C' and '0,000' or '0' alinha=direita
+13 fornecedor           tam=50
+14 fornecedor_cod_nome  tam=50
+15 produto_cod_barra	tam=20
+91 fecha_tag_empresa	   tam=999
+92 linha_cabecalho_empresa tam=999
+93 linha_cabecalho_grupo   tam=999
+94 linha_grupo 		       tam=999
+95 linha_detalhe           tam=999
+96 linha_coluna			   tam=999
+97 linha_detalhe_coluna    tam=999
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="fornecedor" quebra_pagina="1">
+
++---------------------------------------------------------------------------------------------#92
+|  Fornecedor: #14                                                                            #91
++---------------------------------------------------------------------------------------------#92
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="fornecedor,empresa_cod_nome" quebra_pagina="1">
+|  Empresa: #4                                                                                #91
++---------------------------------------------------------------------------------------------#93
+</cab_grupo>
+<cab_grupo nome="3" quebra="fornecedor,empresa_cod_nome,grupo_cod_nome">
+|  Grupo: #5                                                                                  #94
++------------+--------------------------------+-----+----------+----------------+-------------+#96
+|   Código   |             Produto            | UM. | Qtd./UM. | #10            |   Estoque   #97
++------------+--------------------------------+-----+----------+----------------+-------------+#96
+</cab_grupo>
+<detalhe>
+| #6         | #7                             | #8  | #9       | #11            | #12         #95
+</detalhe>
+<rod_grupo nome="3">
++------------+--------------------------------+-----+----------+----------------+-------------+#96
+</rod_grupo>
+
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
+
+</rod_grupo>
+<rod_pagina>
++------------+--------------------------------+-----+----------+----------------+-------------+#96
+</rod_pagina>
+
+<hash>3db5a34c0b3005c421ca893d77768e17</hash>
+</relatorio>

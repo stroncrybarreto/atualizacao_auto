@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>AUTOSYSTEM</title>
+	</head>
+	<body>
+		<p tal:condition="cliente_invalido">
+			<td align="center">Cliente inexistente!</td>
+			<p>
+				<a tal:attributes="href atalho">Voltar</a>
+			</p>
+		</p>
+		<p tal:condition="cliente_restricao">
+			<td align="center">Cliente com restrição!</td>
+			<p>
+				<td align="center" tal:content="cliente_restricao"></td>
+			</p>
+			<p>
+				<a tal:attributes="href atalho">Voltar</a>
+			</p>
+		</p>
+		<form action="/done/" method="POST" tal:condition="cliente_nome">
+			<table border="0">
+				<p>
+				<tr>
+					<td align="left">Confirmar cliente</td>
+					<p>
+					<td align="left" tal:content="cliente_nome">FULANO</td>
+				</tr>
+				<p>
+				<tr>
+					<td colspan="4" align="center" valign="middle" height="10">
+						<input type="submit" name="bt_confirmar" value="Confirmar">
+						<a tal:attributes="href atalho">Voltar</a>
+					</td>
+				</tr>
+				<input type="hidden" tal:repeat="info venda_info" tal:attributes="name info/name;value info/value">
+			</table>
+		</form>
+	</body>
+</html>

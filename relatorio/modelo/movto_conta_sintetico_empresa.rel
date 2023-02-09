@@ -1,0 +1,77 @@
+<relatorio dados="movto_conta_sintetico" ordem="empresa_nome,movto_grid,movto_data,conta_nome,motivo_nome" >
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=16
+3  titulo				tam=123	alinha=centro
+4  data_fim             tam=10 fmt=data
+5  conta_nome           tam=40
+6  conta_saldo          tam=17 fmt=%.02f
+7  movto_data           tam=10 fmt=data		alinha=centro
+8  motivo_nome          tam=31
+9  movto_entrada        tam=13 fmt=%.02f
+10 movto_saida          tam=13 fmt=%.02f
+11 movto_saldo          tam=17 fmt=%.02f	expr=movto_saldo_ini+movto_total_entrada-movto_total_saida
+12 movto_contra_partida tam=20
+13 movto_total_entrada  tam=13 fmt=%.02f	func=soma   campo=movto_entrada     grupo=2
+14 movto_total_saida    tam=13 fmt=%.02f	func=soma   campo=movto_saida       grupo=2
+15 total_entrada		tam=13 fmt=%.02f	func=soma   campo=movto_entrada
+16 total_saida			tam=13 fmt=%.02f	func=soma   campo=movto_saida
+17 empresa_nome         tam=60
+18 total_emp_entrada	tam=13 fmt=%.02f	func=soma   campo=movto_entrada		grupo=1
+19 total_emp_saida		tam=13 fmt=%.02f	func=soma   campo=movto_saida       grupo=1
+20 saldo_emp_ant		tam=17 fmt=%.02f
+21 data_ini				tam=10 fmt=data
+22 movto_saldo_ini		tam=17  fmt=%.02f
+23 xmovto_saldo         tam=17  fmt=float2	expr=movto_saldo_ini+movto_entrada-movto_saida
+26 empresa_cod_nome     tam=60 expr=str(empresa_codigo)+ ' - ' +empresa_nome
+</apelidos>
+<cab_pagina>
+#1                                                                                                         #2        
+---------------------------------------------------------------------------------------------------------------------------
+   
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
+
++-------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #26                                                                                                            |
++-------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,conta_codigo">
+| Conta: #5                                                                                                               |
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+|    Data    |            Histórico            |    Entrada    |     Saída     |       Saldo       |    Contra partida    |
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_nome,conta_codigo" repeticao="0">
+| Saldo inicial:                                                               | #22               |                      |
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+</cab_grupo>
+<detalhe>
+| #7         | #8                              | #9            | #10           | #11               | #12                  |
+</detalhe>
+<rod_grupo nome="3">
+</rod_grupo>
+<rod_grupo nome="2">
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+| Total                                        | #13           | #14           | #11               |                      |
++----------------------------------------------+---------------+---------------+-------------------+----------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total empresa                                | #18           | #19           |                   |                      |
++----------------------------------------------+---------------+---------------+-------------------+----------------------+
+
+
+</rod_grupo>
+<rod_pagina>
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+</rod_pagina>
+<rod_relat>
++----------------------------------------------+---------------+---------------+------------------------------------------+
+| Total geral                                  | #15           | #16           |                                          |
++----------------------------------------------+---------------+---------------+------------------------------------------+
+</rod_relat>
+
+<hash>bc8a3b73dd6a19bcbb1a773c04ca7b66</hash>
+</relatorio>

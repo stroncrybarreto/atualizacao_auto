@@ -1,0 +1,58 @@
+<relatorio dados="vale_brinde_graal" ordem="pessoa">
+<apelidos>
+1  pessoa_nome     tam=60
+2  data            tam=10
+3  cupom           tam=12
+4  vencimento      tam=10
+5  placa           tam=7
+6  valor           tam=12   fmt=%.02f
+7  rel_data_hora   tam=16
+8  empresa_nome    tam=100
+9  titulo          tam=80   alinha=centro
+10 total           tam=12   fmt=%.02f       func=soma       campo=valor     grupo=1
+11 total_geral     tam=12   fmt=%.02f       func=soma       campo=valor
+</apelidos>
+
+<cab_pagina>
+                                                        #7             
+------------------------------------------------------------------------
+
+          V A L E S   B R I N D E S   P O R   C L I E N T E                
+#9                                                                             
+
+                  Empresa: #8
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa_nome">
++----------------------------------------------------------------------+
+| Cliente: #1                                                          |
++------------+----------------+------------+-------------+-------------+
+| Data       | Cupom          | Vencimento | Placa       |       Valor |
++------------+----------------+------------+-------------+-------------+
+</cab_grupo>
+
+<detalhe>
+| #2         | #3             | #4         | #5          | #6          |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+----------------+------------+-------------+-------------+
+|                                                  Total | #10         |
++--------------------------------------------------------+-------------+
+
+</rod_grupo>
+
+<rod_relat>
++--------------------------------------------------------+-------------+
+|                                            Total Geral | #11         |
++--------------------------------------------------------+-------------+
+</rod_relat>
+
+<rod_pagina>
++------------+----------------+------------+-------------+-------------+
+</rod_pagina>
+
+
+<hash>ce3332f1ce6f72452d0cb6a0ad9cb792</hash>
+</relatorio>

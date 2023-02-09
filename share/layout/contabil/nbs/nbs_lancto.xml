@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>nbs</nome>
+  <sessao>
+    <nome>nbs_lancto</nome>
+    <registro>
+      <inicio>1</inicio>
+      <fim>14</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ</descricao>
+    </registro>
+    <registro>
+      <inicio>15</inicio>
+      <fim>24</fim>
+      <chave>lote</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Lote do lancamento</descricao>
+    </registro>
+    <registro>
+      <inicio>25</inicio>
+      <fim>30</fim>
+      <chave>lancamento</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Lançamento</descricao>
+    </registro>
+    <registro>
+      <inicio>31</inicio>
+      <fim>38</fim>
+      <chave>data</chave>
+      <tipo>date4y</tipo>
+      <padrao></padrao>
+      <descricao>Data do lançamento</descricao>
+    </registro>
+    <registro>
+      <inicio>39</inicio>
+      <fim>58</fim>
+      <chave>conta_contabil_deb</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Conta debitar</descricao>
+    </registro>
+    <registro>
+      <inicio>59</inicio>
+      <fim>63</fim>
+      <chave>centro_custo_deb</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Centro de custo debitar</descricao>
+    </registro>
+    <registro>
+      <inicio>64</inicio>
+      <fim>83</fim>
+      <chave>conta_contabil_cre</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Conta creditar</descricao>
+    </registro>
+    <registro>
+      <inicio>84</inicio>
+      <fim>88</fim>
+      <chave>centro_custo_cre</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Centro de custo creditar</descricao>
+    </registro>
+    <registro>
+      <inicio>89</inicio>
+      <fim>103</fim>
+      <chave>valor</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>Valor do lançamento</descricao>
+    </registro>
+    <registro>
+      <inicio>104</inicio>
+      <fim>108</fim>
+      <chave>codigo_hp</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código HP</descricao>
+    </registro>
+    <registro>
+      <inicio>109</inicio>
+      <fim>159</fim>
+      <chave>obs</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Histórico</descricao>
+    </registro>
+  </sessao>
+</layout>

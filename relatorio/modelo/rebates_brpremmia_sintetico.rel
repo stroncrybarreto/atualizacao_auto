@@ -1,0 +1,48 @@
+<relatorio dados="rebates_brpremmia" ordem="codigo_ftc">
+<apelidos>
+1  rel_posto_nome		  		tam=60
+2  rel_data_hora		  		tam=18
+3  titulo_principal		        tam=180	expr='RELATÓRIO DE VENDAS BRPREMMIA - REBATES'	alinha=centro
+4  titulo				  		tam=180	  alinha=centro
+5  periodo				  		tam=180   alinha=centro
+6  agrupamento                  tam=180	  alinha=centro
+7  descricao			  		tam=65
+8  quantidade	                tam=12	  alinha=direita
+9  pontos          	            tam=16    alinha=direita
+10  valor_pago_consumidor  		tam=26    fmt=float2
+11  valor_rebate	          	tam=17    fmt=float2
+12 valor_venda			  		tam=16    fmt=float2
+13 total_pontos                 tam=15    alinha=direita
+14 total_pago_consumidor        tam=26    fmt=float2
+15 total_valor_rebate	        tam=17    fmt=float2
+16 total_valor_venda			tam=16    fmt=float2
+
+
+</apelidos>
+<cab_pagina>                     	                                                                                                      
+#1                                                                                                                                                  #2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+#3
+#4
+#5
+#6
+
++--------------------------------------------------------------------+------------+----------------+---------------------------+------------------+-----------------+
+|                               Descrição                            |    Qtde    |     Pontos     |   Valor Pago Consumidor   |   Valor Rebate   |   Preço no CF   |
++--------------------------------------------------------------------+------------+----------------+---------------------------+------------------+-----------------+
+</cab_pagina>
+<detalhe>
+| #7                                                                 |#8          |#9              | #10                       | #11              | #12             |
+</detalhe>
+<rod_relat>                                                                                                                                          
++--------------------------------------------------------------------+------------+----------------+---------------------------+------------------+-----------------+	
+|                                                                    |      Total:| #13            | #14                       | #15              | #16             |
+---------------------------------------------------------------------+------------+----------------+---------------------------+------------------+-----------------+
+</rod_relat>	
+<rod_pagina>
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+<hash></hash>
+</relatorio>
+

@@ -1,0 +1,103 @@
+<relatorio dados="diario_fornecedor_txt" ordem="data">
+<apelidos>
+1 rel_posto_nome tam=80
+2 rel_data_hora	 tam=16
+3 titulo        tam=134 expr='DIÁRIO DO FORNECEDOR' alinha=centro
+4 subtitulos    tam=134 alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                    #2
+--------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="diario_fornecedor_txt_main" ordem="data">
+<apelidos>
+1 pessoa_cod_nome          tam=13  expr=str(pessoa_codigo) + '-' + pessoa_nome
+2 documento                tam=9   alinha=centro
+3 motivo_movto_codigo_nome tam=22
+4 empresa_cod_nome         tam=19  expr=str(empresa_codigo) + '-' + empresa_nome
+5 data                     tam=10  fmt=data
+6 vencto                   tam=10  fmt=data
+7 valor_debito             tam=13  fmt=float2
+8 valor_credito            tam=13  fmt=float2
+9 total_debito_dia         tam=13  fmt=float2 func=soma campo=valor_debito grupo=1
+10 total_credito_dia       tam=13  fmt=float2 func=soma campo=valor_credito grupo=1
+11 saldo_anterior          tam=13 fmt=float2
+12 total_periodo_debito    tam=13 fmt=float2 func=soma campo=valor_debito
+13 total_periodo_credito   tam=13 fmt=float2 func=soma campo=valor_credito
+14 saldo_atual             tam=13 fmt=float2 expr=((saldo_anterior - total_periodo_debito) + total_periodo_credito)
+15 corrige_totalizador     tam=10
+</apelidos>
+
+<cab_relat>
++---------------+-----------+------------------------+---------------------+------------+------------+---------------+---------------+
+|  Fornecedor   | Documento | Motivo de movimentação |       Empresa       |   Emissão  | Vencimento |    Débito     |    Crédito    |
++---------------+-----------+------------------------+---------------------+------------+------------+---------------+---------------+
+</cab_relat>
+
+<cab_grupo nome="2" quebra="corrige_totalizador">
+</cab_grupo>
+
+<cab_grupo nome="1" quebra="data">
+|Data: #5                                                                                                                            |
++---------------+-----------+------------------------+---------------------+------------+------------+---------------+---------------+
+</cab_grupo>
+
+<detalhe>
+| #1            | #2        | #3                     | #4                  | #5         | #6         | #7            | #8            |
+</detalhe>
+
+<rod_grupo nome="1">
++---------------+-----------+------------------------+---------------------+------------+------------+---------------+---------------+
+|                                                                                      Total do dia: | #9            | #10           |
++----------------------------------------------------------------------------------------------------+---------------+---------------+
+</rod_grupo>
+
+<rod_grupo nome="2">
+|                                                                                    Saldo anterior: | #11           |               |
+|                                                                                  Total do período: | #12           | #13           |
+|                                                                                       Saldo atual: | #14           |               |
++----------------------------------------------------------------------------------------------------+---------------+---------------+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="diario_fornecedor_txt_resumo" ordem="nome">
+<apelidos>
+1 resumo_total         tam=134 expr='RESUMO POR MOTIVOS DE MOVIMENTAÇÕES' alinha=centro
+2 nome                 tam=40
+3 total_debito		   tam=20  fmt=float2
+4 total_credito        tam=20  fmt=float2
+5 total_debito_resumo  tam=20  fmt=float2 func=soma campo=total_debito
+6 total_credito_resumo tam=20  fmt=float2 func=soma campo=total_credito
+</apelidos>
+
+<cab_relat>
+
+
+#1
+                      +------------------------------------------+----------------------+----------------------+
+                      |                   Nome                   |        Débito        |       Crédito        |
+                      +------------------------------------------+----------------------+----------------------+
+</cab_relat>
+
+<detalhe>
+                      | #2                                       | #3                   | #4                   |
+</detalhe>
+
+<rod_relat>
+                      +------------------------------------------+----------------------+----------------------+
+                      | Valor total:                             | #5                   | #6                   |
+                      +------------------------------------------+----------------------+----------------------+
+</rod_relat>
+</subrelat>
+
+<hash>c3be866b0a321c34ed0d324dd63b9fb3</hash>
+</relatorio>

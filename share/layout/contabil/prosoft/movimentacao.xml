@@ -1,0 +1,76 @@
+<layout>
+  <nome>movto</nome>
+  <sessao>
+    <nome>movto_conta</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave>tipo</chave><tipo></tipo><padrao>CTA</padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>8</fim><chave>ordem</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>9</inicio><fim>11</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>16</fim><chave>cod_acesso</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>17</inicio><fim>31</fim><chave>classificador</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>32</inicio><fim>61</fim><chave>nome</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>62</inicio><fim>62</fim><chave>terceiros</chave><tipo></tipo><padrao>1</padrao><descricao></descricao></registro>
+    <registro><inicio>63</inicio><fim>63</fim><chave>custo</chave><tipo></tipo><padrao>1</padrao><descricao></descricao></registro>
+    <registro> <inicio>64</inicio><fim>83</fim><chave>classificador_especial</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>84</inicio><fim>163</fim><chave>nome_conta_especial</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>164</inicio><fim>164</fim><chave>objeto_conciliacao</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>165</inicio><fim>208</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>movto_pessoa</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave>tipo</chave><tipo></tipo><padrao>TRC</padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>8</fim><chave>ordem</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>9</inicio><fim>11</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>12</fim><chave>tipo_terceiro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>13</inicio><fim>26</fim><chave>cpf</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>27</inicio><fim>86</fim><chave>nome</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>87</inicio><fim>106</fim><chave>nome_reduzido</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>107</inicio><fim>116</fim><chave>tipo_logradouro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>117</inicio><fim>176</fim><chave>endereco</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>177</inicio><fim>186</fim><chave>numero</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>187</inicio><fim>206</fim><chave>complemento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>207</inicio><fim>215</fim><chave>cep</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>216</inicio><fim>245</fim><chave>bairro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>246</inicio><fim>275</fim><chave>cidade</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>276</inicio><fim>277</fim><chave>estado</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>278</inicio><fim>285</fim><chave>data_nasc</chave><tipo>text</tipo><padrao></padrao><descricao>ddmmaaaa</descricao></registro>
+    <registro><inicio>286</inicio><fim>290</fim><chave>ddd</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>291</inicio><fim>300</fim><chave>fone</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>301</inicio><fim>305</fim><chave>ddd_fax</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>306</inicio><fim>315</fim><chave>fax</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>316</inicio><fim>365</fim><chave>email</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>366</inicio><fim>425</fim><chave>www</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>426</inicio><fim>445</fim><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>446</inicio><fim>465</fim><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>466</inicio><fim>475</fim><chave>cod_ativ_economica</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>476</inicio><fim>493</fim><chave>rg</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>494</inicio><fim>498</fim><chave>emissor_rg</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>499</inicio><fim>500</fim><chave>estado_rg</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>501</inicio><fim>508</fim><chave>data_emissao_rg</chave><tipo>text</tipo><padrao></padrao><descricao>ddmmaaaa</descricao></registro>
+    <registro><inicio>509</inicio><fim>509</fim><chave>sexo</chave><tipo>integer</tipo><padrao></padrao><descricao>0 Masc 1 Fem</descricao></registro>
+    <registro><inicio>510</inicio><fim>510</fim><chave>estado_civil</chave><tipo>integer</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>511</inicio><fim>602</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>movto</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave>tipo</chave><tipo></tipo><padrao>LC1</padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>8</fim><chave>ordem</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>9</inicio><fim>11</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>12</fim><chave>modo_lancto</chave><tipo></tipo><padrao>1</padrao><descricao></descricao></registro>
+    <registro><inicio>13</inicio><fim>20</fim><chave>data_escrituracao</chave><tipo>text</tipo><padrao></padrao><descricao>ddmmaaaa</descricao></registro>
+    <registro><inicio>21</inicio><fim>30</fim><chave>nr_documento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>31</inicio><fim>35</fim><chave>lote</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>36</inicio><fim>65</fim><chave>orig_lancto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>66</inicio><fim>68</fim><chave>qtd_contas</chave><tipo>integer</tipo><padrao></padrao><descricao>somente para modo 2</descricao></registro>
+    <registro><inicio>69</inicio><fim>73</fim><chave>conta_debitar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>74</inicio><fim>87</fim><chave>terceiro_debito</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>88</inicio><fim>92</fim><chave>custo_debito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>93</inicio><fim>97</fim><chave>conta_creditar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>98</inicio><fim>111</fim><chave>terceiro_credito</chave><tipo>text</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>112</inicio><fim>116</fim><chave>custo_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>117</inicio><fim>132</fim><chave>valor_movto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>133</inicio><fim>372</fim><chave>historico</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>373</inicio><fim>373</fim><chave>conciliacao_debito</chave><tipo>text</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>374</inicio><fim>374</fim><chave>conciliacao_credito</chave><tipo>text</tipo><padrao></padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>375</inicio><fim>448</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

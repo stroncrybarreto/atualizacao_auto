@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='iso8859-1'?>
+<relatorio ts="2012-05-31 17:25:27" versao_xml="0.1">
+	<tela titulo="">
+  		<quadro titulo="Parâmetros"></quadro>
+	</tela>
+	<ajuda />
+	<layout columns="1" dados="" id="f75a0edace0edfbaa00984ef83e9a4be" ordem="" paper_orientation="1" titulo="identificacao_id">
+		<etiqueta nome="identificacao_id">
+			<impressao>I</impressao>
+			<modelo>0</modelo>
+			<papel>2</papel>
+			<tamanho_papel>21.6;27.9</tamanho_papel>
+			<margem_papel>1.1;0.2</margem_papel>
+			<orientacao>R</orientacao>
+			<borda>0</borda>
+			<tamanho_etiqueta>6.67;2.54</tamanho_etiqueta>
+			<margem_etiqueta>0.2;1.3</margem_etiqueta>
+			<espaco_etiqueta>0.1;0.1</espaco_etiqueta>
+			<numero_etiqueta>3;10</numero_etiqueta>
+			<layout fonte_nome="Courier" fonte_tamanho="8.0">
+				<campo chave="nome"/>
+				<campo chave="codigo"/>
+				<campo chave="id"/>
+				<rotulo texto=""/>
+				<cod_barra alinhar="centro" altura="0.6" chave="codigo_barra" largura="5" quebra="nao" tipo="i25" />
+			</layout>
+		</etiqueta>
+	</layout>
+</relatorio>

@@ -1,0 +1,43 @@
+<relatorio dados="funcionario_empresa">
+<apelidos>
+1   rel_posto_nome	tam=40
+2   rel_data_hora	tam=18
+5   codigo			tam=6	alinha=centro
+6   nome			tam=29
+7   cpf				tam=15
+8   fone			tam=16
+9   data_correta	tam=13	alinha=centro	fmt=data
+10  quebra1_total	tam=19	fmt=%d
+12  emp_codigo		tam=7	alinha=centro
+13  cargo_nome		tam=20
+14	tipo_data_rel	tam=13
+15	titulo			tam=130	alinha=centro
+16	subtitulo		tam=130	alinha=centro
+17	data_admissao	tam=13	fmt=data	alinha=centro
+18	data_cadastro	tam=13	fmt=data	alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                             #2
+---------------------------------------------------------------------------------------------------------------------------------
+
+#15
+#16
+
++--------+-------------------------------+------------------+------------------+---------------+---------+----------------------+
+| Código |             Nome              |        CPF       |     Telefone     | #14           | Empresa |        Cargo         |
++--------+-------------------------------+------------------+------------------+---------------+---------+----------------------+
+</cab_pagina>
+<detalhe>
+| #5     | #6                            | #7               | #8               | #9            | #12     | #13                  |
+</detalhe>
+<rod_relat>
++--------+-------------------------------+------------------+------------------+---------------+---------+----------------------+
+| Total                                                                                                  | #10                  |
++--------------------------------------------------------------------------------------------------------+----------------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+
+<hash>bf92e8ee3fdace2057b9ec1a39a2042e</hash>
+</relatorio>

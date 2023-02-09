@@ -1,0 +1,76 @@
+<relatorio dados="consumo_veiculo" ordem="empresa_nome,data,hora,placa,combustivel">
+<apelidos>
+27 titulo_1			tam=136		expr='CONSUMO DE COMBUSTÍVEL POR VEÍCULO'		alinha=centro
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18              
+3  titulo			tam=136		alinha=centro
+4  emp_cod_nome		tam=34		expr=str(empresa_codigo) + ' - ' + empresa_nome
+5  placa			tam=9
+6  combustivel		tam=43
+7  data             tam=10		fmt=data
+8  hora             tam=5
+9  km_atual			tam=10		fmt=float1	alinha=direita
+10 km_ant			tam=11		fmt=float1	alinha=direita
+11 km_perc			tam=12		fmt=float1	alinha=direita
+12 media_km_litro	tam=10		fmt=float1	expr=(km_perc/quantidade)
+13 preco_km			tam=10		fmt=float3
+14 frota			tam=5		alinha=centro
+15 documento        tam=9		alinha=centro
+16 quantidade		tam=10		fmt=float3
+17 valor			tam=10		fmt=float3
+18 total_c_qtde		tam=10		fmt=float2	func=soma	campo=quantidade		grupo=2		alinha=direita
+19 total_c_valor	tam=10		fmt=float3	func=soma	campo=valor				grupo=2		alinha=direita
+20 total_qtde		tam=10		fmt=float3	func=soma	campo=quantidade		grupo=1		alinha=direita
+21 total_valor		tam=10		fmt=float3	func=soma	campo=valor				grupo=1		alinha=direita
+22 total_km_perc	tam=12		fmt=float1	func=soma	campo=km_perc			grupo=2		alinha=direita
+23 t_media_km_litro	tam=10		fmt=float1	func=media	campo=media_km_litro	grupo=2		alinha=direita
+24 total_preco_km	tam=10		fmt=float3	func=soma	campo=preco_km			grupo=2		alinha=direita
+25 hora_abastec_hm  tam=5  
+26 motorista		tam=30
+28 total_g_quant	tam=10		fmt=float3	func=soma	campo=quantidade
+29 total_g_valor	tam=10		fmt=float3	func=soma	campo=valor
+</apelidos>
+<cab_pagina>
+#1                                                                                                                       #2
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#27                                                                                                                             
+#3                                                                                                                             
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #4                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,placa,combustivel">
+| Placa: #5        Combustível: #6                                                                                                      |
++--------------------+------------+-------------+---------------+------------+------------+-------+-----------+------------+------------+
+|     Data/Hora      |  KM atual  | KM anterior | KM percorrido | Média KM/L |  Preço/KM  | Frota | Documento | Quantidade |   Valor    |
++--------------------+------------+-------------+---------------+------------+------------+-------+-----------+------------+------------+
+</cab_grupo>
+<detalhe>
+| #7         - #8    | #9         | #10         | #11           | #12        | #13        | #14   | #15       | #16        | #17        | 
+</detalhe>
+<rod_grupo nome="2">
++--------------------+------------+-------------+---------------+------------+------------+-------+-----------+------------+------------+
+| Total placa                                   | #22           | #23        | #24        |                   | #18        | #19        |
++-----------------------------------------------+---------------+------------+------------+-------------------+------------+------------+
+</rod_grupo>
+<rod_grupo nome="1">
+
++-------------------------------------------------------------------------------------------------------------+------------+------------+
+| Total empresa                                                                                               | #20        | #21        |
++-------------------------------------------------------------------------------------------------------------+------------+------------+
+
+</rod_grupo>
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------+------------+------------+
+| Total geral                                                                                                 | #28        | #29        |
++-------------------------------------------------------------------------------------------------------------+------------+------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+<hash>dbf75094a6cd43da26933149dd2bca50</hash>
+</relatorio>

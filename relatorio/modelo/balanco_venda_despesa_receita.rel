@@ -1,0 +1,172 @@
+<relatorio dados="balanco_venda_despesa_main">
+<apelidos>
+1  rel_posto_nome				tam=60
+2  rel_data_hora				tam=18
+3  titulo		    	   	 	tam=113	alinha=centro
+4  total_despesa        		tam=14 fmt=float2
+5  total_lucro_bruto 			tam=14 fmt=float2
+6  total_lucro_liquido  		tam=10 fmt=float2
+7  total_outras_receitas		tam=14 fmt=float2
+8  titulo2		        		tam=113	alinha=centro
+9  total_lucro_liquido_total  	tam=14 fmt=float2
+10 titulo_principal				tam=115	alinha=centro	expr='BALANÇO DE VENDAS X DESPESAS'
+</apelidos>
+<cab_pagina>
+#1                                                                                                #2
+------------------------------------------------------------------------------------------------------------------
+
+#10
+#3
+#8
+</cab_pagina>
+<detalhe>
+</detalhe>
+<subrelat dados="balanco_venda_despesa_combustivel" nome="sessao_01">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  titulo				tam=121	alinha=centro
+4  classe_nome			tam=40
+5  produto_nome			tam=30
+6  lucro				tam=10  fmt=float2
+7  quantidade			tam=10	fmt=float2
+8  margem_lucro			tam=10	fmt=float2
+9  valor_venda			tam=10	fmt=float2
+10 percentual			tam=10   fmt=float2
+11 total_quantidade		tam=10  fmt=float2
+12 total_valor_venda   	tam=10  fmt=float2
+13 total_lucro			tam=10  fmt=float2
+14 total_margem_lucro	tam=10  fmt=float2
+15 preco_custo			tam=11	fmt=float3
+</apelidos>
+<cab_relat>
+                                                VENDA COMBUSTÍVEIS
+</cab_relat>
+<cab_grupo nome="1" quebra="classe">
+
++-----------------------------------------------------------------------------------------------------------------+
+| Classificação: #4                                                                                               |
++--------------------------------+------------+------------+------------+-------------+--------------+------------+
+|            Produto             | Quantidade |   Total    | Percentual | Preço custo | Margem lucro | Lucro base |
++--------------------------------+------------+------------+------------+-------------+--------------+------------+
+</cab_grupo>
+ 
+<detalhe>
+| #5                             | #7         | #9         | #10        | #15         | #8         % | #6         |
+</detalhe>
+
+<rod_grupo nome="1">
++--------------------------------+------------+------------+------------+-------------+--------------+------------+
+| TOTAL                          | #11        | #12        |            |             | #14        % | #13        |
++--------------------------------+------------+------------+------------+-------------+--------------+------------+
+</rod_grupo>
+</subrelat>
+<subrelat dados="balanco_venda_despesa_mercadoria" nome="sessao_02" >
+<apelidos>
+3  grupo_nome       tam=43
+4  lucro            tam=10  fmt=float2
+5  quantidade       tam=10  fmt=float2
+6  margem           tam=10   fmt=float2
+7  valor            tam=11  fmt=float2
+8  total_qtd        tam=10  fmt=float2
+9  total_valor      tam=11  fmt=float2
+10 total_lucro      tam=10  fmt=float2
+11 qtd_sub          tam=10  fmt=float2
+12 valor_sub        tam=10  fmt=float2
+13 lucro_sub        tam=10  fmt=float2
+14 m_lucro_sub      tam=12  fmt=float2
+15 m_lucro	    	tam=10   fmt=float2
+</apelidos>
+<cab_relat>
+
++--------------------------------+------------+------------+-----------------------------------------+------------+
+| TOTAL GERAL                    | #11        | #12        |                          #14          % | #13        |
++--------------------------------+------------+------------+-----------------------------------------+------------+
+
+
+                                                VENDA MERCADORIAS  
+							 
++----------------------------------------------------------+------------+-------------+--------------+------------+
+|                      Grupo produto                       | Quantidade |     Total   | Margem lucro | Lucro base |
++----------------------------------------------------------+------------+-------------+--------------+------------+
+</cab_relat>
+<detalhe>
+| #3                                                       | #5         | #7          | #6         % | #4         |
+</detalhe>
+<rod_relat>
++----------------------------------------------------------+------------+-------------+--------------+------------+
+| TOTAL                                                    | #8         | #9          | #15        % | #10        |
++----------------------------------------------------------+------------+-------------+--------------+------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balanco_venda_despesa_receita" nome="sessao_03">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  valor          	tam=10	fmt=float2
+4  total          	tam=10  	fmt=float2
+5  conta			tam=10 
+6  conta_nome     	tam=60
+</apelidos>
+<cab_relat>
+
+
+                                                     RECEITAS
+
++-------------+--------------------------------------------------------------------------------------+------------+
+|    Conta    |                                      Descrição                                       |   Valor    |
++-------------+--------------------------------------------------------------------------------------+------------+
+</cab_relat>
+<detalhe>
+| #5          | #6                                                                                   | #3         |
+</detalhe>
+<rod_relat>
++-------------+--------------------------------------------------------------------------------------+------------+
+| TOTAL       |                                                                                      | #4         |
++-------------+--------------------------------------------------------------------------------------+------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balanco_venda_despesa_despesa" nome="sessao_04" >
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  valor            	tam=12	fmt=float2
+4  total            	tam=12  fmt=float2
+5  conta				tam=10 
+6  conta_nome       	tam=60
+7  percentual			tam=8		fmt=float2
+8  total_porcentagem	tam=8		fmt=float2	func=soma campo=percentual
+</apelidos>
+<cab_relat>
+
+
+                                                     DESPESAS
+
++-------------+-----------------------------------------------------------------------+--------------+------------+
+|    Conta    |                              Descrição                                |    Valor     | Percentual |
++-------------+-----------------------------------------------------------------------+--------------+------------+
+</cab_relat>
+<detalhe>
+| #5          | #6                                                                    | #3           | #7       % |
+</detalhe>
+<rod_relat>
++-------------+-----------------------------------------------------------------------+--------------+------------+
+| TOTAL       |                                                                       | #4           | #8       % |
++-------------+-----------------------------------------------------------------------+--------------+------------+
+* Percentual é o valor da despesa perante o lucro bruto
+</rod_relat>
+</subrelat>
+<rod_relat>
+
+
++-------------------+----------------+--------------------+----------------+---------------------+----------------+
+|    Lucro bruto    | #5             |  Outras receitas   | #7             |      Despesas       | #4             |
++-------------------+----------------+--------------------+----------------+---------------------+----------------+
+|   Lucro líquido   | #9             |                                                                            |
++-------------------+----------------+----------------------------------------------------------------------------+
+</rod_relat>
+
+<hash>02b2c7722df701835acb394696328ca3</hash>
+</relatorio>

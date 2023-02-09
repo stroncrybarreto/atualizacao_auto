@@ -1,0 +1,49 @@
+<relatorio dados="venda_periodo" ordem="data,turno">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  subtitulo           tam=130   alinha=centro
+4  quebra_titulo       tam=104
+5  titulo3             tam=106   alinha=centro
+6  data                tam=10    fmt=data
+7  turno			   tam=2	 alinha=centro
+8  documento           tam=6	alinha=centro
+9  numero_nota         tam=6
+10 pessoa_nome         tam=18
+11 forma_pgto          tam=13    
+12 vencto              tam=10    fmt=data
+13 valor_pgto          tam=13    fmt=float2
+14 valor_venda         tam=13    fmt=float2
+15 cont_venda          tam=5     func=contar	alinha=esquerda
+17 doc_pgto            tam=8     alinha=centro
+18 total_info_pagto	   tam=3	 func=soma	campo=cont_venda
+19 total_valor_pago	   tam=13	 fmt=float2	func=soma	campo=valor_pgto
+20 total_valor_venda   tam=13	 fmt=float2	func=soma	campo=valor_venda
+21 info_pagto		   tam=3	 alinha=direita 
+22 nr_cupom            tam=6     alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                  #2
+------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
++------------+----+-------+--------+-------------------+-------------------+----------+------------+---------------+---------------+
+|    Data    | T. | Nr.CF | Nr.NF  |      Cliente      |  Forma pagamento  | Nr. doc. | Vencimento |   Valor pago  |  Valor venda  |
++------------+----+-------+--------+-------------------+-------------------+----------+------------+---------------+---------------+
+</cab_pagina>
+<detalhe>
+| #6         | #7 | #22   | #9     | #10               | #11           #21 | #17      | #12        | #13           | #14           |
+</detalhe>
+<rod_relat>
++------------+----+-------+--------+-------------------+-------------------+----------+------------+---------------+---------------+
+| Total                                                                              Vendas: #15   | #19           | #20           |
++--------------------------------------------------------------------------------------------------+---------------+---------------+
+
+</rod_relat>
+<rod_pagina>
++------------+----+-------+--------+--------------------+-------------------+----------+------------+----------------+-------------+
+</rod_pagina>
+
+<hash>495038aefa1cc0a91726a0de5adf0302</hash>
+</relatorio>

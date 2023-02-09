@@ -1,0 +1,60 @@
+<layout>
+  <nome>cliente_fornec</nome>
+  <sessao>
+    <nome>cliente</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave></chave><tipo></tipo><padrao>22</padrao><descricao></descricao></registro>
+    <registro><inicio>3</inicio><fim>9</fim><chave>codigo_empresa</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>10</inicio><fim>11</fim><chave>estado</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>18</fim><chave>conta</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>19</inicio><fim>25</fim><chave>cod_municipio</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>26</inicio><fim>35</fim><chave>nome_reduzido</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>36</inicio><fim>75</fim><chave>nome_cliente</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>76</inicio><fim>115</fim><chave>endereco</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>116</inicio><fim>122</fim><chave>numero_endereco</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>123</inicio><fim>152</fim><chave></chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>153</inicio><fim>160</fim><chave>cep</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>161</inicio><fim>174</fim><chave>inscricao</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>175</inicio><fim>194</fim><chave>inscr_estadual</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>195</inicio><fim>208</fim><chave>fone</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>209</inicio><fim>222</fim><chave>fax</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>223</inicio><fim>223</fim><chave></chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>224</inicio><fim>224</fim><chave>icms</chave><tipo>string</tipo><padrao>N</padrao><descricao>icms (S,N)</descricao></registro>
+    <registro><inicio>225</inicio><fim>225</fim><chave>tipo_inscricao</chave><tipo>string</tipo><padrao></padrao><descricao>1=CGC, 2=CPF, 3=CEI, 4=Outros</descricao></registro>
+    <registro><inicio>226</inicio><fim>245</fim><chave>inscr_municipal</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>246</inicio><fim>265</fim><chave>bairro</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>266</inicio><fim>269</fim><chave>ddd_fone</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>270</inicio><fim>274</fim><chave>aliquota_icms</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>275</inicio><fim>281</fim><chave>codigo_pais</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>282</inicio><fim>290</fim><chave>suframa</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>291</inicio><fim>300</fim><chave>data_cad</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>301</inicio><fim>390</fim><chave></chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>fornecedor</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave></chave><tipo></tipo><padrao>11</padrao><descricao></descricao></registro>
+    <registro><inicio>3</inicio><fim>9</fim><chave>codigo_empresa</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>10</inicio><fim>11</fim><chave>estado</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>18</fim><chave>conta</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>19</inicio><fim>25</fim><chave>cod_municipio</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>26</inicio><fim>35</fim><chave>nome_reduzido</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>36</inicio><fim>75</fim><chave>nome_cliente</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>76</inicio><fim>115</fim><chave>endereco</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>116</inicio><fim>122</fim><chave>numero_endereco</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>123</inicio><fim>152</fim><chave></chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>153</inicio><fim>160</fim><chave>cep</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>161</inicio><fim>174</fim><chave>inscricao</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>175</inicio><fim>194</fim><chave>inscr_estadual</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>195</inicio><fim>208</fim><chave>fone</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>209</inicio><fim>222</fim><chave>fax</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>223</inicio><fim>223</fim><chave></chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>224</inicio><fim>224</fim><chave>icms</chave><tipo>string</tipo><padrao>N</padrao><descricao>icms (S,N)</descricao></registro>
+    <registro><inicio>225</inicio><fim>225</fim><chave>tipo_inscricao</chave><tipo>string</tipo><padrao></padrao><descricao>1=CGC, 2=CPF, 3=CEI, 4=Outros</descricao></registro>
+    <registro><inicio>226</inicio><fim>245</fim><chave>inscr_municipal</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>246</inicio><fim>265</fim><chave>bairro</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>266</inicio><fim>269</fim><chave>ddd_fone</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>270</inicio><fim>276</fim><chave>codigo_pais</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>277</inicio><fim>287</fim><chave>suframa</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>288</inicio><fim>297</fim><chave>data_cad</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>    
+    <registro><inicio>298</inicio><fim>385</fim><chave></chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

@@ -1,0 +1,42 @@
+<relatorio dados="resumo_pendencia_conta" ordem="ordem">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo	        	tam=129 alinha=centro
+
+4  empresa_nome			tam=25
+5  motivo_movto         tam=25
+6  conta_nome           tam=25
+7  pessoa_nome          tam=29
+8  data                 tam=10 fmt=data alinha=centro
+9  vencto            	tam=10 fmt=data  alinha=centro
+10  documento           tam=11 alinha=centro
+11  valor				tam=13 fmt=%.02f
+12  total_conta			tam=13 fmt=%.02f	func=soma	campo=valor
+13 empresa_codigo       tam=9 alinha=centro
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                               #2        
+---------------------------------------------------------------------------------------------------------------------------------
+
+#3                                  
+
++-----------+---------------------------+-------------------------------+------------+------------+-------------+---------------+
+|  Empresa  |           Conta           |             Pessoa            |    Data    | Vencimento |  Documento  |     Total     |
++-----------+---------------------------+-------------------------------+------------+------------+-------------+---------------+
+</cab_pagina>
+<detalhe>
+| #13       | #6                        | #7                            | #8         | #9         | #10         | #11           |
+</detalhe>
+<rod_relat>
++-----------+---------------------------+-------------------------------+------------+------------+-------------+---------------+
+|  Total                                                                                                        | #12           |
++---------------------------------------------------------------------------------------------------------------+---------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+
+<hash>b1ec655bcd95cad015c7403e0f25b68d</hash>
+</relatorio>

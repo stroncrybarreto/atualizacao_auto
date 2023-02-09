@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso8859-1"?>
+<layout>
+	<config>
+		<!-- Parâmetros de geração -->
+		<chave tam_fonte="9" />
+		<chave tam_espaco_produtos="0.5" />
+		<chave max_produtos_pagina="1" />
+	</config>
+	<modelo>
+		<!-- Campos da danfe -->
+		<campo id="nota_tipo_movto" x="7.3" y="3.5" fmt="" />
+		<campo id="nota_numero_nota" x="17" y="1" fmt="%06d" />
+		<campo id="nota_serie" x="10" y="3" fmt="%06d" />
+		<campo id="nota_tipo_nf" x="12" y="3" fmt="%06d" />
+		<campo id="nota_numero_nota" x="6.3" y="4.5" fmt="%06d" />
+		<campo id="nota_cfop" x="1.3" y="6" fmt="" />
+		<campo id="nota_natureza_operacao" x="2" y="7.2" fmt="" />
+		<campo id="nota_emitente_inscr_est" x="1" y="7.8" fmt="" />
+		<campo id="nota_emitente_cnpj" x="9.5" y="7.8" fmt="" />
+		<campo id="protocolo" x="13.5" y="7.8" fmt="" />
+		<campo id="nota_data_emissao" x="18.6" y="9.2" fmt="data" />
+		<campo id="nota_data_saida" x="18.6" y="10.1" fmt="data" />
+		<campo id="nota_hora_saida" x="18.6" y="11" fmt="hora" />
+
+		<campo id="nota_dest_nome" x="1" y="9.2" fmt="" />
+		<campo id="nota_dest_cnpj" x="13.5" y="9.2" fmt="" />
+		<campo id="nota_dest_endereco" x="1" y="10.1" fmt="" />
+		<campo id="nota_dest_bairro" x="11.2" y="10.1" fmt="" />
+		<campo id="nota_dest_cep" x="15.6" y="10.1" fmt="" />
+		<campo id="nota_dest_municipio" x="1" y="10.8" fmt="" />
+		<campo id="nota_dest_fone" x="9" y="10.8" fmt="" />
+		<campo id="nota_dest_uf" x="12.5" y="10.8" fmt="" />
+		<campo id="nota_dest_inscr_est" x="13.5" y="10.8" fmt="" />
+
+		<campo id="nota_entrega_cnpj" x="1" y="12" fmt="" />
+		<campo id="nota_entrega_endereco" x="10" y="12" fmt="" />
+		<campo id="nota_entrega_bairro" x="1" y="13" fmt="" />
+		<campo id="nota_entrega_municipio" x="10" y="13" fmt="" />
+		<campo id="nota_entrega_uf" x="16" y="13" fmt="" />
+
+		<campo id="nota_fatura_documeto" x="1" y="15" fmt="" />
+		<campo id="nota_fatura_valor_bruto" x="4" y="15" fmt="%.02f" />
+		<campo id="nota_fatura_valor_desconto" x="8" y="15" fmt="%.02f" />
+		<campo id="nota_fatura_valor_liquido" x="12" y="15" fmt="%.02f" />
+		<campo id="nota_fatura_data_vencimento" x="16" y="15" fmt="" />
+
+		<campo id="nota_base_icms" x="1" y="16" fmt="%.02f" />
+		<campo id="nota_valor_icms" x="5.5" y="16" fmt="%.02f" />
+		<campo id="nota_base_subst" x="9.5" y="16" fmt="%.02f" />
+		<campo id="nota_valor_subst" x="13.5" y="16" fmt="%.02f" />
+		<campo id="nota_valor_produtos" x="17.5" y="16" fmt="%.02f" />
+		<campo id="nota_valor_frete" x="1" y="16.8" fmt="%.02f" />
+		<campo id="nota_valor_seguro" x="5.5" y="16.8" fmt="%.02f" />
+		<campo id="nota_valor_desconto" x="7" y="16.8" fmt="%.02f" />
+		<campo id="nota_valor_out_desp" x="9.5" y="16.8" fmt="%.02f" />
+		<campo id="nota_valor_ipi" x="13.3" y="16.8" fmt="%.02f" />
+		<campo id="nota_valor_total" x="17.3" y="16.8" fmt="%.02f" />
+
+		<campo id="nota_trans_nome" x="1" y="18.2" fmt="" />
+		<campo id="nota_trans_placa" x="14.7" y="18.2" fmt="" />
+		<campo id="nota_trans_frete" x="9.5" y="18.2" fmt="" />
+		<campo id="nota_trans_veic_uf" x="17" y="18.2" fmt="" />
+		<campo id="nota_trans_cnpj" x="17.8" y="18.2" fmt="" />
+		<campo id="nota_trans_endereco" x="1" y="19" fmt="" />
+		<campo id="nota_trans_municipio" x="11.3" y="19" fmt="" />
+		<campo id="nota_trans_uf" x="17" y="19" fmt="" />
+		<campo id="nota_trans_inscr_est" x="15" y="19" fmt="" />
+		<campo id="nota_trans_quantidade" x="1" y="20.5" fmt="" />
+		<campo id="nota_trans_especie" x="3" y="20.5" fmt="" />
+		<campo id="nota_trans_marca" x="6" y="20.5" fmt="" />
+		<campo id="nota_trans_numeracao" x="9" y="20.5" fmt="" />
+		<campo id="nota_trans_peso_bruto" x="12" y="20.5" fmt="" />
+		<campo id="nota_trans_peso_liquido" x="15" y="20.5" fmt="" />
+
+		<campo id="produto_codigo" x="1" y="21.5" fmt="" />
+		<campo id="produto_codigo_anp" x="1.5" y="21.5" fmt="" />
+		<campo id="produto_descricao" x="3.2" y="21.5" fmt="" />
+		<campo id="produto_codigo_ncm" x="7" y="21.5" fmt="" />
+		<campo id="produto_cst" x="11.8" y="21.5" fmt="" />
+		<campo id="produto_cfop" x="12.8" y="21.5" fmt="" />
+		<campo id="produto_unid_med" x="13.5" y="21.5" fmt="" />
+		<campo id="produto_valor_unit" x="16" y="21.5" fmt="%.03f" />
+		<campo id="produto_quantidade" x="19" y="21.5" fmt="%.03f" />
+		<campo id="produto_valor" x="17.2" y="21.5" fmt="%.02f" />
+		<campo id="produto_base_icms" x="14" y="21.5" fmt="%.02f" />
+		<campo id="produto_aliquota_icms" x="18.8" y="21.5" fmt="%.02f" />
+		<campo id="produto_valor_icms" x="5.5" y="6.1" fmt="%.02f" />
+
+		<campo id="nota_chave" x="10" y="3.8" fmt="%.02f" />
+		<campo id="nota_chave_barra" x="7.5" y="2.8" fmt="%.02f" />
+		<campo id="nota_obs" x="1.5" y="27" fmt="%.02f" />
+		<campo id="msg_continuacao" x="3" y="25" fmt="" />
+		<campo id="msg_continua" x="3" y="20" fmt="" />
+	</modelo>
+</layout>

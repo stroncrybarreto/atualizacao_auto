@@ -1,0 +1,31 @@
+<relatorio dados="comandas">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  titulo			tam=57  alinha=centro
+4  total			tam=25	alinha=centro
+5  valor			tam=25	alinha=direita	fmt=%.02f
+
+</apelidos>
+<cab_pagina>
+#1                                       #2
+---------------------------------------------------------
+
+#3
+
++---------------------------+---------------------------+
+|           Total           |           Valor           |
++---------------------------+---------------------------+
+</cab_pagina>
+<detalhe>
+| #4                        | #5                        |
+</detalhe>
+<rod_relat>
++---------------------------+---------------------------+
+</rod_relat>
+<rod_pagina>
++---------------------------+---------------------------+
+</rod_pagina>
+
+<hash>ace13644f2e773b3ef0ea502b1a8eefe</hash>
+</relatorio>

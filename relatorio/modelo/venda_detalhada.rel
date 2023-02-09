@@ -1,0 +1,45 @@
+<relatorio dados="venda_detalhada" tamfonte="8" ordem="data,hora,produto_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  subtitulo		tam=151                     alinha=centro
+4  data			    tam=10	fmt=data
+5  hora			    tam=5
+6  bico			    tam=4	                    alinha=centro
+7  produto_nome		tam=26
+8  quantidade		tam=14	fmt=float3
+9  preco_unit		tam=10	fmt=float3
+10 valor		    tam=14	fmt=float2
+11 forma_pgto		tam=18
+12 total_quantidade	tam=14	fmt=float3         func=soma         campo=quantidade
+13 total_valor		tam=14	fmt=float2         func=soma         campo=valor
+14 nr_cupom		    tam=9	                    alinha=centro
+15 hora_abastec     tam=9	                    alinha=centro
+16 titulo           tam=151                     alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                     #2
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#16
+#3
+
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+|    Data    |  Hora | Hora abst. | Bico |          Produto           | Documento |   Quantidade   | Preço unit.|     Valor      | Forma de pagamento |
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+</cab_pagina>
+<detalhe>
+| #4         | #5    | #15        | #6   | #7                         | #14       | #8             | #9         | #10            | #11                |
+</detalhe>
+<rod_relat>
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+| Total                                                                           | #12            |            | #13            |                    |
++---------------------------------------------------------------------------------+----------------+------------+----------------+--------------------+
+</rod_relat>
+<rod_pagina>
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+</rod_pagina>
+
+<hash>ad751b27f348c9b2f64a02cfa4f0ab95</hash>
+</relatorio>

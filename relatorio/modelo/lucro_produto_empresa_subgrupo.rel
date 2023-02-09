@@ -1,0 +1,120 @@
+<relatorio dados="lucro_produto" ordem="empresa_nome,empresa_codigo,quebra,produto_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	            tam=60
+2  rel_data_hora	            tam=18
+3  data_ini			            tam=10	fmt=data
+4  data_fim			            tam=10	fmt=data
+5  subtitulo		            tam=147	alinha=centro
+6  grupo_nome		            tam=40
+7  produto_codigo	            tam=6   alinha=centro
+8  produto_nome		            tam=35
+9  qtde				            tam=11	fmt=float2
+11 venda			            tam=14	fmt=float2
+12 custo			            tam=14	fmt=float4
+13 lucro			            tam=13	fmt=float2
+14 subtotal_qtde	            tam=11	fmt=float2
+15 subtotal_venda	            tam=14	fmt=float2
+16 subtotal_custo	            tam=14	fmt=float4
+17 subtotal_lucro	            tam=13	fmt=float2
+21 margem			            tam=8	fmt=float2
+24 subtitulo1		            tam=147	alinha=centro
+25 tributacao		            tam=9	fmt=float2		alinha=direita
+26 descricao_grupo	            tam=70
+27 empresa_nome                 tam=70
+22 empresa_cod_nome             tam=70
+28 subgrupo_total_qtde			tam=11	fmt=float2	func=soma	campo=qtde	grupo=3
+29 grupo_total_qtde				tam=11	fmt=float2	func=soma	campo=qtde	grupo=2
+30 empresa_total_qtde			tam=11	fmt=float2	func=soma	campo=qtde	grupo=1
+31 geral_total_qtde				tam=11	fmt=float2	func=soma	campo=qtde
+
+32 subgrupo_total_custo			tam=14	fmt=float4	func=soma	campo=custo	grupo=3
+33 grupo_total_custo			tam=14	fmt=float4	func=soma	campo=custo	grupo=2
+34 empresa_total_custo			tam=14	fmt=float4	func=soma	campo=custo	grupo=1
+35 geral_total_custo			tam=14	fmt=float4	func=soma	campo=custo
+36 subgrupo_total_venda			tam=14	fmt=float2	func=soma	campo=venda	grupo=3
+37 grupo_total_venda			tam=14	fmt=float2	func=soma	campo=venda	grupo=2
+38 empresa_total_venda			tam=14	fmt=float2	func=soma	campo=venda	grupo=1
+39 geral_total_venda			tam=14	fmt=float2	func=soma	campo=venda
+40 subgrupo_total_lucro			tam=13	fmt=float2	func=soma	campo=lucro	grupo=3
+41 grupo_total_lucro			tam=13	fmt=float2	func=soma	campo=lucro	grupo=2
+42 empresa_total_lucro			tam=13	fmt=float2	func=soma	campo=lucro	grupo=1
+43 geral_total_lucro			tam=13	fmt=float2	func=soma	campo=lucro
+
+44 subtotal_base_lucro			tam=10	func=soma	campo=base_lucro	grupo=3
+45 subtotal_margem				tam=8	fmt=float2	alinha=direita	expr=(subgrupo_total_venda-subgrupo_total_custo)/subtotal_base_lucro * 100
+46 grupo_base_lucro				tam=10	func=soma	campo=base_lucro	grupo=2
+47 grupo_margem					tam=8	fmt=float2	alinha=direita	expr=(grupo_total_venda-grupo_total_custo)/grupo_base_lucro * 100
+48 empresa_base_lucro			tam=10	func=soma	campo=base_lucro	grupo=1
+49 empresa_margem				tam=8	fmt=float2	alinha=direita	expr=(empresa_total_venda-empresa_total_custo)/empresa_base_lucro * 100
+50 geral_base_lucro				tam=10	func=soma	campo=base_lucro
+51 geral_margem					tam=8	fmt=float2	alinha=direita	expr=(geral_total_venda-geral_total_custo)/geral_base_lucro * 100
+
+52 lucro_liq					tam=12	fmt=float2
+53 subgrupo_total_lucro_liq		tam=12	fmt=float2	func=soma	campo=lucro_liq	grupo=3
+54 grupo_total_lucro_liq		tam=12	fmt=float2	func=soma	campo=lucro_liq	grupo=2
+55 empresa_total_lucro_liq		tam=12	fmt=float2	func=soma	campo=lucro_liq	grupo=1
+56 geral_total_lucro_liq		tam=12	fmt=float2	func=soma	campo=lucro_liq
+57 descricao_subgrupo           tam=70
+99 titulo           			tam=147  expr="VENDAS E LUCRO COM PRODUTOS"  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                 #2             
+---------------------------------------------------------------------------------------------------------------------------------------------------
+   
+#99
+#5
+#24
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome,empresa">
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+| #22                                                                                                                                             |
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,empresa,grupo_nome,grupo">
+| #26                                                                                                                                             |
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="3" quebra="empresa_nome,empresa,grupo_nome,grupo,subgrupo_nome,subgrupo">
+| #57                                                                                                                                             |
++--------+-------------------------------------+------------+------------+---------------+---------------+--------------+----------+--------------+
+| Código |               Produto               | Tributação | Quantidade |  Valor custo  |  Valor venda  |    Lucro     | Margem(*)|  Lucro líq.  |
++--------+-------------------------------------+------------+------------+---------------+---------------+--------------+----------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #7     | #8                                  | #25      % |#9          |#12            |#11            |#13           |#21     % | #52          |
+</detalhe>
+
+<rod_grupo nome="3">
++--------+-------------------------------------+------------+------------+---------------+---------------+--------------+----------+--------------+
+| Subtotal subgrupo                                         |#28         |#32            |#36            |#40           |#45     % | #53          |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+--------------+
+</rod_grupo>
+
+<rod_grupo nome="2">
+| Subtotal grupo                                            |#29         |#33            |#37            |#41           |#47     % | #54          |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+--------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Subtotal empresa                                          |#30         |#34            |#38            |#42           |#49     % | #55          |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+--------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+--------------+
+| Total                                                     |#31         |#35            |#39            |#43           |#51     % | #56          |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+--------------+
+</rod_relat>
+
+<rod_pagina>
++--------+--------------------------------------------------+------------+---------------+---------------+--------------+----------+--------------+
+</rod_pagina>
+
+<hash>92b19f362d1f564073dc61a1c316854e</hash>
+</relatorio>

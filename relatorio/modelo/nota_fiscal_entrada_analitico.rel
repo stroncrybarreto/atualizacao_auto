@@ -1,0 +1,92 @@
+<relatorio dados="nota_fiscal_entrada_analitico">
+<apelidos>
+1  rel_posto_nome	        	tam=60
+2  rel_data_hora	        	tam=18
+3  titulo1  		        	tam=144  alinha=centro
+4  titulo2	   	            	tam=144  alinha=centro
+5  nota_numero		        	tam=8    alinha=esquerda
+6  nota_serie               	tam=2 		
+7  nota_emissao             	tam=10   fmt=data 
+8  nota_cfop                	tam=6
+9  nota_entrada             	tam=10   fmt=data
+10 nota_turno               	tam=3    alinha=esquerda
+11 nota_hora                	tam=5	 fmt=hora_abrv
+12 nota_fornecedor_nome     	tam=43
+13 nota_fornecedor_codigo   	tam=6
+14 nota_base_icms           	tam=15   fmt=float2
+15 nota_valor_icms          	tam=17   fmt=float2  alinha=direita
+16 nota_base_subst          	tam=14   fmt=float2
+17 nota_valor_subst         	tam=14   fmt=float2
+18 nota_valor_produto       	tam=16   fmt=float2
+19 nota_valor_icms          	tam=10   fmt=float2
+20 nota_valor               	tam=16   fmt=float2
+21 nota_desconto            	tam=14   fmt=float2
+22 nota_valor_ipi           	tam=17   fmt=float2  alinha=direita
+23 nota_usuario             	tam=10
+24 nota_deposito_codigo     	tam=4    alinha=direita
+25 produto_cfop            	 	tam=6    fmt=float2  alinha=centro
+26 produto_cst              	tam=3    fmt=float2  alinha=esquerda
+27 produto_aliquota_icms       	tam=6    fmt=float2  alinha=direita
+28 produto_qtde             	tam=9    alinha=direita
+29 produto_unid_med         	tam=3    alinha=esquerda
+30 produto_preco_unit       	tam=9    fmt=float3
+31 produto_subtotal         	tam=12   fmt=float2  alinha=direita
+32 produto_codigo           	tam=6
+33 produto_nome             	tam=35
+34 produto_desconto				tam=8    fmt=float2 alinha=direita
+35 produto_qtde_unid			tam=9	 alinha=direita
+36 nota_valor_outro         	tam=15   fmt=float2
+37 nota_usuario             	tam=20   alinha=esquerda 
+38 total_nota_base_icms			tam=15	 fmt=float2 alinha=direita 
+39 total_nota_valor_outro		tam=15	 fmt=float2 alinha=direita
+40 total_nota_valor_icms		tam=21	 fmt=float2 alinha=direita 
+41 total_nota_valor_ipi			tam=21	 fmt=float2 alinha=direita
+42 total_nota_base_subst		tam=14	 fmt=float2 alinha=direita
+43 total_nota_desconto 			tam=14	 fmt=float2 alinha=direita
+44 total_nota_valor_subst		tam=14   fmt=float2 alinha=direita
+45 total_nota_valor_produto		tam=20   fmt=float2 alinha=direita
+46 total_nota_valor				tam=20	 fmt=float2 alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                     #2        
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+                                                    {TIT}NOTAS FISCAIS DE ENTRADA - ANALÍTICO
+{SUBTIT}#3
+{SUBTIT}#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="nota_grid">
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Nr. Nota...: #5           Serie: #6       Emissao: #7                CFOP: #8          Data entrada: #9                Turno: #10       Hora: #11   |
+| Fornecedor.: #13    #12                                                                                        Usuario: #37                         |
++--------+----------------------------------------+--------+-----+--------+-----------+----+-----------+-----------+----------+--------------+--------+
+| Codigo | Produto                                | Dep.   | CST |  CFOP  | Qtde      | Un | Qtde/Unid |  Pr Unit  | Desconto |   Subtotal   |  ICMS  |
++--------+----------------------------------------+--------+-----+--------+-----------+----+-----------+-----------+----------+--------------+--------+
+</cab_grupo>
+
+<detalhe>
+| #32    | #33                                    | #24    | #26 | #25    | #28       | #29| #35       | #30       | #34      | #31          | #27    |
+</detalhe>
+ 
+<rod_grupo nome="1">
++--------+--------------------+-------------------+--------++----+--------+-----------+---++-----------+-----------+----+-----+--------------+--------+
+| Base ICMS.: #14             | Vl. ICMS: #15               | Base Subst.: #16            | Desconto...: #21            | Vl. Prod.: #18              |
+| Fr/Se/Ou..: #36             | Vl. IPI.: #22               | Vl. Subst..: #17            |                             | Vl. Nota.: #20              |
++-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+
+
+
+</rod_grupo>
+
+<rod_relat>
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| TOTAL                                                                                                                                               |		
++-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+
+| Base ICMS.: #38             | ICMS: #40                   | Base Subst.: #42            | Desconto...: #43            | Prod.: #45                  |
+| Fr/Se/Ou..: #39             | IPI.: #41                   | Subst......: #44            |                             | Nota.: #46                  |
++-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+
+</rod_relat>
+
+<hash>94afe25b7ab86a00c5c36f485c62f09a</hash>
+</relatorio>

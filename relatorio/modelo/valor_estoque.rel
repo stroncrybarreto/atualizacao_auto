@@ -1,0 +1,64 @@
+<relatorio dados="valor_estoque" ordem="empresa_cod_nome,grupo_cod_nome">
+<apelidos>
+1  rel_posto_nome       	tam=60
+2  rel_data_hora        	tam=18
+3  data				    	tam=10   	fmt=data alinha=centro
+4  monta_cabecalho      	tam=107  	alinha=centro
+5  empresa_cod_nome			tam=60		
+6  grupo_cod_nome			tam=30		
+8  codigo			    	tam=12		alinha=centro
+9  nome				    	tam=35
+10 preco					tam=11   	fmt=float3
+11 estoque			    	tam=15    	fmt=float3
+12 valor_estoque			tam=16   	fmt=float3
+13 total_grupo2				tam=16   	fmt=float3 func=soma campo=valor_estoque grupo=2
+14 valor_total_estoque2  	tam=16   	fmt=float3 func=soma campo=valor_estoque grupo=1
+15 titulo               	tam=107  	expr='VALOR DO ESTOQUE' alinha=centro
+16	total_geral				tam=16		fmt=float3	func=soma	campo=valor_estoque
+17  titulo2				 	tam=96
+</apelidos>
+<cab_pagina>
+#1                                                                                      #2
+---------------------------------------------------------------------------------------------------------
+
+#15
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++-------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                           |
++-------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_cod_nome,grupo_cod_nome">
+|  Grupo: #6                                                                                            |
++--------------+-------------------------------------+-----------------+-------------+------------------+
+|    Código    |               Produto               |#17
++--------------+-------------------------------------+-----------------+-------------+------------------+
+</cab_grupo>
+<detalhe>
+| #8           | #9                                  | #11             | #10         | #12              |
+</detalhe>
+<rod_grupo nome="2">
++--------------+-------------------------------------+-----------------+-------------+------------------+
+| Subtotal                                                                           | #13              |
++------------------------------------------------------------------------------------+------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total empresa                                                                      | #14              |
++------------------------------------------------------------------------------------+------------------+
+
+</rod_grupo>
+<rod_relat>
+
++------------------------------------------------------------------------------------+------------------+
+| Total geral                                                                        | #16              |
++------------------------------------------------------------------------------------+------------------+
+</rod_relat>
+
+<rod_pagina>
++--------------+-------------------------------------+---------------+-----------------+------------------+
+</rod_pagina>
+
+<hash>ae0ab10c526e6c0abdce6aa599fcb5d9</hash>
+</relatorio>

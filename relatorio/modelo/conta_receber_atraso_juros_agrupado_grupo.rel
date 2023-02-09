@@ -1,0 +1,88 @@
+<relatorio dados="conta_receber_atraso" ordem="ordem">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo1              tam=110 alinha=centro
+4  titulo2              tam=110 alinha=centro
+5  pessoa_cod_nome      tam=96	alinha=esquerda expr=str(pessoa_codigo)+ " - "+pessoa_nome + " - Telefone: "+pessoa_fone
+6  pessoa_nome          tam=50
+7  vencto               tam=10	fmt=data
+8  documento            tam=9   alinha=centro
+9  motivo_nome_abrv     tam=6
+10 valor                tam=10	fmt=float2
+11 dias_atraso          tam=4 	alinha=centro
+12 valor_juros          tam=9 	fmt=float2
+13 valor_atual          tam=11	fmt=float2
+14 saldo                tam=11 	fmt=float2
+15 pessoa_fone          tam=15
+16 pessoa_celular		tam=15
+17 pessoa_contato		tam=12
+18 total_geral_juros    tam=9 	fmt=float2 func=soma campo=valor_juros
+19 total_saldo          tam=11 	fmt=float2 func=soma campo=valor_atual               
+20 emissao              tam=10  fmt=data
+21 total_geral_valor    tam=11	fmt=float2 func=soma campo=valor
+22 tabela_preco			tam=20
+23 tabela_preco			tam=20
+24 grupo_nome			tam=30
+25 valor_real			tam=10	fmt=float2
+26 motivo_nome			tam=20
+27 tabela_preco_tipo	tam=15
+28 grupo_codigo         tam=90                  alinha=esquerda expr=str(grupo_codigo)+ " - "+grupo_nome
+29 subtotal_valor       tam=11 fmt=float2
+30 subtotal_juros       tam=9  fmt=float2  func=soma campo=valor_juros grupo=2
+31 subtotal_saldo       tam=11 fmt=float2  func=soma campo=valor_atual grupo=2
+32 total_grupo_valor    tam=11 fmt=float2  func=soma campo=valor grupo=1
+33 total_grupo_juros    tam=9  fmt=float2  func=soma campo=valor_juros grupo=1
+34 total_grupo_saldo    tam=11 fmt=float2  func=soma campo=valor_atual grupo=1
+38 limite_credito		tam=11   fmt=float2 alinha=esquerda
+39 lim_credito_conta	tam=11	 fmt=float2 repetir=0
+40 nosso_numero			tam=10
+41 portador_codigo		tam=6
+42 portador_nome		tam=12
+43 pessoa_codigo        tam=5
+</apelidos>
+<cab_pagina>
+#1                                                                                           #2              
+-------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo_codigo,grupo_nome">
++-----------------------------------------------------------------------------------------------------------+
+| Grupo cliente: #28                                                                                        |
++-----------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="grupo_codigo,grupo_nome,agrupamento_1,agrupamento_2">
+| Cliente: #5                                                                                               |
+| Limite de crédito: #38                                                                                    |
++------------+------------+-----------+--------+-------------+------+-----------+-------------+-------------+
+|  Emissão   | Vencimento | Documento | Motivo |    Valor    | Dias |   Juros   | Valor Atual |    Saldo    |
++------------+------------+-----------+--------+-------------+------+-----------+-------------+-------------+
+</cab_grupo>
+<detalhe>
+| #20        | #7         | #8        | #9     |  #10        | #11  | #12       | #13         | #34         |
+</detalhe>
+<rod_grupo nome="2">
++------------+------------+-----------+--------+-------------+------+-----------+-------------+-------------+
+| Subtotal                                     | #29         |      | #30       | #31         |             |
++----------------------------------------------+-------------+------+-----------+-------------+-------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total grupo cliente                          | #32         |      | #33       | #34         |             |
++----------------------------------------------+-------------+------+-----------+-------------+-------------+
+
+</rod_grupo>
+<rod_relat>
+
++----------------------------------------------+-------------+------+-----------+-------------+-------------+
+| Total geral                                  | #21         |      | #18       | #19         |             |
++----------------------------------------------+-------------+------+-----------+-------------+-------------+
+</rod_relat>
+<rod_pagina>
++----------------------------------------------+-------------+------+-----------+-------------+-------------+
+</rod_pagina>
+
+<hash>66dc1501813b719b079bd1d274950132</hash>
+</relatorio>

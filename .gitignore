@@ -1,0 +1,9 @@
+autosystem.key
+config.db
+temp/
+relatorio/custom/
+log/
+backup/
+update/
+EZClient.dll
+EZClient64.dll

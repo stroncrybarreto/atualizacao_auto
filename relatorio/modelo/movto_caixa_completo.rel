@@ -1,0 +1,945 @@
+<relatorio dados="movto_caixa_completo">
+<apelidos>
+1  rel_posto_nome     	tam=60
+2  rel_data_hora      	tam=18
+3  empresa_nome			tam=37  expr=str(empresa_codigo) + ' - ' + empresa_nome
+4  data					tam=10  fmt=data
+5  dia_semana			tam=3
+6  turno     			tam=5	nulo
+99 titulo				tam=130	expr='MOVIMENTO DO CAIXA COMPLETO' alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2           
+----------------------------------------------------------------------------------------------------------------------------------
+
+#99
+
++------------------------------------------------------------------------------------------+----------------------+--------------+
+| Empresa: #3                                                                              | Data.: #4        #5  | Turno: #6    |
++------------------------------------------------------------------------------------------+----------------------+--------------+
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="movto_caixa_info" nome="sessao_24" titulo="Informações do Caixa" ordem="conta">
+<apelidos>
+1  conta_nome		tam=48
+2  empresa_nome		tam=37
+3  pessoa_nome		tam=40
+4  usuario			tam=7 
+5  data				tam=10  fmt=data
+6  dia_semana		tam=3
+7  turno			tam=2
+8  abertura			tam=15
+9  fechamento		tam=15
+10 conferencia		tam=15
+99 titulo			tam=130	expr='INFORMAÇÕES DO CAIXA' alinha=centro
+
+</apelidos>
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="1" quebra="conta">
+#99
++-------------------------------------------------------------------+------------------------------------------------------------+
+| Conta: #1                                                         | Empresa: #2                                                |
+</cab_grupo>
+<detalhe>
++-------------------------------------------------------------------+-----------------------+------------------------------------+
+| Responsável: #3                                                   | Usuário: #4           | Conferido.: #10                    |
++---------------------------------+-------------+-------------------+-----------------------+------------------------------------+
+| Data.: #5         #6            | Turno: #7   | Abertura: #8                              | Fechamento: #9                     |
+</detalhe>
+<rod_grupo nome="1">
++---------------------------------+-------------+-------------------+-----------------------+------------------------------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_bico_completo" nome="sessao_01" titulo="Movimentação de combustível por bico / encerrante" ordem="nome">
+<apelidos>
+1  nome         	tam=6   
+2  inicial	        tam=16  fmt=float3
+3  final	        tam=16  fmt=float3
+4  litros			tam=11  fmt=float3
+5  afericao 		tam=10   fmt=float3
+6  venda 	      	tam=11   fmt=float3
+7  preco_unit 		tam=9   fmt=float3
+8  valor			tam=13  fmt=%.02f
+9  aviso			tam=2
+10 desconto			tam=10	fmt=%.02f
+11 afericao_total	tam=10	fmt=float3
+12 litro_total		tam=11	fmt=float3
+13 valor_total		tam=13	fmt=%.02f alinha=direita
+14 venda_total		tam=11	fmt=float3 alinha=direita
+15 desconto_total	tam=10	fmt=%.02f
+99 titulo           tam=130 expr='MOVIMENTAÇÃO DE COMBUSTÍVEL POR BICO / ENCERRANTE' alinha=centro
+</apelidos>
+<cab_relat>
+   
+
+#99
++--------+-----------------+-----------------+-------------+------------+---------------+-----------+------------+---------------+
+|  Bico  |     Inicial     |      Final      |    Litros   |  Aferição  |  Venda litro  |   Preço   |  Desconto  |     Valor     |
++--------+-----------------+-----------------+-------------+------------+---------------+-----------+------------+---------------+
+</cab_relat>
+<detalhe>
+| #1     |#2               |#3               | #4          | #5         | #9#6          | #7        | #10        | #8            |
+</detalhe>
+<rod_relat>
++--------+-----------------+-----------------+-------------+------------+---------------+-----------+------------+---------------+
+| Total                                      | #12         | #11        |   #14         |           | #15        | #13           |
++--------------------------------------------+-------------+------------+---------------+-----------+------------+---------------+
+</rod_relat>
+</subrelat>
+
+
+<subrelat dados="movto_caixa_bico_completo_detalhado" nome="sessao_23" titulo="Movimentação de combustível por bico/encerrante detalhado" ordem="nome">
+<apelidos>
+1  nome         	tam=6   
+2  enc_inicial	    tam=16  fmt=float3	expr=(inicial+venda_ant)
+3  enc_final	    tam=16  fmt=float3	expr=(inicial+venda_ant+venda)
+4  enc_litros		tam=11  fmt=float3	expr=(enc_final-enc_inicial)
+5  afericao 		tam=10   fmt=float3
+6  venda 	      	tam=11   fmt=float3
+7  preco_unit 		tam=9   fmt=float3
+8  valor		    tam=13  fmt=%.02f
+9  aviso		    tam=2
+10 desconto		    tam=10   fmt=%.02f
+11 afericao_total	tam=10	fmt=float3		func=soma	campo=afericao
+12 litro_subtotal	tam=11	fmt=float3	expr=(enc_final-enc_inicial)
+13 valor_total		tam=13	fmt=%.02f 	alinha=direita	func=soma	campo=valor
+14 venda_total		tam=11	fmt=float3 	alinha=direita	func=soma	campo=venda
+15 desconto_total	tam=10	fmt=%.02f		func=soma	campo=desconto
+16 venda_ant		tam=10  fmt=%.02f 
+17 litro_total		tam=11	fmt=float3		func=soma	campo=litro_subtotal
+99 titulo           tam=130 expr='MOVIMENTAÇÃO DE COMBUSTÍVEL POR BICO / ENCERRANTE DETALHADO' alinha=centro
+</apelidos>
+<cab_relat>
+   
+
+#99
++--------+-----------------+-----------------+-------------+------------+---------------+-----------+------------+---------------+
+|  Bico  |     Inicial     |      Final      |    Litros   |  Aferição  |  Venda litro  |   Preço   |  Desconto  |     Valor     |
++--------+-----------------+-----------------+-------------+------------+---------------+-----------+------------+---------------+
+</cab_relat>
+<detalhe>
+| #1     |#2               |#3               | #4          | #5         | #9#6          | #7        | #10        | #8            |
+</detalhe>
+<rod_relat>
++--------+-----------------+-----------------+-------------+------------+---------------+-----------+------------+---------------+
+| Total                                      | #17         | #11        |   #14         |           | #15        | #13           |
++--------------------------------------------+-------------+------------+---------------+-----------+------------+---------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_combustivel_completo" nome="sessao_02" titulo="Venda de combustível por preço unitário" ordem="nome">
+<apelidos>
+1  nome         	tam=40  
+2  afericao 		tam=8   fmt=%.02f
+3  venda			tam=12  fmt=%.02f
+4  preco_unit 		tam=9   fmt=%.03f
+5  valor			tam=15  fmt=%.02f
+6  codigo			tam=12	fmt=%.02f alinha=centro
+7  litro_total		tam=10	fmt=%.02f
+8  valor_total		tam=15	fmt=%.02f
+9  venda_total		tam=12	fmt=%.02f alinha=direita
+99 titulo			tam=130 expr='VENDA DE COMBUSTÍVEL POR PREÇO UNITÁRIO' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++--------------+--------------------------------------------------------------------+--------------+-----------+-----------------+
+|    Código    |                             Combustível                            |  Quantidade  |   Preço   |      Valor      |
++--------------+--------------------------------------------------------------------+--------------+-----------+-----------------+
+</cab_relat>
+<detalhe>
+| #6           | #1                                                                 | #3           | #4        | #5              |
+</detalhe>
+<rod_relat>
++--------------+--------------------------------------------------------------------+--------------+-----------+-----------------+
+| Total                                                                             | #9           |           | #8              |
++-----------------------------------------------------------------------------------+--------------+-----------+-----------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_lancto_completo" nome="sessao_03" titulo="Venda de produto detalhada" ordem="conta">
+<apelidos>
+1  codigo			tam=10   alinha=centro
+2  produto_nome		tam=37
+3  venda			tam=11  fmt=float	nulo
+4  preco_unit		tam=11  fmt=%.02f	nulo
+5  valor			tam=13  fmt=%.02f	nulo
+6  vendedor			tam=29
+7  sub_total		tam=13 fmt=%.02f
+8  total			tam=13  fmt=%.02f func=soma campo=valor
+9  conta			tam=8
+10 conta_nome		tam=50
+99 titulo           tam=130  expr='VENDA DE PRODUTO DETALHADA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
+</cab_relat>
+<cab_grupo nome="2" quebra="corrige_totalizador">
+</cab_grupo>
+<cab_grupo nome="1" quebra="conta">
++--------------------------------------------------------------------------------------------------------------------------------+
+| #9     - #10                                                                                                                   |
++------------+---------------------------------------+-------------+-------------+---------------+-------------------------------+
+|   Código   |                Produto                |    Venda    |    Preço    |     Valor     |            Vendedor           | 
++------------+---------------------------------------+-------------+-------------+---------------+-------------------------------+
+</cab_grupo>
+<detalhe>
+| #1         | #2                                    | #3          | #4          | #5            | #6                            |
+</detalhe>
+<rod_grupo nome="1">
++------------+---------------------------------------+-------------+-------------+---------------+-------------------------------+
+| Subtotal                                                                       | #7            |                               |
++--------------------------------------------------------------------------------+---------------+-------------------------------+
+
+</rod_grupo>
+<rod_grupo nome="2">
++--------------------------------------------------------------------------------+---------------+-------------------------------+
+| Total                                                                          | #8            |                               |
++--------------------------------------------------------------------------------+---------------+-------------------------------+
+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="movto_caixa_movto_recebimento_completo" nome="sessao_04" titulo="Forma de pagamento" ordem="motivo_nome,motivo_codigo">
+<apelidos>
+1  rel_posto_nome	tam=58
+2  rel_data_hora	tam=18
+3  titulo1	    	tam=111	alinha=centro
+4  titulo2	    	tam=111	alinha=centro
+5  cabecalho1		tam=999
+6  cabecalho2		tam=999
+7  cabecalho3		tam=999
+8  detalhe	    	tam=999
+9  rodape	    	tam=999
+10 motivo_codigo	tam=3
+11 motivo_nome		tam=999
+12 total		    tam=10  fmt=float2
+13 rodape_total     tam=110
+98 corrige_totalizador	tam=10
+99 titulo           tam=130  expr='FORMA DE PAGAMENTO' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
+</cab_relat>
+<cab_grupo nome="2" quebra="corrige_totalizador">
+</cab_grupo>
+<cab_grupo nome="1" quebra="motivo_nome,motivo_codigo">
+#10 - #11
+#5
+#6
+#7
+</cab_grupo>
+<detalhe>
+#8
+</detalhe>
+
+<rod_grupo nome="1">
+#9
+#13
+
+</rod_grupo>
+<rod_grupo nome="2">
+
++------------------------------------------------------------+------------+------------------------------------------------------+
+| Total                                                      | #12        |                                                      |
++------------------------------------------------------------+------------+------------------------------------------------------+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="balanco_gerencial_completo" nome="sessao_05" titulo="Detalhamento financeiro" ordem="motivo_nome">
+<apelidos>
+1  sinal_saldo_ini		tam=2   
+2  saldo_ini			tam=13	fmt=%.02f
+3  motivo_nome			tam=30
+4  info					tam=60
+5  sinal_valor			tam=2
+6  valor				tam=16	fmt=%.02f
+7  total_deb			tam=10	fmt=%.02f
+8  total_cre			tam=10	fmt=%.02f
+9  sinal_saldo_fim		tam=2   
+10 saldo_fim			tam=16	fmt=%.02f
+11 total_vendas			tam=16  fmt=%.02f
+12 total_pagamentos     tam=16	fmt=%.02f
+13 total_detalhe        tam=16  fmt=%.02f
+14 total_sinal          tam=3
+99 titulo               tam=130  expr='DETALHAMENTO FINANCEIRO' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
++------------------------------------------+---------------------------------------------------------------+---------------------+
+|                Histórico                 |                          Informações                          |        Valor        |
++------------------------------------------+---------------------------------------------------------------+---------------------+
+|                                                                                               Saldo inicial:  #1 #2            |
++------------------------------------------+---------------------------------------------------------------+---------------------+
+| VENDAS                                   |                                                               | +  #11              |
+| FORMAS DE PAGAMENTO                      |                                                               | -  #12              |
++------------------------------------------+---------------------------------------------------------------+---------------------+
+</cab_relat>
+<detalhe>
+| #3                                       | #4                                                            | #5 #6               |
+</detalhe>
+<rod_relat>
+|                                          |                                                Saldo detalhe: | #14#13              |
++------------------------------------------+---------------------------------------------------------------+---------------------+
+| Total créditos: #7                          Total débitos: #8                               Saldo final: | #9 #10              | 
++--------------------------------------------------------------------------------------------------------------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_movto" nome="sessao_06" titulo="Resumo financeiro" ordem="entrada_nome">
+<apelidos>
+1  entrada_nome  	 tam=33
+2  entrada_count  	 tam=10   fmt=%d    nulo
+3  entrada_valor	 tam=13  fmt=%.02f nulo
+4  saida_nome  		 tam=33
+5  saida_count  	 tam=10   fmt=%d    nulo
+6  saida_valor		 tam=13  fmt=%.02f nulo
+7  total_entradax 	 tam=13  fmt=%.02f
+8  total_saidax	 	 tam=13  fmt=%.02f
+9  diferenca	   	 tam=13  fmt=%.02f
+10 sobra_falta	   	 tam=13  fmt=%.02f
+99 titulo            tam=130  expr='RESUMO FINANCEIRO' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++----------------------------------+------------+---------------++----------------------------------+------------+---------------+
+|             Entradas             | Quantidade |     Valor     ||              Saídas              | Quantidade |     Valor     |
++----------------------------------+------------+---------------++----------------------------------+------------+---------------+
+</cab_relat>
+<detalhe>
+| #1                               | #2         | #3            || #4                               | #5         | #6            |
+</detalhe>
+<rod_relat>
++----------------------------------+------------+---------------++----------------------------------+------------+---------------+
+| Subtotal                                      |#7             || Subtotal                                      | #8            |
++-----------------------------------------------+---------------++-----------------------------------------------+---------------+
+                                                                 | Sobra (+) / Falta (-)                         | #10           |
+                                                                 | Saldo                                         | #9            |
+                                                                 +-----------------------------------------------+---------------+
+</rod_relat>
+</subrelat>
+
+
+
+<subrelat dados="movto_caixa_projecao_venda_completo" tamfonte="8" nome="sessao_07" titulo="Projeção de vendas" ordem="tipo">
+<apelidos>
+1  rel_posto_nome	    tam=60
+2  rel_data_hora        tam=18
+3  item_nome          	tam=48
+4  soma_anterior        tam=16 fmt=float2 alinha=direita
+5  soma_dia             tam=16 fmt=float2 alinha=direita
+6  acumulado			tam=17 fmt=float2 alinha=direita
+7  media                tam=17 fmt=float2 alinha=direita
+8  tipo					tam=48 alinha=centro
+9  total_anterior       tam=16 fmt=float2 alinha=direita func=soma  campo=soma_anterior grupo=1
+10 total_dia            tam=16 fmt=float2 alinha=direita func=soma  campo=soma_dia  grupo=1
+11 total_acumulado      tam=17 fmt=float2 alinha=direita func=soma  campo=acumulado  grupo=1
+12 total_media          tam=17 fmt=float2 alinha=direita func=soma  campo=media  grupo=1
+13 previsao				tam=17 fmt=float2 alinha=direita
+14 dias					tam=3
+15 data					tam=10 fmt=data
+99 titulo               tam=130  expr='PROJEÇÃO DE VENDAS' alinha=centro
+</apelidos>
+<cab_pagina>
+
+#99
+</cab_pagina>
+<cab_grupo nome="1" quebra="tipo">
++--------------------------------------------------+------------------+------------------+-------------------+-------------------+
+| #8                                               |     Anterior     |       Hoje       |     Acumulado     |       Média       |
++--------------------------------------------------+------------------+------------------+-------------------+-------------------+
+</cab_grupo>
+<detalhe>
+| #3                                               | #4               | #5               | #6                | #7                |
+</detalhe>
+
+<rod_grupo nome="1">
++--------------------------------------------------+------------------+------------------+-------------------+-------------------+
+| Total                                            | #9               | #10              | #11               | #12               |
+| Projeção                                         |                  |                  | #13               |                   |
++--------------------------------------------------+------------------+------------------+-------------------+-------------------+
+
+</rod_grupo>
+
+<rod_pagina>
++--------------------------------------------------+------------------+------------------+-------------------+-------------------+
+</rod_pagina>
+</subrelat>
+
+<subrelat dados="balancete_verifica" nome="sessao_08" titulo="Balancete de verificação de valores a receber" ordem="codigo">
+<apelidos>
+1  linha				tam=999
+2  cabecalho			tam=999
+3  detalhe				tam=999
+99 titulo               tam=130  expr='BALANCETE DE VERIFICAÇÃO DE VALORES A RECEBER' alinha=centro
+</apelidos>
+
+<cab_relat>
+#99
+
+#1
+#2
+#1
+</cab_relat>
+<detalhe>
+#3
+</detalhe>
+<rod_relat>
+#1
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balanco_gerencial_comb" nome="sessao_09" titulo="Posição de combustíveis" ordem="produto_nome">
+<apelidos>
+1  produto_nome			tam=21
+2  est_inicial			tam=11	fmt=%.02f
+3  entrada				tam=13	fmt=%.02f
+4  venda				tam=15	fmt=float3
+5  afericao				tam=8 	fmt=%.02f
+6  est_final			tam=11	fmt=%.02f
+7  medicao				tam=13	fmt=%.02f
+8  diferenca			tam=13	fmt=float3
+9  total_est_inicial	tam=11	fmt=%.02f	func=soma	campo=est_inicial
+10 total_entrada		tam=13	fmt=%.02f	func=soma	campo=entrada
+11 total_venda			tam=15	fmt=float3	func=soma	campo=venda
+12 total_afericao		tam=8 	fmt=%.02f	func=soma	campo=afericao
+13 total_est_final		tam=11	fmt=%.02f	func=soma	campo=est_final
+14 total_medicao		tam=13	fmt=%.02f	func=soma	campo=medicao
+15 total_diferenca		tam=13	fmt=float3	func=soma	campo=diferenca
+99 titulo               tam=130  expr='POSIÇÃO DE COMBUSTÍVEIS' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+|        Produto        |    Início   |    Entrada    |      Venda      | Aferição |    Final    |    Medição    |   Diferença   |
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+</cab_relat>
+<detalhe>
+| #1                    | #2          | #3            | #4              | #5       | #6          | #7            | #8            |
+</detalhe>
+<rod_relat>
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+| Total                 | #9          | #10           | #11             | #12      | #13         | #14           | #15           |
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_posicao_tanque" nome="sessao_10" titulo="Posição de tanques" ordem="deposito_nome">
+<apelidos>
+1  deposito_nome		tam=21
+2  est_inicial			tam=11	fmt=float2
+3  entrada				tam=13	fmt=float2
+4  venda				tam=15	fmt=float3
+5  afericao				tam=8 	fmt=float2
+6  est_final			tam=11	fmt=float2
+7  medicao				tam=13	fmt=float2
+8  diferenca			tam=13	fmt=float3
+9  total_est_inicial	tam=11	fmt=float2	func=soma campo=est_inicial
+10 total_entrada		tam=13	fmt=float2	func=soma campo=entrada
+11 total_venda			tam=15	fmt=float3	func=soma campo=venda
+12 total_afericao		tam=8 	fmt=float2	func=soma campo=afericao
+13 total_est_final		tam=11	fmt=float2	func=soma campo=est_final
+14 total_medicao		tam=13	fmt=float2	func=soma campo=medicao
+15 total_diferenca		tam=13	fmt=float3	func=soma campo=diferenca
+99 titulo_principal     tam=130	alinha=centro expr='POSIÇÃO DE TANQUES'
+</apelidos>
+
+<cab_relat>
+
+#99
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+|        Produto        |    Início   | Entrada/Saída |      Venda      | Aferição |    Final    |    Medição    |   Diferença   |
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+</cab_relat>
+<detalhe>
+| #1                    | #2          | #3            | #4              | #5       | #6          | #7            | #8            |
+</detalhe>
+<rod_relat>
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+| Total                 | #9          | #10           | #11             | #12      | #13         | #14           | #15           |
++-----------------------+-------------+---------------+-----------------+----------+-------------+---------------+---------------+
+*Entrada/Saída - (Entrada/Tranferência entrada/Tranferência saída/Devolução cliente/Devolução fornecedor/Consumo)
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_cheque_troco" nome="sessao_11" titulo="Movimentação cheque troco" ordem="cheque">
+<apelidos>
+1  conta_corrente		tam=3	alinha=direita
+2  cheque				tam=8	alinha=direita
+3  valor				tam=13	fmt=%.02f	alinha=direita
+4  cupom				tam=12	alinha=direita
+5  valor_venda			tam=13	fmt=%.02f	alinha=direita
+6  carta				tam=13	alinha=direita
+7  valor_carta			tam=13	fmt=%.02f	alinha=direita
+8  cliente				tam=20	alinha=esquerda
+9  perc_venda			tam=7	fmt=%.02f	alinha=direita
+10 total_valor			tam=13	fmt=%.02f	alinha=direita
+11 total_valor_venda	tam=13	fmt=%.02f	alinha=direita
+12 total_valor_carta	tam=13	fmt=%.02f	alinha=direita
+13 total_perc_venda		tam=7	fmt=%.02f	alinha=direita
+99 titulo               tam=130  expr='MOVIMENTAÇÃO CHEQUE TROCO' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
++-----+----------+---------------+--------------+---------------+---------------+---------------+----------------------+---------+
+| C/C |  Cheque  |     Valor     | Número Cupom |  Valor venda  |  Número carta |  Valor carta  |        Cliente       | % Venda |
++-----+----------+---------------+--------------+---------------+---------------+---------------+----------------------+---------+
+</cab_relat>
+<detalhe>
+| #1  | #2       | #3            | #4           | #5            | #6            | #7            | #8                   | #9      |
+</detalhe>
+<rod_relat>
++-----+----------+---------------+--------------+---------------+---------------+---------------+----------------------+---------+
+| Total          | #10           |              | #11           |               | #12           |                      | #13     |
++----------------+---------------+--------------+---------------+---------------+---------------+----------------------+---------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_venda_diaria_completo" nome="sessao_12" titulo="Resumo de vendas do dia" ordem="produto_tipo">
+<apelidos>
+1  rel_posto_nome     	tam=60
+2  rel_data_hora      	tam=18
+3  data					tam=10	fmt=data
+4  produto_tipo			tam=15
+5  produto_grupo		tam=40
+6  total				tam=20	fmt=%.02f
+7  total_geral			tam=20	fmt=%.02f
+99 titulo               tam=130  expr='RESUMO DE VENDAS DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++------------------------------------------------------------------------------------------------------+-------------------------+
+| Resumo de vendas do dia                                                                              |  Valor total das vendas |
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+</cab_relat>
+
+<detalhe>
+| (+) | #4              #5                                                                             | R$ #6                   |
+</detalhe>
+<rod_relat>
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+| (=) | Total de vendas gerais                                                                         | R$ #7                   |
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_venda_combustivel_completo" nome="sessao_13" titulo="Venda de combustível do dia" ordem="nome">
+<apelidos>
+1  nome     		tam=60
+2  quantidade      	tam=15	fmt=%.02f
+3  valor			tam=18	fmt=%.02f
+4  quantidade_total	tam=15	fmt=%.02f
+5  valor_total		tam=18	fmt=%.02f
+99 titulo           tam=130  expr='VENDA DE COMBUSTÍVEL DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+| Venda de combustível do dia                                                             |    Em litros    |     Em valores     |
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+</cab_relat>
+
+<detalhe>
+| #1                                                                                      | #2              | #3                 |
+</detalhe>
+<rod_relat>
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+| Total de vendas de combustíveis                                                         | #4              | #5                 |
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_estoque_combustivel_completo" nome="sessao_14" titulo="Estoque de combustível do dia" ordem="nome">
+<apelidos>
+1  nome     		tam=60
+2  quantidade      	tam=15	fmt=%.02f
+3  valor			tam=18	fmt=%.02f
+4  quantidade_total	tam=15	fmt=%.02f
+5  valor_total		tam=18	fmt=%.02f
+99 titulo           tam=130  expr='ESTOQUE DE COMBUSTÍVEL DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+| Estoque de combustível do dia                                                           |    Em litros    |     Em valores     |
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+</cab_relat>
+
+<detalhe>
+| #1                                                                                      | #2              | #3                 |
+</detalhe>
+<rod_relat>
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+| Total do estoque de combustíveis                                                        | #4              | #5                 |
++-----------------------------------------------------------------------------------------+-----------------+--------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_forma_pgto_completo" nome="sessao_15" titulo="Recebimentos do caixa do dia" ordem="nome">
+<apelidos>
+1  sinal    		tam=3
+2  nome				tam=60
+3  valor			tam=23	fmt=%.02f
+4  valor_total		tam=23	fmt=%.02f
+99 titulo           tam=130  expr='RECEBIMENTOS DO CAIXA DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+|     | Recebimentos do caixa do dia                                                                   |          Valor          |
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+</cab_relat>
+
+<detalhe>
+| #1  | #2                                                                                             | #3                      |
+</detalhe>
+<rod_relat>
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+| (=) | Total geral de recebimentos                                                                    | #4                      |
++-----+------------------------------------------------------------------------------------------------+-------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_troca_valor_completo" nome="sessao_16" titulo="Trocas de valores do dia" ordem="pessoa_nome">
+<apelidos>
+1  pessoa_nome   	tam=24
+2  recebimento_nome	tam=23
+3  pagamento_nome	tam=21
+4  total_dinheiro   tam=14  fmt=float2
+5  obs              tam=16
+6  valor            tam=13  fmt=float2
+7  valor_total		tam=13	fmt=float2
+99 titulo           tam=130  expr='TROCAS DE VALORES DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++--------------------------+-------------------------+-----------------------+----------------+------------------+---------------+
+| Trocas de valores do dia |       Recebimento       |       Pagamento       | Troco dinheiro |    Observação    |     Valor     |
++--------------------------+-------------------------+-----------------------+----------------+------------------+---------------+
+</cab_relat>
+
+<detalhe>
+| #1                       | #2                      | #3                    | #4             | #5               | #6            |
+</detalhe>
+<rod_relat>
++--------------------------+-------------------------+-----------------------+----------------+------------------+---------------+
+| Total geral de receitas                                                                                        | #7            |
++----------------------------------------------------------------------------------------------------------------+---------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_cheque_completo" nome="sessao_17" titulo="Recebimentos de cheques do dia" ordem="titular">
+<apelidos>
+1  cpf				tam=32
+2  titular			tam=51
+3  valor			tam=23	fmt=%.02f
+4  valor_total		tam=23	fmt=%.02f
+99 titulo           tam=130  expr='RECEBIMENTOS DE CHEQUES DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++-----------------------------------------+------------------------------------------------------------+-------------------------+
+| Recebimento de cheque do dia            |                            Nome                            |          Valor          |
++-----------------------------------------+------------------------------------------------------------+-------------------------+
+</cab_relat>
+
+<detalhe>
+| #1                                      | #2                                                         | #3                      |
+</detalhe>
+<rod_relat>
++-----------------------------------------+------------------------------------------------------------+-------------------------+
+| Total de cheques recebidos do dia                                                                    | #4                      |
++------------------------------------------------------------------------------------------------------+-------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_recebimento_completo" nome="sessao_18" titulo="Depósitos previstos para o dia" ordem="nome">
+<apelidos>
+1  nome					tam=31
+2  vencto				tam=10  alinha=centro
+3  data_pgto			tam=8   alinha=centro
+4  valor				tam=11	fmt=%.02f
+5  taxa_desc			tam=10	fmt=%.02f
+6  valor_prev			tam=10	fmt=%.02f
+7  valor_baixa			tam=11	fmt=%.02f
+8  diferenca			tam=13	fmt=%.02f
+9  valor_total			tam=11	fmt=%.02f
+10 valor_prev_total		tam=10	fmt=%.02f
+11 valor_baixa_total	tam=11	fmt=%.02f
+12 diferenca_total		tam=13	fmt=%.02f
+99 titulo               tam=130  expr='DEPÓSITOS PREVISTO PARA O DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++---------------------------------+------------+-----------+-------------+------------+------------+-------------+---------------+
+|       Depósitos previstos       | Vencimento | Pagamento |    Bruto    | Taxas/Desc |  Previsão  |    Baixa    |   Diferença   |
++---------------------------------+------------+-----------+-------------+------------+------------+-------------+---------------+
+</cab_relat>
+
+<detalhe>
+| #1                              | #2         | #3        | #4          | #5         | #6         | #7          | #8            |
+</detalhe>
+<rod_relat>
++---------------------------------+------------+-----------+-------------+------------+------------+-------------+---------------+
+| Total                                                    | #9          |            | #10        | #11         | #12           |
++----------------------------------------------------------+-------------+------------+------------+-------------+---------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_conta_pagar_completo" nome="sessao_19" titulo="Contas a pagar no dia" ordem="conta_nome">
+<apelidos>
+1  conta_nome		tam=64
+2  vencto			tam=10	fmt=data
+3  valor			tam=27	fmt=%.02f
+4  valor_total		tam=27	fmt=%.02f
+99 titulo           tam=130  expr='CONTAS A PAGAR NO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++-------------------------------------------------------------------------------------+------------+-----------------------------+
+| Contas a pagar no dia                                                               | Vencimento |            Valor            |
++-------------------------------------------------------------------------------------+------------+-----------------------------+
+</cab_relat>
+
+<detalhe>
+| #1                                                                                  | #2         | #3                          |
+</detalhe>
+<rod_relat>
++-------------------------------------------------------------------------------------+------------+-----------------------------+
+| Total de contas a pagar no dia                                                                   | #4                          |
++--------------------------------------------------------------------------------------------------+-----------------------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_perda_sobra_comb_completo" nome="sessao_20" titulo="Perdas e Sobras na medição de tanques" ordem="produto_nome">
+<apelidos>
+1  tipo					tam=5
+2  produto_codigo		tam=8
+3  produto_nome			tam=35
+4  deposito_nome		tam=34
+5  quantidade			tam=18	fmt=%.02f
+6  valor				tam=19	fmt=%.02f
+7  xquantidade_total	tam=18	fmt=%.02f	func=soma	campo=quantidade	grupo=2
+8  xvalor_total			tam=19	fmt=%.02f	func=soma	campo=valor			grupo=2
+9  sobra_quantidade		tam=18	fmt=%.02f
+10 sobra_valor			tam=18	fmt=%.02f
+11 perda_quantidade		tam=18	fmt=%.02f
+12 perda_valor			tam=18	fmt=%.02f
+13 quantidade_dif		tam=18	fmt=%.02f
+14 valor_dif			tam=18	fmt=%.02f
+99 titulo               tam=130  expr='PERDAS E SOBRAS NA MEDIÇÃO DE TANQUES' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
+</cab_relat>
+<cab_grupo nome="1" quebra="quebra">
+</cab_grupo>
+<cab_grupo nome="2" quebra="tipo">
+#1    na medicao de tanques
++----------+-------------------------------------+------------------------------------+--------------------+---------------------+
+|  Código  |             Combustível             |               Tanque               |     Quantidade     |        Valor        |
++----------+-------------------------------------+------------------------------------+--------------------+---------------------+
+</cab_grupo>
+<detalhe>
+| #2       | #3                                  | #4                                 | #5                 | #6                  |
+</detalhe>
+<rod_grupo nome="2">
++----------+-------------------------------------+------------------------------------+--------------------+---------------------+
+|  Total                                                                              | #7                 | #8                  |
++-------------------------------------------------------------------------------------+--------------------+---------------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
+                                                                         Total Sobras   #9                     #10
+                                                                         Total Faltas   #11                    #12
+                                                                            Diferença   #13                    #14
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="movto_caixa_fatura_completo" nome="sessao_21" titulo="Recebimentos por conta do dia" ordem="conta_codigo">
+<apelidos>
+1  cpf				tam=40
+2  titular			tam=44
+3  valor			tam=23	fmt=%.02f
+4  valor_total		tam=23	fmt=%.02f	func=soma	campo=valor	grupo=1
+5  vencto			tam=10	fmt=data
+6  conta_nome		tam=100
+99 titulo           tam=130  expr='RECEBIMENTOS POR CONTA DO DIA' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
+<cab_grupo nome="1" quebra="conta_codigo">
++--------------------------------------------------------------------------------------------------------------------------------+
+| #6                                                                                                                             |
++------------------------------------------+----------------------------------------------+------------+-------------------------+
+| Recebimentos por conta do dia            |                     Nome                     | Vencimento |          Valor          |
++------------------------------------------+----------------------------------------------+------------+-------------------------+
+</cab_grupo>
+</cab_relat>
+
+<detalhe>
+| #1                                       | #2                                           | #5         | #3                      |
+</detalhe>
+<rod_grupo nome="1">
++------------------------------------------+----------------------------------------------+------------+-------------------------+
+| Total                                                                                                | #4                      |
++------------------------------------------------------------------------------------------------------+-------------------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+</subrelat>
+
+
+<subrelat dados="balancete_verifica_analitico" nome="sessao_22" titulo="Balancete de verificação de valores a receber analítico">
+<apelidos>
+1  conta_codigo         tam=15
+2  conta_nome           tam=50
+3  documento            tam=17
+4  cliente_nome         tam=28
+5  valor_credito        tam=17  fmt=%.02f   alinha=direita
+6  valor_debito         tam=18  fmt=%.02f   alinha=direita
+7  saldo                tam=21  fmt=%.02f   alinha=direita
+8  total_credito        tam=17  fmt=%.02f   alinha=direita  func=soma   campo=valor_credito     grupo=1
+9  total_debito         tam=18  fmt=%.02f   alinha=direita  func=soma   campo=valor_debito      grupo=1
+10 saldo_ant            tam=21  fmt=%.02f   alinha=direita
+99 titulo               tam=130  expr='BALANCETE DE VERIFICAÇÃO DE VALORES A RECEBER ANALÍTICO' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
+</cab_relat>
+<cab_grupo nome="1" quebra="conta_codigo">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Conta: #1                #2                                                              Saldo anterior: #10                   |
++-------------------------------------------+-------------------+-------------------+--------------------+-----------------------+
+|                  Cliente                  |     Documento     |      Crédito      |       Débito       |         Saldo         |
++-------------------------------------------+-------------------+-------------------+--------------------+-----------------------+
+</cab_grupo>
+
+<detalhe>
+| #4                                        | #3                | #5                | #6                 | #7                    |
+</detalhe>
+<rod_grupo nome="1">
++-------------------------------------------+-------------------+-------------------+--------------------+-----------------------+
+| Total                                                         | #8                | #9                 | #7                    |
++---------------------------------------------------------------+-------------------+--------------------+-----------------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+</subrelat>
+
+
+<subrelat dados="movto_caixa_conta_pagar_completo_seguinte" nome="sessao_25" titulo="Contas a pagar no dia seguinte">
+<apelidos>
+1  conta_nome		    tam=64
+2  vencto		    	tam=10	fmt=data
+3  valor		    	tam=27	fmt=%.02f
+4  valor_total		   	tam=27	fmt=%.02f
+99 titulo               tam=130  expr='CONTAS A PAGAR NO DIA SEGUINTE' alinha=centro
+</apelidos>
+<cab_relat>
+
+#99
++-------------------------------------------------------------------------------------+------------+-----------------------------+
+| Contas a pagar no dia seguinte                                                      | Vencimento |            Valor            |
++-------------------------------------------------------------------------------------+------------+-----------------------------+
+</cab_relat>
+
+<detalhe>
+| #1                                                                                  | #2         | #3                          |
+</detalhe>
+<rod_relat>
++-------------------------------------------------------------------------------------+------------+-----------------------------+
+| Total de contas a pagar no dia seguinte                                                          | #4                          |
++--------------------------------------------------------------------------------------------------+-----------------------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_total_venda" nome="sessao_26" titulo="Total de vendas">
+<apelidos>
+1  quantidade_vendas  tam=17 alinha=centro
+2  quantidade		  tam=18 alinha=direita  fmt=float3
+3  valor_bruto		  tam=21 alinha=direita  fmt=float2
+4  desconto		      tam=16 alinha=direita  fmt=float2
+5  acrescimo		  tam=17 alinha=direita  fmt=float2
+6  valor_liquido      tam=22 alinha=direita	 fmt=float2
+99 titulo_principal   tam=130 alinha=centro expr='TOTAL DE VENDAS'
+</apelidos>
+<cab_relat>
+</cab_relat>
+
+<detalhe>
+
+#99
++-------------------+--------------------+-----------------------+------------------+-------------------+------------------------+
+| Quantidade vendas |     Quantidade     |      Valor bruto      |     Desconto     |     Acréscimo     |      Valor líquido     |
++-------------------+--------------------+-----------------------+------------------+-------------------+------------------------+
+| #1                | #2                 | #3                    | #4               | #5                | #6                     |
++-------------------+--------------------+-----------------------+------------------+-------------------+------------------------+
+</detalhe>
+<rod_relat>
+</rod_relat>
+</subrelat>
+
+<subrelat dados="branco" nome="sessao_99">
+<apelidos>
+</apelidos>
+<cab_relat>
+</cab_relat>
+<detalhe>
+</detalhe>
+</subrelat>
+
+<subrelat dados="branco" nome="sessao_99">
+<apelidos>
+</apelidos>
+<cab_relat>
+</cab_relat>
+<detalhe>
+</detalhe>
+</subrelat>
+
+
+<hash>608a976f20ad93060945ead182b96253</hash>
+</relatorio>

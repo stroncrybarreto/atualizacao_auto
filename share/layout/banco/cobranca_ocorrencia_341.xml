@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>cnab</nome>
+  
+  <ocorrencias>
+	<ocorrencia>
+		<id>1</id>
+		<codigo>02</codigo>
+		<nome>Entrada Confirmada</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>2</id>
+		<codigo>03</codigo>
+		<nome>Entrada rejeitada</nome>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>Não foi possível atribuir a agência  pelo CEP ou CEP inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Sigla do Estado inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Prazo da operação menor que prazo mínimo ou maior que o máximo</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>VALOR DO TÍTULO MAIOR QUE 10.000.000,00</nome>
+		</motivo>
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Não informado ou deslocado</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>Agência encerrada</nome>
+		</motivo>
+		<motivo>
+			<codigo>10</codigo>
+			<nome>Não informado ou deslocado</nome>
+		</motivo>
+		<motivo>
+			<codigo>11</codigo>
+			<nome>CEP não numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>12</codigo>
+			<nome>Nome não informado ou deslocado (Bancos correspondentes)</nome>
+		</motivo>
+		<motivo>
+			<codigo>13</codigo>
+			<nome>CEP incompatível com a sigla do estado</nome>
+		</motivo>
+		<motivo>
+			<codigo>14</codigo>
+			<nome>Nosso Número já registrado no cadastro do Banco ou fora da faixa</nome>
+		</motivo>
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Nosso número em duplicidade no mesmo movimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>18</codigo>
+			<nome>Data de entrada inválida para operar com esta carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>19</codigo>
+			<nome>Ocorrência inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>21</codigo>
+			<nome>Carteira não aceita depositária correspondente/ Estado da agência diferente do Estado Do Sacado / Ag. cobradora não consta no cadastro ou  encerrando</nome>
+		</motivo>
+		<motivo>
+			<codigo>22</codigo>
+			<nome>Carteira não permitida (necessário cadastrar Faixa Livre)</nome>
+		</motivo>
+		<motivo>
+			<codigo>27</codigo>
+			<nome>CNPJ do cEdente inapto</nome>
+		</motivo>
+		<motivo>
+			<codigo>29</codigo>
+			<nome>Categoria da conta inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>35</codigo>
+			<nome>Iof maior que 5%</nome>
+		</motivo>
+		<motivo>
+			<codigo>36</codigo>
+			<nome>Quantidade de moeda incompatível com valor do título</nome>
+		</motivo>
+		<motivo>
+			<codigo>37</codigo>
+			<nome>Não numérico ou igual a zeros</nome>
+		</motivo>
+		<motivo>
+			<codigo>42</codigo>
+			<nome>Nosso número fora de faixa a carteira</nome>
+		</motivo>
+		<motivo>
+			<codigo>52</codigo>
+			<nome>Empresa não aceita Banco Correspondente</nome>
+		</motivo>
+		<motivo>
+			<codigo>53</codigo>
+			<nome>Empresa não aceita Banco Correspondente  - cobrança mensagem</nome>
+		</motivo>
+		<motivo>
+			<codigo>54</codigo>
+			<nome>Banco Correspondente - Título com vencimento inferior a 15 dias</nome>
+		</motivo>
+		<motivo>
+			<codigo>55</codigo>
+			<nome>Cep não pertence À depositária informada</nome>
+		</motivo>
+		<motivo>
+			<codigo>56</codigo>
+			<nome>Vencto superior a 180 dias da data de entrada</nome>
+		</motivo>
+		<motivo>
+			<codigo>57</codigo>
+			<nome>CEP só depositária Bco do Brasil com vencto inferior a 8 dias</nome>
+		</motivo>
+		<motivo>
+			<codigo>60</codigo>
+			<nome>Valor do abatimento inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>61</codigo>
+			<nome>Juros de mora maior que o permitido</nome>
+		</motivo>
+		<motivo>
+			<codigo>65</codigo>
+			<nome>Taxa inválida (vendor)</nome>
+		</motivo>
+		<motivo>
+			<codigo>66</codigo>
+			<nome>Invalida/fora de prazo de operação (mínimo ou máximo)</nome>
+		</motivo>
+		<motivo>
+			<codigo>67</codigo>
+			<nome>Valor do título/quantidade de moeda inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>68</codigo>
+			<nome>Carteira inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>98</codigo>
+			<nome>Registro mensagem sem FLASH cadastrado ou FLASH informado diferente do cadastrado</nome>
+		</motivo>
+		<motivo>
+			<codigo>99</codigo>
+			<nome>Conta de cobrança com FLASH cadastrado e sem registro de mensagem correspondente</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>3</id>
+		<codigo>06</codigo>
+		<nome>Liquidação</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Liquidação normal</nome>
+		</motivo>
+		<motivo>
+			<codigo>01</codigo>
+			<nome>Por saldo</nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>Por conta</nome>
+		</motivo>
+		<motivo>
+			<codigo>03</codigo>
+			<nome>No próprio banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Compensação eletrônica</nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Compensação convencional</nome>
+		</motivo>
+		<motivo>
+			<codigo>06</codigo>
+			<nome>Por meio eletrônico</nome>
+		</motivo>
+		<motivo>
+			<codigo>07</codigo>
+			<nome>Após feriado local</nome>
+		</motivo>
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Em cartório</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>4</id>
+		<codigo>09</codigo>
+		<nome>Baixa</nome>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>Comandada banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>10</codigo>
+			<nome>Comandada cliente arquivo</nome>
+		</motivo>
+		<motivo>
+			<codigo>11</codigo>
+			<nome>Comandada cliente on-line</nome>
+		</motivo>
+		<motivo>
+			<codigo>12</codigo>
+			<nome>Decurso prazo - cliente</nome>
+		</motivo>
+		<motivo>
+			<codigo>13</codigo>
+			<nome>Decurso prazo - banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>14</codigo>
+			<nome>Protestado</nome>
+		</motivo>
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Título excluido</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>6</id>
+		<codigo>12</codigo>
+		<nome>Confirmação recebimento instrução de abatimento</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>7</id>
+		<codigo>13</codigo>
+		<nome>Confirmação recebimento instrução de cancelamento abatimento</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>8</id>
+		<codigo>08</codigo>
+		<nome>Liquidação em cartório</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>10</id>
+		<codigo>17</codigo>
+		<nome>Liquidação após baixa ou liquidação título não registrado</nome>
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Liquidação normal</nome>
+		</motivo>
+		<motivo>
+			<codigo>02</codigo>
+			<nome>Agência Cobradora inválida ou com o mesmo conteúdo</nome>
+		</motivo>
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Sigla do Estado inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Data de vencimento inválida ou com o mesmo conteúdo</nome>
+		</motivo>
+		<motivo>
+			<codigo>06</codigo>
+			<nome>Valor do título com outra alteração simultânea</nome>
+		</motivo>
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Nome do Sacado com o mesmo conteúdo</nome>
+		</motivo>
+		<motivo>
+			<codigo>09</codigo>
+			<nome>Agencia/Conta incorreta</nome>
+		</motivo>
+		<motivo>
+			<codigo>11</codigo>
+			<nome>CEP inválido</nome>
+		</motivo>
+		<motivo>
+			<codigo>13</codigo>
+			<nome>Seu Número com o mesmo conteúdo</nome>
+		</motivo>
+		<motivo>
+			<codigo>16</codigo>
+			<nome>Abatimento/Alteração do valor do título ou solicitação de baixa bloqueada</nome>
+		</motivo>
+		<motivo>
+			<codigo>20</codigo>
+			<nome>Espécie inválida</nome>
+		</motivo>
+		<motivo>
+			<codigo>21</codigo>
+			<nome>Agência cobradora não consta no cadastro de depositária ou em encerramento</nome>
+		</motivo>
+		<motivo>
+			<codigo>23</codigo>
+			<nome>Data de emissão do título invalida ou com mesmo conteúdo</nome>
+		</motivo>
+		<motivo>
+			<codigo>41</codigo>
+			<nome>Campo aceite inválido ou com mesmo conteudo</nome>
+		</motivo>
+		<motivo>
+			<codigo>53</codigo>
+			<nome>Instrução com o mesmo conteúdo</nome>
+		</motivo>
+		<motivo>
+			<codigo>54</codigo>
+			<nome>Data vencimento para bancos correspondentes inferior ao aceito pelo banco</nome>
+		</motivo>
+		<motivo>
+			<codigo>55</codigo>
+			<nome>Alterações iguais para o mesmo controle (Agência/Conta/Carteira/Nosso Número)</nome>
+		</motivo>
+		<motivo>
+			<codigo>56</codigo>
+			<nome>CNPJ/CPF inválido não numérico ou zerado</nome>
+		</motivo>
+		<motivo>
+			<codigo>57</codigo>
+			<nome>Prazo de vencimento inferior a 15 dias</nome>
+		</motivo>
+		<motivo>
+			<codigo>60</codigo>
+			<nome>Valor de Iof - Alteração não permitida para carteiras de N.S. - Moeda variável</nome>
+		</motivo>
+		<motivo>
+			<codigo>61</codigo>
+			<nome>Título já baixado ou liquidado ou não existe título correspondente no sistema</nome>
+		</motivo>
+		<motivo>
+			<codigo>66</codigo>
+			<nome>Alteração não permitida para carteiras de Notas de Seguros - Moeda Variável</nome>
+		</motivo>
+		<motivo>
+			<codigo>81</codigo>
+			<nome>Alteração bloqueada - Título com protesto</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>11</id>
+		<codigo>19</codigo>
+		<nome>Confirmação recebimento instrução de protesto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>12</id>
+		<codigo>20</codigo>
+		<nome>Confirmação recebimento instrução de sustação/cancelamento de protesto</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>23</id>
+		<codigo>21</codigo>
+		<nome>Confirma recebimento de instrução de não protestar</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>14</id>
+		<codigo>23</codigo>
+		<nome>Protesto enviado a cartório/Tarifa</nome>
+	</ocorrencia>
+	<ocorrencia>
+		<id>18</id>
+		<codigo>24</codigo>
+		<nome>Instrução de protesto rejeitada / sustada / pendente</nome>
+		<motivo>
+			<codigo>1610</codigo>
+			<nome>Documentação solicitada ao cedente</nome>
+		</motivo>
+		<motivo>
+			<codigo>3111</codigo>
+			<nome>Sustação solicitada ag. cedente</nome>
+		</motivo>
+		<motivo>
+			<codigo>3160</codigo>
+			<nome>Nome do sacado incompleto/incorreto</nome>
+		</motivo>
+		<motivo>
+			<codigo>3186</codigo>
+			<nome>Nome do sacador incompleto/incorreto</nome>
+		</motivo>
+		<motivo>
+			<codigo>3228</codigo>
+			<nome>Atos da corregedoria estadual</nome>
+		</motivo>
+		<motivo>
+			<codigo>3244</codigo>
+			<nome>Protesto sustado / cedente não entregou a documentação</nome>
+		</motivo>
+		<motivo>
+			<codigo>3269</codigo>
+			<nome>Data de emissão do título inválida/irregular</nome>
+		</motivo>
+		<motivo>
+			<codigo>3285</codigo>
+			<nome>Praça não atendida pela rede bancária</nome>
+		</motivo>
+		<motivo>
+			<codigo>3301</codigo>
+			<nome>CNPJ/CPF do sacado inválido/incorreto</nome>
+		</motivo>
+		<motivo>
+			<codigo>3319</codigo>
+			<nome>Sacador/avalista e pessoa física</nome>
+		</motivo>
+		<motivo>
+			<codigo>3327</codigo>
+			<nome>Cep do sacado incorreto</nome>
+		</motivo>
+		<motivo>
+			<codigo>3335</codigo>
+			<nome>Depositária incompatível com cep do sacado</nome>
+		</motivo>
+		<motivo>
+			<codigo>3343</codigo>
+			<nome>CNPJ/CPF sacador invalido/incorreto</nome>
+		</motivo>
+		<motivo>
+			<codigo>3350</codigo>
+			<nome>Endereço do sacado insuficiente</nome>
+		</motivo>
+		<motivo>
+			<codigo>3368</codigo>
+			<nome>Praça pagto incompatível com endereço</nome>
+		</motivo>
+		<motivo>
+			<codigo>3376</codigo>
+			<nome>Falta número/espécie do título</nome>
+		</motivo>
+		<motivo>
+			<codigo>3384</codigo>
+			<nome>Título aceito s/ assinatura do sacador</nome>
+		</motivo>
+		<motivo>
+			<codigo>3392</codigo>
+			<nome>Título aceito s/ endosso cedente ou irregular</nome>
+		</motivo>
+		<motivo>
+			<codigo>3400</codigo>
+			<nome>Título sem local ou data de emissão</nome>
+			</motivo>
+		<motivo>
+			<codigo>3418</codigo>
+			<nome>Título aceito com calor extenso diferente do numérico</nome>
+		</motivo>
+		<motivo>
+			<codigo>3822</codigo>
+			<nome>Sacado irá negociar diretamente com o cedente</nome>
+		</motivo>
+		<motivo>
+			<codigo>3426</codigo>
+			<nome>Título aceito definir espécie da duplicata</nome>
+		</motivo>
+		<motivo>
+			<codigo>3434</codigo>
+			<nome>Data emissão posterior ao vencimento</nome>
+		</motivo>
+		<motivo>
+			<codigo>3442</codigo>
+			<nome>Título aceito documento não prostestável</nome>
+		</motivo>
+		<motivo>
+			<codigo>3459</codigo>
+			<nome>Título aceito extenso vencimento irregular</nome>
+		</motivo>
+		<motivo>
+			<codigo>3467</codigo>
+			<nome>Título aceito falta nome favorecido</nome>
+		</motivo>
+		<motivo>
+			<codigo>3475</codigo>
+			<nome>Título aceito falta praça de pagamento</nome>
+		</motivo>
+		<motivo>
+			<codigo>3483</codigo>
+			<nome>Título aceito falta cpf assinante cheque</nome>
+		</motivo>
+		<motivo>
+			<codigo>3491</codigo>
+			<nome>Falta número do título (SEU NÚMERO)</nome>
+		</motivo>
+		<motivo>
+			<codigo>3509</codigo>
+			<nome>Cartório da praça com atividade suspensa</nome>
+		</motivo>
+	</ocorrencia>
+	<ocorrencia>
+		<id>-1</id>
+		<codigo>-1</codigo>
+		<nome>Outras Ocorrências</nome>
+	</ocorrencia>
+ </ocorrencias>
+</layout>

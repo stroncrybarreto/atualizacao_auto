@@ -1,0 +1,102 @@
+<relatorio dados="posicao_estoque_grupo">
+<apelidos>
+1  rel_posto_nome         	tam=60
+2  rel_data_hora            tam=18
+3  data				        tam=10  fmt=data
+4  subtitulo            	tam=3000
+5  empresa_cod_nome		    tam=60
+6  grupo_nome				tam=40
+7  codigo			        tam=13	alinha=centro
+8  nome				        tam=26
+9  preco_unit_hidden	    tam=13   fmt=float3
+10 preco_custo_hidden	    tam=14  fmt=float4
+11 estoque			        tam=9   fmt=float2
+12 grupo_total_venda		tam=10  fmt=%.02f
+13 grupo_total_custo		tam=10  fmt=%.02f
+15 empresa_total_venda		tam=10  fmt=%.02f
+16 empresa_total_custo		tam=10  fmt=%.02f
+17 margem_lucro 		    tam=8	fmt=%.02f
+18 subgrupo_nome			tam=40
+19 fornecedor_nome    		tam=60
+20 fornecedor_titulo 		tam=60
+35 deposito_codigo			tam=8	 alinha=centro
+21 total_custo_grupo		tam=14	 func=soma	campo=total_custo_hidden	fmt=float4	grupo=3
+22 total_venda_grupo		tam=13   func=soma	campo=total_venda_hidden	fmt=float3	grupo=3
+23 total_estoque_grupo		tam=9	 func=soma	campo=estoque		fmt=float2	grupo=3
+37 total_margem				tam=8	 fmt=%.02f	expr=(total_venda_grupo-total_custo_grupo)/(total_custo_grupo or 1)*100
+26 total_empresa_custo		tam=14   func=soma	campo=total_custo_hidden	fmt=float4	grupo=2
+27 total_empresa_venda		tam=13   func=soma	campo=total_venda_hidden	fmt=float3	grupo=2
+14 total_estoque_grupo		tam=9	 func=soma	campo=estoque		fmt=float2	grupo=2
+38 total_margem_grupo		tam=8	 fmt=%.02f	expr=(total_empresa_venda-total_empresa_custo)/(total_empresa_custo or 1)*100	grupo=2
+32 total_geral_empresa_custo tam=14 func=soma	campo=total_custo_hidden	fmt=float4
+33 total_geral_empresa_venda tam=13 func=soma	campo=total_venda_hidden	fmt=float3
+39 total_geral_margem_grupo	 tam=8	fmt=%.02f	expr=(total_geral_empresa_venda-total_geral_empresa_custo)/(total_geral_empresa_custo or 1)*100	grupo=1
+40 total_estoque_geral		tam=9   fmt=float2	func=soma	campo=estoque
+34 grupo_titulo				tam=80
+36 subgrupo_titulo			tam=80
+
+90 linha_formato			tam=91
+91 linha_titulo				tam=91
+92 linha_valor				tam=91
+93 linha_subgrupo_total		tam=91
+94 linha_grupo_total		tam=91
+95 linha_empresa_total		tam=91
+96 linha_formato2			tam=91
+
+100 titulo					tam=129	alinha=centro	expr='POSIÇÃO DE ESTOQUE'
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                               #2             
+---------------------------------------------------------------------------------------------------------------------------------
+     
+#100
+#4
+
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                                   |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_cod_nome,grupo_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Grupo produto: #34                                                                                                            |
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_cod_nome,grupo_nome,subgrupo_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Subgrupo: #36                                                                                                                 |
++---------------+---------------------#90
+|    Código     | Produto             #91
++---------------+---------------------#90
+</cab_grupo>
+
+<detalhe>
+| #7            | #8                  #92
+</detalhe>
+
+<rod_grupo nome="3">
++-------------------------------------#90
+| Total subgrupo                      #93
+</rod_grupo>
+<rod_grupo nome="2">
++-------------------------------------#96
+| Total grupo produto                 #94
+</rod_grupo>
+
+<rod_grupo nome="1">
++-------------------------------------#96
+
++-------------------------------------#96
+| Total empresa                       #95
++-------------------------------------#96
+
+</rod_grupo>
+
+<rod_pagina>
++--------------------------------------------------+---------------+-------------+----------------------------------------------+
+</rod_pagina>
+
+<hash>5699ef390377e523fd022bacc62ea4ae</hash>
+</relatorio>

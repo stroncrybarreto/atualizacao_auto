@@ -1,0 +1,73 @@
+<relatorio 
+dados="compras_produto_solicitado_empresa">
+
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  empresa_nome				tam=30
+4  solicitacao_codigo		tam=11	alinha=centro
+5  solicitacao_data			tam=12	alinha=centro	fmt=data
+6  produto_entrega_sugerida	tam=12	alinha=centro	fmt=data
+7  produto_nome				tam=30
+8  produto_situacao_nome	tam=22	
+9  produto_quantidade		tam=12	alinha=direita	fmt=float2
+10 produto_quantidade_total	tam=12	alinha=direita	fmt=float2	func=soma	campo=produto_quantidade	grupo=1
+11 total_geral				tam=12  alinha=direita  fmt=float2   func=soma 	campo=produto_quantidade
+
+12 titulo1					tam=126	alinha=centro	
+13 titulo2					tam=126	alinha=centro
+14 titulo3					tam=126	alinha=centro	
+15 titulo4					tam=126	alinha=centro
+16 titulo5                  tam=126 alinha=centro
+17 titulo6					tam=126	alinha=centro
+18 titulo7					tam=126	alinha=centro
+
+</apelidos>
+
+<cab_pagina>
+
+#1                                                                                                            #2
+------------------------------------------------------------------------------------------------------------------------------
+   
+                               R E L A Ç Ã O   D E   P R O D U T O S   S O L I C I T A D O S
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="produto_situacao_nome">
++----------------------------------------------------------------------------------------------------------------------------+
+| Situação: #8                                                                                                               |
++-------------+--------------+--------------+--------------------------------+--------------------------------+--------------+
+| Solicitação | Data solici. | Entrega sug. | Empresa                        | Produto                        |  Quantidade  |
++-------------+--------------+--------------+--------------------------------+--------------------------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #4          | #5           | #6           | #3                             | #7                             | #9           |
+</detalhe>
+
+<rod_grupo nome="1">
++-------------+--------------+--------------+--------------------------------+--------------------------------+--------------+
+| Total                                                                                                       | #10          |
++-------------------------------------------------------------------------------------------------------------+--------------+
+</rod_grupo>
+
+<rod_pagina>
++-------------+--------------+--------------+--------------------------------+--------------------------------+--------------+
+</rod_pagina>
+
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------+--------------+
+| Total Geral                                                                                                 | #11          |
++-------------------------------------------------------------------------------------------------------------+--------------+
+</rod_relat>
+
+
+<hash>b80b0c6a97c83a48a0a4f4b4d48a4e3c</hash>
+</relatorio>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>500</nome>
+
+	<critica>
+		<id>1</id>
+		<codigo>AA</codigo>
+		<nome>Arquivo duplicado</nome>
+	</critica>
+	<critica>
+		<id>2</id>
+		<codigo>AB</codigo>
+		<nome>Data limite para desconto, sem valor correspondente</nome>
+	</critica>
+	<critica>
+		<id>3</id>
+		<codigo>AC</codigo>
+		<nome>Tipo de serviço inválido</nome>
+	</critica>
+	<critica>
+		<id>4</id>
+		<codigo>AD</codigo>
+		<nome>Modalidade de pagamento inválida</nome>
+	</critica>
+	<critica>
+		<id>5</id>
+		<codigo>AE</codigo>
+		<nome>Tipo de inscrição e identificação do cliente pagador incompatíveis</nome>
+	</critica>
+	<critica>
+		<id>6</id>
+		<codigo>AF</codigo>
+		<nome>Valores não numéricos</nome>
+	</critica>
+	<critica>
+		<id>7</id>
+		<codigo>AG</codigo>
+		<nome>Tipo de inscrição e identificação do favorecido incompatíveis</nome>
+	</critica>
+	<critica>
+		<id>8</id>
+		<codigo>AJ</codigo>
+		<nome>Tipo de movimento inválido</nome>
+	</critica>
+	<critica>
+		<id>9</id>
+		<codigo>AL</codigo>
+		<nome>Banco, agência ou conta inválidos</nome>
+	</critica>
+	<critica>
+		<id>10</id>
+		<codigo>AM</codigo>
+		<nome>Agência do favorecido inválida</nome>
+	</critica>
+	<critica>
+		<id>11</id>
+		<codigo>AN</codigo>
+		<nome>Conta corrente do favorecido inválida</nome>
+	</critica>
+	<critica>
+		<id>12</id>
+		<codigo>AO</codigo>
+		<nome>Nome do favorecido não informado</nome>
+	</critica>
+	<critica>
+		<id>13</id>
+		<codigo>AQ</codigo>
+		<nome>Tipo de moeda inválido</nome>
+	</critica>
+	<critica>
+		<id>14</id>
+		<codigo>AT</codigo>
+		<nome>CNPJ/CPF do favorecido inválido</nome>
+	</critica>
+	<critica>
+		<id>15</id>
+		<codigo>AU</codigo>
+		<nome>Endereço do favorecido não informado</nome>
+	</critica>
+	<critica>
+		<id>16</id>
+		<codigo>AX</codigo>
+		<nome>CEP do favorecido inválido</nome>
+	</critica>
+	<critica>
+		<id>17</id>
+		<codigo>AY</codigo>
+		<nome>Alteração inválida; Banco anterior Bradesco</nome>
+	</critica>
+	<critica>
+		<id>18</id>
+		<codigo>AZ</codigo>
+		<nome>Código de Banco do favorecido inválido</nome>
+	</critica>
+	<critica>
+		<id>19</id>
+		<codigo>BD</codigo>
+		<nome>Pagamento agendado</nome>
+	</critica>
+	<critica>
+		<id>20</id>
+		<codigo>BE</codigo>
+		<nome>Hora de gravação inválida</nome>
+	</critica>
+	<critica>
+		<id>21</id>
+		<codigo>BF</codigo>
+		<nome>Identificação da empresa no Banco, inválida</nome>
+	</critica>
+	<critica>
+		<id>22</id>
+		<codigo>BG</codigo>
+		<nome>CNPJ/CPF do pagador inválido</nome>
+	</critica>
+	<critica>
+		<id>23</id>
+		<codigo>BH</codigo>
+		<nome>Tipo de inscrição do cliente favorecido inválida</nome>
+	</critica>
+	<critica>
+		<id>24</id>
+		<codigo>BI</codigo>
+		<nome>Data de vencimento inválida ou não preenchida</nome>
+	</critica>
+	<critica>
+		<id>25</id>
+		<codigo>BJ</codigo>
+		<nome>Data de emissão do documento inválida</nome>
+	</critica>
+	<critica>
+		<id>26</id>
+		<codigo>BK</codigo>
+		<nome>Tipo de inscrição do cliente favorecido não permitido</nome>
+	</critica>
+	<critica>
+		<id>27</id>
+		<codigo>BL</codigo>
+		<nome>Data limite para desconto inválida</nome>
+	</critica>
+	<critica>
+		<id>28</id>
+		<codigo>BM</codigo>
+		<nome>Data para efetivação do pagamento inválida</nome>
+	</critica>
+	<critica>
+		<id>29</id>
+		<codigo>BN</codigo>
+		<nome>Data para efetivação anterior a do processamento</nome>
+	</critica>
+	<critica>
+		<id>30</id>
+		<codigo>BO</codigo>
+		<nome>Cliente não cadastrado</nome>
+	</critica>
+	<critica>
+		<id>31</id>
+		<codigo>BP</codigo>
+		<nome>Identificação de Título Bradesco divergente da original</nome>
+	</critica>
+	<critica>
+		<id>32</id>
+		<codigo>BQ</codigo>
+		<nome>Data do documento posterior ao vencimento</nome>
+	</critica>
+	<critica>
+		<id>33</id>
+		<codigo>BT</codigo>
+		<nome>Desautorização efetuada</nome>
+	</critica>
+	<critica>
+		<id>34</id>
+		<codigo>BU</codigo>
+		<nome>Alteração efetuada</nome>
+	</critica>
+	<critica>
+		<id>35</id>
+		<codigo>BV</codigo>
+		<nome>Exclusão efetuada</nome>
+	</critica>
+	<critica>
+		<id>36</id>
+		<codigo>BW</codigo>
+		<nome>Pagamento efetuado</nome>
+	</critica>
+	<critica>
+		<id>37</id>
+		<codigo>FA</codigo>
+		<nome>Código de origem inválido</nome>
+	</critica>
+	<critica>
+		<id>38</id>
+		<codigo>FB</codigo>
+		<nome>Data de gravação do arquivo inválida</nome>
+	</critica>
+	<critica>
+		<id>39</id>
+		<codigo>FC</codigo>
+		<nome>Tipo de documento inválido</nome>
+	</critica>
+	<critica>
+		<id>40</id>
+		<codigo>FE</codigo>
+		<nome>Número de pagamento inválido</nome>
+	</critica>
+	<critica>
+		<id>41</id>
+		<codigo>FF</codigo>
+		<nome>Valor do desconto sem data limite</nome>
+	</critica>
+	<critica>
+		<id>42</id>
+		<codigo>FG</codigo>
+		<nome>Data limite para desconto posterior ao vencimento</nome>
+	</critica>
+	<critica>
+		<id>43</id>
+		<codigo>FH</codigo>
+		<nome>Falta número e/ou série do documento</nome>
+	</critica>
+	<critica>
+		<id>44</id>
+		<codigo>FI</codigo>
+		<nome>Exclusão de agendamento não disponível</nome>
+	</critica>
+	<critica>
+		<id>45</id>
+		<codigo>FJ</codigo>
+		<nome>Soma dos valores não confere</nome>
+	</critica>
+	<critica>
+		<id>46</id>
+		<codigo>FK</codigo>
+		<nome>Falta valor de pagamento</nome>
+	</critica>
+	<critica>
+		<id>47</id>
+		<codigo>FL</codigo>
+		<nome>Modalidade de pagamento inválida para o contrato</nome>
+	</critica>
+	<critica>
+		<id>48</id>
+		<codigo>FM</codigo>
+		<nome>Código de movimento inválido</nome>
+	</critica>
+	<critica>
+		<id>49</id>
+		<codigo>FN</codigo>
+		<nome>Tentativa de inclusão de registro existente</nome>
+	</critica>
+	<critica>
+		<id>50</id>
+		<codigo>FO</codigo>
+		<nome>Tentativa de alteração para registro inexistente</nome>
+	</critica>
+	<critica>
+		<id>51</id>
+		<codigo>FP</codigo>
+		<nome>Tentativa de efetivação de agendamento não disponível</nome>
+	</critica>
+	<critica>
+		<id>52</id>
+		<codigo>FQ</codigo>
+		<nome>Tentativa de desautorização de agendamento não disponível</nome>
+	</critica>
+	<critica>
+		<id>53</id>
+		<codigo>FR</codigo>
+		<nome>Autorização de agendamento sem data de efetivação e sem data de vencimento</nome>
+	</critica>
+	<critica>
+		<id>54</id>
+		<codigo>FS</codigo>
+		<nome>Título em agendamento; Pedido de confirmaçã</nome>
+	</critica>
+	<critica>
+		<id>55</id>
+		<codigo>FT</codigo>
+		<nome>Tipo de inscrição do cliente pagador inválido</nome>
+	</critica>
+	<critica>
+		<id>56</id>
+		<codigo>FU</codigo>
+		<nome>Contrato inexistente ou inativo</nome>
+	</critica>
+	<critica>
+		<id>57</id>
+		<codigo>FV</codigo>
+		<nome>Cliente com convênio cancelado</nome>
+	</critica>
+	<critica>
+		<id>58</id>
+		<codigo>FW</codigo>
+		<nome>Valor autorizado inferior ao original</nome>
+	</critica>
+	<critica>
+		<id>59</id>
+		<codigo>FX</codigo>
+		<nome>Está faltando registro header</nome>
+	</critica>
+	<critica>
+		<id>60</id>
+		<codigo>FZ</codigo>
+		<nome>Valor autorizado não confere para pagamento em atraso</nome>
+	</critica>
+	<critica>
+		<id>61</id>
+		<codigo>FO</codigo>
+		<nome>Agendamento em atraso; não permitido pelo convênio</nome>
+	</critica>
+	<critica>
+		<id>62</id>
+		<codigo>F3</codigo>
+		<nome>Tentativa de alteração inválida; confirmação de débito já efetuada</nome>
+	</critica>
+	<critica>
+		<id>63</id>
+		<codigo>F4</codigo>
+		<nome>Falta registro trailler</nome>
+	</critica>
+	<critica>
+		<id>64</id>
+		<codigo>F5</codigo>
+		<nome>Valor do trailler não confere</nome>
+	</critica>
+	<critica>
+		<id>65</id>
+		<codigo>F6</codigo>
+		<nome>Quantidade de registros do trailler não confere</nome>
+	</critica>
+	<critica>
+		<id>66</id>
+		<codigo>F7</codigo>
+		<nome>Tentativa de alteração inválida; pagamento já enviado ao Bradesco Instantâneo</nome>
+	</critica>
+	<critica>
+		<id>67</id>
+		<codigo>F8</codigo>
+		<nome>Pagamento enviado após o horário estipulado</nome>
+	</critica>
+	<critica>
+		<id>68</id>
+		<codigo>F9</codigo>
+		<nome>Tentativa de inclusão de registro existente em histórico</nome>
+	</critica>
+	<critica>
+		<id>69</id>
+		<codigo>GA</codigo>
+		<nome>Tipo de DOC/TED inválido</nome>
+	</critica>
+	<critica>
+		<id>70</id>
+		<codigo>GB</codigo>
+		<nome>Número do DOC/TED inválido</nome>
+	</critica>
+	<critica>
+		<id>71</id>
+		<codigo>GC</codigo>
+		<nome>Finalidade do DOC/TED inválida ou inexistente</nome>
+	</critica>
+	<critica>
+		<id>72</id>
+		<codigo>GD</codigo>
+		<nome>Conta corrente do favorecido encerrada</nome>
+	</critica>
+	<critica>
+		<id>73</id>
+		<codigo>GE</codigo>
+		<nome>Conta corrente do favorecido não recadastrada</nome>
+	</critica>
+	<critica>
+		<id>74</id>
+		<codigo>GF</codigo>
+		<nome>Inclusão de pagamento via modalidade 30 não permitida</nome>
+	</critica>
+	<critica>
+		<id>75</id>
+		<codigo>GG</codigo>
+		<nome>Campo livre do código de barras (linha digitável) inválido</nome>
+	</critica>
+	<critica>
+		<id>76</id>
+		<codigo>GH</codigo>
+		<nome>Dígito verificador do código de barras inválido</nome>
+	</critica>
+	<critica>
+		<id>77</id>
+		<codigo>GI</codigo>
+		<nome>Código da moeda da linha digitável inválido</nome>
+	</critica>
+	<critica>
+		<id>78</id>
+		<codigo>GJ</codigo>
+		<nome>Conta poupança do favorecido inválida</nome>
+	</critica>
+	<critica>
+		<id>79</id>
+		<codigo>GK</codigo>
+		<nome>Conta poupança do favorecido não recadastrada</nome>
+	</critica>
+	<critica>
+		<id>80</id>
+		<codigo>GL</codigo>
+		<nome>Conta poupança do favorecido não encontrada</nome>
+	</critica>
+	<critica>
+		<id>81</id>
+		<codigo>GM</codigo>
+		<nome>Pagamento 3 (três) dias após o vencimento</nome>
+	</critica>
+	<critica>
+		<id>82</id>
+		<codigo>GN</codigo>
+		<nome>Conta complementar inválida</nome>
+	</critica>
+	<critica>
+		<id>83</id>
+		<codigo>GO</codigo>
+		<nome>Inclusão de DOC/TED para Banco 237 não permitido</nome>
+	</critica>
+	<critica>
+		<id>84</id>
+		<codigo>GP</codigo>
+		<nome>CNPJ/CPF do favorecido divergente do cadastro do Banco 1 003/017</nome>
+	</critica>
+	<critica>
+		<id>85</id>
+		<codigo>GQ</codigo>
+		<nome>Tipo de DOC/TED não permitido via sistema eletrônico</nome>
+	</critica>
+	<critica>
+		<id>86</id>
+		<codigo>GR</codigo>
+		<nome>Alteração inválida; pagamento já enviado a agência pagadora</nome>
+	</critica>
+	<critica>
+		<id>87</id>
+		<codigo>GS</codigo>
+		<nome>Limite de pagamento excedido. Fale com o Gerente da sua agência</nome>
+	</critica>
+	<critica>
+		<id>88</id>
+		<codigo>GT</codigo>
+		<nome>Limite vencido/vencer em 30 dias</nome>
+	</critica>
+	<critica>
+		<id>89</id>
+		<codigo>GU</codigo>
+		<nome>Pagamento agendado por aumento de limite ou redução no total autorizado</nome>
+	</critica>
+	<critica>
+		<id>90</id>
+		<codigo>GV</codigo>
+		<nome>Cheque OP estornado a pedido</nome>
+	</critica>
+	<critica>
+		<id>91</id>
+		<codigo>GW</codigo>
+		<nome>Conta corrente ou conta poupança com razão não permitido para efetivação de crédito</nome>
+	</critica>
+	<critica>
+		<id>92</id>
+		<codigo>GX</codigo>
+		<nome>Cheque OP com data limite vencida 1 277/278</nome>
+	</critica>
+	<critica>
+		<id>93</id>
+		<codigo>GY</codigo>
+		<nome>Conta poupança do favorecido encerrada 1 105/117</nome>
+	</critica>
+	<critica>
+		<id>94</id>
+		<codigo>HA</codigo>
+		<nome>Agendado, débito sob consulta de saldo</nome>
+	</critica>
+	<critica>
+		<id>95</id>
+		<codigo>HB</codigo>
+		<nome>Pagamento não efetuado, saldo insuficient</nome>
+	</critica>
+	<critica>
+		<id>96</id>
+		<codigo>HC</codigo>
+		<nome>Pagamento não efetuado, além de saldo insuficiente,conta com cadastro no DVL</nome>
+	</critica>
+	<critica>
+		<id>97</id>
+		<codigo>HD</codigo>
+		<nome>Pagamento não efetuado, além de saldo insuficiente,conta bloqueada</nome>
+	</critica>
+	<critica>
+		<id>98</id>
+		<codigo>HE</codigo>
+		<nome>Pagamento fora do prazo de operação no Banco</nome>
+	</critica>
+	<critica>
+		<id>99</id>
+		<codigo>HF</codigo>
+		<nome>Processado e debitado</nome>
+	</critica>
+	<critica>
+		<id>100</id>
+		<codigo>HG</codigo>
+		<nome>Processado e não debitado por saldo insuficiente</nome>
+	</critica>
+	<critica>
+		<id>101</id>
+		<codigo>JA</codigo>
+		<nome>Código de lançamento inválido</nome>
+	</critica>
+	<critica>
+		<id>102</id>
+		<codigo>JB</codigo>
+		<nome>DOC/TED devolvido e estornado</nome>
+	</critica>
+	<critica>
+		<id>103</id>
+		<codigo>JC</codigo>
+		<nome>Modalidade alterada de 07/CIP, para 08/STR</nome>
+	</critica>
+	<critica>
+		<id>104</id>
+		<codigo>JD</codigo>
+		<nome>Modalidade alterada de 07/CIP, para 03/DOC COMPE</nome>
+	</critica>
+	<critica>
+		<id>105</id>
+		<codigo>JE</codigo>
+		<nome>Modalidade alterada de 08/STR para 07/CIP</nome>
+	</critica>
+	<critica>
+		<id>106</id>
+		<codigo>JF</codigo>
+		<nome>Modalidade alterada de 08/STR para 03/COMPE</nome>
+	</critica>
+	<critica>
+		<id>107</id>
+		<codigo>JG</codigo>
+		<nome>Alteração de Modalidade Via Arquivo não Permitida</nome>
+	</critica>
+	<critica>
+		<id>108</id>
+		<codigo>JI</codigo>
+		<nome>Modalidade alterada de 01/Crédito em conta para 05/Crédito em conta real time</nome>
+	</critica>
+	<critica>
+		<id>109</id>
+		<codigo>JJ</codigo>
+		<nome>Horário de agendamento Inválido</nome>
+	</critica>
+	<critica>
+		<id>110</id>
+		<codigo>JK</codigo>
+		<nome>Tipo de conta - modalidade DOC/TED - inválido</nome>
+	</critica>
+
+</layout>

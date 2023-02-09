@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layout>
+    <nome>Sicredi</nome>
+    
+    <sessao>
+        <nome>arquivo</nome>
+        
+        <registro>
+            <tipo>string</tipo>
+            <chave>instrucoes</chave>
+            <padrao>(Todas as informações deste bloqueto são de exclusiva responsabilidade do Beneficiário)</padrao>
+            <descricao>Instruções de pagamento padrão</descricao>
+        </registro>
+        <registro>
+            <tipo>string</tipo>
+            <chave>local_pagamento_a</chave>
+            <padrao>PAGÁVEL PREFERENCIALMENTE NAS COOPERATIVAS DE CRÉDITO DO SICREDI</padrao>
+            <descricao>Local de Pagamento 1</descricao>
+        </registro>
+    </sessao>
+</layout>

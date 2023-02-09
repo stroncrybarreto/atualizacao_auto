@@ -1,0 +1,64 @@
+<relatorio dados="reajuste_preco_detalhado">
+<apelidos>
+1  rel_posto_nome 	tam=50
+2  rel_data_hora 	tam=18
+3  subtitulo		tam=130 alinha=centro
+4  responsavel		tam=60
+5  data_cadastro	tam=10 fmt=data
+6  hora_turno_fim	tam=10
+7  aplicar			tam=50
+8  data				tam=10 fmt=data
+9  hora_turno		tam=10
+10 observacao		tam=60
+11 produto_nome		tam=34
+12 preco_atual		tam=11 fmt=float2
+13 reajuste_atual	tam=8 fmt=float2
+14 sobre_atual		tam=5 alinha=centro
+15 novo_preco		tam=10 fmt=float2
+16 preco_prazo		tam=11 fmt=float2
+17 reajuste_prazo	tam=8 fmt=float2
+18 sobre_prazo		tam=5 alinha=centro
+19 novo_prazo		tam=10 fmt=float2
+20 pessoa_aplica	tam=60 
+21 data_aplicado    tam=16 fmt=data_hora
+22 situacao			tam=30 
+23 email 			tam=65
+24 data_fim			tam=10 fmt=data
+25 titulo			tam=65 
+26 recorrente		tam=35
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2                
+----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grid">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Responsável: #4                                                             Criado em: #5                                      |
+| Aplicado por: #20                                                           Aplicado em: #21                                   |
+| Título: #25                                                                 Situação: #22                                      |
+| Aplicar: #7                                                                 Data inicial: #8         Hora ou Turno: #9         |
+| E-mail: #23                                                                 Data final: #24          Hora ou Turno: #6         |
+| Observação: #10                                                             Recorrente: #26                                    |
++------------------------------------+-------------+----------+-------+------------+-------------+----------+-------+------------+
+|               Produto              | Preço atual | Reajuste | Sobre | Novo preço | Preço prazo | Reajuste | Sobre | Novo prazo |
++------------------------------------+-------------+----------+-------+------------+-------------+----------+-------+------------+
+</cab_grupo>
+<detalhe>
+| #11                                | #12         | #13      | #14   | #15        | #16         | #17      | #18   | #19        |
+</detalhe>
+<rod_grupo nome="1">
++------------------------------------+-------------+----------+-------+------------+-------------+----------+-------+------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++------------------------------------+-------------+----------+-------+------------+-------------+----------+-------+------------+
+</rod_pagina>
+
+<hash>887ff560967f2c3208411a74a2ab65bd</hash>
+</relatorio>

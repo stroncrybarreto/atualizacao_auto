@@ -1,0 +1,125 @@
+<relatorio>
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo1		        tam=83 alinha=centro
+4  titulo2		        tam=83 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                 #2        
+-----------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="movto_caixa_bico">
+<apelidos>
+1  nome         	tam=3   alinha=dir
+2  inicial	        tam=11  fmt=%.02f
+3  final	        tam=11  fmt=%.02f
+4  afericao 		tam=8   fmt=%.02f
+5  litros 		    tam=8   fmt=%.02f
+6  preco_unit 		tam=6   fmt=%.03f
+7  valor 		    tam=12  fmt=%.02f
+8  aviso 		    tam=2
+</apelidos>
+<cab_relat>
++-----+-------------+-------------+----------+------------+--------+--------------+
+| Bco |     Inicial |       Final | Aferição |     Litros |  Preco |    Sub-Total |
++-----+-------------+-------------+----------+------------+--------+--------------+
+</cab_relat>
+<detalhe>
+| #1  | #2          | #3          | #4       | #8#5       | #6     | #7           |
+</detalhe>
+<rod_relat>
++-----+-------------+-------------+----------+------------+--------+--------------+
+</rod_relat>
+</subrelat>
+
+
+<subrelat dados="movto_caixa_combustivel">
+<apelidos>
+1  nome         	tam=30  
+2  afericao 		tam=8   fmt=%.02f
+3  quantidade 		tam=10  fmt=%.02f
+4  preco_unit 		tam=6   fmt=%.03f
+5  valor 		    tam=12  fmt=%.02f
+6  total_afericao	tam=8   fmt=%.02f
+7  total_qtde 		tam=10  fmt=%.02f
+8  total_valor 		tam=12  fmt=%.02f
+</apelidos>
+<cab_relat>
+</cab_relat>
+<detalhe>
+| #1                              | #2       | #3         | #4     | #5           |
+</detalhe>
+<rod_relat>
++---------------------------------+----------+------------+--------+--------------+
+| Total de venda                  | #6       | #7         |        | #8           |
++---------------------------------|----------+------------+--------+--------------+
+
+</rod_relat>
+</subrelat>
+
+
+<subrelat dados="movto_caixa_venda">
+<apelidos>
+1  nome  	tam=40
+2  tot1		tam=13  fmt=%.03f
+3  tot2 	tam=14  fmt=%.02f
+4  total 	tam=14  fmt=%.02f
+</apelidos>
+<cab_relat>
++---------------------------------------------------------------------------------+
+|                         V E N D A   D E   P R O D U T O S                       |
++------------------------------------------------+---------------+----------------+
+| Grupo                                          |    Quantidade |          Total |
++------------------------------------------------+---------------+----------------+
+</cab_relat>
+<detalhe>
+| #1                                             | #2            | #3             |
+</detalhe>
+<rod_relat>
++------------------------------------------------+---------------+----------------+
+| Total de venda                                                 | #4             |
++----------------------------------------------------------------+----------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_movto">
+<apelidos>
+1  entrada_nome  	tam=24
+2  entrada_valor	tam=10  fmt=%.02f nulo
+3  saida_nome  		tam=24
+4  saida_valor		tam=10  fmt=%.02f nulo
+5  entrada_total 	tam=10  fmt=%.02f
+6  saida_total	 	tam=10  fmt=%.02f
+7  sobra	 	tam=10  fmt=%.02f
+8  sobra_falta	 	tam=10  fmt=%.02f
+</apelidos>
+<cab_relat>
++---------------------------------------++----------------------------------------+
+| Entradas                              || Saidas                                 |
++--------------------------+------------++---------------------------+------------+
+</cab_relat>
+<detalhe>
+| #1                       | #2         || #3                        | #4         |
+</detalhe>
+<rod_relat>
++--------------------------+------------++---------------------------+------------+
+| Sub-Total                | #5         || Sub-Total                 | #6         |
++--------------------------+------------++---------------------------+------------+
+                                         | Sobra (+) / Falta (-)     | #8         |
+                                         | Diferença                 | #7         |
+                                         +---------------------------+------------+
+</rod_relat>
+</subrelat>
+
+<hash>8de49f6e437fbf99161be9912f8e0b37</hash>
+</relatorio>

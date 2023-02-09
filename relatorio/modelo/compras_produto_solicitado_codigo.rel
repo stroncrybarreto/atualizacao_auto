@@ -1,0 +1,127 @@
+<relatorio>
+
+<apelidos>
+1  rel_posto_nome     		tam=60
+2  rel_data_hora			tam=18
+</apelidos>
+
+<cab_pagina>
+
+#1                                                                                                            #2
+------------------------------------------------------------------------------------------------------------------------------
+
+                               R E L A Ç Ã O   D E   P R O D U T O S   S O L I C I T A D O S 
+</cab_pagina>
+
+<detalhe> 
+</detalhe>
+
+<subrelat dados="compras_produto_solicitado_empresa" ordem="empresa_nome,solicitacao_codigo,produto_nome">
+
+<apelidos>
+1  empresa_nome				tam=40
+2  solicitacao_codigo		tam=11	alinha=centro
+3  solicitacao_data			tam=12	alinha=centro	fmt=data
+4  produto_entrega_sugerida	tam=12	alinha=centro	fmt=data
+5  produto_nome				tam=38
+6  produto_situacao_nome	tam=22	
+7  produto_quantidade		tam=12	alinha=direita	fmt=float2
+8  produto_quantidade_total	tam=12	alinha=direita	fmt=float2	func=soma	campo=produto_quantidade	grupo=1
+9  total_geral				tam=12	alinha=direita	fmt=float2	func=soma	campo=produto_quantidade
+10 titulo1					tam=126	alinha=centro	
+11 titulo2					tam=126	alinha=centro
+12 titulo3					tam=126	alinha=centro	
+13 titulo4					tam=126	alinha=centro
+14 titulo5                  tam=126 alinha=centro
+15 titulo6                  tam=126 alinha=centro
+16 produto_codigo           tam=10 alinha=centro
+17 titulo7                  tam=126 alinha=centro
+</apelidos>
+
+<cab_relat>
+#10   
+#11
+#12
+#13
+#14
+#15
+#17
+
+
+</cab_relat>
+
+<cab_grupo nome="1" quebra="empresa_nome">
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #1                                                                                                                             |
++-------------+--------------+--------------+-------------+---------------------------------------+------------------------+--------------+
+| Solicitação | Data solici. | Entrega sug. | Codigo      | Produto                               |        Situação        |  Quantidade  |
++-------------+--------------+--------------+-------------+---------------------------------------+------------------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #2          | #3           | #4           | #16         |#5                                     | #6                     | #7           |
+</detalhe>
+
+<rod_grupo nome="1">
++-------------+--------------+--------------+-------------+---------------------------------------+------------------------+--------------+
+| Total                                                                                                                    | #8           |
++--------------------------------------------------------------------------------------------------------------------------+--------------+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+</subrelat>
+
+
+
+<subrelat dados="compras_produto_solicitado_empresa_resumo" ordem="produto_nome,produto_entrega_sugerida">
+
+<apelidos>
+1  produto_entrega_sugerida	tam=12	alinha=centro	fmt=data
+2  produto_nome				tam=38
+3  produto_quantidade		tam=12	alinha=direita	fmt=float2
+4  produto_quantidade_total	tam=12	alinha=direita	fmt=float2	func=soma	campo=produto_quantidade	grupo=1
+</apelidos>
+
+<cab_relat>
+
+
+
+
+			R E S U M O   P O R   P R O D U T O
+
+</cab_relat>
+
+<cab_grupo nome="1" quebra="produto_nome">
++--------------+------------------------------------------------------+--------------+
+| Data         | Produto                                              |  Quantidade  |
++--------------+------------------------------------------------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #1           | #2                                                   | #3           |
+</detalhe>
+
+<rod_grupo nome="1">
++--------------+------------------------------------------------------+--------------+
+| Total                                                               | #4           |
++---------------------------------------------------------------------+--------------+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+</subrelat>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++-------------+--------------+--------------+----------------------------------------+------------------------+--------------+
+</rod_pagina>
+
+
+
+<hash>7f4b29a47ccd7bd88edcb2b3c5050c64</hash>
+</relatorio>

@@ -1,0 +1,40 @@
+<relatorio dados="motivo_movto">
+<apelidos>
+1 rel_posto_nome  	tam=60
+2 rel_data_hora  	tam=18         
+3 codigo		tam=6
+4 nome			tam=30
+5 conta_debitar	tam=30
+6 conta_creditar	tam=30
+7 situacao		tam=15
+8 numero		tam=10	func=contar	campo=nome	grupo=1
+
+</apelidos>
+<cab_pagina>
+#1                                                                                         #2        
+-------------------------------------------------------------------------------------------------------------
+   
+                                          MOTIVOS DE MOVIMENTAÇÃO
+</cab_pagina>
+
+<cab_grupo nome='1' quebra='situacao'>
+
+Situação..: #7
++--------+--------------------------------+--------------------------------+--------------------------------+
+| Codigo | Nome                           | Conta Débito                   | Conta Crédito                  |
++--------+--------------------------------+--------------------------------+--------------------------------+
+</cab_grupo>
+
+<detalhe>
+| #3     | #4                             | #5                             | #6                             |
+</detalhe>
+
+<rod_grupo nome='1'>
++--------+--------------------------------+--------------------------------+--------------------------------+
+</rod_grupo>
+
+<rod_relat></rod_relat>
+
+
+<hash>5fbde45b9f0741494d8946f146c00a6e</hash>
+</relatorio>

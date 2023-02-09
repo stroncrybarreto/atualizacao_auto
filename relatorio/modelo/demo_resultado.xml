@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='iso8859-1'?>
+
+<config tam_texto="60">
+
+<config tam_codigo="16">
+
+<config tam_valor="16">
+
+<titulo texto="RECEITA BRUTA VENDAS">
+
+<espaco>
+
+<campo id="venda_comb" texto="4.1.1     VENDAS DE COMBUSTÍVEL" origem="venda" produto_tipo="C">
+
+<campo id="venda_merc" texto="4.1.2     VENDAS DE MERCADORIAS" origem="venda" produto_tipo="M">
+
+<campo id="venda_serv" texto="4.1.3     VENDAS DE SERVIÇOS"    origem="venda" produto_tipo="S">
+
+<espaco>
+
+<expr id="total_venda" texto="TOTAL RECEITAS" expr="[venda_comb]+[venda_merc]+[venda_serv]">
+
+<espaco>
+
+<titulo texto="IMPOSTOS">
+
+<espaco>
+
+<campo id="imposto" origem="conta_movto" conta="3.3" nivel="1">
+
+<espaco>
+
+<expr id="total_imposto" texto="TOTAL IMPOSTOS" expr="[imposto]">
+
+<espaco>
+
+<expr id="receita_liq" texto="RECEITA LÍQUIDA" expr="[total_venda]-[total_imposto]">
+
+<espaco>
+
+<titulo texto="CUSTO DAS MERCADORIAS VENDIDAS">
+
+<espaco>
+
+<campo id="custo_comb" texto="CUSTO COMBUSTÍVEIS VENDIDOS" origem="cmv" produto_tipo="C">
+
+<campo id="custo_merc" texto="CUSTO MERCADORIAS VENDIDAS"  origem="cmv" produto_tipo="M">
+
+<espaco>
+
+<expr id="total_custo" texto="TOTAL CUSTOS" expr="[custo_comb]+[custo_merc]">
+
+<espaco>
+
+<expr id="lucro_bruto" texto="LUCRO BRUTO"  expr="[receita_liq]-[total_custo]">
+
+<espaco>
+
+<titulo texto="DESPESAS ADMINISTRATIVAS">
+
+<espaco>
+
+<campo id="despesa_adm" origem="conta_movto" conta="3.2" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL DESPESAS ADMINISTRATIVAS" expr="[despesa_adm]">
+
+<espaco>
+
+<titulo texto="DESPESAS FINANCEIRAS">
+
+<espaco>
+
+<campo id="despesa_fin" origem="conta_movto" conta="3.4" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL DESPESAS FINANCEIRAS" expr="[despesa_fin]">
+
+<espaco>
+
+<titulo texto="TODAS DESPESAS">
+
+<espaco>
+
+<campo id="despesa_todas" origem="conta_movto" conta="3" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL TODAS DESPESAS" expr="[despesa_todas]">
+
+
+<espaco>
+
+<titulo texto="OUTRAS RECEITAS OPERACIONAIS">
+
+<espaco>
+
+<campo id="outras_rec" origem="conta_movto" conta="4.8" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL OUTRAS RECEITAS OPERACIONAIS" expr="[receita_oper]">
+
+<espaco>
+
+<titulo texto="OUTRAS DESPESAS">
+
+<espaco>
+
+<campo id="outras_desp" origem="conta_movto" conta="3.6" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL OUTRAS DESPESAS" expr="[outras_desp]">
+
+<espaco>
+
+<campo id="sobra_falta" origem="conta_movto" conta="1.5" nivel="0" texto="SOBRA E/OU FALTA DE CAIXA">
+
+<espaco>
+
+<titulo texto="RECEITAS FINANCEIRAS">
+
+<espaco>
+
+<campo id="receita_fin" origem="conta_movto" conta="4.3" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL RECEITAS FINANCEIRAS" expr="[receita_fin]">
+
+<espaco>
+
+<titulo texto="TODAS RECEITAS">
+
+<espaco>
+
+<campo id="receita_todas" origem="conta_movto" conta="4" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL TODAS RECEITAS" expr="[receita_todas]">
+
+<espaco>
+
+<expr id="lucro" texto="LUCRO DO PERÍODO" expr="[lucro_bruto]-[despesa_todas]+[receita_todas]-[total_venda]+[sobra_falta]">
+
+<espaco>
+
+<titulo texto="DISTRIBUIÇÃO DE LUCROS">
+
+<espaco>
+
+<campo id="distrib_lucro" origem="conta_movto" conta="3.1" nivel="1">
+
+<espaco>
+
+<expr texto="TOTAL DISTRIBUIÇÃO LUCROS" expr="[distrib_lucro]">
+
+<espaco>
+
+<expr id="lucro_liq" texto="LUCRO LÍQUIDO PERÍODO" expr="[lucro_bruto]-[despesa_todas]+[total_imposto]">
+
+<espaco>
+
+<expr id="rateio_fat" texto="RATEIO PELO FATURAMENTO BRUTO %" expr="[lucro_bruto]/[distrib_lucro]*100">
+
+<espaco>
+
+<titulo texto="MARGEM DO LUCRO NO PERÍODO">
+
+<expr id="fatura_total" texto="FATURAMENTO TOTAL" expr="[total_venda]+[outras_rec]+[receita_fin]">
+
+<expr texto="LUCRO PERÍODO" expr="[lucro]">
+
+<espaco>
+
+<expr texto="MARGEM" expr="[fatura_total]/[lucro]*100">
+

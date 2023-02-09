@@ -1,0 +1,66 @@
+<relatorio dados="venda_detalhada" tamfonte="8" ordem="conta_ordem,data,hora,produto_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  subtitulo		tam=151                     alinha=centro
+4  data			    tam=10	fmt=data
+5  hora			    tam=5
+6  bico			    tam=4	                    alinha=centro
+7  produto_nome		tam=26
+8  quantidade		tam=14	fmt=float3
+9  preco_unit		tam=10	fmt=float3
+10 valor		    tam=14	fmt=float2
+11 forma_pgto		tam=18
+12 total_qtde_grupo	tam=14	fmt=float3    func=soma  campo=quantidade     grupo=1
+13 total_val_grupo  tam=14	fmt=float2    func=soma  campo=valor    	  grupo=1
+14 nr_cupom		    tam=9	                    alinha=centro
+15 hora_abastec     tam=9	                    alinha=centro
+16 titulo           tam=151                     alinha=centro
+
+17 conta_codigo		tam=13
+18 conta_nome		tam=40
+19 conta_cod_nome	tam=70 expr=str(conta_codigo)+' - '+conta_nome
+
+20 total_quantidade	tam=14	fmt=float3 func=soma campo=quantidade
+21 total_valor		tam=14	fmt=float2 func=soma campo=valor
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                     #2
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#16
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="conta_ordem,conta_codigo">
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Conta caixa: #19                                                                                                                                    | 
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+|    Data    |  Hora | Hora abst. | Bico |          Produto           | Documento |   Quantidade   | Preço unit.|     Valor      | Forma de pagamento |
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+</cab_grupo>
+
+<detalhe>
+| #4         | #5    | #15        | #6   | #7                         | #14       | #8             | #9         | #10            | #11                |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+| Total conta                                                                     | #12            |            | #13            |                    |
++---------------------------------------------------------------------------------+----------------+------------+----------------+--------------------+
+</rod_grupo>
+
+<rod_relat>
+
++---------------------------------------------------------------------------------+----------------+------------+----------------+--------------------+
+| Total                                                                           | #20            |            | #21            |                    |
++---------------------------------------------------------------------------------+----------------+------------+----------------+--------------------+
+</rod_relat>
+
+<rod_pagina>
++------------+-------+------------+------+----------------------------+-----------+----------------+------------+----------------+--------------------+
+</rod_pagina>
+
+<hash>d6a5f240b1fa610ce563dfd4698ef90e</hash>
+</relatorio>

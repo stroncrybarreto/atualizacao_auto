@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <info nome="cielo">
+    <header>0</header>
+	<lote>1</lote>
+	<venda>2</venda>
+	<trailer>9</trailer>
+  </info>
+
+  <header>
+    <registro>
+     <desc>Tipo de Registro</desc>
+     <posicao>1-1</posicao>
+     <tipo>int</tipo>
+     <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Matriz</desc>
+      <posicao>2-11</posicao>
+      <tipo>int</tipo>
+      <chave>matriz</chave>
+    </registro>
+    <registro>
+      <desc>Data de processamento</desc>
+      <posicao>12-19</posicao>
+      <tipo>date</tipo>
+      <chave>data</chave>
+    </registro>
+    <registro>
+      <desc>Periodo inicial</desc>
+      <posicao>20-27</posicao>
+      <tipo>date</tipo>
+      <chave>data_ini</chave>
+    </registro>
+    <registro>
+      <desc>Periodo final</desc>
+      <posicao>28-35</posicao>
+      <tipo>date</tipo>
+      <chave>data_fim</chave>
+    </registro>
+    <registro>
+      <desc>Sequencial</desc>
+      <posicao>36-42</posicao>
+      <tipo>int</tipo>
+      <chave>seq</chave>
+    </registro>
+    <registro>
+      <desc>Empresa Adquirente</desc>
+      <posicao>43-47</posicao>
+      <tipo>str</tipo>
+      <chave>operadora</chave>
+    </registro>
+    <registro>
+      <desc>Opção de Extrato</desc>
+      <posicao>48-49</posicao>
+      <tipo>int</tipo>
+      <chave>opcao_extrato</chave>
+    </registro>
+    <registro>
+      <desc>VAN</desc>
+      <posicao>50-50</posicao>
+      <tipo>str</tipo>
+      <chave>van</chave>
+    </registro>
+    <registro>
+      <desc>Caixa Postal</desc>
+      <posicao>51-70</posicao>
+      <tipo>str</tipo>
+      <chave>caixa_postal</chave>
+    </registro>
+    <registro>
+      <desc>Versão Layout</desc>
+      <posicao>71-73</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Uso CIELO</desc>
+      <posicao>074-250</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </header>
+
+  <lote>
+    <registro>
+      <desc>Tipo de registro</desc>
+      <posicao>1-1</posicao>
+      <tipo>int</tipo>
+      <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Loja submissora</desc>
+      <posicao>2-11</posicao>
+      <tipo>int</tipo>
+      <chave>loja</chave>
+    </registro>
+    <registro>
+      <desc>Numero do lote</desc>
+      <posicao>12-18</posicao>
+      <tipo>int</tipo>
+      <chave>lote</chave>
+    </registro>
+    <registro>
+      <desc>Parcela paga / plano</desc>
+      <posicao>19-23</posicao>
+      <tipo>str</tipo>
+      <chave>parcela</chave>
+    </registro>
+    <registro>
+      <desc>Tipo de Transmissão</desc>
+      <posicao>24-25</posicao>
+      <tipo>intr</tipo>
+      <chave>tipo_transmissao</chave>
+    </registro>
+    <registro>
+      <desc>Data da Apresentacao</desc>
+      <posicao>26-31</posicao>
+      <tipo>date</tipo>
+      <chave>data_apresentacao</chave>
+    </registro>
+    <registro>
+      <desc>Data Prevista de Pagamento</desc>
+      <posicao>32-37</posicao>
+      <tipo>date</tipo>
+      <chave>dt_programada</chave>
+    </registro>
+    <registro>
+      <desc>Data de Envio para o Banco</desc>
+      <posicao>38-43</posicao>
+      <tipo>date</tipo>
+      <chave>dt_remessa</chave>
+    </registro>
+    <registro>
+      <desc>Sinal do Valor Bruto</desc>
+      <posicao>44-44</posicao>
+      <tipo>str</tipo>
+      <chave>sinal_bruto</chave>
+    </registro>
+    <registro>
+      <desc>Valor bruto (+ credito / - debito)</desc>
+      <posicao>45-57</posicao>
+      <tipo>float</tipo>
+      <chave>valor_bruto</chave>
+    </registro>
+    <registro>
+      <desc>Sinal da Comissão</desc>
+      <posicao>58-58</posicao>
+      <tipo>str</tipo>
+      <chave>sinal_comissao</chave>
+    </registro>
+    <registro>
+      <desc>Valor da comissão</desc>
+      <posicao>59-71</posicao>
+      <tipo>float</tipo>
+      <chave>valor_comissao</chave>
+    </registro>
+    <registro>
+      <desc>Sinal do Valor Rejeitado</desc>
+      <posicao>72-72</posicao>
+      <tipo>str</tipo>
+      <chave>sinal_rejeitado</chave>
+    </registro>
+    <registro>
+      <desc>Valor rejeitado (+ credito / - debito)</desc>
+      <posicao>73-85</posicao>
+      <tipo>float</tipo>
+      <chave>valor_rejeitado</chave>
+    </registro>
+    <registro>
+      <desc>Sinal do Valor Líquido</desc>
+      <posicao>86-86</posicao>
+      <tipo>str</tipo>
+      <chave>sinal_liquido</chave>
+    </registro>
+    <registro>
+      <desc>Valor liquido (+ credito / - debito)</desc>
+      <posicao>87-99</posicao>
+      <tipo>float</tipo>
+      <chave>valor_liquido</chave>
+    </registro>
+    <registro>
+      <desc>Banco</desc>
+      <posicao>100-103</posicao>
+      <tipo>int</tipo>
+      <chave>banco</chave>
+    </registro>
+    <registro>
+      <desc>Agencia</desc>
+      <posicao>104-108</posicao>
+      <tipo>int</tipo>
+      <chave>agencia</chave>
+    </registro>
+    <registro>
+      <desc>Conta corrente</desc>
+      <posicao>109-122</posicao>
+      <tipo>str</tipo>
+      <chave>conta_corrente</chave>
+    </registro>
+    <registro>
+      <desc>Status do Pagamento</desc>
+      <posicao>123-124</posicao>
+      <tipo>int</tipo>
+      <chave>status_pagamento</chave>
+    </registro>
+    <registro>
+      <desc>Quantidade de CVs aceitos</desc>
+      <posicao>125-130</posicao>
+      <tipo>int</tipo>
+      <chave>qtde_venda</chave>
+    </registro>
+    <registro>
+      <desc>Identificador do produto</desc>
+      <posicao>131-132</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Quantidade de CVs rejeitadas</desc>
+      <posicao>133-138</posicao>
+      <tipo>int</tipo>
+      <chave>qtde_rejeitada</chave>
+    </registro>
+    <registro>
+      <desc>Indicador de revenda/antecipacao</desc>
+      <posicao>139-139</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Data da captura da transacao</desc>
+      <posicao>140-145</posicao>
+      <tipo>date</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Origem do ajuste</desc>
+      <posicao>146-147</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Valor Complementar</desc>
+      <posicao>148-160</posicao>
+      <tipo>float</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Identificador de produto financeiro</desc>
+      <posicao>161-161</posicao>
+      <tipo>str</tipo>
+      <chave>identificador_produto</chave>
+    </registro>
+    <registro>
+      <desc>Número de Operação Financeira</desc>
+      <posicao>162-170</posicao>
+      <tipo>int</tipo>
+      <chave>numero_operacao</chave>
+    </registro>
+    <registro>
+      <desc>Sinal do Valor Bruto Antecipado</desc>
+      <posicao>171-171</posicao>
+      <tipo>str</tipo>
+      <chave>sinal_bruto_antecipado</chave>
+    </registro>
+    <registro>
+      <desc>Valor Bruto Antecipado</desc>
+      <posicao>172-184</posicao>
+      <tipo>float</tipo>
+      <chave>valor_bruto_antecipado</chave>
+    </registro>
+    <registro>
+      <desc>Código da Bandeira</desc>
+      <posicao>185-187</posicao>
+      <tipo>int</tipo>
+      <chave>codigo_bandeira</chave>
+    </registro>
+    <registro>
+      <desc>Número Único</desc>
+      <posicao>188-209</posicao>
+      <tipo>int</tipo>
+      <chave>numero_unico</chave>
+    </registro>
+    <registro>
+      <desc>Taxa de Comissão</desc>
+      <posicao>210-213</posicao>
+      <tipo>float</tipo>
+      <chave>taxa_comissao</chave>
+    </registro>
+    <registro>
+      <desc>Tarifa</desc>
+      <posicao>214-218</posicao>
+      <tipo>float</tipo>
+      <chave>tarifa</chave>
+    </registro>
+    <registro>
+      <desc>Taxa de Garantia</desc>
+      <posicao>219-222</posicao>
+      <tipo>float</tipo>
+      <chave>taxa_garantia</chave>
+    </registro>
+    <registro>
+      <desc>Meio de Captura</desc>
+      <posicao>223-224</posicao>
+      <tipo>str</tipo>
+      <chave>meio_captura</chave>
+    </registro>
+    <registro>
+      <desc>Número Lógico do Terminal</desc>
+      <posicao>225-232</posicao>
+      <tipo>str</tipo>
+      <chave>numero_logico_terminal</chave>
+    </registro>
+    <registro>
+      <desc>Uso Cielo</desc>
+      <posicao>233-250</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </lote>
+
+  <venda>
+    <registro>
+      <desc>Tipo de registro</desc>
+      <posicao>1-1</posicao>
+      <tipo>int</tipo>
+      <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Loja submissora</desc>
+      <posicao>2-11</posicao>
+      <tipo>int</tipo>
+      <chave>loja</chave>
+    </registro>
+    <registro>
+      <desc>Numero do lote</desc>
+      <posicao>12-18</posicao>
+      <tipo>int</tipo>
+      <chave>lote</chave>
+    </registro>
+    <registro>
+      <desc>Numero do cartao</desc>
+      <posicao>19-37</posicao>
+      <tipo>str</tipo>
+      <chave>cartao</chave>
+    </registro>
+    <registro>
+      <desc>Data da compra</desc>
+      <posicao>38-45</posicao>
+      <tipo>date</tipo>
+      <chave>data</chave>
+    </registro>
+    <registro>
+      <desc>Sinal do Valor da Compra ou Valor da Parcela</desc>
+      <posicao>46-46</posicao>
+      <tipo>str</tipo>
+      <chave>sinal_compra</chave>
+    </registro>
+    <registro>
+      <desc>Valor total da compra (+ credito / - debito)</desc>
+      <posicao>47-59</posicao>
+      <tipo>float</tipo>
+      <chave>valor_bruto</chave>
+    </registro>
+    <registro>
+      <desc>Parcela</desc>
+      <posicao>60-61</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Total de parcelas</desc>
+      <posicao>62-63</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro> 
+    <registro>
+      <desc>Motivo da rejeicao</desc>
+      <posicao>64-66</posicao>
+      <tipo>str</tipo>
+      <chave>motivo_rejeicao</chave>
+    </registro>
+    <registro>
+      <desc>Codigo de autorizacao</desc>
+      <posicao>67-72</posicao>
+      <tipo>str</tipo>
+      <chave>autorizacao</chave>
+	</registro>
+    <registro>
+      <desc>TID</desc>
+      <posicao>73-92</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+	</registro>
+    <registro>
+      <desc>NSU</desc>
+      <posicao>93-98</posicao>
+      <tipo>str</tipo>
+      <chave>nsu</chave>
+    </registro>
+    <registro>
+      <desc>Valor Complementar</desc>
+      <posicao>99-111</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Digito do cartão</desc>
+      <posicao>112-113</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Valor Total da Venda no caso de Parcelado Loja</desc>
+      <posicao>114-126</posicao>
+      <tipo>float</tipo>
+      <chave>valor_total_parcelado</chave>
+    </registro>
+    <registro>
+      <desc>Valor da Próxima Parcela</desc>
+      <posicao>127-139</posicao>
+      <tipo>float</tipo>
+	  <chave>valor_proxima_parcela</chave>
+    </registro>
+    <registro>
+      <desc>Numero da nota fiscal</desc>
+      <posicao>140-148</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Código do país emissor</desc>
+      <posicao>149-152</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Numero do terminal</desc>
+      <posicao>153-160</posicao>
+      <tipo>str</tipo>
+      <chave>terminal</chave>
+    </registro>
+    <registro>
+      <desc>Identificador de taxa de embarque ou entrada</desc>
+      <posicao>161-162</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+		<desc>Referência / Código do Pedido</desc>
+      <posicao>163-182</posicao>
+      <tipo>str</tipo>
+      <chave>codigo_pedido</chave>
+    </registro>
+    <registro>
+      <desc>Hora da Transação</desc>
+      <posicao>183-188</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Número Único da Transação</desc>
+      <posicao>189-217</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Indicador PP</desc>
+      <posicao>218-218</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Uso Cielo</desc>
+      <posicao>219-250</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </venda>
+
+  <trailer>
+    <registro>
+      <desc>Tipo de registro</desc>
+      <posicao>1-1</posicao>
+      <tipo>int</tipo>
+      <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Total de transacoes</desc>
+      <posicao>2-12</posicao>
+      <tipo>int</tipo>
+      <chave>total_transacao</chave>
+    </registro>
+    <registro>
+      <desc>Vago</desc>
+      <posicao>13-250</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </trailer>
+
+</layout>

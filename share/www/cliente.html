@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Teste de Clientes.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=latin-1">
+</head>
+<body>
+<p><img src="images/autosystem.gif" width="276" height="148"></p>
+<h1><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Rela&ccedil;&atilde;o 
+  de Clientes:</font></h1>
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#999999">
+  <tr> 
+    <td><table border="0" cellpadding="3" cellspacing="2">
+        <tr align="center"> 
+          <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">C&oacute;digo</font></strong></td>
+          <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Nome</font></strong></td>
+          <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">CPF 
+            / CNPJ</font></strong></td>
+        </tr>
+        <tr tal:repeat="cliente cliente_list"> 
+          <td width="133" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="cliente/codigo">10</strong></font></td>
+          <td width="280" align="left" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="cliente/nome">JOAO 
+            DA SILVA PINTO RAMALHO</strong></font></td>
+          <td width="123" align="left" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="cliente/cpf">000.000.000-00</strong></font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

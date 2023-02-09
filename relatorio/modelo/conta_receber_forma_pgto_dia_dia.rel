@@ -1,0 +1,41 @@
+<relatorio dados="conta_receber_forma_pgto_dia_dia" tamfonte="8" paper_orientation="landscape">
+<apelidos>
+1  nome_data       		tam=5000
+2  linha_nome_data		tam=5000
+3  linha_formato        tam=5000
+4  linha_titulo         tam=5000
+5  linha_valor          tam=5000
+6  linha_total          tam=5000
+7  vencto		        tam=10   fmt=data
+
+14 titulo               tam=5000
+15 subtitulo            tam=5000
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+#14
+#15
+
++------------+#3
+|    Data    |#4
++------------+#3
+</cab_pagina>
+
+<detalhe>
+| #7         |#5
+</detalhe>
+
+<rod_pagina>
++------------+#3
+</rod_pagina>
+
+<rod_relat>
++------------+#3
+| Total      |#6
++------------+#3
+</rod_relat>
+
+<hash>2f1d7145860132919862d09970703b78</hash>
+</relatorio>

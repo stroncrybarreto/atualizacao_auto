@@ -1,0 +1,30 @@
+<relatorio dados="comanda_lote">
+
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18
+3  detalhe            tam=120
+</apelidos>
+
+<cab_pagina>
+#1                                                                                              #2                
+----------------------------------------------------------------------------------------------------------------
+     
+                                          {TIT}LOTES DE COMANDAS
+
+
+</cab_pagina>
+
+<detalhe>
+#3
+</detalhe>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+
+<hash>420258a94aaae3cc61ceaa3fcaef5ce4</hash>
+</relatorio>

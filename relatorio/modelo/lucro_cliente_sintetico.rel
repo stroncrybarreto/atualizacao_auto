@@ -1,0 +1,81 @@
+<relatorio dados="lucro_cliente" ordem="pessoa_nome,grupo_nome">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  data_ini		tam=10	fmt=data
+4  data_fim		tam=10	fmt=data
+5  subtitulo		tam=152	alinha=centro
+
+
+8 qtde			tam=10	fmt=float2
+9 pessoa_nome		tam=100
+10 custo		tam=13	fmt=float2
+11 custo_medio		tam=13	fmt=float2	expr=custo/qtde
+12 venda		tam=13	fmt=float2
+13 venda_medio		tam=13	fmt=float2 	expr=venda/qtde
+14 lucro		tam=13	fmt=float2
+15 margem		tam=6	fmt=float2	
+16 grupo_codigo		tam=5
+17 grupo_nome		tam=35
+
+18 subtotal_qtde		tam=10	func=soma	campo=qtde	fmt=float2			grupo=1
+19 subtotal_custo_medio		tam=13	fmt=float2	func=media	campo=custo_medio	grupo=1
+20 subtotal_custo		tam=13	fmt=float2	func=soma	campo=custo		grupo=1
+21 subtotal_preco_venda		tam=13	fmt=float2	func=media	campo=venda_medio	grupo=1
+22 subtotal_venda		tam=13	fmt=float2	func=soma	campo=venda		grupo=1
+23 subtotal_lucro		tam=13	fmt=float2	func=soma	campo=lucro		grupo=1
+24 subtotal_media_margem	tam=6	fmt=float2	func=media	campo=margem		grupo=1
+
+25 total_qtde		tam=10	fmt=float2	func=soma	campo=qtde			
+26 total_custo_medio	tam=13	fmt=float2	func=media	campo=custo_medio
+27 total_custo		tam=13	fmt=float2	func=soma	campo=custo			
+28 total_preco_venda	tam=13	fmt=float2	func=media	campo=venda_medio		
+29 total_venda		tam=13	fmt=float2	func=soma	campo=venda			
+30 total_lucro		tam=13	fmt=float2	func=soma	campo=lucro			
+31 tota_media_margem	tam=6	fmt=float2	func=media	campo=margem	
+
+
+
+</apelidos>
+
+
+<cab_pagina>
+#1                                                                                                                                     #2             
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+                                                             {TIT}LUCRO POR CLIENTE - SINTÉTICO
+{SUBTIT}#5
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa_nome">
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| #9                                                                                                                                                  |
++--------+-------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+| Código |               Grupo                 | Quantidade | C. Unit. Med. |  Valor Custo  | P. Unit. Med  |  Valor Venda  |  Lucro Bruto | Margem   |
++--------+-------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+</cab_grupo>
+
+<detalhe>
+| #16    | #17                                 | #8         | #11           | #10           | #13           | #12           | #14          | #15    % |
+</detalhe>
+
+<rod_grupo nome="1">
++--------+-------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+| SUBTOTAIS                                    | #18        | #19           | #20           | #21           | #22           | #23          | #24    % |
++----------------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+</rod_grupo>
+
+<rod_relat>
++----------------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+| TOTAIS                                       | #25        | #26           | #27           | #28           | #29           | #30          | #31    % |
++----------------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------+------------+---------------+---------------+---------------+---------------+--------------+----------+
+</rod_pagina>
+
+<hash>2ad469143763fe8e26ff8d3453b4dd44</hash>
+</relatorio>

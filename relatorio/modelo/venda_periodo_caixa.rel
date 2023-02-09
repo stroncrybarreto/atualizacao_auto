@@ -1,0 +1,64 @@
+<relatorio dados="venda_periodo" ordem="caixa">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  titulo1             tam=106   alinha=centro
+4  titulo2             tam=106   alinha=centro
+5  titulo3             tam=106   alinha=centro
+6  data                tam=10    fmt=data
+7  turno	       tam=3
+8  documento           tam=6
+9  numero_nota         tam=6
+10 pessoa_nome         tam=20
+11 forma_pgto          tam=15
+12 vencto              tam=10   fmt=data
+13 valor_pgto          tam=12   fmt=%.02f
+14 valor_venda         tam=12   fmt=%.02f
+15 cont_venda          tam=6    alinha=direita
+16 total_venda         tam=12   fmt=%.02f
+17 conta_debitar       tam=10
+18 conta_nome	       tam=20
+19 doc_pgto            tam=6
+20 xtotal_valor_pgto   tam=12    fmt=%.02f      func=soma       campo=valor_pgto       grupo=1
+21 xtotal_cont_venda   tam=6                    func=contar     campo=cont_venda  
+22 xtotal_pgto_geral   tam=12    fmt=%.02f      func=soma       campo=valor_pgto
+23 xtotal_venda_geral  tam=12    fmt=%.02f      func=soma       campo=valor_venda
+</apelidos>
+<cab_pagina>
+#1                                                                                            #2                 
+-----------------------------------------------------------------------------------------------------------------
+
+                                       RELATORIO DE VENDAS - Agrupados por caixa
+#3
+#4
+#5
+</cab_pagina>
+<cab_grupo nome="1" quebra="data,conta_debitar">
+Caixa: #18                                                                      Data:  #6
++--------+--------+----------------------+-----------------+--------+------------+--------------+--------------+
+| Nr.CF  | Nr.NF  | Cliente              | Forma Pgto      | Nr.Doc |  Vencto    |  Vl Pgto     |   Vl Venda   |
++--------+--------+----------------------+-----------------+--------+------------+--------------+--------------+
+</cab_grupo>
+<detalhe>
+| #8     | #9     | #10                  | #11             | #19    | #12        | #13          | #14          |
+</detalhe>
+<rod_grupo nome="1">
++--------+--------+----------------------+-----------------+---------------------+--------------+--------------+
+| #15     vendas                                           | Total do caixa      | #20          | #16          |
++----------------------------------------------------------+---------------------+--------------+--------------+
+
+</rod_grupo>
+<rod_pagina>
++--------+--------+----------------------+-----------------+--------+------------+--------------+--------------+
+</rod_pagina>
+
+<rod_relat>
++----------------------------------------------------------+---------------------+--------------+--------------+
+| #21     vendas                                           | Total Geral         | #22          | #23          |
++----------------------------------------------------------+---------------------+--------------+--------------+
+</rod_relat>
+
+
+<hash>f6d641bb5f101c5432b45c4d8b6e59ba</hash>
+</relatorio>
+

@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fontes/fontes.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script type="text/javascript">
+    window.onload = function () {
+      data = new Date();
+      dia = data.getDate().toString();
+      mes = (data.getMonth()+1).toString();
+      ano = data.getFullYear();
+      while (dia.length < 2) {
+        dia = "0" + dia;
+      }
+      while (mes.length < 2) {
+        mes = "0" + mes;
+      }
+      document.getElementById("datePicker").value = ano+'-'+mes+'-'+dia;
+    };
+
+    window.onunload = function (){
+      $.getJSON(urlDefault+"Logout?", {}, function(data, status) {
+        alert("success");
+      })
+      .done(function() { alert('Não foi possível encerrar o serviço Dashboard!');
+      })
+      .fail(function() { alert('Serviço Dashboard finalizado! '); 
+      })
+      .always(function() {
+        window.close();
+      });
+    };
+  </script>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <header class="header">
+    <h1 id="empresa" class="heading">Posto Matriz</h1>
+    <div id="dataHora" class="box">27/Nov Terça-Feira</div>
+    <div class="box"><img src="img/linx.png" alt=""></div>
+  </header>
+
+  <main>
+    <section class="main-container">
+      <header class="main-header">
+        <img src="img/logo.png" class="logo" alt="">
+        <h1 class="heading">Estação Clube VIP</h1>
+        <div class="input" id="inputDate" style="display: none">
+          <p>Período de Vigência: <input id="datePicker" type="date" ></p>
+        </div>
+        <!--
+          <div class="input">Período de Vigência: <span>01/04 à 30/04</span><img src="img/bt-ic-date.png" class="ic" alt=""></div>
+        -->
+        <a class="bt" onclick="updatePage()">Atualizar <img src="img/bt-ic-reload.png" class="ic" alt=""></a>
+      </header>
+
+      <div class="row">
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">VOLUME</span>
+                 <h2 id="produtoNome1" class="heading">GASOLINA DT CLEAN</h2>
+              </div>
+              <div id="bodyProduto1" class="body" data-label="META">
+                  <div id="vipList1" class="progress-container"></div>
+                  <div id="msgProduto1" class="heading-msg" style="display: none">
+                    <span class="heading-msg"> Não há dados para gerar este indicador</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">VOLUME</span>
+                 <h2 id="produtoNome2" class="heading">DIESEL ORIGINAL ADITIVADO</h2>
+              </div>
+              <div id="bodyProduto2" class="body" data-label="META">
+                  <div id="vipList2" class="progress-container"></div>
+                  <div id="msgProduto2" class="heading-msg" style="display: none">
+                    <span class="heading-msg"> Não há dados para gerar este indicador</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">VOLUME</span>
+                 <h2 id="produtoNome3" class="heading">GASOLINA OCTAPRO</h2>
+              </div>
+              <div id="bodyProduto3" class="body" data-label="META">
+                  <div id="vipList3" class="progress-container"></div>
+                  <div id="msgProduto3" class="heading-msg" style="display: none">
+                    <span class="heading-msg"> Não há dados para gerar este indicador</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">TRANSAÇÕES KMV</span>
+                 <h2 class="heading">KM de Vantagens</h2>
+              </div>
+              <div class="body" data-label="QUANTIDADE">
+                  <div id="transacoesKmv" class="progress-container"></div>
+                  <div id="msgTransacoesKmv" class="heading-msg" style="display: none">
+                    <span class="heading-msg"> Não há dados para gerar este indicador</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">AVALIAÇÕES</span>
+                 <h2 class="heading">Abastece Aí</h2>
+              </div>
+              <div class="body" data-label="QUANTIDADE">
+                  <div id="abasteceai" class="progress-container"></div>
+                  <div id="msgAbasteceAi" class="heading-msg" style="display: none">
+                    <span class="heading-msg"> Não há dados para gerar este indicador</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+  <div id="divLoader" class="loader">
+    <div class="loading"></div>
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

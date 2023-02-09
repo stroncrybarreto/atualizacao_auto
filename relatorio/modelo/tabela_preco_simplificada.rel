@@ -1,0 +1,49 @@
+<relatorio dados="tabela_preco">
+<apelidos>
+1  rel_posto_nome       tam=30
+2  rel_data_hora        tam=18
+3  grupo_nome 			tam=40
+4  produto_nome         tam=37
+5  unid_med 		    tam=7
+6  produto_codigo		tam=13
+7  preco_unit  		    tam=8 	 fmt=float2
+8  empresa_nome			tam=41 
+9  grupo_codigo 		tam=7
+</apelidos>
+<cab_pagina>
+#1                                  #2        
+----------------------------------------------------
+ 
+           TABELA DE PREÇOS SIMPLIFICADA  
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome">
+
+Empresa: #8
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="grupo_codigo">
++--------------------------------------------------+
+| Grupo: #3                                        |
++---------------------------------------+----------+
+|                Produto                |  Preço   |
++---------------------------------------+----------+
+</cab_grupo>
+<detalhe>
+| #4                                    | #7       |
+</detalhe>
+<rod_grupo nome="2">
++---------------------------------------+----------+
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
++---------------------------------------+----------+
+</rod_pagina>
+
+<hash>f87d22fef48e8ba59ac83755aa653c48</hash>
+</relatorio>

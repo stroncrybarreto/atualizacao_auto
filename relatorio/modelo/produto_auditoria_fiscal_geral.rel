@@ -1,0 +1,203 @@
+<relatorio dados="produto_auditoria_fiscal_geral" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome    tam=60
+2  rel_data_hora     tam=18
+3  titulo_principal  tam=230	alinha=centro
+4  titulo 			 tam=230 expr='AUDITORIA FISCAL DO PRODUTO' alinha=centro 
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                                                                          #2              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#4
+#3
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="produto_auditoria_fiscal_produto" nome="produto_historico" paper_orientation="landscape">
+<apelidos>
+1  codigo         			tam=11 alinha=centro
+2  nome           			tam=30 alinha=esquerda
+3  ult_alteracao			tam=10 fmt=data alinha=centro
+4  ult_alteracao			tam=8  fmt=hora alinha=centro
+5  ult_usuario      		tam=9	alinha=centro
+6  estacao					tam=10 alinha=esquerda
+7  tipo_integracao			tam=7  alinha=esquerda
+8  codigo_ncm				tam=10 alinha=esquerda
+9  cest						tam=9 alinha=esquerda
+10 tributacao 				tam=6  alinha=esquerda
+11 cst_pis_entrada 			tam=3  alinha=esquerda
+12 cst_cofins_entrada 		tam=3  alinha=esquerda
+13 cst_pis 					tam=3  	alinha=esquerda
+14 cst_cofins 				tam=3  alinha=esquerda
+15 natureza_receita 		tam=3 alinha=esquerda
+16 aliquota_ipi         	tam=8  fmt=%.02f alinha=esquerda
+28 para_codigo_ncm			tam=10 alinha=centro
+29 para_cest				tam=9 alinha=centro
+30 para_tributacao 			tam=6  alinha=esquerda
+31 para_cst_pis_entrada 	tam=3  alinha=centro
+32 para_cst_cofins_entrada 	tam=3  alinha=centro
+33 para_cst_pis				tam=3  alinha=centro
+34 para_cst_cofins 			tam=3  alinha=centro
+35 para_natureza_receita 	tam=3 alinha=centro
+36 para_aliquota_ipi        tam=8	fmt=%.02f	alinha=centro
+37 cst_ipi_saida		 	tam=3  alinha=esquerda
+38 para_cst_ipi_saida 		tam=3  alinha=centro
+39 titulo_rel 				tam=224 expr='PRODUTO' alinha=centro
+40 codigo_barra				tam=13 alinha=centro
+
+
+</apelidos>
+
+<cab_relat>
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|#39                                                                                                                                                                                                                                       |
++---------------+-------------------------------+-----------+---------+------------+-----------+--------+---------------------+-------------------+---------------+--------+--------+--------+--------+---------+--------+-----------------+
+|  Cod. barras  |           Descrição           |   Data    |  Hora   |  Usuário   | Terminal  |  Tipo  |         NCM         |        CEST       |     Tribut.   |  PISE  |CofinsE |  PISS  |CofinsS |N.Receita|CST IPIs|    Aliq IPI     |
+|               |                               |           |         |            |           |        |    De    |   Para   |   De    |  Para   |  De   | Para  |De |Para|De |Para|De |Para|De |Para| De |Para|De |Para|   De   |  Para  |
++---------------+-------------------------------+-----------+---------+------------+-----------+--------+---------------------+-------------------+---------------+--------+--------+--------+--------+---------+--------+-----------------+
+</cab_relat>
+<detalhe>
+| #40           |#2                             |#3         |#4       |#5          |#6         |#7      |#8        |#28       |#9       |#29      |#10    |#30    |#11|#31 |#12|#32 |#13|#33 |#14|#34 |#15 |#35 |#37|#38 |#16     |#36     |
+</detalhe>
+<rod_relat>
++---------------+-------------------------------+-----------+---------+------------+-----------+--------+---------------------+-------------------+---------------+--------+--------+--------+--------+---------+--------+-----------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="produto_auditoria_fiscal_tributacao" nome ="tributacao_historico">
+<apelidos>
+1  codigo         		tam=11 alinha=centro
+2  descricao            tam=30
+3  ult_alteracao		tam=10 fmt=data
+4  ult_alteracao		tam=8  fmt=hora
+5  ult_usuario      	tam=9
+6  estacao				tam=10 alinha=centro
+7  cst					tam=4  alinha=centro
+8  csosn				tam=4  alinha=centro
+9  tributacao           tam=5  fmt=%.02f
+10 tributacao_fora      tam=5  fmt=%.02f
+11 reducao_base			tam=5  fmt=%.02f
+12 ecf_ix_nao_tributado tam=3
+17 para_cst				tam=4 alinha=centro
+18 para_csosn			tam=4 alinha=centro
+19 para_tributacao		tam=5 alinha=centro  fmt=%.02f
+20 para_tributacao_fora tam=5 alinha=centro  fmt=%.02f
+21 para_reducao_base	tam=5 alinha=centro  fmt=%.02f
+22 para_ecf_ix_nao_tributacao tam=5 alinha=centro
+</apelidos>
+<cab_relat>
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                      TRIBUTAÇÃO                                                                               |
++-------------+--------------------------------+------------+----------+-----------+------------+-----------+-----------+-------------+-------------+-------------+-------------+
+|   Código    |            Descrição           |    Data    |   Hora   |  Usuário  |  Terminal  |    CST    |   CSOSN   |  Aliq ICMS  |  Aliq Inte  |  %Red Base  |  Ind N Trib |
+|             |                                |            |          |           |            | De  |Para | De  |Para |  De  |Para  |  De  |Para  |  De  |Para  |  De  |Para  |
++-------------+--------------------------------+------------+----------+-----------+------------+-----------+-----------+-------------+-------------+-------------+-------------+
+</cab_relat>
+<detalhe>
+| #1          | #2                             | #3         | #4       | #5        | #6         |#7   |#17  |#8   |#18  |#9    |#19   |#10   |#20   |#11   |#21   |#12   |#22   |
+</detalhe>
+<rod_relat>
++-------------+--------------------------------+------------+----------+-----------+------------+-----------+-----------+-------------+-------------+-------------+-------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="produto_auditoria_fiscal_tributacao_estado" nome ="tributacao_estado_historico">
+<apelidos>
+1  tributacao           tam=11 alinha=centro
+2  descricao            tam=30
+3  ult_alteracao		tam=10 fmt=data
+4  ult_alteracao		tam=8  fmt=hora
+5  ult_usuario      	tam=9
+6  estacao				tam=10 alinha=centro
+7  cst					tam=4  alinha=centro
+8  csosn				tam=4  alinha=centro
+9  aliquota             tam=5  fmt=%.02f
+10 reducao_base			tam=5  fmt=%.02f
+11 de					tam=3 alinha=centro
+12 para					tam=3 alinha=centro
+</apelidos>
+<cab_relat>
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                        TRIBUTAÇÃO POR ESTADO                                                          |
++-------------+--------------------------------+------------+----------+-----------+------------+---------+--------+-----------+-----------+-----+------+
+|   Código    |            Descrição           |    Data    |   Hora   |  Usuário  |  Terminal  |   CST   | CSOSN  | Aliq ICMS | %Red Base | De  | Para |
++-------------+--------------------------------+------------+----------+-----------+------------+---------+--------+-----------+-----------+------------+
+</cab_relat>
+<detalhe>
+| #1          | #2                             | #3         | #4       | #5        | #6         | #7      | #8     | #9        | #10       | #11 | #12  | 
+</detalhe>
+<rod_relat>
++-------------+--------------------------------+------------+----------+-----------+------------+---------+--------+-----------+-----------+------------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="produto_auditoria_fiscal_produto_tributacao" nome ="produto_tributacao_historico">
+<apelidos>
+1  codigo         		tam=11 alinha=centro
+2  nome           		tam=30
+3  ult_alteracao		tam=10 fmt=data
+4  ult_alteracao		tam=8  fmt=hora
+5  ult_usuario      	tam=9
+6  estacao				tam=10 alinha=centro
+7  tributacao 			tam=6  alinha=centro
+8  de					tam=3 alinha=centro
+9  para					tam=3 alinha=centro
+</apelidos>
+<cab_relat>
+
++---------------------------------------------------------------------------------------------------------------------+
+|                                        PRODUTO COM TRIBUTAÇÃO POR ESTADO                                            |
++-------------+--------------------------------+------------+----------+-----------+------------+--------+-----+------+
+|   Código    |            Descrição           |    Data    |   Hora   |  Usuário  |  Terminal  | Tribut | De  | Para |
++-------------+--------------------------------+------------+----------+-----------+------------+--------+-----+------+
+</cab_relat>
+<detalhe>
+| #1          | #2                             | #3         | #4       | #5        | #6         | #7     | #8  | #9   | 
+</detalhe>
+<rod_relat>
++-------------+--------------------------------+------------+----------+-----------+------------+--------+-----+------+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="produto_auditoria_fiscal_produto_cfop" nome ="produto_cfop_historico">
+<apelidos>
+1  codigo         		tam=11 alinha=centro
+2  nome           		tam=30
+3  ult_alteracao		tam=10 fmt=data
+4  ult_alteracao		tam=8  fmt=hora
+5  ult_usuario      	tam=9
+6  estacao				tam=10 alinha=centro
+7  natureza 			tam=15 alinha=centro
+8  cfop                 tam=5  alinha=centro  
+9  de					tam=3  alinha=centro
+10 uf					tam=3  alinha=centro
+11 para_cfop			tam=5  alinha=centro
+13 codigo_barra			tam=13 alinha=centro
+</apelidos>
+<cab_relat>
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                           PRODUTO COM CFOP                                                                     |
++---------------+--------------------------------+------------+----------+-----------+------------+-----------------+---------------+-----+------+
+|  Cod. barras  |            Descrição           |    Data    |   Hora   |  Usuário  |  Terminal  |    Natureza     |      CFOP     |   Estado   |
+|               |                                |            |          |           |            |                 |  De:  | Para: | De  | Para |
++---------------+--------------------------------+------------+----------+-----------+------------+-----------------+---------------+-----+------+
+</cab_relat>
+<detalhe>
+| #13           | #2                             | #3         | #4       | #5        | #6         | #7              | #8    | #11   | #9  | #10  | 
+</detalhe>
+<rod_relat>
++---------------+--------------------------------+------------+----------+-----------+------------+-----------------+---------------+-----+------+
+</rod_relat>
+</subrelat>
+
+
+
+<hash>dc6a1ff7393ac6a8efe8a37f67038ac1</hash>
+</relatorio>

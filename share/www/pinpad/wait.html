@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>AUTOSYSTEM</title>
+	</head>
+	<body>
+		<form action="/sitef/" method="POST" tal:condition="sitef">
+			<table border="0">
+				<tr>
+					<td align="center">Não foi possível imprimir o cupom fiscal!</td>
+					<td align="center">Espere alguns instantes e tente novamente.</td>
+				</tr>
+				<p>
+				<tr>
+					<td colspan="4" align="center" valign="middle" height="10">
+						<input type="submit" value="Tentar Novamente">
+						<a href="/venda/">Cancelar</a>
+					</td>
+				</tr>
+				<input type="hidden" tal:repeat="info venda_info" tal:attributes="name info/name;value info/value">
+			</table>
+		</form>
+		<form action="/done/" method="POST" tal:condition="done">
+			<table border="0">
+				<tr>
+					<td align="center">Não foi possível imprimir o cupom fiscal!</td>
+					<td align="center">Espere alguns instantes e tente novamente.</td>
+				</tr>
+				<p>
+				<tr>
+					<td colspan="4" align="center" valign="middle" height="10">
+						<input type="submit" value="Tentar Novamente">
+						<a href="/venda/">Cancelar</a>
+					</td>
+				</tr>
+				<input type="hidden" tal:repeat="info venda_info" tal:attributes="name info/name;value info/value">
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<layout>
+  <nome>inventario</nome>
+  <sessao>
+    <nome>inventario</nome>
+    <registro><inicio>1</inicio><fim>8</fim><chave>data</chave><tipo>text</tipo><padrao></padrao><descricao>ddmmaaaa</descricao></registro>
+    <registro><inicio>9</inicio><fim>12</fim><chave>mes_ano</chave><tipo>mmaa</tipo><padrao></padrao><descricao>mmaa</descricao></registro>
+    <registro><inicio>13</inicio><fim>16</fim><chave>mes_ano</chave><tipo>mmaa</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>17</inicio><fim>36</fim><chave>codigo</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>37</inicio><fim>37</fim><chave>situacao_prod</chave><tipo>integer</tipo><padrao>1</padrao><descricao>verif tabela</descricao></registro>
+    <registro><inicio>38</inicio><fim>51</fim><chave>cnpj_terceiro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>52</inicio><fim>71</fim><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>72</inicio><fim>73</fim><chave>uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>74</inicio><fim>94</fim><chave>quantidade</chave><tipo>float_point_6</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>95</inicio><fim>111</fim><chave>preco_unit</chave><tipo>float_point_4</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>112</inicio><fim>128</fim><chave>valor</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>129</inicio><fim>145</fim><chave>icms_recuperar</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>146</inicio><fim>205</fim><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>206</inicio><fim>285</fim><chave>descricao_prod</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>286</inicio><fim>289</fim><chave>grupo_prod</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>290</inicio><fim>299</fim><chave>classif_fiscal</chave><tipo>integer</tipo><padrao></padrao><descricao>ncm</descricao></registro>
+    <registro><inicio>300</inicio><fim>329</fim><chave>nome_fantasia</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>330</inicio><fim>332</fim><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>333</inicio><fim>362</fim><chave>gp_nome</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

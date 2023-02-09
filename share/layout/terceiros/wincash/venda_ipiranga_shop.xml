@@ -1,0 +1,36 @@
+<layout>
+  <nome>venda_ipiranga_shop</nome>
+  <sessao>
+    <nome>header</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_header</chave><tipo>text</tipo><padrao>H</padrao><descricao>fixo H</descricao></registro>
+    <registro><inicio>2</inicio><fim>42</fim><chave>razao_social</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>42</inicio><fim>50</fim><chave>cod_ponto_venda</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>50</inicio><fim>58</fim><chave>cod_componente</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>58</inicio><fim>66</fim><chave>cod_filial</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>66</inicio><fim>74</fim><chave>cod_estacao</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>74</inicio><fim>82</fim><chave>cod_ipiranga_shop</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+  </sessao>
+  <sessao>
+    <nome>produto</nome>
+    <registro><inicio>1</inicio><fim>9</fim><chave>cod_filial</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>9</inicio><fim>22</fim><chave>codigo</chave><tipo>integer</tipo><padrao /><descricao>cod produto vendido</descricao></registro>
+    <registro><inicio>22</inicio><fim>32</fim><chave>qtde</chave><tipo>float_3</tipo><padrao /><descricao>qtde vendida</descricao></registro>
+    <registro><inicio>32</inicio><fim>42</fim><chave>preco_unit</chave><tipo>float_3</tipo><padrao /><descricao>valor unit vendido</descricao></registro>
+    <registro><inicio>42</inicio><fim>50</fim><chave>data_venda</chave><tipo>date4y</tipo><padrao /><descricao>data da venda</descricao></registro>
+    <registro><inicio>50</inicio><fim>53</fim><chave>operador</chave><tipo>integer</tipo><padrao /><descricao>operador realizou venda</descricao></registro>
+    <registro><inicio>53</inicio><fim>59</fim><chave>cupom_fiscal</chave><tipo>integer</tipo><padrao /><descricao>numero cupom fiscal</descricao></registro>
+    <registro><inicio>59</inicio><fim>61</fim><chave>numero_item</chave><tipo>integer</tipo><padrao /><descricao>numero item cupom fiscal</descricao></registro>
+    <registro><inicio>61</inicio><fim>69</fim><chave>hora_venda</chave><tipo>hora_branco</tipo><padrao /><descricao>hora realizada a venda</descricao></registro>
+    <registro><inicio>69</inicio><fim>79</fim><chave>cmv</chave><tipo>float_3</tipo><padrao /><descricao>valor de cmv do produto</descricao></registro>
+    <registro><inicio>79</inicio><fim>89</fim><chave>ultimo_custo</chave><tipo>float_3</tipo><padrao /><descricao>valor custo produto</descricao></registro>
+    <registro><inicio>89</inicio><fim>99</fim><chave>estoque_produto</chave><tipo>float_3</tipo><padrao /><descricao>saldo no momento venda</descricao></registro>
+    <registro><inicio>99</inicio><fim>100</fim><chave>tipo_venda</chave><tipo>integer</tipo><padrao /><descricao>identifica tipo de venda 0=Pista 1=Jetoil</descricao></registro>
+    <registro><inicio>100</inicio><fim>110</fim><chave>custo_medio</chave><tipo>float_3</tipo><padrao /><descricao>valor unitario produto</descricao></registro>
+    <registro><inicio>110</inicio><fim>120</fim><chave>numero_pdv</chave><tipo>text</tipo><padrao /><descricao>numero do pdv</descricao></registro>
+    <registro><inicio>120</inicio><fim>123</fim><chave>vendedor</chave><tipo>text</tipo><padrao /><descricao>vendedor do produto</descricao></registro>
+    <registro><inicio>123</inicio><fim>126</fim><chave>vendedor_vip</chave><tipo>text</tipo><padrao /><descricao>vendedor venda vip</descricao></registro>
+    <registro><inicio>126</inicio><fim>127</fim><chave>situacao_tributaria</chave><tipo>text</tipo><padrao /><descricao>Situacao trib. do produto no momento da venda</descricao></registro>
+    <registro><inicio>127</inicio><fim>137</fim><chave>tributacao</chave><tipo>float_2</tipo><padrao /><descricao>Aliquota do produto no momento da venda</descricao></registro>
+    <registro><inicio>137</inicio><fim>150</fim><chave>cpf_cnpj_adquirente</chave><tipo>text</tipo><padrao /><descricao>CPF/CNPJ do adquirente</descricao></registro>
+  </sessao>
+</layout>

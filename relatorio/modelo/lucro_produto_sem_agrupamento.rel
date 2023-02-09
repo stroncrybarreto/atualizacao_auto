@@ -1,0 +1,59 @@
+<relatorio dados="lucro_produto" ordem="empresa_nome,produto_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	            tam=60
+2  rel_data_hora	            tam=18
+3  data_ini			            tam=10	fmt=data
+4  data_fim			            tam=10	fmt=data
+5  subtitulo		            tam=157	alinha=centro
+6  grupo_nome		            tam=40
+7  produto_codigo	            tam=6   alinha=centro
+8  produto_nome		            tam=35
+9  qtde				            tam=10	fmt=float2
+11 venda			            tam=13	fmt=float2
+12 custo			            tam=13	fmt=float4
+13 lucro			            tam=12	fmt=float2
+14 total_qtde 					tam=10	fmt=float2	func=soma	campo=qtde
+21 margem			            tam=9	fmt=float2
+22 subtotal_margem	            tam=8	fmt=float2
+24 subtitulo1		            tam=157	alinha=centro
+25 tributacao		            tam=10	fmt=float2		alinha=direita
+26 empresa_nome		            tam=70
+32 total_margem					tam=9	fmt=float2
+33 descricao_grupo	            tam=70
+34 valor_desconto	            tam=10	fmt=float2
+35 lucro_liq                    tam=12	fmt=float2
+40 codigo_empresa               tam=7   alinha=centro
+41 reduzido_empresa				tam=50	alinha=esquerda
+43 total_valor_custo			tam=13	fmt=float4	func=soma	campo=custo		
+44 total_venda					tam=13	fmt=float2	func=soma	campo=venda		
+45 total_lucro					tam=12	fmt=float2	func=soma	campo=lucro		
+47 total_lucro_liq				tam=11	fmt=float2	func=soma	campo=lucro_liq
+99 titulo           tam=159  expr="VENDAS E LUCRO COM PRODUTOS"  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                             #2             
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+#99
+#5
+#24
+                                                                                                                                                              
++---------+--------+-------------------------------------+------------+------------+---------------+---------------+--------------+------------+--------------+
+| Empresa | Código |               Produto               | Tributação | Quantidade |  Valor custo  |  Valor venda  |    Lucro     |  Margem(*) |  Lucro líq.  |
++---------+--------+-------------------------------------+------------+------------+---------------+---------------+--------------+------------+--------------+
+</cab_pagina>
+
+<detalhe>
+| #40     | #7     | #8                                  | #25      % | #9         | #12           | #11           | #13          | #21      % | #35          |
+</detalhe>
+<rod_relat>
++---------+--------+-------------------------------------+------------+------------+---------------+---------------+--------------+------------+--------------+
+
+
++---------------------------------------------------------------------+------------+---------------+---------------+--------------+------------+--------------+
+| Total                                                               | #14        | #43           | #44           | #45          | #32      % |  #47         |
++---------------------------------------------------------------------+------------+---------------+---------------+--------------+------------+--------------+
+</rod_relat>
+
+<hash>925af05993bcc1e22d92ff5dfcdbe349</hash>
+</relatorio>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>clientes_fornecedores</nome>
+
+  <sessao>
+	<nome>clientes_fornecedores</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>"</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>tipo_operacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Tipo de operação (A,E,I)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>5</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>6</inicio>
+      <fim>13</fim>
+      <chave>codigo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código reduzido do fornecedor</descricao>
+    </registro>
+
+    <registro>
+      <inicio>14</inicio>
+      <fim>16</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>17</inicio>
+      <fim>17</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Tipo (F/C/A) fornecedor / cliente ou ambos</descricao>
+    </registro>
+
+    <registro>
+      <inicio>18</inicio>
+      <fim>20</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>21</inicio>
+      <fim>39</fim>
+      <chave>nome_reduzido</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome de fantasia</descricao>
+    </registro>
+
+    <registro>
+      <inicio>40</inicio>
+      <fim>42</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>89</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Razão social</descricao>
+    </registro>
+
+    <registro>
+      <inicio>90</inicio>
+      <fim>92</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>93</inicio>
+      <fim>139</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Endereço</descricao>
+    </registro>
+
+    <registro>
+      <inicio>140</inicio>
+      <fim>142</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>143</inicio>
+      <fim>173</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Bairro</descricao>
+    </registro>
+
+    <registro>
+      <inicio>174</inicio>
+      <fim>176</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>177</inicio>
+      <fim>178</fim>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Estado UF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>179</inicio>
+      <fim>181</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>182</inicio>
+      <fim>187</fim>
+      <chave>cod_municipio</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código fiscal do município</descricao>
+    </registro>
+
+    <registro>
+      <inicio>188</inicio>
+      <fim>190</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>191</inicio>
+      <fim>221</fim>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome do município</descricao>
+    </registro>
+
+    <registro>
+      <inicio>222</inicio>
+      <fim>224</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>225</inicio>
+      <fim>233</fim>
+      <chave>cep</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>CEP do bairro / Rua</descricao>
+    </registro>
+
+    <registro>
+      <inicio>234</inicio>
+      <fim>236</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>237</inicio>
+      <fim>240</fim>
+      <chave>ddd</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Número do DDD</descricao>
+    </registro>
+
+    <registro>
+      <inicio>241</inicio>
+      <fim>243</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>244</inicio>
+      <fim>251</fim>
+      <chave>fone</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Telefone</descricao>
+    </registro>
+
+    <registro>
+      <inicio>252</inicio>
+      <fim>254</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>255</inicio>
+      <fim>262</fim>
+      <chave>fax</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Fax</descricao>
+    </registro>
+
+    <registro>
+      <inicio>263</inicio>
+      <fim>265</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>266</inicio>
+      <fim>273</fim>
+      <chave>telex</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Telex</descricao>
+    </registro>
+
+    <registro>
+      <inicio>274</inicio>
+      <fim>276</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>277</inicio>
+      <fim>281</fim>
+      <chave>cx_postal</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Cx. Postal</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>282</inicio>
+      <fim>284</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>285</inicio>
+      <fim>285</fim>
+      <chave>agropecuario</chave>
+      <tipo>string</tipo>
+      <padrao>N</padrao>
+      <descricao>Agropecuário (S/N)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>286</inicio>
+      <fim>288</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>289</inicio>
+      <fim>306</fim>
+      <chave>cpf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Número do C.G.C.</descricao>
+    </registro>
+
+    <registro>
+      <inicio>307</inicio>
+      <fim>309</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>310</inicio>
+      <fim>327</fim>
+      <chave>inscr_est</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Número da inscrição estadual</descricao>
+    </registro>
+
+    <registro>
+      <inicio>328</inicio>
+      <fim>330</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>331</inicio>
+      <fim>336</fim>
+      <chave>conta_fornecedor</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Conta contábil do fornecedor</descricao>
+    </registro>
+
+    <registro>
+      <inicio>337</inicio>
+      <fim>339</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>340</inicio>
+      <fim>345</fim>
+      <chave>conta_cliente</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Conta contábil do cliente</descricao>
+    </registro>
+
+    <registro>
+      <inicio>346</inicio>
+      <fim>348</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>349</inicio>
+      <fim>363</fim>
+      <chave>inscr_municipal</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Número da inscrição municipal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>364</inicio>
+      <fim>366</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>367</inicio>
+      <fim>367</fim>
+      <chave>destacar_icms</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Regime ICMS retido fonte</descricao>
+    </registro>
+
+    <registro>
+      <inicio>368</inicio>
+      <fim>368</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>"</padrao>
+      <descricao></descricao>
+    </registro>
+
+  </sessao>
+
+</layout>

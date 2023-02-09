@@ -1,0 +1,38 @@
+<layout>
+  <nome>terceiros</nome>
+  <sessao>
+    <nome>terceiros</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave>registro</chave><tipo></tipo><padrao>TRC</padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>8</fim><chave>ordem</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>9</inicio><fim>10</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>11</inicio><fim>11</fim><chave>tipo</chave><tipo>integer</tipo><padrao></padrao><descricao>0 - Juridica 1 - Fisica 2 - Livre</descricao></registro>
+    <registro><inicio>12</inicio><fim>25</fim><chave>cpf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>26</inicio><fim>85</fim><chave>nome</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>86</inicio><fim>105</fim><chave>nome_reduzido</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>106</inicio><fim>115</fim><chave>tipo_logradouro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>116</inicio><fim>175</fim><chave>logradouro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>176</inicio><fim>185</fim><chave>numero</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>186</inicio><fim>205</fim><chave>complemento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>206</inicio><fim>214</fim><chave>cep</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>215</inicio><fim>244</fim><chave>bairro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>245</inicio><fim>274</fim><chave>cidade</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>275</inicio><fim>276</fim><chave>estado</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>277</inicio><fim>284</fim><chave>data_nasc</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>285</inicio><fim>289</fim><chave>fone_ddd</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>290</inicio><fim>299</fim><chave>fone</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>300</inicio><fim>304</fim><chave>fax_ddd</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>305</inicio><fim>314</fim><chave>fax</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>315</inicio><fim>364</fim><chave>email</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>365</inicio><fim>424</fim><chave>www</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>425</inicio><fim>444</fim><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>445</inicio><fim>464</fim><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>465</inicio><fim>474</fim><chave>cnae</chave><tipo>text</tipo><padrao></padrao><descricao>cod atividade economica</descricao></registro>
+    <registro><inicio>475</inicio><fim>492</fim><chave>rg</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>493</inicio><fim>497</fim><chave>rg_orgao_exp</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>498</inicio><fim>499</fim><chave>rg_estado_exp</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>500</inicio><fim>507</fim><chave>rg_data_exp</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>508</inicio><fim>508</fim><chave>sexo</chave><tipo>text</tipo><padrao></padrao><descricao>0 - Masc 1 - Fem</descricao></registro>
+    <registro><inicio>509</inicio><fim>512</fim><chave>estado_civil</chave><tipo>text</tipo><padrao></padrao><descricao>0 - Solteiro 1 - Casado 2 - Amasiado 3 - Desquitado 4 - Divorciado 5 - Viúvo</descricao></registro>
+    <registro><inicio>513</inicio><fim>602</fim><chave>filler</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

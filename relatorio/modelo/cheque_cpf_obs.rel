@@ -1,0 +1,81 @@
+<relatorio dados="relacao_cheque" ordem="empresa_nome,cpf">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=16
+3  titulo1			tam=132	alinha=centro
+4  titulo2			tam=132	alinha=centro
+5  empresa_codigo	tam=2
+6  empresa_nome		tam=60
+7  data				tam=10 	fmt=data alinha=centro
+8  turno			tam=3 	fmt=%d   alinha=centro
+9  banco			tam=5  alinha=centro
+10 documento		tam=10 alinha=centro
+11 vencto			tam=10 	fmt=data  alinha=centro
+12 titular			tam=23
+13 valor			tam=12 	fmt=%.02f alinha=direita
+14 data_baixa		tam=10 	fmt=data
+15 subtotal			tam=12 	fmt=%.02f alinha=direita
+16 total			tam=12 	fmt=%.02f alinha=direita
+17 count_empresa	tam=74
+18 count_total		tam=74
+19 obs				tam=22
+20 placa			tam=10 alinha=centro
+21 cpf				tam=20 
+23 dias_atraso          tam=4
+24 cheque_alinea		tam=3  
+25 alinea_nome			tam=60
+26 media_atraso         tam=6  fmt=float2
+27 total_media_atraso   tam=6  fmt=float2
+28 situacao             tam=30
+29 conta_baixa          tam=9  alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                  #2                
+------------------------------------------------------------------------------------------------------------------------------------
+ 
+#3
+#4
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome">
+
++----------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5 - #6                                                                                                                 |
++----------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,cpf">
+| CPF: #21                                                                                                                         |
++------------+-----+-------+------------+------------+-------------------------+--------------+------------+-----------------------+
+|    Data    | Tur.| Banco | Nr. cheque | Vencimento |    Titular do cheque    |    Valor     |   Baixa    |      Observação       |
++------------+-----+-------+------------+------------+-------------------------+--------------+------------+-----------------------+
+</cab_grupo>
+
+<detalhe>
+| #7         | #8  | #9    | #10        | #11        | #12                     | #13          | #14        | #19                   |
+</detalhe>
+
+<rod_grupo nome="1">
+
+
+</rod_grupo>
+
+<rod_grupo nome="2">
++------------+-----+-------+------------+------------+-------------------------+--------------+------------+-----------------------+
+| #17                                                                          | #15          |                                    |
++------------------------------------------------------------------------------+--------------+------------------------------------+
+</rod_grupo>
+
+<rod_pagina>
++------------+-----+-------+------------+------------+-------------------------+--------------+------------+-----------------------+
+</rod_pagina>
+
+<rod_relat>
+
++------------------------------------------------------------------------------+--------------+------------------------------------+
+| #18                                                                          | #16          |                                    |
++------------------------------------------------------------------------------+--------------+------------------------------------+
+</rod_relat>
+
+<hash>0289c3942b5265ab859db0fc8663f0c8</hash>
+</relatorio>

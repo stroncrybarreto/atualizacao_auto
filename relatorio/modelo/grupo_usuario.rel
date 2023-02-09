@@ -1,0 +1,123 @@
+<relatorio dados="grupo_usuario" ordem="nome">
+<apelidos>
+1  rel_posto_nome	tam=40	
+2  rel_data_hora	tam=18
+3  titulo			tam=112		alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                              #2               
+----------------------------------------------------------------------------------------------------------------
+
+                          R E L A T Ó R I O   P E R M I S S Õ E S   D E   A C E S S O                       
+      
+#3
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="grupo_usuario_config" ordem="nome">
+<apelidos>
+1  nome             tam=59      alinha=esquerda
+2  incluir          tam=6       alinha=centro
+3  excluir          tam=5       alinha=centro
+4  alterar          tam=6       alinha=centro
+5  visualizar       tam=10      alinha=centro
+6  permite          tam=7       alinha=centro
+7  principal		tam=90		alinha=esquerda
+</apelidos>
+<cab_relat>
+
+
+
+                                          C O N F I G U R A Ç Õ E S 
+
+</cab_relat>
+<cab_grupo nome="1" quebra="principal">
++----------------------------------------------------------------------------------------------------------------+
+| Grupo: #7                                                                                                      |
++------------------------------------------------------------+---------+--------+---------+------------+---------+
+| Tópico                                                     | Incluir | Exluir | Alterar | Visualizar | Permite |
++------------------------------------------------------------+---------+--------+---------+------------+---------+
+</cab_grupo>
+
+<detalhe>
+| #1                                                         | #2      | #3     | #4      | #5         | #6      | 
+</detalhe>
+
+<rod_grupo nome="1">
++------------------------------------------------------------+---------+--------+---------+------------+---------+
+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="grupo_usuario_movto" ordem="nome">
+<apelidos>
+1  nome             tam=66      alinha=esquerda
+2  incluir          tam=6       alinha=centro
+3  excluir          tam=5       alinha=centro
+4  alterar          tam=6       alinha=centro
+5  visualizar       tam=10      alinha=centro
+6  teste			tam=1
+</apelidos>
+<cab_relat>
+
+
+
+                                 M O T I V O S   D E   M O V I M E N T A Ç Ã O 
+
+</cab_relat>
+<cab_grupo nome="1" quebra="teste">
++----------------------------------------------------------------------+---------+--------+---------+------------+
+| Motivo                                                               | Incluir | Exluir | Alterar | Visualizar |
++----------------------------------------------------------------------+---------+--------+---------+------------+
+</cab_grupo>
+
+<detalhe>
+| #1                                                                   | #2      | #3     | #4      | #5         |
+</detalhe>
+
+<rod_grupo nome="1">
++----------------------------------------------------------------------+---------+--------+---------+------------+
+</rod_grupo>
+</subrelat>
+
+<subrelat dados="grupo_usuario_deposito" ordem="nome">
+<apelidos>
+1  codigo			tam=6		alinha=direita
+2  nome             tam=68      alinha=esquerda
+3  incluir          tam=6       alinha=centro
+4  excluir          tam=5       alinha=centro
+5  alterar          tam=6       alinha=centro
+6  teste			tam=1
+</apelidos>
+<cab_relat>
+
+
+
+
+                                             D E P Ó S I T O S 
+
+</cab_relat>
+<cab_grupo nome="1" quebra="teste">
++--------+--------------------------------------------------------------------------+---------+--------+---------+
+| Código | Depósito                                                                 | Incluir | Exluir | Alterar |
++--------+--------------------------------------------------------------------------+---------+--------+---------+
+</cab_grupo>
+
+<detalhe>
+| #1     | #2                                                                       | #3      | #4     | #5      |
+</detalhe>
+
+<rod_grupo nome="1">
++-----------------------------------------------------------------------------------+---------+--------+---------+
+</rod_grupo>
+</subrelat>
+
+<rod_pagina>
+</rod_pagina>
+
+
+<hash>54b1020810ffd615fa204abcecd09435</hash>
+</relatorio>

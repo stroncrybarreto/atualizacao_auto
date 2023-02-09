@@ -1,0 +1,44 @@
+<relatorio dados="pessoa_grupo">
+<apelidos>
+1  rel_posto_nome	tam=40
+2  rel_data_hora	tam=18
+3  grupo_nome		tam=40
+4  pessoa_codigo	tam=6	fmt=%d
+5  pessoa_nome		tam=40
+6  pessoa_fone		tam=20
+7  cont_pessoa		tam=4	fmt=%d
+</apelidos>
+
+<cab_pagina>
+#1                                                        #2
+----------------------------------------------------------------------------
+
+                         RELATORIO DE CLIENTES
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="grupo">
++--------------------------------------------------------------------------+
+| Grupo: #3                                                                |
++--------+------------------------------------------+----------------------+
+| Codigo | Nome                                     | Fone                 |
++--------+------------------------------------------+----------------------+
+</cab_grupo>
+
+<detalhe>
+| #4     | #5                                       | #6                   |
+</detalhe>
+
+<rod_grupo nome="1">
++--------+------------------------------------------+----------------------+
+| #7   pessoas neste grupo                                                 |
++--------------------------------------------------------------------------+
+
+</rod_grupo>
+
+<rod_pagina>
++--------+------------------------------------------+----------------------+
+</rod_pagina>
+
+<hash>c0a5b3d4446ff41fcd4453618eae979e</hash>
+</relatorio>

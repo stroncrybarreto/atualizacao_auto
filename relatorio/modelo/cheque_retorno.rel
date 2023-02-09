@@ -1,0 +1,47 @@
+<relatorio dados="cheque_retorno" ordem="motivo">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18  alinha=direita
+3  arquivo		        tam=20  alinha=esquerda
+4  banco				tam=3  alinha=esquerda
+5  data					tam=10  alinha=direita fmt=data
+6  nr_cheque	        tam=10  alinha=esquerda
+7  nome_conta_corrente  tam=40  alinha=esquerda
+9  valor				tam=13  alinha=esquerda  fmt=%.02f
+10 total_valor		    tam=13  alinha=esquerda  func=soma campo=valor grupo=1 fmt=%.02f
+11 motivo				tam=40
+</apelidos>
+<cab_pagina>
+#1                                                                                   #2
+-------------------------------------------------------------------------------------------------------
+
+                                           RETORNO DE CHEQUE
+
+ Banco: #4   #7
+ Arquivo: #3
+</cab_pagina>
+<cab_grupo nome="1" quebra="motivo">
+ #11                                                                        
++------------------+------------+---------------------------------------------------------------------+
+|    Nr. Cheque    |    Data    | Valor                                                               |
++------------------+------------+---------------------------------------------------------------------+
+</cab_grupo>
+
+<detalhe>
+|  #6              | #5         | #9                                                                  |
+</detalhe>
+
+<rod_grupo nome="1">
++------------------+------------+---------------------------------------------------------------------+
+| Total de Cheques   #10                                                                              |
++-----------------------------------------------------------------------------------------------------+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<rod_relat>
+</rod_relat>
+
+<hash>2468b9d7a23acbe388946b787c020c92</hash>
+</relatorio>

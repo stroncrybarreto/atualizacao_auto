@@ -1,0 +1,52 @@
+<relatorio dados="posicao_cobranca">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18 
+3  titulo1             tam=130 alinha=centro
+4  titulo2             tam=130 alinha=centro
+5  sub_titulo1         tam=95
+6  sub_titulo2         tam=95
+7  sub_titulo3         tam=95
+8  sub_titulo4         tam=95
+9  nome                tam=36
+10  row                tam=95
+11 total               tam=95
+12 agrupamento		   tam=36  alinha=centro
+</apelidos>
+
+
+<cab_pagina>
+<cab_grupo nome="1" quebra="empresa_quebra">
+
+#1                                                                                                                #2                 
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+#3
+#4
+
++--------------------------------------+-#7
+|                                      | #5
+| #12                                  +-#8
+|                                      | #6
++--------------------------------------+-#7
+</cab_grupo>
+</cab_pagina>
+
+<detalhe>
+| #9                                   | #10
+</detalhe>
+<rod_relat>
+<rod_grupo nome="1">
++--------------------------------------+-#7
+| Total                                | #11
++--------------------------------------+-#7
+</rod_grupo>
+</rod_relat>
+
+<rod_pagina>
++--------------------------------------+-#7
+</rod_pagina>
+
+<hash>06f3942916ffa7d7d906288fd22150d8</hash>
+</relatorio>

@@ -1,0 +1,68 @@
+<relatorio dados="abastec_cbc" ordem="data,bico,hora,codigo">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=16
+3  bico             tam=4
+4  codigo           tam=8                   alinha=centro
+5  quantidade       tam=10   fmt=%.03f      alinha=direita
+6  preco_unit       tam=12   fmt=float3     alinha=direita
+7  valor            tam=13   fmt=float3     alinha=direita
+8  hora             tam=14                  alinha=centro
+9  encerrante       tam=15   fmt=%.02f      alinha=direita
+10 enc_calc         tam=15   fmt=%.02f      alinha=direita
+11 diferenca        tam=11   fmt=%.02f      alinha=direita
+12 bico_hexa        tam=4                   alinha=esquerda
+13 produto_nome     tam=33                  alinha=esquerda
+14 empresa_nome     tam=30                  alinha=esquerda
+15 subt_qtd         tam=10   fmt=%.03f      alinha=direita
+16 subt_val         tam=13   fmt=float3     alinha=direita     func=soma  campo=valor        grupo=1
+17 subt_enc_bomba   tam=15   fmt=%.03f      alinha=direita     
+18 subt_dif         tam=11   fmt=%.03f      alinha=direita     func=soma  campo=diferenca    grupo=1
+19 titulo_bico      tam=122					alinha=centro   
+20 total_qtd        tam=10   fmt=%.03f      alinha=direita     func=soma  campo=quantidade 
+21 total_val        tam=13   fmt=float3     alinha=direita     func=soma  campo=valor      
+22 total_enc        tam=15   fmt=%.03f      alinha=direita     func=soma  campo=subt_enc_bomba
+23 total_dif        tam=11   fmt=%.03f      alinha=direita     func=soma  campo=diferenca
+24 data             tam=10   fmt=data       alinha=esquerda
+25 dif_real			tam=15	 fmt=%.02f		expr=diferenca-(subt_qtd*-1)
+26 frentista_nome	tam=30
+27 rfid_cartao		tam=15
+28 rfid_cliente		tam=15
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                         #2              
+---------------------------------------------------------------------------------------------------------------------------
+
+#19
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="data,bico">
++-------------------------------------------------------------------------------------------------------------------------+
+| Data: #24              Bico: #3             Código hexa: #12               Produto: #13                                 |
++----------+----------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+|  Código  |   Data/Hora    | Quantidade |  Preço unit. |     Valor     | Enc. calculado  |    Enc. bomba   |  Diferença  |
++----------+----------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+</cab_grupo>
+<detalhe>
+| #4       | #8             | #5         | #6           | #7            | #10             | #9              | #11         |
+</detalhe>
+<rod_grupo nome="1">
++----------+----------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+| Subtotal                  | #15        |              | #16           |                 | #25             | #11         | 
++---------------------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<rod_relat>
+
++---------------------------+------------+--------------+---------------+-------------------------------------------------+
+| Total                     | #20        |              | #21           |                                                 |
++---------------------------+------------+--------------+---------------+-------------------------------------------------+
+</rod_relat>
+
+
+<hash>ff03ec2d2e266abb36e8a87aedca8d3b</hash>
+</relatorio>

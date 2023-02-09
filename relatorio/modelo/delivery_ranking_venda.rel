@@ -1,0 +1,46 @@
+<relatorio dados="delivery_ranking_venda" ordem="ordem desc">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18
+3  titulo              tam=107  alinha=centro
+4  nome                tam=35
+5  quantidade_pedido   tam=12  fmt=float
+6  nr_itens            tam=11  fmt=float
+7  quantidade_produto  tam=12  fmt=float
+8  valor_pedido        tam=11  fmt=float2
+9  perc_ranking        tam=7   fmt=float2
+10 count_nome          tam=4   fmt=float   func=contar campo=nome
+11 titulo_total        tam=27
+12 tot_qtd_pedido      tam=12  fmt=float  func=soma campo=quantidade_pedido
+13 tot_nr_itens        tam=11  fmt=float  func=soma campo=nr_itens
+14 tot_quantidade      tam=12  fmt=float  func=soma campo=quantidade_produto
+15 tot_valor_pedido    tam=11  fmt=float2  func=soma campo=valor_pedido
+16 tot_perc            tam=7   fmt=float2  func=soma campo=perc_ranking
+17 titulo_agrupar      tam=47  alinha=centro
+
+
+</apelidos>
+<cab_pagina>
+#1                                                                                         #2
+-----------------------------------------------------------------------------------------------------------
+
+#3
+
+
++-------------------------------------------------+--------------+--------------+-------------+-----------+
+| #17                                             |    Pedido    |  Quantidade  |    Valor    |  % Total  |
++-------------------------------------------------+--------------+--------------+-------------+-----------+
+</cab_pagina>
+<detalhe>
+| #4                                              | #5           | #7           | #8          | #9      % |
+</detalhe>
+<rod_relat>
++-------------------------------------------------+--------------+--------------+-------------+-----------+
+| Total geral   #10   #11                         | #12          | #14          | #15         | #16     % |
++-------------------------------------------------+--------------+--------------+-------------+-----------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------+--------------+--------------+-------------+-----------+
+</rod_pagina>
+<hash>82d871e2c04348bbdc1e24889def93db</hash>
+</relatorio>

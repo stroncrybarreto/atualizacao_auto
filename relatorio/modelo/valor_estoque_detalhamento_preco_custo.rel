@@ -1,0 +1,60 @@
+<relatorio dados="valor_estoque_detalhamento_preco_custo" ordem="empresa_cod_nome,grupo_cod_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  data				    tam=10   fmt=data
+4  monta_cabecalho      tam=157  				    alinha=centro
+5  empresa_cod_nome		tam=60
+6  grupo_cod_nome		tam=145
+7  codigo			    tam=12  alinha=centro
+8  nome				    tam=35
+9 preco_custo 			tam=17   fmt=float3  alinha=direita
+10 valor_pis		    tam=18   fmt=float3  alinha=direita
+11 valor_cofins			tam=18   fmt=float3  alinha=direita
+12 valor_icms			tam=18   fmt=float3  alinha=direita
+13 valor_fiscal			tam=18   fmt=float3  alinha=direita
+14 subtotal_fiscal		tam=18   fmt=float3  alinha=direita func=soma campo=valor_fiscal grupo=2
+15 total_fiscal			tam=18   fmt=float3  alinha=direita func=soma campo=valor_fiscal grupo=1
+16 titulo               tam=157 expr='VALOR DO ESTOQUE' alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                            #2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#16
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  Empresa: #5                                                                                                                                               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_cod_nome,grupo_cod_nome">
+|  Grupo: #6                                                                                                                                                 |
++--------------+-------------------------------------+-------------------+--------------------+--------------------+--------------------+--------------------+
+|    Código    |               Produto               | Preço custo atual |     Valor PIS      |    Valor cofins    |     Valor ICMS     | Preço custo fiscal |
++--------------+-------------------------------------+-------------------+--------------------+--------------------+--------------------+--------------------+
+</cab_grupo>
+<detalhe>
+| #7           | #8                                  | #9                | #10                |  #11               | #12                | #13                |
+</detalhe>
+<rod_grupo nome="2">
++--------------+-------------------------------------+-------------------+--------------------+--------------------+--------------------+--------------------+
+|  Subtotal                                                                                                                             | #14                |
++---------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+|  Total de estoque                                                                                                                     | #15                |
++---------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+
+</rod_grupo>
+
+<rod_pagina>
++--------------+-------------------------------------+-------------------+--------------------+--------------------+--------------------+--------------------+
+</rod_pagina>
+
+<hash>af885e745512b14333d96a66cf215a15</hash>
+</relatorio>

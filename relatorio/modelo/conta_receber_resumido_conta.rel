@@ -1,0 +1,42 @@
+<relatorio dados="conta_receber_resumido_conta" tamfonte="9">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1		tam=90	alinha=centro
+4  titulo2		tam=90	alinha=centro
+5  nome			tam=30
+6  valor_atraso		tam=14	fmt=%.02f
+7  valor_receber	tam=14	fmt=%.02f
+8  subtotal		tam=14	fmt=%.02f
+9  total_atraso		tam=14	fmt=%.02f
+10 total_receber	tam=14	fmt=%.02f
+11 total		tam=14	fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                                      #2              
+------------------------------------------------------------------------------------------
+   
+#3
+#4
+
++--------------------------------------+---------------+----------------+----------------+
+| Conta                                |     Em atraso |      A receber |       Subtotal |
++--------------------------------------+---------------+----------------+----------------+
+</cab_pagina>
+
+<detalhe>
+| #5                                   | #6            | #7             | #8             |
+</detalhe>
+
+<rod_relat>
++--------------------------------------+---------------+----------------+----------------+
+| Total                                | #9            | #10            | #11            |
++--------------------------------------+---------------+----------------+----------------+
+</rod_relat>
+
+<rod_pagina>
++--------------------------------------+---------------+----------------+----------------+
+</rod_pagina>
+
+<hash>2909ecdda794ed903d39aa6ec4e0826b</hash>
+</relatorio>

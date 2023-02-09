@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>reducao_z_cat_52</nome>
+
+  <sessao>
+    <nome>E00</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E00</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Numero de frabricacao</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>26</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Numero de ordem do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>27</inicio>
+      <fim>33</fim>
+      <chave>tipo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao>ECF-IF</padrao>
+      <descricao>Tipo de ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>34</inicio>
+      <fim>53</fim>
+      <chave>marca_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Marca da ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>54</inicio>
+      <fim>73</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>74</inicio>
+      <fim>79</fim>
+      <chave>coo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Nr do Contador de Ordem de Operação relativo a troca de aplicativo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>80</inicio>
+      <fim>81</fim>
+      <chave>nr_aplicativo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Numero de ordem do aplicativo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>82</inicio>
+      <fim>95</fim>
+      <chave>cnpj</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CPF/CNPJ da softwarehouse ou desenvolvedor autônomo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>96</inicio>
+      <fim>109</fim>
+      <chave>inscr_est</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>I.E da software house</descricao>
+    </registro>
+
+    <registro>
+      <inicio>110</inicio>
+      <fim>123</fim>
+      <chave>im</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>I.M da software house</descricao>
+    </registro>
+
+    <registro>
+      <inicio>124</inicio>
+      <fim>163</fim>
+      <chave>nm_desenvolvedor</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome da software house</descricao>
+    </registro>
+
+    <registro>
+      <inicio>164</inicio>
+      <fim>203</fim>
+      <chave>nm_app</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome do Aplicativo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>204</inicio>
+      <fim>213</fim>
+      <chave>ver_app</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Versao do aplicativo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>214</inicio>
+      <fim>255</fim>
+      <chave>linha_01</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Dados do programa Aplicativo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>256</inicio>
+      <fim>297</fim>
+      <chave>linha_02</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Dados do programa aplicativo</descricao>
+    </registro>
+
+  </sessao> 
+
+  <sessao>
+    <nome>E01</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E01</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Numero de frabricacao</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>31</fim>
+      <chave>tipo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao>ECF-IF</padrao>
+      <descricao>Tipo de ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>32</inicio>
+      <fim>51</fim>
+      <chave>marca_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Marca da ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>52</inicio>
+      <fim>71</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>72</inicio>
+      <fim>81</fim>
+      <chave>versao_sb</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Versão do Software basico do ECF gravada na MF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>82</inicio>
+      <fim>89</fim>
+      <chave>dt_grava_sb</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>Data da gravação da MF da versão do SB a que se refere o campo versao_sb</descricao>
+    </registro>
+
+    <registro>
+      <inicio>90</inicio>
+      <fim>95</fim>
+      <chave>hora_grava_sb</chave>
+      <tipo>hora_branco</tipo>
+      <padrao></padrao>
+      <descricao>Hora da gravacao da MF da versão do SB a que se refere o campo versao_sb</descricao>
+    </registro>
+
+    <registro>
+      <inicio>96</inicio>
+      <fim>98</fim>
+      <chave>nr_seq_ecf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr de ordem sequencial do ECF no estabelecimento usuario</descricao>
+    </registro>
+
+    <registro>
+      <inicio>99</inicio>
+      <fim>112</fim>
+      <chave>cnpj</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ do estabelecimento usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>113</inicio>
+      <fim>115</fim>
+      <chave>cmd_geracao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Codigo do comando utilizado para gerar o arquivo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>116</inicio>
+      <fim>121</fim>
+      <chave>crz_ini</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Contador de reduções Z do inicio do periodo a ser capturado</descricao>
+    </registro>
+
+    <registro>
+      <inicio>122</inicio>
+      <fim>127</fim>
+      <chave>crz_fim</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Contador de reduções Z do final do periodo a ser capturado</descricao>
+    </registro>
+
+    <registro>
+      <inicio>128</inicio>
+      <fim>135</fim>
+      <chave>dt_ini</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>Data do inicio do periodo a ser capturado</descricao>
+    </registro>
+
+    <registro>
+      <inicio>136</inicio>
+      <fim>143</fim>
+      <chave>dt_fim</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>Data do fim do periodo a ser capturado</descricao>
+    </registro>
+
+    <registro>
+      <inicio>144</inicio>
+      <fim>151</fim>
+      <chave>ver_biblioteca</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Versao da biblioteca do fabricante do ECF geradore deste arquivo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>152</inicio>
+      <fim>166</fim>
+      <chave>ver_ato_cotepe</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Versao do Ato/COTEPE</descricao>
+    </registro>
+
+  </sessao>
+	
+  <sessao>
+    <nome>E02</nome>  
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E02</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nr de fabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>58</fim>
+      <chave>cnpj</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ do estabelecimento usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>72</fim>
+      <chave>inscr_est</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>I.E do estabelecimento usuario</descricao>
+    </registro>
+
+    <registro>
+      <inicio>73</inicio>
+      <fim>112</fim>
+      <chave>nm_contribuinte</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome comercial (razao social/ denominacao) do contribuinte usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>113</inicio>
+      <fim>232</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Endereco do estabelecimento do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>233</inicio>
+      <fim>240</fim>
+      <chave>dt_cadastro</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>Data do cadastro do usuario ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>241</inicio>
+      <fim>246</fim>
+      <chave>hr_cadastro</chave>
+      <tipo>hora_branco</tipo>
+      <padrao></padrao>
+      <descricao>Hora do cadastro do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>247</inicio>
+      <fim>252</fim>
+      <chave>cro</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Valor do CRO relativo ao cadastro do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>253</inicio>
+      <fim>270</fim>
+      <chave>total_gt</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>Valor acumulado no GT, com duas cadas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>271</inicio>
+      <fim>272</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr de ordem do usuario do ECF</descricao>
+    </registro>
+
+   </sessao>
+
+   <sessao>
+	<nome>E12</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E12</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nr de fabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>46</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Nr de ordem do usuario do ECF relativo a respectiva Reducao Z</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>52</fim>
+      <chave>crz</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr do contador de reducao z relativo a respectiva reducao</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>58</fim>
+      <chave>coo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr do contador de ordem de operacao relativo a respectiva redução z</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>64</fim>
+      <chave>cro</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr do contador de reinicio de operacao relativo a respectiva reducao Z</descricao>
+    </registro>
+
+    <registro>
+      <inicio>65</inicio>
+      <fim>72</fim>
+      <chave>dt_movto</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>data das operacoes relativas a respectiva reducao Z</descricao>
+    </registro>
+
+    <registro>
+      <inicio>73</inicio>
+      <fim>80</fim>
+      <chave>dt_emissao</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>data de emissao da reducao Z</descricao>
+    </registro>
+
+    <registro>
+      <inicio>81</inicio>
+      <fim>86</fim>
+      <chave>hr_emissao</chave>
+      <tipo>hora_branco</tipo>
+      <padrao></padrao>
+      <descricao>hora da emissao da reducao Z</descricao>
+    </registro>
+
+    <registro>
+      <inicio>87</inicio>
+      <fim>100</fim>
+      <chave>venda_bruta_diaria</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor acummulado neste totalizador relativo a repectiva reducao Z, com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>101</inicio>
+      <fim>101</fim>
+      <chave>incid_issqn</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Informar 'S' ou 'N', conforme tenha ocorrido ou nao a parametrizacao para o desconto issqn</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>E13</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E13</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nr de fabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>46</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr de ordem do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>52</fim>
+      <chave>crz</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr do contador de reducao z relativo a respectiva reducao</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>59</fim>
+      <chave>cod_totalizador</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>codigo do totalizador conforme tabela abaixo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>60</inicio>
+      <fim>72</fim>
+      <chave>valor_acumulado</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor acumulado no totalizador, relativo a respectiva reducao z, com duas casas decimais</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>E14</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E14</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>nr de fabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>46</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr de ordem do usuario</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>52</fim>
+      <chave>ccf_cvc_cbp</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>nr do contador do respectivo documento emitido</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>58</fim>
+      <chave>coo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>coo relativo ao respectivo documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>66</fim>
+      <chave>dt_ini_emissao</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>data de inicioa da emissao do documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>67</inicio>
+      <fim>80</fim>
+      <chave>subtotal_documento</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor total do documento com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>81</inicio>
+      <fim>93</fim>
+      <chave>desconto_subtotal</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>Valor do desonto ou percentual aplicado sobre o valor do subtotal do documento, com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>94</inicio>
+      <fim>94</fim>
+      <chave>tp_desc_sub</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>V para valor monetario ou P para percentual</descricao>
+    </registro>
+
+    <registro>
+      <inicio>95</inicio>
+      <fim>107</fim>
+      <chave>acres_subtotal</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor do acrescimo ou percntual aplicado sobre o valor do subtotal do documento com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>108</inicio>
+      <fim>108</fim>
+      <chave>tp_acres_sub</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>V para valor monetario ou P para percentual</descricao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+      <fim>122</fim>
+      <chave>total_liq</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>Valor total do cupom fiscal apos desconto/acrescimo, com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>123</inicio>
+      <fim>123</fim>
+      <chave>cancelado</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Informar S o N conforme tenha ocorrido cancelamento do cupom fiscal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>124</inicio>
+      <fim>136</fim>
+      <chave>vlr_cancelamento_acres</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor do cancelamento de acrescimo no subtotal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>137</inicio>
+      <fim>137</fim>
+      <chave>desc_acres</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>indicador de ordem de aplicacao de desconto/acrescimo em subtotal,
+	 			 D ou A caso tenha ocorrido primeiro desconto ou acrescimo respectivamente</descricao>
+    </registro>
+
+    <registro>
+      <inicio>138</inicio>
+      <fim>177</fim>
+      <chave>nm_adquirente</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>nome do cliente</descricao>
+    </registro>
+
+    <registro>
+      <inicio>178</inicio>
+      <fim>191</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CPF ou CNPJ do cliente(somente numeros)</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>E15</nome>
+   
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E15</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nr de fabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>46</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero de ordem do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>52</fim>
+      <chave>coo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero coo relativo ao respectivo documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>58</fim>
+      <chave>ccf_cvc_cbp</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do contador do respetivo documento emitido</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>61</fim>
+      <chave>nr_item</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do item registrado no documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>62</inicio>
+      <fim>75</fim>
+      <chave>cd_prod_srv</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>codigo do produto ou servico constante no cumpom fiscal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>76</inicio>
+      <fim>175</fim>
+      <chave>descricao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>descricao do produto ou servico constante no cupom fiscal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>176</inicio>
+      <fim>182</fim>
+      <chave>quantidade</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>quantidade comercializada, sem a separacao das casas decimais. Obs.: Este campo é string pois é mondato dinamicamente</descricao>
+    </registro>
+
+    <registro>
+      <inicio>183</inicio>
+      <fim>185</fim>
+      <chave>unid_med</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Unidade de medida</descricao>
+    </registro>
+
+    <registro>
+      <inicio>186</inicio>
+      <fim>193</fim>
+      <chave>vlr_unitario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>valor unitario do produto ou servico, sem a separacao das casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>194</inicio>
+      <fim>201</fim>
+      <chave>desconto_item</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor do desconto incidente sobre o valor do item, com duas cadas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>202</inicio>
+      <fim>209</fim>
+      <chave>acrescimo_item</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor do acrescimo incidente sobre o valor do item, com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>210</inicio>
+      <fim>223</fim>
+      <chave>total_liq</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor total liquido do item sobre o valor do item, com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>224</inicio>
+      <fim>230</fim>
+      <chave>total_parcial</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>codigo do totalizador relativo ao produto ou servico</descricao>
+    </registro>
+
+    <registro>
+      <inicio>231</inicio>
+      <fim>231</fim>
+      <chave>cancelamento</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>informar S ou N, conforme tenha ocorrido ou nao, o cancelamento total do item do documento.
+                 Informar P quando ocorrer cancelamento parcial do item</descricao>
+    </registro>
+
+    <registro>
+      <inicio>232</inicio>
+      <fim>238</fim>
+      <chave>qtd_cancelada</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Quantidade cancelada, no caso de cancelamento parcial de item, sem a separacao das casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>239</inicio>
+      <fim>251</fim>
+      <chave>valor_cancelado</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor cancelado, no caso de cancelamento parcial de item</descricao>
+    </registro>
+
+    <registro>
+      <inicio>252</inicio>
+      <fim>264</fim>
+      <chave>vlr_cancelamento_acres</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor do cancelamento do acrescimo no item</descricao>
+    </registro>
+
+    <registro>
+      <inicio>265</inicio>
+      <fim>265</fim>
+      <chave>iat</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>indicador de arrendodamento ou truncamento relativo a regra de calculo do valor
+                 liquido do item, sendo T para trincamento ou A para arredondamento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>266</inicio>
+      <fim>266</fim>
+      <chave>nr_decimal_qtd</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Parametro de numero de casas decimais da quantidade</descricao>
+    </registro>
+
+    <registro>
+      <inicio>267</inicio>
+      <fim>267</fim>
+      <chave>nr_decimais_vlr</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Parametro de numero de casas decimais de valor unitario</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>E16</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E16</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Numero de frabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>46</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero de ordem do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>52</fim>
+      <chave>coo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do COO relativo ao respectivo documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>58</fim>
+      <chave>gnf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do GNF relativo ao respectivo documento, quando houver</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>64</fim>
+      <chave>grg</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Numero do GRG relativo ao respectivo documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>65</inicio>
+      <fim>68</fim>
+      <chave>cdc</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do CRZ relativo ao respectivo documento</descricao>
+	</registro>
+
+    <registro>
+      <inicio>69</inicio>
+      <fim>74</fim>
+      <chave>crz</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do CRZ relativo ao respectivo documento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>75</inicio>
+      <fim>76</fim>
+      <chave>denominacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Simbolo referente a denominacao do documento fiscal, conforme tabela abaixo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>77</inicio>
+      <fim>84</fim>
+      <chave>dt_fim_emissao</chave>
+      <tipo>date_us_branco</tipo>
+      <padrao></padrao>
+      <descricao>Data final de emissão</descricao>
+    </registro>
+
+    <registro>
+      <inicio>85</inicio>
+      <fim>90</fim>
+      <chave>hr_fim_emissao</chave>
+      <tipo>hora_branco</tipo>
+      <padrao></padrao>
+      <descricao>hora final de emissao no formato hh:mm:ss</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>E21</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>E21</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>23</fim>
+      <chave>nr_fabricacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>numero de fabricacao do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave>mf_adicional</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Letra indicativa de MF adicional</descricao>
+    </registro>
+
+    <registro>
+      <inicio>25</inicio>
+      <fim>44</fim>
+      <chave>modelo_ecf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Modelo do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>45</inicio>
+      <fim>46</fim>
+      <chave>nr_usuario</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero de ordem do usuario do ECF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>52</fim>
+      <chave>coo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do coo relativo ao respectivo cumpom fiscal ou comprovante nao fiscal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>58</fim>
+      <chave>ccf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do contador de cupom fiscal relativo ao respectivo cupom fiscal emitido</descricao>
+    </registro>
+
+    <registro>
+      <inicio>59</inicio>
+      <fim>64</fim>
+      <chave>gnf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>numero do contador geral nao fiscal relativo ao respectivo comprovante nao fiscal emitido</descricao>
+    </registro>
+
+    <registro>
+      <inicio>65</inicio>
+      <fim>79</fim>
+      <chave>forma_pgto</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>descricao do totalizador parcial de meio de pagamento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>80</inicio>
+      <fim>92</fim>
+      <chave>valor_pago</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>valor do pagamento efetuado, com duas casas decimais</descricao>
+    </registro>
+
+    <registro>
+      <inicio>93</inicio>
+      <fim>93</fim>
+      <chave>estorno</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>informar S ou N, conforme tenha ocorrido ou não o estorno do pagamento, ou P para estorno parcial do pagamento</descricao>
+    </registro>
+
+    <registro>
+      <inicio>94</inicio>
+      <fim>106</fim>
+      <chave>vl_estornado</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao></padrao>
+      <descricao>Valor do estorno efetuado, com duas casas decimais</descricao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>EAD</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>3</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>EAD</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>259</fim>
+      <chave>hash</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Assinatura do Hash</descricao>
+    </registro>
+
+  </sessao>
+</layout>

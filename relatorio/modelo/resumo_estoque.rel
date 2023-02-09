@@ -1,0 +1,121 @@
+<relatorio dados="resumo_estoque_txt" ordem="grupo_nome,produto_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome       		tam=80
+2  rel_data_hora        		tam=18
+3  titulo						tam=307  alinha=centro expr="RESUMO DE ESTOQUE"
+4  subtitulos 					tam=307  alinha=centro
+5  grupo_cod_nome       		tam=150  expr=str(grupo_codigo)+' - '+grupo_nome
+6  grupo_codigo					tam=6
+7  grupo_nome					tam=21
+
+8  estoque_inicial_quantidade	tam=10 fmt=float2
+9  estoque_inicial_valor_total 	tam=12 fmt=float2 expr=estoque_inicial_quantidade*estoque_inicial_cvm
+10 estoque_inicial_cvm			tam=8 fmt=float2
+11 compra_quantidade			tam=10 fmt=float2
+12 compra_valor_total			tam=12 fmt=float2
+13 compra_cmv 					tam=8 fmt=float2
+14 venda_quantidade				tam=10 fmt=float2
+15 venda_valor_total			tam=12 fmt=float2
+16 venda_cmv					tam=8 fmt=float2
+17 bonificacao_quantidade		tam=10 fmt=float2
+18 bonificacao_valor_total		tam=12 fmt=float2
+19 bonificacao_cmv				tam=8 fmt=float2
+20 consumo_quantidade			tam=10 fmt=float2
+21 consumo_valor_total			tam=12 fmt=float2
+22 consumo_cmv					tam=8 fmt=float2
+23 sobra_falta_quantidade		tam=10 fmt=float2
+24 sobra_falta_total			tam=12 fmt=float2 expr=sobra_falta_quantidade*sobra_falta_valor_medio
+25 sobra_falta_valor_medio		tam=8 fmt=float2
+26 estoque_final_quantidade		tam=10 fmt=float2
+27 estoque_final_total			tam=12 fmt=float2 expr=estoque_final_quantidade*estoque_final_cvm
+28 estoque_final_cvm			tam=8 fmt=float2
+
+29 produto_nome					tam=21
+30 produto_codigo				tam=6  alinha=centro
+
+31 qtd_inicial_grupo			tam=16 fmt=float2 func=soma campo=estoque_inicial_quantidade    grupo=1 
+32 valor_inicial_grupo			tam=17 fmt=float2 func=soma campo=estoque_inicial_valor_total    grupo=1 
+33 qtd_compra_grupo				tam=16 fmt=float2 func=soma campo=compra_quantidade    grupo=1
+34 valor_compra_grupo           tam=17 fmt=float2 func=soma campo=compra_valor_total    grupo=1
+35 qtd_vendas_grupo				tam=16 fmt=float2 func=soma campo=venda_quantidade    grupo=1
+36 valor_vendas_grupo           tam=17 fmt=float2 func=soma campo=venda_valor_total    grupo=1
+37 qtd_bonificacao_grupo		tam=16 fmt=float2 func=soma campo=bonificacao_quantidade    grupo=1
+38 valor_bonificacao_grupo      tam=17 fmt=float2 func=soma campo=bonificacao_valor_total    grupo=1
+39 qtd_uso_grupo				tam=16 fmt=float2 func=soma campo=consumo_quantidade    grupo=1
+40 valor_uso_grupo              tam=17 fmt=float2 func=soma campo=consumo_valor_total    grupo=1
+41 qtd_perda_grupo				tam=16 fmt=float2 func=soma campo=sobra_falta_quantidade    grupo=1
+42 valor_perda_grupo            tam=17 fmt=float2 func=soma campo=sobra_falta_total    grupo=1
+43 qtd_saldo_grupo				tam=16 fmt=float2 func=soma campo=estoque_final_quantidade    grupo=1
+44 valor_saldo_grupo            tam=17 fmt=float2 func=soma campo=estoque_final_total    grupo=1
+
+
+45 qtd_inicial_tot				tam=16 fmt=float2 func=soma campo=estoque_inicial_quantidade
+46 valor_inicial_tot			tam=17 fmt=float2 func=soma campo=estoque_inicial_valor_total
+47 qtd_compra_tot				tam=16 fmt=float2 func=soma campo=compra_quantidade
+48 valor_compra_tot           	tam=17 fmt=float2 func=soma campo=compra_valor_total
+49 qtd_vendas_tot				tam=16 fmt=float2 func=soma campo=venda_quantidade
+50 valor_vendas_tot           	tam=17 fmt=float2 func=soma campo=venda_valor_total
+51 qtd_bonificacao_tot			tam=16 fmt=float2 func=soma campo=bonificacao_quantidade
+52 valor_bonificacao_tot      	tam=17 fmt=float2 func=soma campo=bonificacao_valor_total
+53 qtd_uso_tot					tam=16 fmt=float2 func=soma campo=consumo_quantidade
+54 valor_uso_tot              	tam=17 fmt=float2 func=soma campo=consumo_valor_total
+55 qtd_perda_tot				tam=16 fmt=float2 func=soma campo=sobra_falta_quantidade
+56 valor_perda_tot      	    tam=17 fmt=float2 func=soma campo=sobra_falta_total
+57 qtd_saldo_tot				tam=16 fmt=float2 func=soma campo=estoque_final_quantidade
+58 valor_saldo_tot            	tam=17 fmt=float2 func=soma campo=estoque_final_total
+
+59 dif_grupo					tam=17 fmt=float2 expr=valor_saldo_grupo-valor_inicial_grupo
+60 dif_total					tam=17 fmt=float2 expr=valor_saldo_tot-valor_inicial_tot
+
+61 cont_grupo					tam=4  func=contar grupo=1
+
+63 cont_geral					tam=4  func=contar
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                                                                                                                                                                 #2
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="grupo_nome,grupo_codigo">
+Grupo: #5
++--------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+|           Produto              |               Inicial                |                Compras               |                 Vendas               |            Bonificação               |              Uso/Consumo             |            Perdas/Acertos            |                 Saldos               |
++--------+-----------------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+
+| Código |         Nome          | Quantidade | Unitário |     Valor    | Quantidade | Unitário |     Valor    | Quantidade | Unitário |     Valor    | Quantidade | Unitário |     Valor    | Quantidade | Unitário |     Valor    | Quantidade | Unitário |     Valor    | Quantidade | Unitário |     Valor    |
++--------+-----------------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+------------+----------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #30    | #29                   | #8         | #10      | #9           | #11        | #13      | #12          | #14        | #16      | #15          | #17        | #19      | #18          | #20        | #22      | #21          | #23        | #25      | #24          | #26        | #28      | #27          |
+</detalhe>
+
+<rod_grupo nome="1">
++--------+-----------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+
+| Total  #61                     | #31              | #32               | #33              | #34               | #35              | #36               | #37              | #38               | #39              | #40               | #41              | #42               | #43              | #44               |
++--------------------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+
+| Diferença                                                                                                                                                                                                                                                                                     #59               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+
+<rod_relat>
++--------------------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+
+| Total geral  #63               | #45              | #46               | #47              | #48               | #49              | #50               | #51              | #52               | #53              | #54               | #55              | #56               | #57              | #58               |
++--------------------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+------------------+-------------------+
+| Diferença                                                                                                                                                                                                                                                                                   | #60               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+
+<hash>47c1b858f34ed57161b624bfbab7cd23</hash>
+</relatorio>

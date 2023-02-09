@@ -1,0 +1,52 @@
+<relatorio dados="fornecedor" ordem="">
+<apelidos>
+1  rel_posto_nome	  tam=40
+2  rel_data_hora	  tam=18
+3  subtitulo          tam=131 alinha=centro
+5  fornec_codigo	  tam=7	fmt=%d alinha=centro
+6  fornec_nome		  tam=34
+7  fornec_cpf		  tam=18 alinha=centro
+8  fornec_cidade	  tam=16
+9  fornec_estado	  tam=3
+10 fornec_fone		  tam=14 alinha=centro
+11 fornec_contato	  tam=15
+12 contador			  tam=15	fmt=%d
+13 empresa_nome       tam=126 
+14 empresa_cod_nome	  tam=110
+15 fornec_celular	  tam=10
+16 fornec_fax		  tam=10
+17 fornec_email		  tam=30
+18 fornec_obs		  tam=30
+19 fornec_logradouro  tam=35
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                              #2             
+--------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #14                                                                                                                  |
++---------+------------------------------------+---------------------+------------------+----+----------------+-----------------+
+| Código  |                 Nome               |      CPF / CNPJ     |      Cidade      | UF |    Telefone    |     Contato     |
++---------+------------------------------------+---------------------+------------------+----+----------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #5      | #6                                 | #7                  | #8               | #9 | #10            | #11             |
+</detalhe>
+<rod_grupo nome="1">
++---------+------------------------------------+---------------------+------------------+----+----------------+-----------------+
+</rod_grupo>
+<rod_relat>
+| Total fornecedores                                                                                          | #12             |
++-------------------------------------------------------------------------------------------------------------+-----------------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>b1e2fece12a43f5c2214a8ef7b25edd6</hash>
+</relatorio>

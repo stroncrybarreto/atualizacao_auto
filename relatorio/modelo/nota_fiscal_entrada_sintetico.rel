@@ -1,0 +1,47 @@
+<relatorio dados="nota_fiscal_entrada_sintetico" ordem=" ">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1		    tam=115	alinha=centro
+4  titulo2		    tam=115	alinha=centro
+5  data_entrada		tam=10	fmt=data
+6  data_emissao		tam=10	fmt=data
+7  numero_nota		tam=7	fmt=%d
+8  pessoa_nome		tam=43
+9  vencto		    tam=10	fmt=data
+10 vencto_mais		tam=3
+11 valor_nota		tam=13	fmt=float2
+12 total		    tam=13	fmt=float2 func=soma campo=valor_nota
+13 mensagem		    tam=115
+</apelidos>
+<cab_pagina>
+#1                                                                                                 #2        
+-------------------------------------------------------------------------------------------------------------------
+   
+                                     {TIT}NOTAS DE FISCAIS ENTRADA - SINTÉTICO
+{SUBTIT}#3
+{SUBTIT}#4
+
++------------+------------+---------+----------------------------------------------+--------------+---------------+
+| Data Entr. | Data Emiss | Nr.Nota | Fornecedor                                   |     Vencto   |         Valor |
++------------+------------+---------+----------------------------------------------+--------------+---------------+
+</cab_pagina>
+
+<detalhe>
+| #5         | #6         | #7      | #8                                           | #9        #10| #11           |
+</detalhe>
+
+<rod_relat>
++------------+------------+---------+----------------------------------------------+--------------+---------------+
+| TOTAL                                                                                           | #12           |
++-------------------------------------------------------------------------------------------------+---------------+
+
+#13
+</rod_relat>
+
+<rod_pagina>
++------------+------------+---------+----------------------------------------------+--------------+---------------+
+</rod_pagina>
+
+<hash>fa7951011aee2084031f06b50c0de5f5</hash>
+</relatorio>

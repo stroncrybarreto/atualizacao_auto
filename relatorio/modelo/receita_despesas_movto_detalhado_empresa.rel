@@ -1,0 +1,67 @@
+<relatorio dados="receita_despesas_movto" tamfonte="8" ordem="empresa_codigo,codigo">
+<apelidos>
+1  rel_posto_nome       tam=50
+2  rel_data_hora        tam=18
+3  titulo				tam=104	alinha=centro
+4  empresa_codigo		tam=8
+5  empresa_cod_nome		tam=30
+6  codigo				tam=8	alinha=esquerda
+7  obs					tam=88
+8  pessoa_nome			tam=52
+9  pessoa_codigo		tam=5
+10 documento			tam=21	alinha=centro
+11 nr_transacao_restante	tam=11	alinha=esquerda
+12 valor				tam=16	fmt=float2
+13 data_transacao_final	tam=12	fmt=data
+14 vencto				tam=14	fmt=data	alinha=centro
+15 empresa_nome			tam=60
+16 total_empresa		tam=16	fmt=float2	func=soma	campo=valor		grupo=1
+17 total_geral			tam=16	fmt=float2	func=soma	campo=valor
+18 tipo_nome			tam=13
+19 conta_debitar		tam=14
+20 conta_creditar		tam=14
+21 motivo_nome			tam=30
+22 data_conc			tam=12	fmt=data	alinha=centro
+23 num_parcela			tam=25	alinha=centro	func=contar	grupo=1
+24 status				tam=20
+</apelidos>
+<cab_pagina>
+#1                                                                                      #2
+--------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa,codigo,pessoa,conta_debitar,conta_creditar,motivo_nome">
++------------------------------------------------------------------------------------------------------+
+| Empresa: #5                             Pessoa: #8                                                   |
+| Código: #6         Tipo: #18            Status: #24                   Parcelas: #11                  |
+| Motivo: #21                             Conta debitar: #19            Conta creditar: #20            |
+| Observações: #7                                                                                      |
++---------------------------+-----------------------+----------------+--------------+------------------+
+|          Parcela          |       Documento       |   Vencimento   |  Data baixa  |      Valor       |
++---------------------------+-----------------------+----------------+--------------+------------------+
+</cab_grupo>
+<detalhe>
+| #23                       | #10                   | #14            | #22          | #12              |
+</detalhe>
+<rod_grupo nome="1">
++---------------------------+-----------------------+----------------+--------------+------------------+
+| Total                                                                             | #16              |
++-----------------------------------------------------------------------------------+------------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------------------------------+------------------+
+| Total geral                                                                       | #17              |
++-----------------------------------------------------------------------------------+------------------+
+</rod_relat>
+
+<rod_pagina>
++-----------------------------------------------------------------------------------+------------------+
+</rod_pagina>
+
+<hash>36f45d45f488e6c81cfd9a42890b0d0c</hash>
+</relatorio>

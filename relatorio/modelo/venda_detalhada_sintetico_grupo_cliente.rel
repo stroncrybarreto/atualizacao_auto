@@ -1,0 +1,60 @@
+<relatorio dados="venda_detalhada" tamfonte="8" ordem="grupo_cliente_nome,grupo_cliente_codigo,data,hora,documento,nome,pessoa_nome">
+<apelidos>
+1  rel_posto_nome	       tam=60
+2  rel_data_hora	       tam=18
+3  subtitulo	           tam=130                 	                               alinha=centro
+4  data			           tam=10	fmt=data
+5  hora			           tam=5
+6  bico			           tam=4	                                               alinha=centro
+7  grupo_cliente_nome			       tam=50
+8  quantidade		       tam=10	fmt=float2
+9  preco_unit		       tam=10	fmt=float3
+10 valor		           tam=10	fmt=float2
+11 forma_pgto		       tam=17
+12 quant_total   	       tam=10	fmt=float2
+13 valor_total	           tam=10	fmt=float2
+15 titulo                  tam=130		                                           alinha=centro
+16 total_quantidade        tam=14   fmt=float3 func=soma campo=quantidade grupo=1
+17 total_valor             tam=14   fmt=float2 func=soma campo=valor grupo=1
+18 total_geral_quantidade  tam=14   fmt=float3 func=soma campo=quantidade
+19 total_geral_valor       tam=14   fmt=float2 func=soma campo=valor
+20 desconto                tam=8    fmt=float2
+21 acrescimo               tam=9    fmt=float2
+22 valor_bruto             tam=13   fmt=float2
+23 total_desconto          tam=8    fmt=float2 func=soma campo=desconto    grupo=1
+24 total_acrescimo         tam=9    fmt=float2 func=soma campo=acrescimo   grupo=1
+25 total_valor_bruto       tam=13   fmt=float2 func=soma campo=valor_bruto grupo=1
+26 total_geral_desconto    tam=8    fmt=float2 func=soma campo=desconto
+27 total_geral_acrescimo   tam=9    fmt=float2 func=soma campo=acrescimo
+28 total_geral_valor_bruto tam=13   fmt=float2 func=soma campo=valor_bruto
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+ 
+#15
+#3
+
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+|                     Grupo cliente                     |   Quantidade   |  Valor bruto  | Desconto | Acréscimo |  Valor liquído | 
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo_cliente_nome,grupo_cliente_codigo">
+</cab_grupo>
+<detalhe>
+</detalhe>
+<rod_grupo nome="1">
+| #7                                                    | #16            | #25           | #23      | #24       | #17            |
+</rod_grupo>
+<rod_relat>
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+| Total                                                 | #18            | #28           | #26      | #27       | #19            |
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+</rod_pagina>
+
+<hash>d3537523e2daffa5a52f4264cb879439</hash>
+</relatorio>

@@ -1,0 +1,39 @@
+<relatorio dados="consulta_brpremmia" ordem="codigo_promocao">
+<apelidos>
+1  rel_posto_nome		  tam=60
+2  rel_data_hora		  tam=18
+3  titulo_principal		  tam=180	expr='CONSULTA PROMOÇÕES BR PREMMIA'	alinha=centro
+4  titulo				  tam=180	alinha=centro
+5  periodo				  tam=180   alinha=centro     
+6  codigo_promocao  	  tam=10    alinha=direita
+7  codigo_ftc             tam=15    alinha=direita
+8  produto_nome			  tam=45
+9  ativo 				  tam=5 	alinha=centro
+10  vigencia_ini		  tam=13	alinha=centro
+11 vigencia_fim			  tam=13	alinha=centro
+12 pontos            	  tam=11	alinha=direita
+13 valor_pago_consumidor  tam=10	fmt=float2
+14 valor_rebate           tam=12    fmt=float2 
+15 valor_venda			  tam=16	fmt=float2
+
+</apelidos>
+<cab_pagina>
+
+#1                                                                                                                                                                        #2
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+#3
+#4
+#5
++------------+----------------+-------------------------------------------------+-----------+------------------+----------------+------------+-----------+-------------+-----------------+
+|   Código   |   Código FTC   |                    Descrição                    |   Ativo   |   Vig. Inicial   |   Vig. Final   |   Pontos   |   Valor   |   Rebates   |   Valor no CF   |
++------------+----------------+-------------------------------------------------+-----------+------------------+----------------+------------+-----------+-------------+-----------------+
+</cab_pagina>
+<detalhe>
+| #6         | #7             |#8                                               |#9         | #10              | #11            | #12        | #13       | #14         | #15             |
+</detalhe>
+<rod_relat>
++------------+----------------+-------------------------------------------------+-----------+------------------+----------------+------------+-----------+-------------+-----------------+
+</rod_relat>
+<hash></hash>
+</relatorio>

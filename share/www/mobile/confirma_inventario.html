@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>ASMobile</title>
+	</head>
+	<body style="width: 310px">
+		<form method="POST" action="/do_inventario/">
+			<img src="../images/topo_2.jpg" width="310" height="71" alt="">
+			<h3 style="color:#302663;">Confirmar Inventário</h3>
+			<span style="color:#302663;"><b>Data:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="data"></i></span>
+			<p>
+			<span style="color:#302663;"><b>Turno:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="turno"></i></span>
+			<p>
+			<span style="color:#302663;"><b>Depósito:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="deposito_nome"></i></span>
+			<p>
+			<span style="color:#302663;"><b>Produto:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="produto_nome"></i></span>
+			<p>
+			<span style="color:#302663;"><b>Quantidade:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="quantidade"></i></span>
+			<p>
+			<span style="color:#302663;"><b>Preço Unitário:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="preco_unit"></i></span>
+			<p>
+			<span style="color:#302663;"><b>Pessoa:</b></span>
+			<br>
+			<span style="color:#302663;"><i tal:content="pessoa_nome"></i></span>
+			<p>
+			<div style="text-align:center;">
+				<input type="submit" name="bt_confirmar" value="Confirmar">
+			</div>
+			<p>
+			<div style="text-align:right;">
+				<small><i style="color:#302663;" tal:content="login"></i></small>
+				<small style="color:#302663;"><i>-</i></small>
+				<small style="text-align:right;width:20px"><i><a href="/">Home</a></i></small>
+				<small style="color:#302663;"><i>|</i></small>
+				<small style="text-align:right;width:20px"><i><a href="/logout/">Logout</a></i></small>
+			<div>
+			<img src="../images/base_2.jpg" width="310" height="24" alt="">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layout>
+	<nome>Banco do Brasil</nome>
+
+    <sessao>
+        <nome>arquivo</nome>
+
+		<registro>
+			<tipo>string</tipo>
+			<chave>local_pagamento_a</chave>
+			<padrao>Pagável em qualquer banco</padrao>
+			<descricao>Local de Pagamento 1</descricao>
+		</registro>
+    </sessao>
+</layout>

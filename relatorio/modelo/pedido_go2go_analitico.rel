@@ -1,0 +1,82 @@
+<relatorio dados="pedido_go2go_analitico">
+<apelidos>
+1  nr_pedido_go2go         	tam=12
+2  codigo_pedido        	tam=12
+3  data_hora  	         	tam=25
+7  status_nome         		tam=25
+4  pdv           			tam=15
+5  meio_pagamento          	tam=20
+6  valor_total     			tam=10 fmt=%.02f
+8  taxa_entrega          	tam=10 fmt=%.02f
+9  documento_fiscal         tam=20
+10 desconto                 tam=10 fmt=%.02f
+11 acrescimo                tam=10 fmt=%.02f
+12 cliente      			tam=60
+13 endereco_entrega	        tam=60
+14 titulo_agrupamento	    tam=111
+15 codigo_produto  			tam=10
+16 descricao_produto        tam=25
+17 qtd_produto			    tam=10
+18 valor_unit      			tam=10 fmt=%.02f
+19 valor_total		        tam=10 fmt=%.02f
+97 subtitulo			    tam=111
+98 data_hora_emissao	    tam=111
+99 titulo                   tam=111 alinha=centro
+</apelidos>
+
+<cab_pagina>
+#97                                                                                            #98        
+---------------------------------------------------------------------------------------------------------------------
+
+#99
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="nr_pedido_go2go,nr_pedido_player">
++-------------------------------------------------------------------------------------------------------------------+
+| #14                                                                                                               |
++-------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                   |
+| ID:             #2                                     Taxa de Entrega:  #8                                       |
+| Data / Hora:    #3                                     Desconto:         #10                                      |
+| Conta PDV:      #4                                     Acréscimo:        #11                                      |
+| Status:         #7                                     Valor Total:      #6                                       |
+| Meio Pagamento: #5                                     Documento Fiscal: #9                                       |
+|                                                                                                                   |
++--------------------+-----------------------------+-----------------+------------------------+---------------------+
+|       Código       |          Descrição          |       Qtd.      |     Valor Unitário     |     Valor Total     |
++--------------------+-----------------------------+-----------------+------------------------+---------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="nr_pedido_go2go,nr_pedido_player">
+</cab_grupo>
+
+<detalhe>
+| #15                | #16                         | #17             | #18                    | #19                 |
+</detalhe>
+
+<rod_grupo nome="1">
++-------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                   |
+| Cliente:             #12                                                                                          |
+| Endereço de Entrega: #13                                                                                          |
+|                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------+
+</rod_grupo>
+
+<rod_grupo nome="2">
+
+</rod_grupo>
+
+<rod_pagina>
++-------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+
+<hash>fd433199336ce1dc6536f79c6476d03b</hash>
+</relatorio>

@@ -1,0 +1,19 @@
+<layout>
+  <nome>viasoft</nome>
+  <sessao>
+    <nome>contabil</nome>
+    <registro><inicio>1</inicio><fim>4</fim><chave>empresa</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>7</fim><chave>empresa</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>7</inicio><fim>13</fim><chave>empresa</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>13</inicio><fim>15</fim><chave>dia</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>15</inicio><fim>17</fim><chave>mes</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>17</inicio><fim>21</fim><chave>ano</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>21</inicio><fim>26</fim><chave>conta_debitar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>26</inicio><fim>32</fim><chave>centro_custo_debitar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+	<registro><inicio>32</inicio><fim>37</fim><chave>conta_creditar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+	<registro><inicio>37</inicio><fim>43</fim><chave>centro_custo_creditar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+	<registro><inicio>43</inicio><fim>56</fim><chave>valor</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+	<registro><inicio>57</inicio><fim>60</fim><chave>motivo</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+	<registro><inicio>60</inicio><fim>220</fim><chave>motivo_descricao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

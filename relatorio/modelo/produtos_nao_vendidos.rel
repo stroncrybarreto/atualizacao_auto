@@ -1,0 +1,61 @@
+<relatorio dados="produtos_nao_vendidos" ordem="ordem" tamfonte="8" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome               tam=60
+2  rel_data_hora                tam=18
+3  titulo	                    tam=144 alinha=centro
+5  grupo_produto_nome           tam=30
+6  produto_codigo               tam=8   alinha=centro
+7  produto_nome                 tam=28
+8  venda_data                   tam=10  fmt=data
+9  preco_unit                   tam=11  fmt=float3
+10 compra_data                  tam=10  fmt=data
+11 ultimo_custo                 tam=11  fmt=float3
+12 quantidade                   tam=12  alinha=direita
+13 valor_custo                  tam=13  fmt=float2
+14 valor_venda                  tam=13  fmt=float2
+15 total_produto_grupo          tam=5   func=contar grupo=2  fmt=float0
+16 total_quantidade             tam=12  func=soma   campo=quantidade   grupo=2  alinha=direita  fmt=float2
+17 total_valor_custo            tam=13  func=soma   campo=valor_custo  grupo=2  fmt=float2
+18 total_valor_venda            tam=13  func=soma   campo=valor_venda  grupo=2  fmt=float2
+22 total_geral_quantidade       tam=12  func=soma   campo=quantidade            alinha=direita  fmt=float2
+23 total_geral_valor_custo      tam=13  func=soma   campo=valor_custo           fmt=float2
+24 total_geral_valor_venda      tam=13  func=soma   campo=valor_venda           fmt=float2
+25 grupo_produto_cod_nome		tam=30
+27 quantidade_format            tam=12  alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                                              #2              
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="grupo_produto_nome">
+
++-----------------------------------------+--------------------------+--------------------------+----------------------------------------------+
+| Grupo: #25                              |       Última venda       |       Última compra      |                    Estoque                   |
++----------+------------------------------+------------+-------------+------------+-------------+--------------+---------------+---------------+
+|  Código  |     Descrição do produto     |    Data    | Preço unit. |    Data    | Preço unit. |  Quantidade  |  Valor custo  |  Valor venda  |
++----------+------------------------------+------------+-------------+------------+-------------+--------------+---------------+---------------+
+</cab_grupo>
+<detalhe>
+| #6       | #7                           | #8         | #9          | #10        | #11         | #27          | #13           | #14           |
+</detalhe>
+<rod_grupo nome="2">
++----------+------------------------------+------------+-------------+------------+-------------+--------------+---------------+---------------+
+| #15    produtos sem movimentação neste grupo                                                  | #16          | #17           | #18           |
++-----------------------------------------------------------------------------------------------+--------------+---------------+---------------+
+</rod_grupo>
+<rod_relat>
+
++-----------------------------------------------------------------------------------------------+--------------+---------------+---------------+
+| Total geral                                                                                   | #22          | #23           | #24           |
++-----------------------------------------------------------------------------------------------+--------------+---------------+---------------+
+</rod_relat>
+
+<rod_pagina>
++----------+------------------------------+------------+-------------+------------+-------------+--------------+---------------+---------------+
+</rod_pagina>
+
+<hash>75617ebd0e750834a4e3264801ad0a2d</hash>
+</relatorio>

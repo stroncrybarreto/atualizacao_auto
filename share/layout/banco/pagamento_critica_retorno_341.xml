@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>240</nome>
+ 
+	<critica>
+		<id>1</id>
+		<codigo>00</codigo>
+		<nome>PAGAMENTO EFETUADO</nome>
+	</critica>
+	<critica>
+		<id>2</id>
+		<codigo>AE</codigo>
+		<nome>DATA DE PAGAMENTO ALTERADA</nome>
+	</critica>
+	<critica>
+		<id>3</id>
+		<codigo>AG</codigo>
+		<nome>NÚMERO DO LOTE INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>4</id>
+		<codigo>AH</codigo>
+		<nome>NÚMERO SEQUENCIAL DO REGISTRO NO LOTE INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>5</id>
+		<codigo>AI</codigo>
+		<nome>PRODUTO DEMONSTRATIVO DE PAGAMENTO NÃO CONTRATADO</nome>
+	</critica>
+	<critica>
+		<id>6</id>
+		<codigo>AJ</codigo>
+		<nome>TIPO DE MOVIMENTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>7</id>
+		<codigo>AL</codigo>
+		<nome>CÓDIGO DO BANCO FAVORECIDO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>8</id>
+		<codigo>AM</codigo>
+		<nome>AGÊNCIA DO FAVORECIDO INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>9</id>
+		<codigo>AN</codigo>
+		<nome>CONTA CORRENTE DO FAVORECIDO INVÁLIDA / CONTA INVESTIMENTO EXTINTA EM 30/04/2011</nome>
+	</critica>
+	<critica>
+		<id>10</id>
+		<codigo>AO</codigo>
+		<nome>NOME DO FAVORECIDO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>11</id>
+		<codigo>AP</codigo>
+		<nome>DATA DE PAGAMENTO / DATA DE VALIDADE / HORA DE LANÇAMENTO / ARRECADAÇÃO / APURAÇÃO INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>12</id>
+		<codigo>AQ</codigo>
+		<nome>QUANTIDADE DE REGISTROS MAIOR QUE 999999</nome>
+	</critica>
+	<critica>
+		<id>13</id>
+		<codigo>AR</codigo>
+		<nome>VALOR ARRECADADO / LANÇAMENTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>14</id>
+		<codigo>BC</codigo>
+		<nome>NOSSO NÚMERO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>15</id>
+		<codigo>BD</codigo>
+		<nome>PAGAMENTO AGENDADO</nome>
+	</critica>
+	<critica>
+		<id>16</id>
+		<codigo>BE</codigo>
+		<nome>PAGAMENTO AGENDADO COM FORMA ALTERADA PARA OP</nome>
+	</critica>
+	<critica>
+		<id>17</id>
+		<codigo>BI</codigo>
+		<nome>CNPJ / CPF DO FAVORECIDO NO SEGMENTOJ-52 ou B INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>18</id>
+		<codigo>BL</codigo>
+		<nome>VALOR DA PARCELA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>19</id>
+		<codigo>CD</codigo>
+		<nome>CNPJ / CPF INFORMADO DIVERGENTE DO CADASTRADO</nome>
+	</critica>
+	<critica>
+		<id>20</id>
+		<codigo>CE</codigo>
+		<nome>PAGAMENTO CANCELADO</nome>
+	</critica>
+	<critica>
+		<id>21</id>
+		<codigo>CF</codigo>
+		<nome>VALOR DO DOCUMENTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>22</id>
+		<codigo>CG</codigo>
+		<nome>VALOR DO ABATIMENTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>23</id>
+		<codigo>CH</codigo>
+		<nome>VALOR DO DESCONTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>24</id>
+		<codigo>CI</codigo>
+		<nome>CNPJ / CPF / IDENTIFICADOR / INSCRIÇÃO ESTADUAL / INSCRIÇÃO NO CAD / ICMS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>25</id>
+		<codigo>CJ</codigo>
+		<nome>VALOR DA MULTA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>26</id>
+		<codigo>CK</codigo>
+		<nome>TIPO DE INSCRIÇÃO INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>27</id>
+		<codigo>CL</codigo>
+		<nome>VALOR DO INSS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>28</id>
+		<codigo>CM</codigo>
+		<nome>VALOR DO COFINS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>29</id>
+		<codigo>CN</codigo>
+		<nome>CONTA NÃO CADASTRADA</nome>
+	</critica>
+	<critica>
+		<id>30</id>
+		<codigo>CO</codigo>
+		<nome>VALOR DE OUTRAS ENTIDADES INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>31</id>
+		<codigo>CP</codigo>
+		<nome>CONFIRMAÇÃO DE OP CUMPRIDA</nome>
+	</critica>
+	<critica>
+		<id>32</id>
+		<codigo>CQ</codigo>
+		<nome>SOMA DAS FATURAS DIFERE DO PAGAMENTO</nome>
+	</critica>
+	<critica>
+		<id>33</id>
+		<codigo>CR</codigo>
+		<nome>VALOR DO CSLL INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>34</id>
+		<codigo>CS</codigo>
+		<nome>DATA DE VENCIMENTO DA FATURA INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>35</id>
+		<codigo>DA</codigo>
+		<nome>NÚMERO DE DEPEND. SALÁRIO FAMILIA INVALIDO</nome>
+	</critica>
+	<critica>
+		<id>36</id>
+		<codigo>DB</codigo>
+		<nome>NÚMERO DE HORAS SEMANAIS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>37</id>
+		<codigo>DC</codigo>
+		<nome>SALÁRIO DE CONTRIBUIÇÃO INSS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>38</id>
+		<codigo>DD</codigo>
+		<nome>SALÁRIO DE CONTRIBUIÇÃO FGTS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>39</id>
+		<codigo>DE</codigo>
+		<nome>VALOR TOTAL DOS PROVENTOS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>40</id>
+		<codigo>DF</codigo>
+		<nome>VALOR TOTAL DOS DESCONTOS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>41</id>
+		<codigo>DG</codigo>
+		<nome>VALOR LÍQUIDO NÃO NUMÉRICO</nome>
+	</critica>
+	<critica>
+		<id>42</id>
+		<codigo>DH</codigo>
+		<nome>VALOR LIQ. INFORMADO DIFERE DO CALCULADO</nome>
+	</critica>
+	<critica>
+		<id>43</id>
+		<codigo>DI</codigo>
+		<nome>VALOR DO SALÁRIO-BASE INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>44</id>
+		<codigo>DJ</codigo>
+		<nome>BASE DE CÁLCULO IRRF INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>45</id>
+		<codigo>DK</codigo>
+		<nome>BASE DE CÁLCULO FGTS INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>46</id>
+		<codigo>DL</codigo>
+		<nome>FORMA DE PAGAMENTO INCOMPATÍVEL COM HOLERITE</nome>
+	</critica>
+	<critica>
+		<id>47</id>
+		<codigo>DM</codigo>
+		<nome>E-MAIL DO FAVORECIDO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>48</id>
+		<codigo>DV</codigo>
+		<nome>DOC / TED DEVOLVIDO PELO BANCO FAVORECIDO</nome>
+	</critica>
+	<critica>
+		<id>49</id>
+		<codigo>D0</codigo>
+		<nome>FINALIDADE DO HOLERITE INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>50</id>
+		<codigo>D1</codigo>
+		<nome>MÊS DE COMPETENCIA DO HOLERITE INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>51</id>
+		<codigo>D2</codigo>
+		<nome>DIA DA COMPETENCIA DO HOLETITE INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>52</id>
+		<codigo>D3</codigo>
+		<nome>CENTRO DE CUSTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>53</id>
+		<codigo>D4</codigo>
+		<nome>CAMPO NUMÉRICO DA FUNCIONAL INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>54</id>
+		<codigo>D5</codigo>
+		<nome>DATA INÍCIO DE FÉRIAS NÃO NUMÉRICA</nome>
+	</critica>
+	<critica>
+		<id>55</id>
+		<codigo>D6</codigo>
+		<nome>DATA INÍCIO DE FÉRIAS INCONSISTENTE</nome>
+	</critica>
+	<critica>
+		<id>56</id>
+		<codigo>D7</codigo>
+		<nome>DATA FIM DE FÉRIAS NÃO NUMÉRICO</nome>
+	</critica>
+	<critica>
+		<id>57</id>
+		<codigo>D8</codigo>
+		<nome>DATA FIM DE FÉRIAS INCONSISTENTE</nome>
+	</critica>
+	<critica>
+		<id>58</id>
+		<codigo>D9</codigo>
+		<nome>NÚMERO DE DEPENDENTES IR INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>59</id>
+		<codigo>EM</codigo>
+		<nome>CONFIRMAÇÃO DE OP EMITIDA</nome>
+	</critica>
+	<critica>
+		<id>60</id>
+		<codigo>EX</codigo>
+		<nome>DEVOLUÇÃO DE OP NÃO SACADA PELO FAVORECIDO</nome>
+	</critica>
+	<critica>
+		<id>61</id>
+		<codigo>E0</codigo>
+		<nome>TIPO DE MOVIMENTO HOLERITE INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>62</id>
+		<codigo>E1</codigo>
+		<nome>VALOR 01 DO HOLERITE / INFORME INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>63</id>
+		<codigo>E2</codigo>
+		<nome>VALOR 02 DO HOLERITE / INFORME INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>64</id>
+		<codigo>E3</codigo>
+		<nome>VALOR 03 DO HOLERITE / INFORME INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>65</id>
+		<codigo>E4</codigo>
+		<nome>VALOR 04 DO HOLERITE / INFORME INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>66</id>
+		<codigo>FC</codigo>
+		<nome>PAGAMENTO EFETUADO ATRAVÉS DE FINANCIAMENTO COMPROR</nome>
+	</critica>
+	<critica>
+		<id>67</id>
+		<codigo>FD</codigo>
+		<nome>PAGAMENTO EFETUADO ATRAVÉS DE FINANCIAMENTO DESCOMPROR</nome>
+	</critica>
+	<critica>
+		<id>68</id>
+		<codigo>HA</codigo>
+		<nome>ERRO NO HEADER DE ARQUIVO</nome>
+	</critica>
+	<critica>
+		<id>69</id>
+		<codigo>HM</codigo>
+		<nome>ERRO NO HEADER DE LOTE</nome>
+	</critica>
+	<critica>
+		<id>70</id>
+		<codigo>IB</codigo>
+		<nome>VALOR DO DOCUMENTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>71</id>
+		<codigo>IC</codigo>
+		<nome>VALOR DO ABATIMENTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>72</id>
+		<codigo>ID</codigo>
+		<nome>VALOR DO DESCONTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>73</id>
+		<codigo>IE</codigo>
+		<nome>VALOR DA MORA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>74</id>
+		<codigo>IF</codigo>
+		<nome>VALOR DA MULTA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>75</id>
+		<codigo>IG</codigo>
+		<nome>VALOR DA DEDUÇÃO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>76</id>
+		<codigo>IH</codigo>
+		<nome>VALOR DO ACRÉSCIMO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>77</id>
+		<codigo>II</codigo>
+		<nome>DATA DE VENCIMENTO INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>78</id>
+		<codigo>IJ</codigo>
+		<nome>COMPETÊNCIA / PERÍODO REFERÊNCIA / PARCELA INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>79</id>
+		<codigo>IK</codigo>
+		<nome>TRIBUTO NÃO LIQUIDÁVEL VIA SISPAG OU NÃO CONVENIADO COM ITAÚ</nome>
+	</critica>
+	<critica>
+		<id>80</id>
+		<codigo>IL</codigo>
+		<nome>CÓDIGO DE PAGAMENTO / EMPRESA /RECEITA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>81</id>
+		<codigo>IM</codigo>
+		<nome>TIPO X FORMA NÃO COMPATÍVEL</nome>
+	</critica>
+	<critica>
+		<id>82</id>
+		<codigo>IN</codigo>
+		<nome>BANCO/AGENCIA NÃO CADASTRADOS</nome>
+	</critica>
+	<critica>
+		<id>83</id>
+		<codigo>IO</codigo>
+		<nome>DAC / VALOR / COMPETÊNCIA / IDENTIFICADOR DO LACRE INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>84</id>
+		<codigo>IP</codigo>
+		<nome>DAC DO CÓDIGO DE BARRAS INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>85</id>
+		<codigo>IQ</codigo>
+		<nome>DÍVIDA ATIVA OU NÚMERO DE ETIQUETA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>86</id>
+		<codigo>IR</codigo>
+		<nome>PAGAMENTO ALTERADO</nome>
+	</critica>
+	<critica>
+		<id>87</id>
+		<codigo>IS</codigo>
+		<nome>CONCESSIONÁRIA NÃO CONVENIADA COM ITAÚ</nome>
+	</critica>
+	<critica>
+		<id>88</id>
+		<codigo>IT</codigo>
+		<nome>VALOR DO TRIBUTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>89</id>
+		<codigo>IU</codigo>
+		<nome>VALOR DA RECEITA BRUTA ACUMULADA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>90</id>
+		<codigo>IV</codigo>
+		<nome>NÚMERO DO DOCUMENTO ORIGEM / REFERÊNCIA INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>91</id>
+		<codigo>IX</codigo>
+		<nome>CÓDIGO DO PRODUTO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>92</id>
+		<codigo>LA</codigo>
+		<nome>DATA DE PAGAMENTO DE UM LOTE ALTERADA</nome>
+	</critica>
+	<critica>
+		<id>93</id>
+		<codigo>LC</codigo>
+		<nome>LOTE DE PAGAMENTOS CANCELADO</nome>
+	</critica>
+	<critica>
+		<id>94</id>
+		<codigo>NA</codigo>
+		<nome>PAGAMENTO CANCELADO POR FALTA DE AUTORIZAÇÃO</nome>
+	</critica>
+	<critica>
+		<id>95</id>
+		<codigo>NB</codigo>
+		<nome>IDENTIFICAÇÃO DO TRIBUTO INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>96</id>
+		<codigo>NC</codigo>
+		<nome>EXERCÍCIO (ANO BASE) INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>97</id>
+		<codigo>ND</codigo>
+		<nome>CÓDIGO RENAVAM NÃO ENCONTRADO/INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>98</id>
+		<codigo>NE</codigo>
+		<nome>UF INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>99</id>
+		<codigo>NF</codigo>
+		<nome>CÓDIGO DO MUNICÍPIO INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>100</id>
+		<codigo>NG</codigo>
+		<nome>PLACA INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>101</id>
+		<codigo>NH</codigo>
+		<nome>OPÇÃO/PARCELA DE PAGAMENTO INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>102</id>
+		<codigo>NI</codigo>
+		<nome>TRIBUTO JÁ FOI PAGO OU ESTÁ VENCIDO</nome>
+	</critica>
+	<critica>
+		<id>103</id>
+		<codigo>NR</codigo>
+		<nome>OPERAÇÃO NÃO REALIZADA</nome>
+	</critica>
+	<critica>
+		<id>104</id>
+		<codigo>RJ</codigo>
+		<nome>REGISTRO REJEITADO</nome>
+	</critica>
+	<critica>
+		<id>105</id>
+		<codigo>RS</codigo>
+		<nome>PAGAMENTO DISPONÍVEL PARA ANTECIPAÇÃO NO RISCO SACADO - MODALIDADE RISCO SACADO PÓS AUTORIZADO</nome>
+	</critica>
+	<critica>
+		<id>106</id>
+		<codigo>SS</codigo>
+		<nome>PAGAMENTO CANCELADO POR INSUFICIÊNCIA DE SALDO/LIMITE DIÁRIO DE PAGTO</nome>
+	</critica>
+	<critica>
+		<id>107</id>
+		<codigo>TA</codigo>
+		<nome>LOTE NÃO ACEITO - TOTAIS DO LOTE COM DIFERENÇA</nome>
+	</critica>
+	<critica>
+		<id>108</id>
+		<codigo>TI</codigo>
+		<nome>TITULARIDADE INVÁLIDA</nome>
+	</critica>
+	<critica>
+		<id>109</id>
+		<codigo>X1</codigo>
+		<nome>FORMA INCOMPATÍVEL COM LAYOUT 010</nome>
+	</critica>
+	<critica>
+		<id>110</id>
+		<codigo>X2</codigo>
+		<nome>NÚMERO DA NOTA FISCAL INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>111</id>
+		<codigo>X3</codigo>
+		<nome>IDENTIFICADOR DE NF/CNPJ INVÁLIDO</nome>
+	</critica>
+	<critica>
+		<id>112</id>
+		<codigo>X4</codigo>
+		<nome>FORMA 32 INVÁLIDA</nome>
+	</critica>
+
+</layout>

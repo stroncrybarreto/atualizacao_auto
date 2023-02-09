@@ -1,0 +1,70 @@
+<relatorio dados="venda_grupo_dia_dia" ordem="empresa,data">
+<apelidos>
+1  nome_posto				tam=9999
+2  ponto_titulo				tam=9999
+3  rel_posto_nome	    	tam=9999
+4  linha_cabecalho			tam=9999
+5  data						tam=10	fmt=data
+6  dia_semana				tam=10
+7  linha_traco_cabecalho	tam=9999
+8  linha_titulo_cabecalho	tam=9999
+9  linha_titulo2_cabecalho	tam=9999
+10 linha_traco2_cabecalho	tam=9999
+11 detalhe					tam=9999
+12 linha_traco_completa		tam=9999
+13 linha_traco_superior		tam=9999
+14 subtitulo				tam=9999
+15 total_empresa			tam=9999
+16 total_geral				tam=9999
+17 media_geral				tam=9999
+18 previsao_geral			tam=9999
+19 linha_media				tam=9999
+20 linha_mes_ant			tam=9999
+21 total_previsao			tam=9999
+
+24 mes_ant_desc				tam=23
+25 ano_ant_desc				tam=23
+26 mes_ant_desc_2			tam=23
+27 ano_ant_desc_2			tam=23
+
+28 total_mes_anterior		tam=9999
+29 total_pr_mes_ano_ante	tam=9999
+30 total_pr_mes_anterior	tam=9999
+31 total_mes_ano_anterior	tam=9999
+
+</apelidos>
+
+<cab_pagina>
+#3
+#13
+
+#14
++------------+------------+#7
+|            |   Dia da   |#8
+|    Data    |   semana   |#9
++------------+------------+#10
+</cab_pagina>
+
+<detalhe>
+| #5         | #6         |#11
+</detalhe>
+
+<rod_relat>
++-------------------------+#10
+| Total                   |#16
+| Média                   |#17
+| Previsão                |#21
++-------------------------+#10
+| #24                     |#28
+| #27                     |#31
+| #26                     |#30
+| #25                     |#29
++-------------------------+#10
+</rod_relat>
+
+<rod_pagina>
++-------------------------+
+</rod_pagina>
+
+<hash>a0abb4d21c4b1b45ad7826970bc98e1c</hash>
+</relatorio>

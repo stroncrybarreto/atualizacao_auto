@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>mastermaq_src</nome>
+
+  <sessao>
+    <nome>detail</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>5</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>CFOP Nota Fiscal</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>6</inicio>
+      <fim>8</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>NF</padrao>
+      <descricao>Especie documento fiscal</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>9</inicio>
+      <fim>11</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>1</padrao>
+      <descricao>Serie Nota Fiscal</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>12</inicio>
+      <fim>16</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>CFOP Nota Fiscal</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>17</inicio>
+      <fim>23</fim>
+      <chave></chave>
+      <tipo>float</tipo>
+      <padrao>100</padrao>
+      <descricao>Reducao base de calculo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>24</inicio>
+      <fim>24</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>2</padrao>
+      <descricao>Resto da reducao do fornecedor</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>25</inicio>
+      <fim>25</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>2</padrao>
+      <descricao>Resto da reducao do Cliente</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>26</inicio>
+      <fim>30</fim>
+      <chave></chave>
+      <tipo>float</tipo>
+      <padrao>0</padrao>
+      <descricao>Aliquota do IPI</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>31</inicio>
+      <fim>31</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>1</padrao>
+      <descricao>Categoria do fornecedor</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>33</inicio>
+      <fim>40</fim>
+      <chave>codigo_forn</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Codigo do fornecedor na contabilidade</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>41</inicio>
+      <fim>90</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>Compra Cf. NF.:. #NF# p/ #CLI#.</padrao>
+      <descricao>Historico de compras no livro caixa</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>91</inicio>
+      <fim>98</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Codigo do cliente na contabilidade</descricao>
+    </registro>
+
+	<registro>
+      <inicio>99</inicio>
+      <fim>148</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>Receita Cf. NF.:. #NF# p/ #CLI#.</padrao>
+      <descricao>Historicos de vendas no livro caixa</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>149</inicio>
+      <fim>155</fim>
+      <chave></chave>
+      <tipo>float</tipo>
+      <padrao>100</padrao>
+      <descricao>Reducao da base do calculo para cliente</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>156</inicio>
+      <fim>165</fim>
+      <chave>cnpj_cpf_desm</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>CPF/CNPJ do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>166</inicio>
+      <fim>205</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>206</inicio>
+      <fim>206</fim>
+      <chave>cliente</chave>
+      <tipo>string</tipo>
+      <padrao>N</padrao>
+      <descricao>Cliente S = Sim N = Nao</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>207</inicio>
+      <fim>207</fim>
+      <chave>fornecedor</chave>
+      <tipo>string</tipo>
+      <padrao>N</padrao>
+      <descricao>Fornecedor S = Sim N = Nao</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>208</inicio>
+      <fim>247</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Endereco do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>248</inicio>
+      <fim>267</fim>
+      <chave>cidade</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Cidade do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>268</inicio>
+      <fim>275</fim>
+      <chave>cep</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Cep do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>276</inicio>
+      <fim>277</fim>
+      <chave>estado</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Estado do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>278</inicio>
+      <fim>295</fim>
+      <chave>cnpj_cpf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ/CPF do cliente/fornecedor com formatacao</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>296</inicio>
+      <fim>313</fim>
+      <chave>inscr_est</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Inscricao estadual do cliente/forncedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>314</inicio>
+      <fim>314</fim>
+      <chave>clie_forn</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>1 - Cliente Fornecedor</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>315</inicio>
+      <fim>322</fim>
+      <chave>data_cad</chave>
+      <tipo>date_us</tipo>
+      <padrao></padrao>
+      <descricao>Data de inclusao no BD do Fornecedor/Cliente</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>323</inicio>
+      <fim>328</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Código do municipio do cliente/fornecedor</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>329</inicio>
+      <fim>331</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Codigo do historico de compras a vista no MT</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>332</inicio>
+	  <fim>334</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Codigo do historico de vendas a vista no MT</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>335</inicio>
+      <fim>339</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Codigo Fiscal predominante</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>340</inicio>
+      <fim>344</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Codigo Fiscal predominante posterior a 01/01/2003</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>345</inicio>
+      <fim>346</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>1</padrao>
+      <descricao>Tipo do documento Fiscal</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>347</inicio>
+      <fim>361</fim>
+      <chave>inscr_municipal</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Inscricao municipal</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>362</inicio>
+      <fim>371</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>rua</padrao>
+      <descricao>Tipo do logradouro</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>372</inicio>
+      <fim>411</fim>
+      <chave>endereco</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Logradouro do endereco do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>412</inicio>
+      <fim>417</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Numero do endereco do cliente/fornecedor</descricao>
+    </registro>
+	
+	<registro>
+      <inicio>418</inicio>
+      <fim>437</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Complemento do endereco do cliente/fornecedor</descricao>
+    </registro>	
+	
+	<registro>
+      <inicio>438</inicio>
+      <fim>447</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>bairro</padrao>
+      <descricao>Tipo do bairro do cliente/fornecedor</descricao>
+    </registro>	
+	
+	<registro>
+      <inicio>448</inicio>
+      <fim>467</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Nome do bairro do endereco do cliente/fornecedor</descricao>
+    </registro>	
+	
+	<registro>
+      <inicio>468</inicio>
+      <fim>473</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Codigo do beneficiario no MT</descricao>
+    </registro>
+		
+	<registro>
+      <inicio>474</inicio>
+      <fim>475</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>PIS/COFINS/CSL retido na fonte</descricao>
+    </registro>	
+	
+	<registro>
+      <inicio>476</inicio>
+      <fim>476</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Tipo da tributacao da Empresa</descricao>
+    </registro>
+	
+  </sessao>
+
+</layout>

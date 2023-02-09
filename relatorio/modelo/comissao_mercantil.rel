@@ -1,0 +1,79 @@
+<relatorio dados="comissao_mercantil" tamfonte="8">
+<apelidos>
+1  rel_posto_nome   tam=28
+3  margem_sup1      tam=162
+4  margem_sup2      tam=162
+6  titulo2			tam=500
+7  separador1	    tam=162
+8  separador2       tam=162
+9  tit_grupo1      	tam=162
+10 tit_grupo2     	tam=162
+11 data      		tam=10
+12 lin_detalhe		tam=162
+13 lin_total        tam=162
+14 lin_dias	        tam=162
+15 lin_media		tam=162
+16 lin_venda        tam=162
+17 separador3       tam=162
+18 lin_lucro_bruto  tam=162
+19 tot_lucro_bruto  tam=16  fmt=float2
+20 lin_lucro_valor_comissao  tam=162
+21 valor_comissao   tam=16  fmt=float2
+22 valor_pago       tam=16  fmt=float2
+23 diferenca        tam=16  fmt=float2
+24 lin_comissao     tam=162
+</apelidos>
+<cab_pagina>
+#1                          #3
+------------------#4
+
+#6
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa">
++----------------+#7
+|                |#9
++----------------+#8
+| Data           |#10
++----------------+#8
+</cab_grupo>
+
+<detalhe>
+| #11            |#12
+</detalhe>
+
+<rod_grupo nome="1">
++----------------+#8
+| Soma           |#13
++----------------+#17
+| Dias           |#14
++----------------+#17
+| Média          |#15
++----------------+#17
+| Compras (L)    |#16
++----------------+#17
+| L.bruto        |#18
++----------------+#17
+| Comissão       |#24
++----------------+#17
+| Valor comissão |#20
++----------------+#17
+
++-------------------+------------------+
+| Lucro bruto total | #19              |
++-------------------+------------------+
+| Comissão total    | #21              |
++-------------------+------------------+
+| Valor pago        | #22              |
++-------------------+------------------+
+| Diferença         | #23              |
++-------------------+------------------+
+</rod_grupo>
+
+<rod_pagina>
++-------------------+#6
+</rod_pagina>
+
+<hash>a3edcd138eb72d2151fe9b20ac32d4b8</hash>
+</relatorio>

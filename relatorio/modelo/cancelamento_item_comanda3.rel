@@ -1,0 +1,84 @@
+<relatorio dados="cancelamento_item_comanda" ordem="ordem" saida="pdf">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora    	tam=18
+3  titulo				tam=135 alinha=centro
+4  comanda				tam=10
+5  hota_cancela			tam=19	expr=hora_cancela.strftime('%d/%m/%Y %H:%M:%S')
+6  usuario				tam=20
+7  terminal_canc				tam=20
+8  produto				tam=18
+9  quantidade			tam=10	alinha=centro
+10 valor				tam=15	fmt=float2
+11 valor_total			tam=15	fmt=float2	func=soma	campo=valor
+12 quantidade_itens		tam=8	func=contar
+13 total_qtd_itens		tam=100	expr='%s ite%s cancelado%s' % ((quantidade_itens,) + (quantidade_itens > 1 and ('ns', 's') or ('m', '')))
+
+14 valor_subtotal		tam=15	fmt=float2	func=soma	campo=valor		grupo=1
+15 quantidade_itens_gp	tam=8	func=contar	grupo=1
+16 total_qtd_itens_gp	tam=100	expr='%s ite%s cancelado%s' % ((quantidade_itens_gp,) + (quantidade_itens_gp > 1 and ('ns', 's') or ('m', '')))
+17 legenda_0			tam=100
+
+18 valor_subtotal1		tam=15	fmt=float2	func=soma	campo=valor		grupo=2
+19 quantidade_itens_gp1	tam=8	func=contar	grupo=2
+20 total_qtd_itens_gp1	tam=100	expr='%s ite%s cancelado%s' % ((quantidade_itens_gp1,) + (quantidade_itens_gp1 > 1 and ('ns', 's') or ('m', '')))
+21 legenda_1			tam=100
+
+22 valor_subtotal2		tam=15	fmt=float2	func=soma	campo=valor		grupo=3
+23 quantidade_itens_gp2	tam=8	func=contar	grupo=3
+24 total_qtd_itens_gp2	tam=100	expr='%s ite%s cancelado%s' % ((quantidade_itens_gp2,) + (quantidade_itens_gp2 > 1 and ('ns', 's') or ('m', '')))
+25 legenda_2			tam=100
+
+</apelidos>
+<cab_pagina>
+{INV}#1                                                                                                                    #2
+{INV}--------------------------------------------------------------------------------------------------------------------------------------
+{INV}
+{TIT}                                                    CANCELAMENTO DE ITENS DA COMANDA
+{SUBTIT}#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupamento_0">
+{NEGR/}#17
+</cab_grupo>
+<cab_grupo nome="2" quebra="agrupamento_1">
+{NEGR/}#21
+</cab_grupo>
+<cab_grupo nome="3" quebra="agrupamento_2">
+{NEGR/}#25
+
++------------+---------------------+----------------------+---------------------+---------------------+------------+-----------------+
+|  Comanda   |      Data/Hora      |        Usuário       |       Terminal      |       Produto       | Quantidade |      Valor      |
++------------+---------------------+----------------------+---------------------+---------------------+------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #4         | #5                  | #6                   | #7                  | #8                  | #9         | #10             |
+</detalhe>
+<rod_grupo nome="3">
++------------+---------------------+----------------------+---------------------+---------------------+------------+-----------------+
+| #24                                                                                                              | #22             |
++------------------------------------------------------------------------------------------------------------------+-----------------+
+
+</rod_grupo>
+<rod_grupo nome="2">
++------------------------------------------------------------------------------------------------------------------+-----------------+
+| #20                                                                                                              | #18             |
++------------------------------------------------------------------------------------------------------------------+-----------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
++------------------------------------------------------------------------------------------------------------------+-----------------+
+| #16                                                                                                              | #14             |
++------------------------------------------------------------------------------------------------------------------+-----------------+
+
+</rod_grupo>
+<rod_relat>
++------------------------------------------------------------------------------------------------------------------+-----------------+
+| Total: #13                                                                                                       | #11             |
++------------------------------------------------------------------------------------------------------------------+-----------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+<hash>3beb298affed9c3fc2c88e08d759ea2c</hash>
+</relatorio>
+

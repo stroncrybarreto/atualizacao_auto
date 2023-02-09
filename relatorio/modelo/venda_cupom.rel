@@ -1,0 +1,73 @@
+<relatorio dados="venda_cupom">
+<apelidos>
+1 rel_posto_nome tam=60
+2 rel_data_hora tam=18
+3 titulo tam=120 alinha=centro
+4 grupo_nome tam=40
+5 produto_codigo tam=6
+6 produto_nome tam=35
+7 venda_qtde tam=10 fmt=float2
+8 venda_valor tam=10 fmt=float2
+9 cupom_qtde tam=10 fmt=float2
+10 cupom_valor tam=10 fmt=float2
+11 difer_qtde tam=10 fmt=float2
+12 difer_valor tam=10 fmt=float2
+13 grupo_venda_qtde tam=10 fmt=float2
+14 grupo_venda_valor tam=10 fmt=float2
+15 grupo_cupom_qtde tam=10 fmt=float2
+16 grupo_cupom_valor tam=10 fmt=float2
+17 grupo_difer_qtde tam=10 fmt=float2
+18 grupo_difer_valor tam=10 fmt=float2
+19 total_venda_qtde tam=10 fmt=float2
+20 total_venda_valor tam=10 fmt=float2
+21 total_cupom_qtde tam=10 fmt=float2
+22 total_cupom_valor tam=10 fmt=float2
+23 total_difer_qtde tam=10 fmt=float2
+24 total_difer_valor tam=10 fmt=float2
+25 grupo_cod_nome tam=100 expr=str(grupo_codigo)+" - "+str(grupo_nome)
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                      #2
+------------------------------------------------------------------------------------------------------------------------
+
+                                       COMPARATIVO ENTRE VENDAS E CUPONS EMITIDOS
+#3
+
+
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="grupo">
++----------------------------------------------------------------------------------------------------------------------+
+| Grupo: #25                                                                                                           |
++--------+-------------------------------------+-----------------------+-----------------------+-----------------------+
+|        |                                     |    Venda registrada   |    Cupons emitidos    |       Diferença       |
+|        |                                     +-----------+-----------+-----------+-----------+-----------+-----------+
+| Código |        Descrição do produto         |    Qtde   |   Valor   |   Qtde    |   Valor   |   Qtde    |   Valor   |
++--------+-------------------------------------+-----------+-----------+-----------+-----------+-----------+-----------+
+</cab_grupo>
+
+<detalhe>
+| #5     | #6                                  |#7         |#8         |#9         |#10        |#11        |#12        |
+</detalhe>
+
+<rod_grupo nome="1">
++--------+-------------------------------------+-----------+-----------+-----------+-----------+-----------+-----------+
+| Subtotal                                     |#13        |#14        |#15        |#16        |#17        |#18        |
++----------------------------------------------+-----------+-----------+-----------+-----------+-----------+-----------+
+
+</rod_grupo>
+
+<rod_relat>
++----------------------------------------------+-----------+-----------+-----------+-----------+-----------+-----------+
+| Total                                        |#19        |#20        |#21        |#22        |#23        |#24        |
++----------------------------------------------+-----------+-----------+-----------+-----------+-----------+-----------+
+</rod_relat>
+
+<rod_pagina>
++--------+-------------------------------------+-----------+-----------+-----------+-----------+-----------+-----------+
+</rod_pagina>
+
+<hash>9fdfefa00c680aeeda3d580731986fdf</hash>
+</relatorio>

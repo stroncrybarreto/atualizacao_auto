@@ -1,0 +1,188 @@
+<relatorio dados="lmc" paper_size="A4" font_height="compact">
+<apelidos>
+1  pagina            	tam=4
+2  empresa_razao_social	tam=35
+3  empresa_cpf		tam=18
+4  empresa_inscr_est	tam=17
+5  produto_nome		tam=48
+6  data			tam=10  fmt=data
+</apelidos>
+
+<cab_pagina>
++----------------------------------------------------------------------------------------------------+-------------+
+| Livro de Movimentacao de Combustiveis (LMC)                                                        | Fl.nr. #1   |
+| Empresa: #2                                  CNPJ: #3                      I.E.: #4                |             |
++-------------------------------------------------------------------------------------------+---+----+-------------+
+| 1 | Produto:  #5                                                                          | 2 | Data: #6         |
++---+---------------------------------------------------------------------------------------+---+------------------+
+</cab_pagina>
+
+<detalhe quebra_pagina="1">
+</detalhe>
+
+<subrelat dados="lmc_medicao_abertura">
+<apelidos>
+5  tanque1 	tam=3   fmt=%03d  nulo
+6  tanque2 	tam=3   fmt=%03d  nulo
+7  tanque3 	tam=3   fmt=%03d  nulo
+8  tanque4 	tam=3   fmt=%03d  nulo
+9  tanque5 	tam=3   fmt=%03d  nulo
+10 tanque6 	tam=3   fmt=%03d  nulo
+11 tanque7 	tam=3   fmt=%03d  nulo
+12 tanque8 	tam=3   fmt=%03d  nulo
+13 valor1 	tam=9   fmt=%.02f nulo
+14 valor2 	tam=9   fmt=%.02f nulo
+15 valor3 	tam=9   fmt=%.02f nulo
+16 valor4 	tam=9   fmt=%.02f nulo
+17 valor5 	tam=9   fmt=%.02f nulo
+18 valor6 	tam=8   fmt=%.02f nulo
+19 valor7 	tam=8   fmt=%.02f nulo
+20 valor8 	tam=8   fmt=%.02f nulo
+21 total 	tam=16  fmt=%.02f nulo
+</apelidos>
+
+<detalhe>
+| 3 | Estoque de Abertura (Medicao Fisica no inicio do dia)                                                        |
++--++-------+--+--------+--+--------+--+--------+--+--------+--+-------+--+------+--+-------+---+------------------+
+|TQ|    #5  |TQ|    #6  |TQ|    #7  |TQ|    #8  |TQ|    #9  |TQ|   #10 |TQ|  #11 |TQ|   #12 |3.1| Estoque Abertura |
++--+--------+--+--------+--+--------+--+--------+--+--------+--+-------+--+------+--+-------+---+------------------+
+| #13       | #14       | #15       | #16       | #17       | #18      | #19     | #20      |     #21              |
+</detalhe>
+</subrelat>
+
+<subrelat dados="lmc_volume_recebido">
+<apelidos>
+18 documento 	        tam=8   alinha=direita
+19 data_doc 	        tam=10  fmt=data
+20 deposito 	        tam=3   fmt=%02d  nulo
+21 quantidade 	        tam=20  fmt=%.02f nulo
+22 total	            tam=20  fmt=%.02f
+23 volume_disponivel 	tam=20  fmt=%.02f nulo
+</apelidos>
+<cab_relat>
++---+-------+-----------+-----------+-----------+-----------+----------+---+-----+----------+---+------------------+
+| 4 | Volume Recebido no dia (em litros)                               |4.1| Nr.TQ Descarga |4.2| Volume Recebido  |
++---+------------------------------------------------------------------+---+----------------+---+------------------+
+</cab_relat>
+<detalhe>
+| Nota Fiscal Nr.         #18       de #19                             |        #20         | #21                  |
+</detalhe>
+<rod_relat>
++----------------------------------------------------------------------+---+----------------+----------------------+
+|                                                                      |4.3| Total Recebido | #22                  |
++---+------------------------------------------------------------------+---+----------------+----------------------+
+|   |                                                                  |   | Vol.Disponivel |                      |
+| 5 | Volume Vendido no dia (em litros)                                |4.4|  (3.1 + 4.3)   | #23                  |
+</rod_relat>
+</subrelat>
+
+<subrelat dados="lmc_volume_vendido">
+<apelidos>
+24 deposito 	tam=3   fmt=%03d  nulo
+25 bico 	    tam=3
+26 final 	    tam=19  fmt=%.02f 
+27 inicial 	    tam=18  fmt=%.02f 
+28 afericao 	tam=18  fmt=%.02f nulo
+29 quantidade 	tam=20  fmt=%.02f nulo
+30 total 	    tam=20  fmt=%.02f nulo
+</apelidos>
+
+<cab_relat>
++---+----------+---+--------+---+-----------------+---+----------------+---+----------------+---+------------------+
+|5.1|   Tanque |5.2|   Bico |5.3|    + Fechamento |5.4|     - Abertura |5.5|    - Afericoes |5.6| = Vendas no Bico |
++---+----------+---+--------+---+-----------------+---+----------------+---+----------------+---+------------------+
+</cab_relat>
+
+<detalhe>
+|          #24 |        #25 | #26                 | #27                | #28                | #29                  |
+</detalhe>
+
+<rod_relat>
++--------------+------------+---------------------+------+-------------+--------------------+----------------------+
+| 10 - Valor Vendas (R$)    |                            |5.7| Vendas no dia                | #30                  |
+</rod_relat>
+</subrelat>
+
+<subrelat dados="lmc_medicao_fechamento">
+<apelidos>
+31 estoque_escritural 	tam=20  fmt=%.02f
+32 valor_venda_dia 	    tam=16  fmt=%.02f
+33 estoque_fechamento 	tam=20  fmt=%.02f
+34 perda_sobra 		    tam=20  fmt=%.02f
+35 valor_acumulado_mes 	tam=16  fmt=%.02f
+36 qtde_acumulado_mes 	tam=15  fmt=%.02f
+37 obs_01		        tam=54
+38 obs_02		        tam=54
+39 obs_03		        tam=54
+40 obs_04		        tam=54
+41 obs_05		        tam=54
+42 obs_06		        tam=54
+43 obs_07		        tam=54
+44 obs_08		        tam=54
+45 obs_09		        tam=54
+46 obs_10		        tam=54
+47 obs_11		        tam=54
+48 obs_12		        tam=54
+49 obs_13		        tam=54
+50 ff_tanque1           tam=3   fmt=%03d  nulo
+51 ff_tanque2 	        tam=3   fmt=%03d  nulo
+52 ff_tanque3 	        tam=3   fmt=%03d  nulo
+53 ff_tanque4 	        tam=3   fmt=%03d  nulo
+54 ff_tanque5 	        tam=3   fmt=%03d  nulo
+55 ff_tanque6 	        tam=3   fmt=%03d  nulo
+56 ff_tanque7 	        tam=3   fmt=%03d  nulo
+57 ff_tanque8 	        tam=3   fmt=%03d  nulo
+58 ff_estoque1 	        tam=9   fmt=%.02f nulo
+59 ff_estoque2 	        tam=9   fmt=%.02f nulo
+60 ff_estoque3 	        tam=9   fmt=%.02f nulo
+61 ff_estoque4 	        tam=9   fmt=%.02f nulo
+62 ff_estoque5 	        tam=9   fmt=%.02f nulo
+63 ff_estoque6 	        tam=8   fmt=%.02f nulo
+64 ff_estoque7 	        tam=8   fmt=%.02f nulo
+65 ff_estoque8 	        tam=8   fmt=%.02f nulo
+66 total		        tam=11  fmt=%.02f
+</apelidos>
+
+<detalhe>
++---------------------------+                            +---+------------------------------+----------------------+
+|    |  Valor das           +---------------------+      |   | Estoque Escritural           |                      |
+|    |  Vendas do dia       | R$ #32              |      | 6 |    (4.4 - 5.7)               | #31                  |
+|10.1|  5.7 x Preco Bomba   +---------------------+      +---+------------------------------+----------------------+
++----+---------------------------------------------------+   |     Estoque de               |                      |
+|    |                      +---------------------+      | 7 |  Fechamento (9.1)            | #33                  |
+|    | Valor                | R$ #35              |      +---+------------------------------+----------------------+
+|10.2| Acumulado no mes     +---------------------+      |   |    - Perdas                  |                      |
++----+---------------------------------------------------+ 8 |    + Sobras (*)              | #34                  |
+| 11 - Para uso do Revendedor                            +---+------------------------------+----------------------+
+| Venda em litros no mes: #36                            | 12 - Destinado a Fiscalizacao                           |
++--------------------------------------------------------+ -----------------------------                           |
+| 13 - Observacoes                                       | ANP                                                     |
+| ----------------                                       |                                                         |
+|                                                        |                                                         |
+| #37                                                    |                                                         |
+| #38                                                    |                                                         |
+| #39                                                    |                                                         |
+| #40                                                    |                                                         |
+| #41                                                    |                                                         |
+| #42                                                    +---------------------------------------------------------+
+| #43                                                    | OUTROS ORGAOS FISCAIS                                   |
+| #44                                                    |                                                         |
+| #45                                                    |                                                         |
+| #46                                                    |                                                         |
+| #47                                                    |                                                         |
+| #48                                                    |                                                         |
+| #49                                                    |                                                         |
++--------------------------------------------------------+---------------------------------------------------------+
+|                                          Conciliacao dos Estoques                                                |
++---+------------+--+-------+--+-------+--+-------+--+-------+--+-------+--+------+--+------+--+------+---+--------+
+|   |            |TQ|   #50 |TQ|   #51 |TQ|   #52 |TQ|   #53 |TQ|   #54 |TQ|  #55 |TQ|  #56 |TQ|  #57 |9.1| Total  |
+|   | Fechamento +--+-------+--+-------+--+-------+--+-------+--+-------+--+------+--+------+--+------+---+--------+
+| 9 | Fisico     |#58       |#59       |#60       |#61       |#62       |#63      |#64      |#65      |#66         |
++---+------------+----------+----------+----------+----------+----------+---------+---------+---------+------------+
+| (*) ATENCAO -  SE O RESULTADO FOR NEGATIVO, PODE ESTAR HAVENDO VAZAMENTO PARA O MEIO AMBIENTE.                   |
++------------------------------------------------------------------------------------------------------------------+
+</detalhe>
+</subrelat>
+
+<hash>11ea9748a99f82438f7cf75edac6f05b</hash>
+</relatorio>

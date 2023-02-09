@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Aviso de Faturamento</title>
+
+
+  <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+
+</head>
+
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<div style="margin-left: 10px;"><font size="-1"><span style="font-family: Helvetica,Arial,sans-serif;">Prezado Cliente,<br>
+
+<br style="font-family: Helvetica,Arial,sans-serif;">
+
+</span></font></div>
+
+<div style="margin-left: 10px;"><font size="-1"><span style="font-family: Helvetica,Arial,sans-serif;">Em anexo est&atilde;o as informa&ccedil;&otilde;es de seu faturamento realizado em um de nossos postos</span></font>.</div>
+
+<!--Informacoes do posto-->
+<br>
+
+<div style="margin-left: 10px;">
+<table bgcolor="#999999" border="0" cellpadding="1" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <table style="width: 100%; height: 100%;" border="0" cellpadding="3" cellspacing="2">
+
+        <tbody>
+
+          <tr style="font-family: Verdana,Helvetica,Arial,sans-serif;" align="center">
+            <td style="height: 100%; width: 100%;" colspan="2"><font size="-1"><strong><font color="#ffffff">Informa&ccedil;&otilde;es do Posto</font></strong></font></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Posto:</font></td>
+            <td bgcolor="#ffffff"><font face="Verdana, Helvetica, Arial, sans-serif" size="2"><strong tal:content="empresa_nome"> </strong></font></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Cidade:</font></td>
+            <td style="background-color: rgb(255, 255, 255);"><font face="Verdana, Helvetica, Arial, sans-serif" size="2"><strong tal:content="empresa_cidade"> </strong></font></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Data / Hora:</font></td>
+            <td bgcolor="#ffffff"><font face="Verdana, Helvetica,Arial,sans-serif" size="2"><strong tal:content="data_hora"> </strong></font></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+<!--Informacoes do cliente-->
+<br>
+
+<br>
+
+<div style="margin-left: 10px;">
+<table bgcolor="#999999" border="0" cellpadding="1" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <table style="width: 100%; height: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr style="font-family: Verdana,Helvetica,Arial,sans-serif;" align="center">
+            <td colspan="6" rowspan="1" style="height: 100%; width: 100%; text-align: center; background-color: rgb(153, 153, 153); white-space: nowrap;"><font size="-1"><strong><font color="#ffffff">Informa&ccedil;&otilde;es da Fatura</font></strong></font></td>
+          </tr>
+
+          <tr>
+            <td style="background-color: rgb(255, 255, 255);" colspan="5" rowspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Cliente:
+&nbsp;<font face="Helvetica,Arial,sans-serif" size="2"><strong tal:content="cliente_nome"></strong></font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+
+            </font></td>
+
+            <td colspan="1" rowspan="1" style="background-color: rgb(255, 255, 255); white-space: nowrap;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">CPF/CNPJ:&nbsp; 
+            <font face="Helvetica,Arial,sans-serif" size="2"><strong tal:content="cliente_cpf"></strong></font></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td style="background-color: rgb(255, 255, 255); white-space: nowrap;" colspan="1" rowspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Fatura
+Nr:&nbsp; <font face="Verdana, Helvetica,Arial,sans-serif" size="2"><strong tal:content="fatura_documento"></strong></font>
+            </font></td>
+
+            <td colspan="1" rowspan="1" style="background-color: rgb(255, 255, 255); white-space: nowrap;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Emiss&atilde;o: <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura_data"></strong></font>
+            </font></td>
+
+            <td colspan="1" rowspan="1" style="background-color: rgb(255, 255, 255); white-space: nowrap;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vencto:&nbsp;
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura_vencto"></strong></font>
+            </font></td>
+
+            <td colspan="3" rowspan="1" style="background-color: rgb(255, 255, 255);"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Obs.: &nbsp;
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="cliente_obs"></strong></font></font></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+<!--Detalhamento da fatura-->
+<br>
+
+<div style="margin-left: 10px;">
+<table bgcolor="#999999" border="0" cellpadding="1" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <table style="width: 100%; height: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="text-align: center;" colspan="12"><font size="-1"><span style="color: rgb(255, 255, 255); font-weight: bold; font-family: Verdana,Helvetica,Arial,sans-serif;">Detalhamento da Fatura</span></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;"><font size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;">Nr. Nota</span></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;"><font size="-1">Dt. Emiss&atilde;o</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="1"><font size="-1">Placa</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="1"><font size="-1">Qtde</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="1"><font size="-1">Km Ini.</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="1"><font size="-1">Km Fin.</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="1"><font size="-1">Km/Lt</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="1"><font size="-1">Pr.Unit</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;"><font size="-1">Produto</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;"><font size="-1">Vl. Item</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;"><font size="-1">Pr. Tab.</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;"><font size="-1">Vl. tab.</font></td>
+
+          </tr>
+
+          <tr tal:repeat="fatura fatura_list">
+            
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/nota_documento"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/nota_data"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: left;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/nota_placa"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/produto_quantidade"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/nota_km_ini"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/nota_km_fim"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/nota_km_litro"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/produto_preco_unit"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: left;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/produto_nome"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/produto_valor"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/preco_tabela"></strong></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura/valor_tabela"></strong></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td colspan="6" rowspan="1" style="background-color: rgb(255, 255, 255); text-align: right;"><font size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;"></span></font><font size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;"></span></font><font size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;">Total
+Litros:</span></font></td>
+
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;" colspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura_litros"></strong></font></td>
+
+            <td colspan="2" rowspan="1" style="background-color: rgb(255, 255, 255); text-align: right;"><font size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;">Total
+Valor:</span></font></td>
+
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;" colspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="fatura_total"></strong></font> </td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;" colspan="1"><font size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;">Total
+Valor Tabela:</span></font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: right;"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="total_tabela"></strong></font></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+<!--Resumo da fatura-->
+<br>
+
+<div style="margin-left: 10px;">
+<table bgcolor="#999999" border="0" cellpadding="1" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <table style="width: 100%; height: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="text-align: center; white-space: nowrap;" colspan="12" rowspan="1"><font style="color: rgb(255, 255, 255); font-weight: bold;" size="-1"><span style="font-family: Verdana,Helvetica,Arial,sans-serif;">Resumo
+da
+Fatura</span></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td style="text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif; background-color: rgb(255, 255, 255);" colspan="3" rowspan="1"><font size="-1">Descri&ccedil;&atilde;o</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="3" rowspan="1"><font size="-1">Quantidade</font></td>
+
+            <td style="background-color: rgb(255, 255, 255); text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif;" colspan="2" rowspan="1"><font size="-1">Valor</font></td>
+
+            <td style="text-align: center; font-family: Verdana,Helvetica,Arial,sans-serif; background-color: rgb(255, 255, 255); white-space: nowrap;" colspan="4" rowspan="1">
+            <font size="-1">Valor
+Tabela</font></td>
+
+          </tr>
+
+          <tr tal:repeat="resumo resumo_list">
+
+            <td style="background-color: rgb(255, 255, 255); white-space: nowrap; text-align: left;" colspan="3" rowspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="resumo/produto_nome"></strong></font></td>
+
+            <td style="text-align: right; background-color: rgb(255, 255, 255); white-space: nowrap;" colspan="3" rowspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="resumo/quantidade"></strong></font></td>
+
+            <td style="text-align: right; background-color: rgb(255, 255, 255); white-space: nowrap;" colspan="2" rowspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="resumo/valor"></strong></font></td>
+
+            <td style="text-align: right; background-color: rgb(255, 255, 255); white-space: nowrap;" colspan="4" rowspan="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><strong tal:content="resumo/valor_tabelado"></strong></font></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+    <div style="margin-left: 10px;">
+      <span style="font-size: 12px;font-family: Helvetica,Arial,sans-serif;">
+        <br>
+        <div>
+          <font size="-1">
+            Documento emitido por Linx - <strong tal:content="sistema_versao"></strong> - <a target="_blank" href="https://www.linx.com.br/autosystem/">www.linx.com.br/autosystem</a>
+            &nbsp;
+            <a href="https://www.linx.com.br/autosystem/" target="_blank">
+              <img src="data:image/png;base64,/9j/4AAQSkZJRgABAAEAYABgAAD//gAfTEVBRCBUZWNobm9sb2dpZXMgSW5jLiBWMS4wMQD/2wCEAAUFBQgFCAwHBwwMCQkJDA0MDAwMDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0BBQgICgcKDAcHDA0MCgwNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDf/EAaIAAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKCwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foRAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/AABEIACYALAMBEQACEQEDEQH/2gAMAwEAAhEDEQA/APsugAoAKACgDlPE2t/YoxZ2jA310wjhUHlSern0CiuCvXUV7Kk06stEl0v1Z7+XYP20niMQrYaknOo3s0vsrzbOkto3hiRJGLuqgMx6k45NdsU0km7u254tSUZTlKEVGLbaS6LoieqMgoAKACgDyXTbqxm8TylTkQqURjyPMJ+bH8ge3SvjsP8AV8HjZxUn+8k+Vt6KT3S8ux+gYiliKeU07q3PLmklo+RbX/No9ar7E/PzEtfEFte6Yms24kktpIhMgVCZGQ9MJ1z7UAatvOLmNZVDKHUMAw2sM9iD0PqKAJqAMXxBNcw2Mn2FC9ww2oB2Lcbj7Cues5KD9kry2Xz6npYGFKeIh9ako0k+aV+qWtvVnBaH8OnsV86eb9+/zHA4BPbPc+9fLVcmlXXNKryz3Vlsz6zG59Gu/Z0af7qOiu916dPQ9NskliiCTkM68bh3A6E+9fR4WNaFJQxTTqR05l9pLZ+r6nxFZwlNypK0Xrbs+q9Dy/Qbuaw8A29xbMY5YtORkYdVOODXcYGdLo8nj2/FlqNxMlrY2VtLshdozJcXCsfNdlIJ8vblV6HPIoArLPqVvov2/wA95rnw1ezRyEtj7XbQY3rJ23shGD/s+9AHX/D+efXY5vEs7sI9UKtawk5WK1QfuuBwJGJYue/FAHotABQB81xa7NobXvw7mAlW0sJZrW5HBFuu3ZHKD1cZOSvFAHpHg5Cmq3J/6cdPH5JJQByDRSakz6AG2Q6lrN41ywyC1vFsLwjHQyZAz2FAHa+DLZtAv77w/GQbO2MdxajnMUc+R5HP8KFMr9TQB6NQAUAf/9k="
+                alt="Linx" width="32px" height="32px"/>
+            </a>
+          </font>
+      </span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<relatorio dados="pessoa_vencto" ordem="pessoa_nome,pessoa,conta_nome">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  data  				tam=10  fmt=data
+4  conta_nome           tam=23
+5  conta_codigo        tam=13 
+6  pessoa	            tam=23 expr=str(pessoa_codigo) + ' - ' + pessoa_nome
+7  tipo 	       	    tam=10
+8  inicio     	   		tam=3   fmt=%d
+9  prazo    			tam=3   fmt=%d
+10 tolerancia       	tam=3   fmt=%d
+11 vencto        		tam=12  
+12 titulo        		tam=192	alinha=centro
+13 grupo_nome        	tam=25
+14 grupo_vencto        	tam=5 	alinha=centro
+15 tabela_nome			tam=13
+16 grupo_tabela         tam=5   alinha=centro
+17 limite_credito		tam=10	fmt=%.02f
+18 tabela_fat_nome		tam=13
+19 negativado			tam=10	alinha=centro
+20 bloqueado			tam=9	alinha=centro
+21 fatura_cod_nome		tam=31
+22 tipo_vencto_fatura	tam=10
+23 prazo_fatura			tam=5
+24 tolerancia_fatura	tam=5
+25 tipo_pessoa			tam=4
+27 pessoa_limite_credito 	tam=12	fmt=%.02f	alinha=esquerda
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                                              #2              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+#12
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa_nome,pessoa">
++--------------------------------------------------------------------+-----------------------------------------------------------+-------------------------------------------------------------+
+| Cliente: #6                                                        | Limite geral de crédito: #27                              |                  Informações de Faturamento                 |
++---------------+-------------------------+------------+-----+-------+------+--------------+-----------+------------+------------+---------------------------------+------------+-------+------+
+|    Código     |          Conta          |    Tipo    | Ini | Prazo | Tol. |  Vencimento  | Bloqueado | Negativado |   Limite   |              Conta              |    Tipo    | Prazo | Tol. |
++---------------+-------------------------+------------+-----+-------+------+--------------+-----------+------------+------------+---------------------------------+------------+-------+------+
+</cab_grupo>
+
+<detalhe>
+| #5            | #4                      | #7         | #8  |   #9  |  #10 | #11          | #20       | #19        | #17        | #21                             | #22        | #23   | #24  |
+</detalhe>
+
+<rod_grupo nome="1">
++---------------+-------------------------+------------+-----+-------+------+--------------+-----------+------------+------------+---------------------------------+------------+-------+------+
+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<hash>5d3b8b2ab55d92c1e09d50f96d22cfc8</hash>
+</relatorio>

@@ -1,0 +1,77 @@
+<relatorio dados="venda_produto_hora" ordem="grupo_nome,hora">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo			tam=129	alinha=centro
+7  coluna_titulo	tam=31 	alinha=centro
+8  coluna_nome		tam=31
+9  hora				tam=5  	alinha=centro
+10 quantidade 		tam=12 	fmt=float2
+11 pcnt_qtde		tam=7 	fmt=float2
+12 valor			tam=12 	fmt=float2
+13 pcnt_valor		tam=7 	fmt=float2
+22 dia_semana_nome	tam=96 	
+
+14 tot_qtde_emp   	tam=14 	fmt=float2
+15 pcnt_qtde_emp  	tam=6 	fmt=float2
+16 tot_valor_emp  	tam=16 	fmt=float2
+17 pcnt_valor_emp 	tam=7 	fmt=float2
+18 tot_qtde_geral   tam=12 	fmt=float2
+19 pcnt_qtde_geral  tam=7 	fmt=float2
+20 tot_valor_geral  tam=12 	fmt=float2
+21 pcnt_valor_geral tam=7 	fmt=float2
+23 tot_qtde_dia   	tam=12 	fmt=float2
+24 pcnt_qtde_dia  	tam=7 	fmt=float2
+25 tot_valor_dia  	tam=12 	fmt=float2
+26 pcnt_valor_dia 	tam=7 	fmt=float2
+
+27 total_vendas		tam=8 	fmt=float0 alinha=centro
+28 grupo_codigo		tam=5
+29 grupo_nome		tam=20
+30 grupo_cod_nome	tam=50	expr=str(grupo_codigo)+' - '+str(grupo_nome)
+
+31 perc_qtd_geral		tam=7	fmt=float2
+32 perc_tot_qtd_geral	tam=6	fmt=float2
+
+33 perc_vl_geral		tam=7	fmt=float2
+34 perc_tot_vl_geral	tam=7	fmt=float2
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                              #2
+--------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
++------------------------------------------------------------------------------------------------------------------------------+
+</cab_pagina>
+
+<cab_grupo nome="2" quebra="grupo_nome">
+| Grupo produto: #30                                                                                                           |
++---------------------------------+-------+----------+--------------+----------+----------+--------------+----------+----------+
+| #7                              | Hora  |  Vendas  |  Quantidade  | % Grupo  | % Total  |     Valor    | % Grupo  | % Total  |
++---------------------------------+-------+----------+--------------+----------+----------+--------------+----------+----------+
+</cab_grupo>
+<detalhe>
+| #8                              | #9    | #27      | #10          | #11    % | #31    % | #12          | #13    % | #33    % |
+</detalhe>
+<rod_grupo nome="2">
++---------------------------------+-------+----------+--------------+----------+----------+--------------+----------+----------+
+| Total grupo produto                                | #23          | #24    % |  100,00% | #25          |  100,00% | #34    % |
++----------------------------------------------------+--------------+----------+----------+--------------+----------+----------+
+</rod_grupo>
+
+<rod_relat>
+
++----------------------------------------------------+--------------+----------+----------+--------------+----------+----------+
+| Total geral                                        | #18          | #19    % |          | #20          |          |  100,00% |
++----------------------------------------------------+--------------+----------+----------+--------------+----------+----------+
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------------+--------------+----------+----------+--------------+----------+----------+
+</rod_pagina>
+
+<hash>b5499cf48500d166032975e9d04d74c7</hash>
+</relatorio>

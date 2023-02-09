@@ -1,0 +1,84 @@
+<relatorio dados="comissao_analitico" paper_orientation="landscape" ordem="empresa_nome,empresa,vendedor_nome,vendedor_grid,ordem">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=16
+3  subtitulo           tam=173    alinha=centro
+4  vendedor_codigo     tam=100    expr=str(vendedor_codigo) + " - " + vendedor_nome
+5  produto_codigo      tam=6      alinha=centro
+6  produto_nome        tam=25
+7  quantidade          tam=16    fmt=float3
+8  produto_unid        tam=5     alinha=centro
+9  valor               tam=16	 fmt=float3    alinha=direita
+10 valor_comissao      tam=16    fmt=float3    alinha=direita
+11 total_valor         tam=16    fmt=float3    alinha=direita  func=soma campo=valor grupo=2
+12 total_comissao      tam=16    fmt=float3    alinha=direita  func=soma campo=valor_comissao grupo=2
+13 empresa_valor       tam=16	 fmt=float3    alinha=direita   func=soma campo=valor grupo=1
+14 empresa_comissao    tam=16    fmt=float3    alinha=direita  func=soma campo=valor_comissao grupo=1
+15 geral_valor         tam=16    fmt=float3    alinha=direita   func=soma campo=valor 
+16 geral_comissao      tam=16    fmt=float3    alinha=direita   func=soma campo=valor_comissao
+18 pessoa_nome         tam=25
+19 tipo_comissao       tam=18
+20 tot_sem_vendedor    tam=16    fmt=float3
+21 empresa_cod_nome    tam=120   expr=str(empresa_codigo) + " - " + empresa_nome
+22 valor_com_desconto  tam=15	 fmt=float3
+23 subtot_valor_com_desc tam=15	 fmt=float3  func=soma campo=valor_com_desconto grupo=2
+24 total_valor_com_desc tam=15	 fmt=float3  func=soma campo=valor_com_desconto grupo=1
+25 total_geral_valor_com_desc tam=15	 fmt=float3  func=soma campo=valor_com_desconto
+26 tot_sem_vendedor_desconto  tam=15 fmt=float3
+
+30 sub_quantidade       tam=16  fmt=float3  func=soma  campo=quantidade  grupo=2
+31 tot_emp_quantidade   tam=16  fmt=float3  func=soma  campo=quantidade  grupo=1
+32 tot_geral_quantidade tam=16  fmt=float3  func=soma  campo=quantidade
+96 desc_col_original   tam=16	alinha=centro
+97 desc_col_final      tam=15	alinha=centro
+98 documento_venda     tam=5
+99 titulo              tam=173  alinha=centro   expr="COMISSÃO PARA FUNCIONÁRIOS"
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                           #2        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome,empresa">
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #21                                                                                                                                                              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,empresa,vendedor_nome,vendedor_grid">
+| Funcionário: #4                                                                                                                                                           |
++--------+-------------------------------+------------------+---------------------------+------+------------------+-----------------+--------------------+------------------+
+| Código |            Produto            |    Quantidade    |          Cliente          |  Un. | #96              | #97             |        Tipo        |     Comissão     |
++--------+-------------------------------+------------------+---------------------------+------+------------------+-----------------+--------------------+------------------+
+</cab_grupo>
+<detalhe>
+| #5     | #6                            | #7               | #18                       |#8    | #9               | #22             | #19                | #10              |
+</detalhe>
+<rod_grupo nome="2">
++--------+-------------------------------+------------------+---------------------------+------+------------------+-----------------+--------------------+------------------+
+| Total                                  | #30              |                                  | #11              | #23             |                    | #12              |
++----------------------------------------+------------------+----------------------------------+------------------+-----------------+--------------------+------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+|  Total empresa                         | #31              |                                  | #13              | #24             |                    | #14              |
++----------------------------------------+------------------+----------------------------------+------------------+-----------------+--------------------+------------------+
+
+</rod_grupo>
+<rod_pagina>
++----------+----------------------------------------------------------------------------+------+------------------+-----------------+--------------------+------------------+
+</rod_pagina>
+<rod_relat>
+
++----------------------------------------+------------------+----------------------------------+------------------+-----------------+--------------------+------------------+
+| Total geral                            | #32              |                                  | #15              | #25             |                    | #16              |
++----------------------------------------+------------------+----------------------------------+------------------+-----------------+--------------------+------------------+
+| Total de vendas sem vendedor                                                                 | #20              | #26             |                    |                  |
++----------------------------------------------------------------------------------------------+------------------+-----------------+--------------------+------------------+
+</rod_relat>
+
+<hash>20f80fd61cbcfc68696a6a4e68c9d36d</hash>
+</relatorio>

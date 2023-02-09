@@ -1,0 +1,67 @@
+<relatorio dados="conta_recebida" ordem="empresa_codigo,empresa_nome,movto_data,movto_data_pgto,movto_turno,movto_pessoa,movto_documento" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome		tam=40
+2  rel_data_hora		tam=18
+3  titulo				tam=130	alinha=centro
+4  movto_data			tam=11	fmt=data	
+5  movto_turno			tam=5	alinha=centro
+6  movto_documento		tam=10  alinha=centro
+7  motivo_nome			tam=20
+8  pessoa_nome			tam=32
+9  movto_valor			tam=12	fmt=float2
+10 cdeb_nome			tam=18
+11 total_empresa		tam=12	fmt=float2		func=soma   campo=movto_valor	grupo=1
+12 total_dia     		tam=12  fmt=float2		func=soma   campo=movto_valor	grupo=2		
+15 movto_data_pgto		tam=10	fmt=data
+13 empresa_nome			tam=60
+14 total_geral			tam=12	fmt=float2		func=soma	campo=movto_valor
+16 empresa_cod_nome       tam=60  expr=str(empresa_codigo) + ' - ' + empresa_nome
+17 movto_data_vencto    tam=10  fmt=data
+99 titulo_p				tam=130 expr='CONTAS RECEBIDAS'  alinha=centro	
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,empresa_nome">
+
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #16                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,empresa_nome,movto_data_pgto">
+| Data recebimento: #15                                                                                                          |
++------------+-------+-----------+----------------------+----------------------------------+--------------------+----------------+
+|   Emissão  | Turno | Documento |         Motivo       |             Cliente              |    Conta destino   |     Valor      |
++------------+-------+-----------+----------------------+----------------------------------+--------------------+----------------+
+</cab_grupo>
+<detalhe>
+| #4         | #5    | #6        | #7                   | #8                               | #10                |   #9           |
+</detalhe>
+<rod_grupo nome="2">
++------------+-------+-----------+----------------------+----------------------------------+--------------------+----------------+
+| Subtotal                                                                                                      |   #12          |
++---------------------------------------------------------------------------------------------------------------+----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total empresa                                                                                                 |   #11          |
++---------------------------------------------------------------------------------------------------------------+----------------+
+</rod_grupo>
+<rod_relat>
+
+
++---------------------------------------------------------------------------------------------------------------+----------------+
+| Total geral                                                                                                   |   #14          |
++---------------------------------------------------------------------------------------------------------------+----------------+
+</rod_relat>
+
+<rod_pagina>
+----------------------------------------------------------------------------------------------------------------------------------
+</rod_pagina>
+
+<hash>1fd11c54ca82d457fb503e2a74276ad4</hash>
+</relatorio>

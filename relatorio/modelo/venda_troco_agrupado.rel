@@ -1,0 +1,73 @@
+<relatorio dados="venda_troco" ordem="data, hora_venda">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  data_hora			tam=99999
+3  titulo				tam=130		alinha=centro
+4  data					tam=10  	fmt=data
+5  turno				tam=2		alinha=centro
+6  documento			tam=7		alinha=centro
+7  nome					tam=25
+8  valor_troco			tam=10		fmt=float2 	alinha=direita
+9  valor_venda			tam=9   	fmt=float2 	alinha=direita
+10 valor_desconto		tam=9   	fmt=float2 	alinha=direita
+11 valor_pgto			tam=10  	fmt=float2 	alinha=direita
+12 total_valor_troco		tam=10		fmt=float2 func=soma campo=valor_troco grupo=1
+13 total_valor_venda		tam=9   	fmt=float2 func=soma campo=valor_venda grupo=1
+14 total_valor_desconto		tam=9   	fmt=float2 func=soma campo=valor_desconto grupo=1
+15 total_valor_pgto			tam=10		fmt=float2 func=soma campo=valor_pgto grupo=1
+
+16 linha_fim			tam=99999
+17 colunas_fim			tam=99999
+18 det_fim				tam=99999
+19 tot_fim				tam=99999
+20 linha_cab			tam=99999
+
+21 linha_quebra			tam=99999
+
+22 gr_venda				tam=9		fmt=float2 func=soma campo=valor_venda
+23 gr_desc				tam=9   	fmt=float2 func=soma campo=valor_desconto
+24 gr_vl_pago			tam=10  	fmt=float2 func=soma campo=valor_pgto
+25 gr_troco				tam=10		fmt=float2 func=soma campo=valor_troco
+26 gr_fim				tam=99999
+27 hora_venda			tam=8		fmt=hora
+
+99 quebra				tam=99999
+</apelidos>
+<cab_pagina>
+#1                                                                                                                   #2
+---------------------------------------------------------------------------------------------------------------------#20
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="quebra">
++---------------------------------------------------------------------------------------------------------------------#21
+| Forma pagamento: #99          
++------------+----------+----+---------+---------------------------+-----------+-----------+------------+------------+#16
+|   Data     |   Hora   | T. | Nr. doc |          Cliente          | Vl. venda | Vl. desc. | Valor pago |   Troco    |#17
++------------+----------+----+---------+---------------------------+-----------+-----------+------------+------------+#16
+</cab_grupo>
+
+<detalhe>
+| #4         | #27      | #5 | #6      | #7                        | #9        | #10       | #11        | #8         |#18
+</detalhe>
+
+<rod_grupo nome="1">
++------------+----------+----+---------+---------------------------+-----------+-----------+------------+------------+#16
+| Total grupo                                                      | #13       | #14       | #15        | #12        |#26
++------------------------------------------------------------------+-----------+-----------+------------+------------+#16
+</rod_grupo>
+
+<rod_relat>
+
++------------------------------------------------------------------+-----------+-----------+------------+------------+#16
+| Total                                                            | #22       | #23       | #24        | #25        |#19
++------------------------------------------------------------------+-----------+-----------+------------+------------+#16
+</rod_relat>
+
+<rod_pagina>
++------------------------------------------------------------------+-----------+-----------+------------+------------+#16
+</rod_pagina>
+
+<hash>40321fdf87251aa3c1202de4897fdada</hash>
+</relatorio>

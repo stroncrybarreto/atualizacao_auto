@@ -1,0 +1,45 @@
+<relatorio dados="preco_comb_empresa_dia" ordem="empresa,produto_nome,data">
+<apelidos>
+1  nome_data   		tam=500
+2  traco_nome_data	tam=500
+3  produto_nome		tam=500
+4  linha_moldura	tam=500
+5  linha_cabecalho	tam=500
+6  data				tam=10 fmt=data
+7  linha_valor		tam=500
+8  subtitulo		tam=500
+9  empresa 			tam=500
+10 linha_mold_cab   tam=500
+11 titulo   tam=500
+</apelidos>
+<cab_pagina>
+#1
+#2 
+#11
+#8
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
++-------------#10
+| #9
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa,produto_nome">
++-------------#10
+| #3
++------------+#4
+|    Data    |#5
++------------+#4
+</cab_grupo>
+<detalhe>
+| #6         |#7
+</detalhe>
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
++------------+#4
+</rod_grupo>
+<rod_pagina>
+</rod_pagina>
+
+<hash>d16a1eb190cd244b208fe22bac9dcdb1</hash>
+</relatorio>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Estação Cluble VIP</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fontes/fontes.css">
+
+  <script type="text/javascript">
+
+    window.onunload = function (){
+      var isChrome = navigator.userAgent.indexOf("Chrome") != -1;
+      if(isChrome == true){
+        $.getJSON("http://127.0.0.1:8000/Logout?", {}, function(data, status) {
+        })
+        .done(function() { alert('Não foi possível encerrar o serviço Dashboard!');
+        })
+        .fail(function() { alert('Serviço Dashboard finalizado! '); 
+        })
+        .always(function() {
+          window.close();
+        });
+      }
+    };
+  </script>
+</head>
+
+<body>  
+  <header class="header">
+    <h1 id="empresa" class="heading">Nome Posto</h1>
+    <div id="dataHora" class="box">Data</div>
+    <div class="box"><img src="img/linx.png" alt=""></div>
+  </header>
+
+  <main>
+    <section class="main-container">
+      <header class="main-header">
+        <img src="img/logo.png" class="logo" alt="">
+        <h1 class="heading">Estação Clube VIP</h1>
+        <div id="periodoVigencia" class="input">Período de Vigência: <span></span></div>       
+        <a class="bt" onclick="updatePage()">Atualizar <img src="img/bt-ic-reload.png" class="ic" alt=""></a>
+      </header>
+      <div class="row">
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">VOLUME X META</span>
+                 <h2 id="produtoNome1" class="heading">GASOLINA DT CLEAN</h2>
+              </div>
+              <div id="bodyProduto1" class="body" data-label="META (Litros)">
+                  <div id="vipList1" class="progress-container"></div>
+              </div>
+              <div id="msgProduto1" class="heading-msg" style="display: none">
+                  <span style="font-size: 14px" class="heading-msg">Não foram recebidos dados do Clube VIP para a construção deste indicador</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">VOLUME X META</span>
+                 <h2 id="produtoNome2" class="heading">DIESEL ORIGINAL ADITIVADO</h2>
+              </div>
+              <div id="bodyProduto2" class="body" data-label="META (Litros)">
+                  <div id="vipList2" class="progress-container"></div>
+              </div>
+              <div id="msgProduto2" class="heading-msg" style="display: none">
+                  <span style="font-size: 14px" class="heading-msg">Não foram recebidos dados do Clube VIP para a construção deste indicador</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">VOLUME X META</span>
+                 <h2 id="produtoNome3" class="heading">GASOLINA OCTAPRO</h2>
+              </div>
+              <div id="bodyProduto3" class="body" data-label="META (Litros)">
+                  <div id="vipList3" class="progress-container"></div>
+              </div>
+              <div id="msgProduto3" class="heading-msg" style="display: none">
+                  <span style="font-size: 14px" class="heading-msg">Não foram recebidos dados do Clube VIP para a construção deste indicador</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">TRANSAÇÕES</span>
+                 <h2 class="heading">KM de Vantagens</h2>
+              </div>
+              <div id="labelTransacoesKmv" class="body kmv" data-label="QUANTIDADE">
+                  <div id="transacoesKmv" class="progress-container"></div>
+              </div>
+              <div id="msgTransacoesKmv" class="heading-msg" style="display: none">
+                <span class="heading-msg">Não foram recebidos dados do Clube VIP para a construção deste indicador</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-content">
+              <div class="head">
+                 <span class="label">AVALIAÇÕES</span>
+                 <h2 class="heading">Abastece Aí</h2>
+              </div>
+              <div id="labelAbasteceai" class="body" data-sublabel="QUANTIDADE" data-label="MÉDIA">
+                  <div id="abasteceai" class="progress-container"></div>
+              </div>
+              <div id="msgAbasteceAi" class="heading-msg" style="display: none">
+                <span class="heading-msg">Não foram recebidos dados do Clube VIP para a construção deste indicador</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="relacaoVipNaoAtivos" class="row-relacao">
+        <div class="col" style="flex: none; width: 50%">
+          <div class="col-content" data-relacao="">
+            <div class="head">
+               <span class="label">RELAÇÃO</span>
+               <h2 class="heading">VIPs não Cadastrados</h2>
+            </div>
+            <div class="body initial" data-sublabel="NOME" data-label="CPF">
+                <div id="vipNaoAtivos" class="progress-container"></div>
+                <div id="msgvipNaoAtivos" class="heading-msg" style="display: none">
+                  <span class="heading-msg"> Não há dados para gerar este indicador</span>
+                </div>
+            </div>
+            <div id="bodyProduto1" class="body center" data-label="Foi identificado que há funcionários cadastrados no Clube VIP e que não constam na retaguarda Automação Ipiranga by Linx. Favor solicitar ao revendedor que atualize o cadastro no Portal Rede Ipiranga.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="divLoader" class="loader">
+    <div class="loading"></div>
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

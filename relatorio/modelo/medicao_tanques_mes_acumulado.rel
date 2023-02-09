@@ -1,0 +1,62 @@
+<relatorio dados="medicao_tanques_mes" paper_orientation="landscape" ordem="empresa,tanque,rel_data_operacao,rel_data_metragem" saida="pdf">
+<apelidos>
+1  rel_posto_nome       tam=50
+2  rel_data_hora        tam=18
+3  empresa_nome         tam=50 expr=str(rel_empresa_codigo)+" - "+rel_empresa
+4  rel_data_operacao    tam=18
+5  rel_tanque           tam=40	alinha=esquerda
+6  rel_combustivel      tam=60
+7  rel_data_metragem    tam=10  fmt=data
+9  rel_litragem_ant     tam=15 	fmt=float3
+10 rel_entrada 	        tam=13	fmt=float3
+11 rel_estoque          tam=16	fmt=float3
+13 rel_litragem_atual   tam=15  fmt=float3
+14 rel_saida            tam=15  fmt=float3
+15 rel_bombas           tam=12  fmt=float3
+16 rel_diferenca        tam=14  fmt=float3
+17 rel_perc_diferenca   tam=15  fmt=float3
+18 rel_acumulado        tam=15  fmt=float3
+19 tot_ite_bomba        tam=15  fmt=float3
+20 tot_ite_perc_acum    tam=16  fmt=float3
+30 titulo               tam=190 alinha=centro
+34 titulo_geral			tam=190	alinha=centro	expr='MEDIÇÃO DE TANQUE POR PERÍODO'
+
+36 rel_hora_med_ant		tam=18   fmt=data_hora
+37 rel_hora_med_atual	tam=18   fmt=data_hora
+</apelidos>
+<cab_pagina>
+{INV}#1                                                                                                                                                                            #2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{INV}
+#34
+{SUBTIT}#30
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa"> 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| {CENTRO}{NEGR/}Empresa: #3                                                                                                                                                                                |
+</cab_grupo>
+<cab_grupo nome="2" quebra="tanque">
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Tanque: #5                                                                    | Combustível: #6                                                                                            |
++------------+-----------------+---------------+--------------+-----------------+------------------+----------------+-----------------+-----------------+-----------------+------------------+
+|            |       (A)       |       (B)     |     (C)      |   (D) = A+B-C   |       (E)        |   (F) = E-D    |    (G) = F/C    |       (H)       |       (I)       |    (J) = H/I     |
+|    Data    | Estoque Inicial |  Recebimento  |    Vendas    | Estoque Teórico |  Estoque Físico  |   Diferença    |   % Diferença   | Diferença Acum. |    Venda Acum.  |% Diferença Acum. |
++------------+-----------------+---------------+--------------+-----------------+------------------+----------------+-----------------+-----------------+-----------------+------------------+
+</cab_grupo>
+<detalhe>
+| #7         | #9              | #10           | #15          | #13             | #11              | #16            | #17             | #18             | #19             | #20              |
+</detalhe>
+<rod_grupo nome="2">
++------------+-----------------+---------------+--------------+-----------------+------------------+----------------+-----------------+-----------------+-----------------+------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+
+</rod_grupo>
+
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>6a426213c669afbe0260a5827cba3c3f</hash>
+</relatorio>

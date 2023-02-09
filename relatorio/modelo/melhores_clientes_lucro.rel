@@ -1,0 +1,56 @@
+<relatorio dados="melhores_clientes_lucro" paper_orientation="2">
+<apelidos>
+1  rel_posto_nome                 tam=60
+2  rel_data_hora                  tam=16
+4  subtitulo                      tam=179   alinha=centro
+5  pessoa_nome                    tam=33
+6  qtd_comb                       tam=12   fmt=float3
+7  valor_comb                     tam=13   fmt=float2
+8  valor_prod                     tam=10   fmt=float2
+9  valor_total                    tam=13   fmt=float2
+10 total_quantidade               tam=12   fmt=float2 func=soma campo=qtd_comb
+11 total_valor_combustivel        tam=13   fmt=float2 func=soma campo=valor_comb
+12 total_lucro_combustivel        tam=12   fmt=float2 func=soma campo=lucro_bruto_comb
+13 total_valor_produto            tam=10   fmt=float2 func=soma campo=valor_prod
+14 pessoa_codigo	              tam=6	   alinha=centro
+15 preco_unit_medio_comb	      tam=9    fmt=float2
+16 lucro_bruto_comb		          tam=12   fmt=float2
+17 lucro_bruto_prod		          tam=12   fmt=float2
+18 lucro_bruto_total		      tam=12   fmt=float2 expr=lucro_bruto_comb+lucro_bruto_prod
+19 margem_contribuicao            tam=12   fmt=float2
+20 total_lucro_produto            tam=12   fmt=float2 func=soma campo=lucro_bruto_prod
+21 total_geral			          tam=13   fmt=float2 func=soma campo=valor_total
+22 total_lucro			          tam=12   fmt=float2 func=soma campo=lucro_bruto_total
+
+23 valor_lucro					  tam=10	expr=valor_total-lucro_bruto_total	fmt=float2
+24 margem_lucro					  tam=8		expr=(valor_total-lucro_bruto_total)/lucro_bruto_total*100	fmt=float2
+25 total_novo_lucro				  tam=10	expr=total_geral-total_lucro	fmt=float2
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                                             #2             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#4
+
++--------+-----------------------------------+---------------------------------------------------------+---------------------------+------------------------------+------------+--------------+
+| Código |              Cliente              |                       Combustíveis                      |         Produtos          |            Totais            |    Valor   | Contribuição |
+|        |                                   |    Litros    | Pr. médio |     Valor     | Custo total  |   Valor    | Custo total  |     Valor     | Custo total  |    Lucro   |              |
++--------+-----------------------------------+--------------+-----------+---------------+--------------+------------+--------------+---------------+--------------+------------+--------------+
+</cab_pagina>
+<detalhe>
+| #14    | #5                                | #6           | #15       | #7            | #16          | #8         | #17          | #9            | #18          | #23        | #19          |
+</detalhe>
+<rod_pagina>
++--------+-----------------------------------+--------------+-----------+---------------+--------------+------------+--------------+---------------+--------------+------------+--------------+
+
+</rod_pagina>
+
+<rod_relat>
++--------+-----------------------------------+--------------+-----------+---------------+--------------+------------+--------------+---------------+--------------+------------+--------------+
+| Total                                      | #10          |           | #11           | #12          | #13        | #20          | #21           | #22          | #25        |              |
++--------+-----------------------------------+--------------+-----------+---------------+--------------+------------+--------------+---------------+--------------+------------+--------------+
+</rod_relat>
+
+<hash>066ca6891d7db986c9b14700f1e3ffa4</hash>
+</relatorio>

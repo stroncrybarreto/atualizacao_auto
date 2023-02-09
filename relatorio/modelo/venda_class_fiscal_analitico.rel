@@ -1,0 +1,52 @@
+<relatorio dados="venda_class_fiscal_analitico">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=16  
+3  titulo              tam=103  alinha=centro
+4  class_cod_nome      tam=49
+7  produto_codigo      tam=6   alinha=centro 
+8  produto_nome        tam=40
+9  unid_med            tam=7   alinha=centro
+10 quantidade          tam=15  fmt=float3
+11 valor               tam=14  fmt=float2
+12 sub_class_qtde      tam=15  fmt=float3
+13 sub_class_valor     tam=14  fmt=float2
+14 total_qtde          tam=15  fmt=float3
+15 total_valor         tam=14  fmt=float2
+16 cst_pis				tam=3
+17 cst_cofins			tam=3
+</apelidos>
+<cab_pagina>
+#1                                                                                     #2                 
+-------------------------------------------------------------------------------------------------------
+
+#3
+
++--------+-----------------------------------------------+---------+-----------------+----------------+
+| Código |                 Descrição                     | Unidade |    Quantidade   |     Valor      |
+</cab_pagina>
+<cab_grupo nome="1" quebra="classificacao_fiscal">
++--------+-----------------------------------------------+---------+-----------------+----------------+
+| Classificação fiscal: #4                                                                            |
++--------+-----------------------------------------------+---------+-----------------+----------------+
+</cab_grupo>
+<detalhe>
+| #7     | #8                                            | #9      | #10             | #11            |
+</detalhe>
+<rod_grupo nome="1">
++--------+-----------------------------------------------+---------+-----------------+----------------+
+| Subtotal                                                         | #12             | #13            |
++------------------------------------------------------------------+-----------------+----------------+
+
+</rod_grupo>
+<rod_relat>
++------------------------------------------------------------------+-----------------+----------------+
+| Total geral                                                      | #14             | #15            |
++------------------------------------------------------------------+-----------------+----------------+
+</rod_relat>
+<rod_pagina>
++-----------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>5265afa920740852c68095229d79128a</hash>
+</relatorio>

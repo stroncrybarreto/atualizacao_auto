@@ -1,0 +1,102 @@
+<relatorio dados="consumo_cliente_main" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18
+3  subtitulo          tam=166   alinha=centro
+8	page_num          tam=2     alinha=esquerda
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                        #2               - Pág.: #8
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="consumo_cliente" ordem="quebra,cpf,hora">
+<apelidos>
+6  pessoa_nome         tam=46
+7  data                tam=8
+8  hora                tam=16 
+9  placa               tam=7
+10 km                  tam=8   alinha=centro	fmt=%.01f
+11 documento           tam=8   alinha=centro
+12 produto_nome        tam=29
+13 quantidade          tam=11  fmt=float3
+14 unid_med            tam=3
+15 preco_unit          tam=9   fmt=float3
+16 valor               tam=12  fmt=float2
+17 total_litros        tam=11  fmt=float3   func=soma   campo=quantidade   grupo=2 
+18 total               tam=12  fmt=float2   func=soma   campo=valor        grupo=2
+19 doc_pgto            tam=8   alinha=centro
+20 hora_abastec_hm     tam=5   alinha=centro
+21 desconto            tam=6   fmt=float2
+22 total_desconto      tam=6   fmt=float2    func=soma   campo=desconto     grupo=2
+23 valor_final         tam=12  fmt=float2    expr=valor+desconto
+24 total_valor_final   tam=12  fmt=float2    func=soma   campo=valor_final  grupo=2
+25 total_quantidade    tam=11  fmt=float3    func=soma   campo=quantidade	grupo=1 
+26 total_valor         tam=21  fmt=float2    func=soma   campo=valor	grupo=1 
+27 empresa_venda      tam=50
+28 total_geral_qtd	   tam=11	fmt=float3    func=soma   campo=quantidade
+29 total_geral		   tam=21	fmt=float2    func=soma   campo=valor
+30 cpf                 tam=18
+31 municipio           tam=40
+32 uf                  tam=3
+33 pessoa_codigo	   tam=5	alinha=esquerda
+34 pessoa_cod_nome	   tam=50
+40 empresa_nome		   tam=150
+
+99 corrige_tot         tam=2   expr="1"
+100 ordenacao			tam=100
+101 quebra				tam=100
+102 documento_nota_fiscal tam=12
+103 nota_fiscal			tam=12
+</apelidos>
+
+<cab_grupo nome="3" quebra="corrige_tot">
+</cab_grupo>
+
+<cab_grupo nome="1" quebra="empresa,empresa_nome">
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #40                                                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa,empresa_nome,quebra,cpf">
+| Cliente: #34                                                    CPF/CNPJ: #30                       UF: #32 - Município: #31                                      |
++------------------+---------+----------+----------+----------+-------------------------------+-------------+----+-----------+--------------+--------+--------------+
+|    Data/Hora     |  Placa  |    KM    | CP / NF  | Doc pgto |           Descrição           |  Quantidade | Un.| Pr. unit. |     Valor    |  Desc. |  Valor final |
++------------------+---------+----------+----------+----------+-------------------------------+-------------+----+-----------+--------------+--------+--------------+
+</cab_grupo>
+<detalhe>
+| #8               | #9      | #10      | #11      | #19      | #12                           | #13         | #14| #15       | #23          | #21    | #16          |
+</detalhe>
+<rod_grupo nome="2">
++------------------+---------+----------+----------+----------+-------------------------------+-------------+----+-----------+--------------+--------+--------------+
+| Subtotal                                                                                    | #17         |                | #24          | #22    | #18          |
++---------------------------------------------------------------------------------------------+-------------+----------------+--------------+--------+--------------+
+</rod_grupo>
+<rod_grupo nome="1">
++---------------------------------------------------------------------------------------------+-------------+-------------------------------+-----------------------+
+| Total empresa                                                                               | #25         |                               | #26                   |
++---------------------------------------------------------------------------------------------+-------------+-------------------------------+-----------------------+
+
+</rod_grupo>
+<rod_grupo nome="3">
+
++---------------------------------------------------------------------------------------------+-------------+-------------------------------+-----------------------+
+| Total geral                                                                                 | #28         |                               | #29                   |
++---------------------------------------------------------------------------------------------+-------------+-------------------------------+-----------------------+
+
+</rod_grupo>
+
+
+</subrelat>
+<rod_pagina>
++---------------------------------------------------------------------------------------------+-------------+-------------------------------+-----------------------+
+</rod_pagina>
+
+<hash>c62d14b989bf67e5c307e8ae91d90fe6</hash>
+</relatorio>

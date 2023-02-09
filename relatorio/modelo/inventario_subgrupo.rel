@@ -1,0 +1,75 @@
+<relatorio dados="inventario" ordem="grupo_nome,subgrupo_produto,produto_codigo,data">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18              
+3  subtitulo		    tam=130	alinha=centro
+4  titulo2			    tam=131	alinha=centro
+5  grupo_nome			tam=30
+6  produto_codigo		tam=7	alinha=centro
+7  produto_nome			tam=31
+8  estoque_ant			tam=14	fmt=float3
+9  quantidade			tam=14	fmt=float3
+10 diferenca			tam=14	fmt=float3
+11 valor_custo			tam=14	fmt=float2
+12 valor_venda			tam=14	fmt=float2
+13 grupo_diferenca		tam=14	fmt=float3	func=soma campo=diferenca	grupo=2
+14 grupo_valor_custo	tam=14	fmt=float2	func=soma campo=valor_custo	grupo=2
+15 grupo_valor_venda	tam=14	fmt=float2	func=soma campo=valor_venda	grupo=2
+16 total_diferenca		tam=14	fmt=float3	func=soma campo=diferenca	grupo=1
+17 total_valor_custo	tam=14	fmt=float2	func=soma campo=valor_custo	grupo=1
+18 total_valor_venda	tam=14	fmt=float2	func=soma campo=valor_venda	grupo=1
+19 titulo3              tam=131	alinha=centro
+20 data		            tam=30  fmt=data
+21 titulo_principal		tam=130	expr='INVENTÁRIO'	alinha=centro
+22 subgrupo_produto		tam=30
+23 total_geral_v_c		tam=14	fmt=float2	func=soma campo=valor_custo
+24 total_geral_v_v		tam=14	fmt=float2	func=soma campo=valor_venda
+25 total_geral_dif		tam=14	fmt=float3	func=soma campo=diferenca
+26 grupo_cod_nome		tam=80
+27 subgrupo_cod_nome	tam=80
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2              
+----------------------------------------------------------------------------------------------------------------------------------
+
+#21                                                                                                                                                                                                                                                                                                                                                                                      
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo_nome">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Grupo: #26                                                                                                                     |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="grupo_nome,subgrupo_produto">
+| Subgrupo: #27                                                                                                                  |
++---------+---------------------------------+----------------+----------------+----------------+----------------+----------------+
+| Código  |            Produto              |  Estoque ant.  |   Inventário   |    Diferença   |   Valor custo  |   Valor venda  |
++---------+---------------------------------+----------------+----------------+----------------+----------------+----------------+
+</cab_grupo>
+<detalhe>
+| #6      | #7                              | #8             | #9             | #10            | #11            | #12            |
+</detalhe>
+<rod_grupo nome="2">
++---------+---------------------------------+----------------+----------------+----------------+----------------+----------------+
+| Subtotal                                                                    | #13            | #14            | #15            |    
++-----------------------------------------------------------------------------+----------------+----------------+----------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
++-----------------------------------------------------------------------------+----------------+----------------+----------------+
+| Total                                                                       | #16            | #17            | #18            |
++-----------------------------------------------------------------------------+----------------+----------------+----------------+
+</rod_grupo>
+<rod_relat>
+
++-----------------------------------------------------------------------------+----------------+----------------+----------------+
+| Total geral                                                                 | #25            | #23            | #24            |
++-----------------------------------------------------------------------------+----------------+----------------+----------------+
+</rod_relat>
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>e0cefee9cbe6a1038f20bc511282b120</hash>
+</relatorio>

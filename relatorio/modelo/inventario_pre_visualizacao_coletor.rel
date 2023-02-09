@@ -1,0 +1,64 @@
+<relatorio dados="inventario_pre_visualizacao_coletor" ordem="grupo_nome,produto_nome,data">
+<apelidos>
+1  rel_posto_nome		 tam=60
+2  rel_data_hora		 tam=18
+3  subtitulo			 tam=117	alinha=centro
+4  titulo2				 tam=118	alinha=centro
+5  grupo_nome			 tam=30
+6  produto_codigo_barra  tam=13	    alinha=centro
+7  produto_nome			 tam=25
+8  estoque_ant			 tam=12	fmt=float3
+9  quantidade			 tam=11	fmt=float3
+10 diferenca			 tam=11	fmt=float3
+11 valor_custo			 tam=13	fmt=float2
+12 valor_venda			 tam=13	fmt=float2
+13 grupo_diferenca		 tam=11	fmt=float3	func=soma campo=diferenca	grupo=1
+14 grupo_valor_custo	 tam=13	fmt=float2	func=soma campo=valor_custo	grupo=1
+15 grupo_valor_venda	 tam=13	fmt=float2	func=soma campo=valor_venda	grupo=1
+16 total_diferenca		 tam=11	fmt=float3	func=soma campo=diferenca
+17 total_valor_custo	 tam=13	fmt=float2	func=soma campo=valor_custo
+18 total_valor_venda	 tam=13	fmt=float2	func=soma campo=valor_venda
+19 titulo3				 tam=118	alinha=centro
+20 titulo4				 tam=118	alinha=centro
+21 unid_med				 tam=10	alinha=centro
+22 titulo_principal		 tam=117	expr='INVENTÁRIO PRÉ-VISUALIZAR'	alinha=centro
+23 grupo_cod_nome		 tam=80
+24 produto_codigo		 tam=6	alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                           #2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+#22
+#3
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo">
+| Grupo: #23                                                                                                                                 |
++--------+---------------+---------------------------+------------+--------------+-------------+-------------+---------------+---------------+
+| Código | Código Barras |          Produto          | Unid. med. | Estoque ant. | Inventário  |  Diferença  |  Valor custo  |  Valor venda  |
++--------+---------------+---------------------------+------------+--------------+-------------+-------------+---------------+---------------+
+</cab_grupo>
+<detalhe>
+| #24    | #6            | #7                        | #21        | #8           | #9          | #10         | #11           | #12           |
+</detalhe>
+<rod_grupo nome="1">
++--------+---------------+---------------------------+------------+--------------+-------------+-------------+---------------+---------------+
+| Subtotal                                                                                     | #13         | #14           | #15           |
++----------------------------------------------------------------------------------------------+-------------+---------------+---------------+
+</rod_grupo>
+<rod_relat>
+
++----------------------------------------------------------------------------------------------+-------------+---------------+---------------+
+| Total                                                                                        | #16         | #17           | #18           |
++----------------------------------------------------------------------------------------------+-------------+---------------+---------------+
+Obs.: Somente pré-visualização, registros não salvos.
+</rod_relat>
+
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>828e8b74e9a574d070ae69a10e4d8522</hash>
+</relatorio>

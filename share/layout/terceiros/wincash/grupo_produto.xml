@@ -1,0 +1,1 @@
+<layout><nome>cad_grupo_produto</nome><sessao><nome>grupo_produto</nome><registro><inicio>1</inicio><fim>4</fim><chave>codigo</chave><tipo>text</tipo><padrao /><descricao /></registro><registro><inicio>4</inicio><fim>29</fim><chave>nome</chave><tipo>text</tipo><padrao /><descricao /></registro></sessao></layout>

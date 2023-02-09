@@ -1,0 +1,61 @@
+<relatorio dados="cliente_placa">
+<apelidos>
+1  rel_posto_nome	tam=40
+2  rel_data_hora	tam=18
+3  titulo1              tam=92 	alinha=centro
+4  titulo2    		tam=92 	alinha=centro
+5  cliente_codigo	tam=6	fmt=%d
+6  cliente_nome		tam=40
+7  cliente_placa	tam=8
+8  cliente_descricao	tam=34
+9  cliente_motorista	tam=31
+10 cliente_frota	tam=6
+11 cliente_endereco     tam=40
+12 cliente_bairro       tam=20
+13 cliente_cpf          tam=20
+14 cliente_fone         tam=15
+15 cliente_cep          tam=10
+16 cliente_cidade       tam=27
+17 cliente_estado       tam=3
+18 cliente_contato      tam=25
+19 cliente_celular      tam=14
+</apelidos>
+
+<cab_pagina>
+#1                                                                         #2
+-------------------------------------------------------------------------------------------
+
+#3
+#4
+</cab_pagina>
+<cab_grupo nome="1" quebra="cliente_codigo" quebra_pagina="0">
+
++-----------------------------------------------------------------------------------------+
+| #5     - #6                                                                             |
+| CPF/CNPJ: #13                                  Pessoa/Contato: #18                      |
+| Endereço: #11                                                                           |
+| Bairro:   #12                                                                           |
+| Fone:     #14                    Celular: #19                                           |
+| CEP:      #15                                                                           |
+| Cidade:   #16                                                                           |
+| Estado:   #17                                                                           |
++----------+-----------------------------------+---------------------------------+--------+
+| Placa    | Descricao                         | Motorista                       | Frota  | 
++----------+-----------------------------------+---------------------------------+--------+
+</cab_grupo>
+<detalhe>
+| #7       | #8                                | #9                              | #10    |
+</detalhe>
+
+<rod_grupo nome="1">
++----------+-----------------------------------+---------------------------------+--------+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++----------+-----------------------------------+---------------------------------+--------+
+</rod_pagina>
+
+<hash>127ba68b70c3a46da09b0f3881274885</hash>
+</relatorio>

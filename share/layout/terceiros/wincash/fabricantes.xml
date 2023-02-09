@@ -1,0 +1,1 @@
+<layout><nome>cad_fabricantes</nome><sessao><nome>fabricante</nome><registro><inicio>1</inicio><fim>9</fim><chave>codigo</chave><tipo>text</tipo><padrao /><descricao /></registro><registro><inicio>9</inicio><fim>49</fim><chave>nome</chave><tipo>text</tipo><padrao /><descricao /></registro></sessao></layout>

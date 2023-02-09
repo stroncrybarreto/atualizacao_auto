@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>Itaú</nome>
+
+    <sessao>
+        <nome>critica</nome>
+ 
+		<registro>
+			<id>1</id>
+			<codigo>00</codigo>
+			<tipo>liquidar</tipo>
+			<descricao>PAGAMENTO EFETUADO</descricao>
+		</registro>
+		<registro>
+			<id>2</id>
+			<codigo>AE</codigo>
+			<tipo>criticar</tipo>
+			<descricao>DATA DE PAGAMENTO ALTERADA</descricao>
+		</registro>
+		<registro>
+			<id>3</id>
+			<codigo>AG</codigo>
+			<tipo>criticar</tipo>
+			<descricao>NÚMERO DO LOTE INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>4</id>
+			<codigo>AH</codigo>
+			<tipo>criticar</tipo>
+			<descricao>NÚMERO SEQUENCIAL DO REGISTRO NO LOTE INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>5</id>
+			<codigo>AI</codigo>
+			<tipo>criticar</tipo>
+			<descricao>PRODUTO DEMONSTRATIVO DE PAGAMENTO NÃO CONTRATADO</descricao>
+		</registro>
+		<registro>
+			<id>6</id>
+			<codigo>AJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TIPO DE MOVIMENTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>7</id>
+			<codigo>AL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CÓDIGO DO BANCO FAVORECIDO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>8</id>
+			<codigo>AM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>AGÊNCIA DO FAVORECIDO INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>9</id>
+			<codigo>AN</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CONTA CORRENTE DO FAVORECIDO INVÁLIDA / CONTA INVESTIMENTO EXTINTA EM 30/04/2011</descricao>
+		</registro>
+		<registro>
+			<id>10</id>
+			<codigo>AO</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DESCRIÇÃO DO FAVORECIDO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>11</id>
+			<codigo>AP</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA DE PAGAMENTO / DATA DE VALIDADE / HORA DE LANÇAMENTO / ARRECADAÇÃO / APURAÇÃO INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>12</id>
+			<codigo>AQ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>QUANTIDADE DE REGISTROS MAIOR QUE 999999</descricao>
+		</registro>
+		<registro>
+			<id>13</id>
+			<codigo>AR</codigo>
+			<tipo>criticar</tipo>
+			<descricao>VALOR ARRECADADO / LANÇAMENTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>14</id>
+			<codigo>BC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>NOSSO NÚMERO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>15</id>
+			<codigo>BD</codigo>
+			<tipo>agendar</tipo>
+			<descricao>PAGAMENTO AGENDADO</descricao>
+		</registro>
+		<registro>
+			<id>16</id>
+			<codigo>BE</codigo>
+			<tipo>agendar</tipo>
+			<descricao>PAGAMENTO AGENDADO COM FORMA ALTERADA PARA OP</descricao>
+		</registro>
+		<registro>
+			<id>17</id>
+			<codigo>BI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CNPJ / CPF DO FAVORECIDO NO SEGMENTOJ-52 ou B INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>18</id>
+			<codigo>BL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA PARCELA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>19</id>
+			<codigo>CD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CNPJ / CPF INFORMADO DIVERGENTE DO CADASTRADO</descricao>
+		</registro>
+		<registro>
+			<id>20</id>
+			<codigo>CE</codigo>
+			<tipo>criticar</tipo>
+			<descricao>PAGAMENTO CANCELADO</descricao>
+		</registro>
+		<registro>
+			<id>21</id>
+			<codigo>CF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO DOCUMENTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>22</id>
+			<codigo>CG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO ABATIMENTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>23</id>
+			<codigo>CH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO DESCONTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>24</id>
+			<codigo>CI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CNPJ / CPF / IDENTIFICADOR / INSCRIÇÃO ESTADUAL / INSCRIÇÃO NO CAD / ICMS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>25</id>
+			<codigo>CJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA MULTA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>26</id>
+			<codigo>CK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TIPO DE INSCRIÇÃO INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>27</id>
+			<codigo>CL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO INSS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>28</id>
+			<codigo>CM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO COFINS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>29</id>
+			<codigo>CN</codigo>
+			<tipo>criticar</tipo>
+			<descricao>CONTA NÃO CADASTRADA</descricao>
+		</registro>
+		<registro>
+			<id>30</id>
+			<codigo>CO</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DE OUTRAS ENTIDADES INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>31</id>
+			<codigo>CP</codigo>
+			<tipo>criticar</tipo>
+			<descricao>CONFIRMAÇÃO DE OP CUMPRIDA</descricao>
+		</registro>
+		<registro>
+			<id>32</id>
+			<codigo>CQ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>SOMA DAS FATURAS DIFERE DO PAGAMENTO</descricao>
+		</registro>
+		<registro>
+			<id>33</id>
+			<codigo>CR</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO CSLL INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>34</id>
+			<codigo>CS</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA DE VENCIMENTO DA FATURA INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>35</id>
+			<codigo>DA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>NÚMERO DE DEPEND. SALÁRIO FAMILIA INVALIDO</descricao>
+		</registro>
+		<registro>
+			<id>36</id>
+			<codigo>DB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>NÚMERO DE HORAS SEMANAIS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>37</id>
+			<codigo>DC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>SALÁRIO DE CONTRIBUIÇÃO INSS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>38</id>
+			<codigo>DD</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>SALÁRIO DE CONTRIBUIÇÃO FGTS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>39</id>
+			<codigo>DE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR TOTAL DOS PROVENTOS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>40</id>
+			<codigo>DF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR TOTAL DOS DESCONTOS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>41</id>
+			<codigo>DG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR LÍQUIDO NÃO NUMÉRICO</descricao>
+		</registro>
+		<registro>
+			<id>42</id>
+			<codigo>DH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR LIQ. INFORMADO DIFERE DO CALCULADO</descricao>
+		</registro>
+		<registro>
+			<id>43</id>
+			<codigo>DI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO SALÁRIO-BASE INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>44</id>
+			<codigo>DJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>BASE DE CÁLCULO IRRF INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>45</id>
+			<codigo>DK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>BASE DE CÁLCULO FGTS INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>46</id>
+			<codigo>DL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>FORMA DE PAGAMENTO INCOMPATÍVEL COM HOLERITE</descricao>
+		</registro>
+		<registro>
+			<id>47</id>
+			<codigo>DM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>E-MAIL DO FAVORECIDO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>48</id>
+			<codigo>DV</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DOC / TED DEVOLVIDO PELO BANCO FAVORECIDO</descricao>
+		</registro>
+		<registro>
+			<id>49</id>
+			<codigo>D0</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>FINALIDADE DO HOLERITE INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>50</id>
+			<codigo>D1</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>MÊS DE COMPETENCIA DO HOLERITE INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>51</id>
+			<codigo>D2</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DIA DA COMPETENCIA DO HOLETITE INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>52</id>
+			<codigo>D3</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CENTRO DE CUSTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>53</id>
+			<codigo>D4</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CAMPO NUMÉRICO DA FUNCIONAL INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>54</id>
+			<codigo>D5</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA INÍCIO DE FÉRIAS NÃO NUMÉRICA</descricao>
+		</registro>
+		<registro>
+			<id>55</id>
+			<codigo>D6</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA INÍCIO DE FÉRIAS INCONSISTENTE</descricao>
+		</registro>
+		<registro>
+			<id>56</id>
+			<codigo>D7</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA FIM DE FÉRIAS NÃO NUMÉRICO</descricao>
+		</registro>
+		<registro>
+			<id>57</id>
+			<codigo>D8</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA FIM DE FÉRIAS INCONSISTENTE</descricao>
+		</registro>
+		<registro>
+			<id>58</id>
+			<codigo>D9</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>NÚMERO DE DEPENDENTES IR INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>59</id>
+			<codigo>EM</codigo>
+			<tipo>agendar</tipo>
+			<descricao>CONFIRMAÇÃO DE OP EMITIDA</descricao>
+		</registro>
+		<registro>
+			<id>60</id>
+			<codigo>EX</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DEVOLUÇÃO DE OP NÃO SACADA PELO FAVORECIDO</descricao>
+		</registro>
+		<registro>
+			<id>61</id>
+			<codigo>E0</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TIPO DE MOVIMENTO HOLERITE INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>62</id>
+			<codigo>E1</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR 01 DO HOLERITE / INFORME INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>63</id>
+			<codigo>E2</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR 02 DO HOLERITE / INFORME INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>64</id>
+			<codigo>E3</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR 03 DO HOLERITE / INFORME INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>65</id>
+			<codigo>E4</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR 04 DO HOLERITE / INFORME INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>66</id>
+			<codigo>FC</codigo>
+			<tipo>liquidar</tipo>
+			<descricao>PAGAMENTO EFETUADO ATRAVÉS DE FINANCIAMENTO COMPROR</descricao>
+		</registro>
+		<registro>
+			<id>67</id>
+			<codigo>FD</codigo>
+			<tipo>liquidar</tipo>
+			<descricao>PAGAMENTO EFETUADO ATRAVÉS DE FINANCIAMENTO DESCOMPROR</descricao>
+		</registro>
+		<registro>
+			<id>68</id>
+			<codigo>HA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>ERRO NO HEADER DE ARQUIVO</descricao>
+		</registro>
+		<registro>
+			<id>69</id>
+			<codigo>HM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>ERRO NO HEADER DE LOTE</descricao>
+		</registro>
+		<registro>
+			<id>70</id>
+			<codigo>IB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO DOCUMENTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>71</id>
+			<codigo>IC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO ABATIMENTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>72</id>
+			<codigo>ID</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO DESCONTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>73</id>
+			<codigo>IE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA MORA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>74</id>
+			<codigo>IF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA MULTA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>75</id>
+			<codigo>IG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA DEDUÇÃO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>76</id>
+			<codigo>IH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO ACRÉSCIMO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>77</id>
+			<codigo>II</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA DE VENCIMENTO INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>78</id>
+			<codigo>IJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>COMPETÊNCIA / PERÍODO REFERÊNCIA / PARCELA INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>79</id>
+			<codigo>IK</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TRIBUTO NÃO LIQUIDÁVEL VIA SISPAG OU NÃO CONVENIADO COM ITAÚ</descricao>
+		</registro>
+		<registro>
+			<id>80</id>
+			<codigo>IL</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CÓDIGO DE PAGAMENTO / EMPRESA /RECEITA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>81</id>
+			<codigo>IM</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TIPO X FORMA NÃO COMPATÍVEL</descricao>
+		</registro>
+		<registro>
+			<id>82</id>
+			<codigo>IN</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>BANCO/AGENCIA NÃO CADASTRADOS</descricao>
+		</registro>
+		<registro>
+			<id>83</id>
+			<codigo>IO</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DAC / VALOR / COMPETÊNCIA / IDENTIFICADOR DO LACRE INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>84</id>
+			<codigo>IP</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DAC DO CÓDIGO DE BARRAS INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>85</id>
+			<codigo>IQ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DÍVIDA ATIVA OU NÚMERO DE ETIQUETA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>86</id>
+			<codigo>IR</codigo>
+			<tipo>agendar</tipo>
+			<descricao>PAGAMENTO ALTERADO</descricao>
+		</registro>
+		<registro>
+			<id>87</id>
+			<codigo>IS</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CONCESSIONÁRIA NÃO CONVENIADA COM ITAÚ</descricao>
+		</registro>
+		<registro>
+			<id>88</id>
+			<codigo>IT</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DO TRIBUTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>89</id>
+			<codigo>IU</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>VALOR DA RECEITA BRUTA ACUMULADA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>90</id>
+			<codigo>IV</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>NÚMERO DO DOCUMENTO ORIGEM / REFERÊNCIA INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>91</id>
+			<codigo>IX</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CÓDIGO DO PRODUTO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>92</id>
+			<codigo>LA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>DATA DE PAGAMENTO DE UM LOTE ALTERADA</descricao>
+		</registro>
+		<registro>
+			<id>93</id>
+			<codigo>LC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>LOTE DE PAGAMENTOS CANCELADO</descricao>
+		</registro>
+		<registro>
+			<id>94</id>
+			<codigo>NA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>PAGAMENTO CANCELADO POR FALTA DE AUTORIZAÇÃO</descricao>
+		</registro>
+		<registro>
+			<id>95</id>
+			<codigo>NB</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>IDENTIFICAÇÃO DO TRIBUTO INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>96</id>
+			<codigo>NC</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>EXERCÍCIO (ANO BASE) INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>97</id>
+			<codigo>ND</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CÓDIGO RENAVAM NÃO ENCONTRADO/INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>98</id>
+			<codigo>NE</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>UF INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>99</id>
+			<codigo>NF</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>CÓDIGO DO MUNICÍPIO INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>100</id>
+			<codigo>NG</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>PLACA INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>101</id>
+			<codigo>NH</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>OPÇÃO/PARCELA DE PAGAMENTO INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>102</id>
+			<codigo>NI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TRIBUTO JÁ FOI PAGO OU ESTÁ VENCIDO</descricao>
+		</registro>
+		<registro>
+			<id>103</id>
+			<codigo>NR</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>OPERAÇÃO NÃO REALIZADA</descricao>
+		</registro>
+		<registro>
+			<id>104</id>
+			<codigo>RJ</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>REGISTRO REJEITADO</descricao>
+		</registro>
+		<registro>
+			<id>105</id>
+			<codigo>RS</codigo>
+			<tipo>agendar</tipo>
+			<descricao>PAGAMENTO DISPONÍVEL PARA ANTECIPAÇÃO NO RISCO SACADO - MODALIDADE RISCO SACADO PÓS AUTORIZADO</descricao>
+		</registro>
+		<registro>
+			<id>106</id>
+			<codigo>SS</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>PAGAMENTO CANCELADO POR INSUFICIÊNCIA DE SALDO/LIMITE DIÁRIO DE PAGTO</descricao>
+		</registro>
+		<registro>
+			<id>107</id>
+			<codigo>TA</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>LOTE NÃO ACEITO - TOTAIS DO LOTE COM DIFERENÇA</descricao>
+		</registro>
+		<registro>
+			<id>108</id>
+			<codigo>TI</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>TITULARIDADE INVÁLIDA</descricao>
+		</registro>
+		<registro>
+			<id>109</id>
+			<codigo>X1</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>FORMA INCOMPATÍVEL COM LAYOUT 010</descricao>
+		</registro>
+		<registro>
+			<id>110</id>
+			<codigo>X2</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>NÚMERO DA NOTA FISCAL INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>111</id>
+			<codigo>X3</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>IDENTIFICADOR DE NF/CNPJ INVÁLIDO</descricao>
+		</registro>
+		<registro>
+			<id>112</id>
+			<codigo>X4</codigo>
+			<tipo>rejeitar</tipo>
+			<descricao>FORMA 32 INVÁLIDA</descricao>
+		</registro>
+	</sessao>
+</layout>

@@ -1,0 +1,67 @@
+<relatorio dados="pesquisa_satisfacao" docname="Pesquisa de Satisfação do Cliente (NPS)">
+
+<apelidos>
+
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  sub_titulo			tam=90	alinha=centro
+4  quebra				tam=167 alinha=esquerda
+21 empresa_cod_nome		tam=80  alinha=esquerda
+5  conta_cod_nome     	tam=42  alinha=esquerda
+6  data_avaliacao		tam=10	alinha=centro
+7  ruim					tam=8	alinha=centro
+8  regular				tam=8	alinha=centro
+9  bom					tam=8	alinha=centro
+10 otimo				tam=8	alinha=centro
+11 total_dia			tam=8	alinha=centro
+12 media_dia			tam=8	alinha=centro
+13 nome					tam=60  alinha=esquerda
+14 total				tam=11	alinha=centro		
+15 total_ruim			tam=11	alinha=centro		
+16 total_regular		tam=11	alinha=centro		
+17 total_bom			tam=11	alinha=centro		
+18 total_otimo			tam=11	alinha=centro		
+19 media_dia			tam=11	alinha=centro		fmt=float2
+20 media_geral			tam=11	alinha=centro		fmt=float2
+99 titulo_principal 	tam=87 alinha=centro expr="PESQUISA DE SATISFAÇÂO DO CLIENTE (NPS)"
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                              #2              
+-----------------------------------------------------------------------------------------------------
+
+#99
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="quebra">
+
++---------------------------------------------------------------------------------------------------+
+| Empresa: #21                                                                                      |
++---------------------------------------------------------------------------------------------------+
+| Conta PDV: #5                                                                                     |
++---------------------------------------------------------------------------------------------------+
+| Data              |    Ruim    |   Regular  |    Bom     |   Otimo    |    Total    |    Media    |
++-------------------+------------+------------+------------+------------+-------------+-------------+
+</cab_grupo>
+
+<detalhe>
+| #6                |  #7        |  #8        |  #9        |  #10       |  #11        | #19         |
+</detalhe>
+
+<rod_grupo nome="1">
++-------------------+------------+------------+------------+------------+-------------+-------------+
+| Total             |#15         |#16         |#17         |#18         |#14          | #20         |
++---------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+
+<rod_pagina>
++---------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+
+<hash>0481cd5c929d10e492d87f69c3507e13</hash>
+</relatorio>

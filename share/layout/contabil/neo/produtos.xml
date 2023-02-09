@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>produtos</nome>
+
+  <sessao>
+	<nome>produtos</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>"</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>tipo_operacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Tipo de operação (A,E,I)</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>5</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>6</inicio>
+      <fim>10</fim>
+      <chave>codigo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código reduzido do produto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>11</inicio>
+      <fim>13</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>14</inicio>
+      <fim>32</fim>
+      <chave>codigo_nbm</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código do produto na NBM</descricao>
+    </registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>35</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>36</inicio>
+      <fim>80</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Descrição do produto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>81</inicio>
+      <fim>83</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>84</inicio>
+      <fim>88</fim>
+      <chave>unid_med</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Unidade de Medida</descricao>
+    </registro>
+
+    <registro>
+      <inicio>89</inicio>
+      <fim>91</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>92</inicio>
+      <fim>105</fim>
+      <chave>base_reduzida</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Base Reduzida</descricao>
+    </registro>
+
+    <registro>
+      <inicio>106</inicio>
+      <fim>108</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+      <fim>122</fim>
+      <chave>aliquota</chave>
+      <tipo>float_point_4</tipo>
+      <padrao></padrao>
+      <descricao>Alíquota de IPI</descricao>
+    </registro>
+
+    <registro>
+      <inicio>123</inicio>
+      <fim>125</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>126</inicio>
+      <fim>139</fim>
+      <chave>qtd_inicial</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Quantidade inicial</descricao>
+    </registro>
+
+    <registro>
+      <inicio>140</inicio>
+      <fim>142</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>143</inicio>
+      <fim>156</fim>
+      <chave>vlr_inicial</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor monetário inicial p/unidade</descricao>
+    </registro>
+
+    <registro>
+      <inicio>157</inicio>
+      <fim>159</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>160</inicio>
+      <fim>173</fim>
+      <chave>qtd_final</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Quantidade no final do período</descricao>
+    </registro>
+
+    <registro>
+      <inicio>174</inicio>
+      <fim>176</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>177</inicio>
+      <fim>190</fim>
+      <chave>vlr_final</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor no final período p/unidade</descricao>
+    </registro>
+
+    <registro>
+      <inicio>191</inicio>
+      <fim>193</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>194</inicio>
+      <fim>195</fim>
+      <chave>tipo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Tipo de produto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>196</inicio>
+      <fim>198</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>199</inicio>
+      <fim>201</fim>
+      <chave>tributacao</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Situação tributária</descricao>
+    </registro>
+
+    <registro>
+      <inicio>202</inicio>
+      <fim>204</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>205</inicio>
+      <fim>209</fim>
+      <chave>cst</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código da Situação Tributária Federal</descricao>
+    </registro>
+
+    <registro>
+      <inicio>210</inicio>
+      <fim>212</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>213</inicio>
+      <fim>214</fim>
+      <chave>especie_in_srf63</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Espécie conforme IN-SRF 63</descricao>
+    </registro>
+
+    <registro>
+      <inicio>215</inicio>
+      <fim>217</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>218</inicio>
+      <fim>219</fim>
+      <chave>unidade_in_srf63</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Unidade conforme IN-SRF 63</descricao>
+    </registro>
+	
+    <registro>
+      <inicio>220</inicio>
+      <fim>222</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>223</inicio>
+      <fim>224</fim>
+      <chave>codigo_un_dsta_ba</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código da Unidade DSTA-BA</descricao>
+    </registro>
+
+    <registro>
+      <inicio>225</inicio>
+      <fim>227</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>228</inicio>
+      <fim>232</fim>
+      <chave>unid_conversao</chave>
+      <tipo>float_point_2</tipo>
+      <padrao></padrao>
+      <descricao>Valor de Conversão para Unidade de Medida</descricao>
+    </registro>
+
+    <registro>
+      <inicio>233</inicio>
+      <fim>235</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>236</inicio>
+      <fim>238</fim>
+      <chave>codigo_insumo</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código de Insumo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>239</inicio>
+      <fim>241</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>242</inicio>
+      <fim>244</fim>
+      <chave>especie_produto_in_srf359</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Espécie do Produto IN-SRF 359</descricao>
+    </registro>
+
+    <registro>
+      <inicio>245</inicio>
+      <fim>247</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>248</inicio>
+      <fim>261</fim>
+      <chave>codigo_barra</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código próprio</descricao>
+    </registro>
+
+    <registro>
+      <inicio>262</inicio>
+      <fim>264</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>","</padrao>
+      <descricao></descricao>
+    </registro>
+
+    <registro>
+      <inicio>265</inicio>
+      <fim>268</fim>
+      <chave>codigo_sefaz</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Cód.Sefaz - Cfm.Port.CAT 94-17.11.03-SP</descricao>
+    </registro>
+
+    <registro>
+      <inicio>269</inicio>
+      <fim>269</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>"</padrao>
+      <descricao></descricao>
+    </registro>
+
+  </sessao>
+
+</layout>

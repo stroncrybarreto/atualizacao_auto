@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>safra</nome>
+
+	<instrucao>
+		<id>1</id>
+		<codigo>01</codigo>
+		<nome>Remessa de títulos</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>2</id>
+		<codigo>02</codigo>
+		<nome>Pedido de baixa</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>3</id>
+		<codigo>04</codigo>
+		<nome>Concessão de Abatimento</nome>
+	</instrucao>
+		
+	<instrucao>
+		<id>4</id>
+		<codigo>05</codigo>
+		<nome>Cancelamento de Abatimento</nome>
+	</instrucao>
+		
+	<instrucao>
+		<id>6</id>
+		<codigo>06</codigo>
+		<nome>Alteração de Vencimento</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>7</id>
+		<codigo>09</codigo>
+		<nome>Pedido de Protesto</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>8</id>
+		<codigo>10</codigo>
+		<nome>Não Protestar</nome>
+	</instrucao>
+
+	<instrucao>
+		<id>10</id>
+		<codigo>31</codigo>
+		<nome>Alteração do Valor do Título</nome>
+	</instrucao>
+</layout>

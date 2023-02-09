@@ -1,0 +1,84 @@
+<relatorio dados="prosoft_resumo_movimentacao_main" >
+<apelidos>
+1  rel_posto_nome		tam=40
+2  rel_data_hora		tam=18
+3  empresa				tam=20
+4  data_ini				tam=10 fmt=data
+5  data_fim				tam=10 fmt=data
+6  numero_lote			tam=10 alinha=esquerda
+</apelidos>
+
+<cab_relat>
+#1                                                                                           #2                
+-------------------------------------------------------------------------------------------------------------
+
+Empresa: #3
+Período: #4         a #5
+Lote:    #6
+</cab_relat>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="prosoft_resumo_movimentacao" >
+<apelidos>
+1  conta_prosoft		tam=18
+2  data					tam=10 fmt=data
+3  qtd_debito			tam=12
+4  valor_debito			tam=12 fmt=%.02f
+5  qtd_credito			tam=12
+6  valor_credito		tam=12 fmt=%.02f
+7  valor_saldo			tam=12 fmt=%.02f expr=valor_debito-valor_credito
+8  total_debito         tam=12 fmt=%.02f func=soma campo=valor_debito
+9  total_credito        tam=12 fmt=%.02f func=soma campo=valor_credito
+10 total_saldo          tam=12 fmt=%.02f func=soma campo=valor_saldo
+</apelidos>
+
+<cab_relat>
++-------------------+------------+-----------------------------+-----------------------------+--------------+
+|       Conta       |            |           Débitos           |          Créditos           |              |
+|      Prosoft      |    Data    |  Quantidade  |    Valor     |  Quantidade  |    Valor     |     Saldo    |
++-------------------+------------+-----------------------------+-----------------------------+--------------+
+</cab_relat>
+
+<detalhe>
+| #1                | #2         | #3           | #4           | #5           | #6           | #7           |
+</detalhe>
+
+<rod_relat>
++-------------------+------------+--------------+--------------+--------------+--------------+--------------+
+| Total                                         | #8           |              | #9           | #10          |
++-----------------------------------------------+--------------+--------------+--------------+--------------+ 
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="prosoft_resumo_movimentacao_critica">
+<apelidos>
+1 historico                  tam=50  
+2 valor_critica              tam=12   fmt=float2 
+3 total_critica				 tam=12   fmt=float2   func=soma campo=valor_critica
+</apelidos>
+
+<cab_relat>
+
++--------------------------------------------------------------------------------------------+--------------+
+|                              Crítica: Motivo não configurado                               |    Valor     |
++--------------------------------------------------------------------------------------------+--------------+
+</cab_relat>
+
+<detalhe>
+| #1                                                                                         | #2           |
+</detalhe>
+
+<rod_relat>
++--------------------------------------------------------------------------------------------+--------------+
+| Total                                                                                      | #3           |
++--------------------------------------------------------------------------------------------+--------------+
+</rod_relat>
+
+</subrelat>
+
+<hash>a3b958d82b580a13b1727b375fc45c73</hash>
+</relatorio>
+

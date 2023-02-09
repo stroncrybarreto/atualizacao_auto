@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>Debito Auto Santander</nome>
+  <instrucao>
+	<id>1</id>
+	<codigo>0</codigo>
+	<nome>Entrada de Títulos</nome>
+  </instrucao>
+  
+  <instrucao>
+    <id>2</id>
+	<codigo>1</codigo>
+	<nome>Pedido de Cancelamento</nome>
+  </instrucao>
+</layout>

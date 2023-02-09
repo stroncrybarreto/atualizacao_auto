@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>AUTSYSTEM</title>
+	</head>
+	<body>
+		<form action="/do_venda/" method="SITEF">
+			Confirmar TEF:
+			<p>
+			<input type="submit" name="bt_confirmar" value="Confirmar">
+			<a href="/venda/">Voltar</a>
+			<input type="hidden" name="TIPO_TRN" value="1">
+			<input type="hidden" name="IMPRIMIRCOMP" value="1">
+			<input type="hidden" name="VALOR" tal:attributes="value valor">
+		</form>
+	</body>
+</html>

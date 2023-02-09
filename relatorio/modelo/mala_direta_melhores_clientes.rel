@@ -1,0 +1,26 @@
+<relatorio dados="mala_direta_melhores_clientes" mode="raw">
+<apelidos>
+1  nome				tam=50
+2  endereco			tam=50 
+3  bairro			tam=50
+4  cidade			tam=30
+5  cep				tam=10
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+
+<detalhe>
+{CPI12}{NEGR}#1
+{DNEG}#2
+#3
+#4                                 #5
+
+</detalhe>
+
+<rod_relat>
+</rod_relat>
+
+
+<hash>5f155cec5b17351239caa9a35973c46b</hash>
+</relatorio>

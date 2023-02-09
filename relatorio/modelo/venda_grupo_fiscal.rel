@@ -1,0 +1,73 @@
+<relatorio dados="venda_grupo" ordem="ordem">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulos 				tam=155 alinha=centro
+4  linha_cab_1			tam=85
+5  produto_nome			tam=35
+6  unidade_medida		tam=2
+7  quantidade			tam=15 fmt=float3
+8  pcn_quantidade		tam=6  fmt=float2
+9  valor				tam=15 fmt=float2
+10 pcnt_valor			tam=6  fmt=float2
+
+12 pcnt_quant_g1	    tam=6  fmt=float2 expr=(quantidade_g1/total_quantidade)*100
+11 quantidade_g1		tam=15 fmt=float3 
+13 valor_g1				tam=15 fmt=float2 
+14 pcnt_valor_g1		tam=6  fmt=float2 expr=(valor_g1/total_valor)*100 
+19 agrupa_1				tam=99 
+20 rodape_1				tam=40
+
+15 total_quantidade		tam=15 fmt=float3 func=soma campo=quantidade
+16 tot_pcnt_quantidade  tam=6  fmt=float2
+17 total_valor			tam=15 fmt=float2 func=soma campo=valor
+18 tot_pcnt_valor		tam=6  fmt=float2
+19 produto_codigo		tam=8
+21 produto_codigo_barra tam=13
+
+22 cfop_trib            tam=5
+23 cst_trib             tam=5
+24 cst_pis_trib         tam=4
+25 cst_cofins_trib      tam=4
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                           #2
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupa_1">  
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| #4                                                                                                                                                        |
++----------+---------------+-------------------------------------+----+--------+-------+-----+--------+-----------------+--------+-----------------+--------+
+|  Código  | Código Barra  |              Produto                | UN |  CFOP  | Trib. | PIS | COFINS |    Quantidade   | % Qnt. |      Valor      | % Vlr. |
++----------+---------------+-------------------------------------+----+--------+-------+-----+--------+-----------------+--------+-----------------+--------+
+</cab_grupo>
+
+<detalhe>
+| #19      | #21           | #5                                  | #6 | #22    | #23   | #24 | #25    | #7              | #8     | #9              | #10    |
+</detalhe>
+
+<rod_grupo nome="1">
++----------+---------------+-------------------------------------+----+--------+-------+-----+--------+-----------------+--------+-----------------+--------+
+| #20                                                                                                 | #11             | #12    | #13             | #14    |
++-----------------------------------------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+| Total geral                                                                                         | #15             | #16    | #17             | #18    |
++-----------------------------------------------------------------------------------------------------+-----------------+--------+-----------------+--------+
+</rod_relat>
+
+<rod_pagina>
++----------+---------------+-------------------------------------+----+---------+------+-----+--------+-----------------+--------+-----------------+--------+
+</rod_pagina>
+
+
+<hash>eca70c1cf1089ba5e60bc0b89fb4b26d</hash>
+</relatorio>

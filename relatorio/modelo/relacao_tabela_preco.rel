@@ -1,0 +1,36 @@
+<relatorio dados="relacao_tabela_preco" font_size="small">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  tabela_nome          tam=40
+4  item                 tam=37
+5  tipo                 tam=7
+6  valor			    tam=13	alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                    #2        
+----------------------------------------------------------------------
+ 
+                       RELACAO DE TABELAS DE PRECO
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="tabela_nome">
++--------------------------------------------------------------------+
+| NOME: #3                                                           |
++---------+------------------------------------------+---------------+
+| Tipo    | Produto/Grupo                            | Valor         |
++---------+------------------------------------------+---------------+
+</cab_grupo>
+<detalhe>
+| #5      | #4                                       | #6            |
+</detalhe>
+<rod_grupo nome="1">
++---------+------------------------------------------+---------------+
+
+</rod_grupo>
+<rod_pagina>
++---------+------------------------------------------+---------------+
+</rod_pagina>
+
+<hash>bfc2a4254546e2e758c2115d25384cc9</hash>
+</relatorio>

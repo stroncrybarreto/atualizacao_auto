@@ -1,0 +1,93 @@
+<relatorio dados="manifestacao_nota_destinatario" ordem="emitente_nome">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  titulo     				tam=117	alinha=centro
+
+6  ciente                   tam=7    alinha=esquerda
+7  numero_nota              tam=11   alinha=centro
+8  emitente_nome            tam=100  alinha=esquerda
+9  emitente_cpf             tam=18   alinha=centro
+10 sit_nfe                  tam=12   alinha=esquerda
+11 download                 tam=8    alinha=esquerda
+12 registrada               tam=10   alinha=esquerda
+13 data_emissao             tam=10   alinha=centro    fmt=data
+14 sit_manifesto            tam=20   alinha=esquerda
+15 valor                    tam=13   alinha=direita    fmt=float2
+16 chave_acesso             tam=15
+17 ciencia                  tam=15
+18 codigo_empresa           tam=15
+19 confirmada               tam=15
+20 data_rec_sefaz           tam=10   alinha=centro    fmt=data
+21 desconhecida             tam=15
+22 destinatario_cpf         tam=15
+23 destinatario_nome        tam=15
+24 destinatario_uf_codigo   tam=15
+25 dias_emissao             tam=15
+26 empresa                  tam=15
+27 grid                     tam=15
+28 grid_manifesto           tam=15
+29 grid_resumo              tam=15
+30 justificativa            tam=15
+31 nao_realizada            tam=15
+32 nfe                      tam=15
+33 nfe_evento               tam=15
+34 nfe_evento_old           tam=15
+35 nfe_manifesto            tam=15
+36 nota_fiscal              tam=15
+37 nsu_consulta             tam=15
+38 nsu_nota                 tam=15
+39 ok                       tam=15
+40 prazo                    tam=15
+41 prazo_dias               tam=15
+42 proximo_evento           tam=15
+43 serie                    tam=15
+44 situacao_nfe             tam=15
+45 tipo_ambiente            tam=15
+46 ts_registro              tam=15
+47 visualiza                tam=15
+
+50 subtotal_valor           tam=13  alinha=direita  fmt=float2  func=soma  campo=valor  grupo=1
+51 total_valor              tam=13  alinha=direita  fmt=float2  func=soma  campo=valor
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                   #2              
+---------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="emitente_nome">
+
++-------------------------------------------------------------------------------------------------------------------+
+| Emitente: #8                                                                                                      |
++----------+-------------+--------------+----------+------------+------------+----------------------+---------------+
+|  Ciente  | Número N.F. | Situação N.F | Download | Registrada |    Data    |       Situação       |     Valor     |
++----------+-------------+--------------+----------+------------+------------+----------------------+---------------+
+</cab_grupo>
+
+<detalhe>
+| #6       | #7          | #10          | #11      | #12        | #20        | #14                  | #15           |
+</detalhe>
+
+<rod_grupo nome="1">
++----------+-------------+--------------+----------+------------+------------+----------------------+---------------+
+| Subtotal                                                                                          | #50           |
++---------------------------------------------------------------------------------------------------+---------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++---------------------------------------------------------------------------------------------------+---------------+
+| Total                                                                                             | #51           |
++---------------------------------------------------------------------------------------------------+---------------+
+</rod_relat>
+
+<rod_pagina>
++----------+-------------+--------------+----------+------------+------------+----------------------+---------------+
+</rod_pagina>
+
+<hash>f9119cab349b050728f73319a725825f</hash>
+</relatorio>

@@ -1,0 +1,34 @@
+<relatorio dados="busca_dados">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18  
+3  empresa_nome			tam=45	alinha=esquerda
+4  valor_recebido		tam=21	fmt=%.02f	alinha=direita
+5  valor_emprestimo		tam=21	fmt=%.02f	alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                              #2                 
+----------------------------------------------------------------------------------------------------------------
+   
+   V A L O R E S   R E C E B I D O S   E M   U M   P O S T O   R E F E R E N T E   A   O U T R O   P O S T O
+
+
++--------------------------------------------------------------+-----------------------+-----------------------+
+| Empresa                                                      |  Valor Recebido Total | Valor de 'Empréstimo' |
++--------------------------------------------------------------+-----------------------+-----------------------+
+</cab_pagina>
+
+<detalhe>
+| #3                                                           | #4                    | #5                    |
+</detalhe>
+
+<rod_pagina>
++--------------------------------------------------------------+-----------------------+-----------------------+
+</rod_pagina>
+
+<rod_relat>
++--------------------------------------------------------------+-----------------------+-----------------------+
+</rod_relat>
+
+<hash>18c1685addf678979c083aa7e91e6cac</hash>
+</relatorio>

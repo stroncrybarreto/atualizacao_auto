@@ -1,0 +1,116 @@
+<relatorio dados="doc_recebimento" docname="Recibo recebimento" mode="raw">
+<apelidos>
+1  empresa_codigo        tam=6
+2  empresa_nome			 tam=110  alinha=centro
+3  empresa_nome_reduzido tam=20
+4  empresa_cpf           tam=20
+5  empresa_inscr_est     tam=20
+6  empresa_endereco      tam=20
+7  empresa_bairro        tam=24  alinha=esquerda
+8  empresa_cidade        tam=20
+9  empresa_estado        tam=20
+10 empresa_cep           tam=20  alinha=esquerda
+11 empresa_cidade_estado tam=40  expr=empresa_cidade + " - " + empresa_estado
+12 movto_documento		 tam=999999
+13 movto_valor			 tam=12  fmt=float2
+14 valor_ext1	     	 tam=40	 alinha=strip
+15 valor_ext2		     tam=40	 alinha=strip
+16 movto_data			 tam=10	 fmt=data
+17 subtotal_mora         tam=10  fmt=float2
+18 total_mora            tam=10  fmt=float2
+19 valor_mora            tam=10  fmt=float2
+20 subtotal_desconto     tam=10  fmt=float2
+21 total_desconto        tam=10  fmt=float2
+22 valor_desconto        tam=10  fmt=float2
+23 valor_liquido         tam=10  fmt=float2
+24 subtotal_pago         tam=10  fmt=float2
+25 valor_titulo          tam=10  fmt=float2
+26 total_titulo          tam=10  fmt=float2
+27 total_pago            tam=10  fmt=float2
+28 data_baixa            tam=10  fmt=data
+29 motivo_nome           tam=30
+30 conta_codigo          tam=10  fmt=float2
+31 pessoa_nome			 tam=40
+32 data_formatada        tam=40
+33 valor_ext_total       tam=60  alinha=strip  expr="(" + valor_ext1 + ")"
+34 linha_declaro         tam=116  expr=pessoa_nome + "  A IMPORTÂNCIA ACIMA CITADA A TÍTULO DE"
+35 motivo_nome_original  tam=30
+
+</apelidos>
+
+<cab_pagina></cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa_nome">
+-----------------------------------------------------------------------------------------------------------------------
+#2
+CNPJ: #4                                                                                      IE.:#5
+#6                                                                                            #7
+#11                                                                                           CEP:#10
+-----------------------------------------------------------------------------------------------------------------------
+
+Controle do recebimento:
+
+           Valor título: #26  
+            Valor juros: #18
+         Valor desconto: #21
+         Valor recebido: #23          - #33
+
+
+DECLARO QUE RECEBI DE #34                                          
+RECEBIMENTO DE #35                            , CONFORME SEGUE:
+
+Notas: #12
+
+
+Por ser verdade, firmo o presente recibo
+#32
+
+
+
+
+                                __________________________________________________
+#2
+
+_______________________________________________________________________________________________________________________
+
+-----------------------------------------------------------------------------------------------------------------------
+#2
+CNPJ: #4                                                                                      IE.:#5
+#6                                                                                            #7
+#11                                                                                           CEP:#10
+-----------------------------------------------------------------------------------------------------------------------
+
+Controle do recebimento:
+
+           Valor título: #26  
+            Valor juros: #18
+         Valor desconto: #21
+         Valor recebido: #23          - #33
+
+
+DECLARO QUE RECEBI DE #34                                          
+RECEBIMENTO DE #35                            , CONFORME SEGUE:
+
+Notas: #12
+
+
+Por ser verdade, firmo o presente recibo
+#32
+
+
+
+
+                                __________________________________________________
+#2
+
+</cab_grupo>
+
+<detalhe></detalhe>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina></rod_pagina>
+
+<hash>cdad8c1541a0dafba3c7eeb80741ecd9</hash>
+</relatorio>

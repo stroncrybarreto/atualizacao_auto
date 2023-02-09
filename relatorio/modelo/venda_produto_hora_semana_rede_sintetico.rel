@@ -1,0 +1,87 @@
+<relatorio dados="venda_produto_hora" ordem="dia_semana" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo			tam=138	alinha=centro
+
+9  hora				tam=5  	alinha=centro
+10 quantidade 		tam=12 	fmt=float2
+11 pcnt_qtde		tam=7 	fmt=float2
+12 valor			tam=12 	fmt=float2
+13 pcnt_valor		tam=7 	fmt=float2
+
+18 tot_qtde_geral   tam=12 	fmt=float2
+19 pcnt_qtde_geral  tam=6 	fmt=float2
+20 tot_valor_geral  tam=12 	fmt=float2
+21 pcnt_valor_geral tam=6 	fmt=float2
+22 dia_semana_nome	tam=60 	
+23 tot_qtde_dia   	tam=12 	fmt=float2
+24 pcnt_qtde_dia  	tam=6 	fmt=float2
+25 tot_valor_dia  	tam=12 	fmt=float2
+26 pcnt_valor_dia 	tam=6 	fmt=float2
+27 total_vendas		tam=8 	fmt=float0 alinha=centro
+39 total_geral_vendas	tam=8	fmt=float0 alinha=centro
+40 tot_vendas			tam=8	fmt=float0 alinha=centro
+
+28 perc_qtd_geral		tam=7	fmt=float2
+29 perc_tot_qtd_geral	tam=7	fmt=float2
+
+30 perc_vl_geral		tam=7	fmt=float2
+31 perc_tot_vl_geral	tam=7	fmt=float2
+
+32 perc_venda			tam=8	fmt=float2
+33 perc_venda_grupo		tam=7	fmt=float2
+34 perc_venda_total		tam=8	fmt=float2
+35 perc_venda_ger		tam=7	fmt=float2
+36 perc_venda_total_ger	tam=7	fmt=float2
+
+41 media_venda			tam=8	fmt=float2
+42 media_qtd			tam=12	fmt=float2
+43 media_vl				tam=12	fmt=float2
+
+44 tm_qtd			tam=8	expr=quantidade/total_vendas	fmt=float2
+45 tm_vl			tam=8	expr=valor/total_vendas			fmt=float2
+
+46 tm_qtd_tot		tam=8	expr=tot_qtde_dia/tot_vendas	fmt=float2  grupo=2
+47 tm_vl_tot		tam=8	expr=tot_valor_dia/tot_vendas	fmt=float2  grupo=2
+
+48 tm_geral_qtd_tot	tam=8	expr=tot_qtde_geral/total_geral_vendas	fmt=float2
+49 tm_geral_vl_tot	tam=8	expr=tot_valor_geral/total_geral_vendas	fmt=float2
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                        #2
+------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+</cab_pagina>
+<cab_grupo nome="2" quebra="dia_semana">
+| Dia da semana: #22                                                                                                                     |
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Hora  |  Vendas  | % Grupo  | % Total  |  Quantidade  | % Grupo  | % Total  |     Valor    | % Grupo  | % Total  | TM Qtde. | TM Valor |
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</cab_grupo>
+<detalhe>
+| #9    | #27      | #33    % | #35    % | #10          | #11    % | #28    % | #12          | #13    % | #30    % | #44      | #45      |
+</detalhe>
+<rod_grupo nome="2">
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Total | #40      |  100,00% | #36    % | #23          |  100,00% | #29    % | #25          |  100,00% | #31    % | #46      | #47      |
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Média | #41      |          |          | #42          |          |          | #43          |          |          |          |          |
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</rod_grupo>
+<rod_relat>
+
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+| Geral | #39      |          |  100,00% | #18          |          |  100,00% | #20          |          |  100,00% | #48      | #49      |
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</rod_relat>
+<rod_pagina>
++-------+----------+----------+----------+--------------+----------+----------+--------------+----------+----------+----------+----------+
+</rod_pagina>
+
+<hash>84dbd120e8c29e125298f05c8d3b81c1</hash>
+</relatorio>

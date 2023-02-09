@@ -1,0 +1,40 @@
+<relatorio dados="kit_produto" docname="Relatório de Kit de Produtos">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  kit_codigo       tam=13
+4  kit_nome         tam=45
+5  kit_preco_venda  tam=15  fmt=%.02f  alinha=direita
+6  kit_preco_custo  tam=15  fmt=%.02f  alinha=direita
+7  kit_lucro        tam=15  fmt=%.02f  alinha=direita
+8  total_venda      tam=15  fmt=%.02f  alinha=direita 
+9  total_custo      tam=15  fmt=%.02f  alinha=direita 
+10 total_lucro      tam=15  fmt=%.02f  alinha=direita  
+</apelidos>
+<cab_pagina>
+#1                                                                                                   #2                
+----------------------------------------------------------------------------------------------------------------------
+ 
+
+                                  R E L A T O R I O   K I T   D E   P R O D U T O S
+
+
++---------------+-------------------------------------------------+----------------+----------------+----------------+
+| Código        | Descrição                                       |      Pr. Venda |      Pr. Custo |          Lucro |
++---------------+-------------------------------------------------+----------------+----------------+----------------+
+</cab_pagina>
+<detalhe>
+| #3            | #4                                              |#5              |#6              |#7              |
+</detalhe>
+<rod_relat>
++---------------+-------------------------------------------------+----------------+----------------+----------------+
+| Total                                                           |#8              |#9              |#10             |    
++-----------------------------------------------------------------+----------------+----------------+----------------+
+</rod_relat>
+
+<rod_pagina>
++---------------+-------------------------------------------------+----------------+----------------+----------------+
+</rod_pagina>
+
+<hash>04b5d51b9767becdf5975ee906a29b66</hash>
+</relatorio>

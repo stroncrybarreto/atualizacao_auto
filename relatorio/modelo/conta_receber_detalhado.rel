@@ -1,0 +1,66 @@
+<relatorio dados="conta_receber_detalhado" tamfonte="8" paper_orientation="landscape" ordem="ordem">
+<apelidos>
+1  rel_posto_nome   	tam=60
+2  rel_data_hora    	tam=18
+3  titulo1				tam=166	 alinha=centro
+4  titulo2				tam=166	 alinha=centro
+5  pessoa_cod_nome		tam=37	 alinha=esquerda expr=str(pessoa_codigo)+ " - "+pessoa_nome  repetir=0
+6  pessoa_nome			tam=30   repetir=0
+7  vencto				tam=10	 fmt=data
+8  documento			tam=11   alinha=centro
+9  motivo_nome_abrv		tam=6
+10 valor				tam=15	 fmt=float2
+11 dias_atraso			tam=4 	 fmt=%d		nulo  alinha=centro
+12 saldo				tam=15 	 fmt=float2       alinha=direita
+13 pessoa_fone			tam=15   repetir=0
+14 total				tam=15 	 fmt=float2       alinha=direita
+15 pessoa_celular		tam=15
+16 pessoa_contato		tam=12
+17 tabela_preco			tam=20
+18 grupo_nome			tam=30
+19 valor_real			tam=8	 fmt=float2
+20 motivo_nome			tam=20
+21 tabela_preco_tipo	tam=15
+22 emissao              tam=10   fmt=data
+23 subtotal_valor       tam=15   fmt=float2 func=soma campo=valor grupo=1
+24 subtotal_saldo       tam=15   fmt=float2 func=soma campo=valor grupo=1
+25 total_geral          tam=15   fmt=float2 func=soma campo=valor
+38 limite_credito		tam=12   fmt=float2 repetir=0
+39 lim_credito_conta	tam=11	 fmt=float2 repetir=0
+40 nosso_numero			tam=10
+41 portador_codigo		tam=6
+42 portador_nome		tam=12
+43 pessoa_codigo		tam=5
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                   #2        
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
++---------------------------------------+------------+------------+-------------+--------+-----------------+------+-----------------+--------------+----------------+
+|                Cliente                |  Emissão   | Vencimento |  Documento  | Motivo |      Valor      | Dias |      Saldo      |    Limite    |    Telefone    |
++---------------------------------------+------------+------------+-------------+--------+-----------------+------+-----------------+--------------+----------------+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupamento_1,agrupamento_2">
+</cab_grupo>
+<detalhe>
+| #5                                    | #22        | #7         | #8          | #9     | #10             | #11  | #24             | #38          | #13            |
+</detalhe>
+<rod_grupo nome="1">
++---------------------------------------+------------+------------+-------------+--------+-----------------+------+-----------------+--------------+----------------+
+</rod_grupo>
+<rod_relat>
+
+
++----------------------------------------------------------------------------------------+-----------------+------+-----------------+--------------+----------------+
+| Total geral                                                                            | #25             |      |                 |              |                |
++----------------------------------------------------------------------------------------+-----------------+------+-----------------+--------------+----------------+
+</rod_relat>
+<rod_pagina>
++---------------------------------------+------------+------------+-------------+--------+-----------------+------+-----------------+--------------+----------------+
+</rod_pagina>
+
+<hash>617fced2fbfaa5fe6b1c751ebfa56880</hash>
+</relatorio>

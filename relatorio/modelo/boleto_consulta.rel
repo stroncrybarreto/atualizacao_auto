@@ -1,0 +1,36 @@
+<relatorio dados="boleto_consulta" docname="Titulos em Carteira de Cobranca">
+<apelidos>
+1  rel_posto_nome   	tam=60
+2  rel_data_hora    tam=18
+3  nosso_numero		tam=10
+4  data_emissao		tam=10  fmt=data
+5  data_vencto		tam=10  fmt=data
+6  situacao_nome	tam=22
+7  cliente			tam=34
+8  valor			tam=12	fmt=float2 alinha=direita
+9  valor_total      tam=12  fmt=float2 alinha=direita
+10 qtde_boleto      tam=10  alinha=esquerda
+</apelidos>
+<cab_relat>
+#1                                                                                                 #2                
+-------------------------------------------------------------------------------------------------------------------
+
+
+                                    {TIT}TÍTULOS EM CARTEIRA DE COBRANÇA 
+
+
++-----------+------------+------------+-----------------------+------------------------------------+--------------+
+| Nosso Nr. | Dt. Emiss. | Dt. Venct. | Situacao              | Cliente                            | Valor        |
++-----------+------------+------------+-----------------------+------------------------------------+--------------+
+</cab_relat>
+<detalhe>
+| #3        | #4         | #5         | #6                    | #7                                 | #8           |
+</detalhe>
+<rod_relat>
++-----------+------------+------------+-----------------------+------------------------------------+--------------+
+| Registros: #10                                                                                   | #9           |
++-----------+------------+------------+-----------------------+------------------------------------+--------------+
+</rod_relat>
+
+<hash>c4225d43b62809d7fd27025ca799e288</hash>
+</relatorio>

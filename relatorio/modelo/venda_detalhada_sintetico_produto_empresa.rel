@@ -1,0 +1,82 @@
+<relatorio dados="venda_detalhada" tamfonte="8" paper_orientation="landscape" ordem="produto_nome, produto, empresa_nome, empresa">
+<apelidos>
+1  rel_posto_nome	       tam=60
+2  rel_data_hora	       tam=18
+3  subtitulo	           tam=184                 	                               alinha=centro
+4  data			           tam=10	fmt=data
+5  hora			           tam=5
+6  bico			           tam=4	                                               alinha=centro
+7  produto_nome		       tam=50
+8  quantidade		       tam=10	fmt=float2
+9  preco_unit		       tam=10	fmt=float3
+10 valor		           tam=10	fmt=float2
+11 forma_pgto		       tam=17
+12 quant_total   	       tam=10	fmt=float2
+13 valor_total	           tam=10	fmt=float2
+15 titulo                  tam=184		                                           alinha=centro
+16 total_quantidade        tam=14   fmt=float3 func=soma campo=quantidade grupo=1
+17 total_valor             tam=14   fmt=float2 func=soma campo=valor      grupo=1
+18 total_geral_quantidade  tam=14   fmt=float3 func=soma campo=quantidade
+19 total_geral_valor       tam=14   fmt=float2 func=soma campo=valor
+20 desconto                tam=8    fmt=float2
+21 acrescimo               tam=9    fmt=float2
+22 valor_bruto             tam=13   fmt=float2
+23 total_desconto          tam=8    fmt=float2 func=soma campo=desconto    grupo=1
+24 total_acrescimo         tam=9    fmt=float2 func=soma campo=acrescimo   grupo=1
+25 total_valor_bruto       tam=13   fmt=float2 func=soma campo=valor_bruto grupo=1
+26 total_geral_desconto    tam=8    fmt=float2 func=soma campo=desconto
+27 total_geral_acrescimo   tam=9    fmt=float2 func=soma campo=acrescimo
+28 total_geral_valor_bruto tam=13   fmt=float2 func=soma campo=valor_bruto
+29 produto_codigo          tam=13	                                               alinha=centro
+30 grupo_descricao         tam=50
+31 subgrupo_descricao      tam=50
+32 empresa_descricao       tam=107
+33 total_empresa_quantidade        tam=14   fmt=float3 func=soma campo=quantidade  grupo=2
+34 total_empresa_valor_bruto       tam=13   fmt=float2 func=soma campo=valor_bruto grupo=2
+35 total_empresa_desconto          tam=8    fmt=float2 func=soma campo=desconto    grupo=2
+36 total_empresa_acrescimo         tam=9    fmt=float2 func=soma campo=acrescimo   grupo=2
+37 total_empresa_valor             tam=14   fmt=float2 func=soma campo=valor       grupo=2
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                                   #2                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#15
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupar">
++---------------+-------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+
+|     Codigo    |                        Produto                        |                         Grupo                         |                        Subgrupo                       |
++---------------+-------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+
+| #29           | #7                                                    | #30                                                   | #31                                                   |
++---------------+---------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+|                                                   Empresa                                                   |   Quantidade    |  Valor bruto  | Desconto | Acréscimo |  Valor liquído |
++-------------------------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="agrupar_2">
+</cab_grupo>
+<detalhe>
+</detalhe>
+<rod_grupo nome="2">
+| #32                                                                                                         | #33             | #34           | #35      | #36       | #37            |
+</rod_grupo>
+<rod_grupo nome="1">
++-------------------------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+| Total                                                                                                       | #16             | #25           | #23      | #24       | #17            |
++-------------------------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+
+</rod_grupo>
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+| Total geral                                                                                                 | #18             | #28           | #26      | #27       | #19            |
++-------------------------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------------------------------------------------------------+-----------------+---------------+----------+-----------+----------------+
+</rod_pagina>
+
+<hash>45d39b925771551eb30571a8f8f500f2</hash>
+</relatorio>

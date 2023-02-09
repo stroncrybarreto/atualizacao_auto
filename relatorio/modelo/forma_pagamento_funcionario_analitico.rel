@@ -1,0 +1,46 @@
+<relatorio dados="forma_pagamento_funcionario_analitico" paper_orientation="landscape" tamfonte="6" fontsize="xx-small" font_height="compact" ordem="data,hora">
+<apelidos>
+1	data			tam=10		alinha=centro	fmt=data
+2	hora			tam=5		alinha=centro
+3	forma_pgto		tam=25		alinha=esquerda
+4	conta_debitar	tam=15		alinha=esquerda
+5	valor			tam=12		fmt=float2		alinha=direita
+6	usuario			tam=12		
+7	nome_cliente	tam=21		
+9	conta_creditar	tam=15		alinha=esquerda
+10  total_valor 	tam=12 		fmt=float2		alinha=direita	func=soma campo=valor
+
+20	empresa			tam=40
+21	info_filtro		tam=136		alinha=centro
+22  empresa_cod_nome tam=131
+25	turno			tam=136		alinha=centro
+30	rel_data_hora 	tam=18
+35	titulo			tam=144		alinha=centro
+40	tipo_relatorio	tam=136		alinha=centro	
+
+
+</apelidos>
+
+<cab_pagina>
+#20                                                                                                                             #30
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#35
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #22                                                                                                                                 |
++------------+-------+---------------------------+------------------+------------------+--------------+---------------+------------------------+
+|    Data    | Hora  |      Forma pagamento      |      Conta       |      Caixa       |    Valor     |  Funcionário  |        Cliente         |
++------------+-------+---------------------------+------------------+------------------+--------------+---------------+------------------------+
+</cab_pagina>
+<detalhe>
+| #1         | #2    | #3                        | #4               | #9               | #5           | #6            | #7                     | 
+</detalhe>
+<rod_relat>
++------------+-------+---------------------------+------------------+------------------+--------------+---------------+------------------------+
+| Total                                                                                | #10          |                                        |
++--------------------------------------------------------------------------------------+--------------+----------------------------------------+
+</rod_relat>
+
+<hash>298f41b47617a5de901ac0eb7cd6da9b</hash>
+</relatorio>

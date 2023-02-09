@@ -1,0 +1,50 @@
+<relatorio dados="balancete_verifica" title="Balancete de verificação">
+<apelidos>
+1 rel_posto_nome	tam=58
+2 rel_data_hora	tam=18
+3 titulo1			tam=140 alinha=centro
+4 titulo2			tam=140 alinha=centro
+5 linha
+6 cabecalho
+7 detalhe tam=180
+8 cod_conta		    tam=6					alinha=esquerda
+9 name_conta		tam=50					alinha=esquerda
+10 vl_saldo_inicial tam=16 fmt=float2		alinha=direita
+11 vl_debito		tam=16 fmt=float2		alinha=direita
+12 vl_credito		tam=16 fmt=float2		alinha=direita
+13 vl_saldo_final	tam=16 fmt=float2		alinha=direita
+14 titulo3			tam=140 alinha=centro
+15 linha_empresa     tam=176
+16 cabecalho_empresa tam=176
+17 cod_name_conta  tam=50
+</apelidos>
+<cab_pagina>
+#1                                                                                                                          #2
+--------------------------------------------------------------------------------------------------------------------------------------------
+#3
+#4
+#14
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
+#15
+#16
++----------------------------------------------------------+-------------------+-------------------+-------------------+-------------------+
+|                       Conta                              |   Saldo anterior  |       Débito      |       Crédito     |       Saldo       |
++----------------------------------------------------------+-------------------+-------------------+-------------------+-------------------+
+</cab_grupo>
+<detalhe>
+| #17                                                      | #10               | #11               | #12               | #13               |
+</detalhe>
+<rod_grupo nome="1">
++----------------------------------------------------------+-------------------+-------------------+-------------------+-------------------+
+</rod_grupo>
+<rod_pagina>
++----------------------------------------------------------+-------------------+-------------------+-------------------+-------------------+
+</rod_pagina>
+<rod_relat>
+
+Observação: + indica que a conta é uma conta pai, isto é, possui contas filhas, já o - indica que é uma conta filha.
+</rod_relat>
+
+<hash>4eb9fe81f0378a1b34641ff770b0b828</hash>
+</relatorio>

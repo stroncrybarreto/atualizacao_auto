@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+   <nome>Sicoob - Cnab240</nome>
+   <ocorrencias>
+      <ocorrencia>
+         <id>1</id>
+         <codigo>02</codigo>
+         <nome>Entrada Confirmada</nome>
+		 
+         <motivo>
+            <codigo>00</codigo>
+            <nome>Ocorrencia aceita</nome>
+         </motivo>
+         <motivo>
+            <codigo>01</codigo>
+            <nome>Código do Banco Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>17</codigo>
+            <nome>Data de Vencimento Anterior a Data de Emissão</nome>
+         </motivo>
+         <motivo>
+            <codigo>21</codigo>
+            <nome>Espécie do Título Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>24</codigo>
+            <nome>Data da Emissão Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>38</codigo>
+            <nome>Prazo para Protesto Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>39</codigo>
+            <nome>Pedido de Protesto Não Permitido para o Título</nome>
+         </motivo>
+         <motivo>
+            <codigo>43</codigo>
+            <nome>Prazo para Baixa/Devolução Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>45</codigo>
+            <nome>Nome do Sacado Não Informado</nome>
+         </motivo>
+         <motivo>
+            <codigo>46</codigo>
+            <nome>Tipo/Número de Inscrição do Sacado Inválidos</nome>
+         </motivo>
+         <motivo>
+            <codigo>47</codigo>
+            <nome>Endereço do Sacado Não Informado</nome>
+         </motivo>
+         <motivo>
+            <codigo>48</codigo>
+            <nome>CEP Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>50</codigo>
+            <nome>CEP Referente a um Banco Correspondente</nome>
+         </motivo>
+         <motivo>
+            <codigo>53</codigo>
+            <nome>Tipo/Número de Inscrição do Sacador/Avalista Inválidos</nome>
+         </motivo>
+         <motivo>
+            <codigo>54</codigo>
+            <nome>Sacador/Avalista Não Informado</nome>
+         </motivo>
+         <motivo>
+            <codigo>67</codigo>
+            <nome>Dados para Débito incompatível com a Identificação da Emissão do Bloqueto</nome>
+         </motivo>
+         <motivo>
+            <codigo>86</codigo>
+            <nome>Seu Número Inválido</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>2</id>
+         <codigo>03</codigo>
+         <nome>Entrada rejeitada</nome>
+         
+		 <motivo>
+            <codigo>03</codigo>
+            <nome>Código do Segmento Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>04</codigo>
+            <nome>Código de Movimento Não Permitido para Carteira</nome>
+         </motivo>
+         <motivo>
+            <codigo>05</codigo>
+            <nome>Código de Movimento Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>07</codigo>
+            <nome>Agência/Conta/DV Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>08</codigo>
+            <nome>Nosso Número Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>09</codigo>
+            <nome>Nosso Número Duplicado</nome>
+         </motivo>
+         <motivo>
+            <codigo>10</codigo>
+            <nome>Carteira Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>16</codigo>
+            <nome>Data de Vencimento Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>18</codigo>
+            <nome>Vencimento Fora do Prazo de Operação</nome>
+         </motivo>
+         <motivo>
+            <codigo>20</codigo>
+            <nome>Valor do Título Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>21</codigo>
+            <nome>Espécie do Título Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>22</codigo>
+            <nome>Espécie do Título Não Permitida para a Carteira</nome>
+         </motivo>
+         <motivo>
+            <codigo>24</codigo>
+            <nome>Data da Emissão Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>38</codigo>
+            <nome>Prazo para Protesto Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>44</codigo>
+            <nome>Código da Moeda Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>50</codigo>
+            <nome>CEP Referente a um Banco Correspondente</nome>
+         </motivo>
+         <motivo>
+            <codigo>63</codigo>
+            <nome>Entrada para Título já Cadastrado</nome>
+         </motivo>
+         <motivo>
+            <codigo>86</codigo>
+            <nome>Seu Número Inválido</nome>
+         </motivo>
+      </ocorrencia>
+      
+	  <ocorrencia>
+         <id>3</id>
+         <codigo>06</codigo>
+         <nome>Liquidação</nome>
+		 
+		 <motivo>
+            <codigo>01</codigo>
+            <nome>Por Saldo</nome>
+         </motivo>
+		 <motivo>
+            <codigo>02</codigo>
+            <nome>Por Conta</nome>
+         </motivo>
+		 <motivo>
+            <codigo>03</codigo>
+            <nome>Liquidação no Guichê de Caixa em Dinheiro</nome>
+         </motivo>
+		 <motivo>
+            <codigo>04</codigo>
+            <nome>Compensação Eletrônica</nome>
+         </motivo>
+		 <motivo>
+            <codigo>05</codigo>
+            <nome>Compensação Convencional</nome>
+         </motivo>
+		 <motivo>
+            <codigo>06</codigo>
+            <nome>Por Meio Eletrônico</nome>
+         </motivo>
+		 <motivo>
+            <codigo>07</codigo>
+            <nome>Após Feriado Local</nome>
+         </motivo>
+		 <motivo>
+            <codigo>08</codigo>
+            <nome>Em Cartório</nome>
+         </motivo>
+		 <motivo>
+            <codigo>30</codigo>
+            <nome>Liquidação no Guichê de Caixa em Cheque</nome>
+         </motivo>
+		 <motivo>
+            <codigo>31</codigo>
+            <nome>Liquidação em banco correspondente</nome>
+         </motivo>
+		 <motivo>
+            <codigo>32</codigo>
+            <nome>Liquidação Terminal de Auto-Atendimento</nome>
+         </motivo>
+		 <motivo>
+            <codigo>33</codigo>
+            <nome>Liquidação Terminal de Auto-Atendimento</nome>
+         </motivo>
+		 <motivo>
+            <codigo>34</codigo>
+            <nome>Liquidado Office Banking</nome>
+         </motivo>
+		 <motivo>
+            <codigo>35</codigo>
+            <nome>Liquidado Correspondente em Dinheiro</nome>
+         </motivo>
+ 		 <motivo>
+            <codigo>36</codigo>
+            <nome>Liquidado Correspondente em Cheque</nome>
+         </motivo>
+ 		 <motivo>
+            <codigo>37</codigo>
+            <nome>Liquidado por meio de Central de Atendimento (Telefone)</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>4</id>
+         <codigo>09</codigo>
+         <nome>Baixa</nome>
+
+		 <motivo>
+            <codigo>09</codigo>
+            <nome>Comandada Banco</nome>
+         </motivo>
+		 <motivo>
+            <codigo>10</codigo>
+            <nome>Comandada Cliente Arquivo</nome>
+         </motivo>
+		 <motivo>
+            <codigo>11</codigo>
+            <nome>Comandada Cliente On-line</nome>
+         </motivo>
+		 <motivo>
+            <codigo>12</codigo>
+            <nome>Decurso Prazo - Cliente</nome>
+         </motivo>
+		 <motivo>
+            <codigo>13</codigo>
+            <nome>Decurso Prazo - Banco</nome>
+         </motivo>
+		 <motivo>
+            <codigo>14</codigo>
+            <nome>Protestado</nome>
+         </motivo>
+		 <motivo>
+            <codigo>15</codigo>
+            <nome>Título Excluído</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>6</id>
+         <codigo>12</codigo>
+         <nome>Confirmação Recebimento Instrução de Abatimento</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>7</id>
+         <codigo>13</codigo>
+         <nome>Confirmação Recebimento Instrução de Cancelamento Abatimento</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>8</id>
+         <codigo>14</codigo>
+         <nome>Confirmação Recebimento Instrução Alteração de Vencimento</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>9</id>
+         <codigo>15</codigo>
+         <nome>Franco de Pagamento</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>10</id>
+         <codigo>17</codigo>
+         <nome>Liquidação Após Baixa ou Liquidação Título Não Registrado</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>11</id>
+         <codigo>19</codigo>
+         <nome>Confirmação Recebimento Instrução de Protesto</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>12</id>
+         <codigo>20</codigo>
+         <nome>Confirmação Recebimento Instrução de Sustação/Cancelamento de Protesto</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>13</id>
+         <codigo>23</codigo>
+         <nome>Remessa a Cartório (Aponte em Cartório)</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>14</id>
+         <codigo>24</codigo>
+         <nome>Retirada de Cartório e Manutenção em Carteira</nome>
+         
+		 <motivo>
+            <codigo>48</codigo>
+            <nome>CEP Inválido</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>15</id>
+         <codigo>27</codigo>
+         <nome>Confirmação do Pedido de Alteração de Outros Dados</nome>
+         
+		 <motivo>
+            <codigo>00</codigo>
+            <nome>Código de ocorrência não permitido para a carteira</nome>
+         </motivo>
+         <motivo>
+            <codigo>07</codigo>
+            <nome>Agência/Conta/DV Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>08</codigo>
+            <nome>Nosso Número Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>10</codigo>
+            <nome>Carteira Inválida</nome>
+         </motivo>
+         <motivo>
+            <codigo>15</codigo>
+            <nome>Características da Cobrança Incompatíveis</nome>
+         </motivo>
+         <motivo>
+            <codigo>40</codigo>
+            <nome>Título com Ordem de Protesto Emitida</nome>
+         </motivo>
+         <motivo>
+            <codigo>42</codigo>
+            <nome>Código para Baixa/Devolução Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>60</codigo>
+            <nome>Movimento para Título Não Cadastrado</nome>
+         </motivo>
+         <motivo>
+            <codigo>77</codigo>
+            <nome>Transferência para Desconto Não Permitida para a Carteira do Título</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>16</id>
+         <codigo>05</codigo>
+         <nome>Liquidação Sem Registro</nome>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>17</id>
+         <codigo>30</codigo>
+         <nome> Alteração de Dados Rejeitada</nome>
+         
+		 <motivo>
+            <codigo>24</codigo>
+            <nome>Data da Emissão Inválida</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>18</id>
+         <codigo>26</codigo>
+         <nome>Instrução rejeitada</nome>
+         
+		 <motivo>
+            <codigo>20</codigo>
+            <nome>Valor do Título Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>36</codigo>
+            <nome>Concessão de Abatimento - Já Existe Abatimento Anterior</nome>
+         </motivo>
+         <motivo>
+            <codigo>41</codigo>
+            <nome>Pedido de Cancelamento/Sustação para Títulos sem Instrução de Protesto</nome>
+         </motivo>
+         <motivo>
+            <codigo>45</codigo>
+            <nome>Nome do Sacado Não Informado</nome>
+         </motivo>
+         <motivo>
+            <codigo>46</codigo>
+            <nome>Tipo/Número de Inscrição do Sacado Inválidos</nome>
+         </motivo>
+         <motivo>
+            <codigo>47</codigo>
+            <nome>Endereço do Sacado Não Informado</nome>
+         </motivo>
+         <motivo>
+            <codigo>48</codigo>
+            <nome>CEP Inválido</nome>
+         </motivo>
+         <motivo>
+            <codigo>50</codigo>
+            <nome>CEP Referente a um Banco Correspondente</nome>
+         </motivo>
+         <motivo>
+            <codigo>53</codigo>
+            <nome>Tipo/Número de Inscrição do Sacador/Avalista Inválidos</nome>
+         </motivo>
+         <motivo>
+            <codigo>85</codigo>
+            <nome>Título com Pagamento Vinculado</nome>
+         </motivo>
+         <motivo>
+            <codigo>86</codigo>
+            <nome>Seu Número Inválido</nome>
+         </motivo>
+      </ocorrencia>
+
+      <ocorrencia>
+         <id>20</id>
+         <codigo>35</codigo>
+         <nome>Confirmação do Desagendamento do Débito Automático</nome>
+         
+		 <motivo>
+            <codigo>81</codigo>
+            <nome>Tentativas de Débito Esgotadas - Baixado</nome>
+         </motivo>
+         <motivo>
+            <codigo>82</codigo>
+            <nome>Tentativas de Débito Esgotadas - Pendente</nome>
+         </motivo>
+      </ocorrencia>
+	  
+	  <ocorrencia>
+		 <id>22</id>
+		 <codigo>16</codigo>
+		 <nome>Título Pago em Cheque</nome>
+	  </ocorrencia>
+	  
+      <ocorrencia>
+         <id>-1</id>
+         <codigo>-1</codigo>
+         <nome>Outras Ocorrências</nome>
+      </ocorrencia>
+   </ocorrencias>
+   
+   <motivos>
+      <motivo>
+         <codigo>00</codigo>
+         <nome>Título pago com dinheiro</nome>
+      </motivo>
+      <motivo>
+         <codigo>01</codigo>
+         <nome>Código do Banco Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>02</codigo>
+         <nome>Código do Registro Detalhe Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>03</codigo>
+         <nome>Código do Segmento Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>04</codigo>
+         <nome>Código de Movimento Não Permitido para Carteira</nome>
+      </motivo>
+      <motivo>
+         <codigo>05</codigo>
+         <nome>Código de Movimento Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>06</codigo>
+         <nome>Tipo/Número de Inscrição do Cedente Inválidos</nome>
+      </motivo>
+      <motivo>
+         <codigo>07</codigo>
+         <nome>Agência/Conta/DV Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>08</codigo>
+         <nome>Nosso Número Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>09</codigo>
+         <nome>Nosso Número Duplicado</nome>
+      </motivo>
+      <motivo>
+         <codigo>10</codigo>
+         <nome>Carteira Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>11</codigo>
+         <nome>Forma de Cadastramento do Título Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>12</codigo>
+         <nome>Tipo de Documento Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>13</codigo>
+         <nome>Identificação da Emissão do Bloqueto Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>14</codigo>
+         <nome>Identificação da Distribuição do Bloqueto Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>15</codigo>
+         <nome>Características da Cobrança Incompatíveis</nome>
+      </motivo>
+      <motivo>
+         <codigo>16</codigo>
+         <nome>Data de Vencimento Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>17</codigo>
+         <nome>Data de Vencimento Anterior a Data de Emissão</nome>
+      </motivo>
+      <motivo>
+         <codigo>18</codigo>
+         <nome>Vencimento Fora do Prazo de Operação</nome>
+      </motivo>
+      <motivo>
+         <codigo>19</codigo>
+         <nome>Título a Cargo de Bancos Correspondentes com Vencimento Inferior a XX Dias</nome>
+      </motivo>
+      <motivo>
+         <codigo>20</codigo>
+         <nome>Valor do Título Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>21</codigo>
+         <nome>Espécie do Título Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>22</codigo>
+         <nome>Espécie do Título Não Permitida para a Carteira</nome>
+      </motivo>
+      <motivo>
+         <codigo>23</codigo>
+         <nome>Aceite Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>24</codigo>
+         <nome>Data da Emissão Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>25</codigo>
+         <nome>Data da Emissão Posterior a Data de Entrada</nome>
+      </motivo>
+      <motivo>
+         <codigo>26</codigo>
+         <nome>Código de Juros de Mora Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>27</codigo>
+         <nome>Valor/Taxa de Juros de Mora Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>28</codigo>
+         <nome>Código do Desconto Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>29</codigo>
+         <nome>Valor do Desconto Maior ou Igual ao Valor do Título</nome>
+      </motivo>
+      <motivo>
+         <codigo>30</codigo>
+         <nome>Desconto a Conceder Não Confere</nome>
+      </motivo>
+      <motivo>
+         <codigo>31</codigo>
+         <nome>Concessão de Desconto - Já Existe Desconto Anterior</nome>
+      </motivo>
+      <motivo>
+         <codigo>32</codigo>
+         <nome>Valor do IOF Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>33</codigo>
+         <nome>Valor do Abatimento Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>34</codigo>
+         <nome>Valor do Abatimento Maior ou Igual ao Valor do Título</nome>
+      </motivo>
+      <motivo>
+         <codigo>35</codigo>
+         <nome>Valor a Conceder Não Confere</nome>
+      </motivo>
+      <motivo>
+         <codigo>36</codigo>
+         <nome>Concessão de Abatimento - Já Existe Abatimento Anterior</nome>
+      </motivo>
+      <motivo>
+         <codigo>37</codigo>
+         <nome>Código para Protesto Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>38</codigo>
+         <nome>Prazo para Protesto Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>39</codigo>
+         <nome>Pedido de Protesto Não Permitido para o Título</nome>
+      </motivo>
+      <motivo>
+         <codigo>40</codigo>
+         <nome>Título com Ordem de Protesto Emitida</nome>
+      </motivo>
+      <motivo>
+         <codigo>41</codigo>
+         <nome>Pedido de Cancelamento/Sustação para Títulos sem Instrução de Protesto</nome>
+      </motivo>
+      <motivo>
+         <codigo>42</codigo>
+         <nome>Código para Baixa/Devolução Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>43</codigo>
+         <nome>Prazo para Baixa/Devolução Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>44</codigo>
+         <nome>Código da Moeda Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>45</codigo>
+         <nome>Nome do Sacado Não Informado</nome>
+      </motivo>
+      <motivo>
+         <codigo>46</codigo>
+         <nome>Tipo/Número de Inscrição do Sacado Inválidos</nome>
+      </motivo>
+      <motivo>
+         <codigo>47</codigo>
+         <nome>Endereço do Sacado Não Informado</nome>
+      </motivo>
+      <motivo>
+         <codigo>48</codigo>
+         <nome>CEP Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>49</codigo>
+         <nome>CEP Sem Praça de Cobrança (Não Localizado)</nome>
+      </motivo>
+      <motivo>
+         <codigo>50</codigo>
+         <nome>CEP Referente a um Banco Correspondente</nome>
+      </motivo>
+      <motivo>
+         <codigo>51</codigo>
+         <nome>CEP incompatível com a Unidade da Federação</nome>
+      </motivo>
+      <motivo>
+         <codigo>52</codigo>
+         <nome>Unidade da Federação Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>53</codigo>
+         <nome>Tipo/Número de Inscrição do Sacador/Avalista Inválidos</nome>
+      </motivo>
+      <motivo>
+         <codigo>54</codigo>
+         <nome>Sacador/Avalista Não Informado</nome>
+      </motivo>
+      <motivo>
+         <codigo>55</codigo>
+         <nome>Nosso número no Banco Correspondente Não Informado</nome>
+      </motivo>
+      <motivo>
+         <codigo>56</codigo>
+         <nome>Código do Banco Correspondente Não Informado</nome>
+      </motivo>
+      <motivo>
+         <codigo>57</codigo>
+         <nome>Código da Multa Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>58</codigo>
+         <nome>Data da Multa Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>59</codigo>
+         <nome>Valor/Percentual da Multa Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>60</codigo>
+         <nome>Movimento para Título Não Cadastrado</nome>
+      </motivo>
+      <motivo>
+         <codigo>61</codigo>
+         <nome>Alteração da Agência Cobradora/DV Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>62</codigo>
+         <nome>Tipo de Impressão Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>63</codigo>
+         <nome>Entrada para Título já Cadastrado</nome>
+      </motivo>
+      <motivo>
+         <codigo>64</codigo>
+         <nome>Número da Linha Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>65</codigo>
+         <nome>Código do Banco para Débito Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>66</codigo>
+         <nome>Agência/Conta/DV para Débito Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>67</codigo>
+         <nome>Dados para Débito incompatível com a Identificação da Emissão do Bloqueto</nome>
+      </motivo>
+      <motivo>
+         <codigo>68</codigo>
+         <nome>Débito Automático Agendado</nome>
+      </motivo>
+      <motivo>
+         <codigo>69</codigo>
+         <nome>Débito Não Agendado - Erro nos Dados da Remessa</nome>
+      </motivo>
+      <motivo>
+         <codigo>70</codigo>
+         <nome>Débito Não Agendado - Sacado Não Consta do Cadastro de Autorizante</nome>
+      </motivo>
+      <motivo>
+         <codigo>71</codigo>
+         <nome>Débito Não Agendado - Cedente Não Autorizado pelo Sacado</nome>
+      </motivo>
+      <motivo>
+         <codigo>72</codigo>
+         <nome>Débito Não Agendado - Cedente Não Participa da Modalidade Débito Automático</nome>
+      </motivo>
+      <motivo>
+         <codigo>73</codigo>
+         <nome>Débito Não Agendado - Código de Moeda Diferente de Real (R$)</nome>
+      </motivo>
+      <motivo>
+         <codigo>74</codigo>
+         <nome>Débito Não Agendado - Data Vencimento Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>75</codigo>
+         <nome>Débito Não Agendado, Conforme seu Pedido, Título Não Registrado</nome>
+      </motivo>
+      <motivo>
+         <codigo>76</codigo>
+         <nome>Débito Não Agendado, Tipo/Num. Inscrição do Debitado, Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>77</codigo>
+         <nome>Transferência para Desconto Não Permitida para a Carteira do Título</nome>
+      </motivo>
+      <motivo>
+         <codigo>78</codigo>
+         <nome>Data Inferior ou Igual ao Vencimento para Débito Automático</nome>
+      </motivo>
+      <motivo>
+         <codigo>79</codigo>
+         <nome>Data Juros de Mora Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>80</codigo>
+         <nome>Data do Desconto Inválida</nome>
+      </motivo>
+      <motivo>
+         <codigo>81</codigo>
+         <nome>Tentativas de Débito Esgotadas - Baixado</nome>
+      </motivo>
+      <motivo>
+         <codigo>82</codigo>
+         <nome>Tentativas de Débito Esgotadas - Pendente</nome>
+      </motivo>
+      <motivo>
+         <codigo>83</codigo>
+         <nome>Limite Excedido</nome>
+      </motivo>
+      <motivo>
+         <codigo>84</codigo>
+         <nome>Número Autorização Inexistente</nome>
+      </motivo>
+      <motivo>
+         <codigo>85</codigo>
+         <nome>Título com Pagamento Vinculado</nome>
+      </motivo>
+      <motivo>
+         <codigo>86</codigo>
+         <nome>Seu Número Inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>87</codigo>
+         <nome>e-mail/SMS enviado</nome>
+      </motivo>
+      <motivo>
+         <codigo>88</codigo>
+         <nome>e-mail Lido</nome>
+      </motivo>
+      <motivo>
+         <codigo>89</codigo>
+         <nome>e-mail/SMS devolvido - endereço de e-mail ou número do celular incorreto</nome>
+      </motivo>
+      <motivo>
+         <codigo>90</codigo>
+         <nome>e-mail devolvido - caixa postal cheia</nome>
+      </motivo>
+      <motivo>
+         <codigo>91</codigo>
+         <nome>e-mail/número do celular do sacado não informado</nome>
+      </motivo>
+      <motivo>
+         <codigo>92</codigo>
+         <nome>Sacado optante por Bloqueto Eletrônico - e-mail não enviado</nome>
+      </motivo>
+      <motivo>
+         <codigo>93</codigo>
+         <nome>Código para emissão de bloqueto não permite envio de e-mail</nome>
+      </motivo>
+      <motivo>
+         <codigo>94</codigo>
+         <nome>Código da Carteira inválido para envio e-mail.</nome>
+      </motivo>
+      <motivo>
+         <codigo>95</codigo>
+         <nome>Contrato não permite o envio de e-mail</nome>
+      </motivo>
+      <motivo>
+         <codigo>96</codigo>
+         <nome>Número de contrato inválido</nome>
+      </motivo>
+      <motivo>
+         <codigo>97</codigo>
+         <nome>Rejeição da alteração do prazo limite de recebimento (a data deve ser informada no campo 28.3.p)</nome>
+      </motivo>
+      <motivo>
+         <codigo>98</codigo>
+         <nome>Rejeição de dispensa de prazo limite de recebimento</nome>
+      </motivo>
+      <motivo>
+         <codigo>99</codigo>
+         <nome>Rejeição da alteração do número do título dado pelo cedente</nome>
+      </motivo>
+      <motivo>
+         <codigo>A1</codigo>
+         <nome>Rejeição da alteração do número controle do participante</nome>
+      </motivo>
+      <motivo>
+         <codigo>A2</codigo>
+         <nome>Rejeição da alteração dos dados do sacado</nome>
+      </motivo>
+      <motivo>
+         <codigo>A3</codigo>
+         <nome>Rejeição da alteração dos dados do sacador/avalista</nome>
+      </motivo>
+      <motivo>
+         <codigo>A4</codigo>
+         <nome>Sacado DDA</nome>
+      </motivo>
+      <motivo>
+         <codigo>A5</codigo>
+         <nome>Registro Rejeitado - Título já Liquidado</nome>
+      </motivo>
+      <motivo>
+         <codigo>A6</codigo>
+         <nome>Código do Convenente Inválido ou Encerrado</nome>
+      </motivo>
+      <motivo>
+         <codigo>A7</codigo>
+         <nome>Título já se encontra na situação Pretendida</nome>
+      </motivo>
+      <motivo>
+         <codigo>A8</codigo>
+         <nome>Valor do Abatimento inválido para cancelamento</nome>
+      </motivo>
+      <motivo>
+         <codigo>A9</codigo>
+         <nome>Não autoriza pagamento parcial</nome>
+      </motivo>
+      <motivo>
+         <codigo>B1</codigo>
+         <nome>Autoriza recebimento parcial</nome>
+      </motivo>
+   </motivos>
+</layout>

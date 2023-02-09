@@ -1,0 +1,64 @@
+<relatorio dados="troco_solidario" ordem="entidade">
+<apelidos>
+1  rel_posto_nome         	tam=60
+2  rel_data_hora            tam=18
+3  data				        tam=10   fmt=data
+4  subtitulo            	tam=85   alinha=centro
+5  empresa_cod_nome		    tam=60
+6  data_troco_solidario     tam=10   fmt=data
+7  hora_troco_solidario     tam=8    fmt=hora
+8  turno                    tam=5    alinha=centro
+9  coo                      tam=7
+10 entidade                 tam=29
+11 conta                    tam=7
+12 valor                    tam=10   fmt=%.02f
+13 valor_total              tam=10   fmt=%.02f func=soma	campo=valor grupo=1
+14 conta_pdv                tam=30
+15 empresa_nome             tam=28
+16 cod_nome_entidade        tam=30
+17 valor_geral              tam=10   fmt=%.02f func=soma	campo=valor
+18 conta_caixa				tam=13
+19 operador					tam=16
+100 titulo					tam=85	 alinha=centro	expr='TROCO SOLIDÁRIO'
+</apelidos>
+
+<cab_pagina>
+#1                                                                  #2              
+------------------------------------------------------------------------------------
+
+#100                                          
+#4
+
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="entidade">
++----------------------------------------------------------------------------------+
+| Entidade: #16                                                                    |
++----------------------------------+---------------+------------------+------------+
+|             Empresa              |   Conta PDV   |     Operador     |    Valor   |
++----------------------------------+---------------+------------------+------------+
+</cab_grupo>
+
+<detalhe>
+| #15                              | #18           | #19              | #12        |
+</detalhe>
+
+<rod_grupo nome="1">
++----------------------------------+---------------+------------------+------------+
++---------------------------------------------------------------------+------------+
+| Total entidade                                                      | #13        |
++---------------------------------------------------------------------+------------+
+</rod_grupo>
+
+<rod_relat>
++---------------------------------------------------------------------+------------+
+| Total geral                                                         | #17        |
++---------------------------------------------------------------------+------------+
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>3ab0bedc7b41c301c00388d325b7cd51</hash>
+</relatorio>

@@ -1,0 +1,54 @@
+<relatorio dados="contingencia_rejeitada" ordem='empresa_codigo,modelo,nr_nota'>
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+
+3  empresa_codigo   	tam=10
+4  empresa_nome     	tam=50
+5  empresa_cod_nome     tam=50	expr=str(empresa_codigo)+' - '+str(empresa_nome) grupo=1
+
+6  nr_nota		    	tam=10	alinha=centro
+7  serie		    	tam=9	alinha=centro
+8  modelo		    	tam=6 	alinha=centro
+9  data_emissao			tam=10	fmt=data
+10 valor			    tam=15 	fmt=float2
+11 motivo_rejeicao		tam=57
+12 titulo				tam=130	alinha=centro
+13 subtitulo			tam=130	alinha=centro
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                               #2
+---------------------------------------------------------------------------------------------------------------------------------
+
+#12
+#13
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++-------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                                   |
++--------+------------+-----------+------------+-----------------+--------------------------------------------------------------+
+| Modelo |  Nr. Nota  |   Série   |    Data    |      Valor      |                      Motivo rejeição                         |
++--------+------------+-----------+------------+-----------------+--------------------------------------------------------------+
+</cab_grupo>
+ 
+<detalhe>
+| #8     | #6         | #7        | #9         | #10             | #11                                                          |
+</detalhe>
+ 
+<rod_grupo nome="1">
++--------+------------+-----------+------------+-----------------+--------------------------------------------------------------+
+ 
+</rod_grupo>
+ 
+<rod_relat>
+</rod_relat>
+ 
+<rod_pagina>
++--------+------------+-----------+------------+-----------------+--------------------------------------------------------------+
+</rod_pagina>
+
+<hash>21d40e4e165d8537832c4e9bab1b7127</hash>
+</relatorio>

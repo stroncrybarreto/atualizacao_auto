@@ -1,0 +1,64 @@
+<relatorio dados="extrato_cliente" ordem="empresa_nome,empresa_grid,pessoa_nome,pessoa_codigo">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  empresa_nome			tam=50  alinha=esquerda 
+4  titulo2         	    tam=130 alinha=centro
+5  pessoa_nome			tam=39  alinha=esquerda
+6  saldo_ant			tam=16	fmt=float2
+7 debito				tam=16	fmt=float2
+8 credito				tam=16	fmt=float2
+9 saldo					tam=16	fmt=float2 expr=saldo_ant+debito-credito
+
+10 total_saldo_ant_empresa  	tam=16  fmt=float2 func=soma campo=saldo_ant grupo=1
+11 total_debito_empresa			tam=16	fmt=float2 func=soma campo=debito grupo=1
+12 total_credito_empresa		tam=16	fmt=float2 func=soma campo=credito grupo=1
+13 total_saldo_empresa			tam=16	fmt=float2 func=soma campo=saldo grupo=1
+
+14 total_saldo_ant_geral  	tam=16  fmt=float2 func=soma campo=saldo_ant
+15 total_debito_geral		tam=16	fmt=float2 func=soma campo=debito
+16 total_credito_geral		tam=16	fmt=float2 func=soma campo=credito
+17 total_saldo_geral 		tam=16	fmt=float2 func=soma campo=saldo
+
+20 pessoa_codigo			tam=8 alinha=direita
+22 pessoa_codigo_nome	tam=50 expr=str(pessoa_codigo)+' - '+pessoa_nome alinha=esquerda
+23 pessoa_cidade		tam=18
+99 titulo_p				tam=130 expr='EXTRATO DE CLIENTES'  alinha=centro	
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2              
+----------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome,empresa_grid">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #3                                                                                                                    |
++----------------------------------------------------+------------------+------------------+------------------+------------------+
+|                       Pessoa                       |  Saldo anterior  |      Débito      |     Crédito      |      Saldo       |
++----------------------------------------------------+------------------+------------------+------------------+------------------+
+</cab_grupo>
+
+<detalhe>
+| #22                                                | #6               | #7               | #8               | #9               |
+</detalhe>
+
+<rod_grupo nome="1">
++----------------------------------------------------+------------------+------------------+------------------+------------------+
+| Total empresa                                      | #10              | #11              | #12              | #13              |
++----------------------------------------------------+------------------+------------------+------------------+------------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++----------------------------------------------------+------------------+------------------+------------------+------------------+
+| Total geral                                        | #14              | #15              | #16              | #17              |
++----------------------------------------------------+------------------+------------------+------------------+------------------+
+</rod_relat>
+
+<hash>85e2850f4c60c9836f573efc17a2734b</hash>
+</relatorio>

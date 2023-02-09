@@ -1,0 +1,65 @@
+<relatorio dados="perdas_deterioracao_uso_consumo" ordem="razao_social, codigo_produto" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=150
+2  rel_data_hora    	tam=18
+3  razao_social		tam=50	
+4  cnpj			tam=20 
+5  codigo_produto	tam=6  alinha=esquerda 
+6  descricao		tam=25 alinha=esquerda
+7  unidade		tam=10 alinha=centro  
+8  quantidade		tam=10 alinha=direita
+9  custo_linha		tam=12 alinha=direita fmt=float2
+10 aliquota		tam=8  alinha=direita fmt=float2
+11 total_linha		tam=12 alinha=direita fmt=float2
+12 imposto_linha	tam=12 alinha=direita fmt=float2
+13 custo_quebra		tam=12 alinha=direita fmt=float2 func=soma campo=custo_linha grupo=1
+14 total_quebra		tam=12 alinha=direita fmt=float2 func=soma campo=total_linha grupo=1
+15 imposto_quebra 	tam=12 alinha=direita fmt=float2 func=soma campo=imposto_linha grupo=1
+16 custo_geral		tam=12 alinha=direita fmt=float2 func=soma campo=custo_linha
+17 total_geral		tam=12 alinha=direita fmt=float2 func=soma campo=total_linha
+18 imposto_geral 	tam=12 alinha=direita fmt=float2 func=soma campo=imposto_linha
+19 periodo		tam=50 
+20 representante_nome   tam=50
+21 representante_cpf    tam=15
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                         #2                  
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                          CONTROLE DE PERDAS, ROUBO, DETERIORAÇÃO E USO CONSUMO															
+                                     Artigo 67, Inciso I, IV do RICMS/00. Ref. Perdas, Roubos e furtos.															
+                                      COMUNICADO CAT Nº 47, DE 10 DE JULHO DE 2003(D.O.E. - 15/07/03)															
+                                                            
+                                                    #19
+
+</cab_pagina>                                                                                                                                
+
+
+<cab_grupo nome="1" quebra="razao_social">
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| Razão Social: #3                                                                               | CNPJ: #4                               |
++----------------+---------------------------------------+-----------+------------+--------------+----------+--------------+--------------+ 
+| Código Produto |              Descrição                |  Unidade  | Quantidade |    Custo     | Alíquota |    Total     |   Imposto    |
++----------------+---------------------------------------+-----------+------------+--------------+----------+--------------+--------------+
+</cab_grupo>
+<detalhe>
+| #5             | #6                                    | #7        | #8         | #9           | #10      | #11          | #12          |      
+</detalhe>
+<rod_grupo nome="1">
++----------------+---------------------------------------+-----------+------------+--------------+----------+--------------+--------------+ 
+|    Subotal     |   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   | xxxxxxxxx | xxxxxxxxxx | #13          | xxxxxxxx | #14          | #15          |      
++----------------+---------------------------------------+-----------+------------+--------------+----------+--------------+--------------+ 
+</rod_grupo>
+<rod_relat>
++----------------+---------------------------------------+-----------+------------+--------------+----------+--------------+--------------+ 
+|     Total      |   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   | xxxxxxxxx | xxxxxxxxxx | #16          | xxxxxxxx | #17          | #18          |      
++----------------+---------------------------------------+-----------+------------+--------------+----------+--------------+--------------+ 
+                                                                            
+                                                                                   
+                                                                      _______________________________________________
+                                                                      Responsável legal: #20
+                                                                      CPF: #21
+</rod_relat>
+
+<hash>e54c19312adb198178364a4705c17464</hash>
+</relatorio>

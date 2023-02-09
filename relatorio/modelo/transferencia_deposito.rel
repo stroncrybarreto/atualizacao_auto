@@ -1,0 +1,56 @@
+<relatorio dados="transferencia_deposito" font_size="xx-small">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora        tam=18
+3  titulo1		        tam=145 alinha=centro
+4  titulo2		        tam=145 alinha=centro
+5  empresa_nome		    tam=50
+6  deposito_cod_nome  	tam=40
+7  data			        tam=10	fmt=data
+8  turno		        tam=2	alinha=esquerda 	
+9  produto_codigo	    tam=13
+10 produto_nome		    tam=30
+11 origem_destino	    tam=40
+12 sinal		        tam=3
+13 quantidade		    tam=8	fmt=%8.01f	alinha=direita
+14 total_transf		    tam=20
+15 total_qtde_transf	tam=10	fmt=%.01f	alinha=direita
+16 preco_unit       	tam=8	fmt=%.03f	alinha=direita
+17 preco_custo      	tam=8	fmt=%.03f	alinha=direita
+18 total_venda			tam=9   fmt=%.03f   alinha=direita
+19 total_custo			tam=9   fmt=%.03f   alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                                               #2        
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa,deposito_cod_nome">
++-----------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Empresa: #5                                                     | Depósito: #6                                                                |
++----------------+---------------+--------------------------------+------------------------------------------+----------+----------+------------+
+|  Data / Turno  |    Código     |          Nome produto          |             Origem / Destino             | Pr.venda | Pr.custo | Quantidade |
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa,deposito_cod_nome,sinal">
++----------------+---------------+--------------------------------+------------------------------------------+----------+----------+------------+
+</cab_grupo>
+<detalhe>
+| #7         - #8| #9            | #10                            | #11                                      | #16      | #17      |#12#13      |
+</detalhe>
+<rod_grupo nome="2">
++----------------+---------------+--------------------------------+------------------------------------------+----------+----------+------------+
+| #14                                                             | Total                                    |#18       |#19       | #15        |
+</rod_grupo>
+<rod_grupo nome="1">
++----------------+---------------+--------------------------------+------------------------------------------+----------+----------+------------+
+
+</rod_grupo>
+<rod_pagina>
++----------------+---------------+--------------------------------+------------------------------------------+----------+----------+------------+
+</rod_pagina>
+
+<hash>e49911c1a3f03ec4aaa5385daf12d094</hash>
+</relatorio>

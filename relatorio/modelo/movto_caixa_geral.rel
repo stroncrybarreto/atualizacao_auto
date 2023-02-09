@@ -1,0 +1,98 @@
+<relatorio>
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+</apelidos>
+<cab_pagina>
+#1                                                                 #2                
+-----------------------------------------------------------------------------------
+
+                             MOVIMENTAÇÃO GERAL DE CAIXAS
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="movto_caixa_geral_combustivel">
+<apelidos>
+1  titulo		tam=83  alinha=centro
+2  nome			tam=30  
+3  quantidade		tam=10  fmt=%.03f
+4  valor 		tam=13  fmt=%.02f
+5  total_afericao	tam=9   fmt=%.03f
+6  total_qtde 		tam=11  fmt=%.03f
+7  total_valor 		tam=13  fmt=%.02f
+</apelidos>
+
+<cab_relat>
+#1
+
++-----------------------------------------------------+------------+--------------+
+| Combustível                                         |     Litros |    Sub-Total |
++-----------------------------------------------------+------------+--------------+
+</cab_relat>
+<detalhe>
+| #2                                                  |#4          |#5            |
+</detalhe>
+<rod_relat>
++-----------------------------------------------------+------------+--------------+
+| Total                                               |#6          |#7            |
++-----------------------------------------------------+------------+--------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_geral_venda">
+<apelidos>
+1  nome  	tam=40
+2  tot1		tam=13  fmt=%.03f
+3  tot2 	tam=15  fmt=%.02f
+4  total 	tam=15  fmt=%.02f
+</apelidos>
+<cab_relat>
++---------------------------------------------------------------------------------+
+|                         V E N D A   D E   P R O D U T O S                       |
++------------------------------------------------+---------------+----------------+
+| Grupo                                          |    Quantidade |          Total |
++------------------------------------------------+---------------+----------------+
+</cab_relat>
+<detalhe>
+| #1                                             | #2            |#3              |
+</detalhe>
+<rod_relat>
++------------------------------------------------+---------------+----------------+
+| Total de venda                                                 |#4              |
++----------------------------------------------------------------+----------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="movto_caixa_geral_movto">
+<apelidos>
+1  entrada_nome  	tam=23
+2  entrada_valor	tam=13  fmt=%.02f nulo
+3  saida_nome  		tam=23
+4  saida_valor		tam=13  fmt=%.02f nulo
+5  entrada_total 	tam=13  fmt=%.02f
+6  saida_total	 	tam=13  fmt=%.02f
+7  sobra	 	tam=13  fmt=%.02f
+</apelidos>
+<cab_relat>
++---------------------------------------++----------------------------------------+
+| Entradas                              || Saidas                                 |
++------------------------+--------------++-------------------------+--------------+
+</cab_relat>
+<detalhe>
+| #1                     |#2            || #3                      |#4            |
+</detalhe>
+<rod_relat>
++------------------------+--------------++-------------------------+--------------+
+| Sub-Total              |#5            || Sub-Total               |#6            |
++------------------------+--------------++-------------------------+--------------+
+                                         | Diferença               |#7            |
+                                         +-------------------------+--------------+
+</rod_relat>
+</subrelat>
+
+<hash>2e5ce9369426cab12fbf2b61346bbd27</hash>
+</relatorio>

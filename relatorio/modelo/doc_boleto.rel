@@ -1,0 +1,80 @@
+<relatorio dados="doc_boleto" docname="Modelo de boleto" mode="raw">
+<apelidos>
+
+1  desconto_valor			tam=12	fmt=float2
+2  desconto_perc			tam=12	fmt=float2
+3  imprime					tam=5
+4  sacado					tam=50
+5  impresso					tam=3
+6  instrucao				tam=10
+7  valor					tam=12	fmt=float2
+8  cod_range				tam=30
+9  multa_prazo				tam=12	fmt=float2
+10 agencia					tam=10
+11 multa_tipo				tam=5
+12 sacado_tipo_inscr		tam=5
+13 juros_tipo				tam5
+14 sacado_inscricao			tam=15
+15 abatimento_concedido		tam=12
+16 nosso_numero				tam=10
+17 juros_perc_mes			tam=12	fmt=float2
+18 sacado_estado			tam=3
+19 conta_corrente			tam=15
+20 juros_valor_dia			tam=12	fmt=float2
+21 sacado_cep				tam=10
+22 banco					tam=15
+23 sacado_nome				tam=50
+24 data_geracao				tam=10	fmt=data
+25 multa_perc				tam=12	fmt=float2
+26 desconto_tipo			tam=3	
+27 vencto					tam=10	fmt=data
+28 sacado_endereco			tam=50
+29 protesto_prazo			tam=5
+30 sacado_cidade			tam=50
+31 boleto					tam=10
+32 desconto_data			tam=10	fmt=data
+33 data_emissao				tam=10	fmt=data
+34 protesto_tipo_prazo		tam=10
+35 documento				tam=10
+36 email					tam=50
+37 multa_valor				tam=12	fmt=float2
+38 sacado_cpf				tam=22	fmt=text
+
+40 instrucao1				tam=60
+41 instrucao2				tam=60
+42 instrucao3				tam=60
+43 instrucao4				tam=60
+44 instrucao5				tam=60
+45 instrucao6				tam=60
+
+</apelidos>
+
+<cab_pagina></cab_pagina>
+
+<cab_grupo nome="1" quebra="boleto">
+
+Data: #33
+Vencimento: #27
+Nr.doc: #31
+Nome: #23 -                                                   #38
+endereco: #28
+
+#40
+#41
+#42
+#43
+#44
+#45
+
+</cab_grupo>
+
+<detalhe></detalhe>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina></rod_pagina>
+
+
+<hash>3128fd3dba5e9cc92ee67c5a021f2fc1</hash>
+</relatorio>

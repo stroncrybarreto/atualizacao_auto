@@ -1,0 +1,68 @@
+<relatorio dados="vencto_cartao_empresa" ordem="empresa_nome, data, turno, conta, vencto">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+3  titulo					tam=108	alinha=centro
+4  empresa_cod_nome			tam=108
+5  data						tam=10	fmt=data
+6  turno					tam=3 	alinha=centro
+7  conta					tam=44  alinha=esquerda
+8  vencto					tam=10	fmt=data
+9  valor					tam=15  fmt=%.02f	alinha=direita
+10 tarifa		       		tam=10	fmt=%.02f	alinha=direita 
+11 valor_liquido 			tam=15  fmt=%.02f	alinha=direita
+
+12 valor_subtotal			tam=15  fmt=%.02f	func=soma	campo=valor			grupo=1	alinha=direita
+13 tarifa_subtotal			tam=10  fmt=%.02f	func=soma	campo=tarifa		grupo=1	alinha=direita 
+14 valor_liquido_subtotal	tam=15  fmt=%.02f	func=soma	campo=valor_liquido	grupo=1	alinha=direita
+
+15 valor_total				tam=15  fmt=%.02f	func=soma	campo=valor			alinha=direita
+16 tarifa_total				tam=10  fmt=%.02f	func=soma	campo=tarifa		alinha=direita 
+17 valor_liquido_total		tam=15  fmt=%.02f	func=soma	campo=valor_liquido	alinha=direita
+
+18 taxa_adm					tam=8	fmt=%.02f
+19 taxa_adm_subtotal		tam=8	fmt=%.02f	expr=tarifa_subtotal/valor_subtotal*100.0
+20 taxa_adm_total			tam=8	fmt=%.02f	expr=tarifa_total/valor_total*100.0
+21 titulo_1                 tam=108 expr="VENCIMENTO DE CARTÕES" alinha=centro
+
+22 observacao				tam=108
+</apelidos>
+<cab_pagina>
+#1                                                                                          #2                 
+------------------------------------------------------------------------------------------------------------
+  
+#21
+#3
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo, empresa_nome, empresa">
+
+EMPRESA: #4
++----------------------------------------------+-----------------+----------+------------+-----------------+
+|                     Conta                    |      Valor      | % tx adm |   Tarifa   | Valor líquido   |
++----------------------------------------------+-----------------+----------+------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #7                                           | #9              | #18      | #10        | #11             |
+</detalhe> 
+<rod_grupo nome="1">
++----------------------------------------------+-----------------+----------+------------+-----------------+
+| Subtotal                                     | #12             | #19      | #13        | #14             |
++----------------------------------------------+-----------------+----------+------------+-----------------+
+</rod_grupo>
+
+<rod_relat>
+
++----------------------------------------------+-----------------+----------+------------+-----------------+
+| Total geral                                  | #15             | #20      | #16        | #17             |
++----------------------------------------------+-----------------+----------+------------+-----------------+
+
+#22
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------+-----------------+----------+------------+-----------------+
+</rod_pagina>
+
+<hash>83ae39c5ddcf3caff8466b66cb565071</hash>
+</relatorio>

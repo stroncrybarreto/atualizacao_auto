@@ -1,0 +1,76 @@
+<relatorio dados="pontos_agrupado_venda_detalha_empresa" tamfonte="8" ordem="empresa,documento,hora" paper_orientation="landscape">
+<apelidos>
+1   rel_posto_nome      tam=60
+2   rel_data_hora       tam=18
+3   pessoa_nome         tam=32
+4   hora                tam=19
+5   valor               tam=8   fmt=%.02f
+6   ponto               tam=8	fmt=%.02f
+7   ponto_resgate       tam=11   fmt=%.02f
+8   quantidade          tam=9   fmt=%.02f
+9   produto             tam=18
+10  preco_unit          tam=7   fmt=%.02f
+11  cartao_fidelidade   tam=7   fmt=%d
+12  soma_valor          tam=9  func=soma  campo=valor  fmt=%.02f grupo=1
+13  ponto_total         tam=9  func=soma  campo=ponto  fmt=%.02f grupo=1
+14  resgate_total       tam=11  func=soma  campo=ponto_resgate  fmt=%.02f grupo=1
+15  documento           tam=5
+16  ratio               tam=5  fmt=%.01f
+17  titulo				tam=167	alinha=centro
+18  subtitulo           tam=167	alinha=centro
+19  produto_codigo      tam=4
+20  operacao            tam=14
+21  ponto_transferencia tam=10
+22 total_transferencia  tam=10 func=soma  campo=ponto_transferencia   grupo=1
+23 saldo_pontos         tam=8expr=total_transferencia+ponto_total+resgate_total
+24 valor_resgate        tam=8   fmt=%.02f
+25 soma_resgate         tam=9  func=soma  campo=valor_resgate  fmt=%.02f grupo=1
+26 codigo               tam=7
+27 geral_valor          tam=12  func=soma  campo=valor  fmt=%.02f
+28 geral_ponto          tam=12  func=soma  campo=ponto  fmt=%.02f
+29 geral_ponto_resgate  tam=12   func=soma  campo=ponto_resgate  fmt=%.02f
+30 geral_valor_resgate  tam=12  func=soma  campo=valor_resgate  fmt=%.02f
+31 empresa              tam=23
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                     #2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+                                            F I D E L I D A D E    -   P O N T O S    P O R     V E N D A  / E M P R E S A
+
+#17
+#18
+<cab_grupo nome="1" quebra="pessoa_nome">  
+
+                                                                                +------------------------------+--------------------------------------+
+Cliente - #26      - #3                                                         |         Valores              |        Quantidade de Pontos          |
+|-------------------------+------------+---------------------+------------------+-------------+----------------+----------+-----------+---------------+---------------+
+|           Empresa       |  Documento |     Data / Hora     |     Operação     |    Venda    |   Resgate      | Gerados  | Resgatados | Transferidos | Número Cartão |
++-------------------------+------------+---------------------+------------------+-------------+----------------+----------+------------+--------------+---------------+
+</cab_grupo>
+</cab_pagina>
+<detalhe>
+| #31                     |   #15      | #4                  |  #20             | R$#5        | R$#24          |#6        | #7         | #21          | #11           |
+</detalhe>
+<rod_grupo nome="1">
++-------------------------+------------+---------------------+------------------+-------------+----------------+----------+------------+--------------+---------------+
+|                         |            |                     |     Totais       | R$#12       | R$#25          |#13       | #14        | #22          |               |
++-------------------------+------------+---------------------+------------------+-------------+----------------+----------+------------+--------------+---------------+
+                                                                                |  Saldo de Pontos do Período:              #23                       |
+                                                                                +---------------------------------------------------------------------+
+</rod_grupo>
+<rod_relat>
++-------------------------------------------------+
+|Totais Gerais do Período                         |
+|Valor de Vendas:        R$ #27                   |
+|Valor de Resgates:      R$ #30                   |
+|Total de Pontos Gerados:   #28                   |
+|Total de Pontos Resgatados:#29                   |
+--------------------------------------------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+
+<hash>ad751b27f348c9b2f64a02cfa4f0ab95</hash>
+</relatorio>

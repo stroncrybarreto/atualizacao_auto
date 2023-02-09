@@ -1,0 +1,53 @@
+<relatorio dados="venda_por_tributacao" tamfonte="8">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo1			tam=128	alinha=centro
+4  titulo2			tam=128	alinha=centro
+5  empresa_nome		tam=60
+6  linha_cabecalho	tam=199
+7  dia				tam=2	fmt=%02d
+8  nota_ini			tam=6 	fmt=%06d	
+9  nota_fim			tam=6 	fmt=%06d
+10 linha_detalhe	tam=199
+11 linha_total		tam=199
+12 total_empresa	tam=13	fmt=%12.02f	alinha=direita
+13 linha_separador1	tam=199
+14 linha_separador2	tam=199
+15 linha_separador3	tam=199
+</apelidos>
+<cab_pagina>
+#1                                                                                                            #2                
+--------------------------#13
+
+#3
+#4
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa" repeticao="0">
+Empresa: #5
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa">
+
++-----+-----------------+-#14
+| Dia |   Relação de    | #15                                                                               
+|     |  Notas Fiscais  | #6                                                                                                   |
++-----+-----------------+-#14
+</cab_grupo>
+<detalhe>
+| #7  | #8     a #9     | #10                                                                                                  |
+</detalhe>
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
++-----+-----------------+-#14
+| Total por tributação  | #11                                                                                                  |
++-----------------------+-#14
+| Total geral           | #12           |
++-----------------------+---------------+
+</rod_grupo>
+<rod_pagina>
++-----+-----------------+-#14
+</rod_pagina>
+
+<hash>acdcc53be32d27293aee1f2aa717186e</hash>
+</relatorio>

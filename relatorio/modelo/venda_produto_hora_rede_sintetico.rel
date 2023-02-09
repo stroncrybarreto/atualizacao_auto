@@ -1,0 +1,49 @@
+<relatorio dados="venda_produto_hora" ordem="">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  titulo			tam=105	alinha=centro
+9  hora				tam=5  	alinha=centro
+10 quantidade 		tam=12 	fmt=float2
+11 pcnt_qtde		tam=7 	fmt=float2
+12 valor			tam=12 	fmt=float2
+13 pcnt_valor		tam=7 	fmt=float2
+18 tot_qtde_geral   tam=12 	fmt=float2 func=soma campo=quantidade
+19 pcnt_qtde_geral  tam=7 	fmt=float2 func=soma campo=pcnt_qtde
+20 tot_valor_geral  tam=12 	fmt=float2 func=soma campo=valor
+21 pcnt_valor_geral tam=7 	fmt=float2 func=soma campo=pcnt_valor
+22 total_vendas		tam=8 	fmt=float0 alinha=centro
+23 ger_vendas		tam=8	fmt=float0 func=soma	campo=total_vendas	alinha=centro
+24 perc_venda		tam=7	fmt=float2
+25 tm_qtd			tam=8	expr=quantidade/total_vendas	fmt=float2
+26 tm_vl			tam=8	expr=valor/total_vendas			fmt=float2
+
+27 tm_geral_qtd		tam=8	expr=tot_qtde_geral/ger_vendas	fmt=float2
+28 tm_geral_vl		tam=8	expr=tot_valor_geral/ger_vendas	fmt=float2
+</apelidos>
+
+<cab_pagina>
+#1                                                                                       #2
+---------------------------------------------------------------------------------------------------------
+
+#3
+
++-------+----------+----------+--------------+----------+--------------+----------+----------+----------+
+| Hora  |  Vendas  | % Total  |  Quantidade  |  % Total |    Valor     | % Total  | TM Qtde. | TM Valor |
++-------+----------+----------+--------------+----------+--------------+----------+----------+----------+
+</cab_pagina>
+<detalhe>
+| #9    | #22      | #24    % | #10          | #11    % | #12          | #13    % | #25      | #26      |
+</detalhe>
+<rod_relat>
++-------+----------+----------+--------------+----------+--------------+----------+----------+----------+
+| Total | #23      |  100,00% | #18          | #19    % | #20          | #21    % | #27      | #28      |
++-------+----------+----------+--------------+----------+--------------+----------+----------+----------+
+</rod_relat>
+
+<rod_pagina>
++-------+----------+------------+--------------+----------+--------------+----------+----------+----------+
+</rod_pagina>
+
+<hash>f13a675194cebe53cfd5565bb7708116</hash>
+</relatorio>

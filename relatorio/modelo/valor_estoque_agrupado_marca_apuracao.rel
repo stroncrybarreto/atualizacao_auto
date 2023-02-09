@@ -1,0 +1,79 @@
+<relatorio dados="valor_estoque" ordem="empresa_cod_nome,grupo_cod_nome">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+3  data				     tam=10   fmt=data
+4  subtitulo             tam=96   alinha=centro
+5  empresa_cod_nome		 tam=60
+6  grupo_cod_nome		 tam=30
+7  titulo2				 tam=96
+8  codigo			     tam=8		alinha=centro
+9  nome				     tam=34
+10 preco				 tam=13   fmt=float3
+11 estoque			     tam=13   fmt=float3
+12 valor_estoque		 tam=15   fmt=float3
+13 total_grupo2			 tam=15   fmt=float3 func=soma campo=valor_estoque grupo=2
+14 valor_total_estoque2  tam=15   fmt=float3 func=soma campo=valor_estoque grupo=1
+15 marca_produto		 tam=30
+4  monta_cabecalho     	 tam=125  alinha=centro
+16 titulo            	 tam=125  expr='VALOR DO ESTOQUE' alinha=centro
+17 custo				 tam=9	  fmt=float3
+18 venda				 tam=9	  fmt=float3
+19 estoque_custo_valor   tam=15	  fmt=float3
+20 estoque_venda_valor	 tam=15	  fmt=float3
+21 sub_est_custo		 tam=15	  fmt=float3 func=soma	campo=estoque_custo_valor	grupo=2
+22 sub_est_venda		 tam=15	  fmt=float3 func=soma	campo=estoque_venda_valor	grupo=2
+23 tot_est_custo		 tam=15	  fmt=float3 func=soma	campo=estoque_custo_valor	grupo=1
+24 tot_est_venda		 tam=15	  fmt=float3 func=soma	campo=estoque_venda_valor	grupo=1
+25 ger_est_custo		 tam=15	  fmt=float3 func=soma	campo=estoque_custo_valor
+26 ger_est_venda		 tam=15	  fmt=float3 func=soma	campo=estoque_venda_valor
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                           #2
+-----------------------------------------------------------------------------------------------------------------------------
+
+#16
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++---------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                               |
++---------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="marca_produto,grupo_cod_nome">
+| Marca: #15                                                                                                                |
++---------------------------------------------------------------------------------------------------------------------------+
+| Grupo: #6                                                                                                                 |
++----------+------------------------------------+---------------+-----------+-----------------+-----------+-----------------+
+|  Código  |               Produto              |    Estoque    |   Custo   | Valor custo est.|   Venda   | Valor venda est.|
++----------+------------------------------------+---------------+-----------+-----------------+-----------+-----------------+
+</cab_grupo>
+<detalhe>
+| #8       | #9                                 | #11           | #17       | #19             | #18       | #20             |
+</detalhe>
+<rod_grupo nome="2">
++----------+------------------------------------+---------------+-----------+-----------------+-----------+-----------------+
+| Subtotal                                                                  | #21             |           | #22             |
++---------------------------------------------------------------------------+-----------------+-----------+-----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total empresa                                                             | #23             |           | #24             |
++---------------------------------------------------------------------------+-----------------+-----------+-----------------+
+
+</rod_grupo>
+<rod_relat>
+
++---------------------------------------------------------------------------+-----------------+-----------+-----------------+
+| Total geral                                                               | #25             |           | #26             |
++---------------------------------------------------------------------------+-----------------+-----------+-----------------+
+</rod_relat>
+
+<rod_pagina>
++---------------------------------------------------------------------------+-----------------+-----------+-----------------+
+</rod_pagina>
+
+<hash>013fa97d79b532d258dc74d9ba7eecfa</hash>
+</relatorio>

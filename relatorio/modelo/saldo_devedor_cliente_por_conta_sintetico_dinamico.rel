@@ -1,0 +1,41 @@
+<relatorio dados="saldo_devedor_cliente">
+<apelidos>
+1  nome_posto           		tam=9999
+2  ponto_titulo           		tam=9999
+4  subtitulo					tam=9999
+5  linha_moldura				tam=20000
+6  linha_cabecalho				tam=20000
+7  pessoa_nome					tam=35
+8  linha_detalhe				tam=20000
+9  linha_total					tam=20000
+</apelidos>
+
+<cab_pagina>
+#1
+#2
+
+
+#4
+
++-------------------------------------+#5
+|               Cliente               |#6
++-------------------------------------+#5
+</cab_pagina>
+
+<detalhe>
+| #7                                  |#8
+</detalhe>
+
+<rod_pagina>
++-------------------------------------+#5
+</rod_pagina>
+
+<rod_relat>
++-------------------------------------+#5
+| Total                               |#9
++-------------------------------------+#5
+</rod_relat>
+
+
+<hash>f5ae28fe317320b334f18479f0c04a7e</hash>
+</relatorio>

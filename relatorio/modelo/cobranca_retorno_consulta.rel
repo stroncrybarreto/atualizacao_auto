@@ -1,0 +1,107 @@
+<relatorio dados="cobranca_retorno_consulta" docname="Relatório de retorno de cobrança" font_size="x-small">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  banco					tam=7	alinha=esquerda
+4  agencia					tam=5	alinha=esquerda
+5  conta_corrente			tam=8	alinha=esquerda
+6  arquivo					tam=10
+7  numero_retorno			tam=114  alinha=esquerda
+8  data_ocorrencia			tam=10  alinha=centro fmt=data
+9  data_credito				tam=10	alinha=centro fmt=data
+10 nosso_numero				tam=12	alinha=centro
+11 documento				tam=9	alinha=centro
+12 vencto					tam=10	alinha=centro
+13 cliente					tam=31	alinha=esquerda
+14 valor_pago				tam=12	alinha=direita	fmt=%.02f
+15 total_ocorrencia			tam=5	alinha=esquerda
+16 total_valor_ocorrencia	tam=12	alinha=direita  fmt=%.02f
+17 ocorrencia_nome			tam=80
+18 total_retorno			tam=5	alinha=esquerda
+19 total_valor_retorno		tam=12  alinha=direita  fmt=%.02f
+20 total_geral				tam=5	alinha=esquerda	
+21 total_valor_geral		tam=12	alinha=direita	fmt=%.02f
+22 banco_motivo_nome		tam=90	alinha=esquerda
+23 titulo_relatorio			tam=127 alinha=centro
+24 filtro_relatorio			tam=127 alinha=centro
+25 situacao_boleto          tam=107
+26 total_situacao_boleto    tam=5   alinha=esquerda
+27 total_valor_situacao_boleto  tam=12  fmt=float2
+28 valor                    tam=11  fmt=float2
+29 total_valor_orig_ocorrencia tam=11  fmt=float2
+30 total_valor_orig_retorno tam=11  fmt=float2
+31 total_valor_orig_situacao tam=11  fmt=float2
+32 total_valor_orig_geral tam=11  fmt=float2
+33 documento_movto             tam=9   alinha=centro
+34 desconto_fatura             tam=10  fmt=float2  alinha=direita
+35 valor_fatura_liquido        tam=12  fmt=float2  alinha=direita
+36 valor_fatura                tam=12  fmt=float2  alinha=direita
+37 total_valor_liq_ocorrencia  tam=12  fmt=float2 alinha=direita
+38 total_valor_fat_ocorrencia  tam=12  fmt=float2 alinha=direita
+39 total_valor_liq_situacao    tam=12  fmt=float2 alinha=direita
+40 total_valor_fat_situacao    tam=12  fmt=float2 alinha=direita
+41 total_valor_liq_retorno     tam=12  fmt=float2 alinha=direita
+42 total_valor_fat_retorno     tam=12  fmt=float2 alinha=direita
+43 total_valor_liq_geral       tam=12  fmt=float2 alinha=direita
+44 total_valor_fat_geral       tam=12  fmt=float2 alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2                
+----------------------------------------------------------------------------------------------------------------------------------
+ 
+#23
+#24
+
+Banco....: #3
+AG.......: #4
+C/C......: #5
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="retorno">
+
++--------------------------------------------------------------------------------------------------------------------------------+
+| Retorno: #7                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="retorno,situacao_boleto">
+
++--------------------------------------------------------------------------------------------------------------------------------+
+| Situação boleto: #25                                                                                                           |
++--------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="retorno,situacao_boleto,ocorrencia">
+| Ocorrência: #17                                                                                                                |
++---------------------------------+--------------+-----------+------------+------------+------------+-------------+--------------+
+|             Cliente             | Nosso número | Documento | Ocorrência | Vencimento |  Creditado | Valor orig. |  Valor pago  |
++---------------------------------+--------------+-----------+------------+------------+------------+-------------+--------------+
+</cab_grupo>
+<detalhe>
+| #13                             | #10          | #11       | #8         | #12        | #9         | #28         | #14          |
+| Motivos: #22                                                                                                                   |
++---------------------------------+--------------+-----------+------------+------------+------------+-------------+--------------+
+</detalhe>
+<rod_grupo nome="3">
+| Total ocorrência                | #15  registro(s)                                                | #29         | #16          |
++---------------------------------+-----------------------------------------------------------------+-------------+--------------+
+</rod_grupo>
+<rod_grupo nome="2">
+| Total situação                  | #26  registro(s)                                                | #31         | #27          |
++---------------------------------+-----------------------------------------------------------------+-------------+--------------+
+</rod_grupo>
+<rod_grupo nome="1">
+
++---------------------------------+-----------------------------------------------------------------+-------------+--------------+
+| Total retorno                   | #18  registro(s)                                                | #30         | #19          |
++---------------------------------+-----------------------------------------------------------------+-------------+--------------+
+
+
+</rod_grupo>
+<rod_relat>
+
++---------------------------------+-----------------------------------------------------------------+-------------+--------------+
+| Total geral                     | #20  registro(s)                                                | #32         | #21          |
++---------------------------------+-----------------------------------------------------------------+-------------+--------------+
+</rod_relat>
+
+<hash>46e35b3687a3733d5c69049c05b5d7ed</hash>
+</relatorio>

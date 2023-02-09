@@ -1,0 +1,44 @@
+<relatorio dados="receita_despesas_movto" tamfonte="8" ordem="empresa_codigo,codigo">
+<apelidos>
+1  rel_posto_nome       tam=112
+2  rel_data_hora        tam=18
+3  empresa_nome			tam=60
+4  empresa_codigo		tam=8
+5  empresa_cod_nome		tam=90
+6  codigo				tam=8	alinha=centro
+7  obs					tam=17
+8  pessoa_nome			tam=26
+9  pessoa_codigo		tam=5
+10 documento			tam=9	alinha=centro
+11 nr_transacao_restante	tam=8	alinha=centro
+12 valor				tam=11	fmt=float2
+13 data_conc			tam=12	fmt=data
+14 vencto				tam=12	fmt=data	alinha=centro
+15 titulo				tam=129	alinha=centro
+17 total_geral			tam=11	fmt=float2	func=soma	campo=valor
+</apelidos>
+<cab_pagina>
+#1                                                                                                              #2
+--------------------------------------------------------------------------------------------------------------------------------
+
+#15
+
++----------+-------------------+----------------------------+-----------+----------+--------------+--------------+-------------+
+|  Código  |     Descrição     |           Pessoa           | Documento | Parcelas |  Vencimento  |   Pagamento  |    Valor    |
++----------+-------------------+----------------------------+-----------+----------+--------------+--------------+-------------+
+</cab_pagina>
+<detalhe>
+| #6       | #7                | #8                         | #10       | #11      | #14          | #13          | #12         |
+</detalhe>
+<rod_relat>
++----------+-------------------+----------------------------+-----------+----------+--------------+--------------+-------------+
+| Total                                                                                                          | #17         |
++----------------------------------------------------------------------------------------------------------------+-------------+
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------------------------------------------+------------+-------------------------------+
+</rod_pagina>
+
+<hash>84d6bbdc66a753e428ab154af5c2a858</hash>
+</relatorio>

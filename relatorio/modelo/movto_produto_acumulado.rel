@@ -1,0 +1,68 @@
+<relatorio dados="movto_produto_acumulada">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora        tam=18
+3  titulo1				tam=99	alinha=centro
+4  titulo2				tam=99	alinha=centro
+5  empresa_cod_nome		tam=50
+6  produto_nome			tam=50
+7  deposito_cod_nome	tam=50
+8  data_ini				tam=10	fmt=data
+9  estoque_ant			tam=9	fmt=%.01f
+10 data					tam=10 	fmt=data
+11 turno				tam=5	alinha=centro
+12 operacao				tam=3
+13 documento	        tam=10
+14 entrada				tam=11	fmt=%.01f	nulo
+15 saida				tam=11	fmt=%.01f	nulo
+16 medicao				tam=9	fmt=%.01f	nulo
+17 diferenca			tam=9	fmt=%.01f	nulo
+18 estoque				tam=9	fmt=%.01f
+19 total_entrada		tam=11	fmt=%.01f
+20 total_saida			tam=11	fmt=%.01f
+21 total_diferenca		tam=9	fmt=%.01f
+</apelidos>
+<cab_pagina>
+#1                                                                                     #2
+-------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1" repeticao="0">
+EMPRESA: #5
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_cod_nome,produto,deposito">
++-----------------------------------------------------------------------------------------------------+
+| Produto.: #6                                                                                        |
+| Deposito: #7                                                                                        |
++-----------------------------------------------------------------------------------------+-----------+
+| Estoque anterior a #8                                                                   | #9        |
++------------+-------+----+-----------+-------------+-------------+-----------+-----------+-----------+
+|    Data    | Turno | Op | Documento |     Entrada |       Saida |   Medicao | Diferenca |   Estoque |
++------------+-------+----+-----------+-------------+-------------+-----------+-----------+-----------+
+</cab_grupo>
+
+<detalhe>
+| #10        | #11   | #12| #13       | #14         | #15         | #16       | #17       | #18       |
+</detalhe>
+
+<rod_grupo nome="2">
++------------+-------+----+-----------+-------------+-------------+-----------+-----------+-----------+
+| Total no período        |           | #19         | #20         |           | #21       | #18       |
++-------------------------+-----------+-------------+-------------+-----------+-----------+-----------+
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
++------------+-------+----+-----------+-------------+-------------+-----------+-----------+-----------+
+</rod_pagina>
+
+<hash>4d02430c10d4b206ad7b1da9e6c33a17</hash>
+</relatorio>

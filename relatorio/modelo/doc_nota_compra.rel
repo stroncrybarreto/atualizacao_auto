@@ -1,0 +1,128 @@
+<relatorio dados="nota_fiscal" docname="Modelo Nota Compra" mode="raw">
+<apelidos>
+1  empresa_nome					tam=82		alinha=centro
+2  empresa_endereco				tam=82 		alinha=centro
+3  empresa_cpf					tam=82    	alinha=centro
+4  nota_serie					tam=8		alinha=direita
+5  nota_numero_nota				tam=8   	alinha=direita
+6  nota_cfop					tam=05     	alinha=centro	
+7  nota_natureza 				tam=60		alinha=esquerda
+8  nota_inscr_est				tam=20		alinha=esquerda
+9  nota_data_emissao			tam=10		alinha=centro		fmt=data
+10 nota_data_saida				tam=10		alinha=centro		fmt=data
+11 nota_hora_saida				tam=10		alinha=hora			fmt=time
+12 nota_nome					tam=75		alinha=esquerda
+13 nota_cpf						tam=18		alinha=centro
+14 produto_codigo				tam=06		alinha=centro
+15 produto_descricao			tam=62		alinha=esquerda
+16 produto_cst					tam=03		alinha=centro
+17 produto_unid_med				tam=03		alinha=centro
+18 produto_quantidade			tam=06		alinha=direita		fmt=%.02f
+19 produto_preco_unit			tam=08		alinha=direita		fmt=%.03f
+20 produto_valor				tam=11		alinha=direita		fmt=%.02f
+21 produto_aliquota_icms		tam=08		alinha=centro
+22 serv1_descricao				tam=65		alinha=esquerda
+23 serv1_quantidade				tam=6		alinha=direita		fmt=%.02f			
+24 serv1_valor					tam=12		alinha=direita		fmt=%.02f
+25 serv2_descricao				tam=65		alinha=esquerda	
+26 serv2_quantidade				tam=6		alinha=direita		fmt=%.02f			
+27 serv2_valor					tam=12		alinha=direita		fmt=%.02f
+28 serv3_descricao				tam=65		alinha=esquerda	
+29 serv3_quantidade				tam=6		alinha=direita		fmt=%.02f			
+30 serv3_valor					tam=12		alinha=direita		fmt=%.02f
+31 x							tam=17
+32 nota_aliq_iss				tam=20		alinha=direita  
+33 nota_valor_iss				tam=23		alinha=direita		fmt=%.02f
+34 nota_total_servico			tam=18		alinha=direita		fmt=%.02f	
+35 nota_base_icms				tam=8		alinha=direita  	fmt=%.02f
+36 nota_valor_icms				tam=9		alinha=direita		fmt=%.02f
+37 nota_base_subst				tam=4		alinha=direita	
+38 nota_valor_subst				tam=7		alinha=direita		fmt=%.02f
+39 nota_total_produto			tam=14		alinha=direita		fmt=%.02f
+40 nota_valor_nota				tam=12		alinha=direita		fmt=%.02f
+41 nota_trans_nome				tam=42		alinha=esquerda	
+42 nota_trans_frete				tam=03		alinha=centro
+43 nota_trans_placa				tam=07		alinha=esquerda
+44 nota_tranportador_placa_uf	tam=03		alinha=esquerda
+45 nota_trans_cnpj				tam=15		alinha=esquerda
+46 nota_trans_endereco			tam=42		alinha=esquerda
+47 nota_trans_municipio			tam=23		alinha=esquerda
+48 nota_trans_estado			tam=03		alinha=esquerda
+49 nota_trans_inscr_est			tam=13		alinha=esquerda
+50 nota_quantidade				tam=08		alinha=direita
+51 nota_especie					tam=09		alinha=esquerda
+52 nota_marca					tam=07		alinha=esquerda
+53 nota_numero					tam=08		alinha=esquerda
+54 nota_peso_bruto				tam=10		alinha=direita		fmt=%.03f
+55 nota_peso_liquido			tam=11		alinha=direita		fmt=%.03f
+56 nota_obs_linha_1				tam=126		alinha=esquerda
+57 nota_obs_linha_2				tam=126		alinha=esquerda
+58 nota_obs_linha_3				tam=126		alinha=esquerda
+59 nota_valor_ipi				tam=6		alinha=direita		fmt=%.02f
+60 nota_valor_frete				tam=6		alinha=direita		fmt=%.02f
+61 nota_valor_seguro			tam=6		alinha=direita		fmt=%.02f
+62 nota_valor_outr_des			tam=6		alinha=direita		fmt=%.02f
+</apelidos>
+
+<cab_relat>
+{INI}{RST}{LPI08}{CPI17}{PGLEN}{68}                                                                                  
+                                    ESPELHO DE NOTA FISCAL DE ENTRADA                                             
+
++-----------------------------------------------------------------------------------------------------+--------------------------+
+| #1                                                                                                  | Data Emissão: #10        |
+| #3                                                                                  Série: #4       | Data Saída:   #9         |
+| #2                                                                                 Número: #5       | Hora Saída:   #11        |
++------------------------------------------------------------------------------------+-------------------------------------------+
+| CFOP: #6    - #7                                                                   | Inscrição Estadual: #8                    |
++------------------------------------------------------------------------------------+-------------------------------------------+
+Emitente 
++-------------------------------------------------------------------------------------------------+------------------------------+
+| Nome: #12                                                                                       | CPF/CNPJ: #13                |
++-------------------------------------------------------------------------------------------------+------------------------------+
+Dados do Produto
++--------+---------------------------------------------------------------+-----+----+--------+----------+-------------+----------+
+| Código | Descrição dos Produtos                                        | CST | UN | Qtdade | Pr. Unit | Valor Total |   ICMS   |
++--------+---------------------------------------------------------------+-----+----+--------+----------+-------------+----------+
+</cab_relat>
+
+<detalhe fix_height="61">
+| #14    | #15                                                           | #16 |#17 | #18    | #19      | #20         | #21      |
+</detalhe>
+
+<rod_relat>
++--------+---------------------------------------------------------------+-----+----+--------+----------+-------------+----------+
+Prestação de Serviços
++-------------------------------------------------------------------+--------+--------------+------------------------------------+
+| Descrição                                                         | Qtdade | Valor        |                                    |
++-------------------------------------------------------------------+--------+--------------+                                    | 
+| #22                                                               | #23    | #24          | Insc. Municipal: #31               | 
+| #25                                                               | #26    | #27          | Aliquota ISS: #32                  |  
+| #28                                                               | #29    | #30          | Valor Iss: #33                     |
+|                                                                   |        |              | Total Serviços: #34                |
++-------------------------------------------------------------------+--------+--------------+------------------------------------+
+Cálculo do Imposto
++---------------------+-----------------------+-----------------------+-------------------------+--------------------------------+ 
+| Base ICMS: #35      | Valor ICMS: #36       | Base ICMS Subst: #37  | Vl. ICMS Subst: #38     | Total Produtos: #39            |
++---------------------+-----------------------+-----------------------+-------------------------+--------------------------------+
+| Valor Frete: #60    | Valor Seguro: #61     | Outras Desp.: #62     | Valor Total IPI: #59    | Valor Total Nota: #40          |
++---------------------+-----------------------+-----------------------+-------------------------+--------------------------------+
+Transportador / Volumes Transportados
++------------------------------------------------------+-------------------+----------------+--------+---------------------------+
+| Nome/RZ: #41                                         | Frete p/ Conta:#42| Placa: #43     | UF:#44 | CPF/CNPJ: #45             |
++------------------------------------------------------+-------------------+----------------+--------+---------------------------+
+| Endereço: #46                                        | Múnicipio: #47                     | UF:#48 | Inscr. Est: #49           |
++------------------+--------------------+--------------+-+------------------+---------------+--------+---------------------------+
+| Qtdade: #50      | Espécie: #51       | Marca: #52     | Número: #53      | Peso Bruto: #54        | Peso Líquido: #55         |
++------------------+--------------------+----------------+------------------+------------------------+---------------------------+
+Dados Adicionais
++--------------------------------------------------------------------------------------------------------------------------------+
+| Informações Complementares:                                                                                                    |
+|                                                                                                                                |
+| #56                                                                                                                            |
+| #57                                                                                                                            |
+| #58                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+
+<hash>431ebfc76c5527d30d17f6e47e87eae9</hash>
+</relatorio>

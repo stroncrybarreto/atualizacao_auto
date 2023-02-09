@@ -1,0 +1,17 @@
+<layout>
+  <nome>caixaadm</nome>
+  <sessao>
+    <nome>movimentosadm</nome>
+    <registro><inicio>1</inicio><fim>4</fim><chave>empresa</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>5</inicio><fim>9</fim><chave>filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>10</inicio><fim>23</fim><chave>conta</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>24</inicio><fim>28</fim><chave>codigo</chave><tipo>text</tipo><padrao></padrao><descricao>codigo da transacao de movimento (despesa, receita) | ignora</descricao></registro>
+    <registro><inicio>29</inicio><fim>43</fim><chave>valor</chave><tipo>float_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>44</inicio><fim>53</fim><chave>data</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>54</inicio><fim>59</fim><chave>sequencia</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>60</inicio><fim>69</fim><chave>documento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>70</inicio><fim>169</fim><chave>historico</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>170</inicio><fim>269</fim><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>270</inicio><fim>270</fim><chave>situacao</chave><tipo></tipo><padrao>A</padrao><descricao>Utilizar 'A' para movimento ativo</descricao></registro>
+  </sessao>
+</layout>

@@ -1,0 +1,81 @@
+<relatorio dados="abastec_cbc" ordem="agrupamento,data,bico">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=16
+3  titulo_bico      tam=122					alinha=centro
+4  agrupamento      tam=110
+5  data             tam=10   fmt=data       alinha=esquerda
+6  bico             tam=4
+7  bico_hexa        tam=4                   alinha=esquerda
+8  produto_nome     tam=33                  alinha=esquerda
+9  codigo           tam=8                   alinha=centro
+10 hora             tam=14                  alinha=centro
+11 quantidade       tam=10   fmt=float3     alinha=direita
+12 preco_unit       tam=12   fmt=float3     alinha=direita
+13 valor            tam=13   fmt=float3     alinha=direita
+14 enc_calc         tam=15   fmt=float2     alinha=direita
+15 encerrante       tam=15   fmt=float2     alinha=direita
+16 diferenca        tam=11   fmt=float2     alinha=direita
+17 subt_agrp_qtd    tam=10   fmt=float3     alinha=direita     func=soma  campo=quantidade   grupo=2
+18 subt_agrp_val    tam=13   fmt=float3     alinha=direita     func=soma  campo=valor        grupo=2
+19 tot_agrp_qtd     tam=10   fmt=float3     alinha=direita     func=soma  campo=quantidade   grupo=1
+20 tot_agrp_val     tam=13   fmt=float3     alinha=direita     func=soma  campo=valor        grupo=1
+21 total_qtd        tam=10   fmt=float3     alinha=direita     func=soma  campo=quantidade 
+22 total_val        tam=13   fmt=float3     alinha=direita     func=soma  campo=valor
+
+30 empresa_nome     tam=30                  alinha=esquerda
+31 frentista_nome	tam=30
+32 rfid_cartao		tam=15
+33 rfid_cliente		tam=15
+32 encerrante_inicial tam=15
+34 bomba              tam=6
+35 flag_info          tam=6
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                         #2              
+---------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="agrupamento">
++-------------------------------------------------------------------------------------------------------------------------+
+| Motivos: #4                                                                                                             |
++-------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="agrupamento,data,bico">
+| Data: #5               Bico: #6             Código hexa: #7                Produto: #8                                  |
++----------+----------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+|  Código  |   Data/Hora    | Quantidade |  Preço unit. |     Valor     | Enc. calculado  |    Enc. bomba   |  Diferença  |
++----------+----------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+</cab_grupo>
+<detalhe>
+| #9       | #10            | #11        | #12          | #13           | #14             | #15             | #16         |
+</detalhe>
+<rod_grupo nome="2">
++----------+----------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+| Subtotal                  | #17        |              | #18           |                 |                 |             | 
++---------------------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total motivos             | #19        |              | #20           |                 |                 |             | 
++---------------------------+------------+--------------+---------------+-----------------+-----------------+-------------+
+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<rod_relat>
+
++---------------------------+------------+--------------+---------------+-------------------------------------------------+
+| Total geral               | #21        |              | #22           |                                                 |
++---------------------------+------------+--------------+---------------+-------------------------------------------------+
+</rod_relat>
+
+
+<hash>6904b64b9dbe545fe0b5500815688a71</hash>
+</relatorio>

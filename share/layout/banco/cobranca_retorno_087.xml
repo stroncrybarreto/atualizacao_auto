@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>unicred</nome>
+
+  <sessao>
+    <nome>arquivo_header</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>int</tipo>
+      <padrao>0</padrao>
+    </registro>
+	
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>arquivo_id</chave>
+      <tipo>int</tipo>
+      <padrao>2</padrao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>9</fim>
+      <chave>retorno_literal</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>10</inicio>
+      <fim>11</fim>
+      <chave>servico_codigo</chave>
+      <tipo>int</tipo>
+      <padrao>01</padrao>
+    </registro>
+
+    <registro>
+      <inicio>12</inicio>
+      <fim>26</fim>
+      <chave>servico_literal</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>27</inicio>
+      <fim>46</fim>
+      <chave>empresa_codigo</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>47</inicio>
+      <fim>76</fim>
+      <chave>empresa_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>77</inicio>
+      <fim>79</fim>
+      <chave>banco</chave>
+      <tipo>int</tipo>
+      <padrao>237</padrao>
+    </registro>
+
+    <registro>
+      <inicio>80</inicio>
+      <fim>94</fim>
+      <chave>banco_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>95</inicio>
+      <fim>100</fim>
+      <chave>arquivo_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+      <fim>113</fim>
+      <chave>numero_aviso</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>380</inicio>
+      <fim>385</fim>
+      <chave>credito_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_seq</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>registro_tipo_1</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave>registro_id</chave>
+      <tipo>int</tipo>
+      <padrao>1</padrao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>3</fim>
+      <chave>empresa_tipo_instricao</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>17</fim>
+      <chave>empresa_inscricao</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>21</inicio>
+      <fim>37</fim>
+      <chave>empresa_cedente_id</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>38</inicio>
+      <fim>62</fim>
+      <chave>numero_participante</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>71</inicio>
+      <fim>82</fim>
+      <chave>nosso_numero_com_dv</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>105</inicio>
+      <fim>105</fim>
+      <chave>indicador_rateio</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>108</inicio>
+      <fim>108</fim>
+      <chave>carteira</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+      <fim>110</fim>
+      <chave>banco_ocorrencia</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>111</inicio>
+      <fim>116</fim>
+      <chave>ocorrencia_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>117</inicio>
+      <fim>126</fim>
+      <chave>documento</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>127</inicio>
+      <fim>146</fim>
+      <chave>titulo_id</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>147</inicio>
+      <fim>152</fim>
+      <chave>vencto</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>153</inicio>
+      <fim>165</fim>
+      <chave>valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>166</inicio>
+      <fim>168</fim>
+      <chave>banco_cobrador_codigo</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>169</inicio>
+      <fim>173</fim>
+      <chave>banco_cobrador_agencia</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>176</inicio>
+      <fim>188</fim>
+      <chave>despesa_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>189</inicio>
+      <fim>201</fim>
+      <chave>outras_despesas_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>215</inicio>
+      <fim>227</fim>
+      <chave>iof_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>228</inicio>
+      <fim>240</fim>
+      <chave>abatimento_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>241</inicio>
+      <fim>253</fim>
+      <chave>desconto_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>254</inicio>
+      <fim>266</fim>
+      <chave>valor_pago</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>267</inicio>
+      <fim>279</fim>
+      <chave>juros_mora</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>295</inicio>
+      <fim>295</fim>
+      <chave>confirmacao_protesto</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>296</inicio>
+      <fim>301</fim>
+      <chave>credito_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>319</inicio>
+      <fim>320</fim>
+      <chave>banco_motivo_1</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>321</inicio>
+      <fim>322</fim>
+      <chave>banco_motivo_2</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>323</inicio>
+      <fim>324</fim>
+      <chave>banco_motivo_3</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>325</inicio>
+      <fim>326</fim>
+      <chave>banco_motivo_4</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>327</inicio>
+      <fim>328</fim>
+      <chave>banco_motivo_5</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_seq</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+  </sessao>
+
+  <sessao>
+    <nome>arquivo_trailler</nome>
+    
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>retorno_id</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>4</fim>
+      <chave>tipo_registro</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>5</inicio>
+      <fim>7</fim>
+      <chave>banco_codigo</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>18</inicio>
+      <fim>25</fim>
+      <chave>cobranca_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>26</inicio>
+      <fim>39</fim>
+      <chave>cobranca_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>40</inicio>
+      <fim>47</fim>
+      <chave>numero_aviso</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>58</inicio>
+      <fim>62</fim>
+      <chave>entrada_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>63</inicio>
+      <fim>74</fim>
+      <chave>entrada_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>75</inicio>
+      <fim>86</fim>
+      <chave>liquidacao_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>87</inicio>
+      <fim>91</fim>
+      <chave>liquidacao_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>104</inicio>
+      <fim>108</fim>
+      <chave>baixado_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+      <fim>120</fim>
+      <chave>baixado_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>121</inicio>
+      <fim>125</fim>
+      <chave>abatimento_cancelado_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>126</inicio>
+      <fim>137</fim>
+      <chave>abatimento_cancelado_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>138</inicio>
+      <fim>142</fim>
+      <chave>vencimento_alterado_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>143</inicio>
+      <fim>154</fim>
+      <chave>vencimento_alterado_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>155</inicio>
+      <fim>159</fim>
+      <chave>abatimento_concedido_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>160</inicio>
+      <fim>171</fim>
+      <chave>abatimento_concedido_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>172</inicio>
+      <fim>176</fim>
+      <chave>protesto_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>177</inicio>
+      <fim>188</fim>
+      <chave>protesto_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>363</inicio>
+      <fim>377</fim>
+      <chave>rateio_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>378</inicio>
+      <fim>385</fim>
+      <chave>rateio_qtde</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_seq</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+
+  </sessao>
+
+</layout>

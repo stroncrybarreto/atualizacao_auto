@@ -1,0 +1,63 @@
+<relatorio dados="movto_conta_resumido" ordem="movto_conta,grupo,movto_data,movto_historico">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  grupo				tam=105	alinha=centro
+4  movto_conta         	tam=98	
+5  movto_data           tam=10	fmt=data	alinha=centro
+6  movto_valor	        tam=17	fmt=float2  alinha=direita											
+7  total_valor			tam=17	fmt=float2	alinha=direita		func=soma	campo=movto_valor			grupo=2
+8  movto_historico		tam=49 				alinha=esquerda
+9  titulo				tam=110	   			alinha=centro
+10 saldo				tam=17	fmt=float2	alinha=direita		expr=total_entrada-total_saida			grupo=1
+11 total_entrada		tam=17	fmt=float2						func=soma	campo=movto_valor_entrada	grupo=1
+12 total_saida			tam=17	fmt=float2						func=soma	campo=movto_valor_saida		grupo=1
+13 conta_saldo          tam=17	fmt=float2	alinha=direita		
+14 conta_saldo_ini		tam=17  fmt=float2  alinha=direita
+
+</apelidos>
+<cab_pagina>
+#1                                                                                            #2                      
+--------------------------------------------------------------------------------------------------------------
+   
+#9
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="movto_conta">
++------------------------------------------------------------------------------------------------------------+
+|  Conta: #4                                                                                                 |
++----------------------------------------------------------------------------------------+-------------------+
+| Saldo inicial:                                                                         | #14               |
++----------------------------------------------------------------------------------------+-------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="grupo,movto_conta">
+| #3                                                                                                         |
++------------+-------------------------------------------------------+-------------------+-------------------+
+|    Data    |                       Histórico                       |       Valor       |       Saldo       |
++------------+-------------------------------------------------------+-------------------+-------------------+
+</cab_grupo>
+
+<detalhe>
+| #5         | #8                                                    | #6                | #13               |
+</detalhe>
+
+<rod_grupo nome="2">
++------------+-------------------------------------------------------+-------------------+-------------------+
+| Total                                                              | #7                | #13               |
++--------------------------------------------------------------------+-------------------+-------------------+
+</rod_grupo> 
+<rod_grupo nome="1">
+| Saldo                                                                                  | #13               |
++----------------------------------------------------------------------------------------+-------------------+
+
+</rod_grupo>
+<rod_pagina>
++----------------------------------------------------------------------------------------+-------------------+
+</rod_pagina>
+<rod_relat>
+
+</rod_relat>
+
+<hash>1ea2bc05b2e837e3ce799a01e92188b6</hash>
+</relatorio>

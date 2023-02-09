@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="iso-8859-1"?> 
+<layout>
+	<nome>dominio_fiscal</nome>
+	<tipo_layout>delimitado</tipo_layout>
+	<delimitador>|</delimitador>
+	<sessao>
+		<nome>reg0000</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0000</padrao><descricao>Indetificacao da Empresa</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer</tipo><padrao></padrao><descricao>CNPJ da Empresa</descricao><tamanho>14</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0010</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0010</padrao><descricao>Cadastro de Clientes</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao>CNPJ/CPF do Cliente</descricao><tamanho>14</tamanho></registro>
+		<registro><chave>razao_social</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>100</tamanho></registro>
+		<registro><chave>apelido</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>endereco</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>numero</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>complemento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>bairro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>municipio</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>codigo_pais</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>cep</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>50</tamanho></registro>
+		<registro><chave>suframa</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>ddd</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>fone</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>15</tamanho></registro>
+		<registro><chave>fax</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>15</tamanho></registro>
+		<registro><chave>data_cad</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_contabil</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_contabil_fornecedor</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>agropecuario</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Não</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>natureza_juricia</chave><tipo>text</tipo><padrao></padrao><descricao>1=Orgao Publico Federal, 2=Orgao Publico Estadual, 3=Orgao Publico Municipal, 4=Empresa Publica Federal, 5=Empresa Publica Estadual, 6=Empresa Publica Municipal, 7=Empresa Privada, 8=Sociedade Cooperativa</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>regime_apuracao</chave><tipo>text</tipo><padrao>N</padrao><descricao>N=Normal, M=Microempresa, E=Empresa de pequeno porte, O=Outros</descricao><tamanho>1</tamanho></registro>'
+		<registro><chave>contribuinte_icms</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao>0</padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>categoria_estabelecimento</chave><tipo>text</tipo><padrao></padrao><descricao>ARM=Armazenador, CNF=Consumidor Final, CPQ=Central Petroquimica, DIS=Distribuidor, FOR=Formulador, IMP=Importador, PRV=Posto Varejista, REF=Refinaria, TRR=Tranportador e Revendedor Retalhista, USI=Usina, VGL=Varejista de GLP</descricao><tamanho>3</tamanho></registro>
+		<registro><chave>interdependencia_empresa</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0020</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0020</padrao><descricao>Cadastro de Fornecedores</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao>CNPJ/CPF do Fornecedor</descricao><tamanho>14</tamanho></registro>
+		<registro><chave>razao_social</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>apelido</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>endereco</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>numero</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>complemento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>bairro</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>municipio</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>codigo_pais</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>cep</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>50</tamanho></registro>
+		<registro><chave>suframa</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>ddd</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>fone</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>15</tamanho></registro>
+		<registro><chave>fax</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>15</tamanho></registro>
+		<registro><chave>data_cad</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_contabil</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_contabil_cliente</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>agropecuario</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Não</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>natureza_juricia</chave><tipo>text</tipo><padrao></padrao><descricao>1=Orgao Publico Federal, 2=Orgao Publico Estadual, 3=Orgao Publico Municipal, 4=Empresa Publica Federal, 5=Empresa Publica Estadual, 6=Empresa Publica Municipal, 7=Empresa Privada, 8=Sociedade Cooperativa</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>regime_apuracao</chave><tipo>text</tipo><padrao>N</padrao><descricao>N=Normal, M=Microempresa, E=Empresa de pequeno porte, O=Outros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>contribuinte_icms</chave><tipo>text</tipo><padrao>N</padrao><descricao></descricao>S=Sim ou N=Nao<tamanho>1</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao>0</padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>categoria_estabelecimento</chave><tipo>text</tipo><padrao></padrao><descricao>ARM=Armazenador, CNF=Consumidor Final, CPQ=Central Petroquimica, DIS=Distribuidor, FOR=Formulador, IMP=Importador, PRV=Posto Varejista, REF=Refinaria, TRR=Tranportador e Revendedor Retalhista, USI=Usina, VGL=Varejista de GLP</descricao><tamanho>3</tamanho></registro>
+		<registro><chave>inscr_est_st</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>email</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>interdependencia_empresa</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0100</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0100</padrao><descricao>Cadastro de Produtos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>descricao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>codigo_nbm</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_ncm</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>8</tamanho></registro>
+		<registro><chave>codigo_ncm_exterior</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>8</tamanho></registro>
+		<registro><chave>codigo_barra</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>codigo_imposto</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>grupo_produto</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>unid_inv_dif</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim, N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_prod</chave><tipo>text</tipo><padrao>O</padrao><descricao>A=Arma de fogo, M=Medicamentos, V=Veiculos, O=Outros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_arma</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao>0=Uso permitido, 1=Uso restrito</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>descr_arma</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_medicamento</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao>0=Similar, 1=Generico, 2=Etico</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tributado_issqn</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>chassi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>preco_unit</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>qtde_estoque_ini</chave><tipo>float_nojust_nopoint_5</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_estoque_ini</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_ipi</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>peridiocidade_ipi</chave><tipo>text</tipo><padrao>M</padrao><descricao>D=Decendial, M=Mensal</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>produto_dnf</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>ex_tipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>cod_especie_dnf</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>unid_med_dnf</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>conversao_dnf</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_dnf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>volume_dnf</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_ean</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_dic</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>scanc</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_scanc</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gasolina_scanc</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_prod_scanc</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>grf</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_grf</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>unid_med_dief</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_prod_dief</chave><tipo>integer_branco</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>88_sintegra</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_sintegra</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>ipm</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao / GO</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_ipm</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>produto</chave><tipo>text</tipo><padrao></padrao><descricao>Produto relacionado na posicao 3301 a 3307 do anexo VII do CTE, S=Sim ou N=Nao / GO</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cesta_basica</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao / AM</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_prod_dam</chave><tipo>integer</tipo><padrao></padrao><descricao>AM</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>prod_subst_trib</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao / RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_ini_subst_trib</chave><tipo>text</tipo><padrao></padrao><descricao>RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>preco_tabelado</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao / RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>preco_unit_subst_trib</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>mva_subst_trib</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>grupo_subst_trib</chave><tipo>integer</tipo><padrao></padrao><descricao>RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>equipamento_ecf</chave><tipo>text</tipo><padrao></padrao><descricao>PR</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>incentivo_fiscal</chave><tipo>text</tipo><padrao></padrao><descricao>MS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>regime_especial</chave><tipo>integer</tipo><padrao></padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>item_regime_especial</chave><tipo>integer</tipo><padrao></padrao><descricao>Apuracao REA/ICMS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_prod_pe</chave><tipo>integer</tipo><padrao></padrao><descricao>1=Mercadoria 2=Materia Prima 3=Produto Intermediario 4=Embalagens 5=Produtos Manufaturados 6=Fabricacao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>controla_ressarcimento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_ini_saldo</chave><tipo>text</tipo><padrao></padrao><descricao>Cat 17/99 / SP</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>preco_unit_controle</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao>Cat 17/99 / SP</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>qtde_controle</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao>Cat 17/99 / SP</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_fim_controle</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>Cat 17/99 / SP</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>genero_sped</chave><tipo>integer</tipo><padrao></padrao><descricao>cfme tabela genero SPED</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_servico_sped</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_prod_sped</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>classificacao_sped</chave><tipo>integer</tipo><padrao></padrao><descricao>cfme table classificacao SPED</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>conta_contabil_sped_proprio</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>conta_contabil_sped_terceiro</chave><tipo>integer</tipo><padrao></padrao><descricao>Em poder de terceiros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>conta_contabil_sped_terceiro_em_poder</chave><tipo>integer</tipo><padrao></padrao><descricao>Em poder de terceiros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_receita_sped</chave><tipo>text</tipo><padrao></padrao><descricao>0=Propria 1=Terceiros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>energia_sped</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_cad</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>produto_lmc</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_df</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_anp</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>35</tamanho></registro>
+		<registro><chave>prod_rel_mp</chave><tipo>text</tipo><padrao>N</padrao><descricao>S=Sim ou N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>descricao_complementar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>codigo_atividade_inss</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>15</tamanho></registro>
+		<registro><chave>tipo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>40</tamanho></registro>
+		<registro><chave>credito_presumido</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>40</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0120</nome>
+		<registro><chave></chave><tipo></tipo><padrao>|0120</padrao><descricao>Produtos - Unidades comercializadas</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>unid_conv</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>fat_conv</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0140</nome>
+		<registro><chave></chave><tipo></tipo><padrao>|0140</padrao><descricao>Produtos - Saldo final</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_saldo</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>quantidade</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_unit</chave><tipo>float_nojust_nopoint_5</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0150</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0150</padrao><descricao>Unidades de Medida</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cod_unid</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>descr_unid</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0160</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0160</padrao><descricao>Grupo de Produtos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>descricao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg0300</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|0300</padrao><descricao>Maquinas ECF</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>modelo_equip</chave><tipo>text</tipo><padrao></padrao><descricao>Descrição do equipamento ecf</descricao><tamanho>60</tamanho></registro>
+		<registro><chave>tipo</chave><tipo>integer</tipo><padrao>1</padrao><descricao>1=ECF-MR 2=ECF-IF-IN ligado a UAP 3=Outros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg1000</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|1000</padrao><descricao>Notas Fiscais de Entrada</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_especie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>codigo_exclusao_dief</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_acumulador</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>segmento</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>numero_nota</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>documento_final</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_entrada</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_emissao</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_exclusao_dief</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>modalidade_frete</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>emitente_nota_fiscal</chave><tipo>text</tipo><padrao></padrao><descricao>P=Proprio T=Terceiros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cfop_estendido</chave><tipo>integer</tipo><padrao></padrao><descricao>SE</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_transf_credito</chave><tipo>integer</tipo><padrao></padrao><descricao>RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_recolhimento_iss</chave><tipo>text</tipo><padrao></padrao><descricao>RS</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_irrf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_obs</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_trans_icms</chave><tipo>text</tipo><padrao></padrao><descricao>MG</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>crf</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>irrf</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_frete</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_seguro</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outr_des</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_tipo_ant_trib</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_tare</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>SE</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_tare</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>SE</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_base_icms_st</chave><tipo>integer</tipo><padrao>0</padrao><descricao>0=Informacoes complementares 1=Quadro calculado do imposto 2=Apurado pelo informante</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>entrada_saida_isenta</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>MG</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>outra_entrada_isenta</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>MG</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_trans_base</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>MG</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_ressarcimento</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>total_produto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>municipio</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>modelo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>subserie</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_operacao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_receita_trib</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>competencia</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>operacao</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>numero_nota</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_entrada</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>numero_declaracao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>benficio_fiscal</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim, N=Nao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>chave_nfe</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>44</tamanho></registro>
+		<registro><chave>recolhimento_fethab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>responsavel_fethab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>tipo_cte</chave><tipo>integer</tipo><padrao></padrao><descricao>0=CT-e Normal 1=CT-e de complemento de valores 2=CT-e Emitido em hipotese de anulacao de debito</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cte_ref</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>modalidade_importacao</chave><tipo>integer</tipo><padrao></padrao><descricao>1=Com direito a credito 2=Compensacao 3=Regime especial 4=Sem direito 5=Outras situacoes sem credito</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_inf_complementar</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>inf_complementar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>classe_consumo</chave><tipo>integer</tipo><padrao>01</padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_ligacao</chave><tipo>integer</tipo><padrao>3</padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>grupo_tensao</chave><tipo>text</tipo><padrao>12</padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>tipo_assinante</chave><tipo>integer</tipo><padrao>1</padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>kwh_consumido</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_fornecido_consumido_gas_energia</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_cobrado_terc</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_doc_importacao</chave><tipo>integer</tipo><padrao></padrao><descricao>10=Declaracao de Importacao 1=Declaracao Simplificada de importacao</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>numero_ato_regime_drawback</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>natureza_frete_pis_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao>0=Op. de venda com onus suportado pelo estab. vendedor, 1=Op. de venda com onus suportado pelo adquirente, 2=Op. de compra (bens para revenda, materiais-prima e outros produtos deradores de credito), 3=Op. de compra (bens para revenda, matérias-prima e outros produtos nao geradores de credito), 4=Trans. de prod. acabados entre estabelecimento pessoa juridica, 5=Trans. de prod. em elaboracao entre estabelecimento pessoa juridica, 9=Outras</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst_pis_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_credito_pis_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_itens_pis_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_pis_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>chave_nfse</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>numero_ato_concessorio</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>origem_processo</chave><tipo>text</tipo><padrao></padrao><descricao>1=Justica Federal, 3=Secretaria da Receita Federal do Brasil, 9=Outros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_escrituracao</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>CFPS</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>30</tamanho></registro>
+		<registro><chave>natureza_receita</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cod_situacao_ipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg1020</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|1020</padrao><descricao>Notas Fiscais de Entrada - Impostos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_imposto</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>perc_red_base</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>base_calculo</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_imposto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outra</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_ipi</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_recolhimento_imposto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_nao_tributada</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>GO</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_perc_reduzida</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>GO</descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg1030</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|1030</padrao><descricao>Notas Fiscais de Entrada - Produto</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>quantidade</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_total</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao>Base Calc. + IPI</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_ipi</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_calculo</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>tipo_lancamento</chave><tipo>integer</tipo><padrao>1</padrao><descricao>1=Produto vinculado a Nota, 2=Lancamento extra</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_movto</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>numero_di</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>valor_bruto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>produto_incentivado</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao / PE</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_apuracao</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_frete</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_seguro</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outr_des</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>quantidade_gasolina</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outras</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>icms_nfp</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>preco_unit</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliquota_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_trib_ipi</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_ipi</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>base_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>custo_total</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>chassi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>operacao_veiculo</chave><tipo>integer</tipo><padrao></padrao><descricao>0=Concessionaria 01=Faturamento 02=Venda 99=Outras</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>lote_medicamento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>qtde_lote_medicamento</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_validade</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_fab_medicamento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>ref_base_calculo</chave><tipo>integer</tipo><padrao></padrao><descricao>00=Tabelado 01=Negativa 02=Positiva 03=Neutra 04=Margem valor agregado 05=Pauta</descricao><tamanho>2</tamanho></registro>
+		<registro><chave>valor_tabelado</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nr_serie_arma</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nr_serie_cano</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>enquadramento_ipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>movto_fisica</chave><tipo>text</tipo><padrao>S</padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>complemento_cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tanque</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>qtde_trib_pis</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_pis_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>qtde_trib_cofins</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_cofins_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_credito</chave><tipo>integer_branco</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>nota_devolvida_saida</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>descricao_complementar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>cst_pis_nota_devolvida</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst_cofins_nota_devolvida</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>vinculo_credito_pis</chave><tipo>text</tipo><padrao></padrao><descricao>valores validos=01,02,03,05,06,08,99</descricao><tamanho>2</tamanho></registro>
+		<registro><chave>vinculo_credito_cofins</chave><tipo>text</tipo><padrao></padrao><descricao>valores validos=01,02,03,05,06,08,99</descricao><tamanho>2</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg1300</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|1300</padrao><descricao>Notas Fiscais de Entrada - Lancamentos contabeis</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>desc_historico_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg1500</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|1500</padrao><descricao>Notas Fiscais de entrada - Parcelas</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>vencimento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliq_crf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_crf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_irrf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_iss_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_inss_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_funrural</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_pis_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_cofins_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_csoc_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_irrf_pf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg2000</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|2000</padrao><descricao>Notas Fiscais de Saida</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_especie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>codigo_acumulador</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>codigo_exclusao_dief</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>segmento</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>numero_nota</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>documento_final</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_saida</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_emissao</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_exclusao_dief</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>municipio</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>modalidade_frete</chave><tipo>text</tipo><padrao></padrao><descricao>C=CIF F=FOB</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cfop_estendido</chave><tipo>integer</tipo><padrao></padrao><descricao>SE</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_transf_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_obs</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_visto_nota_trans_cred_icms</chave><tipo>text</tipo><padrao></padrao><descricao>MG</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_antecipacao_tributaria</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gerador_crf</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gerador_crfop</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gerador_irrfp</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_receita</chave><tipo>integer</tipo><padrao></padrao><descricao>1=Receita propria 2=Receita terceiros 3=Receita propria-cobranca debitos 4=Receita propria-venda de merc 5=Receita propria-venda de serv 6=Outras receitas proprias 7=Outras receitas terceiros</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_frete</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_seguro</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outr_des</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>total_produto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_subst</chave><tipo>integer</tipo><padrao>0</padrao><descricao>Origem da subst. trib. na nota: 0 = Inf. complementares ou 1 = Quadro calc. do imposto</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>outras_saida</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>saidas_isentas</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>saidas_isentas_cupom_fiscal</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>MG</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>saidas_isentas_nota_fiscal</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>modelo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>codigo_fiscal_serv</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>subserie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>tipo_titulo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>ident_titulo</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>chave_nfe</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>44</tamanho></registro>
+		<registro><chave>recolhimento_fethab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>responsavel_fethab</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_cte</chave><tipo>integer</tipo><padrao></padrao><descricao>0=CT-e Normal 1=CT-e de complemento de valores 2=CT-e Emitido em hipotese de anulacao de debito</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cte_ref</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_inf_complementar</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>inf_complementar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst_pis_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao>Apenas modelo:02E,08,08B,09,10,11,13,14,15,18,26,27,57</descricao><tamanho>2</tamanho></registro>
+		<registro><chave>natureza_receita</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_item_pis_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_pis_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>qtde_kwh</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst_ipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg2020</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|2020</padrao><descricao>Notas Fiscais de Saida - Impostos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_imposto</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>perc_red_base</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>base_calculo</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_imposto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outra</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_nao_tributada</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>GO</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_perc_reduzida</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>GO</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_ipi</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg2030</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|2030</padrao><descricao>Notas Fiscais de Saida - Produtos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>quantidade</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_total</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao>Base Calc. + IPI</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_ipi</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_calculo</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>tipo_lancamento</chave><tipo>integer</tipo><padrao>1</padrao><descricao>1=Produto vinculado a Nota, 2=Lancamento extra</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_movto</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>valor_bruto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_chassi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>produto_incentivado</chave><tipo>text</tipo><padrao></padrao><descricao>S=Sim ou N=Nao / PE</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_apuracao</chave><tipo>integer</tipo><padrao></padrao><descricao>PE</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>sit_trib_produto_ecf</chave><tipo>text</tipo><padrao></padrao><descricao>PE</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_frete</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_seguro</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outr_des</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>quantidade_gasolina</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento_ipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outras_ipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>preco_unit</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliquota_subst</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>cst_ipi</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>aliquota_ipi</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>base_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>lote_medicamento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_validade</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>ref_base_calculo</chave><tipo>integer</tipo><padrao></padrao><descricao>00=Tabelado 01=Negativa 02=Positiva 03=Neutra 04=Margem Valor agregado 05=Pauta</descricao><tamanho>2</tamanho></registro>
+		<registro><chave>valor_tabelado</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nr_serie_arma</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nr_serie_cano</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tipo_operacao_veiculo</chave><tipo>integer</tipo><padrao></padrao><descricao>00=Concessionaria 01=Faturamento 02=Venda 99=Outras</descricao><tamanho>2</tamanho></registro>
+		<registro><chave>quantidade_cancelada</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cancelado</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>isento_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>nao_incide_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_acumulado_st</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>data_fabricacao_medicamento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>cst_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>qtde_lote_medicamento</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>enquadramento_ipi</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>quantidade_16,5</chave><tipo>float_nojust_nopoint_5</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>movto_fisica</chave><tipo>text</tipo><padrao>S</padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_bico</chave><tipo>integer_branco</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>qtde_trib_pis</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_pis_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>qtde_trib_cofins</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_cofins_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nota_devolvida_entrada</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>descricao_complementar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>natureza_receita_pis</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>natureza_receita_confins</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>exclusao_cooperativa</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>nota_devolvida_pis</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>nota_devolvida_cofins</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>vinculo_credito_pis</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>vinculo_credito_cofins</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_calculo_frete_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>imposto_frete_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_seguro_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>imposto_seguro_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_desp_acessorias_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>imposto_desp_acessorias_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_frete_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>imposto_frete_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_seguro_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>imposto_seguro_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>base_desp_acessorias_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>imposto_desp_acessorias_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>tanque</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg2300</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|2300</padrao><descricao>Notas Fiscais de Saida - Lancamentos contabeis</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>desc_historico_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg2500</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|2500</padrao><descricao>Notas Fiscais de saida - Parcelas</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>vencimento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliq_crf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_crf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_irrf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_iss_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_inss_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliq_pis_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_pis_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliq_cofins_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_cofins_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliq_csll_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_csll_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>aliq_irpj_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_irpj_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_irrfp</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_pis_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_cofins_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_csoc_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_funrural</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg3000</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|3000</padrao><descricao>Notas Fiscais de Servico</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_especie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>uf</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>codigo_acumulador</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>numero_nota</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>segmento</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>documento_final</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_saida</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_emissao</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>obs</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>codigo_obs</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>gerador_crf</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gerador_irrf</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gerador_crfop</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>gerador_irrfp</chave><tipo>text</tipo><padrao></padrao><descricao>E=Emissao P=Pagamento</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>municipio</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>modelo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>subserie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>inscr_est</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>14</tamanho></registro>
+		<registro><chave>inscr_municipal</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg3020</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|3020</padrao><descricao>Notas Fiscais de Servico - Impostos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_imposto</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>perc_red_base</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>base_calculo</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_imposto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outra</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg3030</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|3030</padrao><descricao>Notas Fiscais de Servico - Produtos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_movto</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>quantidade</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_total</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>Base Calc. + IPI</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>preco_unit</chave><tipo>float_nojust_nopoint_6</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>cst_iss</chave><tipo>integer</tipo><padrao>0</padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_issqn</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>isenta_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>nao_incide_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>iss_retido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>quantidade_cancelada</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cancelado</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>base_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>descricao_complementar</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>natureza_receita_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>natureza_receita_confins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>exclusao_cooperativa</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg3300</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|3300</padrao><descricao>Notas Fiscais de Servico - Lancamentos contabeis</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>desc_historico_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4000</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4000</padrao><descricao>Reducao Z</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>nr_serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>contador_reinicio</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>contador_reducao</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>contador_ini</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>contador_fim</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>qtde_cancelados</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>numero_caixa</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>numero_mapa_resumo</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>grande_total_ant</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>grande_total_atual</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_obs</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>observacao</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4010</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4010</padrao><descricao>Reducao Z - Situacoes tributarias</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>sit_trib</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>valor_op</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_imposto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4015</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4015</padrao><descricao>Reducao Z - Situacoes tributarias Detalhamento</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_acumulador</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>valor</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_imposto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4020</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4020</padrao><descricao>Reducao Z - Impostos</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_imposto</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_contabil</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_calculo</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_imposto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_outro</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_acumulador</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4030</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4030</padrao><descricao>Reducoes Z - Estoque</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>quantidade</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>quantidade_cancelada</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>preco_unit</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_bruto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cancelamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_liquido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>sit_trib</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>base_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_acrescimo</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>DF e gera livro eletronico</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_nao_incide_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_subtri</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>DF e gera livro eletronico</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>DF e gera livro eletronico</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>cst_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>codigo_bico</chave><tipo>integer_branco</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>qtde_trib_pis</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_pis_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>qtde_trib_cofins</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_cofins_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>natureza_receita_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>natureza_receita_confins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>exclusao_cooperativa</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>codigo_tanque</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4300</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4300</padrao><descricao>Reducoes Z - Lancamentos contabeis</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4700</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4700</padrao><descricao>Reducoes Z - Cupons fiscais</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>nr_cupom</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>cpf</chave><tipo>integer_branco</tipo><padrao></padrao><descricao>CNPJ/CPF do Cliente</descricao><tamanho>14</tamanho></registro>
+		<registro><chave>valor</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_liquido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>situacao</chave><tipo>integer</tipo><padrao>0</padrao><descricao>0=Documento regular 1=Documento extemporaneo 2=Documento cancelado</descricao><tamanho>1</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4710</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4710</padrao><descricao>Reducoes Z - Cupons fiscais - Estoque</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_produto</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>quantidade</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>quantidade_cancelada</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>unid_med</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>preco_unit</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_bruto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>		
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cancelamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_liquido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>sit_trib</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>cfop</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>4</tamanho></registro>
+		<registro><chave>cst</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>base_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao>0</padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao>0</padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>base_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>aliquota_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_acrescimo</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>DF e gera livro eletronico</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_isento_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_nao_incide_icms</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_subtri</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>DF e gera livro eletronico</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_issqn</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao>DF e gera livro eletronico</descricao><tamanho>20</tamanho></registro>
+		<registro><chave>cst_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>cst_cofins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>2</tamanho></registro>
+		<registro><chave>codigo_bico</chave><tipo>integer_branco</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>qtde_trib_pis</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_pis</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_pis_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>qtde_trib_cofins</chave><tipo>float_nojust_nopoint_3</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_unid_cofins</chave><tipo>float_nojust_nopoint_4</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>valor_cofins_unid</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>natureza_receita_pis</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>natureza_receita_confins</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>exclusao_cooperativa</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>		
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg4720</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|4720</padrao><descricao>Reducoes Z - Cupons fiscais - Parcelas</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>vencimento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>	
+	<sessao>
+		<nome>reg5100</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|5100</padrao><descricao>Recebimentos - NF de entrada.</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_especie</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>sub_serie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>numero_nota</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_vencimento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_pagamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_recebido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_juros</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_multa</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_devolucao</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_csoc</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_crf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_irrf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_irrfp</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg5110</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|5110</padrao><descricao>Notas fiscais de entrada - Lancamentos contabeis</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>desc_historico_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg5200</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|5200</padrao><descricao>Recebimentos - Notas Fiscais de Saida</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>codigo_especie</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>serie</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>3</tamanho></registro>
+		<registro><chave>sub_serie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>5</tamanho></registro>
+		<registro><chave>numero_nota</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_vencimento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>data_pagamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_recebido</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_juros</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_multa</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_desconto</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_devolucao</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_pis</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cofins</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_csoc</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_irrf</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_pis_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_cofins_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_csoc_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_irrpj_crfop</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>valor_irrfp</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg5210</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|5210</padrao><descricao>Notas Fiscais de Saida - Lancamentos contabeis</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>desc_historico_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>60</tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg6000</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|6000</padrao><descricao>Lancamentos em lote</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>tipo_lancamento</chave><tipo>text</tipo><padrao>X</padrao><descricao>D=Um débito p/ vários créditos;C=Um crédito p/ vários débitos;X=Um débito p/ um crédito;V=Vários débitos p/ vários créditos.</descricao><tamanho>1</tamanho></registro>
+		<registro><chave>codigo_lancto_padrao</chave><tipo>integer_branco</tipo><padrao></padrao><descricao>Informar somente se houver vinculado a um lançamento padrão.</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>localizador</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave>rtt_fcont</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>1</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+	<sessao>
+		<nome>reg6100</nome>
+		<registro><chave></chave><tipo>text</tipo><padrao>|6100</padrao><descricao>Lancamentos em lote - Lancamentos contabeis</descricao><tamanho>5</tamanho></registro>
+		<registro><chave>data_lancamento</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_debito</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>conta_credito</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave>valor_lancamento</chave><tipo>float_nojust_nopoint_2</tipo><padrao></padrao><descricao></descricao><tamanho>15</tamanho></registro>
+		<registro><chave>codigo_historico_contabil</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao>Codigo cfme registro 0220</descricao><tamanho>10</tamanho></registro>
+		<registro><chave>desc_historico_contabil</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho></tamanho></registro>
+		<registro><chave>usuario</chave><tipo>text</tipo><padrao></padrao><descricao></descricao><tamanho>20</tamanho></registro>
+		<registro><chave>codigo_filial</chave><tipo>integer_nojust</tipo><padrao></padrao><descricao></descricao><tamanho>10</tamanho></registro>
+		<registro><chave></chave><tipo>text</tipo><padrao></padrao><descricao>Fim do registro</descricao><tamanho>1</tamanho></registro>
+	</sessao>
+</layout>

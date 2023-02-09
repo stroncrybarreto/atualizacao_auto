@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-1">
+<title>Inventário AutoSystem</title>
+<link rel="stylesheet" href="/inventario.css" type="text/css">
+<script src="/jquery-1.7.1.min.js"></script>
+<script src="/inventario.js" language="javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Inventário:</h1>
+<table border=1 cellspacing=0 cellpadding=2 width="100%" id="lista">
+	<th width="75%">Produto</th>
+	<th width="15%">Qtde</th>
+	<th width="10%">-</th>
+	<tr tal:repeat="produto produto_list" tal:attributes="data-id produto/id; data-produto produto/produto_id">
+		<td><span tal:content="produto/codigo"></span><br><b tal:content="produto/nome"></b></td>
+		<td tal:content="produto/quantidade" align="center"></td>
+		<td><a tal:attributes="href string:javascript:delProduto(${produto/id})">[X]</a></td>
+	</tr>
+</table>
+<form id="mainForm">
+	<input type="hidden" id="produto_id">
+	<fieldset class="module">
+		<legend>Produto:</legend>
+		<div class="form-row">
+			<label for="codigo">Código:</label>
+			<input type="text" id="codigo" size=13 maxlength=13 onchange="javacript: onProdutoChange()" onkeyup="javascript: onProdutoKeyUp()"/><br>
+		</div>
+		<div class="form-row">
+			<label for="nome">Descrição:</label>
+			<span id="nome"></span>
+		</div>
+		<div class="form-row">
+			<label for="quantidade">Quantidade:</label>
+			<input type="text" id="quantidade" value="1" size=13 maxlength=9 />
+		</div>
+	</fieldset>
+	<input type="button" value="Registrar" onclick="javascript: return addProduto()"/>
+	<input type="reset" value="Limpar" onclick="javascript: resetForm();"/>
+</form>
+</div>
+</body>
+</html>

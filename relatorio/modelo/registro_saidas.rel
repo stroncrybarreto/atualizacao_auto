@@ -1,0 +1,67 @@
+<relatorio dados="registro_entradas_saidas_main" docname="Registro de Saidas">
+<apelidos>
+</apelidos>
+<detalhe>
+</detalhe>
+<subrelat dados="registro_saidas">
+<apelidos>
+1  rel_posto_nome	 tam=60
+2  rel_data_hora	 tam=18
+3  dt_entrada_ini    tam=10                    fmt=data
+4  dt_entrada_fim    tam=10                    fmt=data
+5  empresa_nome	     tam=191    alinha=centro
+6  cpf               tam=191    alinha=centro
+7  inscr_est         tam=191    alinha=centro
+8  seriesubserie     tam=10
+9  numero            tam=15     alinha=direita
+10  data_movto       tam=10                    fmt=data
+11  valor_item       tam=13     alinha=direita fmt=float2
+12  cfop             tam=6      alinha=direita
+13  base_icms        tam=12     alinha=direita fmt=float2
+14  valor_icms       tam=12     alinha=direita fmt=float2
+15  aliquota         tam=5      alinha=centro  fmt=float2
+16  base_subst       tam=12     alinha=direita fmt=float2
+17  valor_subst      tam=12     alinha=direita fmt=float2
+18  isento           tam=12     alinha=direita fmt=float2
+19  outras           tam=12     alinha=direita fmt=float2
+20  obs              tam=52 
+21  total_valor      tam=13     alinha=direita fmt=float2 func=soma	campo=valor_item
+22  total_bicms      tam=12     alinha=direita fmt=float2 func=soma	campo=base_icms
+23  total_icms       tam=12     alinha=direita fmt=float2 func=soma	campo=valor_icms
+24  total_bsubst     tam=12     alinha=direita fmt=float2 func=soma	campo=base_subst
+25  total_subst      tam=12     alinha=direita fmt=float2 func=soma	campo=valor_subst
+26  total_isubst     tam=12     alinha=direita fmt=float2 func=soma	campo=isento
+27  total_osubst     tam=12     alinha=direita fmt=float2 func=soma	campo=outras
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                                                                #2        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                               R E G I S T R O   D E   S A I D A S 
+
+ #5
+ #6
+ #7
+                                                                                 Período: #3         a #4
+
++-----------------------------------------------------+---------------+--------+-------------------------------------+-----------------------------+--------------+--------------+------------------------------------------------------+
+|                  Documentos Fiscais                 |               |        |                 ICMS                |        Substituição         |              |              |                                                      |
++---------+------------+-----------------+------------+               |        +--------------+--------------+-------+--------------+--------------+              |              |                                                      |
+|         |            |                 |            |     Valor     |  CFOP  |              |              |       |              |              |    Isentos   |    Outros    |                                                      |
+| Espécie |   Série    |      Número     |    Data    |    Contábil   |        |     Base     |     Valor    | Aliq. |     Base     |     Valor    |              |              |                    Observações                       |
+|         | Sub-série  |                 |            |               |        |              |              |       |              |              |              |              |                                                      |
++---------+------------+-----------------+------------+---------------+--------+--------------+--------------+-------+--------------+--------------+--------------+--------------+------------------------------------------------------+
+</cab_pagina>
+<detalhe>
+| CF      | #8         | #9              | #10        | #11           | #12    | #13          | #14          | #15   | #16          | #17          | #18          | #19          | #20                                                  |
+</detalhe>
+<rod_relat>
++---------+------------+-----------------+------------+---------------+--------+--------------+--------------+-------+--------------+--------------+-----------------------------+------------------------------------------------------+
+|                                         Total geral | #21           |        | #22          | #23          |       | #24          | #25          | #26          | #27          |                                                      |
++-----------------------------------------------------+---------------+--------+--------------+--------------+-------+--------------+--------------+-----------------------------+------------------------------------------------------+
+</rod_relat>
+</subrelat>
+
+<hash>65b9db9bf063e2cc11e1c0c9f25566e0</hash>
+</relatorio>
+

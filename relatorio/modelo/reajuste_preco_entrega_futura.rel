@@ -1,0 +1,36 @@
+<relatorio dados="reajuste_preco_entrega_futura">
+<apelidos>
+1  rel_posto_nome			tam=50
+2  rel_data_hora			tam=18
+3  cliente_codigo_nome	tam=35
+4  produto_nome				tam=40
+5  preco_atual				tam=10	fmt=float2	alinha=direita
+6  preco_novo				tam=10	fmt=float2	alinha=direita
+10 total					tam=10	func=contar	campo=produto	
+99 titulo              tam=120  alinha=centro   expr="REAJUSTE DE PREÇO DE ENTREGA FUTURA"
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                     #2
+-----------------------------------------------------------------------------------------------------------------------
+
+#99                            
+
++-----------------------------------------+-------------------------------------------------+------------+------------+
+|                 Cliente                 |                     Produto                     | Pr. antigo |  Pr. novo  |
++-----------------------------------------+-------------------------------------------------+------------+------------+
+</cab_pagina>
+
+<detalhe>
+| #3                                      | #4                                              | #5         | #6         |
+</detalhe>
+
+<rod_relat>
++-----------------------------------------+-------------------------------------------------+------------+------------+
+| Total de clientes alterados                                                                              #10        |
++---------------------------------------------------------------------------------------------------------------------+
+</rod_relat>
+
+
+<hash>29aab1398a5e0bdd1ecb75d16c5a0047</hash>
+</relatorio>

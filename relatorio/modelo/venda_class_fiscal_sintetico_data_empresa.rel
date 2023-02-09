@@ -1,0 +1,55 @@
+<relatorio dados="venda_class_fiscal_sintetico" ordem="empresa_nome,data">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  titulo              tam=75  alinha=centro
+4  data                tam=15  fmt=data
+7  class_cod_nome      tam=40
+8  valor               tam=14  fmt=float2
+9  sub_data            tam=14  fmt=float2  func=soma  campo=valor  grupo=2
+10 total               tam=14  fmt=float2
+11 empresa_cod_nome    tam=62
+12 tot_emp_valor       tam=14  fmt=float2  func=soma  campo=valor  grupo=1
+</apelidos>
+<cab_pagina>
+#1                                                         #2                 
+---------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++-------------------------------------------------------------------------+
+| Empresa: #11                                                            |
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,data">
++-------------------------------------------------------------------------+
+| Data: #4                                                                |
++--------------------------------------------------------+----------------+
+|                  Classificação fiscal                  |      Valor     |
++--------------------------------------------------------+----------------+
+</cab_grupo>
+<detalhe>
+| #7                                                     | #8             |
+</detalhe>
+<rod_grupo nome="2">
++--------------------------------------------------------+----------------+
+| Subtotal                                               | #9             |
++--------------------------------------------------------+----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total empresa                                          | #12            |
++--------------------------------------------------------+----------------+
+
+</rod_grupo>
+<rod_relat>
++--------------------------------------------------------+----------------+
+| Total geral                                            | #10            |
++--------------------------------------------------------+----------------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>a9f1cf409563a3b75fae78092a49215c</hash>
+</relatorio>

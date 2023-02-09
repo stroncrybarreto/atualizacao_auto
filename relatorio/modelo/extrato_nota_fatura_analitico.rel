@@ -1,0 +1,70 @@
+<relatorio dados="extrato_nota_fatura">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  titulo1					tam=103	alinha=centro
+4  titulo2					tam=103	alinha=centro
+5  pessoa_codigo			tam=6 	fmt=%d
+6  pessoa_nome				tam=45
+7  tipo_nome				tam=20
+8  documento				tam=9   alina=centro
+9  tipo_data				tam=10	fmt=data 
+10 motivo_nome				tam=40
+11 vencto					tam=10	fmt=data
+12 valor					tam=13	fmt=float2
+13 total_tipo				tam=13	fmt=float2
+14 total_nota				tam=13	fmt=float2
+15 total_fatura				tam=13	fmt=float2
+16 total_pessoa				tam=13	fmt=float2
+17 total_geral_nota			tam=13	fmt=float2
+18 total_geral_fatura		tam=13	fmt=float2
+19 total_geral				tam=13	fmt=float2
+99 titulo                   tam=103 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                     #2              
+-------------------------------------------------------------------------------------------------------
+
+#99
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa">
++-----------------------------------------------------------------------------------------------------+
+| Cliente: #5     - #6                                                                                |
++-----------+-----------------+------------------------------------------+------------+---------------+
+| Documento |      Data       |                 Motivo                   | Vencimento |     Valor     |
++-----------+-----------------+------------------------------------------+------------+---------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="pessoa,tipo">
+| Tipo: #7                                                                                            |
+</cab_grupo>
+<detalhe>
+| #8        |    #9           | #10                                      | #11        | #12           |
+</detalhe>
+<rod_grupo nome="2">
++-----------+-----------------+------------------------------------------+------------+---------------+
+| Total                                                                               | #13           |
+</rod_grupo>
+<rod_grupo nome="1">
++-------------------------------------------------------------------------------------+---------------+
+| Total do cliente                                                                    | #16           |
++-------------------------------------------------------------------------------------+---------------+
+
+</rod_grupo>
+
+<rod_pagina>
++-----------+-----------------+------------------------------------------+------------+---------------+
+</rod_pagina>
+
+<rod_relat>
+
++-------------------------------------------------------------------------------------+---------------+
+| Total de notas                                                                      | #17           |
+| Total de faturas                                                                    | #18           |
+| Total geral                                                                         | #19           |
++-------------------------------------------------------------------------------------+---------------+
+</rod_relat>
+
+<hash>aacfa7e124c57ef64c7ee7d6a8f882af</hash>
+</relatorio>

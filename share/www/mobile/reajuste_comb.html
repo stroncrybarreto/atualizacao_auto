@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>ASMobile</title>
+	</head>
+	<body style="width: 310px">
+		<form method="POST" action="/do_reajuste_comb/">
+			<img src="../images/topo_2.jpg" width="310" height="71" alt="">
+			<h3 style="color:#302663;">Reajuste de combustíveis</h3>
+			<span style="color:#302663;">Selecione o combustível</span>
+			<select style="width: 290px;" name="combustivel">
+				<option tal:repeat="combustivel combustivel_list" tal:attributes="value combustivel/grid" tal:content="combustivel/nome"></option>
+			</select>
+			<td style="text-align:center;"><input type="submit" name="bt_confirmar" value="Confirmar"> </td>
+
+			<img src="../images/base_2.jpg" width="310" height="24" alt="">
+		</form>
+	</body>
+</html>

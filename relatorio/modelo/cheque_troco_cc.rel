@@ -1,0 +1,54 @@
+<relatorio dados="cheque_troco" font_size="x-small">
+<apelidos>
+1  rel_posto_nome          tam=60
+2  rel_data_hora           tam=18
+3  cheque_empresa	   tam=32
+4  cheque_numero	   tam=6
+5  cheque_conta_corrente   tam=40
+6  cheque_responsavel	   tam=28
+7  cheque_valor		   tam=12	fmt=%.02f alinha=direita
+8  cheque_data_emissao	   tam=10	fmt=data	
+9  baixado		   tam=2
+10 cheque_total		   tam=7
+11 cheque_conta_codigo	   tam=4
+12 filtro1		   tam=115	alinha=centro
+13 filtro2		   tam=115	alinha=centro
+14 nrs_cheques               tam=30
+15 vls_cheques               tam=35    alinha=direita
+16 nrs_cheques_totais        tam=30
+17 vls_cheques_totais        tam=35    alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                #2                     
+-------------------------------------------------------------------------------------------------------------------
+ 
+                            RELATORIO DE CHEQUE TROCO - Agrupado por Conta Corrente
+#12
+#13
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="cheque_conta_corrente">
++-----------------------------------------------------------------------------------------------------------------+
+| Conta Corrente: #5                                                                                              |
++------+----------------------------------+--------+------------------------------+--------------+------------+---+
+| C/C  | Empresa                          | Número | Responsável                  | Valor        | Data Emiss | B |
++------+----------------------------------+--------+------------------------------+--------------+------------+---+
+</cab_grupo>
+<detalhe>
+| #11  | #3                               | #4     | #6                           | #7           | #8         | #9|
+</detalhe>
+<rod_grupo nome="1">
++------+----------------------------------+--------+------------------------------+---------------+-----------+---+
+| Total/Baixa/Pend.: #14                           | Valor Total/Baixa/Pend.: #15                                 |
++--------------------------------------------------+--------------------------------------------------------------+
+
+</rod_grupo>
+
+<rod_relat>
++--------------------------------------------------+--------------------------------------------------------------+
+| Total/Baixa/Pend.: #16                           | Valor Total/Baixa/Pend.: #17                                 |
++--------------------------------------------------+--------------------------------------------------------------+
+</rod_relat>
+
+<hash>3b11ed4fb78fef0952ce1e50dbcd5577</hash>
+</relatorio>

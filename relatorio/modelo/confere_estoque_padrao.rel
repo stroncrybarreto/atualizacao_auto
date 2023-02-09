@@ -1,0 +1,59 @@
+<relatorio dados="confere_estoque">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+4  subtitulo            tam=130 alinha=centro
+5  empresa_cod_nome		tam=60
+6  grupo_cod_nome		tam=40
+7  codigo				tam=6  alinha=centro
+8  nome					tam=30
+9  anterior   			tam=9   
+10 entrada    			tam=9   
+11 saida				tam=9
+12 atual               	tam=9   expr=(anterior+entrada-saida)
+13 turno               	tam=3
+15 codigo_barra         tam=15  alinha=centro
+16 titulo_principal     tam=130 expr='CONFERÊNCIA DE ESTOQUE' alinha=centro
+17 padrao               tam=6   
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#16                                                  
+#4
+
+</cab_pagina>
+  
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1" repeticao="1">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                                    |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="grupo_cod_nome">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Grupo produto: #6                                                                                                              |
++--------+--------------------------------+-----------+-----------+-----------+-----------+--------+----------+------------------+
+| Código |             Produto            | Anterior  |  Entrada  |   Saída   |   Atual   | Padrão | Contagem | Código de barras |
++--------+--------------------------------+-----------+-----------+-----------+-----------+--------+----------+------------------+
+</cab_grupo>
+
+<detalhe>
+| #7     | #8                             | #9        | #10       | #11       | #12       | #17    | ________ | #15              |
+</detalhe>
+
+<rod_grupo nome="2">
++--------+--------------------------------+-----------+-----------+-----------+-----------+--------+----------+------------------+
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
++--------+--------------------------------+-----------+-----------+-----------+-----------+--------+----------+------------------+
+</rod_pagina>
+
+<hash>6cc9181d75ec485fafe4b81db52052bb</hash>
+</relatorio>

@@ -1,0 +1,117 @@
+<relatorio dados="detalhamento_fatura_main">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  titulo1				tam=136    alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                     #2
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                                                        DETALHAMENTO DE FATURAS
+
+#3
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="detalhamento_fatura" tamfonte="8">
+<apelidos>
+3  cliente_codigo		tam=8
+4  cliente_nome			tam=40
+5  cliente_cpf			tam=18
+6  fatura_documento		tam=8
+7  fatura_data			tam=10	fmt=data
+8  fatura_vencto		tam=10	fmt=data
+9  nota_documento		tam=6
+10 nota_data			tam=10	fmt=data
+11 nota_placa			tam=8
+12 produto_quantidade	tam=7	fmt=%.02f
+13 nota_km_ini			tam=9	fmt=%.01f
+14 nota_km_fim			tam=9	fmt=%.01f
+15 nota_km_litro		tam=5	fmt=%.01f
+16 produto_nome			tam=25
+17 produto_valor		tam=10	fmt=%.02f
+18 placa_litros			tam=8	fmt=%.02f
+19 placa_km_litro		tam=5	fmt=%.01f
+20 placa_valor			tam=10	fmt=%.02f
+21 fatura_litros		tam=8	fmt=%.02f
+22 total_valor			tam=10	fmt=%.02f
+23 produto_preco_unit	tam=8	fmt=%.03f
+24 valor_tabela			tam=8	fmt=%.02f
+25 preco_tabela			tam=8   fmt=%.03f
+26 subtotal_tabela		tam=10  fmt=%.02f
+27 total_tabela			tam=10  fmt=%.02f
+28 nota_fiscal_cupom	tam=10
+29 nota_fiscal_fatura	tam=10
+</apelidos>
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="1" quebra="fatura_grid">
++-------------------------------------------------------------------------------------------------------------------------------------+
+| Cliente...: #3       - #4                                                                   CPF/CNPJ: #5                            |
+| Fatura nr.: #6       Emissão: #7            Vencimento: #8                                                                        |
++-------------------------------------------------------------------------------------------------------------------------------------+
+| N.Nota  Dt Emissão  Placa      Qtde  Km Inic.   Km final   Km/Lt  Produto                  Pr. Unit    Vl. Item   Pr. Tab  Vl. Tab. |
++-------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="fatura_grid,nota_placa">
+</cab_grupo>
+
+<detalhe>
+| #9      #10         #11      #12     #13         #14        #15    #16                     #23       #17         #25      #24       |
+</detalhe>
+
+<rod_grupo nome="2">
+| Subtotal placa litros comb.: #18                                                     Subtotal valor: #20         Tabela:#26         |
+|                                                                                                                                     |
+</rod_grupo>
+
+<rod_grupo nome="1">
++-------------------------------------------------------------------------------------------------------------------------------------+
+| Total litros combustivel...: #21                                                     Valor total...: #22        Tabela..:#27        |
++-------------------------------------------------------------------------------------------------------------------------------------+
+
+</rod_grupo>
+<rod_relat>
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+</subrelat>
+
+<subrelat dados="detalhamento_fatura_resumo_agrupa_mercadoria" tamfonte="8">
+<apelidos>
+1  produto_nome		    tam=30
+2  quantidade			tam=10	fmt=float3
+3  valor                tam=15	fmt=float2
+4  cliente_nome         tam=60
+5  valor_tabelado       tam=15	fmt=float2
+6  preco_unit			tam=10  fmt=float3
+</apelidos>
+
+<cab_relat>
++-----------------------------------------------------------------------------------------------+ 
+| Resumo cliente: #4                                                                            |
++--------------------------------+------------+-------------+-----------------+-----------------+  
+| Descrição                      | Preco Unit | Quantidade  |      Valor      | Valor Tabelado  |
++--------------------------------+------------+-------------+-----------------+-----------------+
+</cab_relat>
+<detalhe>
+| #1                             | #6         | #2          | #3              | #5              |
+</detalhe>
+<rod_relat>
++--------------------------------+------------+-------------+-----------------+-----------------+
+
+</rod_relat>
+<rod_pagina>
++--------------------------------+------------+-------------+-----------------+-----------------+
+</rod_pagina>
+</subrelat>
+
+
+<hash>dcd49ba0298f00a73b50c009c3881538</hash>
+</relatorio>

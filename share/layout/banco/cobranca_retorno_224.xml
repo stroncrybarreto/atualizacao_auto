@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>cnab400 - Fibra</nome>
+
+  <sessao>
+    <nome>header</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>int</tipo>
+      <padrao>0</padrao>
+    </registro>
+  
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>arquivo_id</chave>
+      <tipo>int</tipo>
+      <padrao>2</padrao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>9</fim>
+      <chave>retorno_literal</chave>
+      <tipo>string</tipo>
+      <padrao>RETORNO</padrao>
+    </registro>
+
+    <registro>
+      <inicio>10</inicio>
+      <fim>11</fim>
+      <chave>servico_codigo</chave>
+      <tipo>integer</tipo>
+      <padrao>01</padrao>
+    </registro>
+
+    <registro>
+      <inicio>12</inicio>
+      <fim>26</fim>
+      <chave>servico_literal</chave>
+      <tipo>string</tipo>
+      <padrao>COBRANCA</padrao>
+    </registro>
+
+    <registro>
+      <inicio>27</inicio>
+      <fim>46</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+	
+    <registro>
+      <inicio>47</inicio>
+      <fim>76</fim>
+      <chave>empresa_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+	
+    <registro>
+      <inicio>77</inicio>
+      <fim>79</fim>
+      <chave>banco</chave>
+      <tipo>int</tipo>
+      <padrao>422</padrao>
+    </registro>
+  
+    <registro>
+      <inicio>80</inicio>
+      <fim>94</fim>
+      <chave>banco_nome</chave>
+      <tipo>string</tipo>
+      <padrao>SAFRA</padrao>
+    </registro>
+  
+    <registro>
+      <inicio>95</inicio>
+      <fim>100</fim>
+      <chave>data_geracao</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>101</inicio>
+      <fim>105</fim>
+      <chave>densidade</chave>
+      <tipo>integer</tipo>
+      <padrao>01600</padrao>
+    </registro>
+
+    <registro>
+      <inicio>106</inicio>
+      <fim>108</fim>
+      <chave>densidade_un</chave>
+      <tipo>string</tipo>
+      <padrao>BPI</padrao>
+    </registro>
+
+    <registro>
+      <inicio>109</inicio>
+      <fim>113</fim>
+      <chave>retorno_numero_seq</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_seq</chave>
+      <tipo>int</tipo>
+      <padrao>1</padrao>
+    </registro>
+		
+  </sessao>
+
+  <sessao>
+	<nome>transacao_tipo_1</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>integer</tipo>
+      <padrao>1</padrao>
+    </registro>
+
+    <registro>
+      <inicio>2</inicio>
+      <fim>3</fim>
+      <chave>empresa_tipo_inscr</chave>
+	  <tipo>integer</tipo>
+      <padrao>02</padrao>
+    </registro>
+
+    <registro>
+      <inicio>4</inicio>
+      <fim>17</fim>
+      <chave>empresa_inscricao</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>18</inicio>
+      <fim>37</fim>
+      <chave></chave>
+	  <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>38</inicio>
+      <fim>62</fim>
+      <chave>seu_numero</chave>
+	  <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>63</inicio>
+      <fim>70</fim>
+      <chave>nosso_numero</chave>
+	  <tipo>integer</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>83</inicio>
+      <fim>85</fim>
+      <chave>nossa_carteira</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>86</inicio>
+      <fim>94</fim>
+      <chave>nosso_numero_com_dv</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>95</inicio>
+      <fim>107</fim>
+      <chave>nosso_numero_correspondente</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>108</inicio>
+      <fim>108</fim>
+      <chave>carteira</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+    
+    <registro>
+      <inicio>109</inicio>
+      <fim>110</fim>
+      <chave>ocorrencia</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+    </registro>
+  
+    <registro>
+      <inicio>111</inicio>
+      <fim>116</fim>
+      <chave>ocorrencia_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>117</inicio>
+      <fim>126</fim>
+	  <chave>seu_nomero</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+  
+    <registro>
+      <inicio>127</inicio>
+	  <fim>134</fim>
+      <chave>nosso_numero</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+    </registro>
+  
+    <registro>
+      <inicio>147</inicio>
+      <fim>152</fim>
+      <chave>boleto_info_vencto</chave>
+	  <tipo>data</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>153</inicio>
+      <fim>165</fim>
+      <chave>boleto_info_valor</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>166</inicio>
+      <fim>168</fim>
+      <chave>banco</chave>
+      <tipo>integer</tipo>
+      <padrao>237</padrao>
+    </registro>
+	
+    <registro>
+      <inicio>169</inicio>
+	  <fim>172</fim>
+      <chave>agencia_cobranca</chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+    </registro>
+
+    <registro>
+      <inicio>173</inicio>
+	  <fim>173</fim>
+      <chave>dv_agencia_cobranca</chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+    </registro>
+
+    <registro>
+      <inicio>174</inicio>
+      <fim>175</fim>
+      <chave>boleto_info_especie</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+  
+    <registro>
+      <inicio>176</inicio>
+      <fim>188</fim>
+      <chave>tarifa_cobranca</chave>
+      <tipo>float2</tipo>
+      <padrao>0</padrao>
+    </registro>
+
+    <registro>
+      <inicio>215</inicio>
+      <fim>227</fim>
+      <chave>iof_op_seguro</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+  
+    <registro>
+      <inicio>228</inicio>
+      <fim>240</fim>
+      <chave>x_valor_abatimento</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+ 
+    <registro>
+      <inicio>241</inicio>
+      <fim>253</fim>
+      <chave>x_valor_desconto</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>254</inicio>
+      <fim>266</fim>
+      <chave>sacado_valor_pago</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+ 
+    <registro>
+      <inicio>267</inicio>
+      <fim>279</fim>
+      <chave>sacado_valor_juros_mora_pago</chave>
+      <tipo>float2</tipo>
+      <padrao></padrao>
+    </registro>
+ 
+    <registro>
+      <inicio>280</inicio>
+      <fim>292</fim>
+      <chave></chave>
+	  <tipo>integer</tipo>
+      <padrao>0</padrao>
+    </registro>
+
+    <registro>
+      <inicio>293</inicio>
+      <fim>376</fim>
+      <chave></chave>
+	  <tipo>string</tipo>
+	  <padrao> </padrao>
+    </registro>
+
+    <registro>
+      <inicio>377</inicio>
+      <fim>377</fim>
+      <chave>moeda</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+    </registro>
+ 
+    <registro>
+      <inicio>378</inicio>
+	  <fim>385</fim>
+      <chave>retorno_erro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+  </registro>
+
+    <registro>
+      <inicio>386</inicio>
+	  <fim>391</fim>
+      <chave>credito_data</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+  </registro>
+
+    <registro>
+      <inicio>392</inicio>
+      <fim>394</fim>
+	  <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>0</padrao>
+    </registro>
+  
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+	  <chave>x_numero_registro</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+  
+  </sessao>
+
+  <sessao>
+	
+	<nome>trailler</nome>
+  
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>registro_id</chave>
+      <tipo>int</tipo>
+      <padrao>9</padrao>
+    </registro>
+  
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>retorno_id</chave>
+      <tipo>int</tipo>
+      <padrao>2</padrao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>4</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>01</padrao>
+    </registro>
+
+    <registro>
+      <inicio>5</inicio>
+      <fim>7</fim>
+      <chave>banco</chave>
+      <tipo>int</tipo>
+      <padrao>237</padrao>
+    </registro>
+
+	<registro>
+      <inicio>8</inicio>
+	  <fim>105</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</padrao>
+    </registro>
+
+	<registro>
+      <inicio>106</inicio>
+      <fim>394</fim>
+      <chave></chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+    </registro>
+
+    <registro>
+      <inicio>395</inicio>
+      <fim>400</fim>
+      <chave>registro_numero_seq</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+    </registro>
+  
+  </sessao>
+
+</layout>

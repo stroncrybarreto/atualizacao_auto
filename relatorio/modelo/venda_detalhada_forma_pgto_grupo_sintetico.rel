@@ -1,0 +1,83 @@
+<relatorio dados="venda_detalhada" tamfonte="8" ordem="forma_pgto,grupo_nome,grid_grupo">
+<apelidos>
+1  rel_posto_nome	      tam=60
+2  rel_data_hora	      tam=18
+3  subtitulo              tam=130	             alinha=centro
+4  data			          tam=10	fmt=data
+5  hora			          tam=5
+6  bico			          tam=4	                 alinha=centro
+7  produto_nome		      tam=26
+8  quantidade		      tam=12	fmt=float2
+9  preco_unit		      tam=9	    fmt=float3
+10 valor		          tam=12	fmt=float2
+11 forma_pgto		      tam=109
+13 quant_total		      tam=10    fmt=float2
+14 valor_total		      tam=10    fmt=float2
+15 titulo       	      tam=130	             alinha=centro
+16 total_quantidade	      tam=10	fmt=float2
+17 total_valor		      tam=10	fmt=float2
+18 nr_cupom			      tam=8                  alinha=centro
+19 hora_abastec  	      tam=5  
+22 grid_grupo             tam=10
+23 forma_nome             tam=40
+24 grupo_nome             tam=50       
+25 total_grupo_qtd        tam=14    fmt=float3    func=soma  campo=quantidade     grupo=2
+26 total_pgto_qtd         tam=14    fmt=float3    func=soma  campo=quantidade     grupo=1
+27 total_geral_qtd        tam=14    fmt=float3    func=soma  campo=quantidade
+28 total_grupo_valor      tam=14    fmt=float2    func=soma  campo=valor          grupo=2
+29 total_pgto_valor       tam=14    fmt=float2    func=soma  campo=valor          grupo=1
+30 total_geral_valor      tam=14    fmt=float2    func=soma  campo=valor
+
+31 desconto                tam=8    fmt=float2
+32 acrescimo               tam=9    fmt=float2
+33 valor_bruto             tam=13   fmt=float2
+34 sub_total_desconto      tam=8    fmt=float2 func=soma campo=desconto    grupo=2
+35 sub_total_acrescimo     tam=9    fmt=float2 func=soma campo=acrescimo   grupo=2
+36 sub_total_valor_bruto   tam=13   fmt=float2 func=soma campo=valor_bruto grupo=2
+37 total_desconto          tam=8    fmt=float2 func=soma campo=desconto    grupo=1
+38 total_acrescimo         tam=9    fmt=float2 func=soma campo=acrescimo   grupo=1
+39 total_valor_bruto       tam=13   fmt=float2 func=soma campo=valor_bruto grupo=1
+40 total_geral_desconto    tam=8    fmt=float2 func=soma campo=desconto
+41 total_geral_acrescimo   tam=9    fmt=float2 func=soma campo=acrescimo
+42 total_geral_valor_bruto tam=13   fmt=float2 func=soma campo=valor_bruto
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+ 
+#15
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="forma_pgto">
++--------------------------------------------------------------------------------------------------------------------------------+
+| Forma pagamento: #11                                                                                                           |
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+|                     Grupo produto                     |   Quantidade   |  Valor bruto  | Desconto | Acréscimo |  Valor liquído |
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="forma_pgto,grupo_nome,grid_grupo">
+</cab_grupo>
+<detalhe>
+</detalhe>
+<rod_grupo nome="2">
+| #24                                                   | #25            | #36           | #34      | #35       | #28            |
+</rod_grupo>
+<rod_grupo nome="1">
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+| Total                                                 | #26            | #39           | #37      | #38       | #29            |
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+
+</rod_grupo>
+<rod_relat>
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+| Total geral                                           | #27            | #42           | #40      | #41       | #30            |
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------+----------------+---------------+----------+-----------+----------------+
+</rod_pagina>
+
+<hash>caef5b610006e9b1f752acf55bb47f81</hash>
+</relatorio>

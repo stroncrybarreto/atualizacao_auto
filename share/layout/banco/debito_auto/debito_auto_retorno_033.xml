@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>debito_automatico_santander_remessa</nome>
+
+  <sessao>
+    <nome>arquivo_header</nome>
+    <id>"A" - HEADER</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>cod_registro</chave>
+      <tipo>text</tipo>
+      <padrao>A</padrao>
+      <descricao>Codigo do registro A</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>2</fim>
+      <chave>lote</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Codigo da Remessa</descricao>
+    </registro>
+    <registro>
+      <inicio>3</inicio>
+      <fim>22</fim>
+      <chave>convenio</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>Codigo do convênio</descricao>
+    </registro>
+    <registro>
+      <inicio>23</inicio>
+      <fim>42</fim>
+      <chave>empresa_nome</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>Nome da empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>43</inicio>
+      <fim>45</fim>
+      <chave>banco</chave>
+      <tipo>integer</tipo>
+      <padrao>A</padrao>
+      <descricao>Codigo do banco</descricao>
+    </registro>
+    <registro>
+      <inicio>46</inicio>
+      <fim>65</fim>
+      <chave>banco_nome</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>Nome do Banco</descricao>
+    </registro>
+    <registro>
+      <inicio>66</inicio>
+      <fim>73</fim>
+      <chave>data_geracao</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+      <descricao>Data de geracao do arquivo</descricao>
+    </registro>
+    <registro>
+      <inicio>74</inicio>
+      <fim>79</fim>
+      <chave>numero_retorno</chave>
+      <tipo>integer</tipo>
+      <padrao>04</padrao>
+      <descricao>NSA.</descricao>
+    </registro>
+    <registro>
+      <inicio>80</inicio>
+      <fim>81</fim>
+      <chave></chave>
+      <tipo>integer</tipo>
+      <padrao>04</padrao>
+      <descricao>Versao do Layout</descricao>
+    </registro>
+    <registro>
+      <inicio>82</inicio>
+      <fim>98</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>DÉBITO AUTOMATICO</padrao>
+      <descricao>Identificação do Serviço</descricao>
+    </registro>
+    <registro>
+      <inicio>99</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>Reservado</descricao>
+    </registro>
+  </sessao>
+  <sessao>
+    <nome>segmento_b</nome>
+    <id>"B" - CADASTRAMENTO DE DÉBITO AUTOMÁTICO</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>B</padrao>
+      <descricao>Codigo do registro B</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>26</fim>
+      <chave>x_sacado_nome</chave>
+      <tipo>text</tipo>
+      <padrao>A</padrao>
+      <descricao>identificao do cliente na empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>27</inicio>
+      <fim>30</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>agencia</padrao>
+      <descricao>Codigo da agencia para debito</descricao>
+    </registro>
+    <registro>
+      <inicio>31</inicio>
+      <fim>44</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>A</padrao>
+      <descricao>Identificao do cliente no banco</descricao>
+    </registro>
+    <registro>
+      <inicio>45</inicio>
+      <fim>52</fim>
+      <chave>data_opcao</chave>
+      <tipo>data4y</tipo>
+      <padrao></padrao>
+      <descricao>Data de opcao: 1 - Exclusao 2 - Inclusao</descricao>
+    </registro>
+    <registro>
+      <inicio>53</inicio>
+      <fim>149</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>Reservado</descricao>
+    </registro>
+    <registro>
+      <inicio>150</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>A</padrao>
+      <descricao>Codigo do movimento 1 - Exclusão de optantes debito automatico ou 2 - Inclusão de optantes.</descricao>
+    </registro>
+  </sessao>
+  <sessao>
+    <nome>segmento_f</nome>
+    <id>"F" - RETORNO DO DÉBITO AUTOMÁTICO</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave>cod_registro</chave>
+      <tipo>string</tipo>
+      <padrao>F</padrao>
+      <descricao>Codigo do registro F</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>26</fim>
+      <chave>x_sacado_nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>identificao do cliente na empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>27</inicio>
+      <fim>30</fim>
+      <chave>agencia</chave>
+      <tipo>string</tipo>
+      <padrao>agencia</padrao>
+      <descricao>Codigo da agencia para debito</descricao>
+    </registro>
+    <registro>
+      <inicio>31</inicio>
+      <fim>44</fim>
+      <chave>cliente</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Identificao do cliente no banco</descricao>
+    </registro>
+    <registro>
+      <inicio>45</inicio>
+      <fim>52</fim>
+      <chave>data_vencto</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+      <descricao>data do vencimento</descricao>
+    </registro>
+    <registro>
+      <inicio>53</inicio>
+      <fim>67</fim>
+      <chave>valor</chave>
+      <tipo>float</tipo>
+      <padrao></padrao>
+      <descricao>valor do titulo</descricao>
+    </registro>
+    <registro>
+      <inicio>68</inicio>
+      <fim>69</fim>
+      <chave>ocorrencia</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>codigo do retorno</descricao>
+    </registro>
+    <registro>
+      <inicio>70</inicio>
+      <fim>129</fim>
+      <chave>debito_auto</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+      <descricao>uso da empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>130</inicio>
+      <fim>149</fim>
+      <chave>banco_ocorrencia</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>reservado para o futuro</descricao>
+    </registro>
+    <registro>
+      <inicio>150</inicio>
+      <fim>150</fim>
+      <chave>cod_movto</chave>
+      <tipo>int</tipo>
+      <padrao></padrao>
+      <descricao>codigo do movimento</descricao>
+    </registro>
+  </sessao>
+  <sessao>
+    <nome>segmento_h</nome>
+    <id>"H" - OCORRÊNCIA DE ALTERAÇÃO DE CONTROLE DA EMPRESA</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao>H</padrao>
+      <descricao>codigo do registro H</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>26</fim>
+      <chave>x_sacado_nome</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>identificao do cliente na empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>27</inicio>
+      <fim>30</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>agencia</padrao>
+      <descricao>Codigo da agencia para debito</descricao>
+    </registro>
+    <registro>
+      <inicio>31</inicio>
+      <fim>44</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>Identificao do cliente no banco</descricao>
+    </registro>
+    <registro>
+      <inicio>45</inicio>
+      <fim>52</fim>
+      <chave>data_vencto</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+      <descricao>data de vencimento/debito</descricao>
+    </registro>
+    <registro>
+      <inicio>53</inicio>
+      <fim>67</fim>
+      <chave></chave>
+      <tipo>float</tipo>
+      <padrao></padrao>
+      <descricao>Identificao do cliente no banco</descricao>
+    </registro>
+    <registro>
+      <inicio>68</inicio>
+      <fim>69</fim>
+      <chave></chave>
+      <tipo>x_instrucao_banco</tipo>
+      <padrao></padrao>
+      <descricao>codigo do retorno do banco</descricao>
+    </registro>
+    <registro>
+      <inicio>70</inicio>
+      <fim>129</fim>
+      <chave></chave>
+      <tipo>informacao1</tipo>
+      <padrao></padrao>
+      <descricao>mensagem da empresa</descricao>
+    </registro>
+    <registro>
+      <inicio>130</inicio>
+      <fim>149</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao></padrao>
+      <descricao>reservado para o futuro, opcional para identifcar o codigo de retorno da ocorrencia nas posicoes 148 e 149</descricao>
+    </registro>
+    <registro>
+      <inicio>148</inicio>
+      <fim>149</fim>
+      <chave></chave>
+      <tipo>retorno_banco</tipo>
+      <padrao></padrao>
+      <descricao>codigo do retorno do banco</descricao>
+    </registro>
+    <registro>
+      <inicio>150</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo></tipo>
+      <padrao></padrao>
+      <descricao>codigo do movimento</descricao>
+    </registro>
+  </sessao>
+    <sessao>
+    <nome>segmento_j</nome>
+    <id>"J" - CONFIRMA O PROCESSAMENTO DE ARQUIVO</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>J</padrao>
+      <descricao>codigo do registro J</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>7</fim>
+      <chave>numero_remessa</chave>
+      <tipo>text</tipo>
+      <padrao>J</padrao>
+      <descricao>NSA</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>7</fim>
+      <chave>numero_remessa</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>NSA</descricao>
+    </registro>
+    <registro>
+      <inicio>8</inicio>
+      <fim>15</fim>
+      <chave>data_geracao</chave>
+      <tipo>data</tipo>
+      <padrao>J</padrao>
+      <descricao>data de geracao do arquivo;</descricao>
+    </registro>
+    <registro>
+      <inicio>16</inicio>
+      <fim>21</fim>
+      <chave>x_quantidade_registro_lote</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>total de registro gerados</descricao>
+    </registro>
+    <registro>
+      <inicio>22</inicio>
+      <fim>38</fim>
+      <chave>x_valor_total</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>valor total gerado pelo campo Z03 </descricao>
+    </registro>
+    <registro>
+      <inicio>39</inicio>
+      <fim>46</fim>
+      <chave>x_data_processamento</chave>
+      <tipo>data</tipo>
+      <padrao></padrao>
+      <descricao>total de registro gerados</descricao>
+    </registro>
+    <registro>
+      <inicio>47</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>reservado</descricao>
+    </registro>
+  </sessao>
+  <sessao>
+    <nome>segmento_t</nome>
+    <id>"T" - TOTAL CLIENTES DEBITADOS.</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>T</padrao>
+      <descricao>codigo do registro T</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>7</fim>
+      <chave>total_reg_debitado</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>valor total de registros debitados.</descricao>
+    </registro>
+    <registro>
+      <inicio>8</inicio>
+      <fim>24</fim>
+      <chave>valor_reg_debitado</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>valor total dos registros debitados</descricao>
+    </registro>
+    <registro>
+      <inicio>25</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>reservado</descricao>
+    </registro>
+  </sessao>
+  <sessao>
+    <nome>segmento_x</nome>
+    <id>"X"- RELAÇÃO DE AGÊNCIAS.</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>X</padrao>
+      <descricao>codigo registro X</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>5</fim>
+      <chave>agencia</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>codigo da agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>6</inicio>
+      <fim>35</fim>
+      <chave>agencia_nome</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>nome da agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>36</inicio>
+      <fim>65</fim>
+      <chave>agencia_endereco</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>endereco agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>66</inicio>
+      <fim>70</fim>
+      <chave>agencia_numero</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>numero da agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>71</inicio>
+      <fim>75</fim>
+      <chave>agencia_cep</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>cep da agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>76</inicio>
+      <fim>78</fim>
+      <chave>agencia_cep_sufix</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>sufixo do cep da agfencia</descricao>
+    </registro>
+    <registro>
+      <inicio>79</inicio>
+      <fim>98</fim>
+      <chave>agencia_cidade</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>municipio da agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>99</inicio>
+      <fim>100</fim>
+      <chave>agencia_uf</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>estado da agencia</descricao>
+    </registro>
+    <registro>
+      <inicio>101</inicio>
+      <fim>101</fim>
+      <chave>agencia_situacao</chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>situacao da agencia 1 - Ativa 2 - regime de encerramento</descricao>
+    </registro>
+    <registro>
+      <inicio>102</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>reservado</descricao>
+    </registro>
+  </sessao>
+  <sessao>
+    <nome>arquivo_trailler</nome>
+    <id>"Z" - Trailler</id>
+    <registro>
+      <inicio>1</inicio>
+      <fim>1</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao>Z</padrao>
+      <descricao>codigo do registro Z</descricao>
+    </registro>
+    <registro>
+      <inicio>2</inicio>
+      <fim>7</fim>
+      <chave>total_reg_arquivo</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>total de registros no arquivo, incluindo header e trailler</descricao>
+    </registro>
+    <registro>
+      <inicio>8</inicio>
+      <fim>24</fim>
+      <chave>valor_reg_arquivo</chave>
+      <tipo>float</tipo>
+      <padrao></padrao>
+      <descricao>valor total dos registros do arquivo, campos E06 e F06</descricao>
+    </registro>
+    <registro>
+      <inicio>25</inicio>
+      <fim>150</fim>
+      <chave></chave>
+      <tipo>text</tipo>
+      <padrao></padrao>
+      <descricao>reservado</descricao>
+    </registro>
+  </sessao>
+
+</layout>

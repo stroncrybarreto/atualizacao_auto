@@ -1,0 +1,68 @@
+<relatorio dados="confere_documento" paper_orientation="landscape" ordem="empresa_codigo,ordenacao">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora    tam=18
+3  data_ini 		tam=10 fmt=data
+4  data_fim 		tam=10 fmt=data
+5  empresa_codigo	tam=3	alinha=esquerda
+6  empresa_nome 	tam=60
+7  data             tam=10 fmt=data
+8  documento        tam=10 alinha=centro
+9  vencto			tam=10 fmt=data
+10 pessoa_nome      tam=33
+11 valor            tam=10 fmt=float2
+12 subtotal			tam=10 fmt=float2	func=soma	campo=valor		grupo=1
+13 total			tam=10 fmt=float2	func=soma	campo=valor
+14 titulo			tam=177 alinha=centro
+15 titulo2			tam=177 alinha=centro
+16 pessoa_id		tam=7
+17 obs				tam=23	alinha=esquerda
+20 placa			tam=7
+
+21 juros			tam=10	fmt=float2
+22 multa			tam=10	fmt=float2
+23 juros_multa		tam=11	fmt=float2
+24 valor_fim		tam=11	fmt=float2	expr=(valor+juros_multa)
+25 sub_multa		tam=11	fmt=float2	func=soma	campo=juros_multa	grupo=1
+26 sub_antes		tam=11	fmt=float2	func=soma	campo=valor_fim		grupo=1
+27 tot_multa        tam=11  fmt=float2  func=soma   campo=juros_multa	
+28 tot_antes		tam=11	fmt=float2	func=soma	campo=valor_fim
+30 pessoa_codigo    tam=6 	alinha=centro
+31 numero_nota      tam=10 	alinha=centro
+98 empresa_cod_nome tam=100 expr=str(empresa_codigo) + ' - ' + str(empresa_nome)
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                              #2        
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+#14
+#15
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo">
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #98                                                                                                                                                                 |
++------------+------------+------------+------------+--------+------------------------------------+---------+-------------------------+------------+-------------+-------------+
+|    Data    |    Nota    | Documento  | Vencimento | Código |               Pessoa               |  Placa  |       Observação        |    Valor   | Juros/Multa |  Valor pago |
++------------+------------+------------+------------+--------+------------------------------------+---------+-------------------------+------------+-------------+-------------+
+</cab_grupo>
+<detalhe>
+| #7         | #31        | #8         | #9         | #30    | #10                                | #20     | #17                     | #11        | #23         | #24         |
+</detalhe>
+<rod_grupo nome="1">
++------------+------------+------------+------------+--------+------------------------------------+---------+-------------------------+------------+-------------+-------------+
+| Total empresa                                                                                                                       | #12        | #25         | #26         |
++-------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+-------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+-------------+
+| Total geral                                                                                                                         | #13        | #27         | #28         |
++-------------------------------------------------------------------------------------------------------------------------------------+------------+-------------+-------------+
+</rod_relat>
+
+<hash>0e9b551ab7c96241387f9da4059f71d5</hash>
+</relatorio>

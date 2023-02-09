@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <nome>sicredi</nome>
+  
+  <ocorrencias>
+ 
+	<ocorrencia>
+		<id>1</id>
+		<codigo>02</codigo>
+		<nome>Entrada Confirmada</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>2</id>
+		<codigo>03</codigo>
+		<nome>Entrada rejeitada</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>3</id>
+		<codigo>06</codigo>
+		<nome>Liquidação normal</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>4</id>
+		<codigo>09</codigo>
+		<nome>Baixado Automat. via Arquivo</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>5</id>
+		<codigo>10</codigo>
+		<nome>Baixado Conforme Instruções da Agência</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>6</id>
+		<codigo>12</codigo>
+		<nome>Abatimento Concedido</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>7</id>
+		<codigo>13</codigo>
+		<nome>Abatimento Cancelado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>8</id>
+		<codigo>14</codigo>
+		<nome>Vencimento Alterado</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>9</id>
+		<codigo>15</codigo>
+		<nome>Liquidação em cartório</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>10</id>
+		<codigo>17</codigo>
+		<nome>Liquidado após baixa</nome>
+	</ocorrencia>
+ 	
+	<ocorrencia>
+		<id>11</id>
+		<codigo>19</codigo>
+		<nome>Confirmação de Recebimento Instrução de Protesto</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>12</id>
+		<codigo>20</codigo>
+		<nome>Confirmação de recebimento Instrução Sustação de Protesto</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>13</id>
+		<codigo>23</codigo>
+		<nome>Entrada do Título em Cartório</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>14</id>
+		<codigo>24</codigo>
+		<nome>Entrada rejeitada por CEP irregular</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>15</id>
+		<codigo>27</codigo>
+		<nome>Baixa rejeitada</nome>
+	</ocorrencia>
+	
+	<ocorrencia>
+		<id>17</id>
+		<codigo>30</codigo>
+		<nome>Alteração de rejeitada</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>18</id>
+		<codigo>32</codigo>
+		<nome>Instrução rejeitada</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>28</id>
+		<codigo>28</codigo>
+		<nome>Tarifas bancárias</nome>
+	</ocorrencia>
+
+	<ocorrencia>
+		<id>-1</id>
+		<codigo>-1</codigo>
+		<nome>Outras Ocorrências</nome>
+	</ocorrencia>
+
+ </ocorrencias>
+ 
+ <motivos>
+		
+		<motivo>
+			<codigo>00</codigo>
+			<nome>Sem motivo de ocorrência</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>01</codigo>
+			<nome>Código do banco inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>02</codigo>
+			<nome>Código do registro detalhe inválido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>03</codigo>
+			<nome>Código da ocorrência invália</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>04</codigo>
+			<nome>Código de ocorrência não permitido para a carteira</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>05</codigo>
+			<nome>Código de ocorrencia nao numérico</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>07</codigo>
+			<nome>Agência/Conta/dígito inválidos</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>08</codigo>
+			<nome>Nosso número inválido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>09</codigo>
+			<nome>Nosso número duplicado</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>10</codigo>
+			<nome>Carteira inválida</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>14</codigo>
+			<nome>Título protestado</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>15</codigo>
+			<nome>Carteira/Agência/Conta/nosso número inválido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>16</codigo>
+			<nome>Data de vencimento inválida</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>17</codigo>
+			<nome>Data de vencimento anterior a data de emissão</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>18</codigo>
+			<nome>Vencimento fora do prazo de operação</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>20</codigo>
+			<nome>Valor do Título inválido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>21</codigo>
+			<nome>Espécie do Titulo inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>22</codigo>
+			<nome>Espécie no permitida para a carteira</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>24</codigo>
+			<nome>Data de emissão inválida</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>29</codigo>
+			<nome>Valor de desconto maior/igual ao valor do titulo</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>31</codigo>
+			<nome>Concessão de desconto - existe desconto anterior</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>33</codigo>
+			<nome>Valor do abatimento inválido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>34</codigo>
+			<nome>Valor do abtimento maior/igual ao valor do título</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>36</codigo>
+			<nome>Concessão de abatimento - existe abatimento anterior</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>38</codigo>
+			<nome>Prazo para protesto inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>39</codigo>
+			<nome>Pedido para protesto não permitido para o título</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>40</codigo>
+			<nome>Título com ordem de protesto emitido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>41</codigo>
+			<nome>Pedido cancelamento / Sustação sem instrução de protesto</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>42</codigo>
+			<nome></nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>44</codigo>
+			<nome>Agência Cedente nao prevista</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>45</codigo>
+			<nome>Nome do Sacado inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>46</codigo>
+			<nome>Tipo/Número de inscrição do Sacado inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>47</codigo>
+			<nome>Endereço do Sacado não informado</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>48</codigo>
+			<nome>CEP Irregular</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>50</codigo>
+			<nome>Sacador/Avalista não informado</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>51</codigo>
+			<nome>Movimento para título não cadastrado</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>52</codigo>
+			<nome>Entrada para título já cadastrada</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>A</codigo>
+			<nome>Aceito</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D</codigo>
+			<nome>Desprezado</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>60</codigo>
+			<nome></nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>63</codigo>
+			<nome></nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>A1</codigo>
+			<nome>Praça do sacado não cadastrada</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>A2</codigo>
+			<nome></nome>
+		</motivo>
+
+		<motivo>
+			<codigo>A3</codigo>
+			<nome>Agência depositária divergente : ATUALIZA O CADASTRO DE PRAÇAS DA AG. CEDENTE</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>A4</codigo>
+			<nome>Cedente não cadastrado ou possui CGC/CIC inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>A5</codigo>
+			<nome>Sacado não cadastrado</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>A6</codigo>
+			<nome>Data da instrução/ocorrência inválida</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>A8</codigo>
+			<nome>Recebimento da liguidação fora da rede BANSICREDI - via Compensação eletrônica</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>A9</codigo>
+			<nome>Manutenção de título vencido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B1</codigo>
+			<nome>Baixa da carteira</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B3</codigo>
+			<nome>Registro de Entrada do Título</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B4</codigo>
+			<nome>Tipo de Moeda inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B5</codigo>
+			<nome>Tipo de Desconto/Juros inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B6</codigo>
+			<nome>Mensagem padrão não cadastrada</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B7</codigo>
+			<nome>Seu número inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B8</codigo>
+			<nome>Percentual de multa inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>B9</codigo>
+			<nome>Valor ou percentual de juros inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C1</codigo>
+			<nome>Data limite para concessão de desconto inválida</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C2</codigo>
+			<nome>Aceite do título inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C3</codigo>
+			<nome>Campo alterado na instrução "31 - Alteração de outros dados" inválido</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C4</codigo>
+			<nome>Título ainda não foi confirmado pela centralizadora</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C5</codigo>
+			<nome>Título rejeitado pela centralizadora</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C6</codigo>
+			<nome>Título já baixado</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C7</codigo>
+			<nome>Título já liquidado</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C8</codigo>
+			<nome>Existe mesma instrução pendente de confirmação para essa instrução</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>C9</codigo>
+			<nome>Instrução previa de Concessão de Abatimento não existe ou não confirmada</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D1</codigo>
+			<nome>Título dentro do prazo de vencimento (em dia)</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D2</codigo>
+			<nome>Espécie de documento não permite protesto de título</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D3</codigo>
+			<nome>Título possui instrução de baixa pendente de confirmação</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D4</codigo>
+			<nome>Quantidade de mensagens padrão excede o limite permitido</nome>
+		</motivo>
+		
+		<motivo>
+			<codigo>D5</codigo>
+			<nome>Quantidade inválida no pedido de bloquetos pré-impressos da cobrança sem registro</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D6</codigo>
+			<nome>Tipo de impressão inválida para cobrança sem registro</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D7</codigo>
+			<nome>Cidade ou estado do sacado não informados</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D8</codigo>
+			<nome>Sequência para a composição do nosso número do ano atual esgotada</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>D9</codigo>
+			<nome>Registro Mensagem (instruções para impressão no bloqueto da cobrança SEM Registro) para título não cadastrado</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>E2</codigo>
+			<nome>Registro COMPLEMENTAR ao cadastro do título da cobrança COM Registro não cadastrado</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>X1</codigo>
+			<nome>Regularização Centralizadora - Rede BANSICREDI</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>X2</codigo>
+			<nome>Regularização Centralizadora - Compensação</nome>
+		</motivo>
+
+		<motivo>
+			<codigo>X3</codigo>
+			<nome>Regularização Centralizadora - Banco Correspondente</nome>
+		</motivo>
+	</motivos>
+
+</layout>

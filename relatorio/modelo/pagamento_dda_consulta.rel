@@ -1,0 +1,63 @@
+<relatorio dados="pagamento_dda_consulta" docname="Relatório de Retorno de Pagamento a Fornecedores" font_size="x-small" ordem="codigo_empresa">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+
+8  nome_empresa			tam=20
+9  codigo_empresa   	tam=7	alinha=esquerda
+10 status				tam=14	alinha=esquerda
+11 cnpj_fornecedor		tam=14	alinha=esquerda
+12 nome_fornecedor		tam=29	alinha=esquerda
+13 emissao				tam=10	alinha=esquerda fmt=data
+14 valor				tam=14  fmt=float2
+15 vencimento 			tam=10	alinha=esquerda	fmt=data
+16 documento			tam=14	alinha=esquerda
+17 codigo_barras		tam=44	alinha=esquerda
+18 critica				tam=48  alinha=esquerda
+
+20 total_status         tam=14  fmt=float2   func=soma     campo=valor  grupo=2
+21 total_empresa        tam=14  fmt=float2   func=soma     campo=valor  grupo=1
+
+98 titulo_p             tam=141 alinha=centro  expr='RETORNO arquivo DDA'
+99 titulo               tam=141 alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                             Data: #2
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+#98
+#99
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="codigo_empresa">
++------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #9       - #8                   |                                                                                                                                        |
+</cab_grupo>
+<cab_grupo nome="2" quebra="codigo_empresa,status">
++----------------+-----------------+-------+---------+--------------------------------+-------------+-----------------+-------------+-----------------------------------------------+
+| Status Proc.   | Nr. Doc         | CNPJ Fornecedor | Nome Fornecedor                | Emissao     | Valor           | Vencimento  | Codigo de Barras no DDA                       |
++----------------+-----------------+-----------------+--------------------------------+-------------+-----------------+-------------+-----------------------------------------------+
+</cab_grupo>
+<detalhe>
+| #10            | #16             | #11             | #12                            | #13         | #14             | #15         | #17                                           |
+</detalhe>
+
+<rod_grupo nome="2">
++--------------+-------------------+-----------------+--------------------------------+-------------+-----------------+-------------+-----------------------------------------------+
+| Total Status #10                                                                                  | #20             |                                                             |
++---------------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------------+
+</rod_grupo>
+<rod_grupo nome="1">
++---------------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------------+
+| Total Empresa                                                                                     | #21             |                                                             |
++---------------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------------+
+</rod_grupo>
+
+<rod_pagina>
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+
+
+<hash>db7e14ca7e6344d612d8f1cf79799c64</hash>
+</relatorio>

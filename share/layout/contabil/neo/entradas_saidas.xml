@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>entradas_saidas</nome>
+  <sessao>
+    <nome>entradas_saidas</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave></chave><tipo>string</tipo><padrao>"</padrao><descricao></descricao></registro>
+    <registro><inicio>2</inicio><fim>2</fim><chave>tipo_operacao</chave><tipo>string</tipo><padrao></padrao><descricao>Tipo de operação (A,E,I)</descricao></registro>
+    <registro><inicio>3</inicio><fim>5</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>23</fim><chave>cnpj_codigo</chave><tipo>string</tipo><padrao></padrao><descricao>Fornecedor / Cliente (C.N.P.J ou Código)</descricao></registro>
+    <registro><inicio>24</inicio><fim>26</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>27</inicio><fim>38</fim><chave>cfop</chave><tipo>string</tipo><padrao></padrao><descricao>Código da natureza</descricao></registro>
+    <registro><inicio>39</inicio><fim>41</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>42</inicio><fim>47</fim><chave>numero_nota</chave><tipo>integer</tipo><padrao></padrao><descricao>Número do documento</descricao></registro>
+    <registro><inicio>48</inicio><fim>50</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>51</inicio><fim>53</fim><chave>especie</chave><tipo>string</tipo><padrao></padrao><descricao>Espécie do documento</descricao></registro>
+    <registro><inicio>54</inicio><fim>56</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>57</inicio><fim>59</fim><chave>serie</chave><tipo>string</tipo><padrao></padrao><descricao>Série do documento</descricao></registro>
+    <registro><inicio>60</inicio><fim>62</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>63</inicio><fim>70</fim><chave>data_entrada</chave><tipo>string</tipo><padrao></padrao><descricao>Data de entrada do documento</descricao></registro>
+    <registro><inicio>71</inicio><fim>73</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>74</inicio><fim>81</fim><chave>data_emissao</chave><tipo>string</tipo><padrao></padrao><descricao>Data de emissão do documento</descricao></registro>
+    <registro><inicio>82</inicio><fim>84</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>85</inicio><fim>90</fim><chave>aliquota</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Alíquota</descricao></registro>
+    <registro><inicio>91</inicio><fim>93</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>94</inicio><fim>107</fim><chave>valor_nota</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor contábil</descricao></registro>
+    <registro><inicio>108</inicio><fim>110</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>111</inicio><fim>111</fim><chave>base_reduzida</chave><tipo>string</tipo><padrao>N</padrao><descricao>Base reduzida (S/N)</descricao></registro>
+    <registro><inicio>112</inicio><fim>114</fim><chave></chave><tipo>string</tipo><padrao>",</padrao><descricao></descricao></registro>
+    <registro><inicio>115</inicio><fim>115</fim><chave>situacao_nf_servico</chave><tipo>_string</tipo><padrao></padrao><descricao>Situação da nota fiscal de serviços</descricao></registro>
+    <registro><inicio>116</inicio><fim>118</fim><chave></chave><tipo>string</tipo><padrao>"</padrao><descricao></descricao></registro>
+    <registro><inicio>119</inicio><fim>132</fim><chave>base_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Base de cálculo do ICMS</descricao></registro>
+    <registro><inicio>133</inicio><fim>135</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>136</inicio><fim>149</fim><chave>vl_icms</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do imposto</descricao></registro>
+    <registro><inicio>150</inicio><fim>152</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>153</inicio><fim>166</fim><chave>vl_isenta</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor de isentas</descricao></registro>
+    <registro><inicio>167</inicio><fim>169</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>170</inicio><fim>183</fim><chave>vl_outras</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor de outras</descricao></registro>
+    <registro><inicio>184</inicio><fim>186</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>187</inicio><fim>200</fim><chave>base_indireto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor base cálculo imposto indireto</descricao></registro>
+    <registro><inicio>201</inicio><fim>203</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>204</inicio><fim>217</fim><chave>valor_indireto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do imposto indireto</descricao></registro>
+    <registro><inicio>218</inicio><fim>220</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>221</inicio><fim>234</fim><chave>base_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Base de cálculo do IPI</descricao></registro>
+    <registro><inicio>235</inicio><fim>237</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>238</inicio><fim>251</fim><chave>valor_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do IPI</descricao></registro>
+    <registro><inicio>252</inicio><fim>254</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>255</inicio><fim>268</fim><chave>valor_isento_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor de isentas</descricao></registro>
+    <registro><inicio>269</inicio><fim>271</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>272</inicio><fim>285</fim><chave>valor_outras_ipi</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor de Outras</descricao></registro>
+    <registro><inicio>286</inicio><fim>288</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>289</inicio><fim>345</fim><chave>obs</chave><tipo>string</tipo><padrao></padrao><descricao>Observações</descricao></registro>
+    <registro><inicio>346</inicio><fim>348</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>349</inicio><fim>362</fim><chave>valor_acrescimo</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do acréscimo financeiro</descricao></registro>
+    <registro><inicio>363</inicio><fim>365</fim><chave></chave><tipo>string</tipo><padrao>",</padrao><descricao></descricao></registro>
+    <registro><inicio>366</inicio><fim>379</fim><chave>valor_iss_retido</chave><tipo>_float_point_2</tipo><padrao></padrao><descricao>ISS Retido (Nota Fiscal de Serviços)</descricao></registro>
+    <registro><inicio>380</inicio><fim>382</fim><chave></chave><tipo>string</tipo><padrao>"</padrao><descricao></descricao></registro>
+    <registro><inicio>383</inicio><fim>388</fim><chave>conta_credora</chave><tipo>integer</tipo><padrao></padrao><descricao>Conta credora do valor contábil</descricao></registro>
+    <registro><inicio>389</inicio><fim>391</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>392</inicio><fim>397</fim><chave>conta_devedora</chave><tipo>integer</tipo><padrao></padrao><descricao>Conta devedora do valor contábil</descricao></registro>
+    <registro><inicio>398</inicio><fim>400</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>401</inicio><fim>406</fim><chave>cod_hist_credito</chave><tipo>integer</tipo><padrao></padrao><descricao>Código histórico do crédito valor contábil</descricao></registro>
+    <registro><inicio>407</inicio><fim>409</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>410</inicio><fim>415</fim><chave>cod_hist_debito</chave><tipo>integer</tipo><padrao></padrao><descricao>Código histórico do débito valor contábil</descricao></registro>
+    <registro><inicio>416</inicio><fim>418</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>419</inicio><fim>419</fim><chave>contribuinte</chave><tipo>string</tipo><padrao></padrao><descricao>Contribuinte (S/N)</descricao></registro>
+    <registro><inicio>420</inicio><fim>422</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>423</inicio><fim>428</fim><chave>numero_final</chave><tipo>integer</tipo><padrao></padrao><descricao>Número final do intervalo do documento</descricao></registro>
+    <registro><inicio>429</inicio><fim>431</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>432</inicio><fim>433</fim><chave>estado_origem</chave><tipo>string</tipo><padrao></padrao><descricao>Estado de Origem (Sigla)</descricao></registro>
+    <registro><inicio>434</inicio><fim>436</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>437</inicio><fim>438</fim><chave>estado_destino</chave><tipo>string</tipo><padrao></padrao><descricao>Estado de Destino (Sigla)</descricao></registro>
+    <registro><inicio>439</inicio><fim>441</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>442</inicio><fim>447</fim><chave>cod_municipio_dest</chave><tipo>integer</tipo><padrao></padrao><descricao>Código fiscal do município de destino</descricao></registro>
+    <registro><inicio>448</inicio><fim>450</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>451</inicio><fim>464</fim><chave>ipi_emb_icms_resp</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>IPI Embutido/ICMS responsabilidade</descricao></registro>
+    <registro><inicio>465</inicio><fim>467</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>468</inicio><fim>517</fim><chave>complemento_debito</chave><tipo>string</tipo><padrao></padrao><descricao>Complemento contábil do débito</descricao></registro>
+    <registro><inicio>518</inicio><fim>520</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>521</inicio><fim>570</fim><chave>complemento_credito</chave><tipo>string</tipo><padrao></padrao><descricao>Complemento contábil do crédito</descricao></registro>
+    <registro><inicio>571</inicio><fim>573</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>574</inicio><fim>581</fim><chave>data_vencto</chave><tipo>string</tipo><padrao></padrao><descricao>Data de vencimento do documento/Data do ISS Retido no Serviço Tomado - Salvador</descricao></registro>
+    <registro><inicio>582</inicio><fim>584</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>585</inicio><fim>597</fim><chave>numero_doc_imp</chave><tipo>string</tipo><padrao></padrao><descricao>Número do Documento de Importação</descricao></registro>
+    <registro><inicio>598</inicio><fim>600</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>601</inicio><fim>601</fim><chave>tipo_frete</chave><tipo>string</tipo><padrao></padrao><descricao>Tipo do Frete (1-Cif 2-Fob 3-Outros)</descricao></registro>
+    <registro><inicio>602</inicio><fim>604</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>605</inicio><fim>618</fim><chave>valor_desc</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do desconto (Despesas Acessórias)</descricao></registro>
+    <registro><inicio>619</inicio><fim>621</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>622</inicio><fim>635</fim><chave>valor_frete</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do Free (Despesas Acessórias)</descricao></registro>
+    <registro><inicio>636</inicio><fim>638</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>639</inicio><fim>652</fim><chave>valor_seguro</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor do Seguro (Despesas Acessórias)</descricao></registro>
+    <registro><inicio>653</inicio><fim>655</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>656</inicio><fim>669</fim><chave>valor_outr_des</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Valor de Outras Desespesas Acessórias</descricao></registro>
+    <registro><inicio>670</inicio><fim>672</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>673</inicio><fim>673</fim><chave>lanc_fundap</chave><tipo>string</tipo><padrao>N</padrao><descricao>Lançamento FUNDAP (S/N)</descricao></registro>
+    <registro><inicio>674</inicio><fim>676</fim><chave></chave><tipo>string</tipo><padrao>",</padrao><descricao></descricao></registro>
+    <registro><inicio>677</inicio><fim>677</fim><chave>loc_execucao</chave><tipo>_string</tipo><padrao></padrao><descricao>Florianópolis - SC - Loc. Execução (1/0)</descricao></registro>
+    <registro><inicio>678</inicio><fim>680</fim><chave></chave><tipo>string</tipo><padrao>"</padrao><descricao></descricao></registro>
+    <registro><inicio>681</inicio><fim>681</fim><chave>tipo_documento</chave><tipo>string</tipo><padrao></padrao><descricao>Tipo Documento "P" próprio, "T" terceiro</descricao></registro>
+    <registro><inicio>682</inicio><fim>684</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>685</inicio><fim>698</fim><chave>icms_antec</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>ICMS antecipado PAGO (SISIF - CE)</descricao></registro>
+    <registro><inicio>699</inicio><fim>701</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>702</inicio><fim>710</fim><chave>numero_formulario</chave><tipo>integer</tipo><padrao></padrao><descricao>Número do Formulário continuo usado para a emissão desta nota fiscal (SISIF - CE)</descricao></registro>
+    <registro><inicio>711</inicio><fim>713</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>714</inicio><fim>714</fim><chave>cod_antec_tributaria</chave><tipo>string</tipo><padrao></padrao><descricao>Cód. que ident. o tipo da Antec. Tributária</descricao></registro>
+    <registro><inicio>715</inicio><fim>717</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>718</inicio><fim>731</fim><chave>base_icms_antec</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Bas. Cáculo ICMS antecipado (SISIF - CE)</descricao></registro>
+    <registro><inicio>732</inicio><fim>734</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>735</inicio><fim>748</fim><chave>total_icms_antec</chave><tipo>float_point_2</tipo><padrao></padrao><descricao>Total do ICMS Antecipado (SISIF - CE)</descricao></registro>
+    <registro><inicio>749</inicio><fim>751</fim><chave></chave><tipo>string</tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>752</inicio><fim>769</fim><chave>cnpj_mercadoria</chave><tipo>string</tipo><padrao></padrao><descricao>Total do ICMS Antecipado (SISIF - CE)</descricao></registro>
+    <registro><inicio>770</inicio><fim>770</fim><chave></chave><tipo>string</tipo><padrao>"</padrao><descricao></descricao></registro>
+  </sessao>
+  <sessao>
+    <nome>aliquota</nome>
+    <registro><inicio>1</inicio><fim>5</fim><chave></chave><tipo></tipo><padrao>"P"</padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>400</fim><chave>tipo_p</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+  </sessao>  
+  <sessao>
+    <nome>imp_indireto</nome>
+    <registro><inicio>1</inicio><fim>5</fim><chave></chave><tipo></tipo><padrao>"W","</padrao><descricao></descricao></registro>
+    <registro><inicio>6</inicio><fim>15</fim><chave>tipo_operacao</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>16</inicio><fim>18</fim><chave></chave><tipo></tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>19</inicio><fim>28</fim><chave>base_calculo</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>29</inicio><fim>31</fim><chave></chave><tipo></tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>32</inicio><fim>36</fim><chave>aliquota</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>37</inicio><fim>39</fim><chave></chave><tipo></tipo><padrao>","</padrao><descricao></descricao></registro>
+    <registro><inicio>40</inicio><fim>49</fim><chave>imposto</chave><tipo>float_point_2</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>50</inicio><fim>64</fim><chave></chave><tipo></tipo><padrao>","0.00","0.00"</padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

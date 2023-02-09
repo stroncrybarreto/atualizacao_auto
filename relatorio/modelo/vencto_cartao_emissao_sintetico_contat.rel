@@ -1,0 +1,57 @@
+<relatorio dados="vencto_cartao_empresa" ordem="ordem">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+5  data						tam=10	fmt=data
+7  conta					tam=44  alinha=esquerda
+9  valor					tam=15  fmt=%.02f	alinha=direita
+10 tarifa		       		tam=8	fmt=%.02f 	alinha=direita 
+11 valor_liquido 			tam=15  fmt=%.02f	alinha=direita
+12 valor_subtotal			tam=15  fmt=%.02f	func=soma	campo=valor	grupo=1	alinha=direita
+13 tarifa_subtotal			tam=8  fmt=%.02f	func=soma	campo=tarifa	grupo=1	alinha=direita 
+14 valor_liquido_subtotal	tam=15  fmt=%.02f	func=soma	campo=valor_liquido	grupo=1	alinha=direita
+18 titulo					tam=67	alinha=centro
+19 valor_total				tam=15  fmt=%.02f	func=soma	campo=valor alinha=direita
+20 tarifa_total				tam=8  fmt=%.02f	func=soma	campo=tarifa alinha=direita 
+21 valor_liquido_total 		tam=15  fmt=%.02f	func=soma	campo=valor_liquido alinha=direita
+22 observacao				tam=108
+</apelidos>
+<cab_pagina>
+#1                                                #2                 
+------------------------------------------------------------------
+  
+#18
+
+</cab_pagina>
+<cab_relat>
+Empresa: Todas as empresas
+</cab_relat>
+<cab_grupo nome="1" quebra="conta">
++----------------------------------------------------------------+
+| Conta: #7                                                      |
+|-----------------+-----------------+----------+-----------------+
+|     Emissão     |      Valor      |  Tarifa  |  Valor líquido  |
++-----------------+-----------------+----------+-----------------+
+</cab_grupo>
+<detalhe>
+|   #5            | #9              | #10      | #11             |
+</detalhe>
+<rod_grupo nome="1">
++-----------------+-----------------+----------+-----------------+
+| Subtotal        | #12             | #13      | #14             |
++-----------------+-----------------+----------+-----------------+
+
+</rod_grupo>
+<rod_relat>
++-----------------+-----------------+----------+-----------------+
+| Total           | #19             | #20      | #21             |
++-----------------+-----------------+----------+-----------------+
+
+#22
+</rod_relat>
+
+<rod_pagina>
++-----------------+-----------------+----------+-----------------+
+</rod_pagina>
+<hash>a6ddc76423b0ef1fbaf492782b9befd8</hash>
+</relatorio>

@@ -1,0 +1,68 @@
+<relatorio dados="">
+<apelidos>
+1  rel_posto_nome   	tam=60
+2  rel_data_hora    	tam=18
+</apelidos>
+<cab_relat>
+#1                                                                                                        #2                
+--------------------------------------------------------------------------------------------------------------------------
+
+
++------------------------------------------------------------------------------------------------------------------------+
+|                                                    A N E X O   5 6                                                     |
+|                                      R E G I S T R O   D E   I N V E N T Á R I O                                       |
+|                                              R I   -   M o d e l o   P 7                                               |
+|                                    ( P r o c e s s a m e n t o   d e   D a d o s )                                     |
++------------------------------------------------------------------------------------------------------------------------+
+
+                                   a   q u e   s e   r e f e r e   o   a r t .   7 0 1
+                L I V R O   R E G I S T R O   D E   I N V E N T Á R I O   -   R I   -   M O D E L O   P 7
+
+                
+</cab_relat>
+<detalhe></detalhe>
+<rod_relat></rod_relat>
+
+<subrelat dados="livro_registro_inventario" subordem="class_fiscal,produto_nome">
+<apelidos>
+3  class_fiscal			tam=13	alinha=centro
+4  produto_nome			tam=47
+5  produto_unid_med		tam=6	alinha=centro
+6  quantidade			tam=13	fmt=float3
+7  preco_unit			tam=10	fmt=%.02f
+8  total				tam=13	fmt=%.02f	expr=preco_unit*quantidade
+9  empresa_nome			tam=94
+10 empresa_inscr_est	tam=30
+11 folha				tam=30
+12 empresa_cpf			tam=20
+13 data					tam=10	fmt=data
+</apelidos>
+
+<cab_pagina>
++------------------------------------------------------------------------------------------------------------------------+
+|                                      R E G I S T R O   D E   I N V E N T Á R I O                                       |
+|                                                                                                                        |
+| FIRMA.................: #9                                                                                             |
+| INSC. ESTADUAL........: #10                                 CNPJ (MF): #12                                             |
+| ESTOQUES EXISTENTES EM: #13                                                                                            |
++---------------+-------------------------------------------------+---------+---------------+----------------------------+
+| Class. Fiscal | Discriminação                                   | Unidade |    Quantidade |  Pr. Unit. |         Total |
++---------------+-------------------------------------------------+---------+---------------+------------+---------------+
+</cab_pagina>
+
+<detalhe>
+| #3            | #4                                              | #5      | #6            | #7         | #8            |
+</detalhe>
+
+<rod_pagina>
++---------------+-------------------------------------------------+---------+---------------+------------+---------------+
+</rod_pagina>
+
+<rod_relat>
++---------------+-------------------------------------------------+---------+---------------+------------+---------------+
+</rod_relat>
+</subrelat>
+
+
+<hash>80428d369697160f8e862106056c9277</hash>
+</relatorio>

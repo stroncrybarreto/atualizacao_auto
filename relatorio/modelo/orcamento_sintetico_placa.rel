@@ -1,0 +1,37 @@
+<relatorio dados="orcamento" ordem="placa">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  titulo			tam=100  alinha=centro
+4  placa			tam=13
+5  valor			tam=12    fmt=%.02f
+6  total			tam=12    func=soma   campo=valor alinha=direita	fmt=%.02f
+7 subtotal			tam=12    func=soma	 campo=valor alinha=direita	grupo=1
+
+</apelidos>
+<cab_pagina>
+#1                                                                                  #2              
+----------------------------------------------------------------------------------------------------
+
+#3
+
++---------------+--------------+
+|    Placa      |    Valor     |
++---------------+--------------+
+</cab_pagina>
+<detalhe>
+| #4            | #5           |
+</detalhe>
+<rod_pagina>
++---------------+--------------+
+</rod_pagina>
+<rod_relat>
++---------------+--------------+
+| Total         | #6           |
++---------------+--------------+
+</rod_relat>
+
+
+<hash>4fa990f8fc2760a567b7851ca99e7d7b</hash>
+</relatorio>
+

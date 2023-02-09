@@ -1,0 +1,67 @@
+<relatorio dados="cheque_troco_gerencia" ordem="ordem">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo1              tam=68  alinha=centro
+4  empresa_nome         tam=17
+5  responsavel          tam=39
+6  data_emissao         tam=18  fmt=data  alinha=centro
+7  cheque_numero        tam=23  alinha=centro
+8  situacao_nome        tam=25
+9  cheque_valor         tam=17  fmt=float2
+10 conta_corrente	    tam=3	alinha=centro
+11 total_cheque_valor   tam=17  fmt=float2  func=soma campo=cheque_valor grupo=1
+12 conta_corrente_nome  tam=45
+13 total_geral          tam=17  fmt=float2  func=soma  campo=cheque_valor grupo=2
+14 conta_pdv            tam=39
+15 conta_corrente_cod_nome tam=57
+16 responsavel_cod_nome tam=39
+98 corrige_totalizador  tam=10
+99 linha_resumo         tam=99999
+
+</apelidos>
+<cab_pagina>
+#1                                                  #2                
+--------------------------------------------------------------------
+ 
+#3
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="corrige_totalizador">
+</cab_grupo>
+<cab_grupo nome="1" quebra="conta_corrente,conta_pdv">
++------------------------------------------------------------------+
+| Banco: #15                                                       |
+| Conta caixa: #14                                                 |
+| Responsável: #16                                                 |
++--------------------+-------------------------+-------------------+
+|    Data emissão    |      Número cheque      |       Valor       |
++--------------------+-------------------------+-------------------+
+</cab_grupo>
+<detalhe>
+| #6                 | #7                      | #9                | 
+</detalhe>
+<rod_grupo nome="1">
++--------------------+-------------------------+-------------------+
+| Total                                        | #11               |
++----------------------------------------------+-------------------+
+
+</rod_grupo>
+<rod_grupo nome="2">
+
++----------------------------------------------+-------------------+
+| Total geral                                  | #13               |
++----------------------------------------------+-------------------+
+
+</rod_grupo>
+
+<rod_relat>
+
+#99
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+
+
+<hash>2343ce320681e7339b032e23ac058843</hash>
+</relatorio>

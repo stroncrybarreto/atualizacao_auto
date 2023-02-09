@@ -1,0 +1,79 @@
+<relatorio dados="nota_emitida" ordem="empresa_codigo">
+<apelidos>
+1  rel_posto_nome	tam=50
+2  rel_data_hora	tam=18
+3  rel_titulo		tam=128 alinha=centro
+4  rel_titulo2		tam=128 alinha=centro
+6  empresa_nome		tam=40
+7  numero_nota		tam=6  alinha=centro
+8  data_emissao		tam=10 fmt=data
+9  cliente_nome		tam=40
+10 valor_nota		tam=13 fmt=float2
+11 situacao			tam=9
+12 motivo_nome		tam=20
+13 modelo_doc 		tam=6 alinha=centro
+14 emp_nr_notas		tam=5
+15 emp_emitidas		tam=5
+16 emp_canceladas	tam=5
+17 emp_total_valor	tam=13 fmt=float2
+19 tot_nr_notas		tam=5
+20 tot_emitidas		tam=5
+21 tot_canceladas	tam=5
+22 tot_total_valor	tam=13 fmt=float2
+23 serie			tam=5 alinha=centro
+24 nota_cfop		tam=6
+25 nota_cfop_nome	tam=109
+26 total_cfop		tam=13	fmt=float2	func=soma	campo=valor_nota	grupo=2
+27 qtde_cfop		tam=10	alinha=esquerda	func=contar	campo=numero	grupo=2
+99 empresa_cod_nome		tam=80		expr=str(empresa_codigo)+' - '+empresa_nome
+</apelidos>
+<cab_pagina>
+#1                                                                                                              #2
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #99                                                                                                                          |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="nota_cfop">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| CFOP: #24    - #25                                                                                                                    |
++--------+-------+--------+------------+-------------------------------------------+------------------------+---------------+-----------+
+| Número | Série | Modelo |   Emissão  |                Destinatário               |   Forma de pagamento   |   Valor nota  | Situação  |
++--------+-------+--------+------------+-------------------------------------------+------------------------+---------------+-----------+
+</cab_grupo>
+
+<detalhe>
+| #7     | #23   | #13    | #8         | #9                                        | #12                    | #10           | #11       |
+</detalhe>
+
+<rod_grupo nome="2">
++--------+-------+--------+------------+-------------------------------------------+------------------------+---------------+-----------+
+| Total de notas por CFOP: #27                                                                              | #26           |           |
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total empresa          #14   Notas: #15   Emitidas/Aprovadas, #16   Canceladas/Rejeitadas                 | #17           |           |
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+
+</rod_grupo>
+
+<rod_relat>
+
+
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+| Total geral            #19   Notas: #20   Emitidas/Aprovadas, #21   Canceladas/Rejeitadas                 | #22           |           |
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+</rod_relat>
+<rod_pagina>
++-----------------------------------------------------------------------------------------------------------+---------------+-----------+
+</rod_pagina>
+
+<hash>8829d7e19b0ff6ef5540876118d860b2</hash>
+</relatorio>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layout>
+	<nome>Caixa</nome>
+
+    <sessao>
+        <nome>arquivo</nome>
+
+		<registro>
+            <tipo>string</tipo>
+            <chave>instrucoes</chave>
+            <padrao>(Texto de Responsabilidade do Beneficiário)</padrao>
+			<descricao>Instruções de pagamento padrão</descricao>
+        </registro>
+    </sessao>
+</layout>

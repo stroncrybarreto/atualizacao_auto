@@ -1,0 +1,44 @@
+<relatorio dados="orcamento">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  titulo			tam=129  alinha=centro
+4  numero			tam=9  	alinha=centro
+5  hora				tam=16	fmt=data_hora
+6  placa      		tam=7
+7  km        		tam=8   nulo
+8  cliente			tam=25  
+9  forma_pagto		tam=15   
+10 observacao		tam=15
+11 valor			tam=10  fmt=%.02f
+12 itens			tam=6	alinha=esquerda
+13 valor_total		tam=10	fmt=%.02f	func=soma campo=valor
+14 titulo_relat		tam=129
+15 vendedor_nome	tam=30
+16 nr_cupom			tam=10
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2              
+----------------------------------------------------------------------------------------------------------------------------------
+
+#14
+#3
+                                
++-----------+------------------+---------+----------+---------------------------+-----------------+-----------------+------------+
+| Pré-venda |    Abertura      |  Placa  |    KM    |          Cliente          | Forma pagamento |   Observação    |   Valor    |
++-----------+------------------+---------+----------+---------------------------+-----------------+-----------------+------------+
+</cab_pagina>
+<detalhe>
+| #4        | #5               | #6      | #7       | #8                        | #9              | #10             | #11        | 
+</detalhe>
+<rod_relat>
++-----------+------------------+---------+----------+---------------------------+-----------------+-----------------+------------+
+| #12    Pré-vendas realizadas                                                                               Total  | #13        |
++-------------------------------------------------------------------------------------------------------------------+------------+
+</rod_relat>
+<rod_pagina>
++-----------+------------------+---------+----------+---------------------------+-----------------+-----------------+------------+
+</rod_pagina>
+
+<hash>2a55a1a91ff6588b3187a1ead8569804</hash>
+</relatorio>

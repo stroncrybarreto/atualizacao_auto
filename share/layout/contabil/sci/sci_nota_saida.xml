@@ -1,0 +1,3206 @@
+<layout>
+  <nome>sci_nota_saida</nome> 
+ <sessao>
+  <nome>nota_fiscal_saida</nome> 
+ <registro>
+   <inicio>1</inicio> 
+   <fim>6</fim> 
+   <chave>nr_chave</chave> 
+   <tipo>integer</tipo> 
+   <padrao /> 
+   <descricao>numero da chave de importacao</descricao> 
+ </registro>
+ <registro>
+   <inicio>7</inicio> 
+   <fim>8</fim> 
+   <chave /> 
+   <tipo /> 
+   <padrao>,"</padrao> 
+   <descricao /> 
+ </registro>
+ <registro>
+   <inicio>9</inicio> 
+   <fim>28</fim> 
+   <chave>cpf</chave> 
+   <tipo>text</tipo> 
+   <padrao /> 
+   <descricao>cpf ou cnpj da nota</descricao> 
+ </registro>
+ <registro>
+   <inicio>29</inicio> 
+   <fim>31</fim> 
+   <chave /> 
+   <tipo /> 
+   <padrao>","</padrao> 
+   <descricao /> 
+ </registro>
+ <registro>
+   <inicio>32</inicio> 
+   <fim>33</fim> 
+   <chave>estado</chave> 
+   <tipo>text</tipo> 
+   <padrao /> 
+   <descricao>estado da nota</descricao> 
+ </registro>
+ <registro>
+   <inicio>34</inicio> 
+   <fim>36</fim> 
+   <chave /> 
+   <tipo /> 
+   <padrao>","</padrao> 
+   <descricao /> 
+  </registro>
+  <registro>
+   <inicio>37</inicio> 
+   <fim>44</fim> 
+   <chave>data_emissao</chave> 
+   <tipo>text</tipo> 
+   <padrao /> 
+   <descricao>data de emissao da nota</descricao> 
+ </registro>
+ <registro>
+   <inicio>45</inicio> 
+   <fim>46</fim> 
+   <chave /> 
+   <tipo /> 
+   <padrao>",</padrao> 
+   <descricao /> 
+ </registro>
+ <registro>
+   <inicio>47</inicio> 
+   <fim>56</fim> 
+   <chave>numero_inicial</chave> 
+   <tipo>integer</tipo> 
+   <padrao /> 
+   <descricao>numero inicial das notas</descricao> 
+ </registro>
+ <registro>
+  <inicio>57</inicio> 
+  <fim>57</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>58</inicio> 
+  <fim>67</fim> 
+  <chave>numero_final</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>numero final das notas</descricao> 
+ </registro>
+ <registro>
+  <inicio>68</inicio> 
+  <fim>69</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+ </registro>
+ <registro>
+  <inicio>70</inicio> 
+  <fim>72</fim> 
+  <chave>especie</chave> 
+  <tipo>text</tipo> 
+   <padrao /> 
+   <descricao>especie da nota</descricao> 
+ </registro>
+ <registro>
+   <inicio>73</inicio> 
+   <fim>75</fim> 
+   <chave /> 
+   <tipo /> 
+   <padrao>","</padrao> 
+   <descricao /> 
+ </registro>
+ <registro>
+  <inicio>76</inicio> 
+   <fim>78</fim> 
+   <chave>serie</chave> 
+   <tipo>text</tipo> 
+   <padrao /> 
+   <descricao>serie da nota</descricao> 
+ </registro>
+ <registro>
+  <inicio>79</inicio> 
+  <fim>81</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>82</inicio> 
+  <fim>88</fim> 
+  <chave>cfop</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>natureza de operacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>89</inicio> 
+  <fim>90</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>91</inicio> 
+  <fim>108</fim> 
+  <chave>valor_contabil</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor contabil da nota</descricao> 
+  </registro>
+ <registro>
+  <inicio>109</inicio> 
+  <fim>110</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>111</inicio> 
+  <fim>111</fim> 
+  <chave>cst_origem</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>codigo da situcao tributaria</descricao> 
+  </registro>
+ <registro>
+  <inicio>112</inicio> 
+  <fim>114</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>115</inicio> 
+  <fim>115</fim> 
+  <chave>cst_icms</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>codigo cst do icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>116</inicio> 
+  <fim>117</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>118</inicio> 
+  <fim>126</fim> 
+  <chave>base_reducao_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base de reducao icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>127</inicio> 
+  <fim>127</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>128</inicio> 
+  <fim>145</fim> 
+  <chave>base_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base do icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>146</inicio> 
+  <fim>146</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>147</inicio> 
+  <fim>154</fim> 
+  <chave>aliquota_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota de icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>155</inicio> 
+  <fim>155</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>156</inicio> 
+  <fim>173</fim> 
+  <chave>valor_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor do icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>174</inicio> 
+  <fim>174</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>175</inicio> 
+  <fim>192</fim> 
+  <chave>isentas_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>isentas icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>193</inicio> 
+  <fim>193</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>194</inicio> 
+  <fim>211</fim> 
+  <chave>outras_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>outras icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>212</inicio> 
+  <fim>213</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>214</inicio> 
+  <fim>214</fim> 
+  <chave>icms_subst</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>icms S ou N</descricao> 
+  </registro>
+ <registro>
+  <inicio>215</inicio> 
+  <fim>216</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>217</inicio> 
+  <fim>234</fim> 
+  <chave>base_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base de calculo icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>235</inicio> 
+  <fim>235</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>236</inicio> 
+  <fim>243</fim> 
+  <chave>aliquota_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>244</inicio> 
+  <fim>244</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>245</inicio> 
+  <fim>261</fim> 
+  <chave>valor_subst</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor de substituicao</descricao> 
+  </registro>
+ <registro>
+  <inicio>262</inicio> 
+  <fim>262</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>263</inicio> 
+  <fim>280</fim> 
+  <chave>base_ipi</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base do ipi</descricao> 
+  </registro>
+ <registro>
+  <inicio>281</inicio> 
+  <fim>281</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>282</inicio> 
+  <fim>299</fim> 
+  <chave>valor_ipi</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor do ipi</descricao> 
+  </registro>
+ <registro>
+  <inicio>300</inicio> 
+  <fim>300</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>301</inicio> 
+  <fim>318</fim> 
+  <chave>isentas_ipi</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>isentas ipi</descricao> 
+  </registro>
+ <registro>
+  <inicio>319</inicio> 
+  <fim>319</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>320</inicio> 
+  <fim>337</fim> 
+  <chave>outras_ipi</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>outras ipi</descricao> 
+  </registro>
+ <registro>
+  <inicio>338</inicio> 
+  <fim>339</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>340</inicio> 
+  <fim>340</fim> 
+  <chave>cesta_basica</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cesta basica</descricao> 
+  </registro>
+  <registro>
+  <inicio>341</inicio> 
+  <fim>342</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>343</inicio> 
+  <fim>360</fim> 
+  <chave>base_cesta_basica</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base cesta basica</descricao> 
+  </registro>
+  <registro>
+  <inicio>361</inicio> 
+  <fim>361</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>362</inicio> 
+  <fim>369</fim> 
+  <chave>aliquota_cesta_basica</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota cesta basica</descricao> 
+  </registro>
+  <registro>
+  <inicio>370</inicio> 
+  <fim>370</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>371</inicio> 
+  <fim>388</fim> 
+  <chave>valor_cesta_basica</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor da cesta basica</descricao> 
+  </registro>
+  <registro>
+  <inicio>389</inicio> 
+  <fim>390</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>391</inicio> 
+  <fim>480</fim> 
+  <chave>observacao</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>observacao</descricao> 
+  </registro>
+  <registro>
+  <inicio>481</inicio> 
+  <fim>482</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>483</inicio> 
+  <fim>500</fim> 
+  <chave>base_icms_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>501</inicio> 
+  <fim>501</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>502</inicio> 
+  <fim>519</fim> 
+  <chave>base_icms_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 2</descricao> 
+  </registro>
+  <registro>
+  <inicio>520</inicio> 
+  <fim>520</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>521</inicio> 
+  <fim>538</fim> 
+  <chave>base_icms_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>539</inicio> 
+  <fim>539</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>540</inicio> 
+  <fim>562</fim> 
+  <chave>base_icms_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>563</inicio> 
+  <fim>563</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>564</inicio> 
+  <fim>583</fim> 
+  <chave>base_icms_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>584</inicio> 
+  <fim>584</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>585</inicio> 
+  <fim>592</fim> 
+  <chave>aliquota_icms_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>593</inicio> 
+  <fim>593</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>594</inicio> 
+  <fim>602</fim> 
+  <chave>aliquota_icms_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>603</inicio> 
+  <fim>603</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>604</inicio> 
+  <fim>612</fim> 
+  <chave>aliquota_icms_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>613</inicio> 
+  <fim>613</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>614</inicio> 
+  <fim>621</fim> 
+  <chave>aliquota_icms_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>622</inicio> 
+  <fim>622</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>623</inicio> 
+  <fim>630</fim> 
+  <chave>aliquota_icms_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>631</inicio> 
+  <fim>631</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>632</inicio> 
+  <fim>649</fim> 
+  <chave>valor_icms_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>650</inicio> 
+  <fim>650</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>651</inicio> 
+  <fim>668</fim> 
+  <chave>valor_icms_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>669</inicio> 
+  <fim>669</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>670</inicio> 
+  <fim>687</fim> 
+  <chave>valor_icms_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>688</inicio> 
+  <fim>688</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>689</inicio> 
+  <fim>706</fim> 
+  <chave>valor_icms_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>707</inicio> 
+  <fim>707</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>708</inicio> 
+  <fim>724</fim> 
+  <chave>valor_icms_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>725</inicio> 
+  <fim>726</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>727</inicio> 
+  <fim>728</fim> 
+  <chave>cst_1</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cst 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>729</inicio> 
+  <fim>731</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>732</inicio> 
+  <fim>733</fim> 
+  <chave>cst_2</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cst 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>734</inicio> 
+  <fim>736</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>737</inicio> 
+  <fim>738</fim> 
+  <chave>cst_3</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cst 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>739</inicio> 
+  <fim>741</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>742</inicio> 
+  <fim>743</fim> 
+  <chave>cst_4</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cst 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>744</inicio> 
+  <fim>746</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>747</inicio> 
+  <fim>748</fim> 
+  <chave>cst_5</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cst 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>749</inicio> 
+  <fim>750</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>751</inicio> 
+  <fim>770</fim> 
+  <chave>valor_base_icms_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>771</inicio> 
+  <fim>771</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>772</inicio> 
+  <fim>789</fim> 
+  <chave>valor_base_icms_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>790</inicio> 
+  <fim>790</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>791</inicio> 
+  <fim>808</fim> 
+  <chave>valor_base_icms_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>809</inicio> 
+  <fim>809</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>810</inicio> 
+  <fim>827</fim> 
+  <chave>valor_base_icms_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>828</inicio> 
+  <fim>828</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>829</inicio> 
+  <fim>846</fim> 
+  <chave>valor_base_icms_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>847</inicio> 
+  <fim>847</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>848</inicio> 
+  <fim>855</fim> 
+  <chave>perc_red_icms_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>856</inicio> 
+  <fim>856</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>857</inicio> 
+  <fim>865</fim> 
+  <chave>perc_red_icms_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>866</inicio> 
+  <fim>866</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>867</inicio> 
+  <fim>874</fim> 
+  <chave>perc_red_icms_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>875</inicio> 
+  <fim>875</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>876</inicio> 
+  <fim>883</fim> 
+  <chave>perc_red_icms_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>884</inicio> 
+  <fim>884</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>885</inicio> 
+  <fim>892</fim> 
+  <chave>perc_red_icms_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>893</inicio> 
+  <fim>894</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>895</inicio> 
+  <fim>895</fim> 
+  <chave>codicao_pagamento</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>condicao pagamento</descricao> 
+ </registro>
+ <registro>
+  <inicio>896</inicio> 
+  <fim>897</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>898</inicio> 
+  <fim>902</fim> 
+  <chave>cod_cidade_coleta</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>codigo cidade coleta</descricao> 
+  </registro>
+ <registro>
+  <inicio>903</inicio> 
+  <fim>904</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>905</inicio> 
+  <fim>924</fim> 
+  <chave>conta_deb_exp</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>conta debito exportacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>925</inicio> 
+  <fim>927</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>928</inicio> 
+  <fim>947</fim> 
+  <chave>conta_cred_exp</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>conta credito exportacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>948</inicio> 
+  <fim>949</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>950</inicio> 
+  <fim>968</fim> 
+  <chave>valor_icms_frete</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms frete</descricao> 
+  </registro>
+ <registro>
+  <inicio>969</inicio> 
+  <fim>970</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>971</inicio> 
+  <fim>972</fim> 
+  <chave>modelo_nota</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>modelo nf</descricao> 
+  </registro>
+ <registro>
+  <inicio>973</inicio> 
+  <fim>974</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>975</inicio> 
+  <fim>992</fim> 
+  <chave>valor_desc</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor desconto</descricao> 
+  </registro>
+ <registro>
+  <inicio>993</inicio> 
+  <fim>994</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>995</inicio> 
+  <fim>1015</fim> 
+  <chave>centro_custo_1</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>1016</inicio> 
+  <fim>1017</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1018</inicio> 
+  <fim>1026</fim> 
+  <chave>perc_centro_custo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>1027</inicio> 
+  <fim>1028</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1029</inicio> 
+  <fim>1048</fim> 
+  <chave>centro_custo_2</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>1049</inicio> 
+  <fim>1050</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1051</inicio> 
+  <fim>1059</fim> 
+  <chave>perc_centro_custo_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>1060</inicio> 
+  <fim>1061</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1062</inicio> 
+  <fim>1082</fim> 
+  <chave>centro_custo_3</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>1083</inicio> 
+  <fim>1084</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1085</inicio> 
+  <fim>1093</fim> 
+  <chave>perc_centro_custo_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>1094</inicio> 
+  <fim>1095</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1096</inicio> 
+  <fim>1115</fim> 
+  <chave>centro_custo_4</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>1116</inicio> 
+  <fim>1117</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1118</inicio> 
+  <fim>1126</fim> 
+  <chave>perc_centro_custo_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>1127</inicio> 
+  <fim>1128</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1129</inicio> 
+  <fim>1148</fim> 
+  <chave>centro_custo_5</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>1149</inicio> 
+  <fim>1150</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1151</inicio> 
+  <fim>1159</fim> 
+  <chave>perc_centro_custo_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>1160</inicio> 
+  <fim>1161</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1162</inicio> 
+  <fim>1181</fim> 
+  <chave>centro_custo_6</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro de custo 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1182</inicio> 
+  <fim>1183</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1184</inicio> 
+  <fim>1192</fim> 
+  <chave>perc_centro_custo_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1193</inicio> 
+  <fim>1194</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1195</inicio> 
+  <fim>1214</fim> 
+  <chave>centro_custo_7</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1215</inicio> 
+  <fim>1216</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1217</inicio> 
+  <fim>1225</fim> 
+  <chave>perc_centro_custo_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>precentual cc 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1226</inicio> 
+  <fim>1227</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1228</inicio> 
+  <fim>1247</fim> 
+  <chave>centro_custo_8</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1248</inicio> 
+  <fim>1249</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1250</inicio> 
+  <fim>1258</fim> 
+  <chave>perc_centro_custo_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1259</inicio> 
+  <fim>1260</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1261</inicio> 
+  <fim>1280</fim> 
+  <chave>centro_custo_9</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>centro custo 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1281</inicio> 
+  <fim>1282</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1283</inicio> 
+  <fim>1291</fim> 
+  <chave>perc_centro_custo_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual cc 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1292</inicio> 
+  <fim>1292</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1293</inicio> 
+  <fim>1312</fim> 
+  <chave>base_icms_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1313</inicio> 
+  <fim>1313</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1314</inicio> 
+  <fim>1332</fim> 
+  <chave>base_icms_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1333</inicio> 
+  <fim>1333</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1334</inicio> 
+  <fim>1353</fim> 
+  <chave>base_icms_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1354</inicio> 
+  <fim>1354</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1355</inicio> 
+  <fim>1374</fim> 
+  <chave>base_icms_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base icms 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1375</inicio> 
+  <fim>1375</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1376</inicio> 
+  <fim>1383</fim> 
+  <chave>aliquota_icms_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1384</inicio> 
+  <fim>1384</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1385</inicio> 
+  <fim>1392</fim> 
+  <chave>aliquota_icms_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1393</inicio> 
+  <fim>1393</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1394</inicio> 
+  <fim>1401</fim> 
+  <chave>aliquota_icms_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1402</inicio> 
+  <fim>1402</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1403</inicio> 
+  <fim>1410</fim> 
+  <chave>aliquota_icms_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>aliquota icms 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1411</inicio> 
+  <fim>1411</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1412</inicio> 
+  <fim>1430</fim> 
+  <chave>valor_icms_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1431</inicio> 
+  <fim>1431</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1432</inicio> 
+  <fim>1449</fim> 
+  <chave>valor_icms_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1450</inicio> 
+  <fim>1450</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1451</inicio> 
+  <fim>1469</fim> 
+  <chave>valor_icms_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1470</inicio> 
+  <fim>1470</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1471</inicio> 
+  <fim>1489</fim> 
+  <chave>valor_icms_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1490</inicio> 
+  <fim>1490</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1491</inicio> 
+  <fim>1508</fim> 
+  <chave>valor_base_icms_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1509</inicio> 
+  <fim>1509</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1510</inicio> 
+  <fim>1527</fim> 
+  <chave>valor_base_icms_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1528</inicio> 
+  <fim>1528</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1529</inicio> 
+  <fim>1546</fim> 
+  <chave>valor_base_icms_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1547</inicio> 
+  <fim>1547</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1548</inicio> 
+  <fim>1566</fim> 
+  <chave>valor_base_icms_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor base icms 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1567</inicio> 
+  <fim>1567</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1568</inicio> 
+  <fim>1576</fim> 
+  <chave>perc_red_icms_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>1577</inicio> 
+  <fim>1577</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1578</inicio> 
+  <fim>1585</fim> 
+  <chave>perc_red_icms_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>1586</inicio> 
+  <fim>1586</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1587</inicio> 
+  <fim>1594</fim> 
+  <chave>perc_red_icms_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>1595</inicio> 
+  <fim>1595</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1596</inicio> 
+  <fim>1604</fim> 
+  <chave>perc_red_icms_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>percentual reducao icms 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>1605</inicio> 
+  <fim>1605</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1606</inicio> 
+  <fim>1606</fim> 
+  <chave>modalidade_frete</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>modalida frete</descricao> 
+  </registro>
+ <registro>
+  <inicio>1607</inicio> 
+  <fim>1608</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1609</inicio> 
+  <fim>1616</fim> 
+  <chave>data_frete</chave> 
+  <tipo>text</tipo>   
+  <padrao /> 
+  <descricao>data do frete</descricao> 
+</registro>
+ <registro>
+  <inicio>1617</inicio> 
+  <fim>1619</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1620</inicio> 
+  <fim>1621</fim> 
+  <chave>modelo_frete</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>modelo frete</descricao> 
+  </registro>
+ <registro>
+  <inicio>1622</inicio> 
+  <fim>1624</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1625</inicio> 
+  <fim>1627</fim> 
+  <chave>serie_frete</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>serie frete</descricao> 
+  </registro>
+ <registro>
+  <inicio>1628</inicio> 
+  <fim>1629</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1630</inicio> 
+  <fim>1639</fim> 
+  <chave>numero_doc_frete</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>numero documento frete</descricao> 
+  </registro>
+ <registro>
+  <inicio>1640</inicio> 
+  <fim>1640</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1641</inicio> 
+  <fim>1658</fim> 
+  <chave>valor_conhecimento_frete</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor conhecimento frete</descricao> 
+  </registro>
+ <registro>
+  <inicio>1659</inicio> 
+  <fim>1660</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1661</inicio> 
+  <fim>1675</fim> 
+  <chave>nr_reg_export</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>numero registro exportacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>1676</inicio> 
+  <fim>1677</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1678</inicio> 
+  <fim>1695</fim> 
+  <chave>valor_icms_subst_sp</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms st sao paulo</descricao> 
+  </registro>
+ <registro>
+  <inicio>1696</inicio> 
+  <fim>1696</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1697</inicio> 
+  <fim>1714</fim> 
+  <chave>valor_icms_substituido_sp</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor icms substituido sao paulo</descricao> 
+  </registro>
+ <registro>
+  <inicio>1715</inicio> 
+  <fim>1716</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1717</inicio> 
+  <fim>1717</fim> 
+  <chave>tipo_observacao</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>tipo observacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>1718</inicio> 
+  <fim>1719</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1720</inicio> 
+  <fim>1725</fim> 
+  <chave>numero_doc_dif</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>numero doc dif papel</descricao> 
+  </registro>
+ <registro>
+  <inicio>1726</inicio> 
+  <fim>1727</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1728</inicio> 
+  <fim>1730</fim> 
+  <chave>serie_dif</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>serie dif</descricao> 
+  </registro>
+ <registro>
+  <inicio>1731</inicio> 
+  <fim>1733</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1734</inicio> 
+  <fim>1741</fim> 
+  <chave>data_doc_dif</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>data documento dif</descricao> 
+  </registro>
+ <registro>
+  <inicio>1742</inicio> 
+  <fim>1744</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1745</inicio> 
+  <fim>1745</fim> 
+  <chave>tipo_emitente</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>tipo emitente</descricao> 
+  </registro>
+ <registro>
+  <inicio>1746</inicio> 
+  <fim>1747</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1748</inicio> 
+  <fim>1748</fim> 
+  <chave>tipo_doc_percomp</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>tipo documento perdcomp</descricao> 
+  </registro>
+  <registro>
+  <inicio>1749</inicio> 
+  <fim>1750</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1751</inicio> 
+  <fim>1762</fim> 
+  <chave>nr_reg_perdcomp</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>numero registro perdcomp</descricao> 
+  </registro>
+ <registro>
+  <inicio>1763</inicio> 
+  <fim>1764</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1765</inicio> 
+  <fim>1782</fim> 
+  <chave>valor_desp_perdcomp</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor despacho perdcomp</descricao> 
+  </registro>
+ <registro>
+  <inicio>1783</inicio> 
+  <fim>1784</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1785</inicio> 
+  <fim>1796</fim> 
+  <chave>numero_despacho</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>numero despacho</descricao> 
+  </registro>
+ <registro>
+  <inicio>1797</inicio> 
+  <fim>1799</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+  <registro>
+  <inicio>1800</inicio> 
+  <fim>1842</fim> 
+  <chave>pais_perdcomp</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>pais utilizado pelo perdcomp</descricao> 
+  </registro>
+ <registro>
+  <inicio>1843</inicio> 
+  <fim>1845</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1846</inicio> 
+  <fim>1868</fim> 
+  <chave>moeda_perdcomp</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>moeda perdcomp</descricao> 
+  </registro>
+ <registro>
+  <inicio>1869</inicio> 
+  <fim>1870</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1871</inicio> 
+  <fim>1883</fim> 
+  <chave>valor_ret_pis</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor retencao pis</descricao> 
+  </registro>
+ <registro>
+  <inicio>1884</inicio> 
+  <fim>1884</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1885</inicio> 
+  <fim>1896</fim> 
+  <chave>valor_ret_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor retencao cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>1897</inicio> 
+  <fim>1897</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1898</inicio> 
+  <fim>1910</fim> 
+  <chave>valor_cont_social</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor contribuicao social</descricao> 
+  </registro>
+ <registro>
+  <inicio>1911</inicio> 
+  <fim>1911</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1912</inicio> 
+  <fim>1930</fim> 
+  <chave>valor_isenta_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>1931</inicio> 
+  <fim>1931</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1932</inicio> 
+  <fim>1949</fim> 
+  <chave>valor_outra_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>1950</inicio> 
+  <fim>1950</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1951</inicio> 
+  <fim>1968</fim> 
+  <chave>valor_isenta_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>1969</inicio> 
+  <fim>1969</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1970</inicio> 
+  <fim>1987</fim> 
+  <chave>valor_outra_2</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 2</descricao> 
+  </registro>
+ <registro>
+  <inicio>1988</inicio> 
+  <fim>1988</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>1989</inicio> 
+  <fim>2006</fim> 
+  <chave>valor_isenta_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>2007</inicio> 
+  <fim>2007</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2008</inicio> 
+  <fim>2027</fim> 
+  <chave>valor_outra_3</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 3</descricao> 
+  </registro>
+ <registro>
+  <inicio>2028</inicio> 
+  <fim>2028</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2029</inicio> 
+  <fim>2046</fim> 
+  <chave>valor_isenta_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>2047</inicio> 
+  <fim>2047</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2048</inicio> 
+  <fim>2067</fim> 
+  <chave>valor_outra_4</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 4</descricao> 
+  </registro>
+ <registro>
+  <inicio>2068</inicio> 
+  <fim>2068</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2069</inicio> 
+  <fim>2086</fim> 
+  <chave>valor_isenta_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>2087</inicio> 
+  <fim>2087</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2088</inicio> 
+  <fim>2105</fim> 
+  <chave>valor_outra_5</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 5</descricao> 
+  </registro>
+ <registro>
+  <inicio>2106</inicio> 
+  <fim>2106</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2107</inicio> 
+  <fim>2124</fim> 
+  <chave>valor_isenta_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>2125</inicio> 
+  <fim>2125</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2126</inicio> 
+  <fim>2143</fim> 
+  <chave>valor_outra_6</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 6</descricao> 
+  </registro>
+ <registro>
+  <inicio>2144</inicio> 
+  <fim>2144</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2145</inicio> 
+  <fim>2162</fim> 
+  <chave>valor_isenta_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>2163</inicio> 
+  <fim>2163</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2164</inicio> 
+  <fim>2181</fim> 
+  <chave>valor_outra_7</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 7</descricao> 
+  </registro>
+ <registro>
+  <inicio>2182</inicio> 
+  <fim>2182</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2183</inicio> 
+  <fim>2201</fim> 
+  <chave>valor_isenta_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>2202</inicio> 
+  <fim>2202</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2203</inicio> 
+  <fim>2222</fim> 
+  <chave>valor_outra_8</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor oura 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>2223</inicio> 
+  <fim>2223</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2224</inicio> 
+  <fim>2241</fim> 
+  <chave>valor_isenta_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isenta 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>2242</inicio> 
+  <fim>2242</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2243</inicio> 
+  <fim>2260</fim> 
+  <chave>valor_outra_9</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outra 9</descricao> 
+  </registro>
+ <registro>
+  <inicio>2261</inicio> 
+  <fim>2261</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2262</inicio> 
+  <fim>2279</fim> 
+  <chave>valor_isencao</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor isencao</descricao> 
+  </registro>
+ <registro>
+  <inicio>2280</inicio> 
+  <fim>2280</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2281</inicio> 
+  <fim>2298</fim> 
+  <chave>valor_red_pr</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor reducao parana</descricao> 
+  </registro>
+ <registro>
+  <inicio>2299</inicio> 
+  <fim>2299</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2300</inicio> 
+  <fim>2317</fim> 
+  <chave>valor_st_icms_pr</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor st icms parana</descricao> 
+  </registro>
+ <registro>
+  <inicio>2318</inicio> 
+  <fim>2318</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2319</inicio> 
+  <fim>2336</fim> 
+  <chave>valor_dif_pr</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor diferimento parana</descricao> 
+  </registro>
+ <registro>
+  <inicio>2337</inicio> 
+  <fim>2337</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2338</inicio> 
+  <fim>2357</fim> 
+  <chave>cnpj</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>cnpj</descricao> 
+  </registro>
+ <registro>
+  <inicio>2358</inicio> 
+  <fim>2358</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2359</inicio> 
+  <fim>2376</fim> 
+  <chave>base_sem_st_exp</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base sem st para exportacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>2377</inicio> 
+  <fim>2377</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2378</inicio> 
+  <fim>2397</fim> 
+  <chave>base_st_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2398</inicio> 
+  <fim>2398</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2399</inicio> 
+  <fim>2416</fim> 
+  <chave>base_st_pis_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st pis e icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2417</inicio> 
+  <fim>2417</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2418</inicio> 
+  <fim>2437</fim> 
+  <chave>base_st_cofins_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st cofins e icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2438</inicio> 
+  <fim>2438</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2439</inicio> 
+  <fim>2457</fim> 
+  <chave>base_st_cofins_pasep_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st cofins e pasep e icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2458</inicio> 
+  <fim>2458</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2459</inicio> 
+  <fim>2476</fim> 
+  <chave>base_st_pasep</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente pasep</descricao> 
+  </registro>
+ <registro>
+  <inicio>2477</inicio> 
+  <fim>2477</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2478</inicio> 
+  <fim>2495</fim> 
+  <chave>base_st_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2496</inicio> 
+  <fim>2496</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2497</inicio> 
+  <fim>2514</fim> 
+  <chave>base_st_pasep_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st pasep e cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2515</inicio> 
+  <fim>2515</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2516</inicio> 
+  <fim>2534</fim> 
+  <chave>base_venda_exportacao</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base de venda para exportacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>2535</inicio> 
+  <fim>2535</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2536</inicio> 
+  <fim>2554</fim> 
+  <chave>base_sem_st_exp</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base sem st industrializada</descricao> 
+  </registro>
+ <registro>
+  <inicio>2555</inicio> 
+  <fim>2555</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2556</inicio> 
+  <fim>2574</fim> 
+  <chave>base_st_ipi</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente ipi</descricao> 
+  </registro>
+ <registro>
+  <inicio>2575</inicio> 
+  <fim>2575</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2576</inicio> 
+  <fim>2594</fim> 
+  <chave>base_st_ipi_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2595</inicio> 
+  <fim>2595</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2596</inicio> 
+  <fim>2613</fim> 
+  <chave>base_st_ipi_pasep</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e pasep</descricao> 
+  </registro>
+ <registro>
+  <inicio>2614</inicio> 
+  <fim>2614</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2615</inicio> 
+  <fim>2632</fim> 
+  <chave>base_st_ipi_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2633</inicio> 
+  <fim>2633</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2634</inicio> 
+  <fim>2651</fim> 
+  <chave>base_st_ipi_pasep_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e pasep e cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2652</inicio> 
+  <fim>2652</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2653</inicio> 
+  <fim>2670</fim> 
+  <chave>base_st_ipi_icms_pasep</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e icms e pasep</descricao> 
+  </registro>
+ <registro>
+  <inicio>2671</inicio> 
+  <fim>2671</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2672</inicio> 
+  <fim>2689</fim> 
+  <chave>base_st_ipi_icms_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e icms e cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2690</inicio> 
+  <fim>2690</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2691</inicio> 
+  <fim>2708</fim> 
+  <chave>base_st_ipi_icms_pasep_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st ipi e icms e pasep e cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2709</inicio> 
+  <fim>2709</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2710</inicio> 
+  <fim>2727</fim> 
+  <chave>base_ind_exportacao</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base industrialiaza exportacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>2728</inicio> 
+  <fim>2728</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2729</inicio> 
+  <fim>2746</fim> 
+  <chave>base_trasp_sst_ind</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base transportes industrializada sem st</descricao> 
+  </registro>
+ <registro>
+  <inicio>2747</inicio> 
+  <fim>2747</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2748</inicio> 
+  <fim>2765</fim> 
+  <chave>base_st_transp_cst_ind</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st de transporte com st industrializados</descricao> 
+  </registro>
+ <registro>
+  <inicio>2766</inicio> 
+  <fim>2766</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2767</inicio> 
+  <fim>2784</fim> 
+  <chave>base_st_icms_ind</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2785</inicio> 
+  <fim>2785</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2786</inicio> 
+  <fim>2803</fim> 
+  <chave>base_st_pis_icms_ind</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st pis e cicms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2804</inicio> 
+  <fim>2804</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2805</inicio> 
+  <fim>2822</fim> 
+  <chave>base_st_cofins_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st cofins e icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2823</inicio> 
+  <fim>2823</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2824</inicio> 
+  <fim>2842</fim> 
+  <chave>base_st_cofins_pasep_icms</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st cofins e pasep e icms</descricao> 
+  </registro>
+ <registro>
+  <inicio>2843</inicio> 
+  <fim>2843</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2844</inicio> 
+  <fim>2861</fim> 
+  <chave>base_st_pasep</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente pasep</descricao> 
+  </registro>
+ <registro>
+  <inicio>2862</inicio> 
+  <fim>2862</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2863</inicio> 
+  <fim>2880</fim> 
+  <chave>base_st_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st somente cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2881</inicio> 
+  <fim>2881</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2882</inicio> 
+  <fim>2900</fim> 
+  <chave>base_st__pasep_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>base st pasep e cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2901</inicio> 
+  <fim>2901</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2902</inicio> 
+  <fim>2919</fim> 
+  <chave>valor_imp_excl</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor importancias excluidas</descricao> 
+  </registro>
+ <registro>
+  <inicio>2920</inicio> 
+  <fim>2920</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2921</inicio> 
+  <fim>2938</fim> 
+  <chave>valor_lucro_pis</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor lucro real pis</descricao> 
+  </registro>
+ <registro>
+  <inicio>2939</inicio> 
+  <fim>2939</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2940</inicio> 
+  <fim>2957</fim> 
+  <chave>valor_lucro_cofins</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor lucro real cofins</descricao> 
+  </registro>
+ <registro>
+  <inicio>2958</inicio> 
+  <fim>2959</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2960</inicio> 
+  <fim>2979</fim> 
+  <chave>codigo_conta</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>codigo conta</descricao> 
+  </registro>
+ <registro>
+  <inicio>2980</inicio> 
+  <fim>2982</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>2983</inicio> 
+  <fim>3026</fim> 
+  <chave>chave_nota</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>chave nota fiscal</descricao> 
+  </registro>
+ <registro>
+  <inicio>3027</inicio> 
+  <fim>3028</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>",</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3029</inicio> 
+  <fim>3030</fim> 
+  <chave>situacao</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>situacao</descricao> 
+  </registro>
+ <registro>
+  <inicio>3031</inicio> 
+  <fim>3031</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3032</inicio> 
+  <fim>3032</fim> 
+  <chave>tipo_frete_modelo_8</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>tipo frete modelo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>3033</inicio> 
+  <fim>3033</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3034</inicio> 
+  <fim>3034</fim> 
+  <chave>tipo_frete_modelo_1</chave> 
+  <tipo>integer</tipo> 
+  <padrao /> 
+  <descricao>tipo frete modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3035</inicio> 
+  <fim>3035</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3036</inicio> 
+  <fim>3050</fim> 
+  <chave>valor_frete_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor frete modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3051</inicio> 
+  <fim>3051</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3052</inicio> 
+  <fim>3066</fim> 
+  <chave>valor_seguro_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor seguro modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3067</inicio> 
+  <fim>3067</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3068</inicio> 
+  <fim>3082</fim> 
+  <chave>valor_outra_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor outras modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3083</inicio> 
+  <fim>3083</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3084</inicio> 
+  <fim>3098</fim> 
+  <chave>valor_cofins_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor cofins modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3099</inicio> 
+  <fim>3099</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3100</inicio> 
+  <fim>3114</fim> 
+  <chave>valor_cofins_ret_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor cofins retido modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3115</inicio> 
+  <fim>3115</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3116</inicio> 
+  <fim>3130</fim> 
+  <chave>valor_pis_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor pis modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3131</inicio> 
+  <fim>3131</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3132</inicio> 
+  <fim>3146</fim> 
+  <chave>valor_pis_ret_modelo_1</chave> 
+  <tipo>float_point_2</tipo> 
+  <padrao /> 
+  <descricao>valor retido pis modelo 1</descricao> 
+  </registro>
+ <registro>
+  <inicio>3147</inicio> 
+  <fim>3148</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>,"</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3149</inicio> 
+  <fim>3192</fim> 
+  <chave>chave_cte_modelo_8</chave> 
+  <tipo>text</tipo>  
+  <padrao /> 
+  <descricao>chave cte modelo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>3193</inicio> 
+  <fim>3195</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3196</inicio> 
+  <fim>3239</fim> 
+  <chave>chave_cte_ref_modelo_8</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>chave cte referencia modelo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>3240</inicio> 
+  <fim>3242</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3243</inicio> 
+  <fim>3243</fim> 
+  <chave>tipo_cte_modelo_1</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>tipo cte modelo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>3244</inicio> 
+  <fim>3246</fim>   
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3247</inicio> 
+  <fim>3290</fim> 
+  <chave>nr_despacho_modelo_8</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>numero despacho modelo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>3291</inicio> 
+  <fim>3293</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>","</padrao> 
+  <descricao /> 
+  </registro>
+ <registro>
+  <inicio>3294</inicio> 
+  <fim>3297</fim> 
+  <chave>cst_icms_modelo_8</chave> 
+  <tipo>text</tipo> 
+  <padrao /> 
+  <descricao>cst icms modelo 8</descricao> 
+  </registro>
+ <registro>
+  <inicio>3298</inicio> 
+  <fim>3298</fim> 
+  <chave /> 
+  <tipo /> 
+  <padrao>"</padrao> 
+  <descricao /> 
+  </registro>
+  </sessao>
+</layout>

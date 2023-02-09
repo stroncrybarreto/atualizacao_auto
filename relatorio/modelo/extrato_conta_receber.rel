@@ -1,0 +1,87 @@
+<relatorio dados="extrato_conta_receber" tamfont="3" l="720">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  titulo1					tam=110 alinha=centro
+4  titulo2					tam=110 alinha=centro
+100 titulo3					tam=110 alinha=centro
+5  cliente					tam=110
+83 qtd						tam=4
+85 valor_total				tam=13	fmt=float2
+86 documento				tam=9   alinha=centro
+87 motivo_nome				tam=23
+88 valor					tam=13	fmt=float2
+89 data						tam=10	fmt=data
+90 vencto					tam=10	fmt=data
+91 pagto					tam=10  fmt=data
+92 valor_pag				tam=13	fmt=float2	expr=(valor+juros_multa)
+93 saldo_cobrar				tam=13	fmt=float2
+94 saldo_fatura				tam=13	fmt=float2
+95 total_cobrar				tam=13	fmt=float2
+96 total_fatura				tam=13	fmt=float2
+97 total_recebido			tam=13	fmt=float2
+98 total_receber			tam=13	fmt=float2
+99 total_aberto				tam=13	fmt=float2
+991 total_nota				tam=13	fmt=float2
+992 saldo_nota				tam=13	fmt=float2
+993 saldo_nota				tam=13	fmt=float2
+994 pessoa_emitido			tam=13	fmt=float2
+995 pessoa_recebido			tam=13	fmt=float2
+996 pessoa_receber			tam=13	fmt=float2
+997 total_emitido			tam=13	fmt=float2
+998 total_recebido			tam=13	fmt=float2
+999 total_receber			tam=13	fmt=float2
+
+15  juros					tam=10	fmt=%.02f
+16  multa					tam=10	fmt=%.02f
+17  juros_multa				tam=10	fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                                                                           #2              
+------------------------------------------------------------------------------------------------------------------------------
+
+
+#3
+#4
+#100
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa">
+
+
+#5                 
++----------------------------------------------------------------------------------------------------------------------------+
+| #83  NOTAS A COBRAR emitidas no período                                                         Valor total: #85           |
++-----------+-------------------------+---------------+--------------+------------+------------+-------------+---------------+
+| Fat. Num. |       Histórico         |     Valor     | Data Emissão | Vencimento | Pagamento  | Multa/Juros |   Valor Pago  |
++-----------+-------------------------+---------------+--------------+------------+------------+-------------+---------------+
+</cab_grupo>
+<detalhe>
+| #86       | #87                     | #88           |  #89         | #90        | #91        | #17         | #92           |*
+</detalhe>
+<rod_grupo nome="1">
++-----------+-------------------------+---------------+--------------+------------+------------+-------------+---------------+
+| Saldo em NOTAS A COBRAR:              #993          |
+| Saldo em FATURAMENTO DE NOTAS:        #996          |
++-----------------------------------------------------+
+</rod_grupo>
+
+<rod_pagina>
++-----------+-------------------------+---------------+--------------+------------+------------+-------------+---------------+
+</rod_pagina>
+
+<rod_relat>
+
++-----------------------------------------------------+
+| Total de NOTAS A COBRAR:              #991          |
+| Total de FATURAMENTO DE NOTAS:        #997          |
++-----------------------------------------------------+
+| Total recebido no periodo:            #998          |
+| Total a receber:                      #999          |
+| NOTAS A COBRAR em aberto:             #992          |
++-----------------------------------------------------+
+</rod_relat>
+
+<hash>c896655fe218b3443f530aa9c5d89c6c</hash>
+</relatorio>

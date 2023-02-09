@@ -1,0 +1,29 @@
+<relatorio dados="venda_receb_motivo_dia" paper_orientation="landscape">
+<apelidos>
+1  rel_nome_posto     tam=99999
+2  rel_ponto_titulo   tam=99999
+3  rel_linha_detalhe  tam=99999
+4  rel_titulo         tam=99999
+</apelidos>
+<cab_pagina>
+
+#1
+#2
+
+
+#4
+
+</cab_pagina>
+
+<detalhe>
+#3
+</detalhe>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>2247ea15d00346f546939724fdf4be4f</hash>
+</relatorio>

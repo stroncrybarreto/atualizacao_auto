@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+
+  <info nome="hipercard">
+    <header>0</header>
+	<lote>1</lote>
+	<venda>2</venda>
+	<trailer>9</trailer>
+  </info>
+
+  <header>
+    <registro>
+     <desc>Tipo de registro</desc>
+     <posicao>1-1</posicao>
+     <tipo>int</tipo>
+     <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Matriz</desc>
+      <posicao>2-11</posicao>
+      <tipo>int</tipo>
+      <chave>matriz</chave>
+    </registro>
+    <registro>
+      <desc>Data de processamento</desc>
+      <posicao>12-19</posicao>
+      <tipo>date</tipo>
+      <chave>data</chave>
+    </registro>
+    <registro>
+      <desc>Periodo inicial</desc>
+      <posicao>20-27</posicao>
+      <tipo>date</tipo>
+      <chave>data_ini</chave>
+    </registro>
+    <registro>
+      <desc>Periodo final</desc>
+      <posicao>28-35</posicao>
+      <tipo>date</tipo>
+      <chave>data_fim</chave>
+    </registro>
+    <registro>
+      <desc>Sequencial</desc>
+      <posicao>36-42</posicao>
+      <tipo>int</tipo>
+      <chave>seq</chave>
+    </registro>
+    <registro>
+      <desc>Operadora</desc>
+      <posicao>43-51</posicao>
+      <tipo>str</tipo>
+      <chave>operadora</chave>
+    </registro>
+    <registro>
+      <desc>Versao</desc>
+      <posicao>52-57</posicao>
+      <tipo>str</tipo>
+      <chave>versao</chave>
+    </registro>
+    <registro>
+      <desc>Vago</desc>
+      <posicao>58-300</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </header>
+
+  <lote>
+    <registro>
+      <desc>Tipo de registro</desc>
+      <posicao>1-1</posicao>
+      <tipo>int</tipo>
+      <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Loja submissora</desc>
+      <posicao>2-11</posicao>
+      <tipo>int</tipo>
+      <chave>loja</chave>
+    </registro>
+    <registro>
+      <desc>Tipo de lote</desc>
+      <posicao>12-14</posicao>
+      <tipo>int</tipo>
+      <chave>tipo_lote</chave>
+    </registro>
+    <registro>
+      <desc>Numero do lote</desc>
+      <posicao>15-21</posicao>
+      <tipo>int</tipo>
+      <chave>lote</chave>
+    </registro>
+    <registro>
+      <desc>Parcela paga / plano</desc>
+      <posicao>22-26</posicao>
+      <tipo>str</tipo>
+      <chave>parcela</chave>
+    </registro>
+    <registro>
+      <desc>Status</desc>
+      <posicao>27-29</posicao>
+      <tipo>str</tipo>
+      <chave>status</chave>
+    </registro>
+    <registro>
+      <desc>Data remessa</desc>
+      <posicao>30-37</posicao>
+      <tipo>date</tipo>
+      <chave>dt_remessa</chave>
+    </registro>
+    <registro>
+      <desc>Data processamento</desc>
+      <posicao>38-45</posicao>
+      <tipo>date</tipo>
+      <chave>dt_processamento</chave>
+    </registro>
+    <registro>
+      <desc>Data programada para credito</desc>
+      <posicao>46-53</posicao>
+      <tipo>date</tipo>
+      <chave>dt_programada</chave>
+    </registro>
+    <registro>
+      <desc>Data de credito/Debito</desc>
+      <posicao>54-61</posicao>
+      <tipo>date</tipo>
+      <chave>dt_baixa</chave>
+    </registro>
+    <registro>
+      <desc>Valor bruto (+ credito / - debito)</desc>
+      <posicao>62-75</posicao>
+      <tipo>float</tipo>
+      <chave>valor_bruto</chave>
+    </registro>
+    <registro>
+      <desc>Valor rejeitado (+ credito / - debito)</desc>
+      <posicao>76-89</posicao>
+      <tipo>float</tipo>
+      <chave>valor_rejeitado</chave>
+    </registro>
+    <registro>
+      <desc>Valor da Parcela (+ credito / - debito)</desc>
+      <posicao>90-103</posicao>
+      <tipo>float</tipo>
+      <chave>valor_parcela</chave>
+    </registro>
+    <registro>
+      <desc>% Taxa de administracao</desc>
+      <posicao>104-108</posicao>
+      <tipo>float</tipo>
+      <chave>taxa_administracao</chave>
+    </registro>
+    <registro>
+      <desc>Valor taxa administrativa (+ credito / - debito)</desc>
+      <posicao>109-122</posicao>
+      <tipo>float</tipo>
+      <chave>valor_taxa_administrativa</chave>
+    </registro>
+    <registro>
+      <desc>% Taxa financeira</desc>
+      <posicao>123-127</posicao>
+      <tipo>float</tipo>
+      <chave>taxa_financeira</chave>
+    </registro>
+    <registro>
+      <desc>Valor taxa financeira (+ credito / - debito)</desc>
+      <posicao>128-141</posicao>
+      <tipo>float</tipo>
+      <chave>valor_taxa_financeira</chave>
+    </registro>
+    <registro>
+      <desc>Valor liquido da parcela (+ credito / - debito)</desc>
+      <posicao>142-155</posicao>
+      <tipo>float</tipo>
+      <chave>valor_liquido_parcela</chave>
+    </registro>
+    <registro>
+      <desc>Valor total da taxa de embarque (+ credito / - debito)</desc>
+      <posicao>156-169</posicao>
+      <tipo>float</tipo>
+      <chave>valor_taxa_embarque</chave>
+    </registro>
+    <registro>
+      <desc>Banco</desc>
+      <posicao>170-173</posicao>
+      <tipo>int</tipo>
+      <chave>banco</chave>
+    </registro>
+    <registro>
+      <desc>Agencia</desc>
+      <posicao>174-178</posicao>
+      <tipo>int</tipo>
+      <chave>agencia</chave>
+    </registro>
+    <registro>
+      <desc>Conta corrente</desc>
+      <posicao>179-192</posicao>
+      <tipo>str</tipo>
+      <chave>conta_corrente</chave>
+    </registro>
+    <registro>
+      <desc>Quantidade de venda do lote</desc>
+      <posicao>193-197</posicao>
+      <tipo>int</tipo>
+      <chave>qtde_venda</chave>
+    </registro>
+    <registro>
+      <desc>Tipo do credito/debito</desc>
+      <posicao>198-198</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Quantidade de vendas rejeitadas</desc>
+      <posicao>199-203</posicao>
+      <tipo>int</tipo>
+      <chave>qtde_rejeitada</chave>
+    </registro>
+    <registro>
+      <desc>Numero do lote original</desc>
+      <posicao>204-210</posicao>
+      <tipo>int</tipo>
+      <chave>lote_original</chave>
+    </registro>
+    <registro>
+      <desc>Indicador de revenda/antecipacao</desc>
+      <posicao>211-211</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Indicador de juros</desc>
+      <posicao>212-212</posicao>
+      <tipo>int</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Forma de pagamento</desc>
+      <posicao>213-213</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Valor da diferenca bruta 1</desc>
+      <posicao>214-218</posicao>
+      <tipo>float</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Valor da diferenca bruta 2</desc>
+      <posicao>219-223</posicao>
+      <tipo>float</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Valor da diferenca liquida 3</desc>
+      <posicao>224-228</posicao>
+      <tipo>float</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Valor da diferenca liquida 4</desc>
+      <posicao>229-233</posicao>
+      <tipo>float</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Pagamento flexivel</desc>
+      <posicao>234-234</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Vago</desc>
+      <posicao>235-300</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </lote>
+
+  <venda>
+    <registro>
+      <desc>Tipo de registro</desc>
+      <posicao>1-1</posicao>
+      <tipo>int</tipo>
+      <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Loja submissora</desc>
+      <posicao>2-11</posicao>
+      <tipo>int</tipo>
+      <chave>loja</chave>
+    </registro>
+    <registro>
+      <desc>Tipo do lote</desc>
+      <posicao>12-14</posicao>
+      <tipo>int</tipo>
+      <chave>tipo_lote</chave>
+    </registro>
+    <registro>
+      <desc>Numero do lote</desc>
+      <posicao>15-21</posicao>
+      <tipo>int</tipo>
+      <chave>lote</chave>
+    </registro>
+    <registro>
+      <desc>Numero do cartao Hipercard</desc>
+      <posicao>22-40</posicao>
+      <tipo>str</tipo>
+      <chave>cartao</chave>
+    </registro>
+    <registro>
+      <desc>Data da compra</desc>
+      <posicao>41-48</posicao>
+      <tipo>date</tipo>
+      <chave>data</chave>
+    </registro>
+    <registro>
+      <desc>Valor total da compra (+ credito / - debito)</desc>
+      <posicao>49-62</posicao>
+      <tipo>float</tipo>
+      <chave>valor</chave>
+    </registro>
+    <registro>
+      <desc>Valor da parcela da compra (+ credito / - debito)</desc>
+      <posicao>63-76</posicao>
+      <tipo>float</tipo>
+      <chave>valor_parcela</chave>
+    </registro>
+    <registro>
+      <desc>Valor da taxa de embarque (+ credito / - debito)</desc>
+      <posicao>77-90</posicao>
+      <tipo>float</tipo>
+      <chave>valor_taxa_embarque</chave>
+    </registro>
+    <registro>
+      <desc>Motivo da rejeicao</desc>
+      <posicao>91-120</posicao>
+      <tipo>str</tipo>
+      <chave>motivo_rejeicao</chave>
+    </registro>
+    <registro>
+      <desc>Codigo de autorizacao</desc>
+      <posicao>121-126</posicao>
+      <tipo>str</tipo>
+      <chave>autorizacao</chave>
+    </registro>
+    <registro>
+      <desc>NSU</desc>
+      <posicao>127-132</posicao>
+      <tipo>str</tipo>
+      <chave>nsu</chave>
+    </registro>
+    <registro>
+      <desc>Meio de captura</desc>
+      <posicao>133-138</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Numero do terminal</desc>
+      <posicao>139-146</posicao>
+      <tipo>str</tipo>
+      <chave>terminal</chave>
+    </registro>
+    <registro>
+      <desc>Estabelecimento</desc>
+      <posicao>147-149</posicao>
+      <tipo>int</tipo>
+      <chave>estabelecimento</chave>
+    </registro>
+    <registro>
+      <desc>Numero do lote original</desc>
+      <posicao>150-156</posicao>
+      <tipo>int</tipo>
+      <chave>lote_original</chave>
+    </registro>
+    <registro>
+      <desc>Valor bruto da parcela da compra (+ credito / - debito)</desc>
+      <posicao>157-170</posicao>
+      <tipo>float</tipo>
+      <chave>valor_bruto</chave>
+    </registro>
+    <registro>
+      <desc>Valor liquido da parcela da compra (+ credito / - debito)</desc>
+      <posicao>171-184</posicao>
+      <tipo>float</tipo>
+      <chave>valor_liquido</chave>
+    </registro>
+    <registro>
+      <desc>Status da venda</desc>
+      <posicao>185-187</posicao>
+      <tipo>str</tipo>
+      <chave>status</chave>
+    </registro>
+    <registro>
+      <desc>Valor liquido da parcela da compra (+ credito / - debito)</desc>
+      <posicao>188-201</posicao>
+      <tipo>float</tipo>
+      <chave></chave>
+    </registro>
+    <registro>
+      <desc>Quantidade de parcelas</desc>
+      <posicao>202-203</posicao>
+      <tipo>int</tipo>
+      <chave>qtde_parcela</chave>
+    </registro>
+    <registro>
+      <desc>Vago</desc>
+      <posicao>204-300</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </venda>
+
+  <trailer>
+    <registro>
+      <desc>Tipo de registro</desc>
+      <posicao>1-1</posicao>
+      <tipo>int</tipo>
+      <chave>tipo</chave>
+    </registro>
+    <registro>
+      <desc>Total de transacoes</desc>
+      <posicao>2-12</posicao>
+      <tipo>int</tipo>
+      <chave>total_transacao</chave>
+    </registro>
+    <registro>
+      <desc>Vago</desc>
+      <posicao>13-300</posicao>
+      <tipo>str</tipo>
+      <chave></chave>
+    </registro>
+  </trailer>
+
+</layout>

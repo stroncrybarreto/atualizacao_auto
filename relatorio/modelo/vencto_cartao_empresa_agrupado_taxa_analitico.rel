@@ -1,0 +1,78 @@
+<relatorio dados="vencto_cartao_empresa" ordem="empresa, empresa_nome, data, turno, conta, vencto, data_baixa">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+3  titulo					tam=138	alinha=centro
+4  empresa_cod_nome				tam=138
+5  data						tam=10	fmt=data
+6  turno					tam=3 	alinha=centro
+7  conta					tam=40  alinha=esquerda
+8  vencto                   tam=10  fmt=data
+9  valor					tam=16  fmt=float2	alinha=direita
+10 taxa		       			tam=11	alinha=direita fmt=float2
+11 valor_liquido 			tam=15  fmt=float2	alinha=direita
+
+12 valor_subtotal			tam=16  fmt=float2	func=soma	campo=valor	grupo=1	alinha=direita
+13 tarifa_subtotal			tam=11  func=soma	campo=taxa	grupo=1	alinha=direita fmt=float2
+14 valor_liquido_subtotal	tam=15  fmt=float2	func=soma	campo=valor_liquido	grupo=1	alinha=direita
+
+15 valor_total				tam=16  fmt=float2	func=soma	campo=valor	alinha=direita
+16 tarifa_total				tam=11   func=soma	campo=taxa	alinha=direita fmt=float2
+17 valor_liquido_total		tam=15  fmt=float2	func=soma	campo=valor_liquido	alinha=direita
+18 data_baixa               tam=10  fmt=data
+19 titulo_1                 tam=157 alinha=centro
+20 outras_despesas			tam=15  fmt=%.02f	alinha=direita
+21 outras_despesas_subtotal	tam=15  fmt=%.02f	func=soma	campo=outras_despesas	grupo=1	alinha=direita
+22 valor_outras_despesas	tam=15  fmt=%.02f	func=soma	campo=outras_despesas	alinha=direita
+23 total_valor_empresa		tam=16  fmt=float2	func=soma	campo=valor grupo=2	alinha=direita
+24 total_tarifa_empresa 	tam=10  func=soma	campo=taxa	grupo=2	alinha=direita fmt=float2
+25 total_outras_despesas_empresa tam=15  fmt=%.02f	func=soma	campo=outras_despesas grupo=2	alinha=direita
+26 total_valor_liquido_empresa	tam=15  fmt=float2	func=soma	campo=valor_liquido	grupo=2 alinha=direita
+27 observacao				tam=108
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                          #2                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+#19
+#3
+</cab_pagina>
+<cab_grupo nome="2" quebra="empresa_nome,empresa">
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #4                                                                                                                                              |
+</cab_grupo>
+<cab_grupo nome="1" quebra="empresa_nome,empresa,cod_num,conta">
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Conta: #7                                                                                                                                                |
++------------+-----+------------------------------------------+------------+------------+-----------------+------------+-----------------+-----------------+
+|    Data    | Tur | Conta                                    | Vencimento | Pagamento  |      Valor      |   Tarifa   | Outras despesas | Valor líquido   |
++------------+-----+------------------------------------------+------------+------------+-----------------+------------+-----------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #5         | #6  | #7                                       | #8         | #18        |#9               |#10         | #20             | #11             |
+</detalhe> 
+<rod_grupo nome="1">
++---------------------------------------------------------------------------------------+-----------------+------------+-----------------+-----------------+
+| Subtotal                                                                              |#12              |#13         | #21             | #14             |
++---------------------------------------------------------------------------------------+-----------------+------------+-----------------+-----------------+
+</rod_grupo>
+<rod_grupo nome="2">
+| Total empresa                                                                         |#23              | #24        | #25             | #26             |
++---------------------------------------------------------------------------------------+-----------------+------------+-----------------+-----------------+
+</rod_grupo>
+
+<rod_relat>
+
++---------------------------------------------------------------------------------------+-----------------+------------+-----------------+-----------------+
+| Total geral                                                                           |#15              |#16         | #22             | #17             |
++---------------------------------------------------------------------------------------+-----------------+------------+-----------------+-----------------+
+
+#27
+</rod_relat>
+
+<rod_pagina>
++------------+-----+------------------------------------------+------------+------------+-----------------+------------+-----------------+-----------------+
+</rod_pagina>
+
+<hash>7e43d19d91c5330a69c01b6ff2504dc2</hash>
+</relatorio>

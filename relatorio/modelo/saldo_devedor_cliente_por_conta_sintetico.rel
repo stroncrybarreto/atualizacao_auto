@@ -1,0 +1,58 @@
+<relatorio dados="saldo_devedor_cliente" ordem="pessoa_nome,conta_nome">
+<apelidos>
+1  rel_posto_nome         		tam=60
+2  rel_data_hora           		tam=16
+4  subtitulo					tam=100	alinha=centro
+5  pessoa_nome                  tam=86
+6  conta_nome                   tam=51
+8 valor_atrasado                tam=12 fmt=float2
+9 valor_vencer                  tam=12 fmt=float2
+10 valor_geral                  tam=12 fmt=float2
+11 total_cliente_atrasado       tam=12 fmt=float2  func=soma campo=valor_atrasado grupo=1
+12 total_cliente_vencer         tam=12 fmt=float2  func=soma campo=valor_vencer grupo=1
+13 total_cliente_geral          tam=12 fmt=float2  func=soma campo=valor_geral  grupo=1
+14 total_atrasado               tam=12 fmt=float2  func=soma campo=valor_atrasado 
+15 total_vencer                 tam=12 fmt=float2  func=soma campo=valor_vencer
+16 total_geral                  tam=12 fmt=float2  func=soma campo=valor_geral
+</apelidos>
+
+<cab_pagina>
+#1                                                                                  #2             
+----------------------------------------------------------------------------------------------------
+
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="pessoa_nome">
++--------------------------------------------------------------------------------------------------+
+|  Cliente: #5                                                                                     |
++-----------------------------------------------------+--------------+--------------+--------------+
+|                        Conta                        |   Atrasado   |   A vencer   |     Geral    |
++-----------------------------------------------------+--------------+--------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #6                                                  | #8           | #9           | #10          |
+</detalhe>
+
+<rod_grupo nome="1">
++-----------------------------------------------------+--------------+--------------+--------------+
+| Total cliente                                       | #11          | #12          | #13          |
++-----------------------------------------------------+--------------+--------------+--------------+
+
+</rod_grupo>
+
+<rod_pagina>
++-----------------------------------------------------+--------------+--------------+--------------+
+</rod_pagina>
+
+<rod_relat>
+
++-----------------------------------------------------+--------------+--------------+--------------+
+| Total geral                                         | #14          | #15          | #16          |
++-----------------------------------------------------+--------------+--------------+--------------+
+</rod_relat>
+
+
+<hash>1fa1a9dc6f95fbf6291ad75c69854fe4</hash>
+</relatorio>

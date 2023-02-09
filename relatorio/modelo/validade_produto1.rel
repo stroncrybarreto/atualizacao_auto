@@ -1,0 +1,61 @@
+<relatorio dados="validade_produto" ordem="quebra1">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  titulo			tam=130				alinha=centro
+4  titulo2			tam=130				alinha=centro
+5  quebra1			tam=125				alinha=esquerda
+6  nome				tam=37
+7  lote         		tam=24   			alinha=esquerda
+8  validade			tam=10	fmt=data		alinha=centro
+9  entrada			tam=10	fmt=data		alinha=centro
+10 quantidade			tam=11				alinha=direita
+11 total_quantidade		tam=11 		   		alinha=direita func=soma campo=quantidade grupo=2
+12 quebra_total			tam=9
+13 total			tam=11 		   		alinha=direita func=soma campo=quantidade grupo=1
+17 fabricacao			tam=10	fmt=data		alinha=centro
+18 temperatura			tam=6				alinha=direita
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2               
+----------------------------------------------------------------------------------------------------------------------------------
+
+#3                                                                                                                               
+#4                                                                                                                               
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa,quebra1">
++--------------------------------------------------------------------------------------------------------------------------------+
+| #5                                                                                                                             |
++---------------------------------------+--------------------------+--------+------------+------------+------------+-------------+
+|                Produto                |           Lote           | T.(°C) |  Fabric.   |  Entrada   |  Validade  |   Estoque   |
++---------------------------------------+--------------------------+--------+------------+------------+------------+-------------+
+</cab_grupo>
+
+<detalhe>
+| #6                                    | #7                       | #18    | #17        | #9         | #8         | #10         |
+</detalhe>
+
+<rod_grupo nome="2">
++---------------------------------------+--------------------------+--------+------------+------------+------------+-------------+
+| Total #12                                                                                                        | #11         |
++------------------------------------------------------------------------------------------------------------------+-------------+
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+
++------------------------------------------------------------------------------------------------------------------+-------------+
+| Total                                                                                                            | #13         |
++------------------------------------------------------------------------------------------------------------------+-------------+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>abfd41e6ad4400e0ab316e9e2fed36bd</hash>
+</relatorio>
+

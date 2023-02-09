@@ -1,0 +1,725 @@
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background: #E7ECF4;
+    font-family: "Poppins";
+}
+.header {
+    height: 78px;
+    display: flex;
+    background: #1686D0;
+    margin-right: 0;
+    align-items: center;
+    padding: 0 0 0 45px;
+    box-sizing: border-box;
+}
+.header .heading {
+    font-size: 20px;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+.header .heading + .box {
+    margin-left: auto;
+}
+.header .box {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    border-left: solid 1px #1995D6;
+    height: 100%;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(62,67,74,0.75);
+  }  
+.loading  {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -20px 0 0 -20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1686D0 #1686D0 #FFF #FFF;
+    border-radius: 20px;
+    -webkit-animation: rotate 1s linear infinite;
+    -ms-animation: rotate 1s linear infinite;
+}
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg) }
+    100% { -webkit-transform: rotate(360deg) }
+}
+@-ms-keyframes rotate {
+    0% { -ms-transform: rotate(0deg) }
+    100% { -ms-transform: rotate(360deg) }
+}
+@keyframes section {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+.main-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 45px;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+.main-header {
+    height: 130px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: -15px;
+}
+.main-header .logo {
+    margin-right: 15px;
+}
+.main-header .heading {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    font-weight: 600;
+    margin-right: auto;
+}
+.main-header .bt {
+    height: 50px;
+    display: flex;
+    background: #FFF;
+    border-radius: 6px;
+    color: #3A4B52;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease .25s;
+}
+.main-header .bt:hover {
+    background: #1686D0;
+    color: #FFF;
+    box-shadow: 0px 2px 8px -2px rgba(22,134,208,0.5);
+    transform: translate(0px, -4px);
+}
+.main-header .bt > .ic {
+    margin-left: 15px;
+    transition: all ease .25s;
+}
+.main-header .bt:hover > .ic {
+    filter: brightness(0) invert(1);
+}
+.main-header .input {
+    border: solid 1px #CED3DC;
+    border-radius: 6px;
+    height: 50px;
+    font-size: 13px;
+    padding: 0 15px;
+    font-weight: 500;
+    transition: all ease .25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: #3A4B52;
+}
+.main-header .input span {
+    color: #1686D0;
+    margin-left: 8px;
+}
+.main-header .input > .ic {
+    margin-left: 15px;
+}
+
+.row {
+    display: flex;
+    margin: 0 -15px;
+}
+.row-relacao {
+    display: flex;
+    margin: 0 -15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col {
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 15px;
+    min-width: 0;
+}
+.col-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px -2px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    padding: 25px;
+    max-width: 100%;
+}
+.col-content::after {
+    content: attr(data-relacao);
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.col-content .head {
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    margin: -25px;
+    margin-bottom: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+.col-content .head .label {
+    color: #818A98;
+    font-size: 10px;
+    font-weight: 500;
+}
+.col-content .head .heading,
+.col-content .heading-msg {
+    color: #3B4B53;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.col-content .heading-msg {
+    font-size: 14px;
+    font-weight: 400;
+}
+.progress-container {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 400px;
+}
+.progress-container::-webkit-scrollbar {
+    width: 5px;
+}
+.progress-container::-webkit-scrollbar-track {
+    background: #FFF; 
+}
+.progress-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+.progress-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.col-content .body {
+    position: relative;
+}
+.col-content .body:after,
+.col-content .body.initial:after {
+    content: attr(data-sublabel);
+    color: #808A98;
+    font-weight: 400;
+    text-align: right;
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    right:250px;
+    top: -10px;
+}
+.col-content .body.initial:after {
+    right: auto;
+    margin-top: 0px;
+}
+.col-content .body:before,
+.col-content .body.kmv:before,
+.col-content .body.mensagem:before,
+.col-content .body.center:before{
+    content: attr(data-label);
+    color: #808A98;
+    font-weight: 400;
+    text-align: right;
+    font-size: 10px;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+.col-content .body.center:before {
+    text-align: center;
+    margin-top: 10px;
+}
+.col-content .body.mensagem:before {
+    margin-top: 5px;
+    line-height: 0px;
+}
+.col-content .body.initial:before {
+    margin-bottom: 5px;
+}
+.col-content .body.kmv:before {
+    margin-bottom: 10px;
+}
+.progress-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.progress-label {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+}
+.progress-label .title {
+    flex: 1;
+}
+.progress-label .value span {
+    color: #7F8A98;
+}
+.progress-bar {
+    width: 100%;
+    background: #DCE1E9;
+    height: 9px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+.progress-bar .bar {
+    background: linear-gradient(to right,#1686D0, #14A8F3);
+    height: 9px;
+    width: 50%;
+    border-radius: 5px;
+    animation-name: bar;
+    animation-duration: .45s;
+    animation-fill-mode: backwards;
+}
+.progress-bar .bar.pass {
+    background: linear-gradient(to right,#ECC200, #F5CA00);
+    animation-delay: 0.50s;
+    float: right;
+}
+.progress-item + .progress-item .progress-bar .bar {
+    animation-delay: 0.10s;
+}
+.progress-item + .progress-item + .progress-item .progress-bar .bar {
+    animation-delay: 0.20s;
+}
+@keyframes bar {
+    0% {
+        width: 0%;
+    }
+}
+
+.progress-item.horizontal {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    margin: 18px 0;
+}
+.progress-item.horizontal .title {
+    width: 160px;
+    min-width: 160px;
+}
+.progress-item.horizontal .value {
+    min-width: 75px;
+    width: 75px;
+    text-align: right;
+    margin-left: auto;
+}
+.progress-item.horizontal .progress-bar {
+    margin-top: 0;
+    background: #FFF;
+}
+.progress-item.horizontal .progress-bar .bar {
+    background: linear-gradient(to right,#ECC200, #F5CA00);
+}
+.progress-item .position {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 12px;
+    box-sizing: border-box;
+    padding-left: 3px;
+    /*background: #DCAD8C;
+    color: #976C4B;*/
+    border: solid 1px #B0B7BF;
+    color: #B0B7BF;
+}
+.progress-item:nth-child(3) .position {
+    background: #DCAD8C;
+    color: #976C4B;
+    border: none;
+    font-weight: 700;
+}
+.progress-item:nth-child(2) .position {
+    background: #CFD7DA;
+    color: #808C94;
+    border: none;
+    font-weight: 700;
+}
+.progress-item:nth-child(1) .position {
+    background: #FFE498;
+    color: #CD7F40;
+    border: none;
+    font-weight: 700;
+}
+.progress-item:nth-child(1) {
+    margin-top: 0;
+}
+.bar-rating {
+    min-width: 134px;
+    width: 134px;
+    height: 20px;
+    position: relative;
+    background: #DCE1E9;
+}
+.bar-rating .bar {
+    background: #F1C600;
+    width: 80%;
+    height: 20px;
+    animation-name: bar;
+    animation-duration: .45s;
+    animation-fill-mode: backwards;
+}
+.progress-item + .progress-item .bar-rating .bar {
+    animation-delay: 0.10s;
+}
+.progress-item + .progress-item + .progress-item .bar-rating .bar {
+    animation-delay: 0.20s;
+}
+.bar-rating .ic {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rating-votos {
+    min-width: 80px;
+    margin-left: auto;
+    color: #808A98;
+}
+.rating-pontos {
+    min-width: 45px;
+    text-align: right;
+}
+
+
+@media only screen and (min-width: 1366px) {
+    .main-container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+

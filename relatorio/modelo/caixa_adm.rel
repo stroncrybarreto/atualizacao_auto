@@ -1,0 +1,48 @@
+<relatorio dados="caixa_adm" tamfonte="8">
+<apelidos>
+1  rel_posto_nome   	tam=60
+2  rel_data_hora    	tam=25
+7  periodo		        tam=30
+9  data			        tam=11  alinha=esquerda       
+10 motivo	            tam=26  alinha=esquerda
+11 pessoa               tam=21  alinha=esquerda
+12 valor                tam=13  alinha=direita   fmt=%.02f  
+13 op					tam=3   alinha=centro
+14 saldo				tam=13  alinha=direita   fmt=%.02f
+15 total_debito			tam=15	alinha=direita	 fmt=%.02f
+16 total_credito		tam=15  alinha=direita   fmt=%.02f
+17 saldo_final			tam=15  alinha=direita   fmt=%.02f
+18 valor_dinheiro       tam=15  alinha=direita   fmt=%.02f
+19 valor_cheque         tam=15  alinha=direita   fmt=%.02f
+20 titulo               tam=80
+</apelidos>
+<cab_pagina>
+#1                                                                                         #2
+------------------------------------------------------------------------------------------------------------
+
+            	                   #20
+		                    Período #7
+
++-------------+------------------------------+-----------------------+---------------+-----+---------------+
+|     DATA    |           MOTIVO             |         PESSOA        |     VALOR     |  OP |     SALDO     |  
++-------------+------------------------------+-----------------------+---------------+-----+---------------+
+</cab_pagina>
+
+<detalhe>
+| #9          | #10                          | #11                   | #12           | #13 | #14           |             
+</detalhe>
+<rod_relat>
++-------------+------------------------------+-----------------------+---------------+-----+---------------+
+
++----------------+----------------+----------------+----------------+----------------+
+|  Total débito  |  Total crédito | Valor dinheiro |  Valor Cheque  |   Saldo Final  |
++----------------+----------------+----------------+----------------+----------------+
+|#15             |#16             |#18             |#19             |#17             |
++----------------+----------------+----------------+----------------+----------------+
+</rod_relat>
+<rod_pagina>
+------------------------------------------------------------------------------------------------------
+</rod_pagina>
+
+<hash>11c550ac7a4d7e0feec0ce92af938942</hash>
+</relatorio>

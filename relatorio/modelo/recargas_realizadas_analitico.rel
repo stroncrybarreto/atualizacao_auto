@@ -1,0 +1,41 @@
+<relatorio dados="recargas_realizadas" ordem="ts_transacao,operadora">
+<apelidos>
+1  rel_posto_nome      	tam=60
+2  rel_data_hora       	tam=18  
+3  titulo              	tam=115 alinha=centro 
+4  titulo1 				tam=115 expr="RELATÓRIO DE RECARGAS REALIZADAS" alinha=centro
+5  ts_transacao			tam=16 	fmt=data_hora
+6  nsu					tam=8
+7  fone                 tam=12
+8  operadora            tam=11
+9  valor                tam=9	fmt=float2
+10 forma_pgto_nome		tam=15
+11 perc_comissao   		tam=6   fmt=float2
+12 lucro				tam=9	fmt=float2
+13 total                tam=9	fmt=float2 	func=soma campo=valor
+14 total_custo          tam=9	fmt=float2 	func=soma campo=lucro
+</apelidos>
+<cab_pagina>
+#1                                                                                                  #2                 
+--------------------------------------------------------------------------------------------------------------------
+   
+#3
+
++------------------+----------+--------------+-------------+--------------------+-----------+----------+-----------+
+|       Hora       |   NSU    |   Celular    |  Operadora  | Forma de pagamento |   Valor   | Comissão |   Lucro   |
++------------------+----------+--------------+-------------+--------------------+-----------+----------+-----------+
+</cab_pagina>
+
+<detalhe>
+| #5               | #6       | #7           | #8          | #10                | #9        | #11    % | #12       |
+</detalhe>
+
+<rod_relat>
++------------------+----------+--------------+-------------+--------------------+-----------+----------+-----------+
+| Total                                                                         | #13       |          | #14       |
++-------------------------------------------------------------------------------+-----------+----------+-----------+
+</rod_relat>
+
+
+<hash>84542eebfdb4bc9033c21f568dfc4197</hash>
+</relatorio>

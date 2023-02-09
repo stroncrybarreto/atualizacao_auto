@@ -1,0 +1,92 @@
+<relatorio dados="sobra_falta_caixa_novo" ordem="empresa_nome,conferente,conta,nome,data,turno">
+<apelidos>
+1   rel_posto_nome		tam=60
+2   rel_data_hora		tam=18
+3   empresa_nome		tam=25
+4   titulo1				tam=96		alinha=centro
+5   titulo2				tam=96		alinha=centro
+6   titulo3				tam=96		alinha=centro
+7   conta				tam=21
+8   data				tam=10		fmt=data
+9   nome				tam=32
+10  turno 				tam=3
+11  sobra				tam=12		fmt=float2
+12  falta				tam=12		fmt=float2
+13  saldo_final			tam=12		fmt=float2
+14  saldo				tam=12		fmt=float2
+15  sobra_responsavel	tam=12		fmt=float2  func=soma   campo=sobra  grupo=4
+16  falta_falta_func	tam=12		fmt=float2  func=soma   campo=falta  grupo=4
+25  geral_falta_func	tam=12		fmt=float2  func=soma   campo=geral  grupo=4
+19  sobra_turno			tam=12		fmt=float2  func=soma   campo=sobra  grupo=3
+20  falta_turno			tam=12		fmt=float2  func=soma   campo=falta  grupo=3
+26  geral_turno			tam=12		fmt=float2  func=soma   campo=geral  grupo=3
+21  sobra_data			tam=12		fmt=float2  func=soma   campo=sobra  grupo=2
+22  falta_data			tam=12		fmt=float2  func=soma   campo=falta  grupo=2
+27  geral_data			tam=12		fmt=float2  func=soma   campo=geral  grupo=2
+23  sobra_empresa		tam=12		fmt=float2  func=soma   campo=sobra  grupo=1
+24  falta_empresa		tam=12		fmt=float2  func=soma   campo=falta  grupo=1
+28  geral_empresa		tam=12		fmt=float2  func=soma   campo=geral  grupo=1
+17  titulo				tam=96		alinha=centro
+18  geral				tam=13		fmt=float2
+29  saldo_aux			tam=12		fmt=float2	func=soma	campo=geral	grupo=1
+90 empresa_cod_nome     tam=80
+91 conta_cod_nome       tam=21
+</apelidos>
+
+<cab_pagina>
+#1                                                                              #2
+------------------------------------------------------------------------------------------------
+
+#17
+{VAZIA}#4
+	
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome">
++----------------------------------------------------------------------------------------------+
+| Empresa: #90                                                                                 |
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,data">
++----------------------------------------------------------------------------------------------+
+| Data: #8                                                                                     |
+</cab_grupo>
+<cab_grupo nome="3" quebra="empresa_nome,data,turno">
++----------------------------------------------------------------------------------------------+
+| Turno: #10                                                                                   |
++----------------------------------+--------------+--------------+--------------+--------------+
+|           Responsável            |    Sobra     |     Falta    |    Geral     |   Acumulado  |
++----------------------------------+--------------+--------------+--------------+--------------+
+</cab_grupo>
+
+<cab_grupo nome="4" quebra="empresa_nome,data,turno,nome">
+</cab_grupo>
+
+<detalhe>
+</detalhe>
+
+<rod_grupo nome="4">
+| #9                               | #15          | #16          | #25          | #29          |
+</rod_grupo>
+
+<rod_grupo nome="3">
++----------------------------------+--------------+--------------+--------------+--------------+
+| Total turno                      | #19          | #20          | #26          | #29          |
+</rod_grupo>
+
+<rod_grupo nome="2">
++----------------------------------+--------------+--------------+--------------+--------------+
+| Total data                       | #21          | #22          | #27          | #29          |
+</rod_grupo>
+
+<rod_grupo nome="1">
++----------------------------------+--------------+--------------+--------------+--------------+
+| Total empresa                    | #23          | #24          | #28          | #29          |
++----------------------------------+--------------+--------------+--------------+--------------+
+
+</rod_grupo>
+<rod_pagina>
++----------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>a858015864f88cfe8bc7b30a868a28b5</hash>
+</relatorio>

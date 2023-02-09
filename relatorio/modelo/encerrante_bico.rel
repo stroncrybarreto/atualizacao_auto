@@ -1,0 +1,65 @@
+<relatorio dados="encerrante_bico" ordem="bico_desc,data,turno">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=16
+3  titulo1			tam=129	alinha=centro
+6  bico_desc		tam=4
+7  data				tam=10	fmt=date
+8  turno			tam=3	alinha=centro
+9  enc_ini			tam=12	fmt=float2
+10 enc_fim			tam=12	fmt=float2
+11 litros			tam=13	fmt=float2
+12 afericao			tam=8	fmt=float2
+13 venda			tam=11	fmt=float2	
+14 preco			tam=6	fmt=float3
+15 valor			tam=13	fmt=float2
+16 flag				tam=3
+
+17 total_litros		tam=13	fmt=float2	func=soma	campo=litros
+18 total_afericao	tam=8	fmt=float2	func=soma	campo=afericao
+19 total_venda		tam=11	fmt=float2	func=soma	campo=venda
+20 total_valor		tam=13	fmt=float2	func=soma	campo=valor
+24 total_devolucao	tam=11	fmt=float2	func=soma	campo=devolucao
+21 total_flag				tam=3
+22 devolucao		tam=11	fmt=float2
+23 produto_nome		tam=100	alinha=esquerda
+
+26 consumo			tam=8	fmt=float2
+27 total_consumo	tam=8	fmt=float2	func=soma	campo=consumo
+
+25 total_flag_c     tam=3 expr=abs(total_litros - (total_venda+total_afericao+total_consumo))>1.00 and '**' or ''
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                               #2              
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="bico_desc">
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+| Bico: #6   - #23                                                                                                                            |
++------------+----+--------------+--------------+---------------+----------+-------------+-------------+-------------+--------+---------------+
+|    Data    | T. |    Inicial   |     Final    |     Litros    | Aferição |   Consumo   |  Devolução  |    Venda    | Preço  |     Valor     |
++------------+----+--------------+--------------+---------------+----------+-------------+-------------+-------------+--------+---------------+
+</cab_grupo>
+<detalhe>
+| #7         |#8  | #9           | #10          | #11           | #12      | #26         | #22         | #13         | #14    | #15           | #16
+</detalhe>
+<rod_grupo nome="1">
++------------+----+--------------+--------------+---------------+----------+-------------|-------------+-------------+--------+---------------+
+</rod_grupo>
+<rod_pagina>
++------------+----+--------------+--------------+---------------+----------+-------------+-------------+-------------+--------+---------------+
+</rod_pagina>
+<rod_relat>
+
++-----------------------------------------------+---------------+----------+-------------+-------------+-------------+--------+---------------+
+| Total                                         | #17           | #18      | #27         | #24         | #19         |        | #20           | #25
++-----------------------------------------------+---------------+----------+-------------+-------------+-------------+--------+---------------+
+</rod_relat>
+
+<hash>266ac7aa611b93ec7289374deaf4d273</hash>
+</relatorio>

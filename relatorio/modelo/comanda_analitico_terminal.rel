@@ -1,0 +1,49 @@
+<relatorio dados="comandas" ordem="terminal,comanda">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18  
+3  titulo			tam=80  alinha=centro
+4  ts_abertura		tam=16	fmt=data_hora
+5  fechamento		tam=16	fmt=data_hora
+6  situacao			tam=8
+7  valor			tam=9	fmt=%.02f
+8  comanda			tam=7	alinha=centro
+9  mescla			tam=6
+11 total			tam=9	func=soma campo=valor	fmt=%.02f
+13 terminal			tam=40
+14 subtotal			tam=9	func=soma campo=valor grupo=1	fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                               #2
+---------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="terminal">
++-------------------------------------------------------------------------------+
+| Terminal: #13                                                                 |
++---------+------------------+------------------+----------+-----------+--------+
+| Comanda |    Abertura      |    Fechamento    | Situação |   Valor   | Mescla |
++---------+------------------+------------------+----------+-----------+--------+
+</cab_grupo>
+<detalhe>
+| #8      | #4               | #5               | #6       | #7        | #9     |
+</detalhe>
+<rod_grupo nome="1">
++---------+------------------+------------------+----------+-----------+--------+
+| Subtotal                                                 | #14       |        |
++----------------------------------------------------------+-----------+--------+
+
+</rod_grupo>
+<rod_relat>
++----------------------------------------------------------+-----------+--------+
+| Valor total                                              | #11       |        |
++----------------------------------------------------------+-----------+--------+
+</rod_relat>
+<rod_pagina>
++---------+------------------+------------------+----------+-----------+--------+
+</rod_pagina>
+
+<hash>36adb23d2e0b00e1773b5639d5fd3031</hash>
+</relatorio>

@@ -1,0 +1,56 @@
+<relatorio dados="pessoa_vencto">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  data  				tam=10  fmt=data
+4  conta_nome           tam=35
+5  pessoa_codigo        tam=6   fmt=%d
+6  pessoa_nome          tam=23
+7  tipo 	       	    tam=10
+8  inicio     	   		tam=4   fmt=%d
+9  prazo    			tam=5   fmt=%d
+10 tolerancia       	tam=5   fmt=%d
+11 vencto        		tam=13  
+12 titulo        		tam=120	alinha=centro
+13 grupo_nome        	tam=31
+14 grupo_vencto        	tam=5 	alinha=centro
+15 tabela_nome			tam=13
+16 grupo_tabela         tam=5   alinha=centro
+17 limite_credito		tam=10	fmt=float2
+18 tabela_fat_nome		tam=13
+19 conta 				tam=15
+20 conta_cod_nome		tam=70 expr=str(conta) + ' - ' + conta_nome
+21 tipo_pessoa			tam=4
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+ 
+#12
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="grupo, conta">
++----------------------------------+---------------------------------------------------------------------------------------------+
+| #13                              | Conta: #20                                                                                  |
++--------+-------------------------+------------+-----+-------+------+--------------+---------------+---------------+------------+
+| Código |         Cliente         |    Tipo    | Ini | Prazo | Tol. |  Vencimento  |    Tabela     |  Tabela fat.  |   Limite   | 
++--------+-------------------------+------------+-----+-------+------+--------------+---------------+---------------+------------+
+</cab_grupo>
+
+<detalhe>
+| #5     | #6                      | #7         |#8   | #9    |#10   | #11          |#15            | #18           | #17        |
+</detalhe>
+
+<rod_grupo nome="1">
++--------+-------------------------+------------+-----+-------+------+--------------+---------------+---------------+------------+
+
+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<hash>3763a5e6fd09431a04e4628dd052b976</hash>
+</relatorio>

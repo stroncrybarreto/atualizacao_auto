@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>AUTOSYSTEM</title>
+	</head>
+	<body>
+		<form action="/do_forma_pgto/" method="POST">
+			<p>Abastecimentos:
+			<select name="abastecimento">
+				<option tal:repeat="abast abastecimento_list" tal:attributes="value abast/codigo" tal:content="abast/descricao"></option>
+			</select>
+			<p><input type="submit" name="bt_confirmar" value="Confirmar">
+			<a href="/venda/">Voltar</a>
+		</form>
+	</body>
+</html>

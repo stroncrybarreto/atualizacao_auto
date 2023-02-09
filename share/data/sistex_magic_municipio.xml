@@ -1,0 +1,3575 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<saopaulo>
+  <municipio>
+    <codigo>1</codigo>
+    <nome>Guajara Mirim</nome>
+  </municipio>
+  <municipio>
+    <codigo>105</codigo>
+    <nome>Brasileia</nome>
+  </municipio>
+  <municipio>
+    <codigo>107</codigo>
+    <nome>Cruzeiro Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>255</codigo>
+    <nome>Manaus</nome>
+  </municipio>
+  <municipio>
+    <codigo>307</codigo>
+    <nome>Bonfim</nome>
+  </municipio>
+  <municipio>
+    <codigo>605</codigo>
+    <nome>Macapa</nome>
+  </municipio>
+  <municipio>
+    <codigo>615</codigo>
+    <nome>Santana</nome>
+  </municipio>
+  <municipio>
+    <codigo>1004</codigo>
+    <nome>Sao Paulo</nome>
+  </municipio>
+  <municipio>
+    <codigo>1508</codigo>
+    <nome>Adamantina</nome>
+  </municipio>
+  <municipio>
+    <codigo>1510</codigo>
+    <nome>Adolfo</nome>
+  </municipio>
+  <municipio>
+    <codigo>1521</codigo>
+    <nome>Aguai</nome>
+  </municipio>
+  <municipio>
+    <codigo>1533</codigo>
+    <nome>Aguas De Lindoia</nome>
+  </municipio>
+  <municipio>
+    <codigo>1545</codigo>
+    <nome>Aguas Da Prata</nome>
+  </municipio>
+  <municipio>
+    <codigo>1557</codigo>
+    <nome>Aguas De Sao Pedro</nome>
+  </municipio>
+  <municipio>
+    <codigo>1569</codigo>
+    <nome>Agudos</nome>
+  </municipio>
+  <municipio>
+    <codigo>1570</codigo>
+    <nome>Alfredo Marcondes</nome>
+  </municipio>
+  <municipio>
+    <codigo>1582</codigo>
+    <nome>Altair</nome>
+  </municipio>
+  <municipio>
+    <codigo>1594</codigo>
+    <nome>Altinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>1600</codigo>
+    <nome>Alto Alegre</nome>
+  </municipio>
+  <municipio>
+    <codigo>1612</codigo>
+    <nome>Alvares Florence</nome>
+  </municipio>
+  <municipio>
+    <codigo>1624</codigo>
+    <nome>Alvares Machado</nome>
+  </municipio>
+  <municipio>
+    <codigo>1636</codigo>
+    <nome>Alvaro De Carvalho</nome>
+  </municipio>
+  <municipio>
+    <codigo>1648</codigo>
+    <nome>Alvinlandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>1650</codigo>
+    <nome>Americana</nome>
+  </municipio>
+  <municipio>
+    <codigo>1661</codigo>
+    <nome>Americo Brasiliense</nome>
+  </municipio>
+  <municipio>
+    <codigo>1673</codigo>
+    <nome>Americo De Campos</nome>
+  </municipio>
+  <municipio>
+    <codigo>1685</codigo>
+    <nome>Amparo</nome>
+  </municipio>
+  <municipio>
+    <codigo>1697</codigo>
+    <nome>Analandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>1703</codigo>
+    <nome>Andradina</nome>
+  </municipio>
+  <municipio>
+    <codigo>1715</codigo>
+    <nome>Angatuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>1727</codigo>
+    <nome>Anhembi</nome>
+  </municipio>
+  <municipio>
+    <codigo>1739</codigo>
+    <nome>Anhumas</nome>
+  </municipio>
+  <municipio>
+    <codigo>1740</codigo>
+    <nome>Aparecida</nome>
+  </municipio>
+  <municipio>
+    <codigo>1752</codigo>
+    <nome>Aparecida D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>1764</codigo>
+    <nome>Apiai</nome>
+  </municipio>
+  <municipio>
+    <codigo>1776</codigo>
+    <nome>Aracatuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>1788</codigo>
+    <nome>Aracoiaba Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>1790</codigo>
+    <nome>Aramina</nome>
+  </municipio>
+  <municipio>
+    <codigo>1806</codigo>
+    <nome>Arandu</nome>
+  </municipio>
+  <municipio>
+    <codigo>1818</codigo>
+    <nome>Araraquara</nome>
+  </municipio>
+  <municipio>
+    <codigo>1820</codigo>
+    <nome>Araras</nome>
+  </municipio>
+  <municipio>
+    <codigo>1831</codigo>
+    <nome>Arealva</nome>
+  </municipio>
+  <municipio>
+    <codigo>1843</codigo>
+    <nome>Areias</nome>
+  </municipio>
+  <municipio>
+    <codigo>1855</codigo>
+    <nome>Areiopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>1867</codigo>
+    <nome>Ariranha</nome>
+  </municipio>
+  <municipio>
+    <codigo>1879</codigo>
+    <nome>Artur Nogueira</nome>
+  </municipio>
+  <municipio>
+    <codigo>1880</codigo>
+    <nome>Aruja</nome>
+  </municipio>
+  <municipio>
+    <codigo>1892</codigo>
+    <nome>Assis</nome>
+  </municipio>
+  <municipio>
+    <codigo>1909</codigo>
+    <nome>Atibaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>1910</codigo>
+    <nome>Auriflama</nome>
+  </municipio>
+  <municipio>
+    <codigo>1922</codigo>
+    <nome>Avai</nome>
+  </municipio>
+  <municipio>
+    <codigo>1934</codigo>
+    <nome>Avanhandava</nome>
+  </municipio>
+  <municipio>
+    <codigo>1946</codigo>
+    <nome>Avare</nome>
+  </municipio>
+  <municipio>
+    <codigo>1958</codigo>
+    <nome>Bady Bassitt</nome>
+  </municipio>
+  <municipio>
+    <codigo>1960</codigo>
+    <nome>Balbinos</nome>
+  </municipio>
+  <municipio>
+    <codigo>1971</codigo>
+    <nome>Balsamo</nome>
+  </municipio>
+  <municipio>
+    <codigo>1983</codigo>
+    <nome>Bananal</nome>
+  </municipio>
+  <municipio>
+    <codigo>1995</codigo>
+    <nome>Barao De Antonina</nome>
+  </municipio>
+  <municipio>
+    <codigo>2008</codigo>
+    <nome>Barbosa</nome>
+  </municipio>
+  <municipio>
+    <codigo>2010</codigo>
+    <nome>Bariri</nome>
+  </municipio>
+  <municipio>
+    <codigo>2021</codigo>
+    <nome>Barra Bonita</nome>
+  </municipio>
+  <municipio>
+    <codigo>2033</codigo>
+    <nome>Barra Do Turvo</nome>
+  </municipio>
+  <municipio>
+    <codigo>2045</codigo>
+    <nome>Barretos</nome>
+  </municipio>
+  <municipio>
+    <codigo>2057</codigo>
+    <nome>Barrinha</nome>
+  </municipio>
+  <municipio>
+    <codigo>2069</codigo>
+    <nome>Barueri</nome>
+  </municipio>
+  <municipio>
+    <codigo>2070</codigo>
+    <nome>Bastos</nome>
+  </municipio>
+  <municipio>
+    <codigo>2082</codigo>
+    <nome>Batatais</nome>
+  </municipio>
+  <municipio>
+    <codigo>2094</codigo>
+    <nome>Bauru</nome>
+  </municipio>
+  <municipio>
+    <codigo>2100</codigo>
+    <nome>Bebedouro</nome>
+  </municipio>
+  <municipio>
+    <codigo>2112</codigo>
+    <nome>Bento De Abreu</nome>
+  </municipio>
+  <municipio>
+    <codigo>2124</codigo>
+    <nome>Bernardino De Campos</nome>
+  </municipio>
+  <municipio>
+    <codigo>2136</codigo>
+    <nome>Bilac</nome>
+  </municipio>
+  <municipio>
+    <codigo>2148</codigo>
+    <nome>Birig&#252;i</nome>
+  </municipio>
+  <municipio>
+    <codigo>2150</codigo>
+    <nome>Biritiba-Mirim</nome>
+  </municipio>
+  <municipio>
+    <codigo>2161</codigo>
+    <nome>Boa Esperanca Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>2173</codigo>
+    <nome>Bocaina</nome>
+  </municipio>
+  <municipio>
+    <codigo>2185</codigo>
+    <nome>Bofete</nome>
+  </municipio>
+  <municipio>
+    <codigo>2197</codigo>
+    <nome>Boituva</nome>
+  </municipio>
+  <municipio>
+    <codigo>2203</codigo>
+    <nome>Bom Jesus Dos Perdoes</nome>
+  </municipio>
+  <municipio>
+    <codigo>2215</codigo>
+    <nome>Bora</nome>
+  </municipio>
+  <municipio>
+    <codigo>2227</codigo>
+    <nome>Boraceia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2239</codigo>
+    <nome>Borborema</nome>
+  </municipio>
+  <municipio>
+    <codigo>2240</codigo>
+    <nome>Botucatu</nome>
+  </municipio>
+  <municipio>
+    <codigo>2252</codigo>
+    <nome>Braganca Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>2264</codigo>
+    <nome>Brauna</nome>
+  </municipio>
+  <municipio>
+    <codigo>2276</codigo>
+    <nome>Brodowski</nome>
+  </municipio>
+  <municipio>
+    <codigo>2288</codigo>
+    <nome>Brotas</nome>
+  </municipio>
+  <municipio>
+    <codigo>2290</codigo>
+    <nome>Buri</nome>
+  </municipio>
+  <municipio>
+    <codigo>2306</codigo>
+    <nome>Buritama</nome>
+  </municipio>
+  <municipio>
+    <codigo>2318</codigo>
+    <nome>Buritizal</nome>
+  </municipio>
+  <municipio>
+    <codigo>2320</codigo>
+    <nome>Cabralia Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>2331</codigo>
+    <nome>Cabreuva</nome>
+  </municipio>
+  <municipio>
+    <codigo>2343</codigo>
+    <nome>Cacapava</nome>
+  </municipio>
+  <municipio>
+    <codigo>2355</codigo>
+    <nome>Cachoeira Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>2367</codigo>
+    <nome>Caconde</nome>
+  </municipio>
+  <municipio>
+    <codigo>2379</codigo>
+    <nome>Cafelandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2380</codigo>
+    <nome>Caiabu</nome>
+  </municipio>
+  <municipio>
+    <codigo>2392</codigo>
+    <nome>Caieiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>2409</codigo>
+    <nome>Caiua</nome>
+  </municipio>
+  <municipio>
+    <codigo>2410</codigo>
+    <nome>Cajamar</nome>
+  </municipio>
+  <municipio>
+    <codigo>2422</codigo>
+    <nome>Cajobi</nome>
+  </municipio>
+  <municipio>
+    <codigo>2434</codigo>
+    <nome>Cajuru</nome>
+  </municipio>
+  <municipio>
+    <codigo>2446</codigo>
+    <nome>Campinas</nome>
+  </municipio>
+  <municipio>
+    <codigo>2458</codigo>
+    <nome>Campo Limpo Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>2460</codigo>
+    <nome>Campos Do Jordao</nome>
+  </municipio>
+  <municipio>
+    <codigo>2471</codigo>
+    <nome>Campos Novos Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>2483</codigo>
+    <nome>Cananeia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2495</codigo>
+    <nome>Candido Mota</nome>
+  </municipio>
+  <municipio>
+    <codigo>2501</codigo>
+    <nome>Candido Rodrigues</nome>
+  </municipio>
+  <municipio>
+    <codigo>2513</codigo>
+    <nome>Capao Bonito</nome>
+  </municipio>
+  <municipio>
+    <codigo>2525</codigo>
+    <nome>Capela Do Alto</nome>
+  </municipio>
+  <municipio>
+    <codigo>2537</codigo>
+    <nome>Capivari</nome>
+  </municipio>
+  <municipio>
+    <codigo>2549</codigo>
+    <nome>Caraguatatuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>2550</codigo>
+    <nome>Carapicuiba</nome>
+  </municipio>
+  <municipio>
+    <codigo>2562</codigo>
+    <nome>Cardoso</nome>
+  </municipio>
+  <municipio>
+    <codigo>2574</codigo>
+    <nome>Casa Branca</nome>
+  </municipio>
+  <municipio>
+    <codigo>2586</codigo>
+    <nome>Cassia Dos Coqueiros</nome>
+  </municipio>
+  <municipio>
+    <codigo>2598</codigo>
+    <nome>Castilho</nome>
+  </municipio>
+  <municipio>
+    <codigo>2604</codigo>
+    <nome>Catanduva</nome>
+  </municipio>
+  <municipio>
+    <codigo>2616</codigo>
+    <nome>Catigua</nome>
+  </municipio>
+  <municipio>
+    <codigo>2628</codigo>
+    <nome>Cedral</nome>
+  </municipio>
+  <municipio>
+    <codigo>2630</codigo>
+    <nome>Cerqueira Cesar</nome>
+  </municipio>
+  <municipio>
+    <codigo>2641</codigo>
+    <nome>Cesario Lange</nome>
+  </municipio>
+  <municipio>
+    <codigo>2653</codigo>
+    <nome>Cerquilho</nome>
+  </municipio>
+  <municipio>
+    <codigo>2665</codigo>
+    <nome>Charqueada</nome>
+  </municipio>
+  <municipio>
+    <codigo>2677</codigo>
+    <nome>Clementina</nome>
+  </municipio>
+  <municipio>
+    <codigo>2689</codigo>
+    <nome>Colina</nome>
+  </municipio>
+  <municipio>
+    <codigo>2690</codigo>
+    <nome>Colombia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2707</codigo>
+    <nome>Conchal</nome>
+  </municipio>
+  <municipio>
+    <codigo>2719</codigo>
+    <nome>Conchas</nome>
+  </municipio>
+  <municipio>
+    <codigo>2720</codigo>
+    <nome>Cordeiropolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>2732</codigo>
+    <nome>Coroados</nome>
+  </municipio>
+  <municipio>
+    <codigo>2744</codigo>
+    <nome>Coronel Macedo</nome>
+  </municipio>
+  <municipio>
+    <codigo>2756</codigo>
+    <nome>Corumbatai</nome>
+  </municipio>
+  <municipio>
+    <codigo>2768</codigo>
+    <nome>Cosmopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>2770</codigo>
+    <nome>Cosmorama</nome>
+  </municipio>
+  <municipio>
+    <codigo>2781</codigo>
+    <nome>Cotia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2793</codigo>
+    <nome>Cravinhos</nome>
+  </municipio>
+  <municipio>
+    <codigo>2800</codigo>
+    <nome>Cristais Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>2811</codigo>
+    <nome>Cruzalia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2823</codigo>
+    <nome>Cruzeiro</nome>
+  </municipio>
+  <municipio>
+    <codigo>2835</codigo>
+    <nome>Cubatao</nome>
+  </municipio>
+  <municipio>
+    <codigo>2847</codigo>
+    <nome>Cunha</nome>
+  </municipio>
+  <municipio>
+    <codigo>2859</codigo>
+    <nome>Descalvado</nome>
+  </municipio>
+  <municipio>
+    <codigo>2860</codigo>
+    <nome>Diadema</nome>
+  </municipio>
+  <municipio>
+    <codigo>2872</codigo>
+    <nome>Divinolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>2884</codigo>
+    <nome>Dobrada</nome>
+  </municipio>
+  <municipio>
+    <codigo>2896</codigo>
+    <nome>Dois Corregos</nome>
+  </municipio>
+  <municipio>
+    <codigo>2902</codigo>
+    <nome>Dolcinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>2914</codigo>
+    <nome>Dourado</nome>
+  </municipio>
+  <municipio>
+    <codigo>2926</codigo>
+    <nome>Dracena</nome>
+  </municipio>
+  <municipio>
+    <codigo>2938</codigo>
+    <nome>Duartina</nome>
+  </municipio>
+  <municipio>
+    <codigo>2940</codigo>
+    <nome>Dumont</nome>
+  </municipio>
+  <municipio>
+    <codigo>2951</codigo>
+    <nome>Echapora</nome>
+  </municipio>
+  <municipio>
+    <codigo>2963</codigo>
+    <nome>Eldorado</nome>
+  </municipio>
+  <municipio>
+    <codigo>2975</codigo>
+    <nome>Elias Fausto</nome>
+  </municipio>
+  <municipio>
+    <codigo>2987</codigo>
+    <nome>Embu</nome>
+  </municipio>
+  <municipio>
+    <codigo>2999</codigo>
+    <nome>Embu-Guacu</nome>
+  </municipio>
+  <municipio>
+    <codigo>3001</codigo>
+    <nome>Estrela Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>3013</codigo>
+    <nome>Estrela D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>3025</codigo>
+    <nome>Fartura</nome>
+  </municipio>
+  <municipio>
+    <codigo>3037</codigo>
+    <nome>Fernando Prestes</nome>
+  </municipio>
+  <municipio>
+    <codigo>3049</codigo>
+    <nome>Fernandopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>3050</codigo>
+    <nome>Ferraz De Vasconcellos</nome>
+  </municipio>
+  <municipio>
+    <codigo>3062</codigo>
+    <nome>Flora Rica</nome>
+  </municipio>
+  <municipio>
+    <codigo>3074</codigo>
+    <nome>Floreal</nome>
+  </municipio>
+  <municipio>
+    <codigo>3086</codigo>
+    <nome>Florida Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>3098</codigo>
+    <nome>Florinea</nome>
+  </municipio>
+  <municipio>
+    <codigo>3104</codigo>
+    <nome>Franca</nome>
+  </municipio>
+  <municipio>
+    <codigo>3116</codigo>
+    <nome>Francisco Morato</nome>
+  </municipio>
+  <municipio>
+    <codigo>3128</codigo>
+    <nome>Franco Da Rocha</nome>
+  </municipio>
+  <municipio>
+    <codigo>3130</codigo>
+    <nome>Gabriel Monteiro</nome>
+  </municipio>
+  <municipio>
+    <codigo>3141</codigo>
+    <nome>Galia</nome>
+  </municipio>
+  <municipio>
+    <codigo>3153</codigo>
+    <nome>Garca</nome>
+  </municipio>
+  <municipio>
+    <codigo>3165</codigo>
+    <nome>Gastao Vidigal</nome>
+  </municipio>
+  <municipio>
+    <codigo>3177</codigo>
+    <nome>General Salgado</nome>
+  </municipio>
+  <municipio>
+    <codigo>3189</codigo>
+    <nome>Getulina</nome>
+  </municipio>
+  <municipio>
+    <codigo>3190</codigo>
+    <nome>Glicerio</nome>
+  </municipio>
+  <municipio>
+    <codigo>3207</codigo>
+    <nome>Guaicara</nome>
+  </municipio>
+  <municipio>
+    <codigo>3219</codigo>
+    <nome>Guaimbe</nome>
+  </municipio>
+  <municipio>
+    <codigo>3220</codigo>
+    <nome>Guaira</nome>
+  </municipio>
+  <municipio>
+    <codigo>3232</codigo>
+    <nome>Guapiacu</nome>
+  </municipio>
+  <municipio>
+    <codigo>3244</codigo>
+    <nome>Guapiara</nome>
+  </municipio>
+  <municipio>
+    <codigo>3256</codigo>
+    <nome>Guara</nome>
+  </municipio>
+  <municipio>
+    <codigo>3268</codigo>
+    <nome>Guaracai</nome>
+  </municipio>
+  <municipio>
+    <codigo>3270</codigo>
+    <nome>Guaraci</nome>
+  </municipio>
+  <municipio>
+    <codigo>3281</codigo>
+    <nome>Guarani D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>3293</codigo>
+    <nome>Guaranta</nome>
+  </municipio>
+  <municipio>
+    <codigo>3300</codigo>
+    <nome>Guararapes</nome>
+  </municipio>
+  <municipio>
+    <codigo>3311</codigo>
+    <nome>Guararema</nome>
+  </municipio>
+  <municipio>
+    <codigo>3323</codigo>
+    <nome>Guaratingueta</nome>
+  </municipio>
+  <municipio>
+    <codigo>3335</codigo>
+    <nome>Guarei</nome>
+  </municipio>
+  <municipio>
+    <codigo>3347</codigo>
+    <nome>Guariba</nome>
+  </municipio>
+  <municipio>
+    <codigo>3359</codigo>
+    <nome>Guaruja</nome>
+  </municipio>
+  <municipio>
+    <codigo>3360</codigo>
+    <nome>Guarulhos</nome>
+  </municipio>
+  <municipio>
+    <codigo>3372</codigo>
+    <nome>Guzolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>3384</codigo>
+    <nome>Herculandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>3396</codigo>
+    <nome>Iacanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3402</codigo>
+    <nome>Iacri</nome>
+  </municipio>
+  <municipio>
+    <codigo>3414</codigo>
+    <nome>Ibate</nome>
+  </municipio>
+  <municipio>
+    <codigo>3426</codigo>
+    <nome>Ibira</nome>
+  </municipio>
+  <municipio>
+    <codigo>3438</codigo>
+    <nome>Ibirarema</nome>
+  </municipio>
+  <municipio>
+    <codigo>3440</codigo>
+    <nome>Ibitinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3451</codigo>
+    <nome>Ibiuna</nome>
+  </municipio>
+  <municipio>
+    <codigo>3463</codigo>
+    <nome>Icem</nome>
+  </municipio>
+  <municipio>
+    <codigo>3475</codigo>
+    <nome>Iepe</nome>
+  </municipio>
+  <municipio>
+    <codigo>3487</codigo>
+    <nome>Igaracu Do Tiete</nome>
+  </municipio>
+  <municipio>
+    <codigo>3499</codigo>
+    <nome>Igarapava</nome>
+  </municipio>
+  <municipio>
+    <codigo>3505</codigo>
+    <nome>Igarata</nome>
+  </municipio>
+  <municipio>
+    <codigo>3517</codigo>
+    <nome>Iguape</nome>
+  </municipio>
+  <municipio>
+    <codigo>3529</codigo>
+    <nome>Ilhabela</nome>
+  </municipio>
+  <municipio>
+    <codigo>3530</codigo>
+    <nome>Indaiatuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>3542</codigo>
+    <nome>Indiana</nome>
+  </municipio>
+  <municipio>
+    <codigo>3554</codigo>
+    <nome>Indiapora</nome>
+  </municipio>
+  <municipio>
+    <codigo>3566</codigo>
+    <nome>Inubia Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>3578</codigo>
+    <nome>Ipaussu</nome>
+  </municipio>
+  <municipio>
+    <codigo>3580</codigo>
+    <nome>Ipero</nome>
+  </municipio>
+  <municipio>
+    <codigo>3591</codigo>
+    <nome>Ipeuna</nome>
+  </municipio>
+  <municipio>
+    <codigo>3608</codigo>
+    <nome>Iporanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3610</codigo>
+    <nome>Ipua</nome>
+  </municipio>
+  <municipio>
+    <codigo>3621</codigo>
+    <nome>Iracemapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>3633</codigo>
+    <nome>Irapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>3645</codigo>
+    <nome>Irapuru</nome>
+  </municipio>
+  <municipio>
+    <codigo>3657</codigo>
+    <nome>Itabera</nome>
+  </municipio>
+  <municipio>
+    <codigo>3669</codigo>
+    <nome>Itai</nome>
+  </municipio>
+  <municipio>
+    <codigo>3670</codigo>
+    <nome>Itajobi</nome>
+  </municipio>
+  <municipio>
+    <codigo>3682</codigo>
+    <nome>Itaju</nome>
+  </municipio>
+  <municipio>
+    <codigo>3694</codigo>
+    <nome>Itanhaem</nome>
+  </municipio>
+  <municipio>
+    <codigo>3700</codigo>
+    <nome>Itapecerica Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>3712</codigo>
+    <nome>Itapetininga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3724</codigo>
+    <nome>Itapeva</nome>
+  </municipio>
+  <municipio>
+    <codigo>3736</codigo>
+    <nome>Itapevi</nome>
+  </municipio>
+  <municipio>
+    <codigo>3748</codigo>
+    <nome>Itapira</nome>
+  </municipio>
+  <municipio>
+    <codigo>3750</codigo>
+    <nome>Itapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>3761</codigo>
+    <nome>Itaporanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3773</codigo>
+    <nome>Itapui</nome>
+  </municipio>
+  <municipio>
+    <codigo>3785</codigo>
+    <nome>Itapura</nome>
+  </municipio>
+  <municipio>
+    <codigo>3797</codigo>
+    <nome>Itaquaquecetuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>3803</codigo>
+    <nome>Itarare</nome>
+  </municipio>
+  <municipio>
+    <codigo>3815</codigo>
+    <nome>Itariri</nome>
+  </municipio>
+  <municipio>
+    <codigo>3827</codigo>
+    <nome>Itatiba</nome>
+  </municipio>
+  <municipio>
+    <codigo>3839</codigo>
+    <nome>Itatinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3840</codigo>
+    <nome>Itirapina</nome>
+  </municipio>
+  <municipio>
+    <codigo>3852</codigo>
+    <nome>Itirapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>3864</codigo>
+    <nome>Itobi</nome>
+  </municipio>
+  <municipio>
+    <codigo>3876</codigo>
+    <nome>Itu</nome>
+  </municipio>
+  <municipio>
+    <codigo>3888</codigo>
+    <nome>Itupeva</nome>
+  </municipio>
+  <municipio>
+    <codigo>3890</codigo>
+    <nome>Ituverava</nome>
+  </municipio>
+  <municipio>
+    <codigo>3906</codigo>
+    <nome>Jaborandi</nome>
+  </municipio>
+  <municipio>
+    <codigo>3918</codigo>
+    <nome>Jaboticabal</nome>
+  </municipio>
+  <municipio>
+    <codigo>3920</codigo>
+    <nome>Jacarei</nome>
+  </municipio>
+  <municipio>
+    <codigo>3931</codigo>
+    <nome>Jaci</nome>
+  </municipio>
+  <municipio>
+    <codigo>3943</codigo>
+    <nome>Jacupiranga</nome>
+  </municipio>
+  <municipio>
+    <codigo>3955</codigo>
+    <nome>Jaguariuna</nome>
+  </municipio>
+  <municipio>
+    <codigo>3967</codigo>
+    <nome>Jales</nome>
+  </municipio>
+  <municipio>
+    <codigo>3979</codigo>
+    <nome>Jambeiro</nome>
+  </municipio>
+  <municipio>
+    <codigo>3980</codigo>
+    <nome>Jandira</nome>
+  </municipio>
+  <municipio>
+    <codigo>3992</codigo>
+    <nome>Jardinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4005</codigo>
+    <nome>Jarinu</nome>
+  </municipio>
+  <municipio>
+    <codigo>4017</codigo>
+    <nome>Jau</nome>
+  </municipio>
+  <municipio>
+    <codigo>4029</codigo>
+    <nome>Jeriquara</nome>
+  </municipio>
+  <municipio>
+    <codigo>4030</codigo>
+    <nome>Joanopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4042</codigo>
+    <nome>Joao Ramalho</nome>
+  </municipio>
+  <municipio>
+    <codigo>4054</codigo>
+    <nome>Jose Bonifacio</nome>
+  </municipio>
+  <municipio>
+    <codigo>4066</codigo>
+    <nome>Julio Mesquita</nome>
+  </municipio>
+  <municipio>
+    <codigo>4078</codigo>
+    <nome>Jundiai</nome>
+  </municipio>
+  <municipio>
+    <codigo>4080</codigo>
+    <nome>Junqueiropolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4091</codigo>
+    <nome>Juquia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4108</codigo>
+    <nome>Juquitiba</nome>
+  </municipio>
+  <municipio>
+    <codigo>4110</codigo>
+    <nome>Lagoinha</nome>
+  </municipio>
+  <municipio>
+    <codigo>4121</codigo>
+    <nome>Laranjal Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>4133</codigo>
+    <nome>Lavinia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4145</codigo>
+    <nome>Lavrinhas</nome>
+  </municipio>
+  <municipio>
+    <codigo>4157</codigo>
+    <nome>Leme</nome>
+  </municipio>
+  <municipio>
+    <codigo>4169</codigo>
+    <nome>Lencois Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>4170</codigo>
+    <nome>Limeira</nome>
+  </municipio>
+  <municipio>
+    <codigo>4182</codigo>
+    <nome>Lindoia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4194</codigo>
+    <nome>Lins</nome>
+  </municipio>
+  <municipio>
+    <codigo>4200</codigo>
+    <nome>Lorena</nome>
+  </municipio>
+  <municipio>
+    <codigo>4212</codigo>
+    <nome>Louveira</nome>
+  </municipio>
+  <municipio>
+    <codigo>4224</codigo>
+    <nome>Lucelia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4236</codigo>
+    <nome>Lucianopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4248</codigo>
+    <nome>Luiz Antonio</nome>
+  </municipio>
+  <municipio>
+    <codigo>4250</codigo>
+    <nome>Luiziania</nome>
+  </municipio>
+  <municipio>
+    <codigo>4261</codigo>
+    <nome>Lupercio</nome>
+  </municipio>
+  <municipio>
+    <codigo>4273</codigo>
+    <nome>Lutecia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4285</codigo>
+    <nome>Macatuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>4297</codigo>
+    <nome>Macaubal</nome>
+  </municipio>
+  <municipio>
+    <codigo>4303</codigo>
+    <nome>Macedonia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4315</codigo>
+    <nome>Magda</nome>
+  </municipio>
+  <municipio>
+    <codigo>4327</codigo>
+    <nome>Mairinque</nome>
+  </municipio>
+  <municipio>
+    <codigo>4339</codigo>
+    <nome>Mairipora</nome>
+  </municipio>
+  <municipio>
+    <codigo>4340</codigo>
+    <nome>Manduri</nome>
+  </municipio>
+  <municipio>
+    <codigo>4352</codigo>
+    <nome>Maraba Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>4364</codigo>
+    <nome>Maracai</nome>
+  </municipio>
+  <municipio>
+    <codigo>4376</codigo>
+    <nome>Mariapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4388</codigo>
+    <nome>Marilia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4390</codigo>
+    <nome>Marinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4406</codigo>
+    <nome>Martinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4418</codigo>
+    <nome>Matao</nome>
+  </municipio>
+  <municipio>
+    <codigo>4420</codigo>
+    <nome>Maua</nome>
+  </municipio>
+  <municipio>
+    <codigo>4431</codigo>
+    <nome>Mendonca</nome>
+  </municipio>
+  <municipio>
+    <codigo>4443</codigo>
+    <nome>Meridiano</nome>
+  </municipio>
+  <municipio>
+    <codigo>4455</codigo>
+    <nome>Miguelopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4467</codigo>
+    <nome>Mineiros Do Tiete</nome>
+  </municipio>
+  <municipio>
+    <codigo>4479</codigo>
+    <nome>Mira Estrela</nome>
+  </municipio>
+  <municipio>
+    <codigo>4480</codigo>
+    <nome>Miracatu</nome>
+  </municipio>
+  <municipio>
+    <codigo>4492</codigo>
+    <nome>Mirandopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>4509</codigo>
+    <nome>Mirante Do Paranapanema</nome>
+  </municipio>
+  <municipio>
+    <codigo>4510</codigo>
+    <nome>Mirassol</nome>
+  </municipio>
+  <municipio>
+    <codigo>4522</codigo>
+    <nome>Mirassolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4534</codigo>
+    <nome>Mococa</nome>
+  </municipio>
+  <municipio>
+    <codigo>4546</codigo>
+    <nome>Mogi Das Cruzes</nome>
+  </municipio>
+  <municipio>
+    <codigo>4558</codigo>
+    <nome>Mogi Guacu</nome>
+  </municipio>
+  <municipio>
+    <codigo>4560</codigo>
+    <nome>Mogi Mirim</nome>
+  </municipio>
+  <municipio>
+    <codigo>4571</codigo>
+    <nome>Mombuca</nome>
+  </municipio>
+  <municipio>
+    <codigo>4583</codigo>
+    <nome>Moncoes</nome>
+  </municipio>
+  <municipio>
+    <codigo>4595</codigo>
+    <nome>Mongagua</nome>
+  </municipio>
+  <municipio>
+    <codigo>4601</codigo>
+    <nome>Monte Alegre Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>4613</codigo>
+    <nome>Monte Alto</nome>
+  </municipio>
+  <municipio>
+    <codigo>4625</codigo>
+    <nome>Monte Aprazivel</nome>
+  </municipio>
+  <municipio>
+    <codigo>4637</codigo>
+    <nome>Monte Azul Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>4649</codigo>
+    <nome>Monte Castelo</nome>
+  </municipio>
+  <municipio>
+    <codigo>4650</codigo>
+    <nome>Monte Mor</nome>
+  </municipio>
+  <municipio>
+    <codigo>4662</codigo>
+    <nome>Monteiro Lobato</nome>
+  </municipio>
+  <municipio>
+    <codigo>4674</codigo>
+    <nome>Morro Agudo</nome>
+  </municipio>
+  <municipio>
+    <codigo>4686</codigo>
+    <nome>Morungaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>4698</codigo>
+    <nome>Murutinga Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>4704</codigo>
+    <nome>Narandiba</nome>
+  </municipio>
+  <municipio>
+    <codigo>4716</codigo>
+    <nome>Natividade Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>4728</codigo>
+    <nome>Nazare Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>4730</codigo>
+    <nome>Neves Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>4741</codigo>
+    <nome>Nhandeara</nome>
+  </municipio>
+  <municipio>
+    <codigo>4753</codigo>
+    <nome>Nipoa</nome>
+  </municipio>
+  <municipio>
+    <codigo>4765</codigo>
+    <nome>Nova Alianca</nome>
+  </municipio>
+  <municipio>
+    <codigo>4777</codigo>
+    <nome>Nova Europa</nome>
+  </municipio>
+  <municipio>
+    <codigo>4789</codigo>
+    <nome>Nova Granada</nome>
+  </municipio>
+  <municipio>
+    <codigo>4790</codigo>
+    <nome>Nova Guataporanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>4807</codigo>
+    <nome>Nova Independencia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4819</codigo>
+    <nome>Nova Luzitania</nome>
+  </municipio>
+  <municipio>
+    <codigo>4820</codigo>
+    <nome>Nova Odessa</nome>
+  </municipio>
+  <municipio>
+    <codigo>4832</codigo>
+    <nome>Novo Horizonte</nome>
+  </municipio>
+  <municipio>
+    <codigo>4844</codigo>
+    <nome>Nuporanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>4856</codigo>
+    <nome>Ocaucu</nome>
+  </municipio>
+  <municipio>
+    <codigo>4868</codigo>
+    <nome>Oleo</nome>
+  </municipio>
+  <municipio>
+    <codigo>4870</codigo>
+    <nome>Olimpia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4881</codigo>
+    <nome>Onda Verde</nome>
+  </municipio>
+  <municipio>
+    <codigo>4893</codigo>
+    <nome>Oriente</nome>
+  </municipio>
+  <municipio>
+    <codigo>4900</codigo>
+    <nome>Orindiuva</nome>
+  </municipio>
+  <municipio>
+    <codigo>4911</codigo>
+    <nome>Orlandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>4923</codigo>
+    <nome>Osasco</nome>
+  </municipio>
+  <municipio>
+    <codigo>4935</codigo>
+    <nome>Oscar Bressane</nome>
+  </municipio>
+  <municipio>
+    <codigo>4947</codigo>
+    <nome>Osvaldo Cruz</nome>
+  </municipio>
+  <municipio>
+    <codigo>4959</codigo>
+    <nome>Ourinhos</nome>
+  </municipio>
+  <municipio>
+    <codigo>4960</codigo>
+    <nome>Ouro Verde</nome>
+  </municipio>
+  <municipio>
+    <codigo>4972</codigo>
+    <nome>Pacaembu</nome>
+  </municipio>
+  <municipio>
+    <codigo>4984</codigo>
+    <nome>Palestina</nome>
+  </municipio>
+  <municipio>
+    <codigo>4996</codigo>
+    <nome>Palmares Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>5002</codigo>
+    <nome>Acorizal</nome>
+  </municipio>
+  <municipio>
+    <codigo>5009</codigo>
+    <nome>Palmeira D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>5010</codigo>
+    <nome>Palmital</nome>
+  </municipio>
+  <municipio>
+    <codigo>5022</codigo>
+    <nome>Panorama</nome>
+  </municipio>
+  <municipio>
+    <codigo>5029</codigo>
+    <nome>Distrito De Engenho</nome>
+  </municipio>
+  <municipio>
+    <codigo>5034</codigo>
+    <nome>Paraguacu Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>5045</codigo>
+    <nome>Distrito De Baus</nome>
+  </municipio>
+  <municipio>
+    <codigo>5046</codigo>
+    <nome>Paraibuna</nome>
+  </municipio>
+  <municipio>
+    <codigo>5058</codigo>
+    <nome>Paraiso</nome>
+  </municipio>
+  <municipio>
+    <codigo>5060</codigo>
+    <nome>Paranapanema</nome>
+  </municipio>
+  <municipio>
+    <codigo>5071</codigo>
+    <nome>Pardinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>5083</codigo>
+    <nome>Paranapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>5095</codigo>
+    <nome>Parapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>5101</codigo>
+    <nome>Pariquera-Acu</nome>
+  </municipio>
+  <municipio>
+    <codigo>5113</codigo>
+    <nome>Patrocinio Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>5125</codigo>
+    <nome>Pauliceia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5137</codigo>
+    <nome>Paulinia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5149</codigo>
+    <nome>Paulo De Faria</nome>
+  </municipio>
+  <municipio>
+    <codigo>5150</codigo>
+    <nome>Pederneiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>5162</codigo>
+    <nome>Pedra Bela</nome>
+  </municipio>
+  <municipio>
+    <codigo>5174</codigo>
+    <nome>Pedranopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>5186</codigo>
+    <nome>Pedregulho</nome>
+  </municipio>
+  <municipio>
+    <codigo>5198</codigo>
+    <nome>Pedreira</nome>
+  </municipio>
+  <municipio>
+    <codigo>5204</codigo>
+    <nome>Pedro De Toledo</nome>
+  </municipio>
+  <municipio>
+    <codigo>5216</codigo>
+    <nome>Penapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>5228</codigo>
+    <nome>Pereira Barreto</nome>
+  </municipio>
+  <municipio>
+    <codigo>5230</codigo>
+    <nome>Pereiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>5241</codigo>
+    <nome>Peruibe</nome>
+  </municipio>
+  <municipio>
+    <codigo>5253</codigo>
+    <nome>Piacatu</nome>
+  </municipio>
+  <municipio>
+    <codigo>5265</codigo>
+    <nome>Piedade</nome>
+  </municipio>
+  <municipio>
+    <codigo>5277</codigo>
+    <nome>Pilar Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>5289</codigo>
+    <nome>Pindamonhangaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>5290</codigo>
+    <nome>Pindorama</nome>
+  </municipio>
+  <municipio>
+    <codigo>5307</codigo>
+    <nome>Espirito Santo Do Pinhal</nome>
+  </municipio>
+  <municipio>
+    <codigo>5319</codigo>
+    <nome>Pinhalzinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>5320</codigo>
+    <nome>Piquerobi</nome>
+  </municipio>
+  <municipio>
+    <codigo>5332</codigo>
+    <nome>Piquete</nome>
+  </municipio>
+  <municipio>
+    <codigo>5344</codigo>
+    <nome>Piracaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5356</codigo>
+    <nome>Piracicaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>5368</codigo>
+    <nome>Pirassununga</nome>
+  </municipio>
+  <municipio>
+    <codigo>5370</codigo>
+    <nome>Piraju</nome>
+  </municipio>
+  <municipio>
+    <codigo>5381</codigo>
+    <nome>Pirajui</nome>
+  </municipio>
+  <municipio>
+    <codigo>5393</codigo>
+    <nome>Pirangi</nome>
+  </municipio>
+  <municipio>
+    <codigo>5400</codigo>
+    <nome>Pirapora Do Bom Jesus</nome>
+  </municipio>
+  <municipio>
+    <codigo>5411</codigo>
+    <nome>Pirapozinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>5423</codigo>
+    <nome>Piratininga</nome>
+  </municipio>
+  <municipio>
+    <codigo>5435</codigo>
+    <nome>Pitangueiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>5447</codigo>
+    <nome>Planalto</nome>
+  </municipio>
+  <municipio>
+    <codigo>5459</codigo>
+    <nome>Platina</nome>
+  </municipio>
+  <municipio>
+    <codigo>5460</codigo>
+    <nome>Poa</nome>
+  </municipio>
+  <municipio>
+    <codigo>5472</codigo>
+    <nome>Poloni</nome>
+  </municipio>
+  <municipio>
+    <codigo>5484</codigo>
+    <nome>Pompeia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5496</codigo>
+    <nome>Pongai</nome>
+  </municipio>
+  <municipio>
+    <codigo>5502</codigo>
+    <nome>Pontal</nome>
+  </municipio>
+  <municipio>
+    <codigo>5514</codigo>
+    <nome>Pontes Gestal</nome>
+  </municipio>
+  <municipio>
+    <codigo>5526</codigo>
+    <nome>Populina</nome>
+  </municipio>
+  <municipio>
+    <codigo>5538</codigo>
+    <nome>Porangaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>5540</codigo>
+    <nome>Porto Feliz</nome>
+  </municipio>
+  <municipio>
+    <codigo>5551</codigo>
+    <nome>Porto Ferreira</nome>
+  </municipio>
+  <municipio>
+    <codigo>5563</codigo>
+    <nome>Potirendaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>5575</codigo>
+    <nome>Pradopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>5587</codigo>
+    <nome>Praia Grande</nome>
+  </municipio>
+  <municipio>
+    <codigo>5599</codigo>
+    <nome>Presidente Alves</nome>
+  </municipio>
+  <municipio>
+    <codigo>5605</codigo>
+    <nome>Presidente Bernardes</nome>
+  </municipio>
+  <municipio>
+    <codigo>5617</codigo>
+    <nome>Presidente Epitacio</nome>
+  </municipio>
+  <municipio>
+    <codigo>5629</codigo>
+    <nome>Presidente Prudente</nome>
+  </municipio>
+  <municipio>
+    <codigo>5630</codigo>
+    <nome>Presidente Venceslau</nome>
+  </municipio>
+  <municipio>
+    <codigo>5642</codigo>
+    <nome>Promissao</nome>
+  </municipio>
+  <municipio>
+    <codigo>5654</codigo>
+    <nome>Quata</nome>
+  </municipio>
+  <municipio>
+    <codigo>5666</codigo>
+    <nome>Queiroz</nome>
+  </municipio>
+  <municipio>
+    <codigo>5678</codigo>
+    <nome>Queluz</nome>
+  </municipio>
+  <municipio>
+    <codigo>5680</codigo>
+    <nome>Quintana</nome>
+  </municipio>
+  <municipio>
+    <codigo>5691</codigo>
+    <nome>Rafard</nome>
+  </municipio>
+  <municipio>
+    <codigo>5708</codigo>
+    <nome>Rancharia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5710</codigo>
+    <nome>Redencao Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>5721</codigo>
+    <nome>Regente Feijo</nome>
+  </municipio>
+  <municipio>
+    <codigo>5733</codigo>
+    <nome>Reginopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>5745</codigo>
+    <nome>Registro</nome>
+  </municipio>
+  <municipio>
+    <codigo>5757</codigo>
+    <nome>Restinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>5769</codigo>
+    <nome>Ribeira</nome>
+  </municipio>
+  <municipio>
+    <codigo>5770</codigo>
+    <nome>Ribeirao Bonito</nome>
+  </municipio>
+  <municipio>
+    <codigo>5782</codigo>
+    <nome>Ribeirao Branco</nome>
+  </municipio>
+  <municipio>
+    <codigo>5794</codigo>
+    <nome>Ribeirao Corrente</nome>
+  </municipio>
+  <municipio>
+    <codigo>5800</codigo>
+    <nome>Ribeirao Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>5812</codigo>
+    <nome>Ribeirao Pires</nome>
+  </municipio>
+  <municipio>
+    <codigo>5824</codigo>
+    <nome>Ribeirao Preto</nome>
+  </municipio>
+  <municipio>
+    <codigo>5836</codigo>
+    <nome>Riversul</nome>
+  </municipio>
+  <municipio>
+    <codigo>5848</codigo>
+    <nome>Rifaina</nome>
+  </municipio>
+  <municipio>
+    <codigo>5850</codigo>
+    <nome>Rincao</nome>
+  </municipio>
+  <municipio>
+    <codigo>5861</codigo>
+    <nome>Rinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>5873</codigo>
+    <nome>Rio Claro</nome>
+  </municipio>
+  <municipio>
+    <codigo>5885</codigo>
+    <nome>Rio Das Pedras</nome>
+  </municipio>
+  <municipio>
+    <codigo>5897</codigo>
+    <nome>Rio Grande Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>5903</codigo>
+    <nome>Riolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5915</codigo>
+    <nome>Roseira</nome>
+  </municipio>
+  <municipio>
+    <codigo>5927</codigo>
+    <nome>Rubiacea</nome>
+  </municipio>
+  <municipio>
+    <codigo>5939</codigo>
+    <nome>Rubineia</nome>
+  </municipio>
+  <municipio>
+    <codigo>5940</codigo>
+    <nome>Sabino</nome>
+  </municipio>
+  <municipio>
+    <codigo>5952</codigo>
+    <nome>Sagres</nome>
+  </municipio>
+  <municipio>
+    <codigo>5964</codigo>
+    <nome>Sales</nome>
+  </municipio>
+  <municipio>
+    <codigo>5976</codigo>
+    <nome>Sales Oliveira</nome>
+  </municipio>
+  <municipio>
+    <codigo>5988</codigo>
+    <nome>Salesopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>5990</codigo>
+    <nome>Salmourao</nome>
+  </municipio>
+  <municipio>
+    <codigo>6002</codigo>
+    <nome>Salto</nome>
+  </municipio>
+  <municipio>
+    <codigo>6014</codigo>
+    <nome>Salto Grande</nome>
+  </municipio>
+  <municipio>
+    <codigo>6026</codigo>
+    <nome>Salto De Pirapora</nome>
+  </municipio>
+  <municipio>
+    <codigo>6038</codigo>
+    <nome>Sandovalina</nome>
+  </municipio>
+  <municipio>
+    <codigo>6040</codigo>
+    <nome>Santa Adelia</nome>
+  </municipio>
+  <municipio>
+    <codigo>6051</codigo>
+    <nome>Santa Albertina</nome>
+  </municipio>
+  <municipio>
+    <codigo>6063</codigo>
+    <nome>Santa Barbara D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>6075</codigo>
+    <nome>Aguas De Santa Barbara</nome>
+  </municipio>
+  <municipio>
+    <codigo>6087</codigo>
+    <nome>Santa Branca</nome>
+  </municipio>
+  <municipio>
+    <codigo>6099</codigo>
+    <nome>Santa Clara D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>6105</codigo>
+    <nome>Santa Cruz Da Conceicao</nome>
+  </municipio>
+  <municipio>
+    <codigo>6117</codigo>
+    <nome>Santa Cruz Das Palmeiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>6129</codigo>
+    <nome>Santa Cruz Do Rio Pardo</nome>
+  </municipio>
+  <municipio>
+    <codigo>6130</codigo>
+    <nome>Santa Ernestina</nome>
+  </municipio>
+  <municipio>
+    <codigo>6142</codigo>
+    <nome>Santa Fe Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>6154</codigo>
+    <nome>Santa Gertrudes</nome>
+  </municipio>
+  <municipio>
+    <codigo>6166</codigo>
+    <nome>Santa Isabel</nome>
+  </municipio>
+  <municipio>
+    <codigo>6178</codigo>
+    <nome>Santa Lucia</nome>
+  </municipio>
+  <municipio>
+    <codigo>6180</codigo>
+    <nome>Santa Maria Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>6191</codigo>
+    <nome>Santa Mercedes</nome>
+  </municipio>
+  <municipio>
+    <codigo>6208</codigo>
+    <nome>Santa Rita D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>6210</codigo>
+    <nome>Santa Rita Do Passa Quatro</nome>
+  </municipio>
+  <municipio>
+    <codigo>6221</codigo>
+    <nome>Santa Rosa De Viterbo</nome>
+  </municipio>
+  <municipio>
+    <codigo>6233</codigo>
+    <nome>Santana Do Parnaiba</nome>
+  </municipio>
+  <municipio>
+    <codigo>6245</codigo>
+    <nome>Santana Da Ponte Pensa</nome>
+  </municipio>
+  <municipio>
+    <codigo>6257</codigo>
+    <nome>Santo Anastacio</nome>
+  </municipio>
+  <municipio>
+    <codigo>6269</codigo>
+    <nome>Santo Andre</nome>
+  </municipio>
+  <municipio>
+    <codigo>6270</codigo>
+    <nome>Santo Antonio Da Alegria</nome>
+  </municipio>
+  <municipio>
+    <codigo>6282</codigo>
+    <nome>Santo Antonio Do Jardim</nome>
+  </municipio>
+  <municipio>
+    <codigo>6294</codigo>
+    <nome>Santo Antonio Do Pinhal</nome>
+  </municipio>
+  <municipio>
+    <codigo>6300</codigo>
+    <nome>Santo Antonio De Posse</nome>
+  </municipio>
+  <municipio>
+    <codigo>6312</codigo>
+    <nome>Santo Expedito</nome>
+  </municipio>
+  <municipio>
+    <codigo>6324</codigo>
+    <nome>Santopolis Do Aguapei</nome>
+  </municipio>
+  <municipio>
+    <codigo>6336</codigo>
+    <nome>Santos</nome>
+  </municipio>
+  <municipio>
+    <codigo>6348</codigo>
+    <nome>Sao Bento Do Sapucai</nome>
+  </municipio>
+  <municipio>
+    <codigo>6350</codigo>
+    <nome>Sao Bernardo Do Campo</nome>
+  </municipio>
+  <municipio>
+    <codigo>6361</codigo>
+    <nome>Sao Caetano Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>6373</codigo>
+    <nome>Sao Carlos</nome>
+  </municipio>
+  <municipio>
+    <codigo>6385</codigo>
+    <nome>Sao Francisco</nome>
+  </municipio>
+  <municipio>
+    <codigo>6397</codigo>
+    <nome>Sao Joao Da Boa Vista</nome>
+  </municipio>
+  <municipio>
+    <codigo>6403</codigo>
+    <nome>Sao Joao Das Duas Pontes</nome>
+  </municipio>
+  <municipio>
+    <codigo>6415</codigo>
+    <nome>Sao Joao Do Pau D Alho</nome>
+  </municipio>
+  <municipio>
+    <codigo>6427</codigo>
+    <nome>Sao Joaquim Da Barra</nome>
+  </municipio>
+  <municipio>
+    <codigo>6439</codigo>
+    <nome>Sao Jose Do Barreiro</nome>
+  </municipio>
+  <municipio>
+    <codigo>6440</codigo>
+    <nome>Sao Jose Da Bela Vista</nome>
+  </municipio>
+  <municipio>
+    <codigo>6452</codigo>
+    <nome>Sao Jose Dos Campos</nome>
+  </municipio>
+  <municipio>
+    <codigo>6464</codigo>
+    <nome>Sao Jose Do Rio Pardo</nome>
+  </municipio>
+  <municipio>
+    <codigo>6476</codigo>
+    <nome>Sao Jose Do Rio Preto</nome>
+  </municipio>
+  <municipio>
+    <codigo>6488</codigo>
+    <nome>Sao Luiz Do Paraitinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>6490</codigo>
+    <nome>Sao Manuel</nome>
+  </municipio>
+  <municipio>
+    <codigo>6506</codigo>
+    <nome>Sao Miguel Arcanjo</nome>
+  </municipio>
+  <municipio>
+    <codigo>6518</codigo>
+    <nome>Sao Pedro</nome>
+  </municipio>
+  <municipio>
+    <codigo>6520</codigo>
+    <nome>Sao Pedro Do Turvo</nome>
+  </municipio>
+  <municipio>
+    <codigo>6531</codigo>
+    <nome>Sao Roque</nome>
+  </municipio>
+  <municipio>
+    <codigo>6543</codigo>
+    <nome>Sao Sebastiao</nome>
+  </municipio>
+  <municipio>
+    <codigo>6555</codigo>
+    <nome>Sao Sebastiao Da Grama</nome>
+  </municipio>
+  <municipio>
+    <codigo>6567</codigo>
+    <nome>Sao Simao</nome>
+  </municipio>
+  <municipio>
+    <codigo>6579</codigo>
+    <nome>Sao Vicente</nome>
+  </municipio>
+  <municipio>
+    <codigo>6580</codigo>
+    <nome>Sarapui</nome>
+  </municipio>
+  <municipio>
+    <codigo>6592</codigo>
+    <nome>Sarutaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>6609</codigo>
+    <nome>Sebastianopolis Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>6610</codigo>
+    <nome>Serra Azul</nome>
+  </municipio>
+  <municipio>
+    <codigo>6622</codigo>
+    <nome>Serra Negra</nome>
+  </municipio>
+  <municipio>
+    <codigo>6634</codigo>
+    <nome>Serrana</nome>
+  </municipio>
+  <municipio>
+    <codigo>6646</codigo>
+    <nome>Sertaozinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>6658</codigo>
+    <nome>Sete Barras</nome>
+  </municipio>
+  <municipio>
+    <codigo>6660</codigo>
+    <nome>Severinia</nome>
+  </municipio>
+  <municipio>
+    <codigo>6671</codigo>
+    <nome>Silveiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>6683</codigo>
+    <nome>Socorro</nome>
+  </municipio>
+  <municipio>
+    <codigo>6695</codigo>
+    <nome>Sorocaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>6701</codigo>
+    <nome>Sud Mennucci</nome>
+  </municipio>
+  <municipio>
+    <codigo>6713</codigo>
+    <nome>Sumare</nome>
+  </municipio>
+  <municipio>
+    <codigo>6725</codigo>
+    <nome>Suzano</nome>
+  </municipio>
+  <municipio>
+    <codigo>6737</codigo>
+    <nome>Tabapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>6749</codigo>
+    <nome>Tabatinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>6750</codigo>
+    <nome>Taboao Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>6762</codigo>
+    <nome>Taciba</nome>
+  </municipio>
+  <municipio>
+    <codigo>6774</codigo>
+    <nome>Taguai</nome>
+  </municipio>
+  <municipio>
+    <codigo>6786</codigo>
+    <nome>Taiacu</nome>
+  </municipio>
+  <municipio>
+    <codigo>6798</codigo>
+    <nome>Taiuva</nome>
+  </municipio>
+  <municipio>
+    <codigo>6804</codigo>
+    <nome>Tambau</nome>
+  </municipio>
+  <municipio>
+    <codigo>6816</codigo>
+    <nome>Tanabi</nome>
+  </municipio>
+  <municipio>
+    <codigo>6828</codigo>
+    <nome>Tapirai</nome>
+  </municipio>
+  <municipio>
+    <codigo>6830</codigo>
+    <nome>Tapiratiba</nome>
+  </municipio>
+  <municipio>
+    <codigo>6841</codigo>
+    <nome>Taquaritinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>6853</codigo>
+    <nome>Taquarituba</nome>
+  </municipio>
+  <municipio>
+    <codigo>6865</codigo>
+    <nome>Tarabai</nome>
+  </municipio>
+  <municipio>
+    <codigo>6877</codigo>
+    <nome>Tatui</nome>
+  </municipio>
+  <municipio>
+    <codigo>6889</codigo>
+    <nome>Taubate</nome>
+  </municipio>
+  <municipio>
+    <codigo>6890</codigo>
+    <nome>Tejupa</nome>
+  </municipio>
+  <municipio>
+    <codigo>6907</codigo>
+    <nome>Teodoro Sampaio</nome>
+  </municipio>
+  <municipio>
+    <codigo>6919</codigo>
+    <nome>Terra Roxa</nome>
+  </municipio>
+  <municipio>
+    <codigo>6920</codigo>
+    <nome>Tiete</nome>
+  </municipio>
+  <municipio>
+    <codigo>6932</codigo>
+    <nome>Timburi</nome>
+  </municipio>
+  <municipio>
+    <codigo>6944</codigo>
+    <nome>Torrinha</nome>
+  </municipio>
+  <municipio>
+    <codigo>6956</codigo>
+    <nome>Tremembe</nome>
+  </municipio>
+  <municipio>
+    <codigo>6968</codigo>
+    <nome>Tres Fronteiras</nome>
+  </municipio>
+  <municipio>
+    <codigo>6970</codigo>
+    <nome>Tupa</nome>
+  </municipio>
+  <municipio>
+    <codigo>6981</codigo>
+    <nome>Tupi Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>6993</codigo>
+    <nome>Turiuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>7006</codigo>
+    <nome>Turmalina</nome>
+  </municipio>
+  <municipio>
+    <codigo>7018</codigo>
+    <nome>Ubatuba</nome>
+  </municipio>
+  <municipio>
+    <codigo>7020</codigo>
+    <nome>Ubirajara</nome>
+  </municipio>
+  <municipio>
+    <codigo>7031</codigo>
+    <nome>Uchoa</nome>
+  </municipio>
+  <municipio>
+    <codigo>7043</codigo>
+    <nome>Uniao Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7055</codigo>
+    <nome>Urania</nome>
+  </municipio>
+  <municipio>
+    <codigo>7067</codigo>
+    <nome>Uru</nome>
+  </municipio>
+  <municipio>
+    <codigo>7079</codigo>
+    <nome>Urupes</nome>
+  </municipio>
+  <municipio>
+    <codigo>7080</codigo>
+    <nome>Valinhos</nome>
+  </municipio>
+  <municipio>
+    <codigo>7092</codigo>
+    <nome>Valentim Gentil</nome>
+  </municipio>
+  <municipio>
+    <codigo>7109</codigo>
+    <nome>Valparaiso</nome>
+  </municipio>
+  <municipio>
+    <codigo>7110</codigo>
+    <nome>Vargem Grande Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>7122</codigo>
+    <nome>Varzea Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7134</codigo>
+    <nome>Vera Cruz</nome>
+  </municipio>
+  <municipio>
+    <codigo>7146</codigo>
+    <nome>Vinhedo</nome>
+  </municipio>
+  <municipio>
+    <codigo>7158</codigo>
+    <nome>Viradouro</nome>
+  </municipio>
+  <municipio>
+    <codigo>7160</codigo>
+    <nome>Vista Alegre Do Alto</nome>
+  </municipio>
+  <municipio>
+    <codigo>7171</codigo>
+    <nome>Votorantim</nome>
+  </municipio>
+  <municipio>
+    <codigo>7183</codigo>
+    <nome>Votuporanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>7195</codigo>
+    <nome>Chavantes</nome>
+  </municipio>
+  <municipio>
+    <codigo>7201</codigo>
+    <nome>Vargem Grande Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7213</codigo>
+    <nome>Borebi</nome>
+  </municipio>
+  <municipio>
+    <codigo>7225</codigo>
+    <nome>Dirce Reis</nome>
+  </municipio>
+  <municipio>
+    <codigo>7237</codigo>
+    <nome>Embauba</nome>
+  </municipio>
+  <municipio>
+    <codigo>7249</codigo>
+    <nome>Espirito Santo Do Turvo</nome>
+  </municipio>
+  <municipio>
+    <codigo>7250</codigo>
+    <nome>Euclides Da Cunha Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7262</codigo>
+    <nome>Guatapara</nome>
+  </municipio>
+  <municipio>
+    <codigo>7274</codigo>
+    <nome>Iaras</nome>
+  </municipio>
+  <municipio>
+    <codigo>7298</codigo>
+    <nome>Motuca</nome>
+  </municipio>
+  <municipio>
+    <codigo>7304</codigo>
+    <nome>Rosana</nome>
+  </municipio>
+  <municipio>
+    <codigo>7316</codigo>
+    <nome>Taruma</nome>
+  </municipio>
+  <municipio>
+    <codigo>7328</codigo>
+    <nome>Alambari</nome>
+  </municipio>
+  <municipio>
+    <codigo>7330</codigo>
+    <nome>Aluminio</nome>
+  </municipio>
+  <municipio>
+    <codigo>7341</codigo>
+    <nome>Aracariguama</nome>
+  </municipio>
+  <municipio>
+    <codigo>7353</codigo>
+    <nome>Arapei</nome>
+  </municipio>
+  <municipio>
+    <codigo>7365</codigo>
+    <nome>Aspasia</nome>
+  </municipio>
+  <municipio>
+    <codigo>7377</codigo>
+    <nome>Barra Do Chapeu</nome>
+  </municipio>
+  <municipio>
+    <codigo>7389</codigo>
+    <nome>Bertioga</nome>
+  </municipio>
+  <municipio>
+    <codigo>7390</codigo>
+    <nome>Bom Sucesso De Itarare</nome>
+  </municipio>
+  <municipio>
+    <codigo>7407</codigo>
+    <nome>Cajati</nome>
+  </municipio>
+  <municipio>
+    <codigo>7419</codigo>
+    <nome>Campina Do Monte Alegre</nome>
+  </municipio>
+  <municipio>
+    <codigo>7420</codigo>
+    <nome>Canitar</nome>
+  </municipio>
+  <municipio>
+    <codigo>7432</codigo>
+    <nome>Elisiario</nome>
+  </municipio>
+  <municipio>
+    <codigo>7444</codigo>
+    <nome>Emilianopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>7456</codigo>
+    <nome>Engenheiro Coelho</nome>
+  </municipio>
+  <municipio>
+    <codigo>7468</codigo>
+    <nome>Estiva Gerbi</nome>
+  </municipio>
+  <municipio>
+    <codigo>7470</codigo>
+    <nome>Holambra</nome>
+  </municipio>
+  <municipio>
+    <codigo>7481</codigo>
+    <nome>Hortolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>7493</codigo>
+    <nome>Ilha Solteira</nome>
+  </municipio>
+  <municipio>
+    <codigo>7500</codigo>
+    <nome>Itaoca</nome>
+  </municipio>
+  <municipio>
+    <codigo>7511</codigo>
+    <nome>Marapoama</nome>
+  </municipio>
+  <municipio>
+    <codigo>7523</codigo>
+    <nome>Nova Canaa Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7535</codigo>
+    <nome>Novais</nome>
+  </municipio>
+  <municipio>
+    <codigo>7547</codigo>
+    <nome>Parisi</nome>
+  </municipio>
+  <municipio>
+    <codigo>7559</codigo>
+    <nome>Pedrinhas Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7560</codigo>
+    <nome>Pontalinda</nome>
+  </municipio>
+  <municipio>
+    <codigo>7572</codigo>
+    <nome>Potim</nome>
+  </municipio>
+  <municipio>
+    <codigo>7584</codigo>
+    <nome>Ribeirao Grande</nome>
+  </municipio>
+  <municipio>
+    <codigo>7596</codigo>
+    <nome>Saltinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>7602</codigo>
+    <nome>Santo Antonio Do Aracangua</nome>
+  </municipio>
+  <municipio>
+    <codigo>7614</codigo>
+    <nome>Sao Joao De Iracema</nome>
+  </municipio>
+  <municipio>
+    <codigo>7626</codigo>
+    <nome>Suzanapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>7638</codigo>
+    <nome>Taquarivai</nome>
+  </municipio>
+  <municipio>
+    <codigo>7640</codigo>
+    <nome>Tuiuti</nome>
+  </municipio>
+  <municipio>
+    <codigo>7651</codigo>
+    <nome>Ubarana</nome>
+  </municipio>
+  <municipio>
+    <codigo>7663</codigo>
+    <nome>Vargem</nome>
+  </municipio>
+  <municipio>
+    <codigo>7675</codigo>
+    <nome>Ilha Comprida</nome>
+  </municipio>
+  <municipio>
+    <codigo>7687</codigo>
+    <nome>Itapirapua Paulista</nome>
+  </municipio>
+  <municipio>
+    <codigo>7699</codigo>
+    <nome>Lourdes</nome>
+  </municipio>
+  <municipio>
+    <codigo>7705</codigo>
+    <nome>Mesopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>7717</codigo>
+    <nome>Nova Campina</nome>
+  </municipio>
+  <municipio>
+    <codigo>7729</codigo>
+    <nome>Sao Lourenco Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>7730</codigo>
+    <nome>Torre De Pedra</nome>
+  </municipio>
+  <municipio>
+    <codigo>7742</codigo>
+    <nome>Zacarias</nome>
+  </municipio>
+  <municipio>
+    <codigo>7754</codigo>
+    <nome>Arco-Iris</nome>
+  </municipio>
+  <municipio>
+    <codigo>7766</codigo>
+    <nome>Brejo Alegre</nome>
+  </municipio>
+  <municipio>
+    <codigo>7778</codigo>
+    <nome>Canas</nome>
+  </municipio>
+  <municipio>
+    <codigo>7780</codigo>
+    <nome>Pracinha</nome>
+  </municipio>
+  <municipio>
+    <codigo>7791</codigo>
+    <nome>Pratania</nome>
+  </municipio>
+  <municipio>
+    <codigo>7808</codigo>
+    <nome>Quadra</nome>
+  </municipio>
+  <municipio>
+    <codigo>7810</codigo>
+    <nome>Santa Cruz Da Esperanca</nome>
+  </municipio>
+  <municipio>
+    <codigo>7821</codigo>
+    <nome>Santa Salete</nome>
+  </municipio>
+  <municipio>
+    <codigo>7833</codigo>
+    <nome>Vitoria Brasil</nome>
+  </municipio>
+  <municipio>
+    <codigo>7845</codigo>
+    <nome>Ipigua</nome>
+  </municipio>
+  <municipio>
+    <codigo>7857</codigo>
+    <nome>Taquaral</nome>
+  </municipio>
+  <municipio>
+    <codigo>7869</codigo>
+    <nome>Fernao</nome>
+  </municipio>
+  <municipio>
+    <codigo>7870</codigo>
+    <nome>Gaviao Peixoto</nome>
+  </municipio>
+  <municipio>
+    <codigo>7882</codigo>
+    <nome>Jumirim</nome>
+  </municipio>
+  <municipio>
+    <codigo>7894</codigo>
+    <nome>Nantes</nome>
+  </municipio>
+  <municipio>
+    <codigo>7900</codigo>
+    <nome>Nova Castilho</nome>
+  </municipio>
+  <municipio>
+    <codigo>7912</codigo>
+    <nome>Ouroeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>7924</codigo>
+    <nome>Paulistania</nome>
+  </municipio>
+  <municipio>
+    <codigo>7936</codigo>
+    <nome>Ribeirao Dos Indios</nome>
+  </municipio>
+  <municipio>
+    <codigo>7948</codigo>
+    <nome>Trabiju</nome>
+  </municipio>
+  <municipio>
+    <codigo>9841</codigo>
+    <nome>Presidente Figueiredo</nome>
+  </municipio>
+  <municipio>
+    <codigo>9843</codigo>
+    <nome>Rio Preto Da Eva</nome>
+  </municipio>
+  <municipio>
+    <codigo>9847</codigo>
+    <nome>Tabatinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>9998</codigo>
+    <nome>Epitaciolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>9999</codigo>
+    <nome>Pacaraima</nome>
+  </municipio>
+  <municipio>
+    <codigo>10006</codigo>
+    <nome>Agua Boa</nome>
+  </municipio>
+  <municipio>
+    <codigo>15008</codigo>
+    <nome>Alta Floresta</nome>
+  </municipio>
+  <municipio>
+    <codigo>15067</codigo>
+    <nome>Distrito De Alto Paraiso</nome>
+  </municipio>
+  <municipio>
+    <codigo>20001</codigo>
+    <nome>Alto Araguaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>20010</codigo>
+    <nome>Distrito De Buriti</nome>
+  </municipio>
+  <municipio>
+    <codigo>23000</codigo>
+    <nome>Alto Boa Vista</nome>
+  </municipio>
+  <municipio>
+    <codigo>25003</codigo>
+    <nome>Alto Garcas</nome>
+  </municipio>
+  <municipio>
+    <codigo>30007</codigo>
+    <nome>Alto Paraguai</nome>
+  </municipio>
+  <municipio>
+    <codigo>30015</codigo>
+    <nome>Distrito De Lavouras</nome>
+  </municipio>
+  <municipio>
+    <codigo>30023</codigo>
+    <nome>Distrito De Capao Verde</nome>
+  </municipio>
+  <municipio>
+    <codigo>32000</codigo>
+    <nome>Alto Taquari</nome>
+  </municipio>
+  <municipio>
+    <codigo>33006</codigo>
+    <nome>Apiacas</nome>
+  </municipio>
+  <municipio>
+    <codigo>34002</codigo>
+    <nome>Araguaiana</nome>
+  </municipio>
+  <municipio>
+    <codigo>35009</codigo>
+    <nome>Araguainha</nome>
+  </municipio>
+  <municipio>
+    <codigo>40002</codigo>
+    <nome>Araputanga</nome>
+  </municipio>
+  <municipio>
+    <codigo>45004</codigo>
+    <nome>Arenapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>50008</codigo>
+    <nome>Aripuana</nome>
+  </municipio>
+  <municipio>
+    <codigo>55000</codigo>
+    <nome>Barao De Melgaco</nome>
+  </municipio>
+  <municipio>
+    <codigo>55018</codigo>
+    <nome>Distrito De Joselandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>60003</codigo>
+    <nome>Barra Do Bugres</nome>
+  </municipio>
+  <municipio>
+    <codigo>60011</codigo>
+    <nome>Distrito De Assari</nome>
+  </municipio>
+  <municipio>
+    <codigo>60046</codigo>
+    <nome>Distrito De Tapirapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>65005</codigo>
+    <nome>Barra Do Garcas</nome>
+  </municipio>
+  <municipio>
+    <codigo>65056</codigo>
+    <nome>Distrito De Vale Dos Sonhos</nome>
+  </municipio>
+  <municipio>
+    <codigo>65064</codigo>
+    <nome>Distrito De Toricueije</nome>
+  </municipio>
+  <municipio>
+    <codigo>67008</codigo>
+    <nome>Bom Jesus Do Araguaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>68004</codigo>
+    <nome>Brasnorte</nome>
+  </municipio>
+  <municipio>
+    <codigo>70009</codigo>
+    <nome>Caceres</nome>
+  </municipio>
+  <municipio>
+    <codigo>70033</codigo>
+    <nome>Dist. Bezerro Branco</nome>
+  </municipio>
+  <municipio>
+    <codigo>70050</codigo>
+    <nome>Distrito Novo Horizonte Doeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>70068</codigo>
+    <nome>Dist. Caramujo</nome>
+  </municipio>
+  <municipio>
+    <codigo>72001</codigo>
+    <nome>Campo Verde</nome>
+  </municipio>
+  <municipio>
+    <codigo>72010</codigo>
+    <nome>Coronel Ponce</nome>
+  </municipio>
+  <municipio>
+    <codigo>73008</codigo>
+    <nome>Campinapolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>73083</codigo>
+    <nome>Dist. Sao Jose Do Couto</nome>
+  </municipio>
+  <municipio>
+    <codigo>74004</codigo>
+    <nome>Campo Novo Do Parecis</nome>
+  </municipio>
+  <municipio>
+    <codigo>74055</codigo>
+    <nome>Dist. Itanorte</nome>
+  </municipio>
+  <municipio>
+    <codigo>75000</codigo>
+    <nome>Canarana</nome>
+  </municipio>
+  <municipio>
+    <codigo>76007</codigo>
+    <nome>Canabrava Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>77003</codigo>
+    <nome>Carlinda</nome>
+  </municipio>
+  <municipio>
+    <codigo>80004</codigo>
+    <nome>Chapada Dos Guimaraes</nome>
+  </municipio>
+  <municipio>
+    <codigo>80012</codigo>
+    <nome>Distrito De Agua Fria</nome>
+  </municipio>
+  <municipio>
+    <codigo>80020</codigo>
+    <nome>Distrito De Praia Rica</nome>
+  </municipio>
+  <municipio>
+    <codigo>81000</codigo>
+    <nome>Castanheira</nome>
+  </municipio>
+  <municipio>
+    <codigo>82007</codigo>
+    <nome>Colniza</nome>
+  </municipio>
+  <municipio>
+    <codigo>83003</codigo>
+    <nome>Cocalinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>84000</codigo>
+    <nome>Claudia</nome>
+  </municipio>
+  <municipio>
+    <codigo>85006</codigo>
+    <nome>Colider</nome>
+  </municipio>
+  <municipio>
+    <codigo>86002</codigo>
+    <nome>Campos De Julio</nome>
+  </municipio>
+  <municipio>
+    <codigo>87009</codigo>
+    <nome>Conquista D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>88005</codigo>
+    <nome>Comodoro</nome>
+  </municipio>
+  <municipio>
+    <codigo>88021</codigo>
+    <nome>Distrito De Nova Alvorada</nome>
+  </municipio>
+  <municipio>
+    <codigo>88030</codigo>
+    <nome>Distrito De Padronal</nome>
+  </municipio>
+  <municipio>
+    <codigo>89001</codigo>
+    <nome>Confresa</nome>
+  </municipio>
+  <municipio>
+    <codigo>90000</codigo>
+    <nome>Cuiaba</nome>
+  </municipio>
+  <municipio>
+    <codigo>90018</codigo>
+    <nome>Distrito De Coxipo Da Ponte</nome>
+  </municipio>
+  <municipio>
+    <codigo>90026</codigo>
+    <nome>Distrito De Coxipo Do Ouro</nome>
+  </municipio>
+  <municipio>
+    <codigo>90034</codigo>
+    <nome>Distrito De Guia</nome>
+  </municipio>
+  <municipio>
+    <codigo>90042</codigo>
+    <nome>Distrito De Sao Vicente Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>91006</codigo>
+    <nome>Cotriguacu</nome>
+  </municipio>
+  <municipio>
+    <codigo>92002</codigo>
+    <nome>Curvelandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>93009</codigo>
+    <nome>Denise</nome>
+  </municipio>
+  <municipio>
+    <codigo>95001</codigo>
+    <nome>Diamantino</nome>
+  </municipio>
+  <municipio>
+    <codigo>100005</codigo>
+    <nome>Dom Aquino</nome>
+  </municipio>
+  <municipio>
+    <codigo>100021</codigo>
+    <nome>Distrito De Entre Rios</nome>
+  </municipio>
+  <municipio>
+    <codigo>102008</codigo>
+    <nome>Feliz Natal</nome>
+  </municipio>
+  <municipio>
+    <codigo>103004</codigo>
+    <nome>Figueiropolis D Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>104000</codigo>
+    <nome>Gaucha Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>105007</codigo>
+    <nome>General Carneiro</nome>
+  </municipio>
+  <municipio>
+    <codigo>107000</codigo>
+    <nome>Gloria Doeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>108006</codigo>
+    <nome>Guaranta Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>110000</codigo>
+    <nome>Guiratinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>110019</codigo>
+    <nome>Distrito De Alcantilado</nome>
+  </municipio>
+  <municipio>
+    <codigo>110027</codigo>
+    <nome>Distrito De Vale Rico</nome>
+  </municipio>
+  <municipio>
+    <codigo>110035</codigo>
+    <nome>Distrito De Buriti</nome>
+  </municipio>
+  <municipio>
+    <codigo>110043</codigo>
+    <nome>Distrito De Estrela Do Leste</nome>
+  </municipio>
+  <municipio>
+    <codigo>112003</codigo>
+    <nome>Indiavai</nome>
+  </municipio>
+  <municipio>
+    <codigo>113000</codigo>
+    <nome>Itauba</nome>
+  </municipio>
+  <municipio>
+    <codigo>115002</codigo>
+    <nome>Itiquira</nome>
+  </municipio>
+  <municipio>
+    <codigo>120006</codigo>
+    <nome>Jaciara</nome>
+  </municipio>
+  <municipio>
+    <codigo>120030</codigo>
+    <nome>Distrito De Selma</nome>
+  </municipio>
+  <municipio>
+    <codigo>120057</codigo>
+    <nome>Dist. Jatoba</nome>
+  </municipio>
+  <municipio>
+    <codigo>122009</codigo>
+    <nome>Jangada</nome>
+  </municipio>
+  <municipio>
+    <codigo>125008</codigo>
+    <nome>Jauru</nome>
+  </municipio>
+  <municipio>
+    <codigo>125024</codigo>
+    <nome>Distrito De Lucialva</nome>
+  </municipio>
+  <municipio>
+    <codigo>130001</codigo>
+    <nome>Juara</nome>
+  </municipio>
+  <municipio>
+    <codigo>130010</codigo>
+    <nome>Distrito De Catuai</nome>
+  </municipio>
+  <municipio>
+    <codigo>133000</codigo>
+    <nome>Juina</nome>
+  </municipio>
+  <municipio>
+    <codigo>133019</codigo>
+    <nome>Distrito De Fontanillas</nome>
+  </municipio>
+  <municipio>
+    <codigo>134007</codigo>
+    <nome>Juruena</nome>
+  </municipio>
+  <municipio>
+    <codigo>135003</codigo>
+    <nome>Juscimeira</nome>
+  </municipio>
+  <municipio>
+    <codigo>135011</codigo>
+    <nome>Distrito De Irenopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>135020</codigo>
+    <nome>Distrito De Santa Elvira</nome>
+  </municipio>
+  <municipio>
+    <codigo>135038</codigo>
+    <nome>Distrito De Sao Lourenco De Fatima</nome>
+  </municipio>
+  <municipio>
+    <codigo>136000</codigo>
+    <nome>Lambari Doeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>136026</codigo>
+    <nome>Dist. Boa Uniao</nome>
+  </municipio>
+  <municipio>
+    <codigo>139009</codigo>
+    <nome>Lucas Do Rio Verde</nome>
+  </municipio>
+  <municipio>
+    <codigo>140007</codigo>
+    <nome>Luciara</nome>
+  </municipio>
+  <municipio>
+    <codigo>143006</codigo>
+    <nome>Marcelandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>144002</codigo>
+    <nome>Matupa</nome>
+  </municipio>
+  <municipio>
+    <codigo>145009</codigo>
+    <nome>Mirassol Doeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>145025</codigo>
+    <nome>Distrito De Sonho Azul</nome>
+  </municipio>
+  <municipio>
+    <codigo>150002</codigo>
+    <nome>Nobres</nome>
+  </municipio>
+  <municipio>
+    <codigo>150037</codigo>
+    <nome>Dist. Coqueiral</nome>
+  </municipio>
+  <municipio>
+    <codigo>155004</codigo>
+    <nome>Nortelandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>156000</codigo>
+    <nome>Novo Santo Antonio</nome>
+  </municipio>
+  <municipio>
+    <codigo>157007</codigo>
+    <nome>Nova Nazare</nome>
+  </municipio>
+  <municipio>
+    <codigo>158003</codigo>
+    <nome>Nova Santa Helena</nome>
+  </municipio>
+  <municipio>
+    <codigo>159000</codigo>
+    <nome>Nova Lacerda</nome>
+  </municipio>
+  <municipio>
+    <codigo>160008</codigo>
+    <nome>Nossa Sra Do Livramento</nome>
+  </municipio>
+  <municipio>
+    <codigo>160016</codigo>
+    <nome>Distrito De Faval</nome>
+  </municipio>
+  <municipio>
+    <codigo>160024</codigo>
+    <nome>Distrito De Pirizal</nome>
+  </municipio>
+  <municipio>
+    <codigo>160032</codigo>
+    <nome>Distrito De Ribeirao Dos Cocais</nome>
+  </municipio>
+  <municipio>
+    <codigo>161004</codigo>
+    <nome>Nova Bandeirante</nome>
+  </municipio>
+  <municipio>
+    <codigo>162000</codigo>
+    <nome>Nova Guarita</nome>
+  </municipio>
+  <municipio>
+    <codigo>163007</codigo>
+    <nome>Nova Marilandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>164003</codigo>
+    <nome>Nova Maringa</nome>
+  </municipio>
+  <municipio>
+    <codigo>165000</codigo>
+    <nome>Nova Brasilandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>165026</codigo>
+    <nome>Distrito De Riolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>165034</codigo>
+    <nome>Distrito De Rio Manso</nome>
+  </municipio>
+  <municipio>
+    <codigo>166006</codigo>
+    <nome>Nova Canaa Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>166030</codigo>
+    <nome>Dist. Colorado Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>167002</codigo>
+    <nome>Nova Monte Verde</nome>
+  </municipio>
+  <municipio>
+    <codigo>167010</codigo>
+    <nome>Dist. Alto Paraiso</nome>
+  </municipio>
+  <municipio>
+    <codigo>168009</codigo>
+    <nome>Nova Olimpia</nome>
+  </municipio>
+  <municipio>
+    <codigo>169005</codigo>
+    <nome>Nova Ubirata</nome>
+  </municipio>
+  <municipio>
+    <codigo>170003</codigo>
+    <nome>Nova Xavantina</nome>
+  </municipio>
+  <municipio>
+    <codigo>171000</codigo>
+    <nome>Nova Mutum</nome>
+  </municipio>
+  <municipio>
+    <codigo>172006</codigo>
+    <nome>Novo Horizonte Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>173002</codigo>
+    <nome>Novo Sao Joaquim</nome>
+  </municipio>
+  <municipio>
+    <codigo>174009</codigo>
+    <nome>Paranaita</nome>
+  </municipio>
+  <municipio>
+    <codigo>175005</codigo>
+    <nome>Paranatinga</nome>
+  </municipio>
+  <municipio>
+    <codigo>176001</codigo>
+    <nome>Novo Mundo</nome>
+  </municipio>
+  <municipio>
+    <codigo>180009</codigo>
+    <nome>Pedra Preta</nome>
+  </municipio>
+  <municipio>
+    <codigo>180033</codigo>
+    <nome>Distrito De Sao Jose Do Planalto</nome>
+  </municipio>
+  <municipio>
+    <codigo>183008</codigo>
+    <nome>Peixoto De Azevedo</nome>
+  </municipio>
+  <municipio>
+    <codigo>184004</codigo>
+    <nome>Planalto Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>184080</codigo>
+    <nome>Dist. Rancharia</nome>
+  </municipio>
+  <municipio>
+    <codigo>185000</codigo>
+    <nome>Pocone</nome>
+  </municipio>
+  <municipio>
+    <codigo>185019</codigo>
+    <nome>Distrito De Cangas</nome>
+  </municipio>
+  <municipio>
+    <codigo>185027</codigo>
+    <nome>Distrito De Fazenda De Cima</nome>
+  </municipio>
+  <municipio>
+    <codigo>187003</codigo>
+    <nome>Pontal Do Araguaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>190004</codigo>
+    <nome>Ponte Branca</nome>
+  </municipio>
+  <municipio>
+    <codigo>195006</codigo>
+    <nome>Pontes E Lacerda</nome>
+  </municipio>
+  <municipio>
+    <codigo>197009</codigo>
+    <nome>Porto Alegre Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>200000</codigo>
+    <nome>Porto Dos Gauchos</nome>
+  </municipio>
+  <municipio>
+    <codigo>203009</codigo>
+    <nome>Porto Esperidiao</nome>
+  </municipio>
+  <municipio>
+    <codigo>204005</codigo>
+    <nome>Porto Estrela</nome>
+  </municipio>
+  <municipio>
+    <codigo>205001</codigo>
+    <nome>Poxoreo</nome>
+  </municipio>
+  <municipio>
+    <codigo>205010</codigo>
+    <nome>Distrito De Alto Coite</nome>
+  </municipio>
+  <municipio>
+    <codigo>205028</codigo>
+    <nome>Distrito De Jarudore</nome>
+  </municipio>
+  <municipio>
+    <codigo>205036</codigo>
+    <nome>Distrito De Paraiso Do Leste</nome>
+  </municipio>
+  <municipio>
+    <codigo>205052</codigo>
+    <nome>Distrito De Aparecida Do Leste</nome>
+  </municipio>
+  <municipio>
+    <codigo>207004</codigo>
+    <nome>Primavera Do Leste</nome>
+  </municipio>
+  <municipio>
+    <codigo>208000</codigo>
+    <nome>Querencia</nome>
+  </municipio>
+  <municipio>
+    <codigo>209007</codigo>
+    <nome>Sao Pedro Da Cipa</nome>
+  </municipio>
+  <municipio>
+    <codigo>209074</codigo>
+    <nome>Dist. Pombas</nome>
+  </municipio>
+  <municipio>
+    <codigo>210005</codigo>
+    <nome>Sao Jose Dos Quatro Marcos</nome>
+  </municipio>
+  <municipio>
+    <codigo>210013</codigo>
+    <nome>Distrito De Santa Fe</nome>
+  </municipio>
+  <municipio>
+    <codigo>211001</codigo>
+    <nome>Sao Jose Do Xingu</nome>
+  </municipio>
+  <municipio>
+    <codigo>212008</codigo>
+    <nome>Reserva Do Cabacal</nome>
+  </municipio>
+  <municipio>
+    <codigo>213004</codigo>
+    <nome>Ribeirao Cascalheira</nome>
+  </municipio>
+  <municipio>
+    <codigo>214000</codigo>
+    <nome>Ribeiraozinho</nome>
+  </municipio>
+  <municipio>
+    <codigo>215007</codigo>
+    <nome>Rio Branco</nome>
+  </municipio>
+  <municipio>
+    <codigo>219002</codigo>
+    <nome>Rondolandia</nome>
+  </municipio>
+  <municipio>
+    <codigo>220000</codigo>
+    <nome>Rondonopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>220027</codigo>
+    <nome>Distrito De Nova Galileia</nome>
+  </municipio>
+  <municipio>
+    <codigo>220060</codigo>
+    <nome>Distrito De Vila Operaria</nome>
+  </municipio>
+  <municipio>
+    <codigo>220078</codigo>
+    <nome>Distrito De Boa Vista</nome>
+  </municipio>
+  <municipio>
+    <codigo>220086</codigo>
+    <nome>Dist. Anhumas</nome>
+  </municipio>
+  <municipio>
+    <codigo>225002</codigo>
+    <nome>Rosario Oeste</nome>
+  </municipio>
+  <municipio>
+    <codigo>225010</codigo>
+    <nome>Distrito De Bauxi</nome>
+  </municipio>
+  <municipio>
+    <codigo>225029</codigo>
+    <nome>Distrito De Arruda</nome>
+  </municipio>
+  <municipio>
+    <codigo>225037</codigo>
+    <nome>Distrito De Mazargao</nome>
+  </municipio>
+  <municipio>
+    <codigo>230006</codigo>
+    <nome>Salto Do Ceu</nome>
+  </municipio>
+  <municipio>
+    <codigo>230014</codigo>
+    <nome>Distrito De Cristinopolis</nome>
+  </municipio>
+  <municipio>
+    <codigo>230022</codigo>
+    <nome>Distrito De Vila Progresso</nome>
+  </municipio>
+  <municipio>
+    <codigo>232009</codigo>
+    <nome>Santa Cruz Do Xingu</nome>
+  </municipio>
+  <municipio>
+    <codigo>233005</codigo>
+    <nome>Santa Carmem</nome>
+  </municipio>
+  <municipio>
+    <codigo>234001</codigo>
+    <nome>Santa Rita Do Trivelato</nome>
+  </municipio>
+  <municipio>
+    <codigo>235008</codigo>
+    <nome>Santa Terezinha</nome>
+  </municipio>
+  <municipio>
+    <codigo>237000</codigo>
+    <nome>Santo Afonso</nome>
+  </municipio>
+  <municipio>
+    <codigo>239003</codigo>
+    <nome>Santo Antonio Do Leste</nome>
+  </municipio>
+  <municipio>
+    <codigo>240001</codigo>
+    <nome>Santo Antonio De Leverger</nome>
+  </municipio>
+  <municipio>
+    <codigo>240010</codigo>
+    <nome>Distrito De Mimoso</nome>
+  </municipio>
+  <municipio>
+    <codigo>240036</codigo>
+    <nome>Distrito De Varginha</nome>
+  </municipio>
+  <municipio>
+    <codigo>240044</codigo>
+    <nome>Distrito De Caete</nome>
+  </municipio>
+  <municipio>
+    <codigo>240052</codigo>
+    <nome>Distrito De Engenho Velho</nome>
+  </municipio>
+  <municipio>
+    <codigo>245003</codigo>
+    <nome>Sao Felix Do Araguaia</nome>
+  </municipio>
+  <municipio>
+    <codigo>247006</codigo>
+    <nome>Sao Jose Do Povo</nome>
+  </municipio>
+  <municipio>
+    <codigo>250007</codigo>
+    <nome>Sao Jose Do Rio Claro</nome>
+  </municipio>
+  <municipio>
+    <codigo>252000</codigo>
+    <nome>Sapezal</nome>
+  </municipio>
+  <municipio>
+    <codigo>253006</codigo>
+    <nome>Serra Nova Dourada</nome>
+  </municipio>
+  <municipio>
+    <codigo>255009</codigo>
+    <nome>Sinop</nome>
+  </municipio>
+  <municipio>
+    <codigo>257001</codigo>
+    <nome>Sorriso</nome>
+  </municipio>
+  <municipio>
+    <codigo>257010</codigo>
+    <nome>Distrito De Boa Esperanca</nome>
+  </municipio>
+  <municipio>
+    <codigo>257028</codigo>
+    <nome>Distrito De Caravagio</nome>
+  </municipio>
+  <municipio>
+    <codigo>257044</codigo>
+    <nome>Distrito De Primavera</nome>
+  </municipio>
+  <municipio>
+    <codigo>258008</codigo>
+    <nome>Tabapora</nome>
+  </municipio>
+  <municipio>
+    <codigo>260002</codigo>
+    <nome>Tangara Da Serra</nome>
+  </municipio>
+  <municipio>
+    <codigo>260010</codigo>
+    <nome>Distrito De Progresso</nome>
+  </municipio>
+  <municipio>
+    <codigo>260029</codigo>
+    <nome>Distrito De Sao Joaquim</nome>
+  </municipio>
+  <municipio>
+    <codigo>260037</codigo>
+    <nome>Distrito De Sao Jorge</nome>
+  </municipio>
+  <municipio>
+    <codigo>260070</codigo>
+    <nome>Dist. Tapirapua</nome>
+  </municipio>
+  <municipio>
+    <codigo>262005</codigo>
+    <nome>Tapurah</nome>
+  </municipio>
+  <municipio>
+    <codigo>262013</codigo>
+    <nome>Distrito De Novo Eldorado</nome>
+  </municipio>
+  <municipio>
+    <codigo>263001</codigo>
+    <nome>Terra Nova Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>263079</codigo>
+    <nome>Dist. Miraguai Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>263087</codigo>
+    <nome>Dist. Nonoai Do Norte</nome>
+  </municipio>
+  <municipio>
+    <codigo>263095</codigo>
+    <nome>Dist. Nova Vila Rica</nome>
+  </municipio>
+  <municipio>
+    <codigo>265004</codigo>
+    <nome>Tesouro</nome>
+  </municipio>
+  <municipio>
+    <codigo>265012</codigo>
+    <nome>Distrito De Batovi</nome>
+  </municipio>
+  <municipio>
+    <codigo>265020</codigo>
+    <nome>Distrito De Cassununga</nome>
+  </municipio>
+  <municipio>
+    <codigo>270008</codigo>
+    <nome>Torixoreu</nome>
+  </municipio>
+  <municipio>
+    <codigo>272000</codigo>
+    <nome>Uniao Do Sul</nome>
+  </municipio>
+  <municipio>
+    <codigo>274003</codigo>
+    <nome>Vale De Sao Domingos</nome>
+  </municipio>
+  <municipio>
+    <codigo>275000</codigo>
+    <nome>Varzea Grande</nome>
+  </municipio>
+  <municipio>
+    <codigo>275018</codigo>
+    <nome>Distrito De Bonsucesso</nome>
+  </municipio>
+  <municipio>
+    <codigo>275026</codigo>
+    <nome>Distrito De Capao Grande</nome>
+  </municipio>
+  <municipio>
+    <codigo>275034</codigo>
+    <nome>Distrito De Cristo Rei</nome>
+  </municipio>
+  <municipio>
+    <codigo>275050</codigo>
+    <nome>Distrito De Passagem Da Conceicao</nome>
+  </municipio>
+  <municipio>
+    <codigo>277002</codigo>
+    <nome>Vera</nome>
+  </municipio>
+  <municipio>
+    <codigo>277070</codigo>
+    <nome>Dist. Novo Mato Grosso</nome>
+  </municipio>
+  <municipio>
+    <codigo>277088</codigo>
+    <nome>Dist. Santo Antonio Do Rio Bonito</nome>
+  </municipio>
+  <municipio>
+    <codigo>280003</codigo>
+    <nome>Vila Bela Da Ss Trindade</nome>
+  </municipio>
+  <municipio>
+    <codigo>280011</codigo>
+    <nome>Distrito De Aguapei</nome>
+  </municipio>
+  <municipio>
+    <codigo>285005</codigo>
+    <nome>Vila Rica</nome>
+  </municipio>
+  <municipio>
+    <codigo>900001</codigo>
+    <nome>Serv De Acordo Com Frigorificos</nome>
+  </municipio>
+  <municipio>
+    <codigo>990000</codigo>
+    <nome>Estado Nao Identificado</nome>
+  </municipio>
+  <municipio>
+    <codigo>991007</codigo>
+    <nome>Sefaz-Contribuinte Substituto</nome>
+  </municipio>
+  <municipio>
+    <codigo>992003</codigo>
+    <nome>Equipe Especial De Controle</nome>
+  </municipio>
+  <municipio>
+    <codigo>992011</codigo>
+    <nome>Sefaz - Revendedores Autonomos</nome>
+  </municipio>
+  <municipio>
+    <codigo>999008</codigo>
+    <nome>Sefaz Orgao Central</nome>
+  </municipio>
+</saopaulo>

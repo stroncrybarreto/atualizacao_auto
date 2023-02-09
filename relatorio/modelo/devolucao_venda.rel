@@ -1,0 +1,81 @@
+<relatorio dados="devolucao_venda" ordem="empresa_codigo,empresa,documento,data_hora_devolucao,pessoa_nome">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18  
+3  titulo					tam=122	expr="DEVOLUÇÃO DE VENDA" alinha=centro
+4  subtitulo				tam=122 alinha=centro
+5  documento				tam=17
+6  data_hora_emissao        tam=16
+7  data_hora_devolucao      tam=16
+8  sequencia_item           tam=4  func=contar alinha=centro grupo=2
+9  produto_nome             tam=29 
+10 quantidade               tam=10 fmt=float3 
+11 preco_unit               tam=11 fmt=float3 
+12 valor                    tam=13 fmt=float3
+13 valor_desc               tam=8 fmt=float2 
+14 valor_acres              tam=9 fmt=float2
+15 valor_liq                tam=13 fmt=float3 
+16 sub_valor                tam=13 fmt=float3 func=soma campo=valor grupo=2
+17 sub_valor_desc           tam=8 fmt=float2 func=soma campo=valor_desc grupo=2
+18 sub_valor_acres          tam=9 fmt=float2 func=soma campo=valor_acres grupo=2
+19 sub_valor_liq            tam=13 fmt=float3 func=soma campo=valor_liq grupo=2
+20 empresa_nome             tam=70
+21 tot_itens                tam=10 func=contar alinha=esquerda grupo=1
+22 tot_valor                tam=13 fmt=float3 func=soma campo=valor grupo=1
+23 tot_valor_desc           tam=8 fmt=float2 func=soma campo=valor_desc grupo=1
+24 tot_valor_acres          tam=9 fmt=float2 func=soma campo=valor_acres grupo=1
+25 tot_valor_liq            tam=13 fmt=float3 func=soma campo=valor_liq grupo=1
+26 pessoa_nome              tam=68 
+27 pessoa_codigo			tam=8
+29 empresa_codigo			tam=8
+30 empresa_cod_nome			tam=90 expr=str(empresa_codigo)+' - '+empresa_nome
+31 funcionario_nome         tam=27
+</apelidos>
+<cab_pagina>
+#1                                                                                                        #2
+--------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo,empresa">
+
++------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #30                                                                                                           |
++---------------------------------------------------------------------------------+--------------------------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,empresa,documento">
+| Cliente: #26                                                                    | Usuário: #31                         |
++---------------------------------------------------------------------------------+--------------------------------------+
+| Documento: #5                 Data/Hora emissão: #6                              Data/Hora devolução: #7               |
++------+-------------------------------+------------+-------------+---------------+----------+-----------+---------------+
+| Item |           Produto             | Quantidade | Preço unit. |     Valor     | Desconto | Acréscimo | Valor líquido |
++------+-------------------------------+------------+-------------+---------------+----------+-----------+---------------+
+</cab_grupo>
+<detalhe>
+| #8   | #9                            | #10        | #11         | #12           | #13      | #14       | #15           |
+</detalhe> 
+<rod_grupo nome="2">
++------+-------------------------------+------------+-------------+---------------+----------+-----------+---------------+
+| Total de itens no cupom: #8                                     | #16           | #17      | #18       | #19           |
++-----------------------------------------------------------------+---------------+----------+-----------+---------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Total de itens empresa: #21                                     | #22           | #23      | #24       | #25           |
++-----------------------------------------------------------------+---------------+----------+-----------+---------------+
+
+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+<rod_pagina>
++------+-------------------------------+------------+-------------+---------------+----------+-----------+---------------+
+</rod_pagina>
+
+<hash>050ba4333c26a36d8938f0f296f1a577</hash>
+</relatorio>

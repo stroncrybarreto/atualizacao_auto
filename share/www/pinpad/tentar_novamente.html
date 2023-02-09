@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>AutoSystem</title>
+	</head>
+	<body>
+		Transação não foi aprovada! Deseja tentar novamente?
+		<form action="/finaliza_sitef/" method="SITEF">
+			<input type="hidden" tal:attributes="value valor/codigo">
+			<input type="hidden" tal:content="valor/descricao">
+			<input type="submit" name="bt_confirmar" value="Sim">
+			<input type="hidden" name="TIPO_TRN" value="1">
+			<input type="hidden" name="IMPRIMIRCOMP" value="1">
+			<input type="hidden" name="VALOR" tal:attributes="value valor/valor">
+			<input type="hidden" name="SAC_01" tal:attributes="value valor/codigo">
+		</form>
+		<form method="POST" action="/confirma_cancela/">
+			<input type="hidden" name="DESAPROVADO" value="1">
+			<input type="hidden" name="CODIGO" tal:attributes="value valor/codigo">
+			<input type="SUBMIT" value="Não">
+		</form>
+	</body>
+</html>

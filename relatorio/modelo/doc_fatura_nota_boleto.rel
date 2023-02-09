@@ -1,0 +1,103 @@
+<relatorio dados="doc_fatura_nota_main" docname="Fatura Nota e Boleto">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+</apelidos>
+<cab_pagina>
+#1                                                                                                     #2
+-----------------------------------------------------------------------------------------------------------------------
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="doc_fatura_nota">
+
+<apelidos>
+1  cliente_cod_nome				tam=52
+2  cliente_cpf					tam=40
+3  nr_fatura					tam=8
+4  data_emissao					tam=10	fmt=data
+5  vencimento					tam=10	fmt=data
+6  cliente_obs					tam=40
+7  valor_fatura					tam=12	fmt=%.02f
+
+10 empresa						tam=47
+11 data_emissao_nota			tam=10	fmt=data
+12 serie						tam=7	alinha=centro
+13 numero_nota					tam=13	alinha=centro
+14 situacao						tam=10
+15 valor_nota					tam=13	fmt=%.02f
+16 total_nota					tam=13	fmt=%.02f	func=soma	campo=valor_nota	grupo=1
+
+17  titulo						tam=119 alinha=centro	expr='NOTA FISCAL FATURA'
+
+</apelidos>
+<cab_grupo nome="1" quebra="nr_fatura">
+
+#17
+
++----------------------------------------------------------------------------------------------------------------------+
+| Cliente...: #1                                                   CPF/CNPJ: #2                                        |
+| Fatura nr.: #3                  Emissão: #4                      Obs.....: #6                                        |
+| Vencimento: #5                  Fatura valor: #7                                                                     |
++-------------------------------------------------+-------------+---------+---------------+------------+---------------+
+|                    Posto                        |   Emissão   |  Série  |  Número nota  |  Situação  |     Valor     |
++-------------------------------------------------+-------------+---------+---------------+------------+---------------+
+</cab_grupo>
+<detalhe>
+| #10                                             | #11         | #12     | #13           | #14        | #15           |
+</detalhe>
+<rod_grupo nome="1">
++-------------------------------------------------+-------------+---------+---------------+------------+---------------+
+| Total fatura                                                                                         | #16           |
++------------------------------------------------------------------------------------------------------+---------------+
+
+</rod_grupo>
+
+<rod_pagina>
++----------------------------------------------------------------------------------------------------------------------
+</rod_pagina>
+</subrelat>
+
+<subrelat dados="doc_boleto_nota" tamfonte="8">
+
+<apelidos>
+1  portador_nome				tam=52
+2  vencimento					tam=12	fmt=data	alinha=centro
+3  valor_boleto					tam=12	fmt=%.02f
+4  data_desconto				tam=10	fmt=data
+5  valor_desconto				tam=10	fmt=%.02f
+6  mensagem						tam=47
+8  data_emissao					tam=12	fmt=data	alinha=centro
+9  documento					tam=12	alinha=centro
+10 sacado_nome					tam=26
+11 total_valor					tam=12	fmt=%.02f	func=soma	campo=valor_boleto
+12 titulo						tam=119 alinha=centro	expr='BOLETO FATURA'
+13 valor_liq					tam=14	fmt=%.02f	expr=valor_desconto+valor_boleto
+14 total_liq					tam=14	func=soma	campo=valor_liq	fmt=%.02f
+</apelidos>
+<cab_relat>
+#12
+
++----------------------------+--------------+--------------+--------------+--------------+------------+----------------+
+|           Sacado           |   Boleto     |    Emissão   |  Vencimento  |  Vl. venct.  |  Desconto  | Vl. após venct.|
++----------------------------+--------------+--------------+--------------+--------------+------------+----------------+
+</cab_relat>
+<detalhe>
+| #10                        | #9           | #8           | #2           | #3           | #4         | #13            |
+</detalhe>
+<rod_relat>
++----------------------------+--------------+--------------+--------------+--------------+------------+----------------+
+| Total fatura                                                            | #11          |            | #14            |
++-------------------------------------------------------------------------+--------------+------------+----------------+
+
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------------------------------------------------------------------------------
+</rod_pagina>
+</subrelat>
+
+<hash>8946566588443745f68821ce02e7ff57</hash>
+</relatorio>

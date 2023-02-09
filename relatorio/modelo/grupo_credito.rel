@@ -1,0 +1,30 @@
+<relatorio dados="grupo_credito">
+<apelidos>
+1  rel_posto_nome   tam=60
+2  rel_data_hora    tam=18
+3  codigo			tam=6
+4  nome				tam=34
+5  credito_padrao	tam=14	alinha=direita	fmt=%.02f
+6  credito_max		tam=14	alinha=direita	fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                               #2                
+---------------------------------------------------------------------------------
+ 
+                        RELATORIO DE GRUPOS DE CRÉDITO
+
++--------+------------------------------------+----------------+----------------+
+| Código | Nome                               | Crédito Padrão | Crédito Máximo |
++--------+------------------------------------+----------------+----------------+
+</cab_pagina>
+<detalhe>
+| #3     | #4                                 | #5             | #6             |
+</detalhe>
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
++--------+------------------------------------+----------------+----------------+
+</rod_relat>
+
+<hash>742713a20fcd17539b2315f252b4d1fc</hash>
+</relatorio>

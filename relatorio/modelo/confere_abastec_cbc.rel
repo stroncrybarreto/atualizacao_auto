@@ -1,0 +1,71 @@
+<relatorio dados="confere_abastec_cbc" ordem="data, bico">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=16
+3  bico             tam=4
+4  codigo           tam=6                   alinha=esquerda
+5  quantidade       tam=10   fmt=float3      alinha=direita
+6  preco_unit       tam=10   fmt=float3      alinha=direita
+7  valor            tam=12   fmt=float2      alinha=direita
+8  hora             tam=15                  alinha=centro
+9  encerrante       tam=12   fmt=float2      alinha=direita
+10 enc_calc         tam=12   fmt=float2      alinha=direita
+11 diferenca        tam=10   fmt=float2      alinha=direita
+12 bico_hexa        tam=4                   alinha=esquerda
+13 produto_nome     tam=25                  alinha=esquerda
+14 empresa_nome     tam=30                  alinha=esquerda
+15 subt_qtd         tam=10   fmt=float2      alinha=direita     func=soma  campo=quantidade   grupo=1
+16 subt_val         tam=12   fmt=float2      alinha=direita     func=soma  campo=valor        grupo=1
+17 subt_enc_bomba   tam=12   fmt=float2      alinha=direita     
+18 subt_dif         tam=10   fmt=float2      alinha=direita     func=soma  campo=diferenca    grupo=1
+19 titulo_bico      tam=30   
+20 total_qtd        tam=10   fmt=float2      alinha=direita     func=soma  campo=quantidade 
+21 total_val        tam=12   fmt=float2      alinha=direita     func=soma  campo=valor      
+22 total_enc        tam=12   fmt=float2      alinha=direita     func=soma  campo=subt_enc_bomba
+23 total_dif        tam=10   fmt=float2      alinha=direita     func=soma  campo=diferenca
+24 data             tam=10   fmt=data       alinha=esquerda
+</apelidos>
+
+<cab_pagina>
+#1                                                                                         #2              
+-----------------------------------------------------------------------------------------------------------
+
+                                {TIT}CONFERÊNCIA DE ABASTECIMENTOS - CONCENTRADOR
+                                            {SUBTIT}Empresa: #14
+                                              {SUBTIT}#19
+
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="data, bico">
++---------------------------------------------------------------------------------------------------------+
+| DATA: #24          BICO: #3    CÓDIGO HEXA: #12    PRODUTO: #13                                         |
++--------+----------------+------------+------------+-------------+-------------+-------------+-----------+
+| Código |   Data/Hora    | Quantidade | Preco Unit |    Valor    |  Enc. Calc  |  Enc. Bomba | Diferença |
++--------+----------------+------------+------------+-------------+-------------+-------------+-----------+
+</cab_grupo>
+
+<detalhe>
+| #4     |#8              | #5         | #6         |#7           |#10          |#9           |#11        |
+</detalhe>
+
+<rod_grupo nome="1">
++--------+----------------+------------+------------+-------------+-------------+-------------+-----------+
+| SubTotal                | #15        |            |#16          |             |#17          |#18        | 
++-------------------------+------------+------------+-------------+-------------+-------------+-----------+
+
+</rod_grupo>
+
+<rod_pagina>
+</rod_pagina>
+
+<rod_relat>
+
++-------------------------+------------+------------+-------------+-------------+-------------+-----------+
+| Total                   | #20        |            |#21          |             |#22          |#23        |
++-------------------------+------------+------------+-------------+-------------+-------------+-----------+
+</rod_relat>
+
+
+<hash>999748f08a2a313c7be1f7152acdf794</hash>
+</relatorio>

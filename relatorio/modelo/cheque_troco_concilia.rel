@@ -1,0 +1,48 @@
+<relatorio dados="cheque_troco_concilia" ordem="motivo">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18 alinha=direita
+3  arquivo		        tam=40
+4  linha                tam=105
+5  data					tam=10  alinha=direita fmt=data
+6  nr_cheque	        tam=10  alinha=esquerda
+7  nome_conta_corrente  tam=45  alinha=centro
+9  valor				tam=13  alinha=direita  fmt=%.02f
+10 tipo					tam=20  alinha=esquerda
+11 motivo	            tam=80	alinha=esquerda
+12 total_valor		    tam=12  func=soma campo=valor grupo=1 fmt=%.02f
+13 total_valor_geral	tam=12	func=soma campo=valor fmt=%.02f
+14 nr_registros			tam=5	alinha=direita func=contar	grupo=1
+15 nr_registros_total	tam=5	func=contar	
+</apelidos>
+<cab_pagina>
+#1                                                                                                    #2
+------------------------------------------------------------------------------------------------------------------------
+ 
+                            RESULTADO DA CONCILIACAO DE CHEQUES  - Arquivo: #3
+                            Conta Corrente: #7
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="tipo">
+                                                                         
+ #10
++----------------+------------------+----------------------------------------------------------------------------------+
+|     Cheque     |    Valor Pago    | Motivo                                                                           |
++----------------+------------------+----------------------------------------------------------------------------------+
+</cab_grupo>
+<detalhe>
+|  #6            |  #9              |  #11                                                                             |
+</detalhe>
+<rod_grupo nome = "1">
++----------------+------------------+----------------------------------------------------------------------------------+
+|  Total de #10                 : #14                                                                                  |
++----------------------------------------------------------------------------------------------------------------------+
+</rod_grupo>
+<rod_pagina>
+</rod_pagina>
+<rod_relat>
+
+</rod_relat>
+
+<hash>2468b9d7a23acbe388946b787c020c92</hash>
+</relatorio>

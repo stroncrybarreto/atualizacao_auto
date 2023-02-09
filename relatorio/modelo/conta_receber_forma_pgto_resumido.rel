@@ -1,0 +1,40 @@
+<relatorio dados="conta_receber_forma_pgto_resumido" ordem="nome">
+<apelidos>
+1  rel_posto_nome	tam=40
+2  rel_data_hora	tam=18
+3  nome			        tam=35 
+4  atraso               tam=13   fmt=%.02f
+5  receber              tam=14   fmt=%.02f
+6  subtotal             tam=14   fmt=%.02f
+7  total_atraso         tam=13   fmt=%.02f
+8  total_receber        tam=14   fmt=%.02f
+9  total                tam=14   fmt=%.02f
+10 titulo               tam=89   expr="CONTAS A RECEBER POR FORMA DE PAGAMENTO" alinha=centro
+11 subtitulo            tam=89   alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                       #2              
+-----------------------------------------------------------------------------------------
+
+#10
+#11
+
+
++-------------------------------------+---------------+----------------+----------------+
+|                Conta                |   Em atraso   |   A receber    |    Subtotal    |
++-------------------------------------+---------------+----------------+----------------+
+</cab_pagina>
+
+<detalhe>
+| #3                                  | #4            | #5             | #6             |
+</detalhe>
+
+<rod_relat>
++-------------------------------------+---------------+----------------+----------------+
+| Total                               | #7            | #8             | #9             |
++-------------------------------------+---------------+----------------+----------------+
+</rod_relat>
+
+<hash>42f2435f5e84a4a231b45a2cab7372a1</hash>
+</relatorio>

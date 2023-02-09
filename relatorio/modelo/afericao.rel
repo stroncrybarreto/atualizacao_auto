@@ -1,0 +1,49 @@
+<relatorio dados="afericao">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora    	tam=18
+4  titulo2				tam=132 alinha=centro
+5  empresa_nome			tam=60
+6  data					tam=10 	fmt=data
+7  turno				tam=3 	alinha=centro
+8  hora					tam=5 	
+99 hora_abastec			tam=5 	
+9  bico					tam=4 	alinha=centro
+10 produto_nome			tam=23
+11 deposito_cod_nome	tam=30
+12 quantidade			tam=12	fmt=float3
+13 total_afericao		tam=20
+14 total_quantidade		tam=12	fmt=float3
+15 usuario				tam=12
+16 empresa_cod_nome		tam=50	expr=str(empresa_codigo)+" - "+str(empresa_nome)
+17 observacao			tam=25
+</apelidos>
+<cab_pagina>
+#1                                                                                                                  #2               
+------------------------------------------------------------------------------------------------------------------------------------
+ 
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa">
++----------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #16                                                                                                                     |
++------------+-----+-------+-------+------+-------------------------+--------------------------------+--------------+--------------+
+|    Data    |Turno| Hora  | Baixa | Bico |       Combustível       |             Tanque             |    Litros    |   Usuário    |
++------------+-----+-------+-------+------+-------------------------+--------------------------------+--------------+--------------+
+</cab_grupo>
+<detalhe>
+| #6         | #7  | #99   | #8    | #9   | #10                     | #11                            | #12          | #15          |
+</detalhe>
+<rod_grupo nome="1">
++------------+-----+-------+-------+------+-------------------------+--------------------------------+--------------+--------------+
+| #13                                                                                                | #14          |              |
++----------------------------------------------------------------------------------------------------+--------------+--------------+
+
+</rod_grupo>
+<rod_pagina>
++------------+-----+-------+-------+------+-------------------------+--------------------------------+--------------+--------------+
+</rod_pagina>
+
+<hash>ceae85cd921ec0bbbb0e27f19a07f2c3</hash>
+</relatorio>

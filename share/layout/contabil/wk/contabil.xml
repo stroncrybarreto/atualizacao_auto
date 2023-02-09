@@ -1,0 +1,22 @@
+<layout>
+  <nome>radar_contabil</nome>
+  <sessao>
+    <nome>contabil</nome>
+    <registro><inicio>1</inicio><fim>3</fim><chave>filial</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>4</inicio><fim>4</fim><chave></chave><tipo></tipo><padrao>,</padrao><descricao></descricao></registro>
+    <registro><inicio>5</inicio><fim>10</fim><chave>documento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>11</inicio><fim>11</fim><chave></chave><tipo></tipo><padrao>,</padrao><descricao></descricao></registro>
+    <registro><inicio>12</inicio><fim>19</fim><chave>data</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>20</inicio><fim>20</fim><chave></chave><tipo></tipo><padrao>,</padrao><descricao></descricao></registro>
+    <registro><inicio>21</inicio><fim>27</fim><chave>debito</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>28</inicio><fim>28</fim><chave></chave><tipo></tipo><padrao>,</padrao><descricao></descricao></registro>
+    <registro><inicio>29</inicio><fim>35</fim><chave>credito</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>36</inicio><fim>36</fim><chave></chave><tipo></tipo><padrao>,</padrao><descricao></descricao></registro>
+    <registro><inicio>37</inicio><fim>52</fim><chave>valor</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>53</inicio><fim>53</fim><chave></chave><tipo></tipo><padrao>,</padrao><descricao></descricao></registro>
+    <registro><inicio>54</inicio><fim>57</fim><chave>historico</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>58</inicio><fim>59</fim><chave></chave><tipo></tipo><padrao>,"</padrao><descricao></descricao></registro>
+    <registro><inicio>60</inicio><fim>119</fim><chave>complemento</chave><tipo>text</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>120</inicio><fim>120</fim><chave></chave><tipo></tipo><padrao>"</padrao><descricao></descricao></registro>
+  </sessao>
+</layout>

@@ -1,0 +1,61 @@
+<relatorio dados="movto_conta_sintetico" ordem="movto_data,movto_turno,movto_hora">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=16
+3  titulo				tam=124	alinha=centro
+4  data_fim             tam=10  fmt=data
+5  conta_nome           tam=40
+6  conta_saldo          tam=17  fmt=%.02f
+7  movto_data           tam=10  fmt=data		alinha=centro
+8  motivo_nome          tam=30
+9  movto_entrada        tam=13  fmt=%.02f
+10 movto_saida          tam=13  fmt=%.02f
+11 xmovto_saldo         tam=17  fmt=%.02f		expr=movto_saldo_ini+movto_total_entrada-movto_total_saida
+12 movto_contra_partida tam=20
+13 movto_total_entrada  tam=13  fmt=%.02f		func=soma   campo=movto_entrada		grupo=1
+14 movto_total_saida    tam=13  fmt=%.02f		func=soma   campo=movto_saida		grupo=1
+15 total_entrada		tam=13  fmt=%.02f		func=soma   campo=movto_entrada
+16 total_saida			tam=13  fmt=%.02f		func=soma	campo=movto_saida
+17 data_ini				tam=10  fmt=data
+18 movto_saldo_ini		tam=17  fmt=%.02f
+</apelidos>
+<cab_pagina>
+#1                                                                                                         #2        
+---------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="conta_codigo">
++-------------------------------------------------------------------------------------------------------------------------+
+|  Conta: #5                                                                                                              |
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+|    Data    |            Histórico            |    Entrada    |     Saída     |       Saldo       |    Contra partida    |
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+</cab_grupo>
+<cab_grupo nome="2" quebra="conta_codigo" repeticao="0">
+| Saldo inicial:                                                               | #18               |                      |
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+</cab_grupo>
+<detalhe>
+| #7         | #8                              | #9            | #10           | #11               | #12                  |
+</detalhe>
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+| Total                                        | #13           | #14           | #11               |                      |
++----------------------------------------------+---------------+---------------+-------------------+----------------------+
+
+</rod_grupo>
+<rod_pagina>
++------------+---------------------------------+---------------+---------------+-------------------+----------------------+
+</rod_pagina>
+<rod_relat>
++----------------------------------------------+---------------+---------------+------------------------------------------+
+| Total geral                                  | #15           | #16           |                                          |
++----------------------------------------------+---------------+---------------+------------------------------------------+
+</rod_relat>
+
+<hash>dd3b5fdc0d2b028c5b5b394f573908b4</hash>
+</relatorio>

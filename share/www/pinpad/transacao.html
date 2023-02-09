@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>AutoSystem</title>
+	</head>
+	<body>
+		Transações:
+		<form action="/transacao/"  method="POST">
+			<select name="CODIGO">
+				<option tal:repeat="p pendentes" tal:attributes="value p/codigo" tal:content="p/descricao"></option>
+			</select>
+			<input type="submit" value="Confirmar">
+			<a href="/verifica_transacao/">Atualizar</a>
+		</form>
+	</body>
+</html>

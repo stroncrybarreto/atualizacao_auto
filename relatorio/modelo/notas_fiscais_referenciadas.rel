@@ -1,0 +1,56 @@
+<relatorio dados="notas_fiscais_referenciadas" ordem="numero_nota_ref,serie_ref">
+<apelidos>
+1 rel_posto_nome		tam=40		alinha=esquerda
+2 rel_data_hora 		tam=18		alinha=esquerda
+3 emitente				tam=62		alinha=esquerda
+4 destinatario		    tam=62		alinha=esquerda
+5 valor_nota_ref	    tam=16		alinha=esquerda		fmt=float2
+6 serie_ref			    tam=16		alinha=esquerda
+7 numero_nota_ref	    tam=16		alinha=esquerda		
+8 data_emissao_ref	    tam=16		alinha=esquerda		fmt=data	
+9 serie_orig			tam=15		alinha=centro
+10 numero_nota_orig	    tam=13		alinha=centro
+11 data_emissao_orig	tam=16		alinha=centro		fmt=data
+12 valor_nota_orig	    tam=16		alinha=direita		fmt=float2
+13 total				tam=16		alinha=direita		fmt=float2	func=soma	campo=valor_nota_orig	grupo=1
+14 situacao_orig        tam=16      alinha=centro
+15 tipo_doc_orig        tam=19      alinha=centro
+16 nr_fatura            tam=16      alinha=esquerda
+17 situacao_ref         tam=16		alinha=esquerda
+18 natureza_operacao	tam=32		alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                #2
+------------------------------------------------------------------------------------------------------------------
+
+                                      RELAÇÃO DE NOTAS FISCAIS REFERENCIADAS
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="numero_nota_ref,serie_ref">
++----------------------------------------------------------------------------------------------------------------+
+| Notas fiscal referenciada                                                                                      |
++----------------------------------------------------------------------------------------------------------------+
+| Emitente......: #3                                                             Série........: #6               |
+| Destinatario..: #4                                                             Número.......: #7               |
+|                                                                                Situação.....: #17              |
+|                                                                                Emissão......: #8               |
+|                                                                                Nr. Fatura...: #16              |
+|                                                                                Valor........: #5               |
++----------------------------------------------------------------------------------------------------------------+
+| Relação dos documentos fiscais de origem:                                                                      |
++-----------------+---------------+------------------+------------------+---------------------+------------------+
+|      Série      |     Número    |   Data Emissão   |     Situação     |  Tipo do Documento  |       Valor      |
++-----------------+---------------+------------------+------------------+---------------------+------------------+
+</cab_grupo>
+<detalhe>
+| #9              | #10           | #11              | #14              | #15                 | #12              |
+</detalhe>
+<rod_grupo nome="1">
++-----------------+---------------+------------------+------------------+---------------------+------------------+
+|                                                                                       Total | #13              |
++---------------------------------------------------------------------------------------------+------------------+
+</rod_grupo>
+
+<hash>6ff99df449828b3537e44abe00394d07</hash>
+</relatorio>

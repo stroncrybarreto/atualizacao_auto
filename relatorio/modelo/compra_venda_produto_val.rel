@@ -1,0 +1,60 @@
+<relatorio dados="compra_venda_produto" ordem="">
+<apelidos>
+1  rel_posto_nome				tam=100
+2  rel_data_hora				tam=18
+4  custo						tam=13	fmt=float2
+5  empresa_nome					tam=40
+6  titulo						tam=119 alinha=centro
+7  grupo_codigo					tam=6   alinha=direita
+8  grupo_nome					tam=39	alinha=esquerda
+12 empresa_cod_nome             tam=40  expr=str(empresa_codigo) + ' - ' + empresa_nome
+
+9  compra_valor_total			tam=22  fmt=float2
+11 venda_valor_total			tam=22  fmt=float2
+13 dif_valor					tam=22  fmt=float2 	expr=compra_valor_total-venda_valor_total
+
+15 total_compra_valor_empresa	tam=22	fmt=float2	
+17 total_venda_valor_empresa	tam=22	fmt=float2	
+19 total_dif_valor_empresa		tam=22	fmt=float2	expr=total_compra_valor_empresa-total_venda_valor_empresa
+
+21 total_compra_valor_geral		tam=22	fmt=float2	
+23 total_venda_valor_geral		tam=22	fmt=float2	
+25 total_dif_valor_geral		tam=22	fmt=float2	expr=total_compra_valor_geral-total_venda_valor_geral
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                    #2
+----------------------------------------------------------------------------------------------------------------------
+
+#6
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++--------------------------------------------------------------------------------------------------------------------+
+| Empresa: #12                                                                                                       |
++-----------------------------------------+------------------------+------------------------+------------------------+
+|             Grupo de produto            |   Compras acumuladas   |   Vendas aculumadas    |       Diferenças       |
++-----------------------------------------+------------------------+------------------------+------------------------+
+|                Descrição                |         Valor          |         Valor          |         Valor          |
++-----------------------------------------+------------------------+------------------------+------------------------+
+</cab_grupo>
+<detalhe>
+| #8                                      | #9                     | #11                    | #13                    |
+</detalhe>
+<rod_grupo nome="1">
++-----------------------------------------+------------------------+------------------------+------------------------+
+| Total da empresa                        | #15                    | #17                    | #19                    |
++-----------------------------------------+------------------------+------------------------+------------------------+
+
+</rod_grupo>
+<rod_relat>
+
++-----------------------------------------+------------------------+------------------------+------------------------+
+| Total geral                             | #21                    | #23                    | #25                    |
++-----------------------------------------+------------------------+------------------------+------------------------+
+</rod_relat>
+<rod_pagina>
++--------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+<hash>3710d366e52f529e9960b37bce606027</hash>
+</relatorio>

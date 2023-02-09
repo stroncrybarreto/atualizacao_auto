@@ -1,0 +1,34 @@
+<relatorio dados="doc_cheque" docname="Impressão de Cheques Padrão" mode="raw">
+<apelidos>
+1 valor_formatado			tam=15	
+2 valor_ext1				tam=85	alinha=strip
+3 valor_ext2				tam=93	alinha=esquerda
+4 pessoa_nome				tam=50
+5 empresa_cidade			tam=15
+6 data_dia					tam=2
+7 data_mes_extenso			tam=10
+8 data_ano					tam=4
+</apelidos>
+
+<detalhe>
+{INI}{RST}{LPI08}{CPI17}
+                                                                                   R$ #1
+
+          #2********************************************************************************
+          
+  #3****************************************************************************************
+
+  #4  
+
+                                                 #5                    #6             #7               #8  .
+
+
+
+
+
+     
+
+</detalhe>
+
+<hash>568fd369044a708d880a138fa5b78a36</hash>
+</relatorio>

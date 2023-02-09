@@ -1,0 +1,72 @@
+<relatorio dados="regra_preco" ordem="">
+
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  regra_nome		tam=80
+5  operacao_nome	tam=80
+6  cliente			tam=53
+7  grupo			tam=53
+8  conceito		tam=3
+9  grupo_credito 	tam=30
+10 empresa			tam=53
+11 forma_pgto		tam=53
+12 perc_venda		tam=5
+13 periodo			tam=23
+14 peso				tam=3
+16 tabela_nome		tam=80
+17 prd_tipo_produto	tam=3 alinha=centro 
+18 prd_nome			tam=30
+19 prd_valor		tam=9 fmt=float3
+20 prd_tipo			tam=3 alinha=centro
+21 prd_sobre		tam=3 alinha=centro
+22 grupo_empresa	tam=50
+23 consumidor		tam=50
+99 titulo           tam=107  alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                         #2
+-----------------------------------------------------------------------------------------------------------
+
+#99
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="codigo,regra_grid">
++---------------------------------------------------------------------------------------------------------+
+| Regra: #3                                                                                               |
++---------------------------------------------------------------------------------------------------------+
+| Operação.....: #5                                                                                       |
+| Empresa......: #10                                                                                      |
+| Grupo empresa: #22                                                                                      |
+| Cliente......: #6                                                                                       |
+| Grupo cliente: #7                                                                                       |
+| Consumidor...: #23                                                                                      |
+| Conceito.....: #8     Grupo crédito: #9                                                                 |
+| Forma pgto...: #11                                                                                      |
+| % venda......: #12    Período: #13                      Peso: #14                                       | 
+|                                                                                                         |
++---------------------------------------------------------------------------------------------------------+
+| Tabela: #16                                                                                             |
++---+--------------------------------------------------------------------------+-----------+------+-------+
+|   |                                Descrição                                 |   Valor   | Tipo | Sobre |
++---+--------------------------------------------------------------------------+-----------+------+-------+
+</cab_grupo>
+
+<detalhe>
+|#17| #18                                                                      | #19       | #20  | #21   |
+</detalhe>
+
+<rod_grupo nome="1">
++---+--------------------------------------------------------------------------+-----------+------+-------+
+
+</rod_grupo>
+
+<rod_pagina>
++---+--------------------------------------------------------------------------+-----------+------+-------+
+</rod_pagina>
+
+
+<hash>ce4644bdb7e1b2c3e86fa4ae5f6b7bab</hash>
+</relatorio>

@@ -1,0 +1,97 @@
+<relatorio dados="doc_spc" docname="Modelo de cancelamento SPC" mode="raw">
+<apelidos>
+
+1  pessoa_nome                  tam=95
+2  pessoa_codigo                tam=6
+3  data_nascimento              tam=19  alinha=esquerda  fmt=data
+4  pessoa_cpf                   tam=25  alinha=esquerda
+5  pessoa_rg                    tam=29  alinha=esquerda
+6  estado                       tam=13  alinha=esquerda
+7  sexo                         tam=8   alinha=esquerda
+8  natural_municipio_codigo     tam=6
+9  natural_municipio_nome       tam=72  alinha=esquerda
+10 pessoa_endereco              tam=74  alinha=esquerda
+11 bairro                       tam=28  alinha=esquerda
+12 cep                          tam=10  alinha=esquerda
+13 cidade                       tam=21  alinha=esquerda
+14 estado                       tam=3   alinha=esquerda
+15 nome_pai                     tam=84  alinha=esquerda
+16 nome_mae                     tam=84  alinha=esquerda
+17 fatura_documento				tam=32  alinha=esquerda
+18 fatura_data					tam=13	fmt=data
+19 fatura_vencto				tam=13	fmt=data
+20 fatura_valor                 tam=31  fmt=float2
+21 data_comunicacao             tam=10  fmt=data
+22 empresa_nome                 tam=33
+23 empresa_cidade               tam=20
+24 titulo                       tam=100  alinha=centro  expr='CANCELAMENTO'
+25 dia_comunicacao              tam=4    alinha=esquerda
+26 mes_comunicacao              tam=4    alinha=esquerda
+27 ano_comunicacao              tam=4    alinha=esquerda
+28 titulo_data                  tam=100   alinha=direita  expr=empresa_cidade + ', ' + dia_comunicacao + ' de ' + mes_comunicacao + ' de ' + ano_comunicacao + '.'
+29 rg_orgao_exp                 tam=8   alinha=esquerda
+30 rg_data_exp                  tam=16  alinha=esquerda  fmt=data
+</apelidos>
+
+<cab_pagina></cab_pagina>
+
+<cab_grupo nome="1" quebra="pessoa_nome">
+
+
+{NEGR}
+#24
+{DNEG}
+
+#28
+
+
+AO
+SERVIÇO CENTRAL DE PROTEÇÃO AO CRÉDITO
+
++--------------------------------------------------------------------------------------------------+
+|  NOME                                                                                            |
++--------------------------------------------------------------------------------------------------+
+|  #1                                                                                              |
++----------------------+---------------------------+-------------------------------+---------------+
+| Data Nasc.           |            CPF            |            RG                 |  ORGÃO EXP.   |
++----------------------+---------------------------+-------------------------------+---------------+
+|  #3                  | #4                        | #5                            | #29           |  
++----------------------+---------------------------+-------------+-----------------+---------------+
+|    Data do Vencto    |        Número do contrato/Cheque        |              Valor              |
++----------------------+-----------------------------------------+---------------------------------+
+| #19                  |  #17                                    | #20                             |
++----------------------+-----------------------------------------+---------------------------------+
+|                      |                                                                           |
+|   Código Associado   |                                                                           |
+|                      |                                                                           |
++----------------------+                                                                           |
+|                      |                                                                           |
+|                      |         _________________________________________________________         |
+|                      |                           Carimbo e Assinatura                            |
++----------------------+---------------------------------------------------------------------------+
+
+{NEGR}
+IMPORTANTE
+{DNEG}
+	1- O Cancelamento do cliente junto ao SCPC, deverá ser comunicado imediatamente 
+	   após a liquidação ou regularização da Dívida.
+	
+	2- O Cancelamento deverá ser feito individualmente, ou seja um para o 
+	   Comprador e outro para o avalista.
+	   
+	3- O SCPC não cobra qualquer Taxa dos seus usuários para efetuar
+	   Cancelamento
+	   
+	4- O cancelamento deverá ser preenchido obrigatóriamente em duas vias.
+
+</cab_grupo>
+
+<detalhe></detalhe>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina></rod_pagina>
+
+<hash>7d3f843c499ff7e3190752c8a01d53ca</hash>
+</relatorio>

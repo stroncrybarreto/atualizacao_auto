@@ -1,0 +1,34 @@
+<relatorio dados="doc_movto" docname="Modelo de Recibo de Pagamento de Funcionario" mode="raw">
+<apelidos>
+1  empresa_nome			tam=35	alinha=centro
+2  movto_documento		tam=10
+3  pessoa_nome			tam=40
+4  movto_valor			tam=8   fmt=%.02f
+5  movto_valor_ext1		tam=40	alinha=strip
+6  movto_data			tam=10	fmt=data
+</apelidos>
+<cab_pagina>
+</cab_pagina>
+
+<detalhe>
+{CPI05}{NEGR}
+#1
+{CPI10}{DNEG}              RECIBO DE PAGAMENTO A FUNCIONARIO
+			
+
+DOCUMENTO..: #2
+FUNCIONARIO: #3
+VALOR R$: #4         #5
+
+
+CANOAS:  #6                   _____________________________________
+                              #3
+_____________________________________________________________________________
+
+</detalhe>
+
+<rod_pagina>
+</rod_pagina>
+
+<hash>a3300c5ca76cf48aa02b351ca0a47e0d</hash>
+</relatorio>

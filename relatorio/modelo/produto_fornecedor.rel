@@ -1,0 +1,51 @@
+<relatorio dados="produto_fornecedor" ordem="fornecedor_nome,fornecedor_codigo,descricao">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  fornecedor_nome		tam=50
+4  descricao            tam=30
+5  data_ult_compra		tam=10	fmt=data alinha=centro
+6  numero_nota   		tam=8	alinha=centro
+7  preco_ult_compra		tam=11	fmt=float3 alinha=direita
+8  qtd_ult_compra       tam=10	fmt=float3 alinha=direita
+9  valor_ult_compra		tam=14	fmt=float2 alinha=direita
+10 titulos   			tam=130	alinha=centro
+11 fornecedor_codigo	tam=8
+12 fornecedor			tam=90	expr=str(fornecedor_codigo)+' - '+fornecedor_nome
+13 preco_unit           tam=10  fmt=float3 alinha=direita
+14 margem_lucro         tam=10  expr=((preco_unit-preco_ult_compra)/preco_ult_compra)*100  fmt=float2 alinha=direita
+15 codigo_barra			tam=20
+16 produto_codigo_fornec	tam=10
+17 produto_codigo		tam=10
+</apelidos>
+<cab_pagina>
+#1                                                                                                                 #2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#10
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="fornecedor_codigo,fornecedor_nome">
++---------------------------------------------------------------------------------------------------------------------------------+
+| Fornecedor: #12                                                                                                                 |
++--------------------------------+------------+----------+-------------+------------+----------------+-------------+--------------+
+|           Descrição            |    Data    | Nr. nota | Preço custo | Quantidade |     Valor      | Preço unit. | Margem lucro |
++--------------------------------+------------+----------+-------------+------------+----------------+-------------+--------------+
+</cab_grupo>
+
+<detalhe>
+| #4                             | #5         | #6       | #7          | #8         | #9             | #13         | #14        % |
+</detalhe>
+
+<rod_grupo nome="1">
++--------------------------------+------------+----------+-------------+------------+----------------+-------------+--------------+
+
+</rod_grupo>
+
+<rod_pagina>
++--------------------------------+------------+----------+-------------+------------+----------------+-------------+--------------+
+</rod_pagina>
+
+<hash>eaedce13e466b00069a1d80c2206188b</hash>
+</relatorio>

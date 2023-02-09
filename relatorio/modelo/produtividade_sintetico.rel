@@ -1,0 +1,85 @@
+<relatorio dados="produtividade_sintetico" ordem="">
+<apelidos>
+1  rel_posto_nome		tam=55
+2  rel_data_hora		tam=18
+3  titulo				tam=132  alinha=centro
+4  titulo2				tam=132  alinha=centro
+5  empresa_nome			tam=60
+6  pessoa_codigo		tam=13	alinha=centro
+7  pessoa_nome			tam=43
+8  valor				tam=14	fmt=float3	alinha=direita
+9  participacao			tam=10	fmt=float3
+10 tot_vendedor			tam=14	fmt=float3	alinha=direita
+11 part_vendedor		tam=10	fmt=float3  alinha=direita
+12 tot_sem_vendedor		tam=14  fmt=float3  alinha=direita
+13 part_sem_vnd			tam=10  fmt=float3  alinha=direita
+14 tot_empresa			tam=14  fmt=float3  alinha=direita
+15 geral_vendedor		tam=14  fmt=float3  alinha=direita
+16 geral_sem_vnd		tam=14  fmt=float3  alinha=direita
+17 geral_valor			tam=14  fmt=float3  alinha=direita
+18 cont_abastecimento   tam=10  alinha=direita
+19 quantidade			tam=12	fmt=float3
+20 tot_vnd_quant		tam=12	fmt=float3
+21 tot_sem_vnd_quant	tam=12	fmt=float3
+22 tot_empresa_quant    tam=12 	fmt=float3
+23 geral_vnd_quant		tam=12	fmt=float3
+24 geral_sem_vnd_quant	tam=12	fmt=float3
+25 geral_quant			tam=12	fmt=float3
+26 nome_relatorio   	tam=132 expr='PRODUTIVIDADE POR FUNCIONÁRIOS' alinha=centro
+27 ordem				tam=80	alinha=esquerda
+28 media_abastecimento	tam=7  fmt=float2 expr=float(quantidade_comb)/float(cont_abastecimento or 1)
+29 quantidade_comb      tam=10	fmt=float3
+30 ranking				tam=8  func=contar grupo=1
+31 ranking_det			tam=10 expr=str(ranking)+'°' grupo=1
+34 qt_venda				tam=8 alinha=direita
+35 produto_peso         tam=12  fmt=float3
+36 tot_emp_prod_peso    tam=12  fmt=float3  func=soma  campo=produto_peso  grupo=1
+37 tot_geral_prod_peso  tam=12  fmt=float3  func=soma  campo=produto_peso
+
+40 empresa_cod_nome     tam=60
+
+98 coluna_agrupar       tam=43  alinha=centro
+99 tit_geral_agrupar    tam=15
+</apelidos>
+<cab_pagina>
+#1                                                                                                                  #2
+------------------------------------------------------------------------------------------------------------------------------------
+
+#26
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,empresa_nome,empresa">
+
++----------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #40                                                                                                                     |
++---------------+---------------------------------------------+----------+--------------+----------------+------------+------------+
+|    Código     | #98                                         |  Vendas  |  Quantidade  |     Vendas     |  % Part.   | Nr. abast. |
++---------------+---------------------------------------------+----------+--------------+----------------+------------+------------+
+</cab_grupo>
+<detalhe>
+| #6            | #7                                          | #34      | #19          | #8             | #9         | #18        |
+</detalhe>
+<rod_grupo nome="1">
++---------------+---------------------------------------------+----------+--------------+----------------+------------+------------+
+| Total de vendas com identificação #99                                  | #20          | #10            | #11        |            |
+| Total de vendas sem identificação #99                                  | #21          | #12            | #13        |            |
+| Total de geral de vendas da empresa                                    | #22          | #14            |            |            |
++------------------------------------------------------------------------+--------------+----------------+------------+------------+
+
+</rod_grupo>
+<rod_relat>
+
+
++------------------------------------------------------------------------+--------------+----------------+------------+------------+
+| Total de geral com identificação #99                                   | #23          | #15            |            |            |
+| Total de geral sem identificação #99                                   | #24          | #16            |            |            |
+| Total de geral                                                         | #25          | #17            |            |            |
++------------------------------------------------------------------------+--------------+----------------+------------+------------+
+</rod_relat>
+<rod_pagina>
++---------------+---------------------------------------------+----------+--------------+----------------+------------+------------+
+</rod_pagina>
+
+<hash>ca9a5997d12b553f3b493ed9adae7014</hash>
+</relatorio>

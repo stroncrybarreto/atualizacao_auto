@@ -1,0 +1,231 @@
+<relatorio dados="balanco_gerencial" font_size="xx-small">
+<apelidos>
+1  rel_posto_nome        tam=60
+2  rel_data_hora         tam=18
+3  titulo                tam=130	alinha=centro
+98 titulo_p			     tam=130    expr='BALANÇO GERENCIAL' alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#98
+#3
+
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="balanco_gerencial_caixa" nome="sessao_01">
+<apelidos>
+1  venda_nome		tam=23
+2  venda_valor		tam=12	fmt=float2
+3  receb_nome		tam=25
+4  receb_valor		tam=12	fmt=float2
+5  movto_nome		tam=19
+6  movto_valor		tam=12	fmt=float2
+7  venda_total		tam=12	fmt=float2
+8  receb_total		tam=12	fmt=float2
+99 titulo			tam=130 expr='RESUMO DA MOVIMENTAÇÃO DOS PONTOS DE VENDA' alinha=centro
+</apelidos>
+
+<cab_relat>
+#99
++----------------------------------------++------------------------------------------++------------------------------------+
+|                 Vendas                 ||               Recebimentos               ||             Fechamento             |
++-------------------------+--------------++---------------------------+--------------++---------------------+--------------+
+</cab_relat>
+<detalhe>
+| #1                      | #2           || #3                        | #4           || #5                  | #6           |
+</detalhe>
+<rod_relat>
++-------------------------+--------------++---------------------------+--------------++---------------------+--------------+
+| Total                   | #7           || Total                     | #8           || * (-) Sobra // (+) Falta           |
++-------------------------+--------------++---------------------------+--------------++------------------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balanco_gerencial_comb" nome="sessao_02">
+<apelidos>
+1  produto_nome			tam=20
+2  estoque_inicial		tam=11	fmt=float2
+3  entrada				tam=14	fmt=float2
+4  venda				tam=15	fmt=float3
+5  afericao				tam=8 	fmt=float2
+6  estoque_final		tam=11	fmt=float2
+7  medicao				tam=11	fmt=float2
+8  diferenca			tam=11	fmt=float2
+16 outros				tam=10	fmt=float2
+9  total_est_inicial	tam=11	fmt=float2	func=soma	campo=estoque_inicial
+10 total_entrada		tam=14	fmt=float2	func=soma	campo=entrada
+11 total_venda			tam=15	fmt=float3	func=soma	campo=venda
+12 total_afericao		tam=8 	fmt=float2	func=soma	campo=afericao
+13 total_est_final		tam=11	fmt=float2	func=soma	campo=estoque_final
+14 total_medicao		tam=11	fmt=float2	func=soma	campo=medicao
+15 total_diferenca		tam=11	fmt=float2	func=soma	campo=diferenca
+17 total_consumo		tam=10	fmt=float2	func=soma	campo=outros
+99 titulo				tam=130 expr='MOVIMENTAÇÃO DE COMBUSTÍVEIS' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
++----------------------+------------+----------------+-----------------+----------+------------+-------------+-------------+-------------+
+|       Produto        |   Início   |    Entrada     |      Venda      | Aferição |   Outros   |    Final    |   Medição   |  Diferença  |
++----------------------+------------+----------------+-----------------+----------+------------+-------------+-------------+-------------+
+</cab_relat>
+<detalhe>
+| #1                   |#2          | #3             | #4              | #5       | #16        | #6          | #7          | #8          |
+</detalhe>
+<rod_relat>
++----------------------+------------+----------------+-----------------+----------+------------+-------------+-------------+-------------+
+| Total                |#9          | #10            | #11             | #12      | #17        | #13         | #14         | #15         |
++----------------------+------------+----------------+-----------------+----------+------------+-------------+-------------+-------------+
+*Outros - (Tranferência entrada/Tranferência saída/Devolução cliente/Devolução fornecedor/Consumo)
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balanco_gerencial_adm" nome="sessao_03">
+<apelidos>
+1  sinal_saldo_ini		tam=2   
+2  saldo_ini			tam=13	fmt=float2
+3  motivo_nome			tam=34  alinha=esquerda
+4  info					tam=63  alinha=esquerda
+5  sinal_valor			tam=2
+6  valor				tam=13	fmt=float2
+7  total_deb			tam=10	fmt=float2
+8  total_cre			tam=10	fmt=float2
+9  sinal_saldo_fim		tam=2   
+10 saldo_fim			tam=13	fmt=float2
+99 titulo			    tam=130 expr='MOVIMENTAÇÃO FINANCEIRA ADMINISTRATIVA DETALHADA' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
++------------------------------------+-----------------------------------------------------------------+-------------------+
+|             Histórico              |                           Informações                           |       Valor       |
++------------------------------------+-----------------------------------------------------------------+-------------------+
+|                                                                                        Saldo inicial:  #1  #2            |
++------------------------------------+-----------------------------------------------------------------+-------------------+
+</cab_relat>
+<detalhe>
+| #3                                 | #4                                                              | #5  #6            |
+</detalhe>
+<rod_relat>
++------------------------------------+-----------------------------------------------------------------+-------------------+
+| Total créditos: #7                              Total débitos: #8                        Saldo final:  #9  #10           | 
++--------------------------------------------------------------------------------------------------------------------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balancete_verifica" nome="sessao_06" tipo="receber">
+<apelidos>
+1  linha				tam=999
+2  cabecalho			tam=999
+3  detalhe				tam=999
+99 titulo			    tam=130 expr='BALANCETE VERIFICAÇÃO DE VALORES A RECEBER' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
+#1
+#2
+#1
+</cab_relat>
+<detalhe>
+#3
+</detalhe>
+<rod_relat>
+#1
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balancete_verifica" nome="sessao_07" tipo="pagar">
+<apelidos>
+1  linha				tam=999
+2  cabecalho			tam=999
+3  detalhe				tam=999
+99 titulo			    tam=130 expr='BALANCETE VERIFICAÇÃO DE VALORES A PAGAR' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
+#1
+#2
+#1
+</cab_relat>
+<detalhe>
+#3
+</detalhe>
+<rod_relat>
+#1
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balancete_verifica" nome="sessao_09" tipo="despesa">
+<apelidos>
+1  linha				tam=999
+2  cabecalho			tam=999
+3  detalhe				tam=999
+99 titulo			    tam=130 expr='BALANCETE VERIFICAÇÃO DE VALORES DE DESPESAS' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
+#1
+#2
+#1
+</cab_relat>
+<detalhe>
+#3
+</detalhe>
+<rod_relat>
+#1
+</rod_relat>
+</subrelat>
+
+<subrelat dados="balanco_gerencial_banco_local" nome="sessao_08">
+<apelidos>
+1  conta_codigo			tam=10
+2  conta_nome			tam=38
+3  saldo_ini			tam=15	fmt=float2
+4  debito				tam=14	fmt=float2
+5  credito				tam=15	fmt=float2
+6  saldo_fim			tam=15	fmt=float2
+7  total_saldo_ini		tam=15	fmt=float2
+8  total_debito			tam=14	fmt=float2
+9  total_credito		tam=15	fmt=float2
+10 total_saldo_fim		tam=15	fmt=float2
+99 titulo			    tam=130 alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#99
++---------------------------------------------------+-----------------+----------------+-----------------+-----------------+
+|                  Conta corrente                   |  Saldo inicial  |     Débito     |     Crédito     |   Saldo final   |
++---------------------------------------------------+-----------------+----------------+-----------------+-----------------+
+</cab_relat>
+<detalhe>
+| #1         #2                                     | #3              | #4             | #5              | #6              |
+</detalhe>
+<rod_relat>
++---------------------------------------------------+-----------------+----------------+-----------------+-----------------+
+| Total                                             | #7              | #8             | #9              | #10             | 
++---------------------------------------------------+-----------------+----------------+-----------------+-----------------+
+
+</rod_relat>
+</subrelat>
+
+<hash>d7a248c3c8d8f2fd3eb6910046abcc75</hash>
+</relatorio>

@@ -1,0 +1,133 @@
+<relatorio dados="compra_produto_documento" paper_orientation="landscape">
+<apelidos>
+1 rel_posto_nome tam=60
+2 rel_data_hora tam=18
+3 titulo1 								tam=220 alinha=centro expr='ENTRADA DE PRODUTOS POR DOCUMENTO'
+4 titulo2 								tam=220 alinha=centro
+53 titulo3 								tam=220 alinha=centro
+5 empresa_cod_nome 						tam=60
+6 nota_numero 							tam=8 	alinha=esquerda
+7 nota_serie 							tam=3 
+8 nota_emissao 							tam=10 	fmt=data
+9 nota_cfop 							tam=6
+10 nota_entrada 						tam=10 	fmt=data
+11 nota_turno 							tam=3 	alinha=esquerda
+12 nota_hora 							tam=8
+13 nota_fornecedor_nome 				tam=45
+14 nota_fornecedor_codigo 				tam=6
+15 nota_base_icms 						tam=23 	fmt=float2
+16 nota_valor_icms 						tam=22 	fmt=float2 alinha=direita
+17 nota_base_subst 						tam=18 	fmt=float2
+18 nota_valor_subst 					tam=17 	fmt=float2
+19 nota_valor_produto 					tam=19 	fmt=float2
+20 nota_valor_icms 						tam=10 	fmt=float2
+21 nota_valor 							tam=19 	fmt=float2
+22 nota_desconto 						tam=18 	fmt=float2
+23 nota_valor_ipi 						tam=22 	fmt=float2 alinha=direita
+24 nota_usuario 						tam=10
+25 nota_deposito_codigo 				tam=8 	alinha=centro
+26 produto_cfop 						tam=6 	alinha=centro
+27 produto_cst 							tam=3 	alinha=esquerda
+28 produto_icms 						tam=6 	fmt=float2 alinha=direita
+29 produto_qtde 						tam=10 	fmt=float  alinha=direita
+30 produto_unid_med 					tam=4 	alinha=centro
+31 produto_preco_unit 					tam=10 	fmt=float4
+32 produto_subtotal 					tam=12 	fmt=float2 alinha=direita
+33 produto_codigo 						tam=7	alinha=centro
+34 produto_nome 						tam=30
+35 nota_valor_outro 					tam=23 	fmt=float2
+36 nota_valor_acrescimo 				tam=17 	fmt=float2
+37 nota_usuario 						tam=20 	alinha=esquerda
+38 total_nota_base_icms 				tam=23 	fmt=float2 alinha=direita
+39 total_nota_valor_outro 				tam=23 	fmt=float2 alinha=direita
+40 total_nota_valor_icms 				tam=22 	fmt=float2 alinha=direita
+41 total_nota_valor_ipi 				tam=22 	fmt=float2 alinha=direita
+42 total_nota_base_subst 				tam=18 	fmt=float2 alinha=direita
+43 total_nota_desconto 					tam=18 	fmt=float2 alinha=direita
+44 total_nota_valor_subst 				tam=17 	fmt=float2 alinha=direita
+45 total_nota_valor_acrescimo 			tam=17 	fmt=float2 alinha=direita
+46 total_nota_valor_produto 			tam=19 	fmt=float2 alinha=direita
+47 total_nota_valor 					tam=19 	fmt=float2 alinha=direita
+48 produto_preco_custo 					tam=11 	fmt=float4 alinha=direita
+49 produto_qtde_unit 					tam=8 	fmt=float  alinha=direita
+50 produto_qtde_total 					tam=11 	fmt=float  alinha=direita
+51 vencto 								tam=150	alinha=esquerda
+52 conta 								tam=150 alinha=esquerda
+54 chave_acesso 						tam=44 	alinha=direita
+55 csosn 								tam=5 	alinha=direita
+56 cst_pis								tam=3	alinha=centro
+57 cst_cofins							tam=6	alinha=centro
+
+58	total_geral_nota_valor_icms			tam=22 	fmt=float2 	alinha=direita
+59	total_geral_nota_base_icms			tam=23 	fmt=float2 	alinha=direita
+60	total_geral_nota_valor_subst		tam=17 	fmt=float2 	alinha=direita
+61	total_geral_nota_base_subst			tam=18 	fmt=float2 	alinha=direita
+62	total_geral_nota_valor				tam=19 	fmt=float2	alinha=direita
+63	total_geral_nota_valor_ipi			tam=22 	fmt=float2	alinha=direita
+64	total_geral_nota_desconto			tam=18 	fmt=float2	alinha=direita
+65	total_geral_nota_valor_acrescimo	tam=17 	fmt=float2	alinha=direita
+66	total_geral_nota_valor_produto		tam=19 	fmt=float2	alinha=direita
+67	total_geral_nota_valor_outro		tam=23 	fmt=float2 	alinha=direita
+68  empresa_codigo                      tam=10	alinha=esquerda
+69  empresa_nome                        tam=50	alinha=esquerda
+70  empresa_nome_reduzido               tam=30	alinha=esquerda
+71  fornecedor_cpf                      tam=18  alinha=esquerda
+72	nota_produto_base_subst				tam=11  fmt=float2 alinha=direita
+73	nota_produto_valor_subst			tam=11  fmt=float2 alinha=direita
+74	nota_produto_custo_subst			tam=11  fmt=float4 alinha=direita
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                                                                     #2
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#53
+#4
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  Empresa: #5                                                                                                                                                                                                                        |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="2" quebra="nota_numero, nota_serie">
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Número da nota.: #6               | Série: #7       | Emissão: #8              | Data entrada: #10        | Hora: #12      | Turno: #11  | Usuário: #37                                                                             |
+| Fornecedor.....: #13                                                           | CPF/CNPJ: #71                                                                                                                                      |
+| Chave de acesso: #54                                                                                                                                                                                                                |
++---------+--------------------------------+----------+-----+-----+--------+-------------+--------------+--------------+--------+-------+----------+------------+----+------------+--------------+--------+-------------+-------------+
+| Código  |             Produto            | Depósito | CST | PIS | COFINS | Base subst. | Valor subst. | Custo subst. | CSOSN  | CFOP  | Qtde. un.| Quantidade | Un.|  Pr. unit. |   Subtotal   |  ICMS  | Qtde. total | Preço custo |
++---------+--------------------------------+----------+-----+-----+--------+-------------+--------------+--------------+--------+-------+----------+------------+----+------------+--------------+--------+-------------+-------------+
+</cab_grupo>
+<detalhe>
+| #33     | #34                            | #25      | #27 | #56 | #57    | #72         | #73          | #74          | #55    | #26   | #49      | #29        |#30 | #31        | #32          | #28    | #50         | #48         |
+</detalhe>
+<rod_grupo nome="2">
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Base ICMS: #15                             | Valor ICMS: #16                            | Base subst....: #17                        | Valor subst....: #18                       | Valor produto: #19                              |
+| Fr/Se/Ou.: #35                             | Valor IPI.: #23                            | Valor desconto: #22                        | Valor acréscimo: #36                       | Valor nota...: #21                              |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+-------------------------------------------+--------------------------------------------------+
+| Vencimentos: #51                                                                                                                                                                                                                    |
+| Contas.....: #52                                                                                                                                                                                                                    |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+</rod_grupo>
+<rod_grupo nome="1">
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Total por empresa                                                                                                                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Base ICMS: #38                             | Valor ICMS: #40                            | Base subst....: #42                        | Valor subst....: #44                       | Valor produto: #46                              |
+| Fr/Se/Ou.: #39                             | Valor IPI.: #41                            | Valor desconto: #43                        | Valor acréscimo: #45                       | Valor nota...: #47                              |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+-------------------------------------------------+
+
+</rod_grupo>
+<rod_relat>
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Total geral                                                                                                                                                                                                                         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Base ICMS: #59                             | Valor ICMS: #58                            | Base subst....: #61                        | Valor subst....: #60                       | Valor produto: #66                              |
+| Fr/Se/Ou.: #67                             | Valor IPI.: #63                            | Valor desconto: #64                        | Valor acréscimo: #65                       | Valor nota...: #62                              |
++--------------------------------------------+--------------------------------------------+--------------------------------------------+--------------------------------------------+-------------------------------------------------+
+</rod_relat>
+<hash>d778b32a249fc902b1ff1dc9537d341a</hash>
+</relatorio>

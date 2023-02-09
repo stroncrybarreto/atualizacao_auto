@@ -1,0 +1,48 @@
+<relatorio dados="sobra_falta_caixa">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo  		tam=87  alinha=centro
+4  empresa_nome         tam=25
+5  conta_nome           tam=38
+6  data                 tam=10  fmt=data
+7  turno 	        tam=5   fmt=%d alinha=centro
+8  pessoa_nome  	tam=30
+9  valor 		tam=13  fmt=%.02f
+10 saldo 		tam=13  fmt=%.02f
+</apelidos>
+
+<cab_pagina>
+#1                                                                   #2        
+---------------------------------------------------------------------------------------
+ 
+                                 SOBRAS E FALTAS DE CAIXA
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo,conta_codigo">
++-------------------------------------+-----------------------------------------------+
+| Empresa: #4                         | Conta: #5                                     |
++------------+------------------------+---------------+-------------------------------+
+|   Data     | Turno | Responsável                    | Sobra / Falta |         Saldo |
++------------+-------+--------------------------------+---------------+---------------+
+</cab_grupo>
+
+<detalhe>
+| #6         | #7    | #8                             | #9            | #10           |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+-------+--------------------------------+---------------+---------------+
+| Sobra / falta no final do período                                   | #10           |
++---------------------------------------------------------------------+---------------+
+
+</rod_grupo>
+
+<rod_pagina>
++------------+-------+--------------------------------+---------------+---------------+
+</rod_pagina>
+
+<hash>a4b6abccd1a3d36ddee464d1c94a158c</hash>
+</relatorio>

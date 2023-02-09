@@ -1,0 +1,94 @@
+<relatorio dados="lucro_produto" ordem="grupo_nome, subgrupo_nome, produto_nome">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  data_ini					tam=10	fmt=data
+4  data_fim					tam=10	fmt=data
+5  subtitulo				tam=133	alinha=centro
+6  grupo_nome				tam=40
+7  produto_codigo			tam=6  alinha=centro
+8  produto_nome				tam=35
+9  qtde						tam=11	fmt=float2
+11 venda					tam=14	fmt=float2
+12 custo					tam=14	fmt=float4
+13 lucro					tam=13	fmt=float2
+14 subtotal_qtde			tam=11	fmt=float2
+15 subtotal_venda			tam=14	fmt=float2
+16 subtotal_custo			tam=14	fmt=float4
+17 subtotal_lucro			tam=13	fmt=float2
+18 total_venda				tam=14	fmt=float2
+19 total_custo				tam=14	fmt=float4
+20 total_lucro				tam=13	fmt=float2
+21 margem					tam=8	fmt=float2
+22 subtotal_margem			tam=8	fmt=float2
+23 total_margem				tam=8	fmt=float2
+24 subtitulo1				tam=133	alinha=centro
+25 tributacao				tam=9	fmt=float2		alinha=direita
+26 descricao_grupo			tam=70
+27 subgrupo_nome    		tam=70
+28 subtotal_subgrupo_qtde	tam=11	fmt=float2	func=soma	campo=qtde		grupo=2
+29 subtotal_subgrupo_venda	tam=14	fmt=float2	func=soma	campo=venda		grupo=2
+30 subtotal_subgrupo_custo	tam=14	fmt=float4	func=soma	campo=custo		grupo=2
+31 subtotal_subgrupo_lucro	tam=13	fmt=float2	func=soma	campo=lucro		grupo=2
+32 subtotal_subgrupo_margem	tam=8	fmt=float2
+33 descricao_subgrupo		tam=70
+34 valor_desconto			tam=10	fmt=float2
+35 total_geral_quant		tam=11	fmt=float2	func=soma	campo=qtde
+
+36 total_geral_cust	tam=14	fmt=float4	func=soma	campo=custo
+37 total_geral_venda tam=14	fmt=float2	func=soma	campo=venda
+38 total_geral_lucro tam=13	fmt=float2	func=soma	campo=lucro
+
+99 titulo           		tam=132  expr="VENDAS E LUCRO COM PRODUTOS"  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                  #2             
+------------------------------------------------------------------------------------------------------------------------------------
+   
+#99
+#5
+#24
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="grupo_nome,grupo">
++----------------------------------------------------------------------------------------------------------------------------------+
+| #26                                                                                                                              |
++----------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="grupo_nome,grupo,subgrupo_nome,subgrupo">
+| #33                                                                                                                              |
++--------+-------------------------------------+------------+------------+---------------+---------------+--------------+----------+
+| Código |               Produto               | Tributação | Quantidade |  Valor custo  |  Valor venda  |    Lucro     | Margem(*)|
++--------+-------------------------------------+------------+------------+---------------+---------------+--------------+----------+
+</cab_grupo>
+
+<detalhe>
+| #7     | #8                                  | #25      % |#9          |#12            |#11            |#13           |#21     % |
+</detalhe>
+
+<rod_grupo nome="2">
++--------+-------------------------------------+------------+------------+---------------+---------------+--------------+----------+
+| Subtotal subgrupo                                         |#28         |#30            |#29            |#31           |#32     % |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+| Subtotal grupo                                            |#14         |#16            |#15            |#17           |#22     % |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+
+| Total geral                                               |#35         |#36            |#37            |#38           |#23     % |
++-----------------------------------------------------------+------------+---------------+---------------+--------------+----------+
+</rod_relat>
+
+<rod_pagina>
++--------+--------------------------------------------------+------------+---------------+---------------+--------------+----------+
+</rod_pagina>
+
+<hash>dcc4829239ceb5c3bf1abe9ccee5bda1</hash>
+</relatorio>

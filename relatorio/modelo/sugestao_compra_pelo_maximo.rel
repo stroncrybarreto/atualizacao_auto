@@ -1,0 +1,64 @@
+<relatorio dados="sugestao_compra" tamfonte="8" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora        tam=18
+3  titulo1		tam=165	alinha=centro
+4  titulo2		tam=165	alinha=centro
+5  empresa_cod_nome	tam=50
+6  grupo_cod_nome	tam=50
+7  tipo_estoque		tam=8	alinha=direita
+8  produto_codigo	tam=8
+9  produto_nome		tam=30
+10 estoque		tam=9  	fmt=float3
+11 data_ult_compra	tam=10	fmt=data
+12 preco_ult_compra     tam=8 	alinha=direita
+13 pessoa_codigo	tam=10	alinha=direita
+14 estoque_base		tam=8	fmt=float3
+15 necessidade		tam=10	fmt=float3 alinha=direita
+16 preco_venda		tam=10  fmt=float2
+17 titulo3		tam=165 alinha=centro
+18 fornecedor_codigo    tam=10       
+19 fornecedor_nome      tam=40  
+20 fornecedor_cod_nome  tam=40 
+21 necessidade_maximo   tam=10	fmt=float3 alinha=direita
+22 estoque_maximo       tam=8	fmt=float3
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                                      #2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_cod_nome" quebra_pagina="1" repeticao="0">
+ EMPRESA: #5
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_cod_nome,grupo_cod_nome">
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| GRUPO: #6                                                                                                                                                                             |
++----------+--------------------------------+-----------+------------+----------+------------+----------+------------+----------+------------+------------------------------------------+
+|  Código  |             Produto            | Est Atual | Ult.Compra | Pr.Custo |  Pr.Venda  |  Mínimo  | Sug Mínimo |  Máximo  | Sug Máximo |                Fornecedor                |
++----------+--------------------------------+-----------+------------+----------+------------+----------+------------+----------+------------+------------------------------------------+
+</cab_grupo>
+
+<detalhe>
+| #8       | #9                             | #10       | #11        | #12      | #16        | #14      | #15        | #22      | #21        | #20                                      |
+</detalhe>
+
+<rod_grupo nome="2">
++----------+--------------------------------+-----------+------------+----------+------------+----------+------------+----------+------------+------------------------------------------+
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
++----------+--------------------------------+-----------+------------+----------+------------+----------+------------+----------+------------+------------------------------------------+
+</rod_pagina>
+
+<hash>fb91b290e621bc9c35ab4687df856cfa</hash>
+</relatorio>

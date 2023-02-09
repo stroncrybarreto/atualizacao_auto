@@ -1,0 +1,42 @@
+<relatorio dados="consulta_produto" tamfonte="8">
+<apelidos>
+1  nome_posto               tam=9999
+2  ponto_titulo             tam=9999
+3  subtitulo                tam=9999
+4  grupo_produto_cod_nome   tam=38
+5  produto_codigo	        tam=10  alinha=centro								
+6  produto_nome             tam=40
+7  row_fixo                 tam=9999
+8  row_detalhe              tam=9999
+9  row_empresa              tam=9999
+10 row_header               tam=9999
+11 row_header_det           tam=9999
+
+</apelidos>
+<cab_pagina>
+#1
+#2
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="grupo_produto_codigo">
++-------------------------------------------------------#10
+| Grupo produto: #4                                     #9
++------------+------------------------------------------#11
+|   Código   |                  Produto                 #7
++------------+------------------------------------------#11
+</cab_grupo>
+<detalhe>
+| #5         | #6                                       #8
+</detalhe>
+<rod_grupo nome="1">
++------------+------------------------------------------#11
+
+</rod_grupo>
+<rod_pagina>
++------------+------------------------------------------#11
+</rod_pagina>
+
+<hash>929432e7c3c41ba4021b96d46fe5b960</hash>
+</relatorio>

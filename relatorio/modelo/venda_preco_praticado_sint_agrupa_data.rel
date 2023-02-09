@@ -1,0 +1,61 @@
+<relatorio dados="venda_preco_praticado" ordem="data,produto,preco_unit">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  nome				    tam=30
+4  data                 tam=10   fmt=data
+5  produto              tam=37  
+6  quantidade           tam=12   alinha=direita   fmt=float2
+7  valor                tam=15   alinha=direita   fmt=float2
+8  preco_unit           tam=11   alinha=direita   fmt=float3
+9  subtotal             tam=15   alinha=direita   fmt=float2    func=soma  campo=valor  grupo=1
+10 total_valor          tam=15   alinha=direita   fmt=float2    func=soma  campo=valor
+11 qtd_venda            tam=15   alinha=direita   func=contar
+
+13 titulo2				tam=88  alinha=centro
+15 codigo_produto       tam=10
+17 cod_produto          tam=75 expr=str(codigo_produto)+" - "+str(produto) 
+18 med_preco            tam=11   alinha=direita   fmt=float3    func=media  campo=preco_unit  grupo=1
+19 sub_quant            tam=12   alinha=direita   fmt=float2    func=soma  campo=quantidade  grupo=1
+20 med_geral_preco      tam=11   alinha=direita   fmt=float3    func=media  campo=preco_unit
+21 tot_quant            tam=12   alinha=direita   fmt=float2    func=soma  campo=quantidade
+</apelidos>
+
+<cab_pagina>
+#1                                                                      #2              
+----------------------------------------------------------------------------------------
+
+#13
+ 
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="data">
++--------------------------------------------------------------------------------------+
+| Data: #4                                                                             |
++---------------------------------------+-------------+--------------+-----------------+
+|                Produto                | Preço unit. |  Quantidade  |      Valor      |
++---------------------------------------+-------------+--------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #5                                    | #8          | #6           | #7              | 
+</detalhe>
+
+<rod_grupo nome="1">
++---------------------------------------+-------------+--------------+-----------------+
+| Subtotal                                            | #19          | #9              |
++-----------------------------------------------------+--------------+-----------------+
+
+</rod_grupo>
+
+<rod_relat>
++-----------------------------------------------------+--------------+-----------------+
+| Total                                               | #21          | #10             |
++-----------------------------------------------------+--------------+-----------------+
+</rod_relat>
+
+<rod_pagina>
++---------------------------------------+-------------+--------------+-----------------+
+</rod_pagina>
+
+<hash>e3878eb518386a909db69f33118a05df</hash>
+</relatorio>

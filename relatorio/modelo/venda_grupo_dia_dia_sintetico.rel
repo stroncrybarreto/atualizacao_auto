@@ -1,0 +1,49 @@
+<relatorio dados="venda_grupo_dia_dia" ordem="empresa,data">
+<apelidos>
+1  nome_posto				tam=9999
+2  ponto_titulo				tam=9999
+3  rel_posto_nome	    	tam=9999
+4  linha_cabecalho			tam=9999
+5  data						tam=10	fmt=data
+6  dia_semana				tam=10
+7  linha_traco_cabecalho	tam=9999
+8  linha_titulo_cabecalho	tam=9999
+9  linha_titulo2_cabecalho	tam=9999
+10 linha_traco2_cabecalho	tam=9999
+11 detalhe					tam=9999
+12 linha_traco_completa		tam=9999
+13 linha_traco_superior		tam=9999
+14 subtitulo				tam=9999
+15 total_empresa			tam=9999
+16 total_geral				tam=9999
+17 media_geral				tam=9999
+18 previsao_geral			tam=9999
+</apelidos>
+
+<cab_pagina>
+#3
+#13
+
+#14
++------------------------+#7
+|                        |#8
+|                        |#9
++------------------------+#10
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<rod_relat>
+| Total                  |#16
+| Média                  |#17
+| Previsão               |#18
++------------------------+#10
+</rod_relat>
+
+<rod_pagina>
++------------+----------+
+</rod_pagina>
+
+<hash>bedaf78ca404d8e7055df4a3fa39cb4e</hash>
+</relatorio>

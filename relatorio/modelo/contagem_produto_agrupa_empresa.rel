@@ -1,0 +1,53 @@
+<relatorio dados="contagem_produto" ordem="emp_nome,deposito_nome,grupo_nome,nome">
+<apelidos>
+1  rel_posto_nome         tam=60
+2  rel_data_hora        tam=18
+3  grupo_nome   tam=40
+4  nome         tam=40
+5  unid_med     tam=5
+6  codigo	tam=13
+7  tributacao   tam=4
+8  t_tributacao         tam=6  fmt=%.02f
+9  emp_nome	tam=60
+10 deposito_nome	tam=60
+</apelidos>
+<cab_pagina>
+#1                                                                             #2        
+-----------------------------------------------------------------------------------------------
+   
+                                      CONTAGEM DE PRODUTOS
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="emp_grid">
++---------------------------------------------------------------------------------------------+
+| Empresa: #9                                                                                 |
+</cab_grupo>
+<cab_grupo nome="2" quebra="emp_grid,deposito_grid">
++---------------------------------------------------------------------------------------------+
+| Depósito: #10                                                                               |
+</cab_grupo>
+<cab_grupo nome="3" quebra="emp_grid,deposito_grid,grupo_codigo">
++---------------------------------------------------------------------------------------------+
+| GRUPO: #3                                                                                   |
++------------------------------------------+------+---------------+------+---------+----------+
+| Produto                                  | Unid |        Codigo | S.Tb |    ICMS | Contagem |
++------------------------------------------+------+---------------+------+---------+----------+
+</cab_grupo>
+<detalhe>
+| #4                                       | #5   | #6            | #7   | #8    % |__________|
+</detalhe>
+<rod_grupo nome="3">
++------------------------------------------+------+---------------+------+---------+----------+
+
+</rod_grupo>
+
+<rod_grupo nome="2">
+</rod_grupo>
+<rod_grupo nome="1">
+</rod_grupo>
+<rod_pagina>
++------------------------------------------+------+---------------+------+---------+----------+
+</rod_pagina>
+
+<hash>47316446446c88e9e551f04efe4cefc3</hash>
+</relatorio>

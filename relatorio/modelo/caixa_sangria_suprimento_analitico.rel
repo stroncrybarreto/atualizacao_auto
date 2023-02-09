@@ -1,0 +1,58 @@
+<relatorio dados="caixa_sangria_suprimento_analitico" font_size="small" ordem="empresa_nome,tipo,data,turno">
+<apelidos>
+1  rel_posto_nome	tam=50
+2  rel_data_hora	tam=18
+3  subtitulo		tam=124 alinha=centro
+4  empresa_nome		tam=60
+5  data				tam=10	fmt=data
+6  turno			tam=5	fmt=float0		alinha=centro
+7  hora				tam=8	fmt=hora
+8  documento		tam=9	alinha=direita
+9  conta			tam=40
+10 usuario			tam=15
+11 valor			tam=15	fmt=float2
+12 tipo				tam=25
+13 sub_valor		tam=15	fmt=float2	func=soma	campo=valor	grupo=2
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                          #2
+----------------------------------------------------------------------------------------------------------------------------
+
+#3
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa"> 
++--------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #4                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa,tipo">
+| Relação de #12                                                                                                           | 
++------------+-------+----------+-----------+------------------------------------------+-----------------+-----------------+
+|    Data    | Turno |   Hora   | Documento |                Conta caixa               |     Usuário     |      Valor      |
++------------+-------+----------+-----------+------------------------------------------+-----------------+-----------------+
+</cab_grupo>
+
+<detalhe>
+| #5         | #6    | #7       | #8        | #9                                       | #10             | #11             |
+</detalhe>
+
+<rod_grupo nome="2">
++------------+-------+----------+-----------+------------------------------------------+-----------------+-----------------+
+| Total relação                                                                                          | #13             |
++--------------------------------------------------------------------------------------------------------+-----------------+
+</rod_grupo>
+
+<rod_grupo nome="1">
+
+</rod_grupo>
+
+<rod_pagina>
++------------+-------+----------+-----------+------------------------------------------+-----------------+-----------------+
+</rod_pagina>
+
+
+<hash>40efd037cd14f7bd63b73572d5b63d1e</hash>
+</relatorio>

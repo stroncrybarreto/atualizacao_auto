@@ -1,0 +1,61 @@
+<relatorio dados="venda_cfop_analitico" ordem="cfop_cod_nome,produto_nome">
+<apelidos>
+1  rel_posto_nome     tam=60
+2  rel_data_hora      tam=18  
+3  subtitulo             tam=112 alinha=centro
+4  data               tam=60  fmt=data
+5  cfop_cod_nome      tam=100
+7  produto_codigo     tam=7   alinha=centro
+8  produto_nome       tam=40
+9  unid_med           tam=4
+10 quantidade         tam=11  fmt=float3
+11 valor              tam=12  fmt=float2
+12 sub_cfop_qtde_     tam=11  fmt=float3 func=soma campo=quantidade grupo=2
+13 sub_cfop_valor_    tam=12  fmt=float2 func=soma campo=valor grupo=2
+16 total_qtde_        tam=11  fmt=float3 func=soma campo=quantidade
+17 total_valor_       tam=12  fmt=float2 func=soma campo=valor
+18 valor_desc         tam=8   fmt=float2
+19 sub_cfop_desc_     tam=11   fmt=float2 func=soma campo=valor_desc grupo=2
+21 total_desc_        tam=11   fmt=float2 func=soma campo=valor_desc
+
+22 quantidade_p       tam=11  fmt=float3 func=soma campo=quantidade grupo=3
+23 valor_p            tam=12  fmt=float2 func=soma campo=valor grupo=3
+24 valor_desc_p       tam=11   fmt=float2 func=soma campo=valor_desc grupo=3
+99 titulo             tam=111  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                             #2                 
+---------------------------------------------------------------------------------------------------------------
+   
+#99
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="cfop_cod_nome">
++-------------------------------------------------------------------------------------------------------------+
+| CFOP: #5                                                                                                    |
++--------+-----------------------------------------------+---------+-------------+-------------+--------------+
+| Código |                   Descrição                   | Unidade |  Quantidade |   Desconto  |    Valor     |
++--------+-----------------------------------------------+---------+-------------+-------------+--------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="cfop_cod_nome,produto_nome">
+</cab_grupo>
+<detalhe>
+</detalhe>
+<rod_grupo nome="3">
+| #7     | #8                                            | #9      | #22         | #24         | #23          |
+</rod_grupo>
+<rod_grupo nome="2">
++--------+-----------------------------------------------+---------+-------------+-------------+--------------+
+| Subtotal                                                         | #12         | #19         | #13          |
++------------------------------------------------------------------+-------------+-------------+--------------+
+</rod_grupo>
+<rod_relat>
+| Total geral                                                      | #16         | #21         | #17          |
++------------------------------------------------------------------+-------------+-------------+--------------+
+</rod_relat>
+<rod_pagina>
++-------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>840d79e909c68d668ce67e9658173aae</hash>
+</relatorio>

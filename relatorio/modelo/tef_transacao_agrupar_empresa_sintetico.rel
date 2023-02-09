@@ -1,0 +1,76 @@
+<relatorio dados="tef_transacao" docname="Relatório de Transações TEF" paper_orientation="landscape" ordem="ordem">
+
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  sub_titulo		tam=152	alinha=centro
+4  quebra_desc		tam=120 alinha=esquerda
+5  data				tam=10	fmt=data
+6  data				tam=8	fmt=hora
+7  modulo			tam=10
+8  operadora		tam=9
+9  operacao			tam=8	alinha=centro
+10 transacao 		tam=23
+11 nsu				tam=16	alinha=centro
+12 status			tam=6	alinha=centro
+13 valor			tam=11	alinha=direita		fmt=float2
+14 total			tam=11	alinha=direita		fmt=float2  fmt=float2 func=soma campo=valor grupo=2
+15 motivo_movto     tam=22  alinha=esquerda
+16 nsu_host         tam=16  alinha=centro
+17 nsu_redcard      tam=16  alinha=centro expr=(operadora=='REDECARD' and nsu_host or nsu)
+19 empresa_cod_nome tam=139 alinha=esquerda expr= str(empresa_codigo) + ' - ' + empresa_nome
+18 total_empresa    tam=11  fmt=float2 func=soma campo=valor grupo=1
+20 total_geral      tam=11  fmt=float2 func=soma campo=valor
+21 nr_cupom			tam=20
+98 quebra_tit		tam=134	alinha=centro
+99 titulo_principal tam=152 alinha=centro expr="TRANSAÇÕES DE TEF"
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                      #2                
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo">
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #19                                                                                                                                         |
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+| #98                                                                                                                                    |    Valor    |
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_codigo,quebra_desc">
+</cab_grupo>
+
+<detalhe>
+</detalhe>
+
+<rod_grupo nome="2">
+| #4                                                                                                                                     | #14         |
+</rod_grupo>
+
+<rod_grupo nome="1">
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+| Total empresa                                                                                                                          | #18         |
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+| Total geral                                                                                                                            | #20         |
++----------------------------------------------------------------------------------------------------------------------------------------+-------------+
+</rod_relat>
+
+<rod_pagina>
++---------------------+------------+-----------+----------+-------------------------+------------------------+------------------+--------+-------------+
+</rod_pagina>
+
+
+<hash>fc57d56d8881e0029260798243df46be</hash>
+</relatorio>

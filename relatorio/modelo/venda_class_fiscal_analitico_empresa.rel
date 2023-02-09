@@ -1,0 +1,65 @@
+<relatorio dados="venda_class_fiscal_analitico" ordem="empresa_nome,classificacao_fiscal">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  titulo              tam=105  alinha=centro
+4  data                tam=49   fmt=data
+5  class_cod_nome      tam=49
+7  produto_codigo      tam=5   alinha=centro
+8  produto_nome        tam=40
+9  unid_med            tam=7   alinha=centro
+10 quantidade          tam=15  fmt=float3
+11 valor               tam=15  fmt=float2
+12 sub_class_qtde      tam=15  fmt=float3  func=soma  campo=quantidade  grupo=2
+13 sub_class_valor     tam=15  fmt=float2  func=soma  campo=valor  grupo=2
+14 sub_data_qtde       tam=15  fmt=float3  func=soma  campo=quantidade  grupo=1
+15 sub_data_valor      tam=15  fmt=float2  func=soma  campo=valor  grupo=1
+16 total_qtde          tam=15  fmt=float3
+17 total_valor         tam=15  fmt=float2
+18 empresa_cod_nome    tam=90
+19 cst_pis				tam=3
+20 cst_cofins			tam=3
+</apelidos>
+<cab_pagina>
+#1                                                                                      #2                 
+--------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_nome">
++------------------------------------------------------------------------------------------------------+
+| Empresa: #18                                                                                         |
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,classificacao_fiscal">
++------------------------------------------------------------------------------------------------------+
+| Classificação fiscal: #5                                                                             |
++--------+-----------------------------------------------+---------+-----------------+-----------------+
+| Código |                 Descrição                     | Unidade |   Quantidade    |      Valor      |
++--------+-----------------------------------------------+---------+-----------------+-----------------+
+</cab_grupo>
+<detalhe>
+| #7     | #8                                            | #9      | #10             | #11             |
+</detalhe>
+<rod_grupo nome="2">
++--------+-----------------------------------------------+---------+-----------------+-----------------+
+| Subtotal                                                         | #12             | #13             |
++------------------------------------------------------------------+-----------------+-----------------+
+</rod_grupo>
+<rod_grupo nome="1">
+| Total                                                            | #14             | #15             |
++------------------------------------------------------------------+-----------------+-----------------+
+
+</rod_grupo>
+<rod_relat>
++------------------------------------------------------------------+-----------------+-----------------+
+| Total geral                                                      | #16             | #17             |
++------------------------------------------------------------------+-----------------+-----------------+
+</rod_relat>
+<rod_pagina>
++------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>c0e08094787b78c4cf4699d1fc952b1c</hash>
+</relatorio>

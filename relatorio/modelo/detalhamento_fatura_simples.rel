@@ -1,0 +1,111 @@
+<relatorio dados="doc_detalhamento_fatura_simples" docname="Detalhamento de Fatura Simples">
+<apelidos>
+1  empresa_nome			tam=50
+2  empresa_endereco		tam=30
+3  empresa_estado		tam=2
+4  empresa_bairro		tam=15
+5  empresa_cidade		tam=15
+6  empresa_cep			tam=9
+7  empresa_fone			tam=12
+8  empresa_fax			tam=12
+9  empresa_cpf			tam=20
+10 empresa_inscr_est		tam=20
+11 fatura_data			tam=10  fmt=data
+12 fatura_documento		tam=10
+13 fatura_vencto		tam=10	fmt=data
+14 cliente_codigo		tam=6   fmt=%06d
+15 cliente_nome			tam=40
+16 cliente_endereco		tam=30
+17 cliente_cep			tam=10
+18 cliente_cpf			tam=20
+19 cliente_fone			tam=15
+20 cliente_bairro		tam=20
+21 cliente_fax			tam=15
+22 cliente_cidade		tam=15
+23 cliente_estado		tam=3
+24 nota_data_doc		tam=10  fmt=data
+25 nota_documento		tam=10
+26 nota_motivo_nome		tam=17
+27 nota_obs			tam=15
+28 nota_valor			tam=13   fmt=float2
+29 nota_placa			tam=8
+30 fatura_valor			tam=13  fmt=float2 
+31 fatura_valor_ext1		tam=40	alinha=strip
+32 fatura_valor_ext2		tam=40	alinha=strip
+33 fatura_valor_ext3		tam=40	alinha=strip
+34 empresa_nome			tam=40	alinha=centro
+35 cliente_obs			tam=60
+36 fatura_valor_bruto		tam=13	fmt=float2 
+37 nota_seq                   	tam=10
+98  rel_posto_nome		tam=60
+99  rel_data_hora		tam=18              
+</apelidos>
+
+<cab_relat>
+#98                                                                                         #99
+------------------------------------------------------------------------------------------------------------
+
+                               D E T A L H A M E N T O   D E   F A T U R A S 
+
+
+
+</cab_relat>
+
+<cab_grupo nome="1" quebra="fatura_documento" quebra_pagina="1">
+
+
+   #1
+   Endereço: #2                              // UF: #3           // Bairro: #4
+   Cidade: #5                                // CEP: #6          // Telefone: #7          // Fax: #8 
+   CNPJ..: #9                                // INSCR.EST.: #10
+
+   Data: #11         Fatura nr.: #12          Vencimento: #13
+
+   Cliente.: #14    - #15                                      
+   Endereço: #16                             Cep......: #17
+   CGC/CPF.: #18                             Telefone.: #19
+   Bairro..: #20                             Fax......: #21
+   Cidade..: #22                             Estado...: #23
+   OBS.....: #35
+
+   Anexo, estamos passando a responsabilidade a V. Sas. diversos documentos,
+   conforme relação abaixo:
+
+   +------------+-----------+-------------------+-----------------+---------------+
+   |   Data     | Documento | Descricao         | Observacao      |         Valor |
+   +------------+-----------+-------------------+-----------------+---------------+
+</cab_grupo>
+
+<detalhe fix_height="60">
+   | #24        | #25       | #26               | #27             | #28           |
+</detalhe>
+
+<rod_grupo nome="1">
+   +------------+-----------+-------------------+-----------------+---------------+
+   
+                                                    VALOR TOTAL: R$ #36
+
+   VALOR DA FATURA: R$ #30
+   
+   #31*******************************************************************
+   #32*******************************************************************
+   #33*******************************************************************
+
+                         #5                            , #11
+
+
+                         ________________________________________
+                         #34
+
+
+</rod_grupo>
+
+<rod_pagina>
+   +------------+-----------+-------------------+-----------------+---------------+
+</rod_pagina>
+
+<rod_relat> </rod_relat>
+
+
+<hash>03faea690c162613ec0670f0d0b1fcdb</hash>
+</relatorio>

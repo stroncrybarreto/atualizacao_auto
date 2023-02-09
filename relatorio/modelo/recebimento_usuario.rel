@@ -1,0 +1,94 @@
+<relatorio dados="recebimento" ordem="empresa_nome,usuario_nome" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome			tam=40
+2  rel_data_hora			tam=18
+3  titulo					tam=149	alinha=centro
+4  movto_data				tam=10	fmt=data
+5  movto_turno				tam=3	alinha=centro
+6  movto_documento			tam=9	alinha=centro
+7  motivo_nome				tam=15
+8  movto_pessoa_obs			tam=20
+9  movto_valor				tam=10	fmt=float2
+10 cdeb_nome				tam=15
+11 total_pago				tam=10	fmt=float2
+12 motivo_codigo			tam=10	alinha=direita
+13 valor_desconto			tam=8	fmt=float2
+14 valor_mora				tam=9	fmt=float2
+15 valor_titulo				tam=10	fmt=float2
+16 total_titulo				tam=10  fmt=float2	func=soma	campo=valor_titulo
+17 subtotal_desconto		tam=5	fmt=float2
+18 subtotal_mora			tam=5	fmt=float2
+19 subtotal_titulo			tam=10	fmt=float2
+20 subtotal_pago			tam=10	fmt=float2
+21 total_desconto			tam=8	fmt=float2	func=soma	campo=valor_desconto
+22 total_mora				tam=9	fmt=float2	func=soma	campo=valor_mora
+23 empresa_codigo			tam=8	alinha=centro
+35 empresa_nome				tam=35
+24 conta_codigo				tam=11	
+25 quebra_nome				tam=40
+26 pessoa_subtotal_pago		tam=10	fmt=float2	func=soma	campo=valor_liquido		grupo=1	
+27 pessoa_subtotal_desconto	tam=8	fmt=float2	func=soma	campo=valor_desconto	grupo=1
+28 pessoa_subtotal_mora		tam=9	fmt=float2	func=soma	campo=valor_mora		grupo=1
+29 pessoa_subtotal_titulo	tam=10	fmt=float2	func=soma	campo=valor_titulo		grupo=1
+30 movto_obs				tam=21
+31 valor_liquido			tam=10	fmt=float2	
+32 subtotal_liquido			tam=10	fmt=float2	func=soma	campo=valor_liquido		grupo=1
+33 total_liquido			tam=10	fmt=float2	func=soma	campo=valor_liquido
+
+36 valor_empresa			tam=10	fmt=float2	func=soma	campo=valor_titulo		grupo=2	
+37 desc_empresa				tam=8	fmt=float2	func=soma	campo=valor_desconto	grupo=2	
+38 acresc_empresa			tam=9	fmt=float2	func=soma	campo=valor_mora		grupo=2	
+39 pago_empresa				tam=10	fmt=float2	func=soma	campo=valor_liquido		grupo=2
+40 titulo_principal			tam=149	expr='RECEBIMENTOS'		alinha=centro
+
+41 pessoa_nome				tam=80
+42 pessoa_codigo			tam=10
+43 empre_cod_nome			tam=100	expr=str(empresa_codigo)+" - "+empresa_nome
+44 pessoa_cod_nome			tam=100	expr=str(pessoa_codigo)+" - "+pessoa_nome
+45 usuario_nome				tam=60
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                       #2
+----------------------------------------------------------------------------------------------------------------------------------------
+
+#40                                                                
+#3
+
+</cab_pagina>
+<cab_grupo nome="2" quebra="empresa_nome">
++---------------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #43                                                                                                                          |
++---------------------------------------------------------------------------------------------------------------------------------------+
+</cab_grupo>
+<cab_grupo nome="1" quebra="empresa_nome,usuario_nome">
+| Usuário: #45                                                                                                                          |
++------------+-----+-----------+-----------------------+-----------------+-------------+------------+----------+-----------+------------+
+|   Emissão  |Turno| Documento |      Observação       |     Motivo      |    Conta    |   Título   | Desconto | Acréscimo | Valor pago |
++------------+-----+-----------+-----------------------+-----------------+-------------+------------+----------+-----------+------------+
+</cab_grupo>
+<detalhe>
+| #4         | #5  | #6        | #30                   | #7              | #24         | #15        | #13      | #14       | #31        |
+</detalhe>
+<rod_grupo nome="1">
++------------+-----+-----------+-----------------------+-----------------+-------------+------------+----------+-----------+------------+
+| Subtotal                                                                                          | #27      | #28       | #32        |
++---------------------------------------------------------------------------------------------------+----------+-----------+------------+
+</rod_grupo>
+<rod_grupo nome="2">
+| Total empresa                                                                                     | #37      | #38       | #39        |
++---------------------------------------------------------------------------------------------------+----------+-----------+------------+
+
+</rod_grupo>
+<rod_relat>
++---------------------------------------------------------------------------------------------------+----------+-----------+------------+
+| Total geral                                                                                       | #21      | #22       | #33        |
++---------------------------------------------------------------------------------------------------+----------+-----------+------------+
+</rod_relat>
+
+<rod_pagina>
++---------------------------------------------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>fa92a1f52ed3654f379428459813d771</hash>
+</relatorio>

@@ -1,0 +1,118 @@
+<relatorio dados="extrato_conta_receber_cliente_main" tamfont="3" l="720">
+<apelidos>
+1  rel_posto_nome			tam=60
+2  rel_data_hora			tam=18
+3  titulo1					tam=110 alinha=centro
+4  titulo2					tam=110 alinha=centro
+5  titulo3					tam=110 alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                    #2              
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                 EXTRATO DE CONTAS A RECEBER POR CLIENTE
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+
+<subrelat dados="extrato_conta_receber_cliente">
+<apelidos>
+6  pessoa_codigo			tam=8	fmt=%d
+7  pessoa_nome				tam=48
+8  qtde						tam=12  alinha=direit
+9  valor_total				tam=12	fmt=%0.2f
+10 documento				tam=6
+11 motivo_nome				tam=23
+12 valor					tam=12	fmt=%0.2f
+13 data_emissao				tam=10	fmt=data
+14 data_vencto				tam=10	fmt=data
+15 data_pgto				tam=10  fmt=data
+16 valor_desconto			tam=12	fmt=%0.2f
+17 valor_juros				tam=12	fmt=%0.2f
+18 valor_pago				tam=12	fmt=%0.2f
+19 saldo_cobrar				tam=12	fmt=%0.2f
+20 saldo_fatura				tam=12	fmt=%0.2f
+21 total_cobrar				tam=12	fmt=%0.2f
+22 total_fatura				tam=12	fmt=%0.2f
+23 total_recebido			tam=12	fmt=%0.2f
+24 total_receber			tam=12	fmt=%0.2f
+25 total_aberto				tam=12	fmt=%0.2f
+26 total_nota				tam=12	fmt=%0.2f
+27 saldo_nota				tam=12	fmt=%0.2f
+28 pessoa_emitido			tam=12	fmt=%0.2f
+29 pessoa_recebido			tam=12	fmt=%0.2f
+30 pessoa_receber			tam=12	fmt=%0.2f
+31 total_emitido			tam=12	fmt=%0.2f
+32 total_recebido			tam=12	fmt=%0.2f
+33 total_receber			tam=12	fmt=%0.2f
+34 conta_codigo	            tam=10
+35 conta_nome               tam=50	alinha=esquerda 
+36 conta_valor_total        tam=12  fmt=%0.2f
+37 conta_pago_total         tam=12  fmt=%0.2f
+38 total_pago               tam=12  fmt=%0.2f
+39 valor_mora               tam=12  fmt=%0.2f
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+<cab_grupo nome="1" quebra="conta_codigo">
++-------------------------------------------------------------------------------------------------------------------------------------+
+| #34      - #35                                                                                                                      |
++--------+-------------------------+------------+------------+------------+--------------+--------------+--------------+--------------+
+| Doc.   | Histórico               | Data Emis. | Data Venc. | Data Pgto. |       Valor  |    Descontos |         Mora |   Valor Pago |
++--------+-------------------------+------------+------------+------------+--------------+--------------+--------------+--------------+
+</cab_grupo>
+<detalhe>
+| #10    | #11                     | #13        | #14        | #15        | #12          | #16          | #39          | #18          |
+</detalhe>
+<rod_grupo nome="1">
++--------+-------------------------+------------+------------+------------+--------------+--------------+--------------+--------------+
+
+</rod_grupo>
+
+
+<rod_pagina>
++--------+-------------------------+------------+------------+------------+--------------+--------------+--------------+--------------+
+</rod_pagina>
+
+<rod_relat>
+</rod_relat>
+
+</subrelat>
+
+<subrelat dados="extrato_conta_receber_cliente_resumo">
+<apelidos>
+1 conta_nome			tam=25	alinha=esquerda	
+2 valor_recebido		tam=12	fmt=%.02f
+3 valor_receber			tam=12	fmt=%.02f
+4 pessoa_nome			tam=40	alinha=esquerda
+5 total_valor_recebido	tam=12	fmt=%.02f
+6 total_valor_receber	tam=12	fmt=%.02f
+</apelidos>
+
+<cab_relat>
++-----------------------------------------------------------+
+| Resumo cliente: #4                                        |
++----------------------------+--------------+---------------+
+| Conta                      |     Recebido |     A receber |
++----------------------------+--------------+---------------+
+</cab_relat>
+<detalhe>
+| #1                         | #2           | #3            |
+</detalhe>
+<rod_relat>
++----------------------------+--------------+---------------+
+
++----------------------------+--------------+---------------+
+| Total                      | #5           | #6            |
++----------------------------+--------------+---------------+
+</rod_relat>
+</subrelat>
+
+
+<hash>e8318fcccbc5d2004794e406521a7405</hash>
+</relatorio>

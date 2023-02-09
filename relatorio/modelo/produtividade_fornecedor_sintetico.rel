@@ -1,0 +1,75 @@
+<relatorio dados="produtividade_fornecedor_sintetico" ordem="">
+<apelidos>
+1  rel_posto_nome		    tam=60
+2  rel_data_hora		    tam=18
+3  nome_empresa			    tam=40
+4  fornecedor_codigo	    tam=13  alinha=centro
+5  fornecedor_nome		    tam=47
+6  valor_empresa		    tam=14	fmt=float3
+7  Xtotal_empresa	   	    tam=14	fmt=float3  func=soma campo=valor_empresa grupo=1
+8  total_geral			    tam=12	fmt=float3
+9  titulo				    tam=121	alinha=centro
+11 participacao			    tam=10	fmt=float3
+12 tot_geral                tam=14  fmt=float3  func=soma campo=valor_empresa
+13 quantidade			    tam=12	fmt=float3
+14 subtotal_quantidade	    tam=12	fmt=float3	func=soma	campo=quantidade	grupo=1
+15 total_quantidade		    tam=12	fmt=float3	func=soma	campo=quantidade
+16 nome_relatorio           tam=121 expr='PRODUTIVIDADE POR FUNCIONÁRIOS' alinha=centro
+17 total_participacao       tam=10  fmt=float3 fmt=float3  func=soma campo=participacao grupo=1
+18 total_geral_participacao tam=10  fmt=float3 fmt=float3  func=soma campo=participacao
+19 titulo_agrupamento       tam=47  alinha=centro
+
+20 cont_abastecimento       tam=4
+21 quantidade_comb			tam=10	fmt=float3
+22 media_abastecimento	    tam=7  fmt=float2 expr=(quantidade_comb/(cont_abastecimento or 1))
+23 ranking				    tam=8  func=contar grupo=1
+24 ranking_det			    tam=10 expr=str(ranking)+'°' grupo=1
+
+25 qt_venda				tam=8 alinha=direita
+26 qt_venda_g			tam=8 alinha=direita func=soma campo=qt_venda grupo=1
+27 tot_qt_venda 		tam=8 alinha=direita func=soma campo=qt_venda
+
+36 produto_peso         tam=14  fmt=float3
+37 tot_sub_prod_peso    tam=14  fmt=float3  func=soma  campo=produto_peso  grupo=1
+38 tot_geral_prod_peso  tam=14  fmt=float3  func=soma  campo=produto_peso
+
+40 empresa_cod_nome     tam=40  expr= str(empresa_codigo) + " - " + nome_empresa
+</apelidos>
+<cab_pagina>
+#1                                                                                                          #2                
+----------------------------------------------------------------------------------------------------------------------------
+
+#16 
+#9
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,nome_empresa,empresa">
++-------------------------------------------------------------------------------------------------------------------------+
+|  Empresa: #40                                                                                                           |                                         
++---------------+-------------------------------------------------+----------+--------------+----------------+------------+
+|    Código     | #19                                             |  Vendas  |  Quantidade  |     Valor      |  % Part.   |
++---------------+-------------------------------------------------+----------+--------------+----------------+------------+
+</cab_grupo>
+<detalhe>
+| #4            | #5                                              | #25      | #13          | #6             | #11        |
+</detalhe>
+<rod_grupo nome="1">
++---------------+-------------------------------------------------+----------+--------------+----------------+------------+
+| Subtotal                                                        | #26      | #14          | #7             | #17        |
++-----------------------------------------------------------------+----------+--------------+----------------+------------+
+
+</rod_grupo>
+
+<rod_pagina>
++---------------+-------------------------------------------------+----------+--------------+----------------+------------+
+</rod_pagina>
+<rod_relat>
+
+
++-----------------------------------------------------------------+----------+--------------+----------------+------------+
+| Total geral                                                     | #27      | #15          | #12            | #18        |
++-----------------------------------------------------------------+----------+--------------+----------------+------------+
+</rod_relat>
+
+<hash>8ba66e1f5aa3db7ca6fe20ff87bc92c2</hash>
+</relatorio>

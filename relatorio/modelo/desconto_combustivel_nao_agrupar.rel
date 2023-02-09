@@ -1,0 +1,67 @@
+<relatorio dados="desconto_combustivel">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18  
+3  titulo               tam=130 alinha=centro
+4  quebra				tam=80
+5  produto_nome			tam=30
+6  quantidade			tam=12	fmt=float3
+7  valor_bruto			tam=12	fmt=float2
+8  valor_liquido		tam=12	fmt=float2
+9  valor_desconto		tam=11	fmt=float2
+10 perc_desconto		tam=8	fmt=float3
+11 grp_quantidade		tam=12	fmt=float3
+12 grp_valor_bruto		tam=12	fmt=float2
+13 grp_valor_liquido	tam=12	fmt=float2
+14 grp_valor_desconto	tam=11	fmt=float2
+15 grp_perc_desconto	tam=8	fmt=float3
+16 tot_quantidade		tam=12	fmt=float3
+17 tot_valor_bruto		tam=12	fmt=float2
+18 tot_valor_liquido	tam=12	fmt=float2
+19 tot_valor_desconto	tam=11	fmt=float2
+20 tot_perc_desconto	tam=8	fmt=float3
+21 preco_comb_medio		tam=11	fmt=float3 alinha=direita
+22 titulo_agrupamento   tam=130 alinha=centro
+23 documento            tam=11   alinha=centro
+99 titulo_principal     tam=130 alinha=centro expr='DESCONTOS EM COMBUSTÍVEIS'
+</apelidos>
+<cab_pagina quebra="quebra">
+#1                                                                                                                #2              
+----------------------------------------------------------------------------------------------------------------------------------
+
+#99
+#3
+#22                                                                   
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="quebra">
++---------------------------------+-------------+--------------+-------------+-------------+-------------+-------------+---------+
+|           Combustível           |  Documento  |    Litros    | Preço unit. | Valor bruto | Valor venda | Valor desc. | % Desc. |
++---------------------------------+-------------+--------------+-------------+-------------+-------------+-------------+---------+
+</cab_grupo>
+
+<detalhe>
+| #5                              | #23         | #6           | #21         |#7           |#8           | #9          |#10     %|
+</detalhe>
+
+<rod_grupo nome="1">
++---------------------------------+-------------+--------------+-------------+-------------+-------------+-------------+---------+
+| Total                                         | #11          |             |#12          |#13          | #14         |#15     %|
++-----------------------------------------------+--------------+-------------+-------------+-------------+-------------+---------+
+
+</rod_grupo>
+
+<rod_relat>
+
++-----------------------------------------------+--------------+-------------+-------------+-------------+-------------+---------+
+| Total geral                                   | #16          |             |#17          |#18          | #19         |#20     %|
++-----------------------------------------------+--------------+-------------+-------------+-------------+-------------+---------+
+</rod_relat>
+
+<rod_pagina>
++-----------------------------------------------+------------+-------------+-------------+-------------+---------------+----------+
+</rod_pagina>
+
+<hash>24bb455f2d6a1a08e2e528363754f0ae</hash>
+</relatorio>

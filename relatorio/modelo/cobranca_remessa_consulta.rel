@@ -1,0 +1,78 @@
+<relatorio dados="cobranca_remessa_consulta" docname="Relatório de Remessa de Cobrança" font_size="x-small" ordem="numero_remessa,operacao">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18
+3  banco				tam=7	alinha=esquerda
+4  agencia				tam=5	alinha=esquerda
+5  conta_corrente		tam=8	alinha=esquerda
+6  arquivo				tam=10
+7  numero_remessa		tam=9   alinha=esquerda
+8  nosso_numero			tam=8	alinha=centro
+9  documento			tam=8	alinha=centro
+10 vencto				tam=10	alinha=centro   fmt=data
+11 cliente				tam=40	alinha=esquerda
+12 valor				tam=13	alinha=direita	fmt=float2
+13 total				tam=5	alinha=esquerda fmt=float0  func=contar  campo=nosso_numero  grupo=2
+14 total_valor			tam=13	alinha=direita  fmt=float2  func=soma    campo=valor         grupo=2
+15 operacao				tam=80
+16 total_remessa		tam=5	alinha=esquerda fmt=float0  func=contar  campo=nosso_numero  grupo=1
+17 total_valor_remessa	tam=13  alinha=direita  fmt=float2  func=soma    campo=valor         grupo=1
+18 total_geral			tam=5	alinha=esquerda	fmt=float0  func=contar  campo=nosso_numero
+19 total_valor_geral    tam=13	alinha=direita	fmt=float2  func=soma    campo=valor
+20 portador				tam=40	alinha=esquerda
+98 titulo_p             tam=102  alinha=centro  expr='REMESSA DE COBRANÇA'
+99 titulo               tam=99  alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                    #2                
+------------------------------------------------------------------------------------------------------
+
+#98
+#99
+
+Portador.: #20
+Banco....: #3      
+AG.......: #4    
+C/C......: #5
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="remessa">
++----------------------------------------------------------------------------------------------------+
+| Remessa: #7                                                                                        |
++----------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="2" quebra="remessa,operacao">
++----------------------------------------------------------------------------------------------------+
+| Instrução: #15                                                                                     |
++-----------+-----------+------------+-----------------------------------------------+---------------+
+| Nosso nr. | Documento | Vencimento |                    Cliente                    |     Valor     |
++-----------+-----------+------------+-----------------------------------------------+---------------+
+</cab_grupo>
+<detalhe>
+| #8        | #9        | #10        | #11                                           | #12           |   
+</detalhe>
+
+<rod_grupo nome="2">
++-----------+-----------+------------+-----------------------------------------------+---------------+
+| Total instrução   #13  registros                                                   | #14           |
++------------------------------------------------------------------------------------+---------------+
+
+</rod_grupo>
+
+<rod_grupo nome="1">
++------------------------------------------------------------------------------------+---------------+
+| Total remessa     #16  registros                                                   | #17           |
++------------------------------------------------------------------------------------+---------------+
+
+
+</rod_grupo>
+<rod_relat>
++------------------------------------------------------------------------------------+---------------+
+| Total geral       #18  registros                                                   | #19           |
++------------------------------------------------------------------------------------+---------------+
+</rod_relat>
+
+<hash>db7e14ca7e6344d612d8f1cf79799c64</hash>
+</relatorio>

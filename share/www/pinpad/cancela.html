@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>AutoSystem</title>
+	</head>
+	<body>
+		<form method="POST" action="/confirma_transacao/">
+			Tem certeza que deseja cancelar a transação?
+			<input type="hidden" name="CODIGO" tal:attributes="value valido/codigo">
+			<input type="hidden" tal:content="valido/descricao">
+			<input type="SUBMIT" value="Não">
+		</form>
+		<form method="POST" action="/confirma_cancela/">
+			<input type="hidden" name="CODIGO" tal:attributes="value valido/codigo">
+			<input type="SUBMIT" value="Sim">
+		</form>
+	</body>
+</html>

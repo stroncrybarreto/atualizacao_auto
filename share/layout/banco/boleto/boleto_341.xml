@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+	<nome>Itau</nome>
+   
+	<sessao>
+		<nome>arquivo</nome>
+
+		<registro>
+			<tipo>string</tipo>
+			<chave>local_pagamento_a</chave>
+			<padrao>ATE O VCTO., PAGUE PREFERENCIALMENTE NO ITAU</padrao>
+			<descricao>Local de Pagamento 1</descricao>
+		</registro>
+		<registro>
+			<tipo>string</tipo>
+			<chave>local_pagamento_b</chave>
+			<padrao>APOS O VENCIMENTO, PAGUE SOMENTE NO ITAU</padrao>
+			<descricao>Local de Pagamento 2</descricao>
+		</registro>
+		<registro>
+			<tipo>string</tipo>
+			<chave>local_pagamento_c</chave>
+			<padrao>ACESSE ITAU.COM.BR/BOLETOS E PAGUE EM QUALQUER BANCO</padrao>
+			<descricao>Local de Pagamento 3</descricao>
+		</registro>
+		<registro>
+            <tipo>string</tipo>
+            <chave>instrucoes</chave>
+            <padrao>Instruções de responsabilidade do beneficiário. Qualquer dúvida sobre este boleto, contate o beneficiário.</padrao>
+			<descricao>Instruções de pagamento padrão</descricao>
+        </registro>
+	</sessao>
+</layout>

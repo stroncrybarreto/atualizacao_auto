@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Aviso de Abastecimento</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr> 
+    <td><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Prezado Cliente,</font></p>
+      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">A seguir est&atilde;o as informa&ccedil;&otilde;es de abastecimento realizado em nossos postos.</font></p>
+      <table border="0" cellpadding="1" cellspacing="0" bgcolor="#999999">    
+      <tr>
+        <td><table width="635" border="0" cellpadding="3" cellspacing="2">
+        <tr align="center">
+        <td colspan="2"><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Informa&ccedil;&otilde;es do Cliente</font></strong></td>
+            <tr> 
+		    <td width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Cliente:</strong></font></td>
+              <td width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="pessoa/pessoa.nome"> </strong></font></td>
+            </tr>
+        </table></td>
+        </tr>
+        </table>
+        </td>
+      </tr>
+
+      <!--  Lista os postos onde as vendas foram efetuadas... -->
+      <td> 
+      <tr tal:repeat="empresa empresa_list">
+      <td><table border="0" cellpadding="1" cellspacing="0" bgcolor="#999999">
+      <td><table width="635" border="0" cellpadding="3" cellspacing="2">
+          <tr align="center">
+          <td colspan="4"><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Informa&ccedil;&otilde;es do Posto</font></strong></td>
+              </tr>
+              <tr> 
+                <td colspan="1" width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Posto:</strong></font></td>
+                <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="empresa/nome"> </strong></font></td>
+              </tr>
+              <tr> 
+                <td colspan="1" width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Cidade:</strong></font></td>
+                <td colspan="3" width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="empresa/cidade"> </strong></font></td>
+              </tr>
+      <!-- Lista as vendas efetuadas -->
+        <tr tal:repeat="venda empresa/venda_list">
+            <tr>
+            <td colspan="4"><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Informa&ccedil;&otilde;es da Venda</font></strong></td>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Data / Hora:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/venda.hora"> </strong></font></td>
+            </tr>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Placa do ve&iacute;culo:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/venda.placa"></strong></font></td>
+            </tr>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>KM:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/venda.km"></strong></font></td>
+            </tr>
+            <tr>
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>HM:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/venda.hm"></strong></font></td>
+            </tr>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Motorista:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/venda.motorista"></strong></font></td>
+            </tr>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Cupom Fiscal:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/cupom.nr_cupom"></strong></font></td>
+            </tr>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Nota Fiscal:</strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/venda.numero_nota"></strong></font></td>
+            </tr>
+            <tr> 
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Observa&ccedil;&atilde;o:
+               </strong></font></td>
+              <td colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="venda/obs"></strong></font></td>
+            </tr>
+            <tr>
+              <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Mercadoria / Servi&ccedil;o</font></strong></td>
+              <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Quantidade</font></strong></td>
+              <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Pre&ccedil;o Unit. </font></strong></td>
+              <td><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Valor</font></strong></td>
+            </tr>
+            <tr tal:repeat="produto venda/produto_list">
+               <td bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="produto/nome"> </strong> </font></td>
+               <td align="right" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong tal:content="produto/quantidade"> </strong> <strong tal:content="unid_med"> </strong></font></td>
+               <td align="right" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>R$ </strong><strong tal:content="produto/preco_unit"> </strong></font></td> 
+               <td align="right" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>R$ </strong> <strong tal:content="produto/valor"> </strong></font></td>
+            </tr>
+            <tr>
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Desconto:</strong></font></td>
+              <td align="right"colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>R$ </strong><strong tal:content="venda/valor_desconto"></strong></font></td>
+            </tr>
+            <tr>
+              <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Valor Total:</strong></font></td>
+              <td align="right"colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>R$ </strong><strong tal:content="venda/valor_venda"></strong></font></td>
+            </tr>  
+            </tr>
+          </tr>
+
+        </table></td>
+      </table></td></tr>
+  </td>
+
+  <!-- Totalizador de vendas... -->
+  <td>
+    <table border="0" cellpadding="1" cellspacing="0" bgcolor="#999999"> 
+    <tr align="center">
+    <td><table width="635" border="0" cellpadding="3" cellspacing="2">
+    <td colspan="4"><strong><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif">Totaliza&ccedil;&atilde;o de Vendas</font></strong></td>
+      <tr> 
+        <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Valor total das vendas</strong></font></td>
+        <td align="right" colspan="3"width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>R$ </strong><strong tal:content="valor_total"> </strong></font></td>
+      </tr>
+      <tr> 
+        <td colspan="1"width="29%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Valor total dos descontos</strong></font></td>
+        <td align="right" colspan="3" width="71%" bgcolor="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>R$ </strong><strong tal:content="desconto_total"> </strong></font></td>
+      </tr>
+    </table></td>
+  </tr>
+  </table>
+</td>
+
+<tr>
+  <td>
+    <p>
+      <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+        <div>
+        Documento emitido por Linx - <strong tal:content="sistema_versao"></strong> - <a target="_blank" href="https://www.linx.com.br/autosystem/">www.linx.com.br/autosystem</a>
+        &nbsp;
+		      <a href="https://www.linx.com.br/autosystem/" target="_blank">
+			      <img src="data:image/png;base64,/9j/4AAQSkZJRgABAAEAYABgAAD//gAfTEVBRCBUZWNobm9sb2dpZXMgSW5jLiBWMS4wMQD/2wCEAAUFBQgFCAwHBwwMCQkJDA0MDAwMDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0BBQgICgcKDAcHDA0MCgwNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDf/EAaIAAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKCwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foRAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/AABEIACYALAMBEQACEQEDEQH/2gAMAwEAAhEDEQA/APsugAoAKACgDlPE2t/YoxZ2jA310wjhUHlSern0CiuCvXUV7Kk06stEl0v1Z7+XYP20niMQrYaknOo3s0vsrzbOkto3hiRJGLuqgMx6k45NdsU0km7u254tSUZTlKEVGLbaS6LoieqMgoAKACgDyXTbqxm8TylTkQqURjyPMJ+bH8ge3SvjsP8AV8HjZxUn+8k+Vt6KT3S8ux+gYiliKeU07q3PLmklo+RbX/No9ar7E/PzEtfEFte6Yms24kktpIhMgVCZGQ9MJ1z7UAatvOLmNZVDKHUMAw2sM9iD0PqKAJqAMXxBNcw2Mn2FC9ww2oB2Lcbj7Cues5KD9kry2Xz6npYGFKeIh9ako0k+aV+qWtvVnBaH8OnsV86eb9+/zHA4BPbPc+9fLVcmlXXNKryz3Vlsz6zG59Gu/Z0af7qOiu916dPQ9NskliiCTkM68bh3A6E+9fR4WNaFJQxTTqR05l9pLZ+r6nxFZwlNypK0Xrbs+q9Dy/Qbuaw8A29xbMY5YtORkYdVOODXcYGdLo8nj2/FlqNxMlrY2VtLshdozJcXCsfNdlIJ8vblV6HPIoArLPqVvov2/wA95rnw1ezRyEtj7XbQY3rJ23shGD/s+9AHX/D+efXY5vEs7sI9UKtawk5WK1QfuuBwJGJYue/FAHotABQB81xa7NobXvw7mAlW0sJZrW5HBFuu3ZHKD1cZOSvFAHpHg5Cmq3J/6cdPH5JJQByDRSakz6AG2Q6lrN41ywyC1vFsLwjHQyZAz2FAHa+DLZtAv77w/GQbO2MdxajnMUc+R5HP8KFMr9TQB6NQAUAf/9k="
+			        alt="Linx" width="32px" height="32px"/>
+		      </a>
+        </div>
+      </font>
+    </p>
+  </td>
+</tr>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<relatorio dados="forma_pagamento_funcionario" paper_orientation="landscape" tamfonte="6" fontsize="xx-small" font_height="compact">
+<apelidos>
+3  titulo			   tam=999 
+4  subtitulo           tam=999    
+5  empresa_cod_nome    tam=60
+6  linha_moldura       tam=999
+7  linha_cabecalho_1   tam=999
+8  usuario             tam=27
+9  linha_detalhe       tam=999
+10 linha_total         tam=999
+11 linha_media         tam=999
+12 codigo_funcionario  tam=6
+13 linha_vazia 		   tam=999
+14 linha_tracejada	   tam=999
+15 linha_cabecalho_2   tam=999
+40 tipo_relatorio	   tam=999
+45 linha_final		   tam=999
+46 linha_empresa       tam=999
+47 cab_empresa         tam=999
+</apelidos>
+
+<cab_pagina>
+#13
+----------------#14
+
+#3
+#4                                                                                                                                                                                                               											
+
+
+</cab_pagina>                                                                                                          
+
+<cab_grupo nome="1" quebra="empresa" repeticao="0">
++--------------#46
+| #47
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa">
++---------------+#6
+|  Funcionário  |#7
+|               |#15
++---------------+#6
+</cab_grupo>
+
+<detalhe>
+|#9 
+</detalhe>
+
+<rod_grupo nome="2">
++---------------+#6
+| Total         |#10
++---------------+#6
+
+</rod_grupo>
+
+<rod_grupo nome="1">
+</rod_grupo>
+
+<rod_pagina>
++---------------#6
+</rod_pagina>
+
+<hash>a0433f433dba49dea5418075a8a4ebcb</hash>
+</relatorio>

@@ -1,0 +1,46 @@
+<relatorio dados="log_modificacao" paper_orientation="landscape">
+<apelidos>
+1  rel_posto_nome		tam=40
+2  rel_data_hora		tam=18
+3  titulo			tam=172 alinha=centro
+4  pgd_when			tam=16
+5  pgd_gfid			tam=12
+6  pgd_username			tam=12
+7  pgd_host			tam=16
+8  pgd_optype			tam=3
+9  tabela			tam=14
+10 campo			tam=14 alinha=esquerda
+11 antes			tam=12 alinha=esquerda
+12 depois			tam=12 alinha=esquerda
+13 total_registros		tam=8 func=contar alinha=esquerda
+
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                                                                         #2
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+                                                                                                                                                                            
+                                                                                                                                                                            
+                                                        L O G   D E   M O D I F I C A Ç Õ E S   N O   S I S T E M A                                                            
+#3                                                                                                                                                                          
+                                                                                                                                                                            
+                                                                                                                                                                            
++------------------+--------------+--------------+-----------------------+-----+----------------------+----------------------+----------------------+----------------------+
+| Data/Hora        | GFid         | Usuário      | Estacao               | Op* | Tabela               | Campo                | Antes                | Depois               |
++------------------+--------------+--------------+-----------------------+-----+----------------------+----------------------+----------------------+----------------------+
+</cab_pagina>
+
+<detalhe>
+| #4               | #5           | #6           | #7                    | #8  | #9                   | #10                  | #11                  | #12                  |
+</detalhe>
+
+<rod_relat>
++------------------+--------------+--------------+-----------------------+-----+----------------------+----------------------+----------------------+----------------------+
+| #13     Registros                                                                                                                                                        |
++------------------+--------------+--------------+-----------------------+-----+----------------------+----------------------+----------------------+----------------------+
+* ALT: Alteração - EXC: Exclusão - INS: Inserção
+** Não foi possivel recuperar informações da alteração
+</rod_relat>
+
+<hash>40d08f7ff8a5e487a0a89b8680ae8665</hash>
+</relatorio>

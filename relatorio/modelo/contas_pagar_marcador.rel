@@ -1,0 +1,58 @@
+<relatorio dados="contas_pagar" tamfonte="8" ordem="marcador,movto_pessoa,movto_vencto">
+<apelidos>
+1 rel_posto_nome 		tam=60
+2 rel_data_hora 		tam=18
+6 movto_vencto 			tam=10 fmt=data
+7 movto_documento 		tam=10	alinha=centro
+8 movto_data_doc 		tam=10 fmt=data
+9 marcador		 		tam=30
+10 movto_obs 			tam=18
+11 movto_valor 			tam=13 fmt=float2
+12 quebra_total 		tam=13 fmt=float2  func=soma campo=movto_valor  grupo=1
+13 total 				tam=13 fmt=float2  func=soma campo=movto_valor
+14 subtitulo 			tam=132 alinha=centro
+20 multa 				tam=8 fmt=float2
+21 juros 				tam=8 fmt=float2
+22 subtotal_multa 		tam=8 fmt=float2 func=soma campo=multa grupo=1
+23 subtotal_juros 		tam=8 fmt=float2 func=soma campo=juros grupo=1
+24 total_multa 			tam=8 fmt=float2 func=soma campo=multa
+25 total_juros 			tam=8 fmt=float2 func=soma campo=juros
+</apelidos>
+<cab_pagina> 
+#1                                                                                                                 #2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#14
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="marcador">
++---------------------------------------------------------------------------------------------------------------------------------+
+| Marcador: #9                                                                                                                    |
++------------+------------+------------+----------------------------------------------------+----------+----------+---------------+
+| Vencimento | Documento  |    Data    |                     Observação                     |   Multa  |   Juros  | Valor a pagar |
++------------+------------+------------+----------------------------------------------------+----------+----------+---------------+
+</cab_grupo>
+
+<detalhe>
+| #6         | #7         | #8         | #10                                                | #20      | #21      | #11           |
+</detalhe>
+
+<rod_grupo nome="1">
++------------+------------+------------+----------------------------------------------------+----------+----------+---------------+
+| Subtotal                                                                                  | #22      | #23      | #12           |
++-------------------------------------------------------------------------------------------+----------+----------+---------------+
+
+</rod_grupo>
+
+<rod_relat>
++-------------------------------------------------------------------------------------------+----------+----------+---------------+
+| Total                                                                                     | #24      | #25      | #13           |
++-------------------------------------------------------------------------------------------+----------+----------+---------------+
+</rod_relat>
+
+<rod_pagina>
++-------------------------------------------------------------------------------------------+----------+----------+---------------+
+</rod_pagina>
+
+<hash>764b2938a59badb971140bd6127b2d4b</hash>
+</relatorio>

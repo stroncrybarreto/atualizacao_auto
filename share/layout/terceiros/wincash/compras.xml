@@ -1,0 +1,76 @@
+<layout>
+  <nome>compras</nome>
+  <sessao>
+    <nome>header</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_header</chave><tipo>text</tipo><padrao>H</padrao><descricao /></registro>
+    <registro><inicio>2</inicio><fim>42</fim><chave>razao_social</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>42</inicio><fim>50</fim><chave>cod_componente</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>50</inicio><fim>58</fim><chave>cod_filial</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+  </sessao>
+  <sessao>
+    <nome>nf</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_reg</chave><tipo>integer</tipo><padrao>1</padrao><descricao>1=NF  2=ITEM NF</descricao></registro>
+    <registro><inicio>2</inicio><fim>8</fim><chave>id</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>8</inicio><fim>16</fim><chave>data_entrada</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>16</inicio><fim>24</fim><chave>data_emissao</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>24</inicio><fim>39</fim><chave>num_nf</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>39</inicio><fim>41</fim><chave>tipo_nf</chave><tipo>text</tipo><padrao /><descricao>CE=COMPRA   BO=BONIFICACAO</descricao></registro>
+    <registro><inicio>41</inicio><fim>42</fim><chave>status_nf</chave><tipo>text</tipo><padrao /><descricao>F=FINALIZADA  P=PENDENTE  C=CANCELADA</descricao></registro>
+    <registro><inicio>42</inicio><fim>45</fim><chave>cod_fornecedor</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>45</inicio><fim>65</fim><chave>nome_fornecedor</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>65</inicio><fim>75</fim><chave>valor_icms</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>75</inicio><fim>85</fim><chave>valor_substituicao</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>85</inicio><fim>95</fim><chave>valor_frete</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>95</inicio><fim>105</fim><chave>valor_total_nf</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>105</inicio><fim>115</fim><chave>valor_despesas</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>115</inicio><fim>125</fim><chave>valor_outros</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>125</inicio><fim>135</fim><chave>valor_desconto</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>135</inicio><fim>145</fim><chave>valor_ipi</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>145</inicio><fim>153</fim><chave>data_vencto_1</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>153</inicio><fim>161</fim><chave>data_vencto_2</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>161</inicio><fim>169</fim><chave>data_vencto_3</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>169</inicio><fim>177</fim><chave>data_vencto_4</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>177</inicio><fim>187</fim><chave>valor_vencto_1</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>187</inicio><fim>197</fim><chave>valor_vencto_2</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>197</inicio><fim>207</fim><chave>valor_vencto_3</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>207</inicio><fim>217</fim><chave>valor_vencto_4</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>217</inicio><fim>252</fim><chave>usuario_cancelamento</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>252</inicio><fim>260</fim><chave>data_cancelamento</chave><tipo>date4y</tipo><padrao /><descricao /></registro>
+    <registro><inicio>260</inicio><fim>266</fim><chave>modelo</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>266</inicio><fim>269</fim><chave>serie</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>269</inicio><fim>271</fim><chave>subserie</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>271</inicio><fim>281</fim><chave>base_icms</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>281</inicio><fim>291</fim><chave>base_substituicao</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>291</inicio><fim>292</fim><chave>tipo_ipi</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>292</inicio><fim>302</fim><chave>desconto_perc</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>302</inicio><fim>312</fim><chave>desconto_perc_valor</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+  </sessao><sessao>
+    <nome>produto</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_reg</chave><tipo>integer</tipo><padrao>2</padrao><descricao>1=NF  2=ITEM NF</descricao></registro>
+    <registro><inicio>2</inicio><fim>8</fim><chave>id</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>8</inicio><fim>21</fim><chave>cod_produto</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>21</inicio><fim>31</fim><chave>quantidade</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>31</inicio><fim>41</fim><chave>preco_custo</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>41</inicio><fim>51</fim><chave>preco_custo_total</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>51</inicio><fim>61</fim><chave>valor_total</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>61</inicio><fim>71</fim><chave>tanque1</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>71</inicio><fim>81</fim><chave>tanque2</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>81</inicio><fim>91</fim><chave>tanque3</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>91</inicio><fim>101</fim><chave>tanque4</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>101</inicio><fim>111</fim><chave>tanque5</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>111</inicio><fim>121</fim><chave>preco_unit</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>121</inicio><fim>131</fim><chave>valor_desconto</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>131</inicio><fim>132</fim><chave>ipi</chave><tipo>text</tipo><padrao /><descricao>1=SIM 2=NAO</descricao></registro>
+    <registro><inicio>132</inicio><fim>142</fim><chave>valor_icms</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>142</inicio><fim>145</fim><chave>situacao_trib</chave><tipo>integer</tipo><padrao /><descricao>1=ISENTO 4=SUBSTITUICAO 5=TRIBUTADO 6=SERVICO 0=NAO CAD.</descricao></registro>
+    <registro><inicio>145</inicio><fim>150</fim><chave>aliquota_venda</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>150</inicio><fim>155</fim><chave>aliquota_compra</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>155</inicio><fim>165</fim><chave>ultimo_custo</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>165</inicio><fim>166</fim><chave>prod_novo</chave><tipo>integer</tipo><padrao /><descricao>1=SIM 2=NAO</descricao></registro>
+    <registro><inicio>166</inicio><fim>170</fim><chave>cfop</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>170</inicio><fim>180</fim><chave>valor_ipi</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>180</inicio><fim>190</fim><chave>desconto_perc</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>190</inicio><fim>200</fim><chave>desconto_perc_valor</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+    <registro><inicio>200</inicio><fim>210</fim><chave>desc_rateio_cabecalho</chave><tipo>float_2</tipo><padrao /><descricao /></registro>
+  </sessao>
+</layout>

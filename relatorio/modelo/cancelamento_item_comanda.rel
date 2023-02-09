@@ -1,0 +1,39 @@
+<relatorio dados="cancelamento_item_comanda" ordem="ordem" saida="pdf">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora    	tam=18
+3  titulo				tam=135 alinha=centro
+4  comanda				tam=10
+5  hota_cancela			tam=11	expr=hora_cancela.strftime('%d/%m %H:%M')
+6  usuario				tam=24
+7  terminal_canc				tam=24
+8  produto				tam=18
+9  quantidade			tam=10	alinha=direita
+10 valor				tam=15	fmt=float2
+11 valor_total			tam=15	fmt=float2	func=soma	campo=valor
+12 quantidade_itens		tam=8	func=contar
+13 total_qtd_itens		tam=100	expr='%s ite%s cancelado%s' % ((quantidade_itens,) + (quantidade_itens > 1 and ('ns', 's') or ('m', '')))
+</apelidos>
+<cab_pagina>
+{INV}#1                                                                                                                    #2
+{INV}--------------------------------------------------------------------------------------------------------------------------------------
+{INV}
+{TIT}                                                    CANCELAMENTO DE ITENS DA COMANDA
+{SUBTIT}#3
+
++------------+-------------+--------------------------+-------------------------+---------------------+------------+-----------------+
+|  Comanda   |  Data/Hora  |          Usuário         |         Terminal        |       Produto       | Quantidade |      Valor      |
++------------+-------------+--------------------------+-------------------------+---------------------+------------+-----------------+
+</cab_pagina>
+<detalhe>
+| #4         | #5          | #6                       | #7                      | #8                  | #9         | #10             |
+</detalhe>
+<rod_relat>
++------------+-------------+--------------------------+-------------------------+---------------------+------------+-----------------+
+| #13                                                                                                              | #11             |
++------------------------------------------------------------------------------------------------------------------+-----------------+
+</rod_relat>
+<rod_pagina>
+</rod_pagina>
+<hash>f2b92ddb0092e5b7d5c705e22d23c815</hash>
+</relatorio>

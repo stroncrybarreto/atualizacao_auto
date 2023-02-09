@@ -1,0 +1,63 @@
+<relatorio dados="venda_periodo" ordem="empresa_codigo,empresa,data">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18  
+3  subtitulo           tam=132   alinha=centro
+4  quebra_titulo       tam=104
+5  titulo3             tam=106   alinha=centro
+6  data                tam=10    fmt=data
+7  turno			   tam=2	 alinha=centro
+8  documento           tam=6
+9  numero_nota         tam=6
+10 pessoa_nome         tam=18
+11 forma_pgto          tam=17    
+12 vencto              tam=10    fmt=data
+13 valor_pgto          tam=14    fmt=float2
+14 valor_venda         tam=11    fmt=float2
+15 cont_venda          tam=8     alinha=esquerda	func=contar	grupo=1
+17 doc_pgto            tam=8     alinha=centro
+18 total_count_pagto   tam=8	 alinha=esquerda	func=contar
+
+19 total_valor_pago	   tam=14	 fmt=float2 func=soma	campo=valor_pgto	grupo=1
+20 total_valor_venda   tam=11	 fmt=float2  func=soma	campo=valor_venda	grupo=1
+21 empresa_cod_nome	   tam=115
+
+22 geral_valor_pago	   tam=14	 fmt=float2 func=soma	campo=valor_pgto
+23 geral_valor_venda   tam=11	 fmt=float2 func=soma	campo=valor_venda
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                  #2
+------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,empresa">
++----------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #21                                                                                                                     |
++------------+----+-------+--------+--------------------+-------------------+----------+------------+----------------+-------------+
+|    Data    | T. | Nr.CF | Nr.NF  |      Cliente       |  Forma pagamento  | Nr. doc. | Vencimento |   Valor pago   | Valor venda |
++------------+----+-------+--------+--------------------+-------------------+----------+------------+----------------+-------------+
+</cab_grupo>
+<detalhe>
+| #6         | #7 | #8    | #9     | #10                | #11               | #17      | #12        | #13            | #14         |
+</detalhe>
+<rod_grupo nome="1">
++------------+----+-------+--------+--------------------+-------------------+----------+------------+----------------+-------------+
+| Total empresa                                                                    Vendas: #15      | #19            | #20         |
++---------------------------------------------------------------------------------------------------+----------------+-------------+
+
+</rod_grupo>
+
+<rod_relat>
+
++---------------------------------------------------------------------------------------------------+----------------+-------------+
+| Total geral                                                                      Vendas: #18      | #22            | #23         |
++---------------------------------------------------------------------------------------------------+----------------+-------------+
+</rod_relat>
+<rod_pagina>
++------------+----+-------+--------+--------------------+-------------------+----------+------------+----------------+-------------+
+</rod_pagina>
+
+<hash>4d3725a283438b46ba26b332f8b0944b</hash>
+</relatorio>

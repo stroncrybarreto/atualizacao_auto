@@ -1,0 +1,172 @@
+<relatorio dados="estoque_lucro_bruto" font_size="xx-small">
+<apelidos>
+1  rel_posto_nome     	tam=60
+2  rel_data_hora      	tam=18
+3  resultado			tam=10	fmt=float2
+4  subtitulo			tam=168	alinha=centro
+5  titulo_p      		tam=168  expr='ESTOQUE E LUCRO BRUTO' alinha=centro
+</apelidos>
+<cab_pagina>
+#1                                                                                                                                                      #2
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#5
+#4
+
+</cab_pagina>
+
+<detalhe>
+</detalhe>
+
+<subrelat dados="estoque_lucro_bruto_lucro" nome="lucro" ordem="produto_nome">
+<apelidos>
+1  grupo_cod_nome		tam=110 
+2  produto_cod_nome		tam=37 
+3  qt_compra			tam=10 fmt=float2
+4  vl_unit_compra		tam=7  fmt=float3
+5  vl_compra			tam=10 fmt=float2
+6  qt_venda				tam=10 fmt=float2
+7  vl_unit_venda		tam=7  fmt=float3
+8  vl_venda				tam=10 fmt=float2
+9  lucro				tam=11 fmt=float2
+10 perc_lucro			tam=8  fmt=float2
+11 qt_estoque			tam=11 fmt=float2
+12 vl_estoque			tam=13 fmt=float2
+
+13 qt_compra_grupo		tam=10 fmt=float2 func=soma campo=qt_compra  grupo=1
+14 vl_compra_grupo		tam=10 fmt=float2 func=soma campo=vl_compra  grupo=1
+15 qt_venda_grupo		tam=10 fmt=float2 func=soma campo=qt_venda  grupo=1
+16 vl_venda_grupo		tam=10 fmt=float2 func=soma campo=vl_venda  grupo=1
+17 lucro_grupo			tam=11  fmt=float2 func=soma campo=lucro  grupo=1
+18 perc_lucro_grupo		tam=8  fmt=float2 expr=(lucro_grupo/(valor_base_grupo or 1))*100  grupo=1
+19 qt_estoque_grupo		tam=11 fmt=float2 func=soma campo=qt_estoque  grupo=1
+20 vl_estoque_grupo		tam=13 fmt=float2 func=soma campo=vl_estoque  grupo=1
+
+21 qt_compra_emp		tam=10 fmt=float2 func=soma campo=qt_compra  grupo=2
+22 vl_compra_emp		tam=10 fmt=float2 func=soma campo=vl_compra  grupo=2
+23 qt_venda_emp			tam=10 fmt=float2 func=soma campo=qt_venda  grupo=2
+24 vl_venda_emp			tam=10 fmt=float2 func=soma campo=vl_venda  grupo=2
+25 lucro_emp			tam=11  fmt=float2 func=soma campo=lucro  grupo=2
+26 perc_lucro_emp		tam=8  fmt=float2 expr=(lucro_emp/(valor_base_emp or 1))*100  grupo=2
+27 qt_estoque_emp		tam=11 fmt=float2 func=soma campo=qt_estoque  grupo=2
+28 vl_estoque_emp		tam=13 fmt=float2 func=soma campo=vl_estoque  grupo=2
+
+29 venda_produto		tam=168  expr='VENDA DE PRODUTOS' alinha=centro
+30 valor_base           tam=10 fmt=float2
+31 valor_base_grupo		tam=10 fmt=float2 func=soma campo=valor_base  grupo=1
+32 valor_base_emp       tam=10 fmt=float2 func=soma campo=valor_base  grupo=2
+
+</apelidos>
+
+<cab_relat>
+
+#29
+
+</cab_relat>
+
+<cab_grupo nome="2" quebra="empresa_nome,empresa_codigo">
+</cab_grupo>
+<cab_grupo nome="1" quebra="empresa_nome,empresa_codigo,grupo_codigo,grupo_nome">
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Grupo produto: #1                                                                                                                                                    |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+----------+-------------+---------------+
+|                Produto                | Qt. compra |   Unit. | Vl. compra |  Qt. venda |   Unit. | Vl. venda. |    Lucro    |  % Lucro | Qt. estoque |  Vl. estoque  |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+----------+-------------+---------------+
+</cab_grupo>
+<detalhe>
+| #2                                    | #3         | #4      | #5         | #6         | #7      | #8         | #9          | #10      | #11         | #12           |
+</detalhe>
+<rod_grupo nome="1">
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+----------+-------------+---------------+
+| Total grupo                           | #13        |         | #14        | #15        |         | #16        | #17         | #18      | #19         | #20           |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+----------+-------------+---------------+
+
+</rod_grupo>
+
+<rod_grupo nome="2">
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+----------+-------------+---------------+
+| Total de venda de produtos            | #21        |         | #22        | #23        |         | #24        | #25         | #26      | #27         | #28           |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+----------+-------------+---------------+
+</rod_grupo>
+
+<rod_relat>
+</rod_relat>
+
+</subrelat>
+
+<subrelat dados="estoque_lucro_bruto_receita" nome="receita">
+<apelidos>
+1  conta_cod_nome					tam=37
+2  valor							tam=12	fmt=float2
+3  total							tam=12	fmt=float2
+4  rec								tam=127 expr='RECEITAS' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#4
+
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+</cab_relat>
+
+<detalhe>
+| #1                                    |            |         |            |            |         |            |#2           |
+</detalhe>
+
+<rod_relat>
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+| Total de receitas                     |            |         |            |            |         |            |#3           |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+
+</rod_relat>
+</subrelat>
+
+<subrelat dados="estoque_lucro_bruto_despesa" nome="despesa">
+<apelidos>
+1  conta_cod_nome					tam=37
+2  valor							tam=11	fmt=float2
+3  total							tam=12	fmt=float2
+4  rec								tam=127 expr='CONTAS PAGAS' alinha=centro
+</apelidos>
+
+<cab_relat>
+
+#4
+
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+</cab_relat>
+
+<detalhe>
+| #1                                    |            |         |            |            |         |            | #2          |
+</detalhe>
+
+<rod_relat>
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+| Total de contas pagas                 |            |         |            |            |         |            |#3           |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+
+</rod_relat>
+
+</subrelat>
+<subrelat dados="estoque_lucro_bruto_totalizador" nome="totalizador">
+<apelidos>
+1  resultado					tam=12	fmt=float2
+</apelidos>
+
+<cab_relat>
+</cab_relat>
+<detalhe>
+
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+| Resultado apurado                     |            |         |            |            |         |            |#1           |
++---------------------------------------+------------+---------+------------+------------+---------+------------+-------------+
+</detalhe>
+<rod_relat>
+</rod_relat>
+</subrelat>
+
+<rod_relat>
+</rod_relat>
+
+<hash>c9deff08e58310885a8adbbda4aa6238</hash>
+</relatorio>

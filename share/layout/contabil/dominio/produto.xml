@@ -1,0 +1,75 @@
+<layout>
+  <nome>produto</nome>
+  <sessao>
+    <nome>produto</nome>
+    <registro><inicio>1</inicio><fim>1</fim><chave></chave><tipo></tipo><padrao>4</padrao><descricao></descricao></registro>
+    <registro><inicio>2</inicio><fim>15</fim><chave>codigo_produto</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>16</inicio><fim>22</fim><chave>empresa_codigo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>23</inicio><fim>29</fim><chave>codigo_grupo</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>30</inicio><fim>39</fim><chave>codigo_nbm</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>40</inicio><fim>79</fim><chave>nome_produto</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>80</inicio><fim>85</fim><chave>unid_medida</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>86</inicio><fim>98</fim><chave>preco_unit</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>99</inicio><fim>109</fim><chave>qtd_inicial</chave><tipo>float_4_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>110</inicio><fim>120</fim><chave>qtd_final</chave><tipo>float_4_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>121</inicio><fim>133</fim><chave>valor_ini_estoque</chave><tipo>float_3_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>134</inicio><fim>146</fim><chave>valor_fim_estoque</chave><tipo>float_3_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>147</inicio><fim>151</fim><chave>aliquota_ipi</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>152</inicio><fim>191</fim><chave>observacao</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>192</inicio><fim>199</fim><chave>codigo_ncm</chave><tipo>string</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>200</inicio><fim>204</fim><chave></chave><tipo></tipo><padrao></padrao><descricao>brancos</descricao></registro>
+    <registro><inicio>205</inicio><fim>206</fim><chave>especie</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>207</inicio><fim>211</fim><chave></chave><tipo></tipo><padrao></padrao><descricao>brancos</descricao></registro>
+    <registro><inicio>212</inicio><fim>213</fim><chave>unidade_padrao</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>214</inicio><fim>227</fim><chave>fator_conv</chave><tipo>float_3_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>228</inicio><fim>228</fim><chave>exporta_dnf</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>229</inicio><fim>235</fim><chave>cst</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>236</inicio><fim>253</fim><chave></chave><tipo></tipo><padrao></padrao><descricao>branco</descricao></registro>
+    <registro><inicio>254</inicio><fim>267</fim><chave>codigo_ean</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>268</inicio><fim>274</fim><chave>cod_prod_relevante</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>275</inicio><fim>284</fim><chave>data</chave><tipo>date_br</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>285</inicio><fim>291</fim><chave>cod_produto</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>292</inicio><fim>298</fim><chave>capac_vol</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>299</inicio><fim>299</fim><chave>incentivo_fiscal</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>300</inicio><fim>300</fim><chave>gera_cbt</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>301</inicio><fim>307</fim><chave>codigo_produto_grf</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>308</inicio><fim>308</fim><chave>gera_scanc</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>309</inicio><fim>315</fim><chave>codigo_produto_scanc</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>316</inicio><fim>316</fim><chave>conta_gasolina_a</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>317</inicio><fim>318</fim><chave>unid_medida</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>319</inicio><fim>319</fim><chave>tp_produto</chave><tipo>integer</tipo><padrao>1</padrao><descricao></descricao></registro>
+    <registro><inicio>320</inicio><fim>320</fim><chave>gera_88st</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>321</inicio><fim>327</fim><chave>codigo_sefaz</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>328</inicio><fim>332</fim><chave>aliquota_icms</chave><tipo>float_2_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>333</inicio><fim>333</fim><chave></chave><tipo></tipo><padrao>O</padrao><descricao>tipo de produto</descricao></registro>
+    <registro><inicio>334</inicio><fim>334</fim><chave>tipo_arma</chave><tipo></tipo><padrao>0</padrao><descricao></descricao></registro>
+    <registro><inicio>335</inicio><fim>589</fim><chave>descricao_arma</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>590</inicio><fim>596</fim><chave>genero</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>597</inicio><fim>603</fim><chave>codigo_servico</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>604</inicio><fim>610</fim><chave>classificacao</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>611</inicio><fim>612</fim><chave>tipo_item</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>613</inicio><fim>614</fim><chave>ncm_exterior</chave><tipo>integer</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>615</inicio><fim>616</fim><chave>cod_imposto_imp</chave><tipo>integer</tipo><padrao></padrao><descricao>codigo de  imposto de exportacao</descricao></registro>
+    <registro><inicio>617</inicio><fim>617</fim><chave>prod_composto</chave><tipo></tipo><padrao>N</padrao><descricao></descricao></registro>
+    <registro><inicio>618</inicio><fim>618</fim><chave>info_compl_ipm</chave><tipo></tipo><padrao>N</padrao><descricao>apenas GO</descricao></registro>
+    <registro><inicio>619</inicio><fim>620</fim><chave>cod_prod_ipm</chave><tipo>integer</tipo><padrao></padrao><descricao>apenas GO</descricao></registro>
+    <registro><inicio>621</inicio><fim>621</fim><chave>cesta_basica</chave><tipo></tipo><padrao>N</padrao><descricao>apenas AM</descricao></registro>
+    <registro><inicio>622</inicio><fim>628</fim><chave>codigo_dam</chave><tipo></tipo><padrao></padrao><descricao>apenas AM</descricao></registro>
+    <registro><inicio>629</inicio><fim>644</fim><chave>codigo_barra</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>645</inicio><fim>645</fim><chave>tipo_medicamento</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>646</inicio><fim>646</fim><chave>prod_inclui_st</chave><tipo></tipo><padrao>N</padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>647</inicio><fim>656</fim><chave>data_ini_st</chave><tipo>text</tipo><padrao></padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>657</inicio><fim>657</fim><chave>prod_preco_tab</chave><tipo></tipo><padrao></padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>658</inicio><fim>670</fim><chave>valor_unit_subst_trib</chave><tipo>float_2_casas</tipo><padrao></padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>671</inicio><fim>677</fim><chave>mva_st</chave><tipo>float_2_casas</tipo><padrao></padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>678</inicio><fim>678</fim><chave>grupo_st</chave><tipo>integer</tipo><padrao></padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>679</inicio><fim>679</fim><chave>equipamento_ecf</chave><tipo></tipo><padrao></padrao><descricao>apenas RS</descricao></registro>
+    <registro><inicio>680</inicio><fim>680</fim><chave>servico_trib_issqn</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>681</inicio><fim>683</fim><chave>ex_tipi</chave><tipo></tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>684</inicio><fim>684</fim><chave>periodicidade_ipi</chave><tipo></tipo><padrao>M</padrao><descricao></descricao></registro>
+    <registro><inicio>685</inicio><fim>691</fim><chave>classif_item</chave><tipo>item</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>692</inicio><fim>707</fim><chave>qtdade_ini</chave><tipo>float_5_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>708</inicio><fim>723</fim><chave>qtdade_fim</chave><tipo>float_5_casas</tipo><padrao></padrao><descricao></descricao></registro>
+    <registro><inicio>724</inicio><fim>791</fim><chave></chave><tipo></tipo><padrao></padrao><descricao>branco</descricao></registro>
+  </sessao>
+</layout>

@@ -1,0 +1,83 @@
+<relatorio dados="ranking_venda" ordem="empresa_codigo,empresa_cod_nome,empresa_nome,empresa,ordem_1,agrupamento_1,ordem desc">
+<apelidos>
+1  rel_posto_nome      tam=60
+2  rel_data_hora       tam=18
+3  titulo              tam=130  alinha=centro
+4  titulo_agrupar      tam=29   alinha=centro
+5  base_codigo         tam=8  alinha=centro
+6  base_nome           tam=29
+7  total_vendas        tam=10  fmt=float0
+8  quantidade          tam=12  fmt=float2
+9  preco_medio         tam=11  fmt=float3
+10 valor               tam=13  fmt=float2
+11 perc_ranking        tam=8   fmt=float2
+13 titulo_total        tam=20
+
+12 count_nome          tam=4   fmt=float0   func=contar campo=base_nome   grupo=2
+14 sub_total_vendas    tam=10  fmt=float0   func=soma campo=total_vendas  grupo=2
+15 sub_quantidade      tam=12  fmt=float2  func=soma campo=quantidade    grupo=2
+16 sub_valor           tam=13  fmt=float2  func=soma campo=valor         grupo=2
+17 sub_perc_ranking    tam=8   fmt=float2                                grupo=2
+
+18 count_nome_tot      tam=4   fmt=float0   func=contar campo=base_nome       grupo=1
+19 tot_total_vendas    tam=10  fmt=float0   func=soma campo=total_vendas      grupo=1
+20 tot_quantidade      tam=12  fmt=float2  func=soma campo=quantidade        grupo=1
+21 tot_valor           tam=13  fmt=float2  func=soma campo=valor             grupo=1
+22 tot_perc_rankig     tam=8   fmt=float2                                    grupo=1                       
+
+23 count_nome_geral        tam=4   fmt=float0   func=contar campo=base_nome
+24 tot_ger_total_vendas    tam=10  fmt=float0   func=soma campo=total_vendas 
+25 tot_ger_quantidade      tam=12  fmt=float2  func=soma campo=quantidade  
+26 tot_ger_valor           tam=13  fmt=float2  func=soma campo=valor       
+
+30 row_detalhe_agrupamento  tam=131
+31 row_agrupamento          tam=131
+32 empresa_cod_nome         tam=110
+
+40 ranking_empresa          tam=6  fmt=float0   func=contar campo=base_nome
+41 ranking_rede             tam=5  fmt=float0
+</apelidos>
+<cab_pagina>
+#1                                                                                                                 #2
+-----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_codigo,empresa">
++---------------------------------------------------------------------------------------------------------------------------------+
+| Empresa: #32                                                                                                                    |
+#31
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_codigo,empresa,ordem_1">
+#30
++----------+-------------------------------+------------+--------------+-------------+---------------+-----------+--------+-------+
+|  Código  | #4                            |   Vendas   |  Quantidade  | Preço médio |     Valor     |  % Total  |  R.E.  |  R.R. |
++----------+-------------------------------+------------+--------------+-------------+---------------+-----------+--------+-------+
+</cab_grupo>
+<detalhe>
+| #5       | #6                            | #7         | #8           | #9          | #10           | #11     % | #40   º| #41  º|
+</detalhe>
+<rod_grupo nome="2">
++----------+-------------------------------+------------+--------------+-------------+---------------+-----------+--------+-------+
+| Subtotal      #12   #13                  | #14        | #15          |             | #16           | #17     % |        |       |
++------------------------------------------+------------+--------------+-------------+---------------+-----------+--------+-------+
+<rod_grupo nome="1">
+| Total empresa #18   #13                  | #19        | #20          |             | #21           | #22     % |        |       |
++------------------------------------------+------------+--------------+-------------+---------------+-----------+--------+-------+
+
+</rod_grupo>
+
+</rod_grupo>
+
+<rod_relat>
+
++----------------------------------------------------------+------------+--------------+-------------+---------------+-----------+
+| Total geral   #23   #13                                  | #24        | #25          |             | #26           |           |
++----------------------------------------------------------+------------+--------------+-------------+---------------+-----------+
+</rod_relat>
+<rod_pagina>
++--------------+-------------------------------------------+------------+--------------+-------------+---------------+-----------+
+</rod_pagina>
+<hash>aa68457b576f3a8faac16e96ad6f757e</hash>
+</relatorio>

@@ -1,0 +1,106 @@
+<relatorio dados="livro_caixa_main">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  titulo               tam=130  alinha=centro
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                                #2
+----------------------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<detalhe>
+</detalhe>
+
+<subrelat dados="livro_caixa" ordem="conta_codigo">
+<apelidos>
+11  saldo_inicial_contas tam=13  fmt=float2
+12  movto_data           tam=10 fmt=data
+13  movto_documento      tam=11 alinha=centro
+14  conta_codigo         tam=11  alinha=centro
+15  conta_nome           tam=40
+16 motivo_nome          tam=37
+17 movto_valor_entrada  tam=13 fmt=float2
+18 movto_valor_saida    tam=13 fmt=float2
+19 valor_saldo_conta    tam=13 fmt=float2
+20 total_valor_entrada  tam=13 fmt=float2 func=soma  campo=movto_valor_entrada
+21 total_valor_saida    tam=13 fmt=float2 func=soma  campo=movto_valor_saida
+
+</apelidos>
+
+<cab_relat>
+
++------------+-------------+-------------+---------------------------------------+---------------+---------------+---------------+
+|    Data    |  Documento  |    Conta    |                Motivo                 |    Entrada    |     Saída     |     Saldo     |
++------------+-------------+-------------+---------------------------------------+---------------+---------------+---------------+
+| Saldo inicial                                                                                                  | #11           |
++------------+-------------+-------------+---------------------------------------+---------------+---------------+---------------+
+</cab_relat>
+<detalhe>
+| #12        | #13         | #14         | #16                                   | #17           | #18           | #19           |
+</detalhe>
+
+<rod_relat>
++------------+-------------+-------------+---------------------------------------+---------------+---------------+---------------+
+| Total geral                                                                    | #20           | #21           |               |
++--------------------------------------------------------------------------------+---------------+---------------+---------------+
+</rod_relat>
+
+</subrelat>
+
+<subrelat dados="livro_caixa_resumo" ordem="conta_codigo">
+<apelidos>
+30 tit_subrelat         tam=103  alinha=centro  expr="DETALHES DO SALDO"
+31 conta_codigo         tam=11
+32 conta_nome           tam=30
+33 total_entrada_conta  tam=14  fmt=float2
+34 total_saida_conta    tam=14  fmt=float2
+35 saldo_final          tam=15  fmt=float2
+36 total_entrada_fim    tam=14  fmt=float2 func=soma  campo=total_entrada_conta
+37 total_ssaida_fim     tam=14  fmt=float2 func=soma  campo=total_saida_conta
+38 total_saldo_final    tam=15  fmt=float2 func=soma  campo=saldo_final
+39 total_saldo_inicial  tam=19  fmt=float2
+40 total_entrada        tam=19  fmt=float2
+41 total_saida          tam=20  fmt=float2
+42 total_saldo_final    tam=20  fmt=float2
+43 saldo_geral_entrada  tam=19  fmt=float2
+44 saldo_geral_saida    tam=20  fmt=float2
+</apelidos>
+
+<cab_relat>
+
+#30
+
++-------------+----------------------------------+----------------+----------------+-----------------+
+|    Conta    |               Nome               |    Entradas    |     Saídas     |      Saldo      |
++-------------+----------------------------------+----------------+----------------+-----------------+
+</cab_relat>                                     
+
+<detalhe>
+| #31         | #32                              | #33            | #34            | #35             |
+</detalhe>
+
+<rod_relat>
++-------------+----------------------------------+----------------+----------------+-----------------+
+| Total                                          | #36            | #37            | #38             |
++------------------------------------------------+----------------+----------------+-----------------+
+
++---------------------+---------------------+----------------------+
+| Saldo anterior      | #39                 |                      |
+| Total entrada/saída | #40                 | #41                  |
+| Saldo atual         |                     | #42                  |
+| Diferença           | #43                 | #44                  |
++---------------------+---------------------+----------------------+
+</rod_relat> 
+
+</subrelat>
+
+
+<rod_relat>
+</rod_relat>
+
+<hash>3e3d438ece6957b324bdeb8d6c1805f3</hash>
+</relatorio>

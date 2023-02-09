@@ -1,0 +1,91 @@
+<relatorio dados="movto_conta_analitico_data" tamfonte="8" ordem="movto_data,movto_turno,movto_hora">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=16 alinha=esquerda
+3  data_ini             tam=10 fmt=data
+4  data_fim             tam=10 fmt=data
+5  conta_nome           tam=40
+6  conta_saldo          tam=10 fmt=float2
+7  movto_data           tam=10 fmt=data
+8  movto_turno          tam=2  fmt=%02d
+9  movto_seq            tam=3  fmt=%03d
+10 motivo_nome          tam=18
+11 movto_entrada        tam=10 fmt=float2
+12 movto_saida          tam=10 fmt=float2
+13 xmovto_saldo         tam=14 fmt=float2	expr=movto_saldo_ini+movto_total_entrada-movto_total_saida
+14 pessoa_nome          tam=18
+15 movto_total_entrada  tam=10 fmt=float2	func=soma   campo=movto_entrada     grupo=4
+16 movto_total_saida    tam=10 fmt=float2	func=soma   campo=movto_saida       grupo=4
+17 movto_saldo_ini      tam=14 fmt=float2
+18 movto_documento      tam=10
+19 total_entrada	    tam=10 fmt=float2	func=soma   campo=movto_entrada     
+20 total_saida          tam=10 fmt=float2	func=soma   campo=movto_saida    
+21 movto_obs	        tam=14
+22 empresa_nome			tam=60
+25 mes_nome				tam=40
+26 movto_mes			tam=3
+98 titulo				tam=116 alinha=centro 
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                    #2
+----------------------------------------------------------------------------------------------------------------------
+   
+                                              MOVIMENTAÇÃO DE CONTAS
+                                          Período #3         à #4
+#98
+                                                    Analítico														
+													
+</cab_pagina>
+
+<cab_grupo nome="2" quebra="conta_codigo">
++--------------------------------------------------------------------------------------------------------------------+
+| Conta: #5                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="5" quebra="conta_codigo,motivo_nome">
++--------------------------------------------------------------------------------------------------------------------+
+| Motivo de Movimentação: #10                                                                                        |
++--------------------------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="4" quebra="conta_codigo,motivo_nome,movto_mes">
++--------------------------------------------------------------------------------------------------------------------+
+| Mês: #25                                                                                                           |
++------------+-----+-----+-----------+-------------------+------------+------------+----------------+----------------+
+|    Data    | Tur | Seq | Documento |      Motivo       |  Entrada   |   Saída    |     Saldo      |      Obs       |
++------------+-----+-----+-----------+-------------------+------------+------------+----------------+----------------+
+</cab_grupo>
+<cab_grupo nome="3" quebra="conta_codigo,motivo_nome,movto_mes" repeticao="0">
+| Saldo inicial                                                                    | #17            |                |
+</cab_grupo>
+<detalhe>
+| #7         |  #8 | #9  | #18       | #10               | #11        | #12        | #13            | #21            |
+</detalhe>
+<rod_grupo nome="3">
+</rod_grupo>
+<rod_grupo nome="5">
+</rod_grupo>
+<rod_grupo nome="4">
++------------+-----+-----+-----------+-------------------+------------+------------+----------------+----------------+
+| TOTAL                                                  | #15        | #16        | #13            |                |
++--------------------------------------------------------+------------+------------+----------------+----------------+
+
+</rod_grupo>
+<rod_grupo nome="2">
+
+</rod_grupo>
+
+<rod_pagina>
++------------+-----+-----+-----------+-------------------+------------+------------+----------------+----------------+
+</rod_pagina>
+<rod_relat>
+
++--------------------------------------------------------+------------+------------+---------------------------------+
+| TOTAL GERAL                                            | #19        | #20        |                                 |
++--------------------------------------------------------+------------+------------+---------------------------------+
+</rod_relat>
+
+<hash>0c4f099df0de547bc83f2411da2dcfb9</hash>
+</relatorio>

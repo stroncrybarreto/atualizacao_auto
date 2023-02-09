@@ -1,0 +1,78 @@
+<relatorio dados="inadimplencia" ordem="">
+<apelidos>
+1  rel_posto_nome		tam=60
+2  rel_data_hora		tam=18  
+3  titulo				tam=117	alinha=centro
+4  tipo_nome			tam=99 
+5  pessoa_codigo		tam=8  alinha=centro
+6  pessoa_nome			tam=48
+7  documento			tam=9   alinha=centro
+8  data_doc				tam=10  fmt=data
+9  vencto				tam=10	fmt=data
+10  valor				tam=13	fmt=float2
+11 total				tam=13	fmt=float2	func=soma	campo=valor		grupo=2
+12 empresa_cod_nome     tam=100
+
+20 titulos_a_vencer		tam=13  fmt=float2
+21 linha_vencimento     tam=999
+22 total_vencido		tam=13	fmt=float2
+23 total_valor_nao_faturado	tam=13	fmt=float2	
+24 total_geral			tam=13	fmt=float2
+25 perc_inadimplencia	tam=13	fmt=float2
+
+
+</apelidos>
+<cab_pagina>
+#1                                                                                                   #2               
+---------------------------------------------------------------------------------------------------------------------
+
+#3
+
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_cod_nome">
++-------------------------------------------------------------------------------------------------------------------+
+| Empresa: #12                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------+
+
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_cod_nome,ordem_x">
++-------------------------------------------------------------------------------------------------------------------+
+| #4                                                                                                                |
++----------+--------------------------------------------------+-----------+------------+------------+---------------+
+| Código   |                       Nome                       | Documento |   Emissão  | Vencimento |     Valor     |
++----------+--------------------------------------------------+-----------+------------+------------+---------------+
+</cab_grupo>
+<detalhe>
+| #5       | #6                                               | #7        | #8         | #9         | #10           |
+</detalhe>
+<rod_grupo nome="2">
++----------+--------------------------------------------------+-----------+------------+------------+---------------+
+| Total                                                                                             | #11           |
++---------------------------------------------------------------------------------------------------+---------------+
+
+</rod_grupo>
+<rod_grupo nome="1">
++------------------------------------------------+
+|                     RESUMO                     | 
++--------------------------------+---------------+
+| Total a Vencer                 | #20           |
++--------------------------------+---------------+
+#21
+| Total vencidos                 | #22           |
++--------------------------------+---------------+
+| Documentos não faturado        | #23           |
++--------------------------------+---------------+
+| Total geral                    | #24           |
++--------------------------------+---------------+
+| Inadimplência da carteira      | #25          %|
++--------------------------------+---------------+
+</rod_grupo>
+<rod_relat>
+
+</rod_relat>
+<rod_pagina>
++----------+--------------------------------------------------+-----------+------------+---------------+
+</rod_pagina>
+
+<hash>ba48e335ac5fe4dcdd241feec5be1a8e</hash>
+</relatorio>

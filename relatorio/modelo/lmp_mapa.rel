@@ -1,0 +1,72 @@
+<relatorio dados="lmp_mapa" paper_size="A4" font_height="compact">
+<apelidos>
+1 pagina            tam=4
+2 empresa_nome      tam=40
+3 empresa_cpf       tam=18
+4 empresa_inscr_est tam=17
+5 produto_nome      tam=40
+6 data              tam=10  fmt=data
+7 anp               tam=15
+8 empresa_cidade    tam=40
+9 mes               tam=10
+10 ano				tam=5
+11 base             tam=16
+12 cia              tam=25
+13 quantidade       tam=12 alinha=direita fmt=%.02f
+14 total            tam=12 alinda=direita fmt=%.02f
+15 data_extenso     tam=30 alinha=direita
+</apelidos>
+<cab_pagina>
++--------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                    |
+|                                  MAPA DE RETIRADAS E VENDAS DE PRODUTOS                                            |
+|                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                    |
+| Empresa  #2                                                                                                        |
+|                                                                                                                    |
+| Transportador - Revendedor - Retalhista registro ANP  #7                   CNPJ   #3                               |
+|                                                                                                                    |
+| com sede em  #8                                             e filiais em                                           |
+|                                                                                                                    |
+| apresenta a seguir o Mapa de Retiradas e Vendas de Produtos referente ao mês de    #9                Ano  #10      |
+|                                                                                                                    |
++----------------------------------------------+---------------------------------------------------------------------+
+|                                              |                                PRODUTOS                             |
++----------------------------------------------+---------------+------------+----------------------------------------+
+|                 RETIRADAS                    |               |            |             ÓLEO COMBUSTÍVEL           |
++------------------+---------------------------+  O. DIESEL    |QUER. ILUM. +----------------------------------------+
+|       BASE       |           CIA             |               |            | ATE -1A | BTE -1B |  OC -4  |  OUTROS  |
++------------------+---------------------------+---------------+------------+----------------------------------------+
+</cab_pagina>
+<detalhe>
+| #11              | #12                       | #13           |            |         |         |         |          |
+</detalhe>
+<rod_relat>
++------------------+---------------------------+---------------+------------+----------------------------------------+
+| TOTAL                                        | #14           |            |         |         |         |          |
++----------------------------------------------+---------------+------------+----------------------------------------+
+| VENDAS                                       |               |            |         |         |         |          |
++----------------------------------------------+---------------+------------+----------------------------------------+
+|Observações                                                                                                         |
+|                                                                                                                    |
+|                                                                                                                    |
+|                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                    |
+|                                                                                                                    |
+| _____________________________________________               #15                                                    |
+|     carimbo e assinatura do responsável                                                                            |
+|                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------+
+
+                                                              Portaria MME n.º 62, de  9/3/95 - inc. VIII - Art. 9.º
+                                                              Obs - encaminhar ao SindTrr devidamente preenchido até
+                                                                    o décimo dia do mês subsequente, para compilação
+                                                                    e posterior remessa ao DNC, através	 de  arquivo
+                                                                    magnético (Ofício DNC/GABDIR n.º 307 - 10/06/96)
+
+</rod_relat>
+
+<hash>c491c2e84fc2f09f58d27aa512ea00b7</hash>
+</relatorio>

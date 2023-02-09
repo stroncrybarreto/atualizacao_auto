@@ -1,0 +1,35 @@
+<layout>
+  <nome>venda_loja_pista</nome>
+  <sessao>
+    <nome>header</nome>
+    <registro><inicio>1</inicio><fim>2</fim><chave>id_header</chave><tipo>text</tipo><padrao>H</padrao><descricao>fixo H</descricao></registro>
+    <registro><inicio>2</inicio><fim>42</fim><chave>razao_social</chave><tipo>text</tipo><padrao /><descricao /></registro>
+    <registro><inicio>42</inicio><fim>50</fim><chave>cod_ponto_venda</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>50</inicio><fim>58</fim><chave>cod_componente</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>58</inicio><fim>66</fim><chave>cod_filial</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>66</inicio><fim>71</fim><chave>cod_estacao</chave><tipo>text</tipo><padrao /><descricao /></registro>
+  </sessao>
+  <sessao>
+    <nome>produto</nome>
+    <registro><inicio>1</inicio><fim>9</fim><chave>cod_filial</chave><tipo>integer</tipo><padrao /><descricao /></registro>
+    <registro><inicio>10</inicio><fim>23</fim><chave>codigo</chave><tipo>long</tipo><padrao /><descricao>cod produto vendido</descricao></registro>
+    <registro><inicio>24</inicio><fim>34</fim><chave>qtde</chave><tipo>float_3</tipo><padrao /><descricao>qtde vendida</descricao></registro>
+    <registro><inicio>35</inicio><fim>45</fim><chave>preco_unit</chave><tipo>float_3</tipo><padrao /><descricao>valor unit vendido</descricao></registro>
+    <registro><inicio>46</inicio><fim>54</fim><chave>data_venda</chave><tipo>date_us</tipo><padrao /><descricao>data da venda</descricao></registro>
+    <registro><inicio>55</inicio><fim>58</fim><chave>operador</chave><tipo>integer</tipo><padrao /><descricao>operador realizou venda</descricao></registro>
+    <registro><inicio>59</inicio><fim>65</fim><chave>cupom_fiscal</chave><tipo>integer</tipo><padrao /><descricao>numero cupom fiscal</descricao></registro>
+    <registro><inicio>66</inicio><fim>68</fim><chave>numero_item</chave><tipo>integer</tipo><padrao /><descricao>numero item cupom fiscal</descricao></registro>
+    <registro><inicio>69</inicio><fim>77</fim><chave>hora_venda</chave><tipo>hora</tipo><padrao /><descricao>hora realizada a venda</descricao></registro>
+    <registro><inicio>78</inicio><fim>88</fim><chave>cmv</chave><tipo>float_3</tipo><padrao /><descricao>valor de cmv do produto</descricao></registro>
+    <registro><inicio>89</inicio><fim>99</fim><chave>ultimo_custo</chave><tipo>float_3</tipo><padrao /><descricao>valor custo produto</descricao></registro>
+    <registro><inicio>100</inicio><fim>110</fim><chave>estoque_produto</chave><tipo>float_3</tipo><padrao /><descricao>saldo no momento venda</descricao></registro>
+    <registro><inicio>111</inicio><fim>112</fim><chave>tipo_venda</chave><tipo>integer</tipo><padrao /><descricao>identifica tipo de venda 0=Pista 1=Jetoil</descricao></registro>
+    <registro><inicio>113</inicio><fim>123</fim><chave>custo_medio</chave><tipo>float_3</tipo><padrao /><descricao>valor unitario produto</descricao></registro>
+    <registro><inicio>124</inicio><fim>134</fim><chave>numero_pdv</chave><tipo>text</tipo><padrao /><descricao>numero do pdv</descricao></registro>
+    <registro><inicio>135</inicio><fim>138</fim><chave>vendedor</chave><tipo>text</tipo><padrao /><descricao>vendedor do produto</descricao></registro>
+    <registro><inicio>139</inicio><fim>142</fim><chave>vendedor_vip</chave><tipo>text</tipo><padrao /><descricao>vendedor venda vip</descricao></registro>
+    <registro><inicio>143</inicio><fim>144</fim><chave>situacao_tributaria</chave><tipo>text</tipo><padrao /><descricao>Situacao trib. do produto no momento da venda</descricao></registro>
+    <registro><inicio>145</inicio><fim>155</fim><chave>tributacao</chave><tipo>float_2</tipo><padrao /><descricao>Aliquota do produto no momento da venda</descricao></registro>
+    <registro><inicio>156</inicio><fim>170</fim><chave>cpf_cnpj_adquirente</chave><tipo>text</tipo><padrao /><descricao>CPF/CNPJ do adquirente</descricao></registro>
+  </sessao>
+</layout>

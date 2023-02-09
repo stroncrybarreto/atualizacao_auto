@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layout>
+    <nome>Safra</nome>
+    
+    <sessao>
+          <nome>arquivo</nome>
+        
+          <registro>
+            <tipo>string</tipo>
+            <chave>recibo_entrega</chave>
+            <padrao>Recibo do Pagador</padrao>
+            <descricao>Descrição do label Recibo de Entrega</descricao>
+        </registro>
+        <registro>
+            <tipo>string</tipo>
+            <chave>instrucoes</chave>
+            <padrao>(Todas as informações deste boleto são de exclusiva responsabilidade do Beneficiário)</padrao>
+            <descricao>Instruções de pagamento padrão</descricao>
+        </registro>
+		    <registro>
+            <tipo>string</tipo>
+            <chave>instrucoes_correspondente</chave>
+            <padrao>(As informações contidas deste boleto são de exclusiva responsabilidade do Sacador/Avalista)</padrao>
+            <descricao>Instruções de pagamento padrão</descricao>
+        </registro>		
+        <registro>
+            <tipo>string</tipo>
+            <chave>mensagem_recibo_sacado</chave>
+            <padrao> </padrao>
+            <descricao>Mensagem do recibo do sacado</descricao>
+        </registro>
+        <registro>
+			<tipo>string</tipo>
+			<chave>local_pagamento_a</chave>
+			<padrao>PAGÁVEL EM QUALQUER BANCO</padrao>
+			<descricao>Local de Pagamento</descricao>
+		</registro>
+    </sessao>
+</layout>

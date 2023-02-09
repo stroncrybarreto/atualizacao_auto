@@ -1,0 +1,65 @@
+<relatorio dados="movto_produto_detalhada" ordem="empresa_codigo,deposito_nome,produto_nome,data,turno,hora">
+<apelidos>
+1  rel_posto_nome	    tam=60
+2  rel_data_hora        tam=18
+3  titulo				tam=120	expr = "MOVIMENTAÇÃO DE PRODUTOS" alinha=centro
+4  subtitulo    		tam=120	alinha=centro
+5  empresa_cod_nome		tam=50 expr = str(empresa_codigo) + " - " + str(empresa_nome)
+6  produto_nome			tam=35
+7  deposito_cod_nome	tam=50 expr = str(deposito_codigo) + " - " + str(deposito_nome)
+8  data_ini				tam=10	fmt=data
+9  estoque_ant			tam=13	fmt=float3 alinha=direita
+10 data					tam=10 	fmt=data
+11 turno				tam=5	alinha=centro
+12 operacao	            tam=5   alinha=centro
+13 documento			tam=10  alinha=centro
+14 entrada				tam=13	fmt=float3	nulo
+15 saida				tam=13	fmt=float3	nulo
+16 medicao				tam=11	fmt=float3	nulo
+17 diferenca			tam=10	fmt=float3	nulo
+18 estoque				tam=13	fmt=float3  alinha=direita
+19 total_entrada		tam=13	fmt=float3  alinha=direita
+20 total_saida			tam=13	fmt=float3
+21 total_diferenca		tam=10	fmt=float3
+22 estoque_ini_produto  tam=15  fmt=float3
+23 produto_cod_nome     tam=35
+</apelidos>
+<cab_pagina>
+#1                                                                                                      #2
+------------------------------------------------------------------------------------------------------------------------
+
+#3
+#4
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="empresa_codigo" repeticao="0">
+
++----------------------------------------------------------------------------------------------------------------------+
+| Empresa: #5                                                                                                          |
++---------------------------------------+-----------------+---------------+---------------+------------+---------------+
+|                Produto                | Estoque inicial |    Entrada    |     Saída     | Diferença  | Estoque final |
++---------------------------------------+-----------------+---------------+---------------+------------+---------------+
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="empresa_codigo,deposito_nome,produto_nome">
+</cab_grupo>
+
+<detalhe>
+</detalhe>
+
+<rod_grupo nome="2">
+| #23                                   | #22             | #19           | #20           | #21        | #18           |
+</rod_grupo>
+
+<rod_grupo nome="1">
++---------------------------------------+-----------------+---------------+---------------+------------+---------------+
+
+</rod_grupo>
+
+<rod_pagina>
++---------------------------------------+-----------------+---------------+---------------+------------+---------------+
+</rod_pagina>
+
+<hash>f6cf9244ddb43ca80111ff126808408c</hash>
+</relatorio>

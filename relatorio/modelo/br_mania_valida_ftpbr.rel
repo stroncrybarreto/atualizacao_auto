@@ -1,0 +1,73 @@
+<relatorio dados="br_mania_valida_ftpbr" ordem="data_movto">
+<apelidos>
+1  arquivo_cnpj				tam=18
+2  arquivo_nome				tam=40
+3  rel_data_hora			tam=16
+4  titulo					tam=272	alinha=centro
+5  data_movto				tam=10
+6  loja_qtde				tam=11	alinha=direita	fmt=float3
+7  loja_bruta				tam=12	alinha=direita	fmt=float2
+8  loja_desconto			tam=10	alinha=direita	fmt=float2
+9  loja_liquida				tam=12	alinha=direita	fmt=float2
+10 pista_qtde				tam=11	alinha=direita	fmt=float3
+11 pista_bruta				tam=12	alinha=direita	fmt=float2
+12 pista_desconto			tam=10	alinha=direita	fmt=float2
+13 pista_liquida			tam=12	alinha=direita	fmt=float2
+14 lubrax_qtde				tam=11	alinha=direita	fmt=float3
+15 lubrax_bruta				tam=12	alinha=direita	fmt=float2
+16 lubrax_desconto			tam=10	alinha=direita	fmt=float2
+17 lubrax_liquida			tam=12	alinha=direita	fmt=float2
+18 item_qtde				tam=11	alinha=direita	fmt=float3
+19 item_bruta				tam=12	alinha=direita	fmt=float2
+20 item_desconto			tam=10	alinha=direita	fmt=float2
+21 item_liquida				tam=12	alinha=direita	fmt=float2
+22 nota_liquida				tam=12	alinha=direita	fmt=float2
+23 dif_nota_item			tam=12	alinha=direita	fmt=float2
+24 total_loja_qtde			tam=11	alinha=direita	fmt=float3	func=soma	campo=loja_qtde
+25 total_loja_bruta			tam=12	alinha=direita	fmt=float2	func=soma	campo=loja_bruta
+26 total_loja_desconto		tam=10	alinha=direita	fmt=float2	func=soma	campo=loja_desconto
+27 total_loja_liquida		tam=12	alinha=direita	fmt=float2	func=soma	campo=loja_liquida
+28 total_pista_qtde			tam=11	alinha=direita	fmt=float3	func=soma	campo=pista_qtde
+29 total_pista_bruta		tam=12	alinha=direita	fmt=float2	func=soma	campo=pista_bruta
+30 total_pista_desconto		tam=10	alinha=direita	fmt=float2	func=soma	campo=pista_desconto
+31 total_pista_liquida		tam=12	alinha=direita	fmt=float2	func=soma	campo=pista_liquida
+32 total_lubrax_qtde		tam=11	alinha=direita	fmt=float3	func=soma	campo=lubrax_qtde
+33 total_lubrax_bruta		tam=12	alinha=direita	fmt=float2	func=soma	campo=lubrax_bruta
+34 total_lubrax_desconto	tam=10	alinha=direita	fmt=float2	func=soma	campo=lubrax_desconto
+35 total_lubrax_liquida		tam=12	alinha=direita	fmt=float2	func=soma	campo=lubrax_liquida
+36 total_item_qtde			tam=11	alinha=direita	fmt=float3	func=soma	campo=item_qtde
+37 total_item_bruta			tam=12	alinha=direita	fmt=float2	func=soma	campo=item_bruta
+38 total_item_desconto		tam=10	alinha=direita	fmt=float2	func=soma	campo=item_desconto
+39 total_item_liquida		tam=12	alinha=direita	fmt=float2	func=soma	campo=item_liquida
+40 total_nota_liquida		tam=12	alinha=direita	fmt=float2	func=soma	campo=nota_liquida
+41 total_dif_nota_item		tam=12	alinha=direita	fmt=float2	func=soma	campo=dif_nota_item
+</apelidos>
+
+<cab_pagina>
+#1                 - #2                                                                                                                                                                                                                                         #3
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#4
++------------+--------------------------------------------------------+--------------------------------------------------------+--------------------------------------------------------+--------------------------------------------------------+--------------+--------------+
+| Movimento  |                       Setor Loja                       |                      Setor Pista                       |                      Setor Lubrax                      |                      Total Itens                       | Total Notas  |  Diferença   |
++------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+--------------+--------------+
+|            |             |       Vendas |  Descontos |       Vendas |             |       Vendas |  Descontos |       Vendas |             |       Vendas |  Descontos |       Vendas |             |       Vendas |  Descontos |       Vendas |       Vendas |      Notas e |
+|    Data    |  Quantidade |   Brutas(R$) |       (R$) | Líquidas(R$) |  Quantidade |   Brutas(R$) |       (R$) | Líquidas(R$) |  Quantidade |   Brutas(R$) |       (R$) | Líquidas(R$) |  Quantidade |   Brutas(R$) |       (R$) | Líquidas(R$) | Líquidas(R$) |    Itens(R$) |
++------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+--------------+--------------+
+</cab_pagina>
+
+<detalhe>
+| #5         | #6          | #7           | #8         | #9           | #10         | #11          | #12        | #13          | #14         | #15          | #16        | #17          | #18         | #19          | #20        | #21          | #22          | #23          |
+</detalhe>
+
+<rod_relat>
++------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+--------------+--------------+
+|   Total    | #24         | #25          | #26        | #27          | #28         | #29          | #30        | #31          | #32         | #33          | #34        | #35          | #36         | #37          | #38        | #39          | #40          | #41          |
++------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+--------------+--------------+
+</rod_relat>
+
+<rod_pagina>
++------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+-------------+--------------+------------+--------------+--------------+--------------+
+</rod_pagina>
+
+<hash>34be10ce0bc1dee86fcdb1ef7e598b14</hash>
+</relatorio>

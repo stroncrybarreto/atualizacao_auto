@@ -1,0 +1,66 @@
+<relatorio dados="venda_turno">
+<apelidos>
+1  rel_posto_nome       tam=400
+2  linha_cont	        tam=400
+3  titulo				tam=2000
+4  empresa_nome         tam=400
+5  conta				tam=400
+6  data                 tam=10  fmt=data
+
+7 linha_cabecalho		tam=400
+8 linha_cabecalho_meio	tam=400
+
+9 fina_linha_cabecalho	tam=400
+10 linha_colunas		tam=400
+11 total				tam=400
+12 total_conta			tam=400
+14 total_empresa		tam=400
+
+13 detalhe				tam=400
+15 linha_total			tam=400
+16 total_geral		    tam=400
+</apelidos>
+<cab_pagina>
+#1
+#2
+					  
+#3
+</cab_pagina>
+<cab_grupo nome="1" quebra="empresa_nome">
++-------------#7
+| Empresa: #4
++-------------#7
+</cab_grupo>
+<cab_grupo nome="2" quebra="empresa_nome,conta">
+| Conta: #5
++------------+#10
+|   Data     |#9
++------------+#10
+</cab_grupo>
+<detalhe>
+| #6         |#13
+</detalhe>
+<rod_grupo nome="2">
++------------+#10
+| Subtotal   |#12
++------------+#10
+</rod_grupo>
+<rod_grupo nome="1">
+| Total      |#14
++------------+#15
+
+</rod_grupo>
+
+<rod_relat>
++------------+#15
+| Total geral|#16
++------------+#15
+</rod_relat>
+
+
+<rod_pagina>
++--------------------------------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>dab17520b4f905cbff87a054a9ca2756</hash>
+</relatorio>

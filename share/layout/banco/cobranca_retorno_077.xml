@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>Intermedium</nome>
+
+  <sessao>
+    <nome>header</nome>
+	<registro>
+		<inicio>001</inicio>
+		<fim>001</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Código do Registro</descricao>
+	</registro>
+	<registro>
+		<inicio>002</inicio>
+		<fim>002</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>2</padrao>
+		<descricao>Identificação do Arquivo</descricao>
+	</registro>
+	<registro>
+		<inicio>003</inicio>
+		<fim>009</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao>RETORNO</padrao>
+		<descricao>Literal Retorno</descricao>
+	</registro>
+	<registro>
+		<inicio>010</inicio>
+		<fim>011</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>01</padrao>
+		<descricao>Código do Serviço</descricao>
+	</registro>
+	<registro>
+		<inicio>012</inicio>
+		<fim>019</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao>COBRANCA</padrao>
+		<descricao>Literal Serviço</descricao>
+	</registro>
+	<registro>
+		<inicio>020</inicio>
+		<fim>026</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>027</inicio>
+		<fim>030</fim>
+		<chave>agencia</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Código da Agencia</descricao>
+	</registro>
+	<registro>
+		<inicio>031</inicio>
+		<fim>031</fim>
+		<chave>dv_agencia</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Digito verificador da agencia</descricao>
+	</registro>
+	<registro>
+		<inicio>032</inicio>
+		<fim>039</fim>
+		<chave>conta_corrente</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Conta do Cedente</descricao>
+	</registro>
+	<registro>
+		<inicio>040</inicio>
+		<fim>040</fim>
+		<chave>dv_conta_corrente</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Digito verificador da conta</descricao>
+	</registro>
+	<registro>
+		<inicio>041</inicio>
+		<fim>046</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>000000</padrao>
+		<descricao>Código do Convenio</descricao>
+	</registro>
+	<registro>
+		<inicio>047</inicio>
+		<fim>076</fim>
+		<chave>empresa_nome</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Nome da Empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>077</inicio>
+		<fim>079</fim>
+		<chave>banco</chave>
+		<tipo>integer</tipo>
+		<padrao>077</padrao>
+		<descricao>Nome do Banco</descricao>
+	</registro>
+	<registro>
+		<inicio>077</inicio>
+		<fim>094</fim>
+		<chave>banco_nome</chave>
+		<tipo>string</tipo>
+		<padrao>INTERMEDIUM</padrao>
+		<descricao>Nome do Banco</descricao>
+	</registro>
+	<registro>
+		<inicio>095</inicio>
+		<fim>100</fim>
+		<chave>data_geracao</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>Data da Gravação /DDMMAA</descricao>
+	</registro>
+	<registro>
+		<inicio>101</inicio>
+		<fim>107</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número do Aviso</descricao>
+	</registro>
+	<registro>
+		<inicio>108</inicio>
+		<fim>129</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>130</inicio>
+		<fim>136</fim>
+		<chave>convenio</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Código do Convênio</descricao>
+	</registro>
+	<registro>
+		<inicio>137</inicio>
+		<fim>381</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>382</inicio>
+		<fim>385</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao>V004</padrao>
+		<descricao>Versão</descricao>
+	</registro>
+	<registro>
+		<inicio>386</inicio>
+		<fim>394</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>396</inicio>
+		<fim>400</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>000001</padrao>
+		<descricao>Nº Seqüencial de Registro</descricao>
+	</registro>
+  </sessao>
+
+  <sessao>
+    <nome>registro_tipo_1</nome>
+	<registro>
+		<inicio>001</inicio>
+		<fim>001</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>1</padrao>
+		<descricao>Identificação do Registro</descricao>
+	</registro>
+	<registro>
+		<inicio>002</inicio>
+		<fim>003</fim>
+		<chave>empresa_tipo_inscr</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Tipo de inscrição da empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>004</inicio>
+		<fim>017</fim>
+		<chave>empresa_inscricao</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Nº de inscrição da empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>018</inicio>
+		<fim>021</fim>
+		<chave>agencia</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Código da agencia</descricao>
+	</registro>
+	<registro>
+		<inicio>022</inicio>
+		<fim>022</fim>
+		<chave>dv_agencia</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Dígito verificador da agencia</descricao>
+	</registro>
+	<registro>
+		<inicio>023</inicio>
+		<fim>030</fim>
+		<chave>conta_corrente</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Conta do cedente</descricao>
+	</registro>
+	<registro>
+		<inicio>031</inicio>
+		<fim>031</fim>
+		<chave>dv_conta_corrente</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Dígito verificador da conta corrente</descricao>
+	</registro>
+	<registro>
+		<inicio>032</inicio>
+		<fim>038</fim>
+		<chave>convenio</chave>
+		<tipo>integer</tipo>
+		<padrao>000000</padrao>
+		<descricao>Numero do convenio</descricao>
+	</registro>
+	<registro>
+		<inicio>039</inicio>
+		<fim>063</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Nº Controle do participante</descricao>
+	</registro>
+	<registro>
+		<inicio>064</inicio>
+		<fim>074</fim>
+		<chave>nosso_numero</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Nosso Número</descricao>
+	</registro>
+	<registro>
+		<inicio>075</inicio>
+		<fim>075</fim>
+		<chave>x_dv_nosso_numero</chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Digito verificador do nosso número</descricao>
+	</registro>
+	<registro>
+		<inicio>076</inicio>
+		<fim>077</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>1</padrao>
+		<descricao>Tipo de Cobrança</descricao>
+	</registro>
+	<registro>
+		<inicio>078</inicio>
+		<fim>079</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>1</padrao>
+		<descricao>Tipo de Cobrança Anterior</descricao>
+	</registro>
+	<registro>
+		<inicio>080</inicio>
+		<fim>080</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>081</inicio>
+		<fim>082</fim>
+		<chave>banco_motivo_1</chave>
+		<tipo>integer</tipo>
+		<padrao>1</padrao>
+		<descricao>Natureza do recebimento/Motivo</descricao>
+	</registro>
+	<registro>
+		<inicio>083</inicio>
+		<fim>085</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>086</inicio>
+		<fim>088</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>089</inicio>
+		<fim>089</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Conta caução</descricao>
+	</registro>
+	<registro>
+		<inicio>090</inicio>
+		<fim>095</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Dias para cálculo</descricao>
+	</registro>
+	<registro>
+		<inicio>096</inicio>
+		<fim>100</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Taxa de desconto</descricao>
+	</registro>
+	<registro>
+		<inicio>101</inicio>
+		<fim>105</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Taxa de IOF</descricao>
+	</registro>
+	<registro>
+		<inicio>106</inicio>
+		<fim>106</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Branco</descricao>
+	</registro>
+	<registro>
+		<inicio>107</inicio>
+		<fim>108</fim>
+		<chave>carteira</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Carteira</descricao>
+	</registro>
+	<registro>
+		<inicio>109</inicio>
+		<fim>110</fim>
+		<chave>banco_ocorrencia</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Comando</descricao>
+	</registro>
+	<registro>
+		<inicio>111</inicio>
+		<fim>116</fim>
+		<chave>ocorrencia_data</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>Data da Ocorrência no banco</descricao>
+	</registro>
+	<registro>
+		<inicio>117</inicio>
+		<fim>122</fim>
+		<chave>documento</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número do título > Nº atribuído por sua empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>123</inicio>
+		<fim>123</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Branco</descricao>
+	</registro>
+	<registro>
+		<inicio>124</inicio>
+		<fim>126</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Número do título > Série do título atribuído por sua empresa</descricao>
+	</registro>
+	<registro>
+		<inicio>127</inicio>
+		<fim>143</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número atribuído pelo banco correspondente</descricao>
+	</registro>
+	<registro>
+		<inicio>144</inicio>
+		<fim>146</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>147</inicio>
+		<fim>152</fim>
+		<chave>vencto</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>Data do vencimento</descricao>
+	</registro>
+	<registro>
+		<inicio>153</inicio>
+		<fim>165</fim>
+		<chave></chave>
+		<tipo>float</tipo>
+		<padrao></padrao>
+		<descricao>Valor do título</descricao>
+	</registro>
+	<registro>
+		<inicio>166</inicio>
+		<fim>168</fim>
+		<chave>banco_cobrador_codigo</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Código do Banco recebedor</descricao>
+	</registro>
+	<registro>
+		<inicio>169</inicio>
+		<fim>173</fim>
+		<chave>banco_cobrador_agencia</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Prefixo da Agencia recebedora</descricao>
+	</registro>
+	<registro>
+		<inicio>174</inicio>
+		<fim>175</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Espécie do titulo</descricao>
+	</registro>
+	<registro>
+		<inicio>176</inicio>
+		<fim>181</fim>
+		<chave>credito_data</chave>
+		<tipo>date</tipo>
+		<padrao></padrao>
+		<descricao>Data do credito</descricao>
+	</registro>
+	<registro>
+		<inicio>182</inicio>
+		<fim>188</fim>
+		<chave>tariva_valor</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor da tarifa</descricao>
+	</registro>
+	<registro>
+		<inicio>189</inicio>
+		<fim>201</fim>
+		<chave>valor_despesa_outras</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor de Outras Despesas</descricao>
+	</registro>
+	<registro>
+		<inicio>202</inicio>
+		<fim>214</fim>
+		<chave></chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Juros do desconto</descricao>
+	</registro>
+	<registro>
+		<inicio>215</inicio>
+		<fim>227</fim>
+		<chave>valor_iof</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>IOF do desconto</descricao>
+	</registro>
+	<registro>
+		<inicio>228</inicio>
+		<fim>240</fim>
+		<chave>valor_abatimento</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor do abatimento</descricao>
+	</registro>
+	<registro>
+		<inicio>241</inicio>
+		<fim>253</fim>
+		<chave>valor_desconto</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor do desconto concedido</descricao>
+	</registro>
+	<registro>
+		<inicio>254</inicio>
+		<fim>266</fim>
+		<chave>valor_pago</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor recebido</descricao>
+	</registro>
+	<registro>
+		<inicio>267</inicio>
+		<fim>279</fim>
+		<chave>valor_juros</chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Juros de mora</descricao>
+	</registro>
+	<registro>
+		<inicio>280</inicio>
+		<fim>292</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Outros recebimentos</descricao>
+	</registro>
+	<registro>
+		<inicio>293</inicio>
+		<fim>305</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Abatimento não aproveitado pelo sacado</descricao>
+	</registro>
+	<registro>
+		<inicio>306</inicio>
+		<fim>318</fim>
+		<chave></chave>
+		<tipo>float</tipo>
+		<padrao>0</padrao>
+		<descricao>Valor do lançamento</descricao>
+	</registro>
+	<registro>
+		<inicio>319</inicio>
+		<fim>319</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Indicativo de débito/crédito</descricao>
+	</registro>
+	<registro>
+		<inicio>320</inicio>
+		<fim>320</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Indicador de valor</descricao>
+	</registro>
+	<registro>
+		<inicio>321</inicio>
+		<fim>394</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Brancos</descricao>
+	</registro>
+	<registro>
+		<inicio>395</inicio>
+		<fim>400</fim>
+		<chave></chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número seqüencial do registro</descricao>
+	</registro>
+  </sessao>
+
+  <sessao>
+	<nome>trailler</nome>
+	<registro>
+		<inicio>001</inicio>
+		<fim>001</fim>
+		<chave>registro_id</chave>
+		<tipo>integer</tipo>
+		<padrao>9</padrao>
+		<descricao>Código do Registro</descricao>
+	</registro>
+	<registro>
+		<inicio>002</inicio>
+		<fim>395</fim>
+		<chave></chave>
+		<tipo>string</tipo>
+		<padrao></padrao>
+		<descricao>Branco</descricao>
+	</registro>
+	<registro>
+		<inicio>396</inicio>
+		<fim>396</fim>
+		<chave>registro_numero_seq</chave>
+		<tipo>integer</tipo>
+		<padrao>0</padrao>
+		<descricao>Número seqüencial do registro</descricao>
+	</registro>
+  </sessao>
+
+</layout>

@@ -1,0 +1,67 @@
+<relatorio dados="preco_praticado_por_cliente" ordem="cliente_nome,empresa_nome,forma_pgto_nome">
+ 
+<apelidos>
+1  rel_posto_nome       tam=40   alinha=esquerda
+2  rel_data_hora        tam=18   alinha=direita
+3  cliente_nome         tam=60   alinha=esquerda
+4  forma_pgto_nome      tam=30   alinha=esquerda
+5  produto_codigo       tam=6    alinha=centro
+6  produto_nome         tam=21   alinha=esquerda
+7  preco_unit           tam=7    alinha=direita         fmt=float3
+8  empresa_nome         tam=15   alinha=esquerda
+9  regra_codigo         tam=6    alinha=centro
+10 regra_nome           tam=12   alinha=esquerda
+11 desconto             tam=7    alinha=direita         fmt=float3
+12 valor_desc_unit      tam=12   alinha=direita         fmt=float3
+13 valor_pago           tam=10   alinha=direita         fmt=float3
+14 tipo_regra           tam=3	 alinha=centro
+
+17 cliente_cod_nome     tam=60   alinha=esquerda
+18 empresa_cod_nome     tam=30   alinha=esquerda
+98 titulos              tam=128 alinha=centro
+99 titulo1              tam=128 expr="PREÇO PRATICADO POR CLIENTE" alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                            #2                
+--------------------------------------------------------------------------------------------------------------------------------
+ 
+#99
+#98
+
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="cliente_nome">
++------------------------------------------------------------------------------------------------------------------------------+
+| Cliente: #17                                                                                                                 |
+</cab_grupo>
+
+<cab_grupo nome="2" quebra="forma_pgto_nome, cliente_nome">
++------------------------------------------------------------------------------------------------------------------------------+
+| Forma pagamento: #4                                                                                                          |
++--------+-----------------------+---------+-----------------+--------+--------------+---------+--------------+------------+---+
+| Código |        Produto        |  Unit.  |     Empresa     | Código | Regra preço  | % Desc. |  Desc. unit. | Valor pago | * |
++--------+-----------------------+---------+-----------------+--------+--------------+---------+--------------+------------+---+
+</cab_grupo>
+
+<detalhe>
+| #5     | #6                    | #7      | #8              | #9     | #10          | #11     | #12          | #13        |#14|
+</detalhe>
+
+<rod_grupo nome="2">
++--------+-----------------------+---------+-----------------+--------+--------------+---------+--------------+------------+---+
+</rod_grupo>
+
+<rod_grupo nome="1">
+
+</rod_grupo>
+<rod_relat>
+(*) Regra referente ao grupo do cliente
+</rod_relat>
+<rod_pagina> 
+
+</rod_pagina>
+
+
+<hash>8cbee4713e697ee327ce8ed96b06aa05</hash>
+</relatorio>

@@ -1,0 +1,60 @@
+<relatorio dados="venda_preco_praticado" ordem="preco_unit, nome, produto">
+<apelidos>
+1  rel_posto_nome       tam=60
+2  rel_data_hora        tam=18
+3  nome				    tam=30
+4  data                 tam=10   fmt=data
+5  produto              tam=18  
+6  quantidade           tam=10   
+7  valor                tam=14   alinha=direita   fmt=%.02f
+8  preco_unit           tam=11   alinha=esquerda  fmt=%.03f
+9  subtotal             tam=14   alinha=direita   fmt=%.02f    func=soma  campo=valor  grupo=1
+10 total_valor          tam=14   alinha=direita   fmt=%.02f    func=soma  campo=valor
+11 qtd_venda            tam=14   alinha=direita   func=contar
+</apelidos>
+
+<cab_pagina>
+#1                                                           #2
+------------------------------------------------------------------------------
+     
+                          VENDA POR PREÇO PRATICADO         
+
+                         Agrupado por Produto /Preço
+
+ 
+</cab_pagina>
+
+<cab_grupo nome="1" quebra="preco_unit, produto">
++----------------------------------------------------------------------------+
+| PRODUTO: #5                                                                |
++----------------------------------------------------------------------------+
+| PREÇO UNIT.: #8                                                            |
++---------------------------------+------------+------------+----------------+
+|            Cliente              |    Data    | Quantidade |     Valor      |
++---------------------------------+------------+------------+----------------+
+</cab_grupo>
+<detalhe>
+| #3                              | #4         | #6         | #7             |
+</detalhe>
+
+<rod_grupo nome="1">
++---------------------------------+------------+------------+----------------+
+| Subtotal                                                  | #9             |
++-----------------------------------------------------------+----------------+
+
+</rod_grupo>
+
+<rod_relat>
++-----------------------------------------------------------+----------------+
+| Total                                                     | #10            |
++-----------------------------------------------------------+----------------+
+| Quantidade de Vendas                                      | #11            |
++-----------------------------------------------------------+----------------+
+</rod_relat>
+
+<rod_pagina>
++----------------------------------------------------------------------------+
+</rod_pagina>
+
+<hash>4c0be1f20f89e07c3525111354240d22</hash>
+</relatorio>

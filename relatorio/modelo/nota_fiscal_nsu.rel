@@ -1,0 +1,44 @@
+<relatorio dados="nota_fiscal_nsu" docname="Relatório de NSU de Notas Fiscais">
+
+<apelidos>
+1  rel_posto_nome	tam=60
+2  rel_data_hora	tam=18
+3  subtitulo		tam=120	alinha=centro
+4  nsu_numero		tam=10	alinha=centro
+5  nsu_hora			tam=19
+6  numero_nota		tam=8 	alinha=centro 
+7  serie			tam=5	alinha=centro
+8  data_emissao		tam=10	fmt=data
+9  cliente_nome		tam=30
+10 valor_nota		tam=10	fmt=%.02f	alinha=direita
+11 situacao			tam=3	alinha=centro
+</apelidos>
+
+<cab_pagina>
+#1                                                                                                      #2                 
+------------------------------------------------------------------------------------------------------------------------
+
+                          R E L A T Ó R I O   D E   N S U   D E   N O T A S   F I S C A I S
+#3
+
+
++------------+---------------------+----------+-------+------------+--------------------------------+------------+-----+
+| NSU        |  Data/Hora Geração  | Nr. Nota | Série | Dt.Emissão | Cliente                        |      Valor | Sit |
++------------+---------------------+----------+-------+------------+--------------------------------+------------+-----+
+</cab_pagina>
+
+<detalhe>
+| #4         | #5                  | #6       | #7    | #8         | #9                             | #10        | #11 |
+</detalhe>
+
+<rod_pagina>
++------------+---------------------+----------+-------+------------+--------------------------------+------------+-----+
+</rod_pagina>
+
+<rod_relat>
++------------+---------------------+----------+-------+------------+--------------------------------+------------+-----+
+</rod_relat>
+
+
+<hash>0759f57d382e1145a9754c3af83972b7</hash>
+</relatorio>

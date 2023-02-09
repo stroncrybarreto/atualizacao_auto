@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout>
+  <nome>portaria_cat_52</nome>
+
+  <sessao>
+    <nome>header</nome>
+	
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>01</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>16</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>17</inicio>
+      <fim>30</fim>
+      <chave>inscr_est</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Inscrição Estadual</descricao>
+    </registro>
+
+    <registro>
+      <inicio>31</inicio>
+      <fim>37</fim>
+      <chave>cnae</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Código Nacional de Atividades Econômicas</descricao>
+    </registro>
+
+    <registro>
+      <inicio>73</inicio>
+      <fim>102</fim>
+      <chave>nome</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Razão Social da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>103</inicio>
+      <fim>104</fim>
+      <chave>uf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Unidade Federativa da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>105</inicio>
+      <fim>112</fim>
+      <chave>data_ini</chave>
+      <tipo>date</tipo>
+      <padrao></padrao>
+      <descricao>Data Inicial das Informações</descricao>
+    </registro>
+
+    <registro>
+      <inicio>113</inicio>
+      <fim>120</fim>
+      <chave>data_fim</chave>
+	  <tipo>date</tipo>
+      <padrao></padrao>
+      <descricao>Data Final das Informações</descricao>
+    </registro>
+
+    <registro>
+      <inicio>121</inicio>
+      <fim>154</fim>
+      <chave>logradouro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Logradouro da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>155</inicio>
+      <fim>159</fim>
+      <chave>numero</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Número da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>160</inicio>
+      <fim>181</fim>
+      <chave>complemento</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Complemento da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>182</inicio>
+      <fim>196</fim>
+      <chave>bairro</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Bairro da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>197</inicio>
+      <fim>204</fim>
+      <chave>cep</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CEP da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>205</inicio>
+      <fim>232</fim>
+      <chave>contato</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Resposável para Contato da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>233</inicio>
+      <fim>242</fim>
+      <chave>fax</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>FAX da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>243</inicio>
+      <fim>254</fim>
+      <chave>fone</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Telefone da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>255</inicio>
+      <fim>304</fim>
+      <chave>email</chave>
+	  <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>E-mail para contato da Empresa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>305</inicio>
+      <fim>344</fim>
+      <chave>site</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Site da Empresa</descricao>
+    </registro>
+
+  </sessao> 
+
+  <sessao>
+    <nome>content</nome>
+
+    <registro>
+      <inicio>1</inicio>
+      <fim>2</fim>
+      <chave>tipo</chave>
+      <tipo>string</tipo>
+      <padrao>02</padrao>
+      <descricao>Tipo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>3</inicio>
+      <fim>16</fim>
+      <chave>cpf</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CNPJ</descricao>
+    </registro>
+
+    <registro>
+      <inicio>17</inicio>
+      <fim>30</fim>
+      <chave>inscr_est</chave>
+	  <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Inscrição Estadual</descricao>
+    </registro>
+
+    <registro>
+      <inicio>31</inicio>
+      <fim>32</fim>
+      <chave>uf</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Unidade Federativa</descricao>
+    </registro>
+
+    <registro>
+      <inicio>33</inicio>
+      <fim>40</fim>
+      <chave>data_emissao</chave>
+      <tipo>date</tipo>
+      <padrao></padrao>
+      <descricao>Data de Emissão da NF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>41</inicio>
+      <fim>42</fim>
+      <chave>serie</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Série da NF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>43</inicio>
+      <fim>48</fim>
+      <chave>numero</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>Número da NF</descricao>
+    </registro>
+
+    <registro>
+      <inicio>49</inicio>
+      <fim>52</fim>
+      <chave>cfop</chave>
+      <tipo>integer</tipo>
+      <padrao></padrao>
+      <descricao>CFOP</descricao>
+    </registro>
+
+    <registro>
+      <inicio>53</inicio>
+      <fim>54</fim>
+      <chave>codigo_complementar</chave>
+      <tipo>integer</tipo>
+      <padrao>00</padrao>
+      <descricao>Código Complementar da Operação</descricao>
+    </registro>
+
+    <registro>
+      <inicio>55</inicio>
+      <fim>67</fim>
+      <chave>quantidade</chave>
+      <tipo>float_3_casas</tipo>
+      <padrao></padrao>
+      <descricao>Quanitdade das Mercadorias</descricao>
+    </registro>
+
+    <registro>
+      <inicio>68</inicio>
+      <fim>80</fim>
+      <chave>base_icms</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao>0</padrao>
+      <descricao>Valor Total da Base de Calculo do ICMS</descricao>
+    </registro>
+
+    <registro>
+      <inicio>81</inicio>
+      <fim>93</fim>
+      <chave>valor_confronto</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao>0</padrao>
+      <descricao>Valor de Confronto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>94</inicio>
+      <fim>107</fim>
+      <chave>prod_codigo</chave>
+      <tipo>string</tipo>
+      <padrao></padrao>
+      <descricao>Código do Produto</descricao>
+    </registro>
+
+    <registro>
+      <inicio>108</inicio>
+      <fim>129</fim>
+      <chave>nr_chassi</chave>
+      <tipo>string</tipo>
+      <padrao> </padrao>
+      <descricao>Número do Chassi do Veiculo</descricao>
+    </registro>
+
+    <registro>
+      <inicio>130</inicio>
+      <fim>142</fim>
+      <chave>base_subst</chave>
+      <tipo>float_2_casas</tipo>
+      <padrao>0</padrao>
+      <descricao>Base de Calculo de Substituição</descricao>
+    </registro>
+
+  </sessao>
+
+</layout>
